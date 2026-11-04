@@ -1,0 +1,38 @@
+[
+ {
+  "id": "l1",
+  "start": 0.5,
+  "dur": 2.34,
+  "phonemes": "ðɪs dɪwˈɑːli, əjˈoʊdjɑː ɡlˈoʊz wˈʌns mˈɔːɹ."
+ },
+ {
+  "id": "l2",
+  "start": 3.7,
+  "dur": 1.84,
+  "phonemes": "ʃɹˈiː ɹˈɑːm ænd sˈiːtɑː ɑːɹ kˈʌmɪŋ hˈoʊm,"
+ },
+ {
+  "id": "l3",
+  "start": 6.4,
+  "dur": 3.0,
+  "phonemes": "wɪð lˈʌkʃmən baɪ ðɛɹ sˈaɪd, ænd hˈʌnʊmɑːn æt ðɛɹ fˈiːt."
+ },
+ {
+  "id": "l4",
+  "start": 10.6,
+  "dur": 3.64,
+  "phonemes": "mˈeɪ ɐ θˈaʊzənd dˈiːjɑːz fˈɪl jʊɹ hˈoʊm wɪð lˈaɪt, lˈʌv ænd dʒˈɔɪ."
+ },
+ {
+  "id": "l5",
+  "start": 15.0,
+  "dur": 0.98,
+  "phonemes": "dʒˈaɪ ʃɹˈiː ɹˈɑːm!"
+ },
+ {
+  "id": "l6",
+  "start": 16.4,
+  "dur": 0.96,
+  "phonemes": "hˈæpi dɪwˈɑːli!"
+ }
+]

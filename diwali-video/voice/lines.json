@@ -1,0 +1,11 @@
+{
+  "voice": "af_heart",
+  "lines": [
+    {"id": "l1", "start": 0.5,  "text": "This Diwali, Ayodhya glows once more."},
+    {"id": "l2", "start": 3.7,  "text": "Shri Ram and Sita are coming home,"},
+    {"id": "l3", "start": 6.4,  "text": "with Lakshman by their side, and Hanuman at their feet."},
+    {"id": "l4", "start": 10.6, "text": "May a thousand diyas fill your home with light, love and joy."},
+    {"id": "l5", "start": 15.0, "text": "Jai Shri Ram!"},
+    {"id": "l6", "start": 16.4, "text": "Happy Diwali!"}
+  ]
+}
