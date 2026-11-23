@@ -137,7 +137,7 @@ server serves directly with 200 (no redirect).
 ## Cases
 
 - File: `evidence/cases/f6-guides.json` — **39 cases** (F6-01..F6-39); run `evidence/runs/run-f6-guides.json`
-  (39 cases, merged from batches f6-batchA.json, f6-batchB.json, f6-batchC.json, f6-batchD.json, f6-batchE.json, f6-batchF.json, f6-batchG.json recorded 2026-11-23 between 10:3x and 12:0x UTC while the origin was intermittently failing).
+  (39 cases, merged per case from 7 batch runs started 10:55–11:57 UTC (each case's batch is in its `batch` field) because the origin failed intermittently; the latest error-free record of each case is kept).
 - Supplementary: `evidence/cases/f6-guides-noyt.json` (4 cases F6NY-01..04, profile
   `tools/profiles/f6-guides-noyt.profile.json` = same plus youtube.com blocked) → `evidence/runs/run-f6-guides-noyt.json`,
   4/4 clean: the "no JS-ready player" state.

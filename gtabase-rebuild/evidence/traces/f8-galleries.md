@@ -107,7 +107,7 @@ stored (com_igallery tables), the per-page limit 100 and the redirect allow-list
 ## Cases
 
 - File: `evidence/cases/f8-galleries.json` — **38 cases** (F8-01..F8-38; mobile cases F8-31, F8-32, F8-38 are last
-  in the file because the viewport carries over); run `evidence/runs/run-f8-galleries.json` (38 cases, merged from batches f8-batchA.json, f8-batchB.json, f8-batchC.json, f8-batchD.json, f8-batchE.json, f8-batchG.json, f8-batchH.json recorded 2026-11-23 between 10:3x and 12:0x UTC while the origin was intermittently failing).
+  in the file because the viewport carries over); run `evidence/runs/run-f8-galleries.json` (38 cases, merged per case from 7 batch runs started 11:36–11:59 UTC (each case's batch is in its `batch` field) because the origin failed intermittently; the latest error-free record of each case is kept).
 - Clean: 38/38. Excluded: none in the final run. Harness fixes on the way (all re-run): (1) JCH defers the
   gallery scripts until interaction and never loads them under `navigator.webdriver` → runner `browser.args`
   patch + `--disable-blink-features=AutomationControlled` and a `wake` macro (hover heading + thumbnail, waits);
