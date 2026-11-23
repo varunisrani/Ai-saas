@@ -1,8 +1,8 @@
 // Rule F2-R7 (detail gallery lightbox).
 // Plain words: a detail page gallery shows a strip of thumbnails; clicking thumbnail k opens a full-screen
 // lightbox on image k with a counter "k/N" (N = images in that gallery), previous/next arrows, close button,
-// download and share buttons and the caption below. Next / ArrowRight = k+1, previous / ArrowLeft = k-1, both
-// wrapping. Escape or the close button closes it. Opening and moving do not change the URL. (The gallery script
+// download and share buttons and the caption below. Next / ArrowRight = k+1, previous / ArrowLeft = k-1
+// (wrap-around at the ends: see F8-R1, not re-tested here). Escape or the close button closes it. Opening and moving do not change the URL. (The gallery script
 // would open a "?i=<image key>" URL on that image, but the live server 301-redirects that URL to the bare page,
 // so it never happens; see f2-detail-url.mjs.)
 // Observations: evidence/runs/run-f2-detail.json. Standalone: node f2-detail-lightbox.mjs

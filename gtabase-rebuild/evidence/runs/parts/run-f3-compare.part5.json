@@ -1,0 +1,68 @@
+{
+  "app": "gtabase.com GTA 6 section - F3 comparison + rankings (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:58:49.778Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F3-50",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-vehicles/",
+        "focus:rank-class-select",
+        "press:Enter",
+        "wait:400",
+        "press:Tab",
+        "wait:200"
+      ],
+      "reads": [
+        "text:rank-class-focused"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "text:rank-class-focused": "Boats"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-51",
+      "mode": null,
+      "steps": [
+        "press:Enter",
+        "wait:3000"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/best-boats/",
+        "heading": "GTA 6 Best Boats List: Stats Ranking",
+        "title": "GTA 6 Best Boats List: Stats Ranking"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-52",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-vehicles/?class=no-such-class"
+      ],
+      "reads": [
+        "text:#ja-content",
+        "list:rank-content-links"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/?class=no-such-class",
+        "heading": "<missing>",
+        "text:#ja-content": "Stay tuned as this GTA 6 Vehicles list will continue to grow as more vehicles are discovered in the game. Bookmark this page and also explore the full GTA 6 vehicles list, including all the cars, bikes, planes, and boats in the game. You can also check out the list of GTA 6 Fastest Cars ranked by top speed, as well as the fastest motorcycles in GTA 6. GTA VI Gore and Dismemberment: What Can we Expect? GTA VI Looks Too Good to Be True - Until You Remember It’s Rockstar",
+        "list:rank-content-links": "full GTA 6 vehicles list || GTA 6 Fastest Cars ranked by top speed || fastest motorcycles in GTA 6"
+      },
+      "error": null
+    }
+  ]
+}

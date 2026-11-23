@@ -9,7 +9,9 @@
   "f8-batchB.json",
   "f8-batchC.json",
   "f8-batchD.json",
-  "f8-batchE.json"
+  "f8-batchE.json",
+  "f8-batchG.json",
+  "f8-batchH.json"
  ],
  "cases": [
   {
@@ -332,6 +334,60 @@
    "batch": "f8-batchB.json"
   },
   {
+   "id": "F8-14",
+   "mode": "shots",
+   "steps": [
+    "click:pagination-page-2",
+    "macro:wake",
+    "macro:open-first"
+   ],
+   "reads": [
+    "count:thumb",
+    "text:pagination-active",
+    "text:lb-counter",
+    "count:pagination-disabled"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/screenshots/?thumb_limitstart=100&limit=100",
+    "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+    "count:thumb": "100",
+    "text:pagination-active": "2",
+    "text:lb-counter": "1/100",
+    "count:pagination-disabled": "0"
+   },
+   "error": null,
+   "batch": "f8-batchG.json"
+  },
+  {
+   "id": "F8-15",
+   "mode": null,
+   "steps": [
+    "goto:/gta-6/screenshots/?thumb_limitstart=200&limit=100",
+    "macro:wake",
+    "macro:open-first",
+    "press:ArrowLeft",
+    "wait:700"
+   ],
+   "reads": [
+    "count:thumb",
+    "text:pagination-active",
+    "count:pagination-disabled",
+    "text:lb-counter"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/screenshots/?thumb_limitstart=200&limit=100",
+    "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+    "count:thumb": "95",
+    "text:pagination-active": "3",
+    "count:pagination-disabled": "2",
+    "text:lb-counter": "95/95"
+   },
+   "error": null,
+   "batch": "f8-batchG.json"
+  },
+  {
    "id": "F8-16",
    "mode": null,
    "steps": [
@@ -349,6 +405,50 @@
    },
    "error": null,
    "batch": "f8-batchB.json"
+  },
+  {
+   "id": "F8-17",
+   "mode": null,
+   "steps": [
+    "goto:/gta-6/screenshots/?utm_source=test",
+    "macro:wake"
+   ],
+   "reads": [
+    "count:thumb"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/screenshots/?utm_source=test",
+    "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+    "count:thumb": "100"
+   },
+   "error": null,
+   "batch": "f8-batchH.json"
+  },
+  {
+   "id": "F8-18",
+   "mode": "shots",
+   "steps": [
+    "click:media-tab-trailers",
+    "macro:wake"
+   ],
+   "reads": [
+    "text:media-tab-active",
+    "count:thumb",
+    "count:pagination",
+    "text:pagination-active"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/screenshots/trailers/",
+    "heading": "GTA 6 Screencaps from Trailers",
+    "text:media-tab-active": "Trailer Screens",
+    "count:thumb": "100",
+    "count:pagination": "2",
+    "text:pagination-active": "1"
+   },
+   "error": null,
+   "batch": "f8-batchG.json"
   },
   {
    "id": "F8-19",
@@ -599,6 +699,48 @@
    },
    "error": null,
    "batch": "f8-batchE.json"
+  },
+  {
+   "id": "F8-29",
+   "mode": "shots",
+   "steps": [
+    "click:media-tab-videos"
+   ],
+   "reads": [
+    "count:media-tab",
+    "count:gallery",
+    "title"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/videos/",
+    "heading": "All GTA 6 Videos & Official Trailers",
+    "count:media-tab": "0",
+    "count:gallery": "0",
+    "title": "GTA 6 Videos: All GTA 6 Official Trailers & Gameplay Videos"
+   },
+   "error": null,
+   "batch": "f8-batchH.json"
+  },
+  {
+   "id": "F8-30",
+   "mode": null,
+   "steps": [
+    "goto:/gta-6/screenshots/nonexistent-xyz/"
+   ],
+   "reads": [
+    "title",
+    "count:gallery"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/screenshots/nonexistent-xyz/",
+    "heading": "404 Page Not Found",
+    "title": "404 Page Not Found",
+    "count:gallery": "0"
+   },
+   "error": null,
+   "batch": "f8-batchH.json"
   },
   {
    "id": "F8-33",

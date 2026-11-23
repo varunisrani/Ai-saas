@@ -701,11 +701,11 @@
       "steps": [
         "goto:/gta-6/characters/jason?i=jason-duval-01",
         "macro:wake",
-        "waitfor:lightbox"
+        "wait:3000"
       ],
       "reads": [
         "visible:lightbox",
-        "text:lightbox-counter"
+        "count:gallery-thumbs"
       ],
       "reset": "clear",
       "values": {
@@ -713,30 +713,29 @@
         "heading": "Jason Duval",
         "title": "Jason Duval | GTA 6 Characters Guide, Bio & Voice Actor",
         "visible:lightbox": "false",
-        "text:lightbox-counter": "<missing>"
+        "count:gallery-thumbs": "107"
       },
-      "error": "waitfor:lightbox: locator.waitFor: Timeout 6000ms exceeded.",
-      "rerun": "2026-11-23T11:41:40.178Z"
+      "error": null,
+      "rerun": "2026-11-23T11:59:48.950Z"
     },
     {
       "id": "F2-22",
       "mode": null,
       "steps": [
-        "click:lightbox-close",
-        "wait:1000"
+        "goto:/gta-6/vehicles/sunset-sanchez?utm_source=test"
       ],
       "reads": [
-        "visible:lightbox"
+        "count:stat-bars"
       ],
-      "reset": "none",
+      "reset": "clear",
       "values": {
-        "url": "/gta-6/characters/jason",
-        "heading": "Jason Duval",
-        "title": "Jason Duval | GTA 6 Characters Guide, Bio & Voice Actor",
-        "visible:lightbox": "false"
+        "url": "/gta-6/vehicles/sunset-sanchez?utm_source=test",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "count:stat-bars": "5"
       },
-      "error": "click:lightbox-close: locator.click: Timeout 6000ms exceeded.",
-      "rerun": "2026-11-23T11:41:40.178Z"
+      "error": null,
+      "rerun": "2026-11-23T11:59:48.950Z"
     },
     {
       "id": "F2-23",
@@ -783,26 +782,27 @@
         "text:pager-next": "Tormentor Street Blazer"
       },
       "error": null,
-      "rerun": "2026-11-23T11:41:40.178Z"
+      "rerun": "2026-11-23T11:59:48.950Z"
     },
     {
       "id": "F2-25",
       "mode": null,
       "steps": [
-        "click:pager-next"
+        "click:pager-next",
+        "wait:5000"
       ],
       "reads": [
         "count:stat-bars"
       ],
       "reset": "none",
       "values": {
-        "url": "/gta-6/vehicles/sunset-sanchez",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/vehicles/tormentor-street-blazer",
+        "url": "/gta-6/vehicles/tormentor-street-blazer",
+        "heading": "Nagasaki Tormentor Street Blazer",
+        "title": "Nagasaki Tormentor Street Blazer | GTA 6 Bike Stats, Price, How To Get",
         "count:stat-bars": "5"
       },
-      "error": "click:pager-next: locator.click: Timeout 6000ms exceeded.",
-      "rerun": "2026-11-23T11:41:40.178Z"
+      "error": null,
+      "rerun": "2026-11-23T11:59:48.950Z"
     },
     {
       "id": "F2-26",
@@ -1017,7 +1017,7 @@
   ],
   "merged": [
     {
-      "from": "run-f2-detail.part2.json",
+      "from": "parts/run-f2-detail.part2.json",
       "captured": "2026-11-23T11:41:40.178Z",
       "ids": [
         "F2-02",
@@ -1044,6 +1044,16 @@
         "F2-32",
         "F2-33",
         "F2-34"
+      ]
+    },
+    {
+      "from": "parts/run-f2-detail.part3.json",
+      "captured": "2026-11-23T11:59:48.950Z",
+      "ids": [
+        "F2-21",
+        "F2-22",
+        "F2-24",
+        "F2-25"
       ]
     }
   ]

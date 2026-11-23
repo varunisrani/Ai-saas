@@ -1,4 +1,5 @@
 {
+  "_notes": "Tokens whose selector starts with role= are behaviour selectors; every other token is CSS copied from the original's markup (analysis side only) - the rebuild maps the same token names to its own selectors. browser.args turns navigator.webdriver off so JCH Optimize's deferred scripts (gallery, compare) load as for a real visitor; macro 'wake' = the first interaction that releases them.",
   "app": "gtabase.com GTA 6 section - F2 item detail pages (observed 2026-11-23)",
   "baseUrl": "https://www.gtabase.com",
   "readOnly": true,

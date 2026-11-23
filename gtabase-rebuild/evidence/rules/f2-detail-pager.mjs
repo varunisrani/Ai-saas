@@ -22,6 +22,12 @@ const OBS = [
   "next": 1,
   "prevHref": "/gta-6/vehicles/mud-crasher-rancher",
   "nextHref": "/gta-6/vehicles/tormentor-street-blazer"
+ },
+ {
+  "id": "F2-25",
+  "page": "/gta-6/vehicles/tormentor-street-blazer",
+  "after": "click next",
+  "statBars": "5"
  }
 ];
 let pass = 0;

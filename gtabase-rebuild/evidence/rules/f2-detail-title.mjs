@@ -82,6 +82,22 @@ const OBS = [
   "classNoun": null
  },
  {
+  "id": "F2-22",
+  "url": "/gta-6/vehicles/sunset-sanchez?utm_source=test",
+  "type": "vehicle",
+  "h1": "Maibatsu Sunset Sanchez",
+  "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+  "classNoun": "Motorcycles"
+ },
+ {
+  "id": "F2-25",
+  "url": "/gta-6/vehicles/tormentor-street-blazer",
+  "type": "vehicle",
+  "h1": "Nagasaki Tormentor Street Blazer",
+  "title": "Nagasaki Tormentor Street Blazer | GTA 6 Bike Stats, Price, How To Get",
+  "classNoun": "Motorcycles"
+ },
+ {
   "id": "F2-30",
   "url": "/vehicles/gta-6/manchez",
   "type": "vehicle",

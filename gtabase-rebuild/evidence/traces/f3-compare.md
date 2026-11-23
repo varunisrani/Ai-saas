@@ -95,12 +95,37 @@ Ranking order key beyond the shown "Road Rating" and the tie-break.
 | F3-R1 | Bar shows "n/4"; <2 picks → "Pick 1 more" (disabled, `#`); 2–4 → "Compare (n)" linking `<list>comparison/?<type>1=..` with aliases sorted A→Z (plain string order); 4 picks disable all other shown toggles | `evidence/rules/f3-compare-bar.mjs` | 14/14 PASS | F3-05: picks in order thrax, seaspray, honeycomb, black-widow → `vehicle1=andrew-nodes-thrax&vehicle2=black-widow-emerus&vehicle3=honeycomb-emerus&vehicle4=seaspray-emerus` |
 | F3-R2 | Picks per list path in sessionStorage as `[{id,name}]` in pick order; toggle adds/removes; 5th ignored; Clear → `[]`; survives reload, filter, detail+Back, other list | `evidence/rules/f3-compare-picks.mjs` | 16/16 PASS | F3-06: 5th toggle with 4 picked leaves the array unchanged |
 | F3-R3 | Picker: all words must match (case/accents ignored), A→Z, ≤150 rows + "<k> more: keep typing", "No match", arrows wrap, Escape restores, Enter → `<slot url>?<param>=<alias>` | `evidence/rules/f3-compare-picker.mjs` | 8/8 PASS | F3-23: "59 kz" → only names containing both "59" and "kz" |
-| F3-R4 | Ranking rows sorted by Road Rating, highest first; rows without a rating ("-") come last | `evidence/rules/f3-compare-rank-order.mjs` | see below | best-motorcycles |
-| F3-R5 | "Select Class" menu: one link per vehicle class, label → `/gta-6/vehicles/best-<slug>/` | `evidence/rules/f3-compare-rank-class.mjs` | see below | Motorcycles → best-motorcycles |
+| F3-R4 | Ranking rows sorted by Road Rating, highest first; rows without a rating ("-") come last | `evidence/rules/f3-compare-rank-order.mjs` | 21/21 PASS | F3-32 best-motorcycles: 70 rated non-increasing, then 6 "-" rows |
+| F3-R5 | "Select Class" menu: 21 classes A→Z, label → `/gta-6/vehicles/best-<slug>[-cars\|-vehicles]/`; `?class=` redirects there; unknown class → empty shell; unknown best-* → 404 | `evidence/rules/f3-compare-rank-class.mjs` | 28/28 PASS | Sports → best-sports-cars, Utility → best-utility-vehicles, Vans → best-vans |
+
+
+All 5 scripts: `for f in evidence/rules/f3-compare-*.mjs; do node $f; done` → 87/87 PASS.
 
 ## Cases
 
-`evidence/cases/f3-compare.json` → `evidence/runs/run-f3-compare.json`.
+- File `evidence/cases/f3-compare.json` → run `evidence/runs/run-f3-compare.json`: **53 cases, 53 clean,
+  0 excluded** (harness-wise). Five clean cases end on the Cloudflare challenge page instead of the
+  comparison page — F3-15, F3-26, F3-27, F3-28, F3-29. They prove the URL that was opened and that the
+  challenge applies to every comparison URL with a query; they are **excluded from comparison-page behaviour
+  claims** (the page content is Cloudflare's, not the app's).
+- Re-runs merged into the run file (field `merged`; partial runs in `evidence/runs/parts/`): F3-05..F3-12
+  after two harness fixes — F3-06: Playwright refuses to click an element with `aria-disabled="true"`, so the
+  5th toggle is activated with the keyboard (Space) instead; F3-12: the list name filter applies on Enter
+  (first attempt typed without Enter and filtered nothing). F3-18 and F3-27..F3-43 ran after the origin
+  outage (~10:55–11:41 UTC; first F3-18 attempt timed out). During the outage the picker cases F3-20..F3-25b
+  were moved to the cached weapons comparison page (same script). F3-44..F3-52 were added as second probe
+  rounds (class menu hrefs, `?class=` forms, keyboard).
+- Coverage: list toggles click/keyboard (F3-01..F3-10), limit 4 (F3-05..F3-07), clear (F3-08), persistence
+  reload/filter/other list/detail+Back (F3-11..F3-14, F3-17), link opening (F3-15), 390×844 (F3-16, F3-42),
+  comparison empty states (F3-18, F3-19), picker open/filter/no match/AND words/accents/arrows/Escape/Enter
+  (F3-20..F3-26), query URLs (F3-27..F3-29), rankings 7 pages (F3-30..F3-38), class menu mouse/keyboard
+  (F3-31..F3-33, F3-44, F3-47..F3-51), `?class=` forms (F3-39, F3-40, F3-45, F3-46, F3-52), unknown ranking
+  404 (F3-41), row link (F3-43).
+- Data-only readout keys: `attr:compare-toggle-1@aria-label` (names), `session:gtabCompare:*` (aliases and
+  names; the shape and order are behaviour), `text:compare-names`, `attr:compare-go@href` (aliases; numbering
+  and sort are behaviour), `count:cmp-source`, `list:cmp-options`, `text:cmp-option-1`,
+  `text:cmp-option-active`, `list:rank-ratings` (values; the order relation is behaviour), `count:rank-rows`,
+  `count:rank-images`, `attr:rank-row-1-link@href`, `url` of challenged cases (challenge token).
 
 ## Command vocabulary
 
@@ -122,3 +147,80 @@ Ranking order key beyond the shown "Road Rating" and the tie-break.
 | `rank-class-select` | button (dropdown toggle) | "Select Class" | opens the class menu |
 | `rank-class-items` | links in the menu | class names ("Boats" … "Vans") | open `/gta-6/vehicles/best-<slug>/` |
 | `rank-rows` | list rows | — | one per vehicle: badge (make), name link, "Based on:", "Road Rating:" · "Off-Road Rating:" |
+
+## Behavior summary for the spec
+
+1. **Compare toggle on list cards.** Every card of the vehicles and weapons lists gets a small round toggle on
+   its photo (bottom-right): role checkbox, accessible name "Compare <item name>", tooltip "Compare",
+   focusable. Click, Space or Enter toggles it; it never opens the card's link. (F3-01, F3-02, F3-09, F3-10)
+2. **Limit.** At most 4 picks per list. With 4 picked, every other toggle is disabled (dimmed, not-allowed
+   cursor) and ignores clicks and keys; unpicking one re-enables them. (F3-05..F3-07)
+3. **Storage.** Picks live in the tab's session storage under `gtabCompare:<list path>` (`/gta-6/vehicles/`,
+   `/gta-6/weapons/` — independent) as a JSON list of `{id, name}` in pick order; `id` is the item's URL alias.
+   Nothing is stored before the first change; "Clear" stores an empty list. Picks survive reload, list
+   filtering/sorting (re-rendered cards are re-marked), opening an item and going Back, and visiting the other
+   list; they end with the browser tab session. (F3-01..F3-14, F3-17; rule F3-R2)
+4. **Compare bar.** Fixed at the top centre of the viewport; hidden (faded out, not clickable) with 0 picks.
+   Shows "<n>/4", the picked names joined by " · " (names hidden below 768 px width), an action link and a
+   round button "Clear the comparison". The action reads "Pick 1 more" (greyed, inert) under 2 picks and
+   "Compare (<n>)" with 2–4 (labels displayed in capitals). (F3-01..F3-08, F3-16; rule F3-R1)
+5. **Comparison link.** `<list path>comparison/?<type>1=<alias>&<type>2=<alias>[…]` with type `vehicle` or
+   `weapon`, aliases sorted by plain string order (not pick order), numbered from 1. The same canonical form is
+   used by the detail pages' "Compare To" (F2-R3). (F3-03, F3-05, F3-07, F3-14; rule F3-R1)
+6. **Comparison page, empty state** (`/gta-6/vehicles/comparison/`, `/gta-6/weapons/comparison/`): breadcrumb
+   link to the list ("GTA 6 Vehicles Database & Statistics" / "GTA 6 Weapons Database & Statistics"), h1 "GTA 6
+   Vehicle Comparison" / "GTA 6 Weapon Comparison", intro sentence, 3 share links, a board of 5 "Add a vehicle"
+   ("Add a weapon") slots — one in the header column, four item columns — each with a search box, the note
+   "Add at least two GTA 6 vehicles to see the comparison." and related links (vehicles: All GTA 6 vehicles ·
+   Weapon comparison · All GTA 6 weapons · Best vehicles in GTA 6 · Fastest cars in GTA 6 · Fastest bikes in
+   GTA 6; weapons: All GTA 6 weapons · Vehicle comparison · All GTA 6 vehicles). (F3-18, F3-19)
+7. **Picker.** Search box (combobox, placeholder "Search..."). Focus opens a list of all items of that list
+   A→Z, first highlighted. Typing filters: case and accents ignored, every space-separated word must occur in
+   the name (any order). At most 150 rows; then a row "<k> more: keep typing"; no result → "No match".
+   ArrowDown/ArrowUp move with wrap-around, Escape closes and restores the box, Enter or click picks; items
+   already in the comparison are not offered. (F3-20..F3-25b; rule F3-R3)
+8. **Picking navigates** to `<slot url>?<slot param>=<alias>` (or `&…` if the slot URL has a query); on the
+   empty page every slot uses `<type>1`; the page shows a loading state while leaving. Filled pages give each
+   slot its own URL/param and list the already-picked aliases to exclude; each filled column has a remove link
+   (server-built URL). (F3-26; PICK:24-27)
+9. **Filled comparison page:** not observable (see U-F3-01/U-F3-02); build it from the rebuild proposal there.
+10. **Rankings.** `/gta-6/vehicles/best-<page slug>/` for 21 classes. Page: h1 "GTA 6 Best <Class plural> List:
+    Stats Ranking", breadcrumb "GTA 6 Cars & Vehicles Database" → list, a "Select Class" dropdown button
+    (21 class links A→Z, each with the tooltip "The Best & Fastest <…> in GTA 6"), hero image, share links,
+    intro text, "Full List of Best <Class plural> in GTA 6:", one row per vehicle of the class: thumbnail, make
+    badge + name (link to the detail page), "Based on: <real-life model>" only when known,
+    "Road Rating: <n> · Off-Road Rating: <n>" ("-" when not rated). Order: Road Rating descending; unrated rows
+    last; ties: catalogue order. (F3-30..F3-38, F3-42, F3-43; rule F3-R4)
+11. **Class menu.** Plain links; mouse click or keyboard (Enter opens the menu, Tab moves into it, Enter
+    follows) — arrow keys do not move in it. Page slug = class name lower-case with spaces as "-", plus "-cars"
+    for Muscle/Sports/Sports Classic/Super and "-vehicles" for Commercial/Emergency/Industrial/Military/
+    Off-Road/Service/Utility. (F3-31..F3-33, F3-44, F3-47..F3-51; rule F3-R5)
+12. **Old and odd forms.** `/gta-6/vehicles/best-vehicles/` is the default ranking (shows the Super class
+    heading); `?class=<class slug>` redirects to the class page; an unknown `?class` gives an empty page on the
+    original (rebuild: 404); an unknown `best-*` path is the 404 page. Detail pages link their "Vehicle Class"
+    value to `best-vehicles/?class=<slug>`. (F3-30, F3-39..F3-41, F3-45, F3-46, F3-52; F2-01)
+
+## Findings
+
+- F-F3-01 Compare ids are URL aliases, not numeric ids; aliases can look numeric (weapon ".38" → "38"). Evidence: F3-14, CMP:35-41.
+- F-F3-02 Link ids are sorted by plain string order ("38" < "heavy-pistol"; "andrew-…" < "black-widow-…"), not by pick order. Evidence: CMP:110-114, F3-05, F3-14.
+- F-F3-03 The compare script is deferred by JCH Optimize and never runs when `navigator.webdriver` is true; automated checks need that flag off. Evidence: JCHI:4, F3-01 (100 toggles after the fix; 0 in the first probe).
+- F-F3-04 Every comparison URL with a query string — including `?utm_source=test` — answers a Cloudflare managed challenge to our browser (307→403, "Just a moment...", `__cf_chl_rt_tk` appended), before and after a 60 s wait; the query-less pages are served from cache. Evidence: F3-15, F3-26..F3-29, `evidence/html/f2f3/snap-log.txt`.
+- F-F3-05 The comparison picker offers every item of the list (590 vehicles, 211 weapons at run time; an older snapshot had 368 vehicles), A→Z by name. Evidence: F3-18, F3-19, F3-20.
+- F-F3-06 Playwright treats `aria-disabled="true"` toggles as disabled and will not click them; the page itself also ignores them (keyboard path, F3-06).
+- F-F3-07 `/best-vehicles/` shows the heading "Best Super Cars" while its rows equal the Sports ranking (same 23 rows as best-sports-cars); earlier the same URL served an older Sports list. Evidence: F3-30 vs F3-34, F3-38; snapshot `gta-6_vehicles_best-vehicles_.html`.
+- F-F3-08 `best-vehicles/?class=motorcycles` redirected to `best-motorcycles/` at ~11:50 UTC, but at 10:40 the same URL served a stale 20-row page (cache). Evidence: F3-39, snapshot `gta-6_vehicles_best-vehicles__class_motorcycles.html`.
+- F-F3-09 Class menu links are not Bootstrap menu items: arrow keys do nothing, Tab reaches them. Evidence: F3-47..F3-51.
+- F-F3-10 Boats, helicopters and planes have no ratings yet (every row "-"); motorcycles have 18 equal neighbours whose order is not explained by the off-road rating. Evidence: F3-32, F3-35..F3-37.
+- F-F3-11 Some ranking rows link to the old `/vehicles/gta-6/<alias>` form, which serves the same detail page (F2-30). Evidence: snapshots of best-* pages.
+
+## Unknowns
+
+| Id | Question | Rebuild should |
+|---|---|---|
+| U-F3-01 | Filled comparison page (2–4 items): columns, which rows, how differences / best values are highlighted, remove links — blocked by the Cloudflare challenge | one column per item (image, make + name link, remove "×" link) + empty "Add a vehicle" slots up to 4; rows = the detail page's info labels and stats in detail-page order; numeric stat rows show bars and mark the highest value per row (ties: all); missing values "-"; remove link = same URL without that item, renumbered |
+| U-F3-02 | Server handling of unsorted ids, numeric ids, unknown aliases, duplicates, more than 4 | CMP comments say unsorted and numeric-id URLs are redirected ("sorted like the comparison page does, so it needs no redirect"; "the comparison page redirects" article ids). Rebuild: redirect to the canonical URL (aliases, sorted, de-duplicated, first 4 valid); drop unknown aliases; fewer than 2 valid → board with the valid one(s) and the "at least two" note |
+| U-F3-03 | Ranking tie-break and order of unrated rows | ties and unrated rows in catalogue order (base model before its variants, then creation order) |
+| U-F3-04 | What `/best-vehicles/` should show | the Super class with matching heading and rows |
+| U-F3-05 | Unknown `?class=` (empty shell on the original) | 404 page |
+| U-F3-06 | Whether human visitors also get the comparison challenge | no challenge in the rebuild |

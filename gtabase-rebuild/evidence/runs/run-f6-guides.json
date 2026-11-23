@@ -7,7 +7,11 @@
  "captured_batches": [
   "f6-batchA.json",
   "f6-batchB.json",
-  "f6-batchC.json"
+  "f6-batchC.json",
+  "f6-batchD.json",
+  "f6-batchE.json",
+  "f6-batchF.json",
+  "f6-batchG.json"
  ],
  "cases": [
   {
@@ -59,12 +63,12 @@
    ],
    "reset": "clear",
    "values": {
-    "url": "/gta-6/animals/",
-    "heading": "<missing>",
-    "title": "Loading https://www.gtabase.com/gta-6/animals/albino-american-alligator"
+    "url": "/gta-6/animals/albino-american-alligator",
+    "heading": "Albino American Alligator",
+    "title": "Albino American Alligator | GTA 6 Animals Guide & Locations"
    },
-   "error": "click:grid-1-first-title-link: locator.click: Timeout 8000ms exceeded.",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchG.json"
   },
   {
    "id": "F6-03",
@@ -78,11 +82,11 @@
    "reset": "none",
    "values": {
     "url": "/gta-6/animals/",
-    "heading": "<missing>",
-    "count:guide-card": "0"
+    "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+    "count:guide-card": "255"
    },
-   "error": "back: page.goBack: Protocol error (Page.getNavigationHistory): Not attached to an active page",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchG.json"
   },
   {
    "id": "F6-04",
@@ -157,12 +161,12 @@
    ],
    "reset": "clear",
    "values": {
-    "url": "/gta-6/gangs/",
-    "heading": "<missing>",
-    "title": "Loading https://www.gtabase.com/gangs/gta-6/final-chapter-mc"
+    "url": "/gangs/gta-6/final-chapter-mc",
+    "heading": "Final Chapter MC",
+    "title": "Final Chapter MC | GTA 6 Gangs & Factions Guide"
    },
-   "error": "click:grid-1-first-card: locator.click: Timeout 8000ms exceeded.",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchG.json"
   },
   {
    "id": "F6-07",
@@ -554,13 +558,13 @@
    ],
    "reset": "clear",
    "values": {
-    "url": "/gta-6/gta-6-cheats-ps5-cheat-codes",
-    "heading": "<missing>",
-    "text:platform-current": "<missing>",
-    "count:platform-link": "0"
+    "url": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
+    "heading": "GTA 6 Cheats Xbox: Cheat Codes Guide for Xbox Series X|S",
+    "text:platform-current": "GTA 6 Cheats for Xbox Series X|S YOU ARE HERE",
+    "count:platform-link": "2"
    },
-   "error": "click:platform-xbox: locator.click: Timeout 8000ms exceeded.",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchD.json"
   },
   {
    "id": "F6-21",
@@ -618,19 +622,19 @@
    ],
    "reset": "clear",
    "values": {
-    "url": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
-    "heading": "<missing>",
+    "url": "/gta-6/gta-6-cheats-pc-full-list-of-cheat-codes",
+    "heading": "GTA 6 Cheats PC List & Guide: All GTA VI Cheat Codes for PC",
     "count:cheat-row": "0",
     "count:platform-link": "0",
-    "count:pc-platform-table-link": "0",
-    "list:pc-platform-table-link": "",
-    "count:toc-link": "0",
-    "attr:toc-first-link@href": "<missing>",
-    "count:body-link-ps5": "0",
-    "count:body-link-xbox": "0"
+    "count:pc-platform-table-link": "3",
+    "list:pc-platform-table-link": "GTA 6 Cheats for PS5 || GTA 6 Cheats for Xbox Series X|S || GTA 6 Cheats for PC",
+    "count:toc-link": "7",
+    "attr:toc-first-link@href": "/gta-6/gta-6-cheats-pc-full-list-of-cheat-codes#how-many-cheats-are-there-in-gta-6",
+    "count:body-link-ps5": "2",
+    "count:body-link-xbox": "2"
    },
-   "error": "mode:pc: page.goto: Timeout 60000ms exceeded.",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchD.json"
   },
   {
    "id": "F6-23",
@@ -689,12 +693,12 @@
    ],
    "reset": "clear",
    "values": {
-    "url": "/gta-6/map-locations/",
-    "heading": "<missing>",
-    "title": "Loading https://www.gtabase.com/gta-6/animals/nonexistent-xyz"
+    "url": "/gta-6/animals/nonexistent-xyz",
+    "heading": "404 Page Not Found",
+    "title": "404 Page Not Found"
    },
-   "error": "goto:/gta-6/animals/nonexistent-xyz: page.goto: Timeout 60000ms exceeded.",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchG.json"
   },
   {
    "id": "F6-26",
@@ -721,6 +725,7 @@
    "mode": "membership",
    "steps": [],
    "reads": [
+    "attr:acc-container@data-rlta-state",
     "count:acc-container",
     "attr:acc-container@data-rlta-type",
     "count:acc-button",
@@ -733,20 +738,21 @@
    ],
    "reset": "clear",
    "values": {
-    "url": "/gta-6/animals/nonexistent-xyz",
-    "heading": "<missing>",
-    "count:acc-container": "0",
-    "attr:acc-container@data-rlta-type": "<missing>",
-    "count:acc-button": "0",
-    "count:acc-open": "0",
-    "attr:acc-1@aria-expanded": "<missing>",
-    "attr:acc-2@aria-expanded": "<missing>",
-    "attr:acc-1@role": "<missing>",
-    "attr:acc-1@tabindex": "<missing>",
-    "attr:acc-1@aria-controls": "<missing>"
+    "url": "/membership/",
+    "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+    "attr:acc-container@data-rlta-state": "ready",
+    "count:acc-container": "1",
+    "attr:acc-container@data-rlta-type": "accordions",
+    "count:acc-button": "10",
+    "count:acc-open": "1",
+    "attr:acc-1@aria-expanded": "true",
+    "attr:acc-2@aria-expanded": "false",
+    "attr:acc-1@role": "button",
+    "attr:acc-1@tabindex": "0",
+    "attr:acc-1@aria-controls": "rlta-panel-does-mybase-sync-with-my-game-or-my-rockstar-account"
    },
-   "error": "mode:membership: goto:/membership/: page.goto: Timeout 60000ms exceeded.",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchF.json"
   },
   {
    "id": "F6-28",
@@ -763,15 +769,15 @@
    ],
    "reset": "none",
    "values": {
-    "url": "/membership/",
+    "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
     "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
-    "attr:acc-1@aria-expanded": "<missing>",
-    "attr:acc-2@aria-expanded": "<missing>",
-    "count:acc-open": "0",
-    "count:acc-panel-open": "0"
+    "attr:acc-1@aria-expanded": "false",
+    "attr:acc-2@aria-expanded": "true",
+    "count:acc-open": "1",
+    "count:acc-panel-open": "1"
    },
-   "error": "click:acc-2: locator.click: Timeout 8000ms exceeded.",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchF.json"
   },
   {
    "id": "F6-29",
@@ -786,13 +792,13 @@
    ],
    "reset": "none",
    "values": {
-    "url": "/membership/",
+    "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
     "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
-    "attr:acc-2@aria-expanded": "<missing>",
+    "attr:acc-2@aria-expanded": "false",
     "count:acc-open": "0"
    },
-   "error": "click:acc-2: locator.click: Timeout 8000ms exceeded.",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchF.json"
   },
   {
    "id": "F6-30",
@@ -805,18 +811,20 @@
    "reads": [
     "attr:acc-2@aria-expanded",
     "attr:acc-3@aria-expanded",
-    "count:acc-open"
+    "count:acc-open",
+    "errors"
    ],
    "reset": "none",
    "values": {
-    "url": "/membership/",
+    "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
     "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
-    "attr:acc-2@aria-expanded": "<missing>",
-    "attr:acc-3@aria-expanded": "<missing>",
-    "count:acc-open": "0"
+    "attr:acc-2@aria-expanded": "false",
+    "attr:acc-3@aria-expanded": "false",
+    "count:acc-open": "0",
+    "errors": ""
    },
-   "error": "focus:acc-2: locator.focus: Timeout 8000ms exceeded.",
-   "batch": "f6-batchB.json"
+   "error": null,
+   "batch": "f6-batchF.json"
   },
   {
    "id": "F6-31",
@@ -828,18 +836,20 @@
    "reads": [
     "attr:acc-1@aria-expanded",
     "attr:acc-3@aria-expanded",
-    "count:acc-open"
+    "count:acc-open",
+    "errors"
    ],
    "reset": "none",
    "values": {
-    "url": "/membership/",
+    "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
     "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
-    "attr:acc-1@aria-expanded": "<missing>",
-    "attr:acc-3@aria-expanded": "<missing>",
-    "count:acc-open": "0"
+    "attr:acc-1@aria-expanded": "false",
+    "attr:acc-3@aria-expanded": "false",
+    "count:acc-open": "0",
+    "errors": "Cannot create property 'scroll' on boolean 'true'"
    },
    "error": null,
-   "batch": "f6-batchB.json"
+   "batch": "f6-batchF.json"
   },
   {
    "id": "F6-32",
@@ -851,18 +861,20 @@
    "reads": [
     "attr:acc-1@aria-expanded",
     "attr:acc-last@aria-expanded",
-    "count:acc-open"
+    "count:acc-open",
+    "errors"
    ],
    "reset": "none",
    "values": {
-    "url": "/membership/",
+    "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
     "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
-    "attr:acc-1@aria-expanded": "true",
+    "attr:acc-1@aria-expanded": "false",
     "attr:acc-last@aria-expanded": "false",
-    "count:acc-open": "1"
+    "count:acc-open": "0",
+    "errors": "Cannot create property 'scroll' on boolean 'true'"
    },
    "error": null,
-   "batch": "f6-batchB.json"
+   "batch": "f6-batchF.json"
   },
   {
    "id": "F6-33",
@@ -877,24 +889,27 @@
    ],
    "reset": "none",
    "values": {
-    "url": "/membership/",
+    "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
     "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
     "attr:acc-last@aria-expanded": "false",
     "count:acc-open": "1"
    },
    "error": null,
-   "batch": "f6-batchB.json"
+   "batch": "f6-batchF.json"
   },
   {
    "id": "F6-34",
    "mode": null,
    "steps": [
     "goto:/membership/#will-my-subscription-extend-automatically",
-    "hover:heading",
+    "reload",
+    "scroll:faq-section",
     "wait:3000",
-    "wait:idle"
+    "wait:idle",
+    "wait:9000"
    ],
    "reads": [
+    "attr:acc-container@data-rlta-state",
     "attr:acc-1@aria-expanded",
     "attr:acc-3@aria-expanded",
     "count:acc-open"
@@ -903,12 +918,40 @@
    "values": {
     "url": "/membership/#will-my-subscription-extend-automatically",
     "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
-    "attr:acc-1@aria-expanded": "true",
-    "attr:acc-3@aria-expanded": "false",
+    "attr:acc-container@data-rlta-state": "ready",
+    "attr:acc-1@aria-expanded": "false",
+    "attr:acc-3@aria-expanded": "true",
     "count:acc-open": "1"
    },
    "error": null,
-   "batch": "f6-batchB.json"
+   "batch": "f6-batchF.json"
+  },
+  {
+   "id": "F6-39",
+   "mode": "membership-hover-first",
+   "steps": [
+    "try:click:acc-2",
+    "wait:1000"
+   ],
+   "reads": [
+    "attr:acc-container@data-rlta-state",
+    "count:acc-button",
+    "attr:acc-1@aria-expanded",
+    "attr:acc-2@aria-expanded",
+    "count:acc-open"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/membership/",
+    "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+    "attr:acc-container@data-rlta-state": "initial",
+    "count:acc-button": "10",
+    "attr:acc-1@aria-expanded": "true",
+    "attr:acc-2@aria-expanded": "false",
+    "count:acc-open": "1"
+   },
+   "error": null,
+   "batch": "f6-batchE.json"
   },
   {
    "id": "F6-35",

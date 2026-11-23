@@ -20,7 +20,7 @@ const OBS = {
   'F6-19': { url: '/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats', href: '/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats', heading: 'Combat Cheats' },
   'F6-37': { rows: 61, keyVisible: 'true', switcherVisible: 'true' },
 };
-const PC = globalThis.PC_OBS ?? null; // filled below when F6-22 is available
+const PC = { rows: 0, platformLinks: 0, tableLinks: 3, tableText: 'GTA 6 Cheats for PS5 || GTA 6 Cheats for Xbox Series X|S || GTA 6 Cheats for PC', toc: 7 }; // F6-22 readouts
 
 // category sizes stated in the page text ("10 Player, 11 Combat, 21 Vehicle Spawn, 3 Environment, 16 Screen Filter")
 const STATED = { player: 10, combat: 11, vehicle: 21, environment: 3, filter: 16 };
@@ -47,7 +47,7 @@ check('F6-19 index link target = page path + # + slug(heading)', OBS['F6-19'].hr
 check('F6-37 same list and icons at 390x844', OBS['F6-37'].rows === ps5.rows && OBS['F6-37'].keyVisible === 'true' && OBS['F6-37'].switcherVisible === 'true');
 if (PC) {
   check('F6-22 PC page: no cheat rows, no switcher', PC.rows === 0 && PC.platformLinks === 0);
-  check('F6-22 PC page: 3 platform links in a table (PS5, Xbox, PC)', PC.tableLinks === 3);
+  check('F6-22 PC page: 3 platform links in a table (PS5, Xbox, PC)', PC.tableLinks === 3 && PC.tableText.split(' || ').length === 3 && /PC$/.test(PC.tableText));
 }
 console.log(`${pass}/${n} observations reproduced`);
 process.exitCode = pass === n ? 0 : 1;

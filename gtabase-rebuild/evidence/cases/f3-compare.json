@@ -818,5 +818,40 @@
   "reads": [
    "title"
   ]
+ },
+ {
+  "id": "F3-50",
+  "steps": [
+   "goto:/gta-6/vehicles/best-vehicles/",
+   "focus:rank-class-select",
+   "press:Enter",
+   "wait:400",
+   "press:Tab",
+   "wait:200"
+  ],
+  "reads": [
+   "text:rank-class-focused"
+  ]
+ },
+ {
+  "id": "F3-51",
+  "reset": "none",
+  "steps": [
+   "press:Enter",
+   "wait:3000"
+  ],
+  "reads": [
+   "title"
+  ]
+ },
+ {
+  "id": "F3-52",
+  "steps": [
+   "goto:/gta-6/vehicles/best-vehicles/?class=no-such-class"
+  ],
+  "reads": [
+   "text:#ja-content",
+   "list:rank-content-links"
+  ]
  }
 ]

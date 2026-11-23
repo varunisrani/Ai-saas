@@ -1,8 +1,8 @@
 // Rule F2-R8 (detail URL normalisation, server side).
 // Plain words: the canonical detail URL is /gta-6/<list>/<alias> in lower case, no trailing slash, no query.
 //  - a trailing slash or upper-case letters -> redirect to the canonical URL;
-//  - a query string (e.g. ?i=<image>, ?utm_source=) -> 301 redirect to the bare URL (so gallery deep links
-//    "?i=" are lost and no lightbox opens);
+//  - the gallery image parameter ?i=<image key> -> 301 redirect to the bare URL (so gallery deep links are lost
+//    and no lightbox opens); other query strings (e.g. ?utm_source=) are kept and the page is served;
 //  - the legacy prefix /vehicles/gta-6/<alias> (used by some ranking links) is served as-is, same page, no redirect.
 // Observations: evidence/runs/run-f2-detail.json (final URL after the browser followed redirects) and the 301
 // in evidence/html/f2f3/snap-log.txt. Standalone: node f2-detail-url.mjs
@@ -30,10 +30,26 @@ const OBS = [
   "final": "/vehicles/gta-6/manchez",
   "bars": "5",
   "lightbox": null
+ },
+ {
+  "id": "F2-21",
+  "requested": "/gta-6/characters/jason?i=jason-duval-01",
+  "kind": "query-i",
+  "final": "/gta-6/characters/jason",
+  "bars": null,
+  "lightbox": "false"
+ },
+ {
+  "id": "F2-22",
+  "requested": "/gta-6/vehicles/sunset-sanchez?utm_source=test",
+  "kind": "query-other",
+  "final": "/gta-6/vehicles/sunset-sanchez?utm_source=test",
+  "bars": "5",
+  "lightbox": null
  }
 ];
 function canonical(req, kind) {
-  if (kind === 'legacy-prefix') return req;
+  if (kind === 'legacy-prefix' || kind === 'query-other') return req;
   return req.split('?')[0].replace(/\/$/, '').toLowerCase();
 }
 let pass = 0;

@@ -1,4 +1,5 @@
 {
+  "_notes": "Tokens compare-toggle*, compare-clear, rank-class-select use role= selectors; every other token is CSS copied from the original's markup (analysis side only). browser.args turns navigator.webdriver off so the deferred gtab-compare.js loads; macro 'wake' hovers the h1 and waits for the first toggle.",
   "app": "gtabase.com GTA 6 section - F3 comparison + rankings (observed 2026-11-23)",
   "baseUrl": "https://www.gtabase.com",
   "readOnly": true,

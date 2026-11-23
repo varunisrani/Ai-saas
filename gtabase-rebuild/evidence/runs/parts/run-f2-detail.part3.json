@@ -1,0 +1,96 @@
+{
+  "app": "gtabase.com GTA 6 section - F2 item detail pages (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:59:48.950Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F2-21",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/characters/jason?i=jason-duval-01",
+        "macro:wake",
+        "wait:3000"
+      ],
+      "reads": [
+        "visible:lightbox",
+        "count:gallery-thumbs"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "Jason Duval",
+        "title": "Jason Duval | GTA 6 Characters Guide, Bio & Voice Actor",
+        "visible:lightbox": "false",
+        "count:gallery-thumbs": "107"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-22",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/sunset-sanchez?utm_source=test"
+      ],
+      "reads": [
+        "count:stat-bars"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez?utm_source=test",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "count:stat-bars": "5"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-24",
+      "mode": "vehicle-standout",
+      "steps": [
+        "macro:to-pager"
+      ],
+      "reads": [
+        "count:pager-prev",
+        "count:pager-next",
+        "attr:pager-prev@href",
+        "attr:pager-next@href",
+        "text:pager-prev",
+        "text:pager-next"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "count:pager-prev": "1",
+        "count:pager-next": "1",
+        "attr:pager-prev@href": "/gta-6/vehicles/mud-crasher-rancher",
+        "attr:pager-next@href": "/gta-6/vehicles/tormentor-street-blazer",
+        "text:pager-prev": "Mud Crasher Rancher",
+        "text:pager-next": "Tormentor Street Blazer"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-25",
+      "mode": null,
+      "steps": [
+        "click:pager-next",
+        "wait:5000"
+      ],
+      "reads": [
+        "count:stat-bars"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/tormentor-street-blazer",
+        "heading": "Nagasaki Tormentor Street Blazer",
+        "title": "Nagasaki Tormentor Street Blazer | GTA 6 Bike Stats, Price, How To Get",
+        "count:stat-bars": "5"
+      },
+      "error": null
+    }
+  ]
+}

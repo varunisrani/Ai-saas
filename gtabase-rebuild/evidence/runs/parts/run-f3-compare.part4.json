@@ -85,6 +85,97 @@
         "count:rank-rows": "23"
       },
       "error": null
+    },
+    {
+      "id": "F3-46",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-vehicles/?class=no-such-class"
+      ],
+      "reads": [
+        "title",
+        "list:rank-h2",
+        "count:rank-content-links",
+        "count:rank-class-items",
+        "count:rank-paragraphs",
+        "count:rank-rows"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/?class=no-such-class",
+        "heading": "<missing>",
+        "title": "GTA 6 Best Vehicles List: Ranked By Class",
+        "list:rank-h2": "",
+        "count:rank-content-links": "3",
+        "count:rank-class-items": "0",
+        "count:rank-paragraphs": "2",
+        "count:rank-rows": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-47",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-vehicles/",
+        "focus:rank-class-select",
+        "press:Enter",
+        "wait:400"
+      ],
+      "reads": [
+        "visible:rank-class-menu",
+        "attr:rank-class-select@aria-expanded",
+        "text:rank-class-focused"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "visible:rank-class-menu": "true",
+        "attr:rank-class-select@aria-expanded": "true",
+        "text:rank-class-focused": "<missing>"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-48",
+      "mode": null,
+      "steps": [
+        "press:ArrowDown",
+        "wait:300"
+      ],
+      "reads": [
+        "visible:rank-class-menu",
+        "text:rank-class-focused"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "visible:rank-class-menu": "true",
+        "text:rank-class-focused": "<missing>"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-49",
+      "mode": null,
+      "steps": [
+        "press:ArrowDown",
+        "wait:300",
+        "press:Enter",
+        "wait:3000"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "title": "GTA 6 Best Super Cars List: Stats Ranking"
+      },
+      "error": null
     }
   ]
 }
