@@ -182,6 +182,857 @@
         "text:page-counter": "<missing>"
       },
       "error": null
+    },
+    {
+      "id": "F7-06",
+      "mode": "news",
+      "steps": [
+        "macro:show-pagination",
+        "click:page-last",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item",
+        "text:page-number",
+        "list:item-date"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "GET /gta-6/news/ FAILED",
+        "text:page-counter": "<missing>",
+        "count:list-item": "<missing>",
+        "text:page-number": "<missing>",
+        "list:item-date": "<missing>"
+      },
+      "error": "mode:news: page.goto: net::ERR_ABORTED at https://www.gtabase.com/gta-6/news/"
+    },
+    {
+      "id": "F7-07",
+      "mode": null,
+      "steps": [
+        "macro:show-pagination"
+      ],
+      "reads": [
+        "list:page-links",
+        "text:page-current",
+        "count:page-next",
+        "count:page-last",
+        "attr:page-prev@href",
+        "attr:page-first@href",
+        "count:page-disabled"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "list:page-links": "<missing>",
+        "text:page-current": "<missing>",
+        "count:page-next": "<missing>",
+        "count:page-last": "<missing>",
+        "attr:page-prev@href": "<missing>",
+        "attr:page-first@href": "<missing>",
+        "count:page-disabled": "<missing>"
+      },
+      "error": "macro:show-pagination: scroll:page-counter: locator.scrollIntoViewIfNeeded: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-08",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-6"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "count:list-item": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-09",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-99"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "count:list-item": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-10",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-1"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": ""
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-11",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/?start=30"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "text:page-number",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "text:page-counter": "<missing>",
+        "text:page-number": "<missing>",
+        "count:list-item": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-12",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/?start=999"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item",
+        "text:page-number"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "text:page-counter": "<missing>",
+        "count:list-item": "<missing>",
+        "text:page-number": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-13",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-2",
+        "reload",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "text:page-counter",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "text:page-counter": "<missing>",
+        "count:list-item": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-14",
+      "mode": "guides",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item",
+        "count:item-thumb",
+        "count:item-author",
+        "count:item-date",
+        "count:item-category",
+        "text:item-category",
+        "text:parent-category",
+        "attr:parent-category@href",
+        "count:share-buttons",
+        "list:share-buttons",
+        "text:page-counter",
+        "count:game-filter-toggle",
+        "count:list-banner"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "count:list-item": "<missing>",
+        "count:item-thumb": "<missing>",
+        "count:item-author": "<missing>",
+        "count:item-date": "<missing>",
+        "count:item-category": "<missing>",
+        "text:item-category": "<missing>",
+        "text:parent-category": "<missing>",
+        "attr:parent-category@href": "<missing>",
+        "count:share-buttons": "<missing>",
+        "list:share-buttons": "<missing>",
+        "text:page-counter": "<missing>",
+        "count:game-filter-toggle": "<missing>",
+        "count:list-banner": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-15",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/guides/page-3"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item",
+        "text:page-counter",
+        "text:page-number"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "count:list-item": "<missing>",
+        "text:page-counter": "<missing>",
+        "text:page-number": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-16",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/guides/page-4"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": ""
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-17",
+      "mode": "videos",
+      "steps": [
+        "macro:to-bottom"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item",
+        "count:item-thumb",
+        "count:item-author",
+        "count:item-date",
+        "count:item-category",
+        "list:item-date",
+        "text:parent-category",
+        "count:share-buttons",
+        "count:page-counter",
+        "count:pagination",
+        "count:list-banner"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "count:list-item": "<missing>",
+        "count:item-thumb": "<missing>",
+        "count:item-author": "<missing>",
+        "count:item-date": "<missing>",
+        "count:item-category": "<missing>",
+        "list:item-date": "<missing>",
+        "text:parent-category": "<missing>",
+        "count:share-buttons": "<missing>",
+        "count:page-counter": "<missing>",
+        "count:pagination": "<missing>",
+        "count:list-banner": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-18",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/videos/page-2"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": ""
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-19",
+      "mode": "videos",
+      "steps": [
+        "click:item-title-link",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "count:video-embed",
+        "attr:video-embed@title",
+        "count:article-author",
+        "count:author-block",
+        "text:article-published",
+        "text:article-category"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "count:video-embed": "<missing>",
+        "attr:video-embed@title": "<missing>",
+        "count:article-author": "<missing>",
+        "count:author-block": "<missing>",
+        "text:article-published": "<missing>",
+        "text:article-category": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-20",
+      "mode": "allnews",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item",
+        "count:item-tags",
+        "count:item-category",
+        "count:item-author",
+        "count:item-date",
+        "count:game-filter-toggle",
+        "visible:game-filter-menu"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "text:page-counter": "<missing>",
+        "count:list-item": "<missing>",
+        "count:item-tags": "<missing>",
+        "count:item-category": "<missing>",
+        "count:item-author": "<missing>",
+        "count:item-date": "<missing>",
+        "count:game-filter-toggle": "<missing>",
+        "visible:game-filter-menu": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-21",
+      "mode": "allnews",
+      "steps": [
+        "click:game-filter-toggle",
+        "wait:400"
+      ],
+      "reads": [
+        "visible:game-filter-menu",
+        "count:game-filter-links",
+        "list:game-filter-links",
+        "attr:game-filter-gta6@href",
+        "attr:game-filter-toggle@aria-expanded"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "visible:game-filter-menu": "<missing>",
+        "count:game-filter-links": "<missing>",
+        "list:game-filter-links": "<missing>",
+        "attr:game-filter-gta6@href": "<missing>",
+        "attr:game-filter-toggle@aria-expanded": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-22",
+      "mode": "allnews",
+      "steps": [
+        "click:game-filter-toggle",
+        "wait:400",
+        "click:game-filter-gta6",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "text:page-counter": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-23",
+      "mode": "news",
+      "steps": [
+        "focus:game-filter-toggle",
+        "press:Enter",
+        "wait:400"
+      ],
+      "reads": [
+        "visible:game-filter-menu",
+        "attr:game-filter-toggle@aria-expanded"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "visible:game-filter-menu": "<missing>",
+        "attr:game-filter-toggle@aria-expanded": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-24",
+      "mode": null,
+      "steps": [
+        "press:Escape",
+        "wait:400"
+      ],
+      "reads": [
+        "visible:game-filter-menu",
+        "attr:game-filter-toggle@aria-expanded"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "visible:game-filter-menu": "<missing>",
+        "attr:game-filter-toggle@aria-expanded": "<missing>"
+      },
+      "error": "press:Escape: keyboard.press: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-25",
+      "mode": "news",
+      "steps": [],
+      "reads": [
+        "text:item-title-link",
+        "attr:item-title-link@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "text:item-title-link": "<missing>",
+        "attr:item-title-link@href": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-26",
+      "mode": null,
+      "steps": [
+        "click:item-title-link",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": ""
+      },
+      "error": "click:item-title-link: locator.click: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-27",
+      "mode": "article",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "count:article-meta",
+        "count:article-author",
+        "text:article-published",
+        "attr:article-published@datetime",
+        "count:article-modified",
+        "text:article-category",
+        "attr:article-category@href",
+        "count:share-buttons",
+        "list:share-buttons",
+        "count:article-hero",
+        "text:toc-heading",
+        "count:toc-links",
+        "list:toc-links",
+        "count:section-anchors",
+        "list:section-headings",
+        "count:comments",
+        "count:comment-sort-options",
+        "list:comment-sort-options",
+        "text:comment-sort-current",
+        "attr:comment-limit@data-max",
+        "attr:comment-editor@aria-label",
+        "count:sidebar"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "count:article-meta": "<missing>",
+        "count:article-author": "<missing>",
+        "text:article-published": "<missing>",
+        "attr:article-published@datetime": "<missing>",
+        "count:article-modified": "<missing>",
+        "text:article-category": "<missing>",
+        "attr:article-category@href": "<missing>",
+        "count:share-buttons": "<missing>",
+        "list:share-buttons": "<missing>",
+        "count:article-hero": "<missing>",
+        "text:toc-heading": "<missing>",
+        "count:toc-links": "<missing>",
+        "list:toc-links": "<missing>",
+        "count:section-anchors": "<missing>",
+        "list:section-headings": "<missing>",
+        "count:comments": "<missing>",
+        "count:comment-sort-options": "<missing>",
+        "list:comment-sort-options": "<missing>",
+        "text:comment-sort-current": "<missing>",
+        "attr:comment-limit@data-max": "<missing>",
+        "attr:comment-editor@aria-label": "<missing>",
+        "count:sidebar": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-28",
+      "mode": "article",
+      "steps": [
+        "click:toc-link-3",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:toc-link-3@href",
+        "attr:toc-link-3@data-heading",
+        "visible:#duck-to-hide-from-the-cops"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "attr:toc-link-3@href": "<missing>",
+        "attr:toc-link-3@data-heading": "<missing>",
+        "visible:#duck-to-hide-from-the-cops": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-29",
+      "mode": "article",
+      "steps": [
+        "macro:show-pager"
+      ],
+      "reads": [
+        "count:pager",
+        "count:pager-prev",
+        "count:pager-next",
+        "attr:pager-prev@rel",
+        "attr:pager-next@rel",
+        "attr:pager-prev@href",
+        "attr:pager-next@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "count:pager": "<missing>",
+        "count:pager-prev": "<missing>",
+        "count:pager-next": "<missing>",
+        "attr:pager-prev@rel": "<missing>",
+        "attr:pager-next@rel": "<missing>",
+        "attr:pager-prev@href": "<missing>",
+        "attr:pager-next@href": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-30",
+      "mode": "article",
+      "steps": [
+        "macro:to-bottom"
+      ],
+      "reads": [
+        "list:breadcrumb-items",
+        "count:breadcrumb-items",
+        "count:related-block"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "list:breadcrumb-items": "<missing>",
+        "count:breadcrumb-items": "<missing>",
+        "count:related-block": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-31",
+      "mode": "controls",
+      "steps": [
+        "macro:to-bottom"
+      ],
+      "reads": [
+        "title",
+        "count:article-published",
+        "text:article-modified",
+        "attr:article-modified@datetime",
+        "text:article-category",
+        "count:toc-links",
+        "count:section-anchors",
+        "count:related-block",
+        "text:related-heading",
+        "count:related-cards",
+        "list:breadcrumb-items"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "count:article-published": "<missing>",
+        "text:article-modified": "<missing>",
+        "attr:article-modified@datetime": "<missing>",
+        "text:article-category": "<missing>",
+        "count:toc-links": "<missing>",
+        "count:section-anchors": "<missing>",
+        "count:related-block": "<missing>",
+        "text:related-heading": "<missing>",
+        "count:related-cards": "<missing>",
+        "list:breadcrumb-items": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-32",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/articles/this-article-does-not-exist-xyz"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": ""
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-33",
+      "mode": null,
+      "steps": [
+        "goto:/articles/gta-6/this-article-does-not-exist-xyz"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": ""
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-34",
+      "mode": "news-phone",
+      "steps": [],
+      "reads": [
+        "count:list-item",
+        "visible:item-thumb",
+        "visible:game-filter-toggle",
+        "visible:sidebar",
+        "text:page-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "count:list-item": "<missing>",
+        "visible:item-thumb": "<missing>",
+        "visible:game-filter-toggle": "<missing>",
+        "visible:sidebar": "<missing>",
+        "text:page-counter": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-35",
+      "mode": "article-phone",
+      "steps": [],
+      "reads": [
+        "visible:toc",
+        "count:toc-links",
+        "visible:share-block",
+        "visible:article-hero",
+        "visible:sidebar",
+        "text:article-published"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "visible:toc": "<missing>",
+        "count:toc-links": "<missing>",
+        "visible:share-block": "<missing>",
+        "visible:article-hero": "<missing>",
+        "visible:sidebar": "<missing>",
+        "text:article-published": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-36",
+      "mode": "article",
+      "steps": [
+        "click:article-category",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "text:page-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "text:page-counter": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-37",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/articles"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "calls": "",
+        "text:page-counter": "<missing>",
+        "count:list-item": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F7-38",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/articles/gta-6-driving-tips#vehicle-melee"
+      ],
+      "reads": [
+        "title",
+        "url",
+        "visible:#vehicle-melee"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "visible:#vehicle-melee": "<missing>"
+      },
+      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
     }
   ]
 }
