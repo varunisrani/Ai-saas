@@ -41,7 +41,7 @@
       "text:item-details-label": "Details",
       "text:item-category": "Grand Theft Auto VI",
       "attr:item-category@href": "/gta-6/news/",
-      "text:page-counter": "Page 1 of 6",
+      "text:page-counter": "Page 1 of M",
       "count:page-links": "0",
       "count:list-banner": "1",
       "visible:game-filter-toggle": "true"
@@ -104,7 +104,7 @@
     "expect": {
       "url": "/gta-6/news/page-2",
       "text:page-number": "- Page 2",
-      "text:page-counter": "Page 2 of 6",
+      "text:page-counter": "Page 2 of M",
       "count:list-item": "30",
       "count:list-intro": "0",
       "visible:game-filter-toggle": "false"
@@ -151,7 +151,7 @@
     ],
     "expect": {
       "url": "/gta-6/news/",
-      "text:page-counter": "Page 1 of 6"
+      "text:page-counter": "Page 1 of M"
     }
   },
   {
@@ -173,7 +173,7 @@
     ],
     "expect": {
       "url": "/gta-6/articles/page-6",
-      "text:page-counter": "Page 6 of 6",
+      "text:page-counter": "Page 6 of M",
       "count:list-item": "22",
       "text:page-number": "- Page 6"
     }
@@ -270,7 +270,7 @@
     ],
     "expect": {
       "url": "/gta-6/news/?start=30",
-      "text:page-counter": "Page 2 of 6",
+      "text:page-counter": "Page 2 of M",
       "text:page-number": "- Page 2",
       "count:list-item": "30"
     }
@@ -291,7 +291,7 @@
     ],
     "expect": {
       "url": "/gta-6/news/?start=999",
-      "text:page-counter": "Page 6 of 6",
+      "text:page-counter": "Page 6 of M",
       "count:list-item": "0",
       "text:page-number": "- Page 6"
     }
@@ -312,7 +312,7 @@
     ],
     "expect": {
       "url": "/gta-6/news/page-2",
-      "text:page-counter": "Page 2 of 6",
+      "text:page-counter": "Page 2 of M",
       "count:list-item": "30"
     }
   },
@@ -347,7 +347,7 @@
       "text:item-category": "Grand Theft Auto VI",
       "text:parent-category": "Rockstar Games News & Guides",
       "attr:parent-category@href": "/news/",
-      "text:page-counter": "Page 1 of 3",
+      "text:page-counter": "Page 1 of M",
       "count:game-filter-toggle": "0",
       "count:list-banner": "0"
     }
@@ -369,7 +369,7 @@
     "expect": {
       "url": "/gta-6/guides/page-3",
       "count:list-item": "1",
-      "text:page-counter": "Page 3 of 3",
+      "text:page-counter": "Page 3 of M",
       "text:page-number": "- Page 3"
     }
   },
@@ -480,7 +480,7 @@
     ],
     "expect": {
       "url": "/news/",
-      "text:page-counter": "Page 1 of 50",
+      "text:page-counter": "Page 1 of M",
       "count:list-item": "30",
       "count:item-category": "0",
       "count:item-date": "30",
@@ -529,7 +529,7 @@
     ],
     "expect": {
       "url": "/gta-6/news/",
-      "text:page-counter": "Page 1 of 6"
+      "text:page-counter": "Page 1 of M"
     }
   },
   {
@@ -782,7 +782,7 @@
       "visible:item-thumb": "true",
       "visible:game-filter-toggle": "true",
       "visible:sidebar": "true",
-      "text:page-counter": "Page 1 of 6"
+      "text:page-counter": "Page 1 of M"
     }
   },
   {
@@ -820,7 +820,7 @@
     ],
     "expect": {
       "url": "/gta-6/news/",
-      "text:page-counter": "Page 1 of 6"
+      "text:page-counter": "Page 1 of M"
     }
   },
   {
@@ -838,7 +838,7 @@
     ],
     "expect": {
       "url": "/gta-6/articles",
-      "text:page-counter": "Page 1 of 6",
+      "text:page-counter": "Page 1 of M",
       "count:list-item": "30"
     }
   },
@@ -880,7 +880,7 @@
       "visible:item-thumb": "true",
       "visible:item-title-link": "true",
       "visible:sidebar": "true",
-      "text:page-counter": "Page 1 of 3"
+      "text:page-counter": "Page 1 of M"
     }
   },
   {

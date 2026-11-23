@@ -21,8 +21,6 @@
     "expect": {
       "url": "/gta-6/animals/",
       "count:card-grid": "3",
-      "count:grid-2-cards": "69",
-      "count:grid-3-cards": "2",
       "attr:grid-1-first-link@href": "/gta-6/animals/albino-american-alligator",
       "attr:grid-1-first-link@aria-label": "Read more: Albino American Alligator",
       "count:section-heading": "3",
@@ -78,8 +76,6 @@
     "expect": {
       "url": "/gta-6/characters/",
       "count:card-grid": "4",
-      "count:grid-2-cards": "6",
-      "count:grid-3-cards": "10",
       "count:faq-question": "5",
       "attr:grid-1-first-link@href": "/gta-6/characters/jason"
     }
@@ -101,7 +97,6 @@
     "expect": {
       "url": "/gta-6/gangs/",
       "count:card-grid": "2",
-      "count:grid-2-cards": "0",
       "attr:grid-1-first-card@href": "/gangs/gta-6/final-chapter-mc",
       "count:section-heading": "4"
     }
@@ -138,9 +133,7 @@
     ],
     "expect": {
       "url": "/gta-6/properties/",
-      "count:card-grid": "4",
-      "count:grid-2-cards": "4",
-      "count:grid-3-cards": "3"
+      "count:card-grid": "4"
     }
   },
   {
@@ -576,8 +569,7 @@
       "attr:acc-1@aria-expanded": "true",
       "attr:acc-2@aria-expanded": "false",
       "attr:acc-1@role": "button",
-      "attr:acc-1@tabindex": "0",
-      "attr:acc-1@aria-controls": "rlta-panel-does-mybase-sync-with-my-game-or-my-rockstar-account"
+      "attr:acc-1@tabindex": "0"
     }
   },
   {

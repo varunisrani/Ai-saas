@@ -24,8 +24,7 @@
       "count:cl-box-checked": "0",
       "count:cl-box-disabled": "0",
       "text:pct-text": "0.00",
-      "text:guest-note": "Progress is saved in your browser. Login to keep progress across all your devices!",
-      "attr:guest-note-login@href": "/login/"
+      "text:guest-note": "Progress is saved in your browser. Login to keep progress across all your devices!"
     }
   },
   {

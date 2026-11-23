@@ -27,12 +27,12 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 1 Start | 1 | 1 | 0 | 100 |
 | 2 Bundle, API and auth map (reap-11 + browser walk) | 6 | 6 | 0 | 100 |
 | 3 Feature tracing (4 per v1 feature × 10) | 40 | 40 | 0 | 100 |
-| 4 Spec + vectors | 2 | 1 | 1 | 50 |
+| 4 Spec + vectors | 2 | 2 | 0 | 100 |
 | 5 Build: data + rules (2 builders + verify) | 3 | 0 | 3 | 0 |
 | 6 UI (build + screenshot review) | 2 | 0 | 2 | 0 |
 | 7 Validate | 4 | 0 | 4 | 0 |
 | 8 Close / resume | 1 | 0 | 1 | 0 |
-| **Total** | **59** | **48** | **11** | **81** |
+| **Total** | **59** | **49** | **10** | **83** |
 
 ## Tasks
 | # | Phase | Task | Status | Result / evidence |
@@ -54,7 +54,7 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 36–39 | 3 | F8 Media galleries: T1 · T2 · 20+ cases · T3 | ☑ | 38/38 clean cases, 4 rules, evidence/traces/f8-galleries.md |
 | 40–43 | 3 | F9 Hub + shell: T1 · T2 · 20+ cases · T3 | ☑ | 41/41 clean cases, 5 rules, evidence/traces/f9-shell.md |
 | 44–47 | 3 | F10 Favorites & progress: T1 · T2 · 20+ cases · T3 | ☑ | 32/32 clean cases, 3 rules, evidence/traces/f10-favorites.md |
-| 48 | 4 | CLONE_SPEC.md | ☐ | |
+| 48 | 4 | CLONE_SPEC.md | ☑ | 2,416 lines, 316 rules, 639+ tokens, 26 divergences; leak scan clean |
 | 49 | 4 | TEST_VECTORS.md + vector files | ☑ | 459 vectors / 11 suites (4 harness errors excluded); tools/normalize.json; per-suite rebuild profiles leonida-atlas/tests/e2e/profiles/ |
 | 50 | 5 | data builder (synthetic sample data + loaders) | ☐ | |
 | 51 | 5 | rules builder (filter/sort/compare/progress logic) | ☐ | |

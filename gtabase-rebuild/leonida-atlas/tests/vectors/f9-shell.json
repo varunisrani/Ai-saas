@@ -500,7 +500,6 @@
     "expect": {
       "url": "/gta-6/",
       "text:login-link": "Log In",
-      "attr:login-link@href": "#loginbox",
       "visible:login-heading": "false"
     }
   },

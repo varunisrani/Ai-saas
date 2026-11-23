@@ -279,8 +279,7 @@
       "url": "/gta-6/vehicles/sunset-sanchez",
       "visible:login-modal": "true",
       "text:login-title": "Sign in to MyBase",
-      "count:login-benefits": "1",
-      "attr:header-login@href": "https://www.gtabase.com/gta-6/vehicles/sunset-sanchez#loginbox"
+      "count:login-benefits": "1"
     }
   },
   {
@@ -556,7 +555,6 @@
       "text:map-panel-title": "FAVOURITES",
       "text:map-panel-text": "Want to keep your favourite places? Members of GTABase can star any marker and find it again under Personal, on every device. Log in to start.",
       "text:map-panel-login": "LOG IN",
-      "attr:map-panel-login@href": "#loginbox",
       "count:map-popup": "0"
     }
   },

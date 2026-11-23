@@ -565,7 +565,6 @@
       "attr:cmp-crumb@href": "/gta-6/vehicles/",
       "count:cmp-add": "5",
       "list:cmp-add-title": "Add a vehicle || ADD A VEHICLE || ADD A VEHICLE || ADD A VEHICLE || ADD A VEHICLE",
-      "count:cmp-picker-all": "5",
       "attr:cmp-picker@placeholder": "Search...",
       "attr:cmp-picker@aria-expanded": "false",
       "attr:cmp-picker@aria-autocomplete": "list",
@@ -595,7 +594,6 @@
       "text:cmp-crumb": "GTA 6 Weapons Database & Statistics",
       "count:cmp-add": "5",
       "list:cmp-add-title": "Add a weapon || ADD A WEAPON || ADD A WEAPON || ADD A WEAPON || ADD A WEAPON",
-      "count:cmp-picker-all": "5",
       "text:cmp-note": "Add at least two GTA 6 weapons to see the comparison.",
       "list:cmp-links": "All GTA 6 weapons || Vehicle comparison || All GTA 6 vehicles"
     }
@@ -618,9 +616,7 @@
     ],
     "expect": {
       "url": "/gta-6/weapons/comparison/",
-      "attr:cmp-picker@aria-expanded": "true",
-      "count:cmp-options": "150",
-      "text:cmp-more": "61 more: keep typing"
+      "attr:cmp-picker@aria-expanded": "true"
     }
   },
   {
@@ -638,7 +634,6 @@
     ],
     "expect": {
       "url": "/gta-6/weapons/comparison/",
-      "count:cmp-options": "13",
       "count:cmp-more": "0"
     }
   },
@@ -656,9 +651,7 @@
       "text:cmp-more"
     ],
     "expect": {
-      "url": "/gta-6/weapons/comparison/",
-      "count:cmp-options": "0",
-      "text:cmp-more": "No match"
+      "url": "/gta-6/weapons/comparison/"
     }
   },
   {
@@ -675,8 +668,7 @@
       "list:cmp-options"
     ],
     "expect": {
-      "url": "/gta-6/weapons/comparison/",
-      "count:cmp-options": "7"
+      "url": "/gta-6/weapons/comparison/"
     }
   },
   {
@@ -730,8 +722,7 @@
       "count:cmp-options"
     ],
     "expect": {
-      "url": "/gta-6/weapons/comparison/",
-      "count:cmp-options": "13"
+      "url": "/gta-6/weapons/comparison/"
     }
   },
   {

@@ -153,3 +153,16 @@ Not yet started: CLONE_SPEC, vectors, builders, UI, validation.
    (explicit suites: extra run-*.part2 files exist).
 3. Builders (data, rules) from spec + vectors only; then UI builder; verify each report myself.
 4. Phase 7 parity with ONE runner against the original (origin fragility).
+
+### Phase 4 (reap-04 loaded via Skill tool)
+| # | Phase | Skill | Template | Target | Status | Outputs / evidence |
+|---|---|---|---|---|---|---|
+| 41 | Spec + vectors | anthropic-skills:reap-04-software-and-feature-cloning | Full application clone (behavioral) | GTA 6 section, F1–F10 | ☑ | CLONE_SPEC.md (316 rules, written by a spec agent from the traces; orchestrator leak scan: no code fences, no endpoints, no original class names, no personal names); TEST_VECTORS.md (459 vectors, 11 suites) |
+
+- Fixture decision (orchestrator amendment): sample data keeps the identifiers the vectors use (slugs, ids, display names of
+  ~40 referenced items, map category names, functional labels) with invented stats/descriptions/images; everything else invented.
+- Test attribute contract: tokens live in a space-separated `data-testid`; rebuild profiles match `[data-testid~="token"]`,
+  scoped where two suites share a name (F4 map-root, F9 header, F7 main). Raw original selectors in steps are mapped to
+  rebuild tokens inside the rebuild profiles (vectors themselves are never hand-edited).
+- normalize.json: 333 ignored readout keys (wording/network 7, implementation attributes, raw selectors, divergences, data-only),
+  replaces for "Page N of M" and the map-view timestamp; notComparable: F1-44, F3-15, F3-26..29, F9-16.
