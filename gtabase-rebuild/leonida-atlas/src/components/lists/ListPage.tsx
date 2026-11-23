@@ -145,26 +145,58 @@ export function ListPage({ config, entries }: ListPageProps) {
       }
       return original.call(this, data, unused, url);
     };
+    // An in-app visit of the bare list URL while the list stays mounted (e.g. its own menu link) is a plain visit:
+    // the list starts again from the defaults (R-531).
+    const originalPush = window.history.pushState;
+    const guardedPush: History["pushState"] = function (this: History, data, unused, url) {
+      const before = window.location.pathname;
+      const result = originalPush.call(this, data, unused, url);
+      try {
+        const internal = !!data && typeof data === "object" && "__NA" in (data as Record<string, unknown>);
+        if (internal && url !== undefined && url !== null) {
+          const u = new URL(String(url), window.location.href);
+          if (!u.hash && u.pathname === before) window.setTimeout(() => initRef.current("navigate"), 0);
+        }
+      } catch {
+        /* ignore */
+      }
+      return result;
+    };
     window.history.replaceState = guarded;
+    window.history.pushState = guardedPush;
     return () => {
       if (window.history.replaceState === guarded) window.history.replaceState = original;
+      if (window.history.pushState === guardedPush) window.history.pushState = originalPush;
     };
   }, []);
 
   // ------------------------------------------------------------ load (R-526, R-529, R-531)
+  const initFrom = useCallback(
+    (kind: NavigationKind) => {
+      const defaults = defaultListHash(rules);
+      const saved = safeRead(memoryKey, "session");
+      const choice = chooseInitialHash(kind, window.location.hash, saved, defaults);
+      const init = initialListHash(choice.hash, rules, validOptions);
+      stateRef.current = init.state;
+      setState(init.state);
+      setBatches(1);
+      const d: Record<string, string> = {};
+      for (const f of config.filters) {
+        if (f.kind === "text") d[f.hashKey] = typeof init.state[f.hashKey] === "string" ? (init.state[f.hashKey] as string) : "";
+      }
+      setDrafts(d);
+      leavingRef.current = false; // the list stays: this visit's hash is remembered (R-530, R-531)
+      writeHash(init.pairs);
+      setMounted(true);
+    },
+    [config.filters, memoryKey, rules, validOptions, writeHash],
+  );
+  const initRef = useRef(initFrom);
+  initRef.current = initFrom;
+
   useEffect(() => {
-    const defaults = defaultListHash(rules);
-    const saved = safeRead(memoryKey, "session");
     if (navKindRef.current === null) navKindRef.current = navigationKind();
-    const choice = chooseInitialHash(navKindRef.current, window.location.hash, saved, defaults);
-    const init = initialListHash(choice.hash, rules, validOptions);
-    stateRef.current = init.state;
-    setState(init.state);
-    const d: Record<string, string> = {};
-    for (const f of textFilters) d[f.hashKey] = typeof init.state[f.hashKey] === "string" ? (init.state[f.hashKey] as string) : "";
-    setDrafts(d);
-    writeHash(init.pairs);
-    setMounted(true);
+    initFrom(navKindRef.current);
     // leaving after a link click: later writes are not copied to the memory (R-530)
     const onDown = (e: PointerEvent) => {
       const a = (e.target as Element | null)?.closest?.("a[href]");

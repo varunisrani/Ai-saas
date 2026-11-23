@@ -29,10 +29,10 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 3 Feature tracing (4 per v1 feature × 10) | 40 | 40 | 0 | 100 |
 | 4 Spec + vectors | 2 | 2 | 0 | 100 |
 | 5 Build: data + rules (2 builders + verify) | 3 | 3 | 0 | 100 |
-| 6 UI (build + screenshot review) | 2 | 0 | 2 | 0 |
+| 6 UI (build + screenshot review) | 2 | 2 | 0 | 100 |
 | 7 Validate | 4 | 0 | 4 | 0 |
 | 8 Close / resume | 1 | 0 | 1 | 0 |
-| **Total** | **59** | **52** | **7** | **88** |
+| **Total** | **59** | **54** | **5** | **92** |
 
 ## Tasks
 | # | Phase | Task | Status | Result / evidence |
@@ -59,8 +59,8 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 50 | 5 | data builder (synthetic sample data + loaders) | ☑ | src/data, 36 checks |
 | 51 | 5 | rules builder (filter/sort/compare/progress logic) | ☑ | src/lib, 25 modules, 303 tests |
 | 52 | 5 | verify builder reports (build, typecheck, unit, vectors) | ☑ | orchestrator re-run: vitest 339/339, tsc clean except scaffold LayoutProps (generated at build) |
-| 53 | 6 | UI build | ☐ | |
-| 54 | 6 | screenshot review (desktop + phone) | ☐ | |
+| 53 | 6 | UI build | ☑ | 3 clean-room UI builders (shell/content, database, map/progress); production build passes (orchestrator) |
+| 54 | 6 | screenshot review (desktop + phone) | ☑ | evidence/parity/screens/ (17 routes × 2 widths): own name/logo/palette/fonts/art; no imitation of the original look |
 | 55 | 7 | vector replay on rebuild | ☐ | |
 | 56 | 7 | fresh original parity run | ☐ | |
 | 57 | 7 | rebuild parity run + diff | ☐ | |

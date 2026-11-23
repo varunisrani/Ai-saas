@@ -172,3 +172,14 @@ Not yet started: CLONE_SPEC, vectors, builders, UI, validation.
 |---|---|---|---|---|---|---|
 | 42 | Build: data | reap-04 | Clone one feature into my own app | src/data (spec §1, §16, §19.1) | ☑ | 18 files, 36 checks; observable differences: synthetic values everywhere except §16.2 fixture identifiers; 16 HYPOTHESIS choices (evidence/parity/builder-choices.md) |
 | 43 | Build: rules | reap-04 | Clone one feature into my own app | src/lib (spec §19.2) | ☑ | 25 modules, 303 tests; observable differences: R-410 one-decimal rating vs observed "4 of 5"; 5 spec gaps + 17 HYPOTHESIS choices (builder-choices.md) |
+
+### Phase 6 (reap-04 "UI/UX behavior cloning without assets")
+| # | Phase | Skill | Template | Target | Status | Outputs / evidence |
+|---|---|---|---|---|---|---|
+| 44 | UI | reap-04 | UI/UX behavior cloning without assets | all GTA 6 routes (spec §0, §5–§15, §18, §20) | ☑ | builders UI-A/B/C; screenshots evidence/parity/screens/ (desk_*, phone_*); interaction model documented per rule in CLONE_SPEC §15 |
+- Orchestrator checks: `npm run build` passes (all routes, proxy); screenshot review at 1366x900 and 390x844 — own name "Leonida Atlas",
+  compass logo, sand/teal/coral palette, Space Grotesk/Inter, generated SVG art; layout logic matches the original (header, GTA 6
+  sub-navigation, filters, cards) but not its look, logo, game-logo menu or colors.
+- Noted: the §16.2 fixture identifiers keep ~40 real in-game item names that the vectors read (e.g. the four fastest standouts);
+  all their stats, descriptions and images are invented.
+- Harness: the rebuild's copy of run-cases.mjs was synced with the analysis-side patches (keydown/keyup, clickat, browser.args).
