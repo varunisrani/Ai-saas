@@ -50,7 +50,7 @@ export function InfoRows({ rows }: { rows: InfoRow[] }) {
         <div key={r.label} className="contents">
           <dt
             data-testid="info-labels"
-            className="border-b border-sand-dark bg-sand/60 px-3 py-2 font-display text-sm font-semibold text-muted last-of-type:border-b-0"
+            className="border-b border-sand-dark bg-sand/60 px-3 py-2 font-display text-sm font-semibold text-muted"
           >
             {r.label}
           </dt>
