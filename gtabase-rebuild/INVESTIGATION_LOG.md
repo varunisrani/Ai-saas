@@ -83,3 +83,73 @@ real data later through the documented data format).
 - Full REA: 159 scripts (75 files + 85 inline, one duplicate removed) → ev_cec9d630…; verified parsed 159/159, parse_failures 0,
   no provider_timeout, evidence.json saved. Two earlier attempts failed on the `--view` argument (invalid_request), not on the analysis.
 - Runner: skill runner copied to tools/web, patched for bundled Chromium + proxy + ad-host blocking; demo smoke test 13/13 ok.
+
+## Phase 3 REAP checklist rows (reap-02 loaded via Skill tool by the orchestrator; agents followed evidence/traces/BRIEF.md)
+
+| # | Phase | Skill | Template | Target | Status | Outputs / evidence |
+|---|---|---|---|---|---|---|
+| 10 | Tracing: F1 Database lists | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f1-lists | ☑ | evidence/traces/f1-lists.md §T1, REA ev_cb6c7e907a3e… |
+| 11 | Tracing: F1 Database lists | reap-02 | Trace a button to its effect | f1-lists | ☑ | evidence/traces/f1-lists.md §T2 |
+| 12 | Tracing: F1 Database lists | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f1-lists | ☑ | 58/60 clean cases evidence/runs/run-f1-lists.json; 7 rule scripts PASS |
+| 13 | Tracing: F2 Item detail pages | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f2-detail | ☑ | evidence/traces/f2-detail.md §T1, REA ev_9314a5acfeb8… |
+| 14 | Tracing: F2 Item detail pages | reap-02 | Trace a button to its effect | f2-detail | ☑ | evidence/traces/f2-detail.md §T2 |
+| 15 | Tracing: F2 Item detail pages | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f2-detail | ☑ | 34/34 clean cases evidence/runs/run-f2-detail.json; 8 rule scripts PASS |
+| 16 | Tracing: F3 Comparison + rankings | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f3-compare | ☑ | evidence/traces/f3-compare.md §T1, REA ev_4474e414e176… |
+| 17 | Tracing: F3 Comparison + rankings | reap-02 | Trace a button to its effect | f3-compare | ☑ | evidence/traces/f3-compare.md §T2 |
+| 18 | Tracing: F3 Comparison + rankings | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f3-compare | ☑ | 53/53 clean cases evidence/runs/run-f3-compare.json; 5 rule scripts PASS |
+| 19 | Tracing: F4 Interactive map | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f4-map | ☑ | evidence/traces/f4-map.md §T1, REA ev_c62f19a5c162… |
+| 20 | Tracing: F4 Interactive map | reap-02 | Trace a button to its effect | f4-map | ☑ | evidence/traces/f4-map.md §T2 |
+| 21 | Tracing: F4 Interactive map | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f4-map | ☑ | 74/76 clean cases evidence/runs/run-f4-map.json; 8 rule scripts PASS |
+| 22 | Tracing: F5 Checklists & mission lists | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f5-checklists | ☑ | evidence/traces/f5-checklists.md §T1, REA ev_329e3f038cc3… |
+| 23 | Tracing: F5 Checklists & mission lists | reap-02 | Trace a button to its effect | f5-checklists | ☑ | evidence/traces/f5-checklists.md §T2 |
+| 24 | Tracing: F5 Checklists & mission lists | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f5-checklists | ☑ | 38/38 clean cases evidence/runs/run-f5-checklists.json; 4 rule scripts PASS |
+| 25 | Tracing: F6 Guide pages | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f6-guides | ☑ | evidence/traces/f6-guides.md §T1, REA ev_7642ee3762c3… |
+| 26 | Tracing: F6 Guide pages | reap-02 | Trace a button to its effect | f6-guides | ☑ | evidence/traces/f6-guides.md §T2 |
+| 27 | Tracing: F6 Guide pages | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f6-guides | ☑ | 43/43 clean cases evidence/runs/run-f6-guides.json; 5 rule scripts PASS |
+| 28 | Tracing: F7 News, guides, videos + article | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f7-news | ☑ | evidence/traces/f7-news.md §T1, REA ev_02c56b6b18ed… |
+| 29 | Tracing: F7 News, guides, videos + article | reap-02 | Trace a button to its effect | f7-news | ☑ | evidence/traces/f7-news.md §T2 |
+| 30 | Tracing: F7 News, guides, videos + article | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f7-news | ☑ | 48/48 clean cases evidence/runs/run-f7-news.json; 5 rule scripts PASS |
+| 31 | Tracing: F8 Media galleries | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f8-galleries | ☑ | evidence/traces/f8-galleries.md §T1, REA ev_27d0c4c71102… |
+| 32 | Tracing: F8 Media galleries | reap-02 | Trace a button to its effect | f8-galleries | ☑ | evidence/traces/f8-galleries.md §T2 |
+| 33 | Tracing: F8 Media galleries | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f8-galleries | ☑ | 38/38 clean cases evidence/runs/run-f8-galleries.json; 4 rule scripts PASS |
+| 34 | Tracing: F9 Hub + site shell | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f9-shell | ☑ | evidence/traces/f9-shell.md §T1, REA ev_4d3b173dab25… |
+| 35 | Tracing: F9 Hub + site shell | reap-02 | Trace a button to its effect | f9-shell | ☑ | evidence/traces/f9-shell.md §T2 |
+| 36 | Tracing: F9 Hub + site shell | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f9-shell | ☑ | 41/41 clean cases evidence/runs/run-f9-shell.json; 5 rule scripts PASS |
+| 37 | Tracing: F10 Favorites & personal progress | anthropic-skills:reap-02-feature-tracing-any-program | Explain one feature (+ reap-11 Minified / bundled JS feature tracing) | f10-favorites | ☑ | evidence/traces/f10-favorites.md §T1, REA ev_83aed0af2dd7… |
+| 38 | Tracing: F10 Favorites & personal progress | reap-02 | Trace a button to its effect | f10-favorites | ☑ | evidence/traces/f10-favorites.md §T2 |
+| 39 | Tracing: F10 Favorites & personal progress | reap-02 | Recover a rule and rebuild it (+ 20+ recorded cases) | f10-favorites | ☑ | 32/32 clean cases evidence/runs/run-f10-favorites.json; 3 rule scripts PASS |
+
+### Phase 3 notes
+- 6 analysis agents ran in parallel (F1; F2+F3; F4; F5+F10; F6+F8; F7+F9). Runner patches by agents: `keydown:`/`keyup:` steps, `clickat:x,y`, `browser.args` (used to launch with `--disable-blink-features=AutomationControlled`, because the site's deferred-script loader skips automated browsers).
+- Origin outage ~10:45–11:45 UTC on uncached pages (HTTP 500 after ~61 s); parallel agent traffic may have contributed. Phase 7 original-site runs will use a single runner.
+- The site search (/search?q=) redirects to Google; 5 redirect hops reached google.com during F9 cases (2 answered with an unusual-traffic page); not repeated.
+- Cloudflare challenges every comparison URL with a query string (307 → 403 "Just a moment..."): filled comparison layout = UNKNOWN.
+
+### reap-16 checkpoint — end of phase 3 (context getting long), 2026-11-23
+
+| # | Phase | Skill | Template | Target | Status | Outputs / evidence |
+|---|---|---|---|---|---|---|
+| 40 | Checkpoint | anthropic-skills:reap-16-long-running-investigations | Continue where you left off | whole investigation | ☑ | UNKNOWNS.md re-ranked (11 open/hypothesis rows, 8 resolved); this entry |
+
+**State.** Phases 1–3 done (47/59 tasks). 463 recorded cases (459 clean), 54 rule scripts (all PASS),
+10 traces. Rebuild scaffold `leonida-atlas/` (Next.js 16.4.6, cacheComponents off, playwright-core 1.63.0).
+Not yet started: CLONE_SPEC, vectors, builders, UI, validation.
+
+**Discarded hypotheses (with the evidence that killed them).**
+- "The lists have page buttons" → infinite append of 100 per scroll, hash unchanged (F1 paging rule, 12/12).
+- "Several class checkboxes add up" → a plain click switches; only Ctrl/Cmd/Shift-click adds (f1-class-tiles, 9/9).
+- "Galleries use Regular Labs Modals" → Ignite Gallery lightbox; Modals only serves the Log In box (f8 trace).
+- "Guide pages use tabs/accordions" → plain HTML; accordions only on /membership/ (f6 trace).
+- "Guests can save favorites" → every favorite control opens the login dialog, nothing stored (f10, 32/32).
+- "Search has a results page" → /search 302s to Google site: search (f9-shell-search rule 19/19).
+- "Closed map categories are collapsed" → "closed" = no member suggestions; all groups start expanded (f4 trace).
+
+**Resume here (numbered).**
+1. Load anthropic-skills:reap-04-software-and-feature-cloning; write CLONE_SPEC.md from the ten traces' "Behavior
+   summary for the spec" + "Command vocabulary" sections and FINDINGS.md (no code, no CSS class names).
+2. Write tools/normalize.json (ignore the data-only readout keys listed in each trace; mask dates/ids) and run
+   `node tools/common/build-vectors.mjs evidence/runs leonida-atlas/tests/vectors TEST_VECTORS.md tools/normalize.json
+   f1-lists f2-detail f3-compare f4-map f5-checklists f6-guides f6-guides-noyt f7-news f8-galleries f9-shell f10-favorites`
+   (explicit suites: extra run-*.part2 files exist).
+3. Builders (data, rules) from spec + vectors only; then UI builder; verify each report myself.
+4. Phase 7 parity with ONE runner against the original (origin fragility).

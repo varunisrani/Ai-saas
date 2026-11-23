@@ -26,13 +26,13 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 |---|---|---|---|---|
 | 1 Start | 1 | 1 | 0 | 100 |
 | 2 Bundle, API and auth map (reap-11 + browser walk) | 6 | 6 | 0 | 100 |
-| 3 Feature tracing (4 per v1 feature × 10) | 40 | 0 | 40 | 0 |
+| 3 Feature tracing (4 per v1 feature × 10) | 40 | 40 | 0 | 100 |
 | 4 Spec + vectors | 2 | 0 | 2 | 0 |
 | 5 Build: data + rules (2 builders + verify) | 3 | 0 | 3 | 0 |
 | 6 UI (build + screenshot review) | 2 | 0 | 2 | 0 |
 | 7 Validate | 4 | 0 | 4 | 0 |
 | 8 Close / resume | 1 | 0 | 1 | 0 |
-| **Total** | **59** | **7** | **52** | **12** |
+| **Total** | **59** | **47** | **12** | **80** |
 
 ## Tasks
 | # | Phase | Task | Status | Result / evidence |
@@ -44,16 +44,16 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 5 | 2 | reap-11 auth & token flow | ☑ | see INVESTIGATION_LOG phase 2 |
 | 6 | 2 | reap-11 website clone (structure + behavior): browser walk of every GTA 6 route | ☑ | see INVESTIGATION_LOG phase 2 |
 | 7 | 2 | reap-11 web feature mapping → feature inventory | ☑ | see INVESTIGATION_LOG phase 2 |
-| 8–11 | 3 | F1 Database lists: T1 · T2 · 20+ cases · T3 | ☐ | |
-| 12–15 | 3 | F2 Item detail pages: T1 · T2 · 20+ cases · T3 | ☐ | |
-| 16–19 | 3 | F3 Comparison + rankings: T1 · T2 · 20+ cases · T3 | ☐ | |
-| 20–23 | 3 | F4 Interactive map: T1 · T2 · 20+ cases · T3 | ☐ | |
-| 24–27 | 3 | F5 Checklists & mission lists: T1 · T2 · 20+ cases · T3 | ☐ | |
-| 28–31 | 3 | F6 Guide pages: T1 · T2 · 20+ cases · T3 | ☐ | |
-| 32–35 | 3 | F7 News/guides/videos + article: T1 · T2 · 20+ cases · T3 | ☐ | |
-| 36–39 | 3 | F8 Media galleries: T1 · T2 · 20+ cases · T3 | ☐ | |
-| 40–43 | 3 | F9 Hub + shell: T1 · T2 · 20+ cases · T3 | ☐ | |
-| 44–47 | 3 | F10 Favorites & progress: T1 · T2 · 20+ cases · T3 | ☐ | |
+| 8–11 | 3 | F1 Database lists: T1 · T2 · 20+ cases · T3 | ☑ | 58/60 clean cases, 7 rules, evidence/traces/f1-lists.md |
+| 12–15 | 3 | F2 Item detail pages: T1 · T2 · 20+ cases · T3 | ☑ | 34/34 clean cases, 8 rules, evidence/traces/f2-detail.md |
+| 16–19 | 3 | F3 Comparison + rankings: T1 · T2 · 20+ cases · T3 | ☑ | 53/53 clean cases, 5 rules, evidence/traces/f3-compare.md |
+| 20–23 | 3 | F4 Interactive map: T1 · T2 · 20+ cases · T3 | ☑ | 74/76 clean cases, 8 rules, evidence/traces/f4-map.md |
+| 24–27 | 3 | F5 Checklists & mission lists: T1 · T2 · 20+ cases · T3 | ☑ | 38/38 clean cases, 4 rules, evidence/traces/f5-checklists.md |
+| 28–31 | 3 | F6 Guide pages: T1 · T2 · 20+ cases · T3 | ☑ | 43/43 clean cases, 5 rules, evidence/traces/f6-guides.md |
+| 32–35 | 3 | F7 News/guides/videos + article: T1 · T2 · 20+ cases · T3 | ☑ | 48/48 clean cases, 5 rules, evidence/traces/f7-news.md |
+| 36–39 | 3 | F8 Media galleries: T1 · T2 · 20+ cases · T3 | ☑ | 38/38 clean cases, 4 rules, evidence/traces/f8-galleries.md |
+| 40–43 | 3 | F9 Hub + shell: T1 · T2 · 20+ cases · T3 | ☑ | 41/41 clean cases, 5 rules, evidence/traces/f9-shell.md |
+| 44–47 | 3 | F10 Favorites & progress: T1 · T2 · 20+ cases · T3 | ☑ | 32/32 clean cases, 3 rules, evidence/traces/f10-favorites.md |
 | 48 | 4 | CLONE_SPEC.md | ☐ | |
 | 49 | 4 | TEST_VECTORS.md + vector files | ☐ | |
 | 50 | 5 | data builder (synthetic sample data + loaders) | ☐ | |
