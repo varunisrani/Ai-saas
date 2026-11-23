@@ -1,0 +1,11 @@
+F10-01       ok | url=/gta-6/vehicles/sunset-sanchez; heading=Maibatsu Sunset Sanchez; count:fav-button=1; text:fav-button=Add To Favorites; attr:fav-button@type=button; count:fav-button-role=0; attr:body@class=; visible:login-modal=false
+F10-04       ok | url=/gta-6/animals/gray-fox; heading=Gray Fox; text:fav-button=Add To Favorites; visible:login-modal=true; text:login-title=Save your GTA 6 favorites; text:login-benefits=Create a free account to save your favorites, tra
+F10-07       ok | url=/gta-6/characters/jason; heading=Jason Duval; text:fav-button=Add To Favorites; visible:login-modal=true; text:login-title=Save your GTA 6 favorites; text:login-benefits=Create a free account to save your favorites, 
+F10-10       ok | url=/gta-6/vehicles/sunset-sanchez; heading=Maibatsu Sunset Sanchez; visible:login-modal=false; text:fav-button=Add To Favorites
+F10-13       ok | url=/gta-6/vehicles/sunset-sanchez; heading=Maibatsu Sunset Sanchez; visible:login-modal=true; text:login-title=Sign in to MyBase; count:login-benefits=0; attr:login-modal@class=<missing>; calls=; blocked=
+F10-17       ok | url=/gta-6/vehicles/sunset-sanchez; heading=Maibatsu Sunset Sanchez; text:fav-button=Add To Favorites; visible:login-modal=false; text:login-title=Sign in to MyBase; count:login-benefits=0; local:guest_checklists=<missin
+F10-20       ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc; heading=GTA 6 Cars & Vehicles Database: Full List & Stats; count:list-fav-control=0; count:fav-button=0; calls=
+F10-23       ok | url=/gta-6/map/#garage-003; heading=GTA 6 INTERACTIVE MAP; visible:map-panel=true; attr:map-panel@role=dialog; attr:map-panel@aria-label=Favourites; text:map-panel-title=FAVOURITES; text:map-panel-text=Want to keep your 
+F10-26       ok | url=/gta-6/map/; heading=GTA 6 INTERACTIVE MAP; count:map-personal-marker=1; visible:map-panel=true; attr:map-panel@aria-label=Personal marker; text:map-panel-title=PERSONAL MARKER; text:map-panel-text=Want to keep your 
+F10-29       ok | url=/membership/; heading=Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress; attr:.osm-plan-3 .btn-signup@href=/membership/free/sign-up; attr:.osm-plan-2 .btn-signup@href=/membership/vip-year/sign-up; at
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-original-f10-favorites.json

@@ -1,0 +1,11 @@
+F9-01        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); title=GTA 6 Database: All Game Features, Guides & Media; calls=GET /gta-6/ 200; count:info-labels=6; list:info-labels=Release Date || Series / Universe || Set in Location
+F9-05        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); visible:menu-gta6-sub=true; count:menu-gta6-sub-links=11; list:menu-gta6-sub-links=Map || Vehicles || Weapons || Missions || Characters || 100% Checklist || Animals || Ra
+F9-09        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); title=GTA 6 Database: All Game Features, Guides & Media; calls=GET /gta-6/ 200 || GET /gta-6/ 200
+F9-13        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); attr:menu-toggle@class=menu-opened; attr:main-menu@class=mod-menu mod-list main-menu nav-pills open; visible:main-menu=true; list:menu-top-links=HOME || NEWS || GTA 6 || 
+F9-18        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); list:user-dropdown-items=Log In || Create Account || Membership; attr:user-dropdown-toggle@aria-expanded=true; text:user-dropdown-toggle=Join MyBASE
+F9-28        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); visible:login-heading=false; attr:login-modal@aria-hidden=<missing>
+F9-26        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); text:login-link=Log In; attr:login-link@href=#loginbox; attr:login-link@data-modals-width=500; visible:login-heading=false; text:join-link=Join MyBASE; attr:join-link@hre
+F9-30        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); attr:back-to-top@class=cd-top; attr:back-to-top@aria-label=Back to top; attr:back-to-top@href=#; count:footer-links=0; count:breadcrumb-items=0
+F9-34        ok | url=/gta-6/articles/gta-6-driving-tips; heading=GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks; title=GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks; list:breadcrumb-items=Home || GTA 
+F9-38        ok | url=/; heading=; title=GTA Base: Everything on GTA 6, GTA 5, RDR2 & Rockstar Games; calls=GET /gta-6/ 200 || GET / 200
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-original-f9-shell.json

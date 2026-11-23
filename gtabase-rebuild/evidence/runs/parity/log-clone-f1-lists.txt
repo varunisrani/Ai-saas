@@ -1,0 +1,3 @@
+F1-01        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc; count=280; cards=100; text:list-count=280 Vehicles; text:list-count-bottom-number=280; session:jamg-hash:/gta-6/vehicles/=#sort=attr.ct6.frontend_value&sort
+F1-05        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&name=AN&page=1; count=43; cards=43; value:name-search=AN
+F1-10        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&attr.ct72.value=Hurac%C3%A1n&page=1; count=1; cards=1; value:real-life-search=Huracán

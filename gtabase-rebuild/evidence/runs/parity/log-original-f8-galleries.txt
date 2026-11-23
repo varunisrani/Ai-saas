@@ -1,0 +1,11 @@
+F8-01        ok | url=/gta-6/screenshots/; heading=GTA 6 Official Screenshots for PS5 and Xbox Series X|S; count:gallery=1; count:thumb=100; list:media-tab=Screenshots || Trailer Screens || Artworks || Videos; text:media-tab-active=Screen
+F8-09        ok | url=/gta-6/screenshots/; heading=GTA 6 Official Screenshots for PS5 and Xbox Series X|S; text:lb-counter=5/100; attr:lb-image@alt=gta 6 review
+F8-12        ok | url=/gta-6/screenshots/; heading=GTA 6 Official Screenshots for PS5 and Xbox Series X|S; count:lightbox=1; text:lb-counter=3/100
+F8-14        ok | url=/gta-6/screenshots/?thumb_limitstart=100&limit=100; heading=GTA 6 Official Screenshots for PS5 and Xbox Series X|S; count:thumb=100; text:pagination-active=2; text:lb-counter=1/100; count:pagination-disabled=0
+F8-16        ok | url=/gta-6/screenshots/; heading=GTA 6 Official Screenshots for PS5 and Xbox Series X|S; count:lightbox=0
+F8-18        ok | url=/gta-6/screenshots/trailers/; heading=GTA 6 Screencaps from Trailers; text:media-tab-active=Trailer Screens; count:thumb=100; count:pagination=2; text:pagination-active=1
+F8-23        ERROR mode:covers: macro:wake: hover:thumb-img: locator.hover: Timeout 8000ms exceeded. | url=/gta-6/covers/; heading=GTA 6 Cover Art: Official Box Art; count:gallery=1; count:thumb=0; visible:main-image=true; text:image-description=GTA 6 Official Cover Art; count:pagination=0; count:media-tab=0
+F8-29        ok | url=/gta-6/videos/; heading=All GTA 6 Videos & Official Trailers; count:media-tab=0; count:gallery=0; title=GTA 6 Videos: All GTA 6 Official Trailers & Gameplay Videos
+F8-33        ERROR mode:covers: macro:wake: hover:thumb-img: locator.hover: Timeout 8000ms exceeded. | url=/gta-6/covers/; heading=GTA 6 Cover Art: Official Box Art; count:lightbox=0; count:page-scroll-lock=0; visible:main-image=true
+F8-31        ok | url=/gta-6/screenshots/; heading=GTA 6 Official Screenshots for PS5 and Xbox Series X|S; count:thumb=100; visible:lb-next=true; visible:lb-prev=true; visible:lb-close=true; text:lb-counter=1/100; visible:lb-image=true
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-original-f8-galleries.json

@@ -1,0 +1,11 @@
+F2-01        ok | url=/gta-6/vehicles/sunset-sanchez; heading=Maibatsu Sunset Sanchez; title=Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get; text:breadcrumb=GTA 6 Vehicle Stats, Price, How To Get; attr:breadcrumb@href=/gta-
+F2-03        ok | url=/gta-6/weapons/assault-rifle; heading=Kozlov KZ-59; title=Kozlov KZ-59 | GTA 6 Weapon Stats & How To Get; text:breadcrumb=GTA 6 Weapon Stats & How To Get; attr:breadcrumb@href=/gta-6/weapons/; count:hero-image=0; lis
+F2-06        ok | url=/gta-6/properties/7th-avenue-garage; heading=7th Avenue Garage; title=7th Avenue Garage | GTA 6 Properties & Garages; text:breadcrumb=GTA 6 Properties & Garages; attr:breadcrumb@href=/gta-6/properties/; count:hero-im
+F2-09        ok | url=/gta-6/vehicles/no-such-vehicle-xyz; heading=404 Page Not Found; title=404 Page Not Found; list:not-found-sub=Get back inside the map!; count:rating-block=0; count:stat-bars=0; count:breadcrumb=0
+F2-11        ok | url=/gta-6/vehicles/sunset-sanchez; heading=Maibatsu Sunset Sanchez; title=Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get; calls=GET /index.php?option=com_ajax&group=system&plugin=getuserdata&format=raw&ty
+F2-16        ok | url=/gta-6/characters/jason; heading=Jason Duval; title=Jason Duval | GTA 6 Characters Guide, Bio & Voice Actor; visible:lightbox=true; text:lightbox-counter=1/95; count:lightbox-close=1; count:lightbox-next=1; count:lig
+F2-23        ok | url=/gta-6/vehicles/sunset-sanchez; heading=Maibatsu Sunset Sanchez; title=Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get; count:pager-prev=0; count:pager-next=0
+F2-26        ok | url=/gta-6/vehicles/sunset-sanchez; heading=Maibatsu Sunset Sanchez; title=Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get; list:comments-tabs=Comment || Login; list:comments-sort=Best || Popular || Newest 
+F2-29        ok | url=/gta-6/vehicles/sunset-sanchez; heading=Maibatsu Sunset Sanchez; title=Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get; count:stat-bars=5
+F2-32        ok | url=/gta-6/vehicles/maverick; heading=Buckingham Maverick; title=Buckingham Maverick | GTA 6 Helicopter Stats, Price, How To Get; text:breadcrumb=GTA 6 Vehicle Stats, Price, How To Get; list:stat-labels=SPEED || ACCELERA
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-original-f2-detail.json

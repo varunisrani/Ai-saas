@@ -1,0 +1,69 @@
+PASS F3-01
+PASS F3-02
+PASS F3-03
+PASS F3-04
+PASS F3-05
+PASS F3-06
+PASS F3-07
+PASS F3-08
+PASS F3-09
+PASS F3-10
+PASS F3-11
+PASS F3-12
+PASS F3-13
+PASS F3-14
+FAIL F3-15
+  count:cmp-board: expected "0", got "1"
+  url: expected "/gta-6/weapons/comparison/?weapon1=38&weapon2=heavy-pistol&__cf_chl_rt_tk=2XvkLNwZsEDR20o.tippm9kkZSHnJyJGeM2qJLjxZ_A-1795433037-1.0.1.1-wKMJtubok04SFksk_vWWRBLk3_k6yT8jlzH.WzPuyi4", got "/gta-6/weapons/comparison/?weapon1=38&weapon2=heavy-pistol"
+PASS F3-16
+PASS F3-17
+PASS F3-18
+PASS F3-19
+PASS F3-20
+PASS F3-21
+PASS F3-22
+PASS F3-23
+PASS F3-24
+PASS F3-25
+PASS F3-25b
+FAIL F3-26
+  url: expected "/gta-6/weapons/comparison/?weapon1=38&__cf_chl_rt_tk=2dtlcZkiYje53J1EEu1kkzNwCyOcQVpJB1mx3Nju1fw-1795433172-1.0.1.1-DXNnHr1FZqyFIlnw4P7lw4pCokJU_g6XLBBqT2MM1Lk", got "/gta-6/weapons/comparison/?weapon1=38"
+FAIL F3-27
+  count:cmp-board: expected "0", got "1"
+  url: expected "/gta-6/vehicles/comparison/?vehicle1=maibatsu-sanchez&vehicle2=sunset-sanchez&__cf_chl_rt_tk=98_XXSrWYMPUAz2uMjdhXI7qq0AgT5LHUiSU51nIj2E-1795434463-1.0.1.1-Nu0ZseQ3Axsq9EQVio_CDQdmpgNyq4QSWuiVnFi84Do", got "/gta-6/vehicles/comparison/?vehicle1=maibatsu-sanchez&vehicle2=sunset-sanchez"
+FAIL F3-28
+  count:cmp-board: expected "0", got "1"
+  url: expected "/gta-6/vehicles/comparison/?vehicle1=sunset-sanchez&vehicle2=maibatsu-sanchez&__cf_chl_rt_tk=MaVisgCJ.0K5Tv2PAOfxHXXbGCp5vAPtE6Y72VDK8AU-1795434469-1.0.1.1-5SgA.Hpr6KP9CAm4.GsbhyoWwZ93Mw3tnwoB_NjP5so", got "/gta-6/vehicles/comparison/?vehicle1=maibatsu-sanchez&vehicle2=sunset-sanchez"
+FAIL F3-29
+  count:cmp-add: expected "0", got "5"
+  count:cmp-board: expected "0", got "1"
+  url: expected "/gta-6/vehicles/comparison/?utm_source=test&__cf_chl_rt_tk=DH52_AkJElOo0OeccUzY5ke0HwgAt6oU6eCKx0r00zQ-1795434475-1.0.1.1-K4Nnvf3et2vC6Md81FYDfmLH2im4R3NvP9K5EzXJDQ4", got "/gta-6/vehicles/comparison/?utm_source=test"
+FAIL F3-30
+  attr:rank-row-1-link@href: expected "/gta-6/vehicles/comet-s2-cabrio", got "/gta-6/vehicles/dantes-vitello"
+  list:rank-row-1-labels: expected "Based on: || Road Rating: || Off-Road Rating:", got "Road Rating: || Off-Road Rating:"
+PASS F3-31
+PASS F3-32
+PASS F3-33
+PASS F3-34
+PASS F3-35
+PASS F3-36
+PASS F3-37
+PASS F3-38
+PASS F3-39
+PASS F3-40
+PASS F3-41
+PASS F3-42
+PASS F3-43
+PASS F3-44
+PASS F3-45
+FAIL F3-46
+  count:rank-content-links: expected "3", got "0"
+  count:rank-paragraphs: expected "2", got "0"
+PASS F3-47
+PASS F3-48
+PASS F3-49
+PASS F3-50
+PASS F3-51
+FAIL F3-52
+  list:rank-content-links: expected "full GTA 6 vehicles list || GTA 6 Fastest Cars ranked by top speed || fastest motorcycles in GTA 6", got null
+vectors: 53 run, 45 pass, 8 fail

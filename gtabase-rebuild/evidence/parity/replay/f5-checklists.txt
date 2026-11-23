@@ -1,0 +1,35 @@
+FAIL F5-01
+  text:guest-note: expected "Progress is saved in your browser. Login to keep progress across all your devices!", got "Your ticks are saved in this browser. Login to see when accounts arrive."
+PASS F5-02
+PASS F5-03
+PASS F5-04
+PASS F5-05
+PASS F5-06
+PASS F5-07
+PASS F5-08
+PASS F5-09
+PASS F5-10
+PASS F5-11
+PASS F5-12
+PASS F5-13
+PASS F5-14
+PASS F5-15
+PASS F5-16
+PASS F5-17
+PASS F5-18
+PASS F5-19
+PASS F5-20
+PASS F5-21
+PASS F5-22
+PASS F5-23
+FAIL F5-24
+  count:cl-box-labelled: expected "134", got "52"
+PASS F5-25
+PASS F5-26
+PASS F5-27
+PASS F5-28
+PASS F5-29
+PASS F5-30
+PASS F5-31
+PASS F5-32
+PASS F5-33

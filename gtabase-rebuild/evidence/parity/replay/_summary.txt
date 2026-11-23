@@ -1,0 +1,4 @@
+f1-lists exit=0
+f2-detail exit=0
+f3-compare exit=1
+f4-map exit=1

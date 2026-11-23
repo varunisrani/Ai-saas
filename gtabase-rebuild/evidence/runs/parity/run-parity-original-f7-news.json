@@ -1,0 +1,335 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F7 news, guides, videos + article page",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T15:04:55.350Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F7-01",
+      "mode": "news",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item",
+        "count:item-title-link",
+        "count:item-thumb",
+        "count:item-thumb-link",
+        "count:item-author",
+        "count:item-date",
+        "count:item-category",
+        "count:item-tags",
+        "visible:item-details-label",
+        "text:item-details-label",
+        "list:item-date",
+        "attr:item-date@datetime",
+        "text:item-category",
+        "attr:item-category@href",
+        "attr:item-thumb@width",
+        "attr:item-thumb@height",
+        "text:page-counter",
+        "count:page-links",
+        "count:share-block",
+        "count:list-banner",
+        "visible:game-filter-toggle"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "title": "All GTA 6 News: Latest Grand Theft Auto VI Updates",
+        "calls": "GET /gta-6/news/ 200",
+        "count:list-item": "30",
+        "count:item-title-link": "30",
+        "count:item-thumb": "30",
+        "count:item-thumb-link": "30",
+        "count:item-author": "30",
+        "count:item-date": "30",
+        "count:item-category": "30",
+        "count:item-tags": "0",
+        "visible:item-details-label": "false",
+        "text:item-details-label": "Details",
+        "list:item-date": "on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 19, 2026 || on November 19, 2026",
+        "attr:item-date@datetime": "2026-11-22T21:46:04+00:00",
+        "text:item-category": "Grand Theft Auto VI",
+        "attr:item-category@href": "/gta-6/news/",
+        "attr:item-thumb@width": "320",
+        "attr:item-thumb@height": "180",
+        "text:page-counter": "Page 1 of 6",
+        "count:page-links": "0",
+        "count:share-block": "0",
+        "count:list-banner": "1",
+        "visible:game-filter-toggle": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-08",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-6"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/page-6",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /gta-6/news/page-6 404",
+        "count:list-item": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-12",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/?start=999"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item",
+        "text:page-number"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/?start=999",
+        "heading": "Grand Theft Auto VI - Page 6",
+        "title": "All GTA 6 News: Latest Grand Theft Auto VI Updates",
+        "calls": "GET /gta-6/news/?start=999 200",
+        "text:page-counter": "Page 6 of 6",
+        "count:list-item": "0",
+        "text:page-number": "- Page 6"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-16",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/guides/page-4"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/guides/page-4",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /gta-6/guides/page-4 404"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-20",
+      "mode": "allnews",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item",
+        "count:item-tags",
+        "count:item-category",
+        "count:item-author",
+        "count:item-date",
+        "count:game-filter-toggle",
+        "visible:game-filter-menu"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/news/",
+        "heading": "Rockstar Games News & Guides",
+        "title": "Rockstar Games News & Guides",
+        "calls": "GET /news/ 200",
+        "text:page-counter": "Page 1 of 50",
+        "count:list-item": "30",
+        "count:item-tags": "57",
+        "count:item-category": "0",
+        "count:item-author": "30",
+        "count:item-date": "30",
+        "count:game-filter-toggle": "1",
+        "visible:game-filter-menu": "false"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-27",
+      "mode": "article",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "count:article-meta",
+        "count:article-author",
+        "text:article-published",
+        "attr:article-published@datetime",
+        "count:article-modified",
+        "text:article-category",
+        "attr:article-category@href",
+        "count:share-buttons",
+        "list:share-buttons",
+        "count:article-hero",
+        "text:toc-heading",
+        "count:toc-links",
+        "list:toc-links",
+        "count:section-anchors",
+        "list:section-headings",
+        "count:comments",
+        "count:comment-sort-options",
+        "list:comment-sort-options",
+        "text:comment-sort-current",
+        "attr:comment-limit@data-max",
+        "attr:comment-editor@aria-label",
+        "count:sidebar"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "title": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "calls": "GET /gta-6/articles/gta-6-driving-tips 200",
+        "count:article-meta": "1",
+        "count:article-author": "0",
+        "text:article-published": "on November 22, 2026",
+        "attr:article-published@datetime": "2026-11-22T09:44:12+00:00",
+        "count:article-modified": "0",
+        "text:article-category": "Grand Theft Auto VI",
+        "attr:article-category@href": "/gta-6/news/",
+        "count:share-buttons": "3",
+        "list:share-buttons": " ||  || ",
+        "count:article-hero": "1",
+        "text:toc-heading": "GTA 6 Driving Tips",
+        "count:toc-links": "11",
+        "list:toc-links": "Basic Driving Controls || Drift Around Sharp Corners || Duck to Hide from the Cops || Shooting While Driving || Getting Out: Stop, Bail or Leave the Engine Running || Vehicle Melee || Taunting || Radio and Vehicle Functions || Pushing and Flipping Vehicles || Fuel and Repairs || GTA 6 Driving FAQ",
+        "count:section-anchors": "11",
+        "list:section-headings": "Basic Driving Controls || Drift Around Sharp Corners || Duck to Hide from the Cops || Shooting While Driving || Getting Out: Stop, Bail or Leave the Engine Running || Vehicle Melee || Taunting || Radio and Vehicle Functions || Pushing and Flipping Vehicles || Fuel and Repairs || GTA 6 Driving FAQ",
+        "count:comments": "1",
+        "count:comment-sort-options": "4",
+        "list:comment-sort-options": "Best || Popular || Newest || Oldest",
+        "text:comment-sort-current": "Newest",
+        "attr:comment-limit@data-max": "5000",
+        "attr:comment-editor@aria-label": "editor",
+        "count:sidebar": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-31",
+      "mode": "controls",
+      "steps": [
+        "macro:to-bottom"
+      ],
+      "reads": [
+        "title",
+        "count:article-published",
+        "text:article-modified",
+        "attr:article-modified@datetime",
+        "text:article-category",
+        "count:toc-links",
+        "count:section-anchors",
+        "count:related-block",
+        "text:related-heading",
+        "count:related-cards",
+        "list:breadcrumb-items"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+        "heading": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+        "title": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+        "count:article-published": "0",
+        "text:article-modified": "Last Updated: November 22, 2026",
+        "attr:article-modified@datetime": "2026-11-22T09:44:22+00:00",
+        "text:article-category": "Grand Theft Auto VI",
+        "count:toc-links": "10",
+        "count:section-anchors": "10",
+        "count:related-block": "1",
+        "text:related-heading": "CONTROLS ACROSS ALL GAMES",
+        "count:related-cards": "2",
+        "list:breadcrumb-items": "Home || GTA 6 || News || GTA 6 Controls Guide: Full PS5 & Xbox Button Layout"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-35",
+      "mode": "article-phone",
+      "steps": [],
+      "reads": [
+        "visible:toc",
+        "count:toc-links",
+        "visible:share-block",
+        "visible:article-hero",
+        "visible:sidebar",
+        "text:article-published"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "visible:toc": "true",
+        "count:toc-links": "11",
+        "visible:share-block": "true",
+        "visible:article-hero": "true",
+        "visible:sidebar": "true",
+        "text:article-published": "on November 22, 2026"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-39",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/guides/"
+      ],
+      "reads": [
+        "count:list-item",
+        "visible:item-thumb",
+        "visible:item-title-link",
+        "visible:sidebar",
+        "visible:share-block",
+        "text:page-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/guides/",
+        "heading": "GTA 6 Guides: Tips, Walkthroughs & How-To Guides",
+        "count:list-item": "30",
+        "visible:item-thumb": "true",
+        "visible:item-title-link": "true",
+        "visible:sidebar": "true",
+        "visible:share-block": "true",
+        "text:page-counter": "Page 1 of 3"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-43",
+      "mode": "article",
+      "steps": [
+        "focus:toc-link-3",
+        "press:Enter",
+        "wait:800"
+      ],
+      "reads": [
+        "url"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks"
+      },
+      "error": null
+    }
+  ]
+}

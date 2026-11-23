@@ -1,0 +1,311 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 guide pages",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T15:03:00.800Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F6-01",
+      "mode": "animals",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:guide-card",
+        "attr:grid-1-first-link@href",
+        "attr:grid-1-first-link@aria-label",
+        "count:section-heading",
+        "count:toc",
+        "count:faq-question",
+        "count:rlta-any",
+        "count:tabs-script"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "count:card-grid": "3",
+        "count:grid-1-cards": "184",
+        "count:grid-2-cards": "69",
+        "count:grid-3-cards": "2",
+        "count:guide-card": "255",
+        "attr:grid-1-first-link@href": "/gta-6/animals/albino-american-alligator",
+        "attr:grid-1-first-link@aria-label": "Read more: Albino American Alligator",
+        "count:section-heading": "3",
+        "count:toc": "0",
+        "count:faq-question": "0",
+        "count:rlta-any": "0",
+        "count:tabs-script": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-04",
+      "mode": "characters",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:grid-4-cards",
+        "count:plain-person-row",
+        "count:faq-question",
+        "attr:grid-1-first-link@href",
+        "count:bullet-list-1",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/",
+        "heading": "GTA 6 Characters Guide: Main Protagonists & Full List",
+        "count:card-grid": "4",
+        "count:grid-1-cards": "2",
+        "count:grid-2-cards": "6",
+        "count:grid-3-cards": "11",
+        "count:grid-4-cards": "49",
+        "count:plain-person-row": "10",
+        "count:faq-question": "5",
+        "attr:grid-1-first-link@href": "/gta-6/characters/jason",
+        "count:bullet-list-1": "17",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-07",
+      "mode": "properties",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:grid-4-cards",
+        "count:guide-card",
+        "count:card-with-price",
+        "count:card-with-location",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "GTA 6 Properties & Garages: Full List & Guide",
+        "count:card-grid": "4",
+        "count:grid-1-cards": "8",
+        "count:grid-2-cards": "4",
+        "count:grid-3-cards": "3",
+        "count:grid-4-cards": "5",
+        "count:guide-card": "20",
+        "count:card-with-price": "8",
+        "count:card-with-location": "20",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-09",
+      "mode": "radio",
+      "steps": [
+        "macro:wake"
+      ],
+      "reads": [
+        "count:station-row",
+        "count:station-without-tracks",
+        "count:track-play",
+        "count:track-play-visible",
+        "count:track-play-hidden",
+        "list:tracklist-header",
+        "count:table-controls",
+        "text:player-title",
+        "text:s1-track1-title",
+        "text:player-artist",
+        "text:s1-track1-artist",
+        "text:player-time",
+        "text:player-duration",
+        "attr:player-toggle-icon@class",
+        "visible:floating-player",
+        "count:track-play-pause-state",
+        "count:rlta-any",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "count:station-row": "24",
+        "count:station-without-tracks": "1",
+        "count:track-play": "819",
+        "count:track-play-visible": "301",
+        "count:track-play-hidden": "518",
+        "list:tracklist-header": "# || Track || Play",
+        "count:table-controls": "0",
+        "text:player-title": "Starting From Zero",
+        "text:s1-track1-title": "Starting From Zero",
+        "text:player-artist": "Justice (feat. Michael McDonald) (2026)",
+        "text:s1-track1-artist": "Justice (feat. Michael McDonald) (2026)",
+        "text:player-time": "0:00",
+        "text:player-duration": "0:00",
+        "attr:player-toggle-icon@class": "fa-solid fa-play",
+        "visible:floating-player": "true",
+        "count:track-play-pause-state": "0",
+        "count:rlta-any": "0",
+        "calls": "GET www.youtube.com/s/player/f9c6b6bd/www-widgetapi.vflset/www-widgetapi.js 200 || GET www.youtube.com/embed/?controls=0&playsinline=1&disablekb=1&enablejsapi=1&origin=https%3A%2F%2Fwww.gtabase.com&widgetid=1&forigin=https%3A%2F%2Fwww.gtabase.com%2Fgta-6%2Fradio-stations%2F&aoriginsup=1&vf=1 200 || POST www.youtube.com/youtubei/v1/log_event?alt=json BLOCKED"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-19",
+      "mode": "ps5",
+      "steps": [
+        "click:toc-link-combat"
+      ],
+      "reads": [
+        "attr:toc-link-combat@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats",
+        "heading": "GTA 6 Cheats PS5: Cheat Codes Guide for PlayStation 5",
+        "attr:toc-link-combat@href": "/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-21",
+      "mode": "xbox",
+      "steps": [],
+      "reads": [
+        "count:cheat-row",
+        "count:cheat-category",
+        "count:first-cheat-keys",
+        "attr:first-cheat-key-1@alt",
+        "attr:first-cheat-key-1@src",
+        "count:cheat-key-other",
+        "attr:howto-icon-2@alt",
+        "attr:howto-icon-3@alt",
+        "count:platform-link",
+        "text:platform-current",
+        "count:toc-link",
+        "count:body-link-pc",
+        "count:cheat-copy-or-filter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
+        "heading": "GTA 6 Cheats Xbox: Cheat Codes Guide for Xbox Series X|S",
+        "count:cheat-row": "61",
+        "count:cheat-category": "5",
+        "count:first-cheat-keys": "8",
+        "attr:first-cheat-key-1@alt": "UP",
+        "attr:first-cheat-key-1@src": "/images/resources/controller/up.png",
+        "count:cheat-key-other": "0",
+        "attr:howto-icon-2@alt": "LB",
+        "attr:howto-icon-3@alt": "RB",
+        "count:platform-link": "2",
+        "text:platform-current": "GTA 6 Cheats for Xbox Series X|S YOU ARE HERE",
+        "count:toc-link": "8",
+        "count:body-link-pc": "0",
+        "count:cheat-copy-or-filter": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-24",
+      "mode": "maploc",
+      "steps": [],
+      "reads": [
+        "count:toc",
+        "count:toc-link",
+        "count:indexed-heading",
+        "count:inline-gallery",
+        "attr:map-banner-link@href",
+        "text:map-banner-link",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map-locations/",
+        "heading": "Where Is GTA 6 Set? Vice City & All Leonida Locations Guide",
+        "count:toc": "1",
+        "count:toc-link": "18",
+        "count:indexed-heading": "18",
+        "count:inline-gallery": "6",
+        "attr:map-banner-link@href": "/gta-6/map/",
+        "text:map-banner-link": "Interactive GTA 6 Map & Collectibles Tracker",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-26",
+      "mode": "animals",
+      "steps": [
+        "macro:wake",
+        "scroll:grid-3-cards",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:back-to-top@class"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "attr:back-to-top@class": "cd-top cd-is-visible cd-fade-out"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-39",
+      "mode": "membership-hover-first",
+      "steps": [
+        "try:click:acc-2",
+        "wait:1000"
+      ],
+      "reads": [
+        "attr:acc-container@data-rlta-state",
+        "count:acc-button",
+        "attr:acc-1@aria-expanded",
+        "attr:acc-2@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-container@data-rlta-state": "initial",
+        "count:acc-button": "10",
+        "attr:acc-1@aria-expanded": "true",
+        "attr:acc-2@aria-expanded": "false",
+        "count:acc-open": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-36",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/characters/"
+      ],
+      "reads": [
+        "count:card-grid",
+        "count:grid-4-cards",
+        "visible:grid-1-first-link"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/",
+        "heading": "GTA 6 Characters Guide: Main Protagonists & Full List",
+        "count:card-grid": "4",
+        "count:grid-4-cards": "49",
+        "visible:grid-1-first-link": "true"
+      },
+      "error": null
+    }
+  ]
+}

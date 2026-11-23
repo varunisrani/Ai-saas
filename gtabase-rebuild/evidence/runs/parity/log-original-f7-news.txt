@@ -1,0 +1,11 @@
+F7-01        ok | url=/gta-6/news/; heading=All GTA 6 News: Latest Updates on Grand Theft Auto VI; title=All GTA 6 News: Latest Grand Theft Auto VI Updates; calls=GET /gta-6/news/ 200; count:list-item=30; count:item-title-link=30; count:i
+F7-08        ok | url=/gta-6/news/page-6; heading=404 Page Not Found; title=404 Page Not Found; calls=GET /gta-6/news/page-6 404; count:list-item=0
+F7-12        ok | url=/gta-6/news/?start=999; heading=Grand Theft Auto VI - Page 6; title=All GTA 6 News: Latest Grand Theft Auto VI Updates; calls=GET /gta-6/news/?start=999 200; text:page-counter=Page 6 of 6; count:list-item=0; text:pag
+F7-16        ok | url=/gta-6/guides/page-4; heading=404 Page Not Found; title=404 Page Not Found; calls=GET /gta-6/guides/page-4 404
+F7-20        ok | url=/news/; heading=Rockstar Games News & Guides; title=Rockstar Games News & Guides; calls=GET /news/ 200; text:page-counter=Page 1 of 50; count:list-item=30; count:item-tags=57; count:item-category=0; count:item-author
+F7-27        ok | url=/gta-6/articles/gta-6-driving-tips; heading=GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks; title=GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks; calls=GET /gta-6/articles/gta-6-dr
+F7-31        ok | url=/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout; heading=GTA 6 Controls Guide: Full PS5 & Xbox Button Layout; title=GTA 6 Controls Guide: Full PS5 & Xbox Button Layout; count:article-published=0; text:art
+F7-35        ok | url=/gta-6/articles/gta-6-driving-tips; heading=GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks; visible:toc=true; count:toc-links=11; visible:share-block=true; visible:article-hero=true; visible:sidebar
+F7-39        ok | url=/gta-6/guides/; heading=GTA 6 Guides: Tips, Walkthroughs & How-To Guides; count:list-item=30; visible:item-thumb=true; visible:item-title-link=true; visible:sidebar=true; visible:share-block=true; text:page-counter=P
+F7-43        ok | url=/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops; heading=GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-original-f7-news.json

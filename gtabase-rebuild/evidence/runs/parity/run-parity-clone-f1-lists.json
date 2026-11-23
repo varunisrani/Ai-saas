@@ -1,0 +1,111 @@
+{
+  "app": "Leonida Atlas (rebuild) — vectors for suite f1-lists",
+  "baseUrl": "http://localhost:3000",
+  "captured": "2026-11-23T15:13:06.301Z",
+  "locale": "en-US",
+  "readOnly": false,
+  "cases": [
+    {
+      "id": "F1-01",
+      "mode": "vehicles",
+      "steps": [],
+      "reads": [
+        "text:list-count",
+        "text:list-count-bottom-number",
+        "session:jamg-hash:/gta-6/vehicles/",
+        "value:sort-select",
+        "text:sort-shown",
+        "attr:sort-direction@data-value",
+        "attr:sort-direction@class",
+        "attr:sort-direction@title",
+        "list:sort-options",
+        "calls",
+        "list:filter-titles",
+        "count:class-options",
+        "text:class-1",
+        "attr:name-search@placeholder",
+        "attr:name-search@maxlength",
+        "attr:real-life-search@placeholder",
+        "text:manufacturer-shown",
+        "text:standout-shown",
+        "text:standout-option-1-text",
+        "visible:clear-filters",
+        "visible:filters-toggle",
+        "attr:autopage-sentinel@page-data",
+        "count:list-head",
+        "attr:products-wrapper@class"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "count": "280",
+        "cards": "100",
+        "text:list-count": "280 Vehicles",
+        "text:list-count-bottom-number": "280",
+        "session:jamg-hash:/gta-6/vehicles/": "#sort=attr.ct6.frontend_value&sortdir=desc",
+        "value:sort-select": "attr.ct6.frontend_value",
+        "text:sort-shown": "Speed",
+        "attr:sort-direction@data-value": "<missing>",
+        "attr:sort-direction@class": "flex h-9 w-9 items-center justify-center rounded-xl border border-sand-dark bg-white hover:border-lagoon",
+        "attr:sort-direction@title": "Sort ascending",
+        "list:sort-options": "Vehicle Name || Manufacturer || Vehicle Class || Speed || Asphalt OVR || Off-Road OVR || Seats",
+        "calls": "GET /?_rsc=JWe7S7qHIUU8m6yO 200 || GET /membership/free/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/map/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/vehicles/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/weapons/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/missions/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/characters/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=JWe7S7qHIUU8m6yO 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/animals/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/properties/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/side-missions/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/radio-stations/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/guides/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/strangers-missions/?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/vehicles/tideback?_rsc=JWe7S7qHIUU8m6yO 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=JWe7S7qHIUU8m6yO 200 || GET /?_rsc=aCrQLMaXVU2iZtj3 200 || GET /?_rsc=Fhplw_A1n2sLBzeI 200 || GET /membership/free/?_rsc=J20dr1wWsZXdH8lk 200 || GET /gta-6/?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/map/?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/vehicles/?_rsc=-oUVcl9MGPEKk_Qb 200 || GET /gta-6/weapons/?_rsc=lYWd0fbEQUqd65qi 200 || GET /gta-6/missions/?_rsc=oC83ZkGvsShrDuYq 200 || GET /gta-6/characters/?_rsc=I3jzbuglNB1qL8Ci 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=b13TJs2AVkO4JeAe 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/animals/?_rsc=HPF7pRu1ONmO1fom 200 || GET /gta-6/properties/?_rsc=hlqSHlVUav4MVloC 200 || GET /gta-6/side-missions/?_rsc=g44xWA1sEz69ZAMt 200 || GET /gta-6/radio-stations/?_rsc=2nAEs_rsvyV7TP_G 200 || GET /gta-6/guides/?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/strangers-missions/?_rsc=ROOQug12m62vMZEH 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=RkD_DcJPE3Wgn8OI 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=IVtYkHCYsvR_MOYy 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/vehicles/tideback?_rsc=uKwM6GopvCJHo0Rj 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=uKwM6GopvCJHo0Rj 200",
+        "list:filter-titles": "VEHICLE CLASS || VEHICLE NAME || MANUFACTURER || STANDOUT SET || REAL LIFE VEHICLE",
+        "count:class-options": "21",
+        "text:class-1": "Super (24)",
+        "attr:name-search@placeholder": "Enter Vehicle Name",
+        "attr:name-search@maxlength": "128",
+        "attr:real-life-search@placeholder": "Enter Real Life Vehicle",
+        "text:manufacturer-shown": "Select Manufacturer",
+        "text:standout-shown": "Select Standout Set",
+        "text:standout-option-1-text": "Hide Standout Vehicles (170)",
+        "visible:clear-filters": "false",
+        "visible:filters-toggle": "false",
+        "attr:autopage-sentinel@page-data": "<missing>",
+        "count:list-head": "1",
+        "attr:products-wrapper@class": "m-0 grid list-none grid-cols-1 gap-4 p-0 min-[560px]:grid-cols-2 min-[900px]:grid-cols-3 min-[1200px]:grid-cols-4"
+      },
+      "error": null
+    },
+    {
+      "id": "F1-05",
+      "mode": "vehicles",
+      "steps": [
+        "fill:name-search=AN",
+        "press:Enter",
+        "wait:900"
+      ],
+      "reads": [
+        "value:name-search"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&name=AN&page=1",
+        "count": "43",
+        "cards": "43",
+        "value:name-search": "AN"
+      },
+      "error": null
+    },
+    {
+      "id": "F1-10",
+      "mode": "vehicles",
+      "steps": [
+        "fill:real-life-search=Huracán",
+        "press:Enter",
+        "wait:900"
+      ],
+      "reads": [
+        "value:real-life-search"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&attr.ct72.value=Hurac%C3%A1n&page=1",
+        "count": "1",
+        "cards": "1",
+        "value:real-life-search": "Huracán"
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+FAIL F4-01
+  text:guest-line: expected "Log in to keep progress on all your devices.", got "Your ticks and filters stay in this browser only. Log in to read about accounts."
+PASS F4-02
+PASS F4-03
+PASS F4-04
+PASS F4-05
+PASS F4-06
+PASS F4-07
+PASS F4-08
+PASS F4-09
+PASS F4-10
+PASS F4-11
+PASS F4-12
+PASS F4-13
+PASS F4-14
+PASS F4-15
+PASS F4-16
+PASS F4-18
+PASS F4-20
+PASS F4-21
+PASS F4-22
+PASS F4-23
+PASS F4-24
+PASS F4-25
+PASS F4-26
+PASS F4-27
+PASS F4-28
+PASS F4-29
+PASS F4-30
+PASS F4-31
+PASS F4-32
+FAIL F4-33
+  local:guest_checklists: expected "{\"gta6-map\":[\"safehouse-001\"]}", got null
+  text:reset-say: expected "The reset could not be saved, so nothing was changed. Try again in a moment.", got "Done: 1 marker unticked."
+PASS F4-34
+PASS F4-35
+PASS F4-36
+PASS F4-37
+PASS F4-38
+PASS F4-39
+PASS F4-40
+PASS F4-41
+PASS F4-42
+PASS F4-43
+PASS F4-44
+PASS F4-45
+FAIL F4-46
+  text:panel: expected "× SUGGEST A LOCATION The server did not answer. Please try again in a moment.", got "× SUGGEST A LOCATION Suggesting new places needs an account so we can thank you and follow up. Accounts are coming later; until then the map works fully without one. LOG IN JOIN"
+FAIL F4-47
+  text:panel: expected "× PERSONAL MARKER The server did not answer. Please try again in a moment.", got "× PERSONAL MARKER Personal markers are saved to an account so they follow you to every device. Accounts are coming later; your ticks already stay in this browser. LOG IN JOIN"
+FAIL F4-48
+  text:panel: expected "× MAP CONTEST The server did not answer. Please try again in a moment.", got "× MAP CONTEST Map contests are run for members with an account. Accounts are coming later, so there is nothing to enter yet. LOG IN JOIN"
+FAIL F4-49
+  count:popup: expected "0", got "1"
+  list:panel-links: expected "LOG IN || JOIN MYBASE", got null
+  text:panel: expected "× FAVOURITES Want to keep your favourite places? Members of GTABase can star any marker and find it again under Personal, on every device. Log in to start. LOG IN JOIN MYBASE", got null
+  text:panel-title: expected "FAVOURITES", got null
+PASS F4-50
+PASS F4-51
+PASS F4-52
+PASS F4-53
+PASS F4-54
+PASS F4-55
+PASS F4-56
+PASS F4-57
+PASS F4-58
+PASS F4-59
+PASS F4-60
+PASS F4-61
+PASS F4-62
+PASS F4-63
+PASS F4-64
+PASS F4-65
+PASS F4-66
+PASS F4-67
+PASS F4-68
+PASS F4-69
+PASS F4-70
+PASS F4-71
+PASS F4-72
+PASS F4-73
+PASS F4-74
+PASS F4-75
+PASS F4-76
+vectors: 74 run, 68 pass, 6 fail

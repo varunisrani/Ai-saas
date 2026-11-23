@@ -1,0 +1,344 @@
+{
+  "app": "gtabase.com GTA 6 section - F2 item detail pages (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T14:57:04.844Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F2-01",
+      "mode": "vehicle-standout",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share",
+        "list:stat-values",
+        "attr:stat-bar-1@style",
+        "attr:stat-bar-2@style",
+        "attr:stat-bar-3@style",
+        "attr:stat-bar-4@style",
+        "attr:stat-bar-5@style",
+        "list:variants",
+        "text:favorites-button",
+        "text:compare-to"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "text:breadcrumb": "GTA 6 Vehicle Stats, Price, How To Get",
+        "attr:breadcrumb@href": "/gta-6/vehicles/",
+        "count:hero-image": "2",
+        "list:section-titles": "SUNSET SANCHEZ: GTA 6 INFO || MAIBATSU SUNSET SANCHEZ GTA 6 STATISTICS || SUNSET SANCHEZ DESCRIPTION:",
+        "list:info-labels": "Standout Set || Vehicle Class || Manufacturer || Style || Era || Seats || Base Model || Drive Train",
+        "list:stat-labels": "SPEED || ACCELERATION || ASPHALT HANDLING || OFF-ROAD HANDLING || STRENGTH || RATING",
+        "count:stat-bars": "5",
+        "count:rating-stars": "5",
+        "text:rating-total": "0.0 of 5 (0 Votes)",
+        "count:favorites-button": "1",
+        "count:compare-to": "1",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "3",
+        "list:stat-values": "3.9 || 5.9 || 5.2 || 8.1 || 4.0 || 728 || 523",
+        "attr:stat-bar-1@style": "width: 39%;",
+        "attr:stat-bar-2@style": "width: 59%;",
+        "attr:stat-bar-3@style": "width: 52%;",
+        "attr:stat-bar-4@style": "width: 81%;",
+        "attr:stat-bar-5@style": "width: 40%;",
+        "list:variants": "Sanchez",
+        "text:favorites-button": "Add To Favorites",
+        "text:compare-to": "Compare To"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-03",
+      "mode": "weapon",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share",
+        "list:stat-values",
+        "attr:stat-bar-1@style",
+        "attr:stat-bar-2@style",
+        "attr:stat-bar-3@style",
+        "attr:stat-bar-4@style",
+        "count:variants",
+        "list:appearances"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/weapons/assault-rifle",
+        "heading": "Kozlov KZ-59",
+        "title": "Kozlov KZ-59 | GTA 6 Weapon Stats & How To Get",
+        "text:breadcrumb": "GTA 6 Weapon Stats & How To Get",
+        "attr:breadcrumb@href": "/gta-6/weapons/",
+        "count:hero-image": "0",
+        "list:section-titles": "KZ-59 DESCRIPTION: || KZ-59: GTA 6 INFO || KZ-59: HOW TO GET || KOZLOV KZ-59 GTA 6 STATISTICS || KZ-59: GTA 6 Screenshots || KZ-59 GAME APPEARANCES",
+        "list:info-labels": "Manufacturer || Weapon Class || Based on (Real Life) || Ammo Capacity || Extended Ammo || Acquisition Method || Story Mode Price || Modifications || Variant / Conversion",
+        "list:stat-labels": "DAMAGE || ACCURACY || HANDLING || RANGE || OVERALL",
+        "count:stat-bars": "4",
+        "count:rating-stars": "5",
+        "text:rating-total": "4 of 5 (12 Votes)",
+        "count:favorites-button": "1",
+        "count:compare-to": "1",
+        "count:tabs": "0",
+        "count:gallery": "1",
+        "count:gallery-empty": "1",
+        "count:share": "3",
+        "list:stat-values": "5.4 || 5.2 || 5.2 || 6.5 || 5.6",
+        "attr:stat-bar-1@style": "width: 54%;",
+        "attr:stat-bar-2@style": "width: 52%;",
+        "attr:stat-bar-3@style": "width: 52%;",
+        "attr:stat-bar-4@style": "width: 65%;",
+        "count:variants": "6",
+        "list:appearances": "GTA 6 || GTA V || GTA IV || GTA SAN ANDREAS || GTA 3"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-06",
+      "mode": "property",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/7th-avenue-garage",
+        "heading": "7th Avenue Garage",
+        "title": "7th Avenue Garage | GTA 6 Properties & Garages",
+        "text:breadcrumb": "GTA 6 Properties & Garages",
+        "attr:breadcrumb@href": "/gta-6/properties/",
+        "count:hero-image": "0",
+        "list:section-titles": "HOW TO GET THE 7TH AVENUE GARAGE: || 7TH AVENUE GARAGE: MAP LOCATION || 7TH AVENUE GARAGE: GTA 6 INFO || 7TH AVENUE GARAGE: HOW TO GET",
+        "list:info-labels": "Property Type || Property Style || Location || State / Region || Vehicles Capacity || How To Unlock || Story Mode Price",
+        "list:stat-labels": "",
+        "count:stat-bars": "0",
+        "count:rating-stars": "5",
+        "text:rating-total": "0.0 of 5 (0 Votes)",
+        "count:favorites-button": "1",
+        "count:compare-to": "0",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "3"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-09",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/no-such-vehicle-xyz"
+      ],
+      "reads": [
+        "list:not-found-sub",
+        "count:rating-block",
+        "count:stat-bars",
+        "count:breadcrumb"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/no-such-vehicle-xyz",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "list:not-found-sub": "Get back inside the map!",
+        "count:rating-block": "0",
+        "count:stat-bars": "0",
+        "count:breadcrumb": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-11",
+      "mode": "vehicle-standout",
+      "steps": [
+        "hover:rating-stars",
+        "wait:2000"
+      ],
+      "reads": [
+        "calls",
+        "blocked",
+        "count:rating-stars",
+        "text:rating-total"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "calls": "GET /index.php?option=com_ajax&group=system&plugin=getuserdata&format=raw&type=user-token 200",
+        "blocked": "",
+        "count:rating-stars": "5",
+        "text:rating-total": "0.0 of 5 (0 Votes)"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-16",
+      "mode": "character",
+      "steps": [
+        "macro:wake",
+        "scroll:gallery-thumb-1",
+        "click:gallery-thumb-1",
+        "waitfor:lightbox"
+      ],
+      "reads": [
+        "visible:lightbox",
+        "text:lightbox-counter",
+        "count:lightbox-close",
+        "count:lightbox-next",
+        "count:lightbox-prev",
+        "count:lightbox-buttons"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "Jason Duval",
+        "title": "Jason Duval | GTA 6 Characters Guide, Bio & Voice Actor",
+        "visible:lightbox": "true",
+        "text:lightbox-counter": "1/95",
+        "count:lightbox-close": "1",
+        "count:lightbox-next": "1",
+        "count:lightbox-prev": "1",
+        "count:lightbox-buttons": "5"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-23",
+      "mode": "vehicle-standout",
+      "steps": [],
+      "reads": [
+        "count:pager-prev",
+        "count:pager-next"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "count:pager-prev": "0",
+        "count:pager-next": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-26",
+      "mode": "vehicle-standout",
+      "steps": [
+        "scroll:comments",
+        "wait:2000"
+      ],
+      "reads": [
+        "list:comments-tabs",
+        "list:comments-sort",
+        "attr:comments-editor@role",
+        "attr:comments-editor@aria-label",
+        "text:comments-placeholder",
+        "attr:comments-limit@data-max",
+        "count:comments-guest",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "list:comments-tabs": "Comment || Login",
+        "list:comments-sort": "Best || Popular || Newest || Oldest",
+        "attr:comments-editor@role": "textbox",
+        "attr:comments-editor@aria-label": "editor",
+        "text:comments-placeholder": "Say something here...",
+        "attr:comments-limit@data-max": "5000",
+        "count:comments-guest": "1",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F2-29",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/Sunset-Sanchez"
+      ],
+      "reads": [
+        "count:stat-bars"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "count:stat-bars": "5"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-32",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/maverick"
+      ],
+      "reads": [
+        "text:breadcrumb",
+        "list:stat-labels",
+        "list:info-labels"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/maverick",
+        "heading": "Buckingham Maverick",
+        "title": "Buckingham Maverick | GTA 6 Helicopter Stats, Price, How To Get",
+        "text:breadcrumb": "GTA 6 Vehicle Stats, Price, How To Get",
+        "list:stat-labels": "SPEED || ACCELERATION || ASPHALT HANDLING || OFF-ROAD HANDLING || STRENGTH || RATING",
+        "list:info-labels": "Vehicle Class || Manufacturer || Style || Era || Seats || Based on (Real Life) || Mass / Weight || Variant / Conversion"
+      },
+      "error": null
+    }
+  ]
+}

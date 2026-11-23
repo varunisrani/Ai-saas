@@ -1,0 +1,11 @@
+F6-01        ok | url=/gta-6/animals/; heading=GTA 6 Animals Guide: All Animals, Birds & Fish; count:card-grid=3; count:grid-1-cards=184; count:grid-2-cards=69; count:grid-3-cards=2; count:guide-card=255; attr:grid-1-first-link@href=/gta-
+F6-04        ok | url=/gta-6/characters/; heading=GTA 6 Characters Guide: Main Protagonists & Full List; count:card-grid=4; count:grid-1-cards=2; count:grid-2-cards=6; count:grid-3-cards=11; count:grid-4-cards=49; count:plain-person-row=1
+F6-07        ok | url=/gta-6/properties/; heading=GTA 6 Properties & Garages: Full List & Guide; count:card-grid=4; count:grid-1-cards=8; count:grid-2-cards=4; count:grid-3-cards=3; count:grid-4-cards=5; count:guide-card=20; count:card-wi
+F6-09        ok | url=/gta-6/radio-stations/; heading=GTA 6 Radio Station Songs & Tracklist; count:station-row=24; count:station-without-tracks=1; count:track-play=819; count:track-play-visible=301; count:track-play-hidden=518; list:track
+F6-19        ok | url=/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats; heading=GTA 6 Cheats PS5: Cheat Codes Guide for PlayStation 5; attr:toc-link-combat@href=/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats
+F6-21        ok | url=/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes; heading=GTA 6 Cheats Xbox: Cheat Codes Guide for Xbox Series X|S; count:cheat-row=61; count:cheat-category=5; count:first-cheat-keys=8; attr:first-cheat-key-1@alt=UP; a
+F6-24        ok | url=/gta-6/map-locations/; heading=Where Is GTA 6 Set? Vice City & All Leonida Locations Guide; count:toc=1; count:toc-link=18; count:indexed-heading=18; count:inline-gallery=6; attr:map-banner-link@href=/gta-6/map/; tex
+F6-26        ok | url=/gta-6/animals/; heading=GTA 6 Animals Guide: All Animals, Birds & Fish; attr:back-to-top@class=cd-top cd-is-visible cd-fade-out
+F6-39        ok | url=/membership/; heading=Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress; attr:acc-container@data-rlta-state=initial; count:acc-button=10; attr:acc-1@aria-expanded=true; attr:acc-2@aria-expanded=false
+F6-36        ok | url=/gta-6/characters/; heading=GTA 6 Characters Guide: Main Protagonists & Full List; count:card-grid=4; count:grid-4-cards=49; visible:grid-1-first-link=true
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-original-f6-guides.json

@@ -1,0 +1,11 @@
+F5-01        ok | url=/articles/gta-6/gta-6-100-completion-guide-interactive-checklist; heading=GTA 6 100% Completion Guide & Interactive Checklist; count:cl-box=76; count:toc-box=38; count:sec-box=38; count:cl-box-checked=0; count:cl-box
+F5-04        ok | url=/articles/gta-6/gta-6-100-completion-guide-interactive-checklist; heading=GTA 6 100% Completion Guide & Interactive Checklist; checked:sec-story=false; checked:toc-story=false; text:pct-text=0.00; attr:pct-bar@style=
+F5-08        ok | url=/articles/gta-6/gta-6-100-completion-guide-interactive-checklist; heading=GTA 6 100% Completion Guide & Interactive Checklist; checked:sec-exploration=true; checked:toc-exploration=true; count:sec-exploration-childre
+F5-11        ok | url=/articles/gta-6/gta-6-100-completion-guide-interactive-checklist; heading=GTA 6 100% Completion Guide & Interactive Checklist; checked:sec-story-tasks=true; count:sec-story-tasks-children-checked=11; text:pct-text=27
+F5-15        ok | url=/articles/gta-6/gta-6-100-completion-guide-interactive-checklist; heading=GTA 6 100% Completion Guide & Interactive Checklist; checked:sec-story=true; checked:toc-story=true; checked:sec-kenton=true; checked:sec-expl
+F5-20        ok | url=/articles/gta-6/gta-6-100-completion-guide-interactive-checklist; heading=GTA 6 100% Completion Guide & Interactive Checklist; attr:sec-story@aria-label=Mark as completed: Story Completion (50%); attr:toc-story@aria-
+F5-23        ok | url=/gta-6/missions/; heading=GTA 6 Story Missions Guide & Walkthrough; checked:mission-gone-fishing=true; count:cl-box-checked=1; local:guest_checklists={"gta6-missions":["7285"]}; calls=; blocked=
+F5-27        ok | url=/gta-6/strangers-missions/; heading=GTA 6 Strangers & Freaks Missions List & Guide; count:cl-box=60; count:mission-row=60; count:mission-row-strangers-link=33; count:mission-row-main-link=27; list:chapter-heading=GTA
+F5-30        ok | url=/gta-6/missions/; heading=GTA 6 Story Missions Guide & Walkthrough; checked:mission-gone-fishing=true; visible:mission-gone-fishing=true; local:guest_checklists={"gta6-missions":["7285"]}
+F5-34        ok | url=/missions/gta-6/prologue; heading=Prologue; title=Prologue | GTA 6 Mission Guide & Walkthrough; count:cl-box=1
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-original-f5-checklists.json
