@@ -1,0 +1,45 @@
+PASS F6-01
+PASS F6-02
+PASS F6-03
+PASS F6-04
+PASS F6-05
+PASS F6-06
+PASS F6-07
+PASS F6-08
+PASS F6-09
+PASS F6-10
+PASS F6-11
+PASS F6-12
+PASS F6-13
+PASS F6-14
+PASS F6-15
+PASS F6-16
+PASS F6-17
+PASS F6-18
+PASS F6-19
+PASS F6-20
+PASS F6-21
+PASS F6-22
+PASS F6-23
+PASS F6-24
+PASS F6-25
+PASS F6-26
+PASS F6-27
+PASS F6-28
+PASS F6-29
+PASS F6-30
+PASS F6-31
+PASS F6-32
+FAIL F6-33
+  attr:acc-last@aria-expanded: expected "false", got "true"
+  url: expected "/membership/#why-a-paid-membership-where-does-the-money-go", got "/membership/#how-do-i-report-a-problem"
+PASS F6-34
+FAIL F6-39
+  attr:acc-1@aria-expanded: expected "true", got "false"
+  attr:acc-2@aria-expanded: expected "false", got "true"
+  url: expected "/membership/", got "/membership/#why-a-paid-membership-where-does-the-money-go"
+PASS F6-35
+PASS F6-36
+PASS F6-37
+PASS F6-38
+vectors: 39 run, 37 pass, 2 fail

@@ -1,0 +1,11 @@
+F4-01        ok | url=/gta-6/map/; blocked=; text:heading=GTA 6 INTERACTIVE MAP; attr:map-root@class=@container relative h-[calc(100svh-150px)] max-h-[860px] min-h-[480px] w-full overflow-hidden rounded-2xl border border-sand-dark bg-[#d4
+F4-07        ok | url=/gta-6/map/; blocked=; count:#gtab-map .gtab-filter-group:has(.gtab-filter-group-name:text-is("Robberies")) .gtab-filter-row input:checked=0; count:category-checked=91; attr:rail-robberies@class=flex h-8 w-8 items-ce
+F4-16        ok | url=/gta-6/map/?feature=hidden-packages; blocked=; title=All GTA 6 Hidden Package Locations (30) | Interactive Map; text:heading=GTA 6 HIDDEN PACKAGE LOCATIONS MAP; attr:map-root@data-gtab-category=<missing>; count:categ
+F4-25        ok | url=/gta-6/map/#atm-001; blocked=; count:popup=1; count:popup-found-box=0; text:popup-category-link=ATMs; count:popup-navnum=1; checked:cat-atms-box=true; local:gtab-map-filter={"hidden":["bus-stop","ev-charger","gas-sta
+F4-35        ok | url=/gta-6/map/; blocked=; count:search-hits=6; attr:search-input@aria-expanded=true; attr:search-input@aria-controls=la-map-hits; text:#gtab-search-hit-0 .gtab-search-hit-cat=<missing>; attr:search-hit-first@aria-select
+F4-42        ok | url=/gta-6/map/; blocked=; count:search-hits=0; visible:search-empty=false; count:category-rows-visible=102
+F4-47        ok | url=/gta-6/map/; blocked=; calls=GET /?_rsc=LAf7rqf1jO-MnVKX 200 || GET /membership/free/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/vehicles/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6
+F4-53        ok | url=/gta-6/map/#safehouse-001; blocked=; count:popup=1; text:popup-navnum=5 / 5
+F4-58        ok | url=/gta-6/map/; blocked=; local:gtab-map-view={"lat":-5532,"lng":-2352,"z":3,"t":1795446988050}; attr:tile-first@src=<missing>
+F4-70        ok | url=/gta-6/map/; blocked=; visible:about-dialog=true; count:#gtab-map .gtab-info-panel a=0; attr:about-open@aria-label=About this map
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-clone-f4-map.json

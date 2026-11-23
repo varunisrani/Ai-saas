@@ -1,0 +1,294 @@
+{
+  "app": "Leonida Atlas (rebuild) — vectors for suite f4-map",
+  "baseUrl": "http://localhost:3000",
+  "captured": "2026-11-23T15:15:31.431Z",
+  "locale": "en-US",
+  "readOnly": false,
+  "cases": [
+    {
+      "id": "F4-01",
+      "mode": "map",
+      "steps": [],
+      "reads": [
+        "text:heading",
+        "attr:map-root@class",
+        "count:group-rail",
+        "count:groups",
+        "count:category-rows",
+        "count:category-rows-tracked",
+        "count:category-checked",
+        "text:show-hide-all",
+        "text:hide-found",
+        "attr:hide-found@title",
+        "text:guest-line",
+        "attr:login-link@href",
+        "visible:sidebar-open",
+        "text:suggest-open",
+        "text:own-open",
+        "text:contest-open",
+        "text:feedback-open",
+        "count:canvas",
+        "count:county-labels",
+        "local:guest_checklists",
+        "local:gtab-map-filter",
+        "local:gtab-map-view",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "blocked": "",
+        "text:heading": "GTA 6 INTERACTIVE MAP",
+        "attr:map-root@class": "@container relative h-[calc(100svh-150px)] max-h-[860px] min-h-[480px] w-full overflow-hidden rounded-2xl border border-sand-dark bg-[#d4ebe8]",
+        "count:group-rail": "10",
+        "count:groups": "10",
+        "count:category-rows": "102",
+        "count:category-rows-tracked": "98",
+        "count:category-checked": "98",
+        "text:show-hide-all": "HIDE ALL",
+        "text:hide-found": "HIDE FOUND",
+        "attr:hide-found@title": "Take the markers you found off the map (the counts stay)",
+        "text:guest-line": "Your ticks and filters stay in this browser only. Log in to read about accounts.",
+        "attr:login-link@href": "/login",
+        "visible:sidebar-open": "false",
+        "text:suggest-open": "+ SUGGEST LOCATION",
+        "text:own-open": "+ PERSONAL MARKER",
+        "text:contest-open": "MAP CONTEST",
+        "text:feedback-open": "FEEDBACK",
+        "count:canvas": "1",
+        "count:county-labels": "5",
+        "local:guest_checklists": "<missing>",
+        "local:gtab-map-filter": "<missing>",
+        "local:gtab-map-view": "<missing>",
+        "calls": "GET /?_rsc=LAf7rqf1jO-MnVKX 200 || GET /membership/free/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/vehicles/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/weapons/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/missions/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/characters/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=LAf7rqf1jO-MnVKX 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/animals/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/properties/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/side-missions/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/radio-stations/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/guides/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/strangers-missions/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/vehicles/tideback?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=LAf7rqf1jO-MnVKX 200 || GET /?_rsc=JzSCP2bZ7ITytJV2 200 || GET /?_rsc=6jaeUjOJUXzDgWOA 200 || GET /membership/free/?_rsc=yn0UQ39GpGyJk7Oo 200 || GET /gta-6/?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/vehicles/?_rsc=Or5RCS7eBc-xqQ5z 200 || GET /gta-6/weapons/?_rsc=K2N_vQ3YRTScUm18 200 || GET /gta-6/missions/?_rsc=K66lvihqLb_yllMd 200 || GET /gta-6/characters/?_rsc=oRl8XtxC4OJwzcFV 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=pClaeB_zfZASZAbu 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/animals/?_rsc=mnMfU_PhfLu7Jp59 200 || GET /gta-6/properties/?_rsc=fMOGNetjLZpP28QL 200 || GET /gta-6/side-missions/?_rsc=BkJPmVPcU0K_bUX6 200 || GET /gta-6/radio-stations/?_rsc=7Aw0c9t8aV9k5gvS 200 || GET /gta-6/guides/?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/strangers-missions/?_rsc=qYDlMknqPgZQthmV 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=ZJ-l31a8z2CiYaJ6 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=wlCiyekIpCe2w4At 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/vehicles/tideback?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=MkxIEBDaXAgAVbkm 200"
+      },
+      "error": null
+    },
+    {
+      "id": "F4-07",
+      "mode": "map",
+      "steps": [
+        "uncheck:group-robberies-box",
+        "wait:800"
+      ],
+      "reads": [
+        "count:#gtab-map .gtab-filter-group:has(.gtab-filter-group-name:text-is(\"Robberies\")) .gtab-filter-row input:checked",
+        "count:category-checked",
+        "attr:rail-robberies@class",
+        "local:gtab-map-filter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "blocked": "",
+        "count:#gtab-map .gtab-filter-group:has(.gtab-filter-group-name:text-is(\"Robberies\")) .gtab-filter-row input:checked": "0",
+        "count:category-checked": "91",
+        "attr:rail-robberies@class": "flex h-8 w-8 items-center justify-center rounded-full border-2 font-display text-xs font-bold text-white transition-opacity border-white opacity-35",
+        "local:gtab-map-filter": "{\"hidden\":[\"bank\",\"fence\",\"gang-operation\",\"payday-loan\",\"safe\",\"smash-n-grab\",\"towable-atm\",\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"dv\":1}"
+      },
+      "error": null
+    },
+    {
+      "id": "F4-16",
+      "mode": null,
+      "steps": [
+        "goto:about:blank",
+        "goto:/gta-6/map/?feature=hidden-packages",
+        "macro:ready"
+      ],
+      "reads": [
+        "title",
+        "text:heading",
+        "attr:map-root@data-gtab-category",
+        "count:category-checked",
+        "checked:cat-hidden-pkg-box",
+        "local:gtab-map-filter",
+        "local:gtab-map-view"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/?feature=hidden-packages",
+        "blocked": "",
+        "title": "All GTA 6 Hidden Package Locations (30) | Interactive Map",
+        "text:heading": "GTA 6 HIDDEN PACKAGE LOCATIONS MAP",
+        "attr:map-root@data-gtab-category": "<missing>",
+        "count:category-checked": "1",
+        "checked:cat-hidden-pkg-box": "true",
+        "local:gtab-map-filter": "<missing>",
+        "local:gtab-map-view": "<missing>"
+      },
+      "error": null
+    },
+    {
+      "id": "F4-25",
+      "mode": null,
+      "steps": [
+        "goto:about:blank",
+        "goto:/gta-6/map/#atm-001",
+        "waitfor:popup-title",
+        "wait:800"
+      ],
+      "reads": [
+        "count:popup",
+        "count:popup-found-box",
+        "text:popup-category-link",
+        "count:popup-navnum",
+        "checked:cat-atms-box",
+        "local:gtab-map-filter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#atm-001",
+        "blocked": "",
+        "count:popup": "1",
+        "count:popup-found-box": "0",
+        "text:popup-category-link": "ATMs",
+        "count:popup-navnum": "1",
+        "checked:cat-atms-box": "true",
+        "local:gtab-map-filter": "{\"hidden\":[\"bus-stop\",\"ev-charger\",\"gas-station\"],\"dv\":1}"
+      },
+      "error": null
+    },
+    {
+      "id": "F4-35",
+      "mode": "map",
+      "steps": [
+        "fill:search-input=safehouse",
+        "wait:600"
+      ],
+      "reads": [
+        "count:search-hits",
+        "attr:search-input@aria-expanded",
+        "attr:search-input@aria-controls",
+        "text:#gtab-search-hit-0 .gtab-search-hit-cat",
+        "attr:search-hit-first@aria-selected",
+        "count:category-rows-visible",
+        "visible:search-empty"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "blocked": "",
+        "count:search-hits": "6",
+        "attr:search-input@aria-expanded": "true",
+        "attr:search-input@aria-controls": "la-map-hits",
+        "text:#gtab-search-hit-0 .gtab-search-hit-cat": "<missing>",
+        "attr:search-hit-first@aria-selected": "false",
+        "count:category-rows-visible": "1",
+        "visible:search-empty": "false"
+      },
+      "error": null
+    },
+    {
+      "id": "F4-42",
+      "mode": "map",
+      "steps": [
+        "fill:search-input=   ",
+        "wait:500"
+      ],
+      "reads": [
+        "count:search-hits",
+        "visible:search-empty",
+        "count:category-rows-visible"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "blocked": "",
+        "count:search-hits": "0",
+        "visible:search-empty": "false",
+        "count:category-rows-visible": "102"
+      },
+      "error": null
+    },
+    {
+      "id": "F4-47",
+      "mode": "map",
+      "steps": [
+        "click:own-open",
+        "wait:2000"
+      ],
+      "reads": [
+        "calls",
+        "count:panel",
+        "attr:panel@aria-label",
+        "text:panel"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "blocked": "",
+        "calls": "GET /?_rsc=LAf7rqf1jO-MnVKX 200 || GET /membership/free/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/vehicles/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/weapons/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/missions/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/characters/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=LAf7rqf1jO-MnVKX 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/animals/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/properties/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/side-missions/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/radio-stations/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/guides/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/strangers-missions/?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/vehicles/tideback?_rsc=LAf7rqf1jO-MnVKX 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=LAf7rqf1jO-MnVKX 200 || GET /?_rsc=JzSCP2bZ7ITytJV2 200 || GET /?_rsc=6jaeUjOJUXzDgWOA 200 || GET /membership/free/?_rsc=yn0UQ39GpGyJk7Oo 200 || GET /gta-6/?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/vehicles/?_rsc=Or5RCS7eBc-xqQ5z 200 || GET /gta-6/weapons/?_rsc=K2N_vQ3YRTScUm18 200 || GET /gta-6/missions/?_rsc=K66lvihqLb_yllMd 200 || GET /gta-6/characters/?_rsc=oRl8XtxC4OJwzcFV 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=pClaeB_zfZASZAbu 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/animals/?_rsc=mnMfU_PhfLu7Jp59 200 || GET /gta-6/properties/?_rsc=fMOGNetjLZpP28QL 200 || GET /gta-6/side-missions/?_rsc=BkJPmVPcU0K_bUX6 200 || GET /gta-6/radio-stations/?_rsc=7Aw0c9t8aV9k5gvS 200 || GET /gta-6/guides/?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/strangers-missions/?_rsc=qYDlMknqPgZQthmV 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=ZJ-l31a8z2CiYaJ6 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=wlCiyekIpCe2w4At 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/vehicles/tideback?_rsc=MkxIEBDaXAgAVbkm 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=MkxIEBDaXAgAVbkm 200",
+        "count:panel": "1",
+        "attr:panel@aria-label": "Personal marker",
+        "text:panel": "× PERSONAL MARKER Personal markers are saved to an account so they follow you to every device. Accounts are coming later; your ticks already stay in this browser. LOG IN JOIN"
+      },
+      "error": null
+    },
+    {
+      "id": "F4-53",
+      "mode": "start-marker",
+      "steps": [
+        "click:popup-prev",
+        "wait:1800"
+      ],
+      "reads": [
+        "count:popup",
+        "text:popup-navnum",
+        "url"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#safehouse-001",
+        "blocked": "",
+        "count:popup": "1",
+        "text:popup-navnum": "5 / 5"
+      },
+      "error": null
+    },
+    {
+      "id": "F4-58",
+      "mode": "map",
+      "steps": [
+        "click:map-zoom-in",
+        "wait:1500"
+      ],
+      "reads": [
+        "url",
+        "local:gtab-map-view",
+        "attr:tile-first@src"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "blocked": "",
+        "local:gtab-map-view": "{\"lat\":-5532,\"lng\":-2352,\"z\":3,\"t\":1795446988050}",
+        "attr:tile-first@src": "<missing>"
+      },
+      "error": null
+    },
+    {
+      "id": "F4-70",
+      "mode": "map",
+      "steps": [
+        "click:about-open",
+        "wait:600"
+      ],
+      "reads": [
+        "visible:about-dialog",
+        "count:#gtab-map .gtab-info-panel a",
+        "attr:about-open@aria-label",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "blocked": "",
+        "visible:about-dialog": "true",
+        "count:#gtab-map .gtab-info-panel a": "0",
+        "attr:about-open@aria-label": "About this map"
+      },
+      "error": null
+    }
+  ]
+}

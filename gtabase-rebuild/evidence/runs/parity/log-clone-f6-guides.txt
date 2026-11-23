@@ -1,0 +1,11 @@
+F6-01        ok | url=/gta-6/animals/; heading=GTA 6 Animals; count:card-grid=3; count:grid-1-cards=40; count:grid-2-cards=18; count:grid-3-cards=6; count:guide-card=64; attr:grid-1-first-link@href=/gta-6/animals/albino-american-alligator
+F6-04        ok | url=/gta-6/characters/; heading=GTA 6 Characters; count:card-grid=4; count:grid-1-cards=2; count:grid-2-cards=6; count:grid-3-cards=10; count:grid-4-cards=24; count:plain-person-row=6; count:faq-question=5; attr:grid-1-f
+F6-07        ok | url=/gta-6/properties/; heading=GTA 6 Properties & Garages; count:card-grid=4; count:grid-1-cards=6; count:grid-2-cards=3; count:grid-3-cards=4; count:grid-4-cards=3; count:guide-card=16; count:card-with-price=6; count:c
+F6-09        ok | url=/gta-6/radio-stations/; heading=GTA 6 Radio Stations; count:station-row=12; count:station-without-tracks=1; count:track-play=116; count:track-play-visible=68; count:track-play-hidden=48; list:tracklist-header=# || Tr
+F6-19        ok | url=/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats; heading=GTA 6 Cheats for PS5: Every Button Code on Leonida Atlas; attr:toc-link-combat@href=/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats
+F6-21        ok | url=/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes; heading=GTA 6 Cheats for Xbox Series X|S: Every Button Code on Leonida Atlas; count:cheat-row=36; count:cheat-category=5; count:first-cheat-keys=8; attr:first-cheat-key
+F6-24        ok | url=/gta-6/map-locations/; heading=GTA 6 Map & Locations; count:toc=1; count:toc-link=7; count:indexed-heading=7; count:inline-gallery=6; attr:map-banner-link@href=/gta-6/map/; text:map-banner-link=Interactive GTA 6 Map 
+F6-26        ok | url=/gta-6/animals/; heading=GTA 6 Animals; attr:back-to-top@class=atlas-backtop
+F6-39        ok | url=/membership/#why-a-paid-membership-where-does-the-money-go; heading=Leonida Atlas Membership; attr:acc-container@data-rlta-state=<missing>; count:acc-button=8; attr:acc-1@aria-expanded=false; attr:acc-2@aria-expanded
+F6-36        ok | url=/gta-6/characters/; heading=GTA 6 Characters; count:card-grid=4; count:grid-4-cards=24; visible:grid-1-first-link=true
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-clone-f6-guides.json

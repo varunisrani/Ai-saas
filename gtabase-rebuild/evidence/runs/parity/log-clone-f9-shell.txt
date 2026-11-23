@@ -1,0 +1,11 @@
+F9-01        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); title=GTA 6 Hub: Map, Database, Guides & Release Info | Leonida Atlas; calls=GET /?_rsc=xDzyCErS0JvXQHQW 200 || GET /membership/free/?_rsc=xDzyCErS0JvXQHQW 200 || GET /gt
+F9-05        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); visible:menu-gta6-sub=true; count:menu-gta6-sub-links=11; list:menu-gta6-sub-links=Map || Vehicles || Weapons || Missions || Characters || 100% Checklist || Animals || Ra
+F9-09        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); title=GTA 6 Hub: Map, Database, Guides & Release Info | Leonida Atlas; calls=GET /?_rsc=xDzyCErS0JvXQHQW 200 || GET /membership/free/?_rsc=xDzyCErS0JvXQHQW 200 || GET /gt
+F9-13        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); attr:menu-toggle@class=atlas-menu-toggle; attr:main-menu@class=atlas-menu; visible:main-menu=true; list:menu-top-links=Home || News || GTA 6 || More; visible:mobile-searc
+F9-18        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); list:user-dropdown-items=Log In || Create Account || Membership; attr:user-dropdown-toggle@aria-expanded=true; text:user-dropdown-toggle=Account
+F9-28        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); visible:login-heading=false; attr:login-modal@aria-hidden=<missing>
+F9-26        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); text:login-link=Log In; attr:login-link@href=<missing>; attr:login-link@data-modals-width=<missing>; visible:login-heading=false; text:join-link=JOIN; attr:join-link@href
+F9-30        ok | url=/gta-6/; heading=GTA 6 (Grand Theft Auto VI); attr:back-to-top@class=atlas-backtop; attr:back-to-top@aria-label=Back to top; attr:back-to-top@href=#; count:footer-links=0; count:breadcrumb-items=0
+F9-34        ok | url=/gta-6/articles/gta-6-driving-tips; heading=GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks; title=GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks; list:breadcrumb-items=Home || GTA 
+F9-38        ok | url=/; heading=Leonida Atlas; title=Leonida Atlas — a fan-made field guide to GTA 6 | Leonida Atlas; calls=GET /?_rsc=xDzyCErS0JvXQHQW 200 || GET /membership/free/?_rsc=xDzyCErS0JvXQHQW 200 || GET /gta-6/map/?_rsc=xDzyCE
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-clone-f9-shell.json

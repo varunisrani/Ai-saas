@@ -1,0 +1,330 @@
+{
+  "app": "Leonida Atlas (rebuild) — vectors for suite f3-compare",
+  "baseUrl": "http://localhost:3000",
+  "captured": "2026-11-23T15:14:53.195Z",
+  "locale": "en-US",
+  "readOnly": false,
+  "cases": [
+    {
+      "id": "F3-01",
+      "mode": "vehicles",
+      "steps": [
+        "macro:wake"
+      ],
+      "reads": [
+        "count:card",
+        "count:compare-toggle",
+        "attr:compare-toggle-1@role",
+        "attr:compare-toggle-1@aria-label",
+        "attr:compare-toggle-1@aria-checked",
+        "attr:compare-toggle-1@aria-disabled",
+        "attr:compare-toggle-1@tabindex",
+        "attr:compare-toggle-1@title",
+        "session:gtabCompare:/gta-6/vehicles/",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href",
+        "attr:compare-go@class",
+        "attr:compare-bar@hidden",
+        "count:compare-toggle-checked",
+        "count:compare-toggle-disabled"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Vehicles Database",
+        "count:card": "100",
+        "count:compare-toggle": "100",
+        "attr:compare-toggle-1@role": "checkbox",
+        "attr:compare-toggle-1@aria-label": "Compare Andrew Node's Thrax",
+        "attr:compare-toggle-1@aria-checked": "false",
+        "attr:compare-toggle-1@aria-disabled": "false",
+        "attr:compare-toggle-1@tabindex": "0",
+        "attr:compare-toggle-1@title": "Compare",
+        "session:gtabCompare:/gta-6/vehicles/": "<missing>",
+        "text:compare-count": "0/4",
+        "text:compare-go": "PICK 1 MORE",
+        "attr:compare-go@href": "#",
+        "attr:compare-go@class": "pointer-events-none rounded-pill bg-white/15 px-3 py-1 font-display text-sm font-bold uppercase tracking-wide text-white/60! no-underline",
+        "attr:compare-bar@hidden": "",
+        "count:compare-toggle-checked": "0",
+        "count:compare-toggle-disabled": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-09",
+      "mode": "vehicles",
+      "steps": [
+        "macro:wake",
+        "focus:compare-toggle-1",
+        "press:Space"
+      ],
+      "reads": [
+        "attr:compare-toggle-1@aria-checked",
+        "session:gtabCompare:/gta-6/vehicles/",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href",
+        "attr:compare-go@class",
+        "attr:compare-bar@hidden",
+        "count:compare-toggle-checked",
+        "count:compare-toggle-disabled"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Vehicles Database",
+        "attr:compare-toggle-1@aria-checked": "true",
+        "session:gtabCompare:/gta-6/vehicles/": "[{\"id\":\"andrew-nodes-thrax\",\"name\":\"Andrew Node's Thrax\"}]",
+        "text:compare-count": "1/4",
+        "text:compare-go": "PICK 1 MORE",
+        "attr:compare-go@href": "#",
+        "attr:compare-go@class": "pointer-events-none rounded-pill bg-white/15 px-3 py-1 font-display text-sm font-bold uppercase tracking-wide text-white/60! no-underline",
+        "attr:compare-bar@hidden": "<missing>",
+        "count:compare-toggle-checked": "1",
+        "count:compare-toggle-disabled": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-18",
+      "mode": "vcompare",
+      "steps": [],
+      "reads": [
+        "title",
+        "text:cmp-crumb",
+        "attr:cmp-crumb@href",
+        "count:cmp-add",
+        "list:cmp-add-title",
+        "attr:cmp-add@data-url",
+        "attr:cmp-add@data-param",
+        "attr:cmp-add@data-picked",
+        "count:cmp-picker-all",
+        "attr:cmp-picker@placeholder",
+        "attr:cmp-picker@aria-expanded",
+        "attr:cmp-picker@aria-autocomplete",
+        "count:cmp-source",
+        "text:cmp-note",
+        "list:cmp-links"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/comparison/",
+        "heading": "GTA 6 Vehicle Comparison",
+        "title": "GTA 6 Vehicle Comparison",
+        "text:cmp-crumb": "GTA 6 Vehicles Database & Statistics",
+        "attr:cmp-crumb@href": "/gta-6/vehicles/",
+        "count:cmp-add": "5",
+        "list:cmp-add-title": "Add a vehicle || ADD A VEHICLE || ADD A VEHICLE || ADD A VEHICLE || ADD A VEHICLE",
+        "attr:cmp-add@data-url": "<missing>",
+        "attr:cmp-add@data-param": "<missing>",
+        "attr:cmp-add@data-picked": "<missing>",
+        "count:cmp-picker-all": "5",
+        "attr:cmp-picker@placeholder": "Search...",
+        "attr:cmp-picker@aria-expanded": "false",
+        "attr:cmp-picker@aria-autocomplete": "list",
+        "count:cmp-source": "280",
+        "text:cmp-note": "Add at least two GTA 6 vehicles to see the comparison.",
+        "list:cmp-links": "All GTA 6 vehicles || Weapon comparison || All GTA 6 weapons || Best vehicles in GTA 6 || Fastest cars in GTA 6 || Fastest bikes in GTA 6"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-25b",
+      "mode": "wcompare",
+      "steps": [
+        "click:cmp-picker",
+        "type:knífe",
+        "wait:400"
+      ],
+      "reads": [
+        "count:cmp-options"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/weapons/comparison/",
+        "heading": "GTA 6 Weapon Comparison",
+        "count:cmp-options": "8"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-33",
+      "mode": "best",
+      "steps": [
+        "focus:rank-class-select",
+        "press:Enter",
+        "wait:300",
+        "press:ArrowDown",
+        "wait:200",
+        "press:Enter"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "title": "GTA 6 Best Super Cars List: Stats Ranking"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-36",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-helicopters/"
+      ],
+      "reads": [
+        "title",
+        "list:rank-list-title",
+        "count:rank-rows",
+        "list:rank-row-1-labels",
+        "count:rank-row-1-badge",
+        "attr:rank-row-1-link@href",
+        "list:rank-ratings",
+        "count:rank-images"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-helicopters/",
+        "heading": "GTA 6 Best Helicopters List: Stats Ranking",
+        "title": "GTA 6 Best Helicopters List: Stats Ranking",
+        "list:rank-list-title": "Full List of Best Helicopters in GTA 6:",
+        "count:rank-rows": "10",
+        "list:rank-row-1-labels": "Based on: || Road Rating: || Off-Road Rating:",
+        "count:rank-row-1-badge": "1",
+        "attr:rank-row-1-link@href": "/gta-6/vehicles/maverick",
+        "list:rank-ratings": "Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: -",
+        "count:rank-images": "10"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-39",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-vehicles/?class=motorcycles"
+      ],
+      "reads": [
+        "title",
+        "count:rank-rows"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-motorcycles/",
+        "heading": "GTA 6 Best Motorcycles List: Stats Ranking",
+        "title": "GTA 6 Best Motorcycles List: Stats Ranking",
+        "count:rank-rows": "36"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-41",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-unicorns/"
+      ],
+      "reads": [
+        "title",
+        "count:rank-rows"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-unicorns/",
+        "heading": "404 Page Not Found",
+        "title": "GTA 6 Field Guide | Leonida Atlas",
+        "count:rank-rows": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-44",
+      "mode": null,
+      "steps": [
+        "viewport:1366x900",
+        "goto:/gta-6/vehicles/best-vehicles/"
+      ],
+      "reads": [
+        "attr:rank-class-item-1@href",
+        "attr:rank-class-item-2@href",
+        "attr:rank-class-item-3@href",
+        "attr:rank-class-item-4@href",
+        "attr:rank-class-item-5@href",
+        "attr:rank-class-item-6@href",
+        "attr:rank-class-item-7@href",
+        "attr:rank-class-item-8@href",
+        "attr:rank-class-item-9@href",
+        "attr:rank-class-item-10@href",
+        "attr:rank-class-item-11@href",
+        "attr:rank-class-item-12@href",
+        "attr:rank-class-item-13@href",
+        "attr:rank-class-item-14@href",
+        "attr:rank-class-item-15@href",
+        "attr:rank-class-item-16@href",
+        "attr:rank-class-item-17@href",
+        "attr:rank-class-item-18@href",
+        "attr:rank-class-item-19@href",
+        "attr:rank-class-item-20@href",
+        "attr:rank-class-item-21@href",
+        "attr:rank-class-item-1@title",
+        "list:rank-class-items"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "attr:rank-class-item-1@href": "/gta-6/vehicles/best-boats/",
+        "attr:rank-class-item-2@href": "/gta-6/vehicles/best-commercial-vehicles/",
+        "attr:rank-class-item-3@href": "/gta-6/vehicles/best-compacts/",
+        "attr:rank-class-item-4@href": "/gta-6/vehicles/best-coupes/",
+        "attr:rank-class-item-5@href": "/gta-6/vehicles/best-cycles/",
+        "attr:rank-class-item-6@href": "/gta-6/vehicles/best-emergency-vehicles/",
+        "attr:rank-class-item-7@href": "/gta-6/vehicles/best-helicopters/",
+        "attr:rank-class-item-8@href": "/gta-6/vehicles/best-industrial-vehicles/",
+        "attr:rank-class-item-9@href": "/gta-6/vehicles/best-military-vehicles/",
+        "attr:rank-class-item-10@href": "/gta-6/vehicles/best-motorcycles/",
+        "attr:rank-class-item-11@href": "/gta-6/vehicles/best-muscle-cars/",
+        "attr:rank-class-item-12@href": "/gta-6/vehicles/best-off-road-vehicles/",
+        "attr:rank-class-item-13@href": "/gta-6/vehicles/best-planes/",
+        "attr:rank-class-item-14@href": "/gta-6/vehicles/best-sedans/",
+        "attr:rank-class-item-15@href": "/gta-6/vehicles/best-service-vehicles/",
+        "attr:rank-class-item-16@href": "/gta-6/vehicles/best-sports-cars/",
+        "attr:rank-class-item-17@href": "/gta-6/vehicles/best-sports-classic-cars/",
+        "attr:rank-class-item-18@href": "/gta-6/vehicles/best-super-cars/",
+        "attr:rank-class-item-19@href": "/gta-6/vehicles/best-suvs/",
+        "attr:rank-class-item-20@href": "/gta-6/vehicles/best-utility-vehicles/",
+        "attr:rank-class-item-21@href": "/gta-6/vehicles/best-vans/",
+        "attr:rank-class-item-1@title": "The Best & Fastest Boats in GTA 6",
+        "list:rank-class-items": "Boats || Commercial || Compacts || Coupes || Cycles || Emergency || Helicopters || Industrial || Military || Motorcycles || Muscle || Off-Road || Planes || Sedans || Service || Sports || Sports Classic || Super || SUVs || Utility || Vans"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-47",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-vehicles/",
+        "focus:rank-class-select",
+        "press:Enter",
+        "wait:400"
+      ],
+      "reads": [
+        "visible:rank-class-menu",
+        "attr:rank-class-select@aria-expanded",
+        "text:rank-class-focused"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "visible:rank-class-menu": "true",
+        "attr:rank-class-select@aria-expanded": "true",
+        "text:rank-class-focused": "<missing>"
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+F10-01 | attr:fav-button@type=button; count:fav-button=1; count:fav-button-role=1; text:compare-button=Compare To; text:fav-button=Add To Favorites; url=/gta-6/vehicles/sunset-sanchez; visible:login-modal=false
+F10-04 | ERROR
+F10-07 | ERROR
+F10-10 | ERROR
+F10-13 | count:login-benefits=0; text:login-title=Sign in to Leonida Atlas; url=/gta-6/vehicles/sunset-sanchez; visible:login-modal=true
+F10-17 | ERROR
+F10-20 | count:fav-button=0; count:list-fav-control=0; url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc
+F10-23 | count:map-popup=1; url=/gta-6/map/#garage-003; visible:map-panel=false
+F10-26 | attr:map-panel@aria-label=Personal marker; text:map-panel-text=Personal markers are saved to an account so they follow you to every device. Accounts are coming later; your ticks already stay in this browser.; text:map-panel-title=PERSONAL MARKER; url=/gta-6/map/; visible:map-panel=true
+F10-29 | url=/membership/

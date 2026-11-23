@@ -1,0 +1,10 @@
+F7-01 | attr:item-category@href=/gta-6/news/; count:item-category=30; count:item-date=30; count:item-thumb=30; count:item-thumb-link=30; count:item-title-link=30; count:list-banner=1; count:list-item=30; count:page-links=0; text:item-category=Grand Theft Auto VI; text:item-details-label=Details; text:page-counter=Page 1 of M; url=/gta-6/news/; visible:game-filter-toggle=true; visible:item-details-label=false
+F7-08 | count:list-item=0; url=/gta-6/news/page-6
+F7-12 | count:list-item=0; text:page-counter=Page 3 of M; text:page-number=- Page 3; url=/gta-6/news/?start=999
+F7-16 | url=/gta-6/guides/page-4
+F7-20 | count:game-filter-toggle=1; count:item-category=0; count:item-date=30; count:list-item=30; text:page-counter=Page 1 of M; url=/news/; visible:game-filter-menu=false
+F7-27 | attr:article-category@href=/gta-6/news/; count:article-hero=1; count:article-meta=1; count:article-modified=0; count:section-anchors=11; count:sidebar=1; count:toc-links=11; text:article-category=Grand Theft Auto VI; url=/gta-6/articles/gta-6-driving-tips
+F7-31 | count:article-published=0; count:related-block=1; count:related-cards=2; count:section-anchors=10; count:toc-links=10; text:article-category=Grand Theft Auto VI; text:related-heading=CONTROLS ACROSS ALL GAMES; url=/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout
+F7-35 | count:toc-links=11; url=/gta-6/articles/gta-6-driving-tips; visible:article-hero=true; visible:sidebar=true; visible:toc=true
+F7-39 | count:list-item=30; text:page-counter=Page 1 of M; url=/gta-6/guides/; visible:item-thumb=true; visible:item-title-link=true; visible:sidebar=true
+F7-43 | url=/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops

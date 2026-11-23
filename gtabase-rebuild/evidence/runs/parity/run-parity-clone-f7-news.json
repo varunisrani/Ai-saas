@@ -1,0 +1,335 @@
+{
+  "app": "Leonida Atlas (rebuild) — vectors for suite f7-news",
+  "baseUrl": "http://localhost:3000",
+  "captured": "2026-11-23T15:18:32.291Z",
+  "locale": "en-US",
+  "readOnly": false,
+  "cases": [
+    {
+      "id": "F7-01",
+      "mode": "news",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item",
+        "count:item-title-link",
+        "count:item-thumb",
+        "count:item-thumb-link",
+        "count:item-author",
+        "count:item-date",
+        "count:item-category",
+        "count:item-tags",
+        "visible:item-details-label",
+        "text:item-details-label",
+        "list:item-date",
+        "attr:item-date@datetime",
+        "text:item-category",
+        "attr:item-category@href",
+        "attr:item-thumb@width",
+        "attr:item-thumb@height",
+        "text:page-counter",
+        "count:page-links",
+        "count:share-block",
+        "count:list-banner",
+        "visible:game-filter-toggle"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "GTA 6 News & Updates",
+        "title": "GTA 6 News & Updates | Leonida Atlas",
+        "calls": "GET /?_rsc=SnyW6SgGu72R-Awn 200 || GET /membership/free/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/map/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/vehicles/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/weapons/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/missions/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/characters/?_rsc=SnyW6SgGu72R-Awn 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=SnyW6SgGu72R-Awn 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/animals/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/properties/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/side-missions/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/radio-stations/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/guides/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/strangers-missions/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/vehicles/tideback?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=SnyW6SgGu72R-Awn 200 || GET /?_rsc=D_l-kaW-CO_wAyJ0 200 || GET /?_rsc=gGtNO5U4mswRb2dT 200 || GET /membership/free/?_rsc=Th8rvbCbSMcFcdCw 200 || GET /gta-6/?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/map/?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/vehicles/?_rsc=5WawjvqghIyZNH3P 200 || GET /gta-6/weapons/?_rsc=zSaQb4IzHkkGbAcC 200 || GET /gta-6/missions/?_rsc=L5c-R-MblrPfUYoG 200 || GET /gta-6/characters/?_rsc=s7jx7UxQDoIm6y4P 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=bCmgWOQE6z37smNu 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/animals/?_rsc=xsdO6pEbLZVHJapc 200 || GET /gta-6/properties/?_rsc=hqCEzCF_W0tRlOfC 200 || GET /gta-6/side-missions/?_rsc=DYgnR1iAVDTy73QX 200 || GET /gta-6/radio-stations/?_rsc=eyNyYcxKLr0my3Th 200 || GET /gta-6/guides/?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/strangers-missions/?_rsc=yC8M4xDJc46GK7uT 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=Aj4vGYDndEQg7mct 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=PtidKmaB4QExxHbF 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/vehicles/tideback?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=WOGCa1V7JXmOV2JW 200",
+        "count:list-item": "30",
+        "count:item-title-link": "30",
+        "count:item-thumb": "30",
+        "count:item-thumb-link": "30",
+        "count:item-author": "22",
+        "count:item-date": "30",
+        "count:item-category": "30",
+        "count:item-tags": "0",
+        "visible:item-details-label": "false",
+        "text:item-details-label": "Details",
+        "list:item-date": "on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 21, 2026 || on November 21, 2026 || on November 20, 2026 || on November 17, 2026 || on November 15, 2026 || on November 14, 2026 || on November 13, 2026 || on November 12, 2026 || on November 10, 2026 || on November 7, 2026 || on November 5, 2026 || on November 3, 2026 || on November 2, 2026 || on November 2, 2026 || on November 1, 2026 || on November 1, 2026 || on October 29, 2026 || on October 27, 2026 || on October 27, 2026 || on October 26, 2026 || on October 26, 2026 || on October 25, 2026",
+        "attr:item-date@datetime": "2026-11-22T21:46:04Z",
+        "text:item-category": "Grand Theft Auto VI",
+        "attr:item-category@href": "/gta-6/news/",
+        "attr:item-thumb@width": "320",
+        "attr:item-thumb@height": "180",
+        "text:page-counter": "Page 1 of 3",
+        "count:page-links": "0",
+        "count:share-block": "0",
+        "count:list-banner": "1",
+        "visible:game-filter-toggle": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-08",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-6"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/page-6",
+        "heading": "404 Page Not Found",
+        "title": "GTA 6 Field Guide | Leonida Atlas",
+        "calls": "GET /?_rsc=8FUW_EjPrhjy8thY 200 || GET /membership/free/?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/map/?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/vehicles/?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/weapons/?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/missions/?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/characters/?_rsc=8FUW_EjPrhjy8thY 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/animals/?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/radio-stations/?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/news/?_rsc=8FUW_EjPrhjy8thY 200 || GET /gta-6/guides/?_rsc=8FUW_EjPrhjy8thY 200 || GET /search?_rsc=8FUW_EjPrhjy8thY 200 || GET /membership/?_rsc=8FUW_EjPrhjy8thY 200 || GET /?_rsc=p8DYtLotaL2Z63kq 200 || GET /?_rsc=Em8pHzs-zqQp8kQ9 200 || GET /membership/free/?_rsc=sOA0zubYDB7dZIsl 200 || GET /gta-6/map/?_rsc=PMXyksATt7Bhq24A 200 || GET /gta-6/vehicles/?_rsc=aplYv9jHkFIu8pU8 200 || GET /gta-6/weapons/?_rsc=Gy7YqSeLyYa-82Lx 200 || GET /gta-6/missions/?_rsc=ioTA1DysoDMPI6JR 200 || GET /gta-6/characters/?_rsc=NsV_RtkIO_BERNgc 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=5HiuNiEwHIyQQQDd 200 || GET /gta-6/animals/?_rsc=zOBO52AZAS0XRvt9 200 || GET /gta-6/radio-stations/?_rsc=gVxQm3umcPlyVESY 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=2AHnopwK-uUA1xF9 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=vj9WIS2ogkH8COqX 200 || GET /gta-6/?_rsc=PMXyksATt7Bhq24A 200 || GET /gta-6/news/?_rsc=PMXyksATt7Bhq24A 200 || GET /gta-6/guides/?_rsc=PMXyksATt7Bhq24A 200 || GET /search?_rsc=PMXyksATt7Bhq24A 200 || GET /membership/?_rsc=SQz9jngT0-kEKOv5 200",
+        "count:list-item": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-12",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/?start=999"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item",
+        "text:page-number"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/?start=999",
+        "heading": "Grand Theft Auto VI - Page 3",
+        "title": "GTA 6 News & Updates | Leonida Atlas",
+        "calls": "GET /?_rsc=SnyW6SgGu72R-Awn 200 || GET /membership/free/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/map/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/vehicles/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/weapons/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/missions/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/characters/?_rsc=SnyW6SgGu72R-Awn 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=SnyW6SgGu72R-Awn 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/animals/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/properties/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/side-missions/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/radio-stations/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/guides/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/strangers-missions/?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/vehicles/tideback?_rsc=SnyW6SgGu72R-Awn 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=SnyW6SgGu72R-Awn 200 || GET /search?_rsc=SnyW6SgGu72R-Awn 200 || GET /membership/?_rsc=SnyW6SgGu72R-Awn 200 || GET /?_rsc=D_l-kaW-CO_wAyJ0 200 || GET /?_rsc=gGtNO5U4mswRb2dT 200 || GET /membership/free/?_rsc=Th8rvbCbSMcFcdCw 200 || GET /gta-6/?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/map/?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/vehicles/?_rsc=5WawjvqghIyZNH3P 200 || GET /gta-6/weapons/?_rsc=zSaQb4IzHkkGbAcC 200 || GET /gta-6/missions/?_rsc=L5c-R-MblrPfUYoG 200 || GET /gta-6/characters/?_rsc=s7jx7UxQDoIm6y4P 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=bCmgWOQE6z37smNu 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/animals/?_rsc=xsdO6pEbLZVHJapc 200 || GET /gta-6/properties/?_rsc=hqCEzCF_W0tRlOfC 200 || GET /gta-6/side-missions/?_rsc=DYgnR1iAVDTy73QX 200 || GET /gta-6/radio-stations/?_rsc=eyNyYcxKLr0my3Th 200 || GET /gta-6/guides/?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/strangers-missions/?_rsc=yC8M4xDJc46GK7uT 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=Aj4vGYDndEQg7mct 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=PtidKmaB4QExxHbF 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/vehicles/tideback?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=WOGCa1V7JXmOV2JW 200 || GET /gta-6/news/?_rsc=WOGCa1V7JXmOV2JW 200 || GET /search?_rsc=WOGCa1V7JXmOV2JW 200 || GET /membership/?_rsc=Ap5ug5wQcrWVW9Vf 200",
+        "text:page-counter": "Page 3 of 3",
+        "count:list-item": "0",
+        "text:page-number": "- Page 3"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-16",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/guides/page-4"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/guides/page-4",
+        "heading": "404 Page Not Found",
+        "title": "GTA 6 Field Guide | Leonida Atlas",
+        "calls": "GET /?_rsc=uh74k6TiFNDBHwMj 200 || GET /membership/free/?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/map/?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/vehicles/?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/weapons/?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/missions/?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/characters/?_rsc=uh74k6TiFNDBHwMj 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/animals/?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/radio-stations/?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/news/?_rsc=uh74k6TiFNDBHwMj 200 || GET /gta-6/guides/?_rsc=uh74k6TiFNDBHwMj 200 || GET /search?_rsc=uh74k6TiFNDBHwMj 200 || GET /membership/?_rsc=uh74k6TiFNDBHwMj 200 || GET /?_rsc=pyzXBUd-ZXVWmO88 200 || GET /?_rsc=jUPrRlv51F9eQ5b8 200 || GET /membership/free/?_rsc=tsoyiVYQD49SQHOG 200 || GET /gta-6/map/?_rsc=zRZrYeIsRduNQ_Pm 200 || GET /gta-6/vehicles/?_rsc=SsLaANJMDJqKag2e 200 || GET /gta-6/weapons/?_rsc=ucIT30du8jjauN8U 200 || GET /gta-6/missions/?_rsc=pQRAPI6J-YcfDVfa 200 || GET /gta-6/characters/?_rsc=-JOj0qyVIBiijyBm 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=s-oK2XSoG9w1I40Q 200 || GET /gta-6/animals/?_rsc=pJjDfNkqs1np9fSH 200 || GET /gta-6/radio-stations/?_rsc=_BeVTo7VSgamK0Zo 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=ZrM9TscA8VLo5ijJ 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=IiN8U4doTQZz_AfP 200 || GET /gta-6/?_rsc=zRZrYeIsRduNQ_Pm 200 || GET /gta-6/news/?_rsc=zRZrYeIsRduNQ_Pm 200 || GET /gta-6/guides/?_rsc=zRZrYeIsRduNQ_Pm 200 || GET /search?_rsc=zRZrYeIsRduNQ_Pm 200 || GET /membership/?_rsc=130O6HTJ2stQUFk7 200"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-20",
+      "mode": "allnews",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item",
+        "count:item-tags",
+        "count:item-category",
+        "count:item-author",
+        "count:item-date",
+        "count:game-filter-toggle",
+        "visible:game-filter-menu"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/news/",
+        "heading": "All News & Guides",
+        "title": "All News & Guides | Leonida Atlas",
+        "calls": "GET /?_rsc=ZT0-uqATtlNBUI5v 200 || GET /membership/free/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/map/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/vehicles/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/weapons/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/missions/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/characters/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=ZT0-uqATtlNBUI5v 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/animals/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/properties/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/side-missions/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/radio-stations/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/guides/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/strangers-missions/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/news/?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/vehicles/tideback?_rsc=ZT0-uqATtlNBUI5v 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=ZT0-uqATtlNBUI5v 200 || GET /?_rsc=NLHYI_ZU_4vQOwUI 200 || GET /?_rsc=FlMgHlqNLWRsmRi_ 200 || GET /membership/free/?_rsc=SgxLXUSGDzIgY015 200 || GET /gta-6/?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/map/?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/vehicles/?_rsc=HPp1BYPLq9Bk7Gzg 200 || GET /gta-6/weapons/?_rsc=ZK2dpKBRjviTYf52 200 || GET /gta-6/missions/?_rsc=Qp3J1m6tvr7xDEBe 200 || GET /gta-6/characters/?_rsc=897zMLBegiGnVCvw 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=J2H2JU9rj7awHWAS 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/animals/?_rsc=3pOAnrGUnIF8NMnF 200 || GET /gta-6/properties/?_rsc=vtS08pxxXG_Xvx8y 200 || GET /gta-6/side-missions/?_rsc=zq4ufZufvg-pbMjS 200 || GET /gta-6/radio-stations/?_rsc=P3rsR6OFjIwC06UV 200 || GET /gta-6/guides/?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/strangers-missions/?_rsc=bqrlACLj299r7ZqL 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=QyD-7NKcfLRhEG2O 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=By30x8Ok0Gp_r18q 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/news/?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/vehicles/tideback?_rsc=6P1f3JukG51t9aLB 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=6P1f3JukG51t9aLB 200",
+        "text:page-counter": "Page 1 of 3",
+        "count:list-item": "30",
+        "count:item-tags": "30",
+        "count:item-category": "0",
+        "count:item-author": "22",
+        "count:item-date": "30",
+        "count:game-filter-toggle": "1",
+        "visible:game-filter-menu": "false"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-27",
+      "mode": "article",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "count:article-meta",
+        "count:article-author",
+        "text:article-published",
+        "attr:article-published@datetime",
+        "count:article-modified",
+        "text:article-category",
+        "attr:article-category@href",
+        "count:share-buttons",
+        "list:share-buttons",
+        "count:article-hero",
+        "text:toc-heading",
+        "count:toc-links",
+        "list:toc-links",
+        "count:section-anchors",
+        "list:section-headings",
+        "count:comments",
+        "count:comment-sort-options",
+        "list:comment-sort-options",
+        "text:comment-sort-current",
+        "attr:comment-limit@data-max",
+        "attr:comment-editor@aria-label",
+        "count:sidebar"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "title": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "calls": "GET /?_rsc=84WqXYsWAzXxhvlf 200 || GET /membership/free/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/map/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/vehicles/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/weapons/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/missions/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/characters/?_rsc=84WqXYsWAzXxhvlf 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=84WqXYsWAzXxhvlf 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/animals/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/properties/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/side-missions/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/radio-stations/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/guides/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/strangers-missions/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/news/?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/vehicles/tideback?_rsc=84WqXYsWAzXxhvlf 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=84WqXYsWAzXxhvlf 200 || GET /?_rsc=A-xRM6OQIf6M8OQ4 200 || GET /?_rsc=16CMADcGAZcCFHz_ 200 || GET /membership/free/?_rsc=_pvmXcNJyu86O5jL 200 || GET /gta-6/?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/map/?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/vehicles/?_rsc=e91_WBE7_BeyBRQg 200 || GET /gta-6/weapons/?_rsc=PcoVT3Tw7Z8FnTXd 200 || GET /gta-6/missions/?_rsc=0k58LFVcscBykQyP 200 || GET /gta-6/characters/?_rsc=wxjuLPOct5oEVyFY 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=jbiDnmicOV8UwF7z 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/animals/?_rsc=FBij_aRNJFSf6gv3 200 || GET /gta-6/properties/?_rsc=kzYe75DcDAQCzqGy 200 || GET /gta-6/side-missions/?_rsc=_FcOM-uMKBSHhjWT 200 || GET /gta-6/radio-stations/?_rsc=K29afWiMK4InA8KN 200 || GET /gta-6/guides/?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/strangers-missions/?_rsc=JmLzaU7OVwPVmAA9 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=9L6f-43SZmJQceld 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=bSPSQpRbZvpHiBjc 200 || GET /gta-6/news/?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/vehicles/tideback?_rsc=iHSZmorKoGL2LDIP 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=iHSZmorKoGL2LDIP 200",
+        "count:article-meta": "1",
+        "count:article-author": "0",
+        "text:article-published": "on November 22, 2026",
+        "attr:article-published@datetime": "2026-11-22T09:44:12Z",
+        "count:article-modified": "0",
+        "text:article-category": "Grand Theft Auto VI",
+        "attr:article-category@href": "/gta-6/news/",
+        "count:share-buttons": "2",
+        "list:share-buttons": "Copy link || Share…",
+        "count:article-hero": "1",
+        "text:toc-heading": "GTA 6 Driving Tips",
+        "count:toc-links": "11",
+        "list:toc-links": "Ease Into the Throttle || Drift Through Tight Corners || Duck to Hide from the Cops || Line Up Your Drive-Bys || Vehicle Melee || Bail Out Safely || Use the Cinematic Camera || Keep Your Ride Repaired || Read the Road Surface || Night Driving and Headlights || Hidden Tricks Worth Knowing",
+        "count:section-anchors": "11",
+        "list:section-headings": "Ease Into the Throttle || Drift Through Tight Corners || Duck to Hide from the Cops || Line Up Your Drive-Bys || Vehicle Melee || Bail Out Safely || Use the Cinematic Camera || Keep Your Ride Repaired || Read the Road Surface || Night Driving and Headlights || Hidden Tricks Worth Knowing",
+        "count:comments": "1",
+        "count:comment-sort-options": "0",
+        "list:comment-sort-options": "",
+        "text:comment-sort-current": "<missing>",
+        "attr:comment-limit@data-max": "<missing>",
+        "attr:comment-editor@aria-label": "<missing>",
+        "count:sidebar": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-31",
+      "mode": "controls",
+      "steps": [
+        "macro:to-bottom"
+      ],
+      "reads": [
+        "title",
+        "count:article-published",
+        "text:article-modified",
+        "attr:article-modified@datetime",
+        "text:article-category",
+        "count:toc-links",
+        "count:section-anchors",
+        "count:related-block",
+        "text:related-heading",
+        "count:related-cards",
+        "list:breadcrumb-items"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+        "heading": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+        "title": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+        "count:article-published": "0",
+        "text:article-modified": "Last Updated: November 22, 2026",
+        "attr:article-modified@datetime": "2026-11-22T09:44:22Z",
+        "text:article-category": "Grand Theft Auto VI",
+        "count:toc-links": "10",
+        "count:section-anchors": "10",
+        "count:related-block": "1",
+        "text:related-heading": "CONTROLS ACROSS ALL GAMES",
+        "count:related-cards": "2",
+        "list:breadcrumb-items": "Home || GTA 6 || News || GTA 6 Controls Guide: Full PS5 & Xbox Button Layout"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-35",
+      "mode": "article-phone",
+      "steps": [],
+      "reads": [
+        "visible:toc",
+        "count:toc-links",
+        "visible:share-block",
+        "visible:article-hero",
+        "visible:sidebar",
+        "text:article-published"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "visible:toc": "true",
+        "count:toc-links": "11",
+        "visible:share-block": "true",
+        "visible:article-hero": "true",
+        "visible:sidebar": "true",
+        "text:article-published": "on November 22, 2026"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-39",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/guides/"
+      ],
+      "reads": [
+        "count:list-item",
+        "visible:item-thumb",
+        "visible:item-title-link",
+        "visible:sidebar",
+        "visible:share-block",
+        "text:page-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/guides/",
+        "heading": "GTA 6 Guides & Walkthroughs",
+        "count:list-item": "30",
+        "visible:item-thumb": "true",
+        "visible:item-title-link": "true",
+        "visible:sidebar": "true",
+        "visible:share-block": "true",
+        "text:page-counter": "Page 1 of 3"
+      },
+      "error": null
+    },
+    {
+      "id": "F7-43",
+      "mode": "article",
+      "steps": [
+        "focus:toc-link-3",
+        "press:Enter",
+        "wait:800"
+      ],
+      "reads": [
+        "url"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks"
+      },
+      "error": null
+    }
+  ]
+}

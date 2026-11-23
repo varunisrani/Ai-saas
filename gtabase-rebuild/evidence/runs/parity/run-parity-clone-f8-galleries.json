@@ -1,0 +1,266 @@
+{
+  "app": "Leonida Atlas (rebuild) — vectors for suite f8-galleries",
+  "baseUrl": "http://localhost:3000",
+  "captured": "2026-11-23T15:19:08.019Z",
+  "locale": "en-US",
+  "readOnly": false,
+  "cases": [
+    {
+      "id": "F8-01",
+      "mode": "shots",
+      "steps": [],
+      "reads": [
+        "count:gallery",
+        "count:thumb",
+        "list:media-tab",
+        "text:media-tab-active",
+        "count:pagination",
+        "count:pagination-item",
+        "text:pagination-active",
+        "count:pagination-disabled",
+        "attr:pagination-page-2@href",
+        "attr:pagination-last@href",
+        "count:lightbox",
+        "attr:thumb-1-img@alt",
+        "count:thumb-img-lazy",
+        "visible:main-slideshow",
+        "count:modal-trigger",
+        "count:modal-trigger-login",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Screenshots",
+        "count:gallery": "1",
+        "count:thumb": "100",
+        "list:media-tab": "Screenshots || Trailer Screens || Artworks || Videos",
+        "text:media-tab-active": "Screenshots",
+        "count:pagination": "2",
+        "count:pagination-item": "7",
+        "text:pagination-active": "1",
+        "count:pagination-disabled": "2",
+        "attr:pagination-page-2@href": "/gta-6/screenshots/?thumb_limitstart=100&limit=100",
+        "attr:pagination-last@href": "/gta-6/screenshots/?thumb_limitstart=200&limit=100",
+        "count:lightbox": "0",
+        "attr:thumb-1-img@alt": "GTA 6 screenshot 1: rooftop pool party",
+        "count:thumb-img-lazy": "0",
+        "visible:main-slideshow": "false",
+        "count:modal-trigger": "2",
+        "count:modal-trigger-login": "2",
+        "calls": "GET /?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /membership/free/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/map/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/vehicles/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/weapons/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/missions/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/characters/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/animals/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/properties/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/side-missions/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/radio-stations/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/guides/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/strangers-missions/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/screenshots/trailers/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/artworks/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/videos/?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/vehicles/tideback?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=hNF_QrbKKdxqSKW_ 200 || GET /?_rsc=_8IolZcMSzKKoWG0 200 || GET /?_rsc=-5T63rpLod6qkt0_ 200 || GET /membership/free/?_rsc=nJo-61f4lzj2ysw8 200 || GET /gta-6/?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/map/?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/vehicles/?_rsc=wQsuhA3vZmzFr9AN 200 || GET /gta-6/weapons/?_rsc=1SOaOZvbwLsrLuHq 200 || GET /gta-6/missions/?_rsc=RsD7CVwUmTTOfWEK 200 || GET /gta-6/characters/?_rsc=ClHkMCDgmAlBXk_l 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=NwLWJBVcPp0iT9iO 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/animals/?_rsc=fruvjFg-8YHwV8Dn 200 || GET /gta-6/properties/?_rsc=_iE5bQUXjGJpqYmL 200 || GET /gta-6/side-missions/?_rsc=6jjKcpver-H1uF9g 200 || GET /gta-6/radio-stations/?_rsc=-AG7x7Dxyt27DU-v 200 || GET /gta-6/guides/?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/strangers-missions/?_rsc=5fkRy4-KkQ3qJEQe 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=c3yGVbAHcK57fJ68 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=sKGxZCWMT4TVIb6B 200 || GET /gta-6/screenshots/trailers/?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/artworks/?_rsc=jd2FBvcxdUxRihG_ 200 || GET /gta-6/videos/?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/vehicles/tideback?_rsc=fVyiE_ogDWtqNski 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=fVyiE_ogDWtqNski 200"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-09",
+      "mode": "shots",
+      "steps": [
+        "click:thumb-5",
+        "waitfor:lb-counter",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "attr:lb-image@alt"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Screenshots",
+        "text:lb-counter": "5/100",
+        "attr:lb-image@alt": "GTA 6 screenshot 5: rain on the neon mile"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-12",
+      "mode": "shots",
+      "steps": [
+        "focus:thumb-3",
+        "press:Enter",
+        "wait:1200"
+      ],
+      "reads": [
+        "count:lightbox",
+        "text:lb-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Screenshots",
+        "count:lightbox": "1",
+        "text:lb-counter": "3/100"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-14",
+      "mode": "shots",
+      "steps": [
+        "click:pagination-page-2",
+        "macro:wake",
+        "macro:open-first"
+      ],
+      "reads": [
+        "count:thumb",
+        "text:pagination-active",
+        "text:lb-counter",
+        "count:pagination-disabled"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/?thumb_limitstart=100&limit=100",
+        "heading": "GTA 6 Screenshots",
+        "count:thumb": "100",
+        "text:pagination-active": "2",
+        "text:lb-counter": "1/100",
+        "count:pagination-disabled": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-16",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/screenshots/?i=gta-6-screen-104",
+        "macro:wake"
+      ],
+      "reads": [
+        "count:lightbox"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Screenshots",
+        "count:lightbox": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-18",
+      "mode": "shots",
+      "steps": [
+        "click:media-tab-trailers",
+        "macro:wake"
+      ],
+      "reads": [
+        "text:media-tab-active",
+        "count:thumb",
+        "count:pagination",
+        "text:pagination-active"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/trailers/",
+        "heading": "GTA 6 Trailer Screens",
+        "text:media-tab-active": "Trailer Screens",
+        "count:thumb": "100",
+        "count:pagination": "2",
+        "text:pagination-active": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-23",
+      "mode": "covers",
+      "steps": [],
+      "reads": [
+        "count:gallery",
+        "count:thumb",
+        "visible:main-image",
+        "text:image-description",
+        "count:pagination",
+        "count:media-tab"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/covers/",
+        "heading": "GTA 6 Cover Art",
+        "count:gallery": "1",
+        "count:thumb": "0",
+        "visible:main-image": "true",
+        "text:image-description": "Leonida Atlas placeholder cover: a sunset collage of the island's counties.",
+        "count:pagination": "0",
+        "count:media-tab": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-29",
+      "mode": "shots",
+      "steps": [
+        "click:media-tab-videos"
+      ],
+      "reads": [
+        "count:media-tab",
+        "count:gallery",
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/videos/",
+        "heading": "GTA 6 Videos & Trailers",
+        "count:media-tab": "0",
+        "count:gallery": "0",
+        "title": "GTA 6 Videos & Trailers | Leonida Atlas"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-33",
+      "mode": "covers",
+      "steps": [
+        "click:main-image",
+        "waitfor:lb-counter",
+        "wait:700",
+        "press:Escape",
+        "wait:900"
+      ],
+      "reads": [
+        "count:lightbox",
+        "count:page-scroll-lock",
+        "visible:main-image"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/covers/",
+        "heading": "GTA 6 Cover Art",
+        "count:lightbox": "0",
+        "count:page-scroll-lock": "0",
+        "visible:main-image": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-31",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/screenshots/",
+        "macro:wake",
+        "macro:open-first"
+      ],
+      "reads": [
+        "count:thumb",
+        "visible:lb-next",
+        "visible:lb-prev",
+        "visible:lb-close",
+        "text:lb-counter",
+        "visible:lb-image"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Screenshots",
+        "count:thumb": "100",
+        "visible:lb-next": "true",
+        "visible:lb-prev": "true",
+        "visible:lb-close": "true",
+        "text:lb-counter": "1/100",
+        "visible:lb-image": "true"
+      },
+      "error": null
+    }
+  ]
+}

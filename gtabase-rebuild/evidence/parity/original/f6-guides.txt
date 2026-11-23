@@ -1,0 +1,10 @@
+F6-01 | attr:grid-1-first-link@aria-label=Read more: Albino American Alligator; attr:grid-1-first-link@href=/gta-6/animals/albino-american-alligator; count:card-grid=3; count:faq-question=0; count:section-heading=3; count:toc=0; url=/gta-6/animals/
+F6-04 | attr:grid-1-first-link@href=/gta-6/characters/jason; count:card-grid=4; count:faq-question=5; url=/gta-6/characters/
+F6-07 | count:card-grid=4; url=/gta-6/properties/
+F6-09 | count:station-without-tracks=1; count:table-controls=0; count:track-play-pause-state=0; list:tracklist-header=# || Track || Play; text:player-duration=0:00; text:player-time=0:00; url=/gta-6/radio-stations/; visible:floating-player=true
+F6-19 | attr:toc-link-combat@href=/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats; url=/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats
+F6-21 | attr:howto-icon-2@alt=LB; attr:howto-icon-3@alt=RB; count:body-link-pc=0; count:cheat-category=5; count:cheat-copy-or-filter=0; count:cheat-key-other=0; count:first-cheat-keys=8; count:platform-link=2; text:platform-current=GTA 6 Cheats for Xbox Series X|S YOU ARE HERE; url=/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes
+F6-24 | attr:map-banner-link@href=/gta-6/map/; count:toc=1; url=/gta-6/map-locations/
+F6-26 | url=/gta-6/animals/
+F6-39 | attr:acc-1@aria-expanded=true; attr:acc-2@aria-expanded=false; count:acc-open=1; url=/membership/
+F6-36 | count:card-grid=4; url=/gta-6/characters/; visible:grid-1-first-link=true

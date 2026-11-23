@@ -1,0 +1,10 @@
+F1-01 | attr:name-search@maxlength=128; attr:name-search@placeholder=Enter Vehicle Name; attr:real-life-search@placeholder=Enter Real Life Vehicle; count:list-head=1; session:jamg-hash:/gta-6/vehicles/=#sort=attr.ct6.frontend_value&sortdir=desc; text:manufacturer-shown=Select Manufacturer; text:sort-shown=Speed; url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc; value:sort-select=attr.ct6.frontend_value; visible:clear-filters=false; visible:filters-toggle=false
+F1-05 | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&name=AN&page=1; value:name-search=AN
+F1-10 | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&attr.ct72.value=Hurac%C3%A1n&page=1; value:real-life-search=Huracán
+F1-17 | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&attr.ct734.value=hide-standouts&page=1; value:standout-select=hide-standouts; visible:clear-filters=true
+F1-24 | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=asc
+F1-30 | checked:class-sports-box=true; checked:class-super-box=true; url=/gta-6/vehicles/#attr.ct1.value=super%2Csports&attr.ct734.value=hide-standouts&sort=attr.ct6.frontend_value&sortdir=desc&page=1; value:sort-select=attr.ct6.frontend_value; value:standout-select=hide-standouts
+F1-35 | attr:filters-toggle@aria-label=Open Filters; url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc; visible:class-super=true; visible:filters-toggle=false; visible:manufacturer-dropdown=true; visible:name-search=true; visible:sort-dropdown=true
+F1-42 | attr:name-search@maxlength=128; url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&name=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&page=1; value:name-search=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+F1-W06 | url=/gta-6/weapons/#sort=attr.ct58.frontend_value&sortdir=asc; value:sort-select=attr.ct58.frontend_value
+F1-W11 | url=/gta-6/weapons/#sort=name&sortdir=asc

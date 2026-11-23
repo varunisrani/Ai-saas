@@ -361,7 +361,9 @@
   "F3-27": "Cloudflare challenge page recorded on the original",
   "F3-28": "Cloudflare challenge page recorded on the original",
   "F3-29": "Cloudflare challenge page recorded on the original",
-  "F9-16": "clicks screen coordinates of the original layout (clickat)"
+  "F9-16": "clicks screen coordinates of the original layout (clickat)",
+  "F8-23": "original-side parity run: harness timeout hovering covers thumbnail (live page)",
+  "F8-33": "original-side parity run: harness timeout hovering covers thumbnail (live page)"
  },
  "_divergence_ignores": "Readouts of features the rebuild deliberately lacks (CLONE_SPEC divergences): comments, share widgets, video-service embeds, translation, map contest, login form internals (own dialog), membership plan details, footer/social, member dropdown, personal markers, profiles, other-game menu entries, join links."
 }

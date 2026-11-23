@@ -1,0 +1,64 @@
+PASS F7-01
+FAIL F7-02
+  attr:page-last@href: expected "/gta-6/articles/page-6", got "/gta-6/news/page-3"
+  count:page-links: expected "8", got "5"
+  list:page-links: expected "1 || 2 || 3 || 4 || 5 || 6 ||  || ", got "1 || 2 || 3 ||  || "
+PASS F7-03
+FAIL F7-04
+  attr:page-last@href: expected "/gta-6/articles/page-6", got "/gta-6/news/page-3"
+  list:page-links: expected " ||  || 1 || 2 || 3 || 4 || 5 || 6 ||  || ", got " ||  || 1 || 2 || 3 ||  || "
+PASS F7-05
+FAIL F7-06
+  count:list-item: expected "22", got "24"
+  text:page-counter: expected "Page 6 of M", got "Page 3 of M"
+  text:page-number: expected "- Page 6", got "- Page 3"
+  url: expected "/gta-6/articles/page-6", got "/gta-6/news/page-3"
+FAIL F7-07
+  attr:page-prev@href: expected "/gta-6/news/page-5", got "/gta-6/news/page-2"
+  list:page-links: expected " ||  || 1 || 2 || 3 || 4 || 5 || 6", got " ||  || 1 || 2 || 3"
+  text:page-current: expected "6", got "3"
+  url: expected "/gta-6/articles/page-6", got "/gta-6/news/page-3"
+PASS F7-08
+PASS F7-09
+PASS F7-10
+PASS F7-11
+FAIL F7-12
+  text:page-counter: expected "Page 6 of M", got "Page 3 of M"
+  text:page-number: expected "- Page 6", got "- Page 3"
+PASS F7-13
+PASS F7-14
+PASS F7-15
+PASS F7-16
+PASS F7-17
+PASS F7-18
+PASS F7-19
+PASS F7-20
+PASS F7-21
+PASS F7-22
+PASS F7-23
+PASS F7-24
+PASS F7-25
+PASS F7-26
+PASS F7-27
+PASS F7-28
+PASS F7-29
+PASS F7-30
+PASS F7-31
+PASS F7-32
+PASS F7-33
+PASS F7-34
+PASS F7-35
+PASS F7-36
+PASS F7-37
+PASS F7-38
+PASS F7-39
+PASS F7-40
+PASS F7-41
+PASS F7-42
+PASS F7-43
+PASS F7-44
+PASS F7-45
+PASS F7-46
+PASS F7-47
+PASS F7-48
+vectors: 48 run, 43 pass, 5 fail

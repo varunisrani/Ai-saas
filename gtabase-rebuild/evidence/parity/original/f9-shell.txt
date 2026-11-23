@@ -1,0 +1,10 @@
+F9-01 | count:countdown-digits=0; count:info-labels=6; count:info-links=2; list:hub-section-headings=GTA 6 (GRAND THEFT AUTO VI): GAME INFO || ABOUT GTA 6 || GTA 6 DATABASE || GTA 6 GUIDES || GTA 6 CHEAT CODES || GTA 6 MEDIA || GTA 6: LATEST NEWS & UPDATES; list:info-labels=Release Date || Series / Universe || Set in Location || Set in Year || Publisher || Developer; text:countdown-timer=GTA 6 IS OUT NOW!; text:countdown-title=GTA 6 RELEASE COUNTDOWN; text:info-title=GTA 6 (GRAND THEFT AUTO VI): GAME INFO; url=/gta-6/
+F9-05 | attr:menu-gta6-characters@aria-label=GTA 6 - Characters; count:menu-gta6-sub-links=11; list:menu-gta6-sub-links=Map || Vehicles || Weapons || Missions || Characters || 100% Checklist || Animals || Radio || Cheats PS5 || Cheats Xbox || All GTA 6 Content; url=/gta-6/; visible:menu-gta6-sub=true
+F9-09 | url=/gta-6/
+F9-13 | url=/gta-6/; visible:main-menu=true; visible:menu-gta6-sub=false; visible:mobile-search-input=true
+F9-18 | url=/gta-6/
+F9-28 | url=/gta-6/; visible:login-heading=false
+F9-26 | text:login-link=Log In; url=/gta-6/; visible:login-heading=false
+F9-30 | attr:back-to-top@aria-label=Back to top; attr:back-to-top@href=#; count:breadcrumb-items=0; url=/gta-6/
+F9-34 | count:subnav-current=0; url=/gta-6/articles/gta-6-driving-tips
+F9-38 | url=/

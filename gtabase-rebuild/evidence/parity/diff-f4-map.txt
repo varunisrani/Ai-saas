@@ -1,0 +1,7 @@
+- F4-01 | attr:hide-found@title=Take the markers you found off the map (the counts stay); count:category-checked=98; count:group-rail=10; count:groups=10; text:guest-line=Log in to keep progress on all your devices.; text:hide-found=HIDE FOUND; text:own-open=+ PERSONAL MARKER; text:show-hide-all=HIDE ALL; text:suggest-open=+ SUGGEST LOCATION; url=/gta-6/map/; visible:sidebar-open=false
++ F4-01 | attr:hide-found@title=Take the markers you found off the map (the counts stay); count:category-checked=98; count:group-rail=10; count:groups=10; text:guest-line=Your ticks and filters stay in this browser only. Log in to read about accounts.; text:hide-found=HIDE FOUND; text:own-open=+ PERSONAL MARKER; text:show-hide-all=HIDE ALL; text:suggest-open=+ SUGGEST LOCATION; url=/gta-6/map/; visible:sidebar-open=false
+
+- F4-47 | attr:panel@aria-label=Personal marker; count:panel=1; text:panel=× PERSONAL MARKER Want to keep your own places on the map? Members of GTABase can add personal markers that only they see. Log in to start. LOG IN JOIN MYBASE; url=/gta-6/map/
++ F4-47 | attr:panel@aria-label=Personal marker; count:panel=1; text:panel=× PERSONAL MARKER Personal markers are saved to an account so they follow you to every device. Accounts are coming later; your ticks already stay in this browser. LOG IN JOIN; url=/gta-6/map/
+
+compared 10 vs 10 lines; differing: 2

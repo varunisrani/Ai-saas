@@ -1,0 +1,4 @@
+- F7-12 | count:list-item=0; text:page-counter=Page 6 of M; text:page-number=- Page 6; url=/gta-6/news/?start=999
++ F7-12 | count:list-item=0; text:page-counter=Page 3 of M; text:page-number=- Page 3; url=/gta-6/news/?start=999
+
+compared 10 vs 10 lines; differing: 1

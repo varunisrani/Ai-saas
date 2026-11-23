@@ -1,0 +1,4 @@
+- F5-01 | count:cl-box-checked=0; count:cl-box-disabled=0; text:guest-note=Progress is saved in your browser. Login to keep progress across all your devices!; text:pct-text=0.00; url=/articles/gta-6/gta-6-100-completion-guide-interactive-checklist
++ F5-01 | count:cl-box-checked=0; count:cl-box-disabled=0; text:guest-note=Your ticks are saved in this browser. Login to see when accounts arrive.; text:pct-text=0.00; url=/articles/gta-6/gta-6-100-completion-guide-interactive-checklist
+
+compared 10 vs 10 lines; differing: 1

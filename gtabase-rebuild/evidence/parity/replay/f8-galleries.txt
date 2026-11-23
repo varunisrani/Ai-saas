@@ -1,0 +1,44 @@
+PASS F8-01
+PASS F8-02
+PASS F8-03
+PASS F8-04
+PASS F8-05
+PASS F8-06
+PASS F8-07
+PASS F8-08
+PASS F8-09
+PASS F8-10
+PASS F8-11
+PASS F8-12
+PASS F8-13
+PASS F8-14
+FAIL F8-15
+  text:lb-counter: expected "95/95", got "60/60"
+PASS F8-16
+PASS F8-17
+PASS F8-18
+PASS F8-19
+FAIL F8-20
+  text:lb-counter: expected "1/14", got "1/12"
+FAIL F8-21
+  text:lb-counter: expected "14/14", got "12/12"
+FAIL F8-22
+  text:lb-counter: expected "1/9", got "1/8"
+PASS F8-23
+PASS F8-24
+PASS F8-25
+PASS F8-26
+FAIL F8-27
+  text:lb-counter: expected "2/13", got "2/8"
+PASS F8-28
+PASS F8-29
+PASS F8-30
+PASS F8-33
+PASS F8-34
+PASS F8-35
+PASS F8-36
+PASS F8-37
+PASS F8-31
+PASS F8-32
+PASS F8-38
+vectors: 38 run, 33 pass, 5 fail

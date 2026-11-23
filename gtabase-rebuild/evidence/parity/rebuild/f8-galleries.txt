@@ -1,0 +1,8 @@
+F8-01 | attr:pagination-last@href=/gta-6/screenshots/?thumb_limitstart=200&limit=100; attr:pagination-page-2@href=/gta-6/screenshots/?thumb_limitstart=100&limit=100; count:lightbox=0; count:modal-trigger=2; count:modal-trigger-login=2; count:pagination=2; count:pagination-disabled=2; count:pagination-item=7; count:thumb-img-lazy=0; list:media-tab=Screenshots || Trailer Screens || Artworks || Videos; text:media-tab-active=Screenshots; text:pagination-active=1; url=/gta-6/screenshots/; visible:main-slideshow=false
+F8-09 | text:lb-counter=5/100; url=/gta-6/screenshots/
+F8-12 | count:lightbox=1; text:lb-counter=3/100; url=/gta-6/screenshots/
+F8-14 | count:pagination-disabled=0; text:lb-counter=1/100; text:pagination-active=2; url=/gta-6/screenshots/?thumb_limitstart=100&limit=100
+F8-16 | count:lightbox=0; url=/gta-6/screenshots/
+F8-18 | count:pagination=2; text:media-tab-active=Trailer Screens; text:pagination-active=1; url=/gta-6/screenshots/trailers/
+F8-29 | count:media-tab=0; url=/gta-6/videos/
+F8-31 | text:lb-counter=1/100; url=/gta-6/screenshots/; visible:lb-close=true; visible:lb-image=true; visible:lb-next=true; visible:lb-prev=true

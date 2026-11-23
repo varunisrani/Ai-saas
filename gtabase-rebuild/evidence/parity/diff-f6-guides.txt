@@ -1,0 +1,4 @@
+- F6-39 | attr:acc-1@aria-expanded=true; attr:acc-2@aria-expanded=false; count:acc-open=1; url=/membership/
++ F6-39 | attr:acc-1@aria-expanded=false; attr:acc-2@aria-expanded=true; count:acc-open=1; url=/membership/#why-a-paid-membership-where-does-the-money-go
+
+compared 10 vs 10 lines; differing: 1

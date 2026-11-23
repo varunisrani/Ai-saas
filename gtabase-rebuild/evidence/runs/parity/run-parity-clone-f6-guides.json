@@ -1,0 +1,311 @@
+{
+  "app": "Leonida Atlas (rebuild) — vectors for suite f6-guides",
+  "baseUrl": "http://localhost:3000",
+  "captured": "2026-11-23T15:17:26.500Z",
+  "locale": "en-US",
+  "readOnly": false,
+  "cases": [
+    {
+      "id": "F6-01",
+      "mode": "animals",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:guide-card",
+        "attr:grid-1-first-link@href",
+        "attr:grid-1-first-link@aria-label",
+        "count:section-heading",
+        "count:toc",
+        "count:faq-question",
+        "count:rlta-any",
+        "count:tabs-script"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals",
+        "count:card-grid": "3",
+        "count:grid-1-cards": "40",
+        "count:grid-2-cards": "18",
+        "count:grid-3-cards": "6",
+        "count:guide-card": "64",
+        "attr:grid-1-first-link@href": "/gta-6/animals/albino-american-alligator",
+        "attr:grid-1-first-link@aria-label": "Read more: Albino American Alligator",
+        "count:section-heading": "3",
+        "count:toc": "0",
+        "count:faq-question": "0",
+        "count:rlta-any": "0",
+        "count:tabs-script": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-04",
+      "mode": "characters",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:grid-4-cards",
+        "count:plain-person-row",
+        "count:faq-question",
+        "attr:grid-1-first-link@href",
+        "count:bullet-list-1",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/",
+        "heading": "GTA 6 Characters",
+        "count:card-grid": "4",
+        "count:grid-1-cards": "2",
+        "count:grid-2-cards": "6",
+        "count:grid-3-cards": "10",
+        "count:grid-4-cards": "24",
+        "count:plain-person-row": "6",
+        "count:faq-question": "5",
+        "attr:grid-1-first-link@href": "/gta-6/characters/jason",
+        "count:bullet-list-1": "8",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-07",
+      "mode": "properties",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:grid-4-cards",
+        "count:guide-card",
+        "count:card-with-price",
+        "count:card-with-location",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "GTA 6 Properties & Garages",
+        "count:card-grid": "4",
+        "count:grid-1-cards": "6",
+        "count:grid-2-cards": "3",
+        "count:grid-3-cards": "4",
+        "count:grid-4-cards": "3",
+        "count:guide-card": "16",
+        "count:card-with-price": "6",
+        "count:card-with-location": "16",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-09",
+      "mode": "radio",
+      "steps": [
+        "macro:wake"
+      ],
+      "reads": [
+        "count:station-row",
+        "count:station-without-tracks",
+        "count:track-play",
+        "count:track-play-visible",
+        "count:track-play-hidden",
+        "list:tracklist-header",
+        "count:table-controls",
+        "text:player-title",
+        "text:s1-track1-title",
+        "text:player-artist",
+        "text:s1-track1-artist",
+        "text:player-time",
+        "text:player-duration",
+        "attr:player-toggle-icon@class",
+        "visible:floating-player",
+        "count:track-play-pause-state",
+        "count:rlta-any",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Stations",
+        "count:station-row": "12",
+        "count:station-without-tracks": "1",
+        "count:track-play": "116",
+        "count:track-play-visible": "68",
+        "count:track-play-hidden": "48",
+        "list:tracklist-header": "# || Track || Play",
+        "count:table-controls": "0",
+        "text:player-title": "Sugar Causeway",
+        "text:s1-track1-title": "Sugar Causeway",
+        "text:player-artist": "Doctor Coquina (1992)",
+        "text:s1-track1-artist": "Doctor Coquina (1992)",
+        "text:player-time": "0:00",
+        "text:player-duration": "0:00",
+        "attr:player-toggle-icon@class": "<missing>",
+        "visible:floating-player": "true",
+        "count:track-play-pause-state": "0",
+        "count:rlta-any": "0",
+        "calls": "GET /?_rsc=gQNCLAhXEpd4qhmH 200 || GET /membership/free/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/map/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/vehicles/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/weapons/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/missions/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/characters/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=gQNCLAhXEpd4qhmH 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/animals/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/properties/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/side-missions/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/radio-stations/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/guides/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/strangers-missions/?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/radio-stations/lagoon-lights-fm?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/vehicles/tideback?_rsc=gQNCLAhXEpd4qhmH 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=gQNCLAhXEpd4qhmH 200 || GET /?_rsc=pB6uc-0V-YCQp5lI 200 || GET /?_rsc=FH9gAQOOA5eaDBhb 200 || GET /membership/free/?_rsc=xd03d6dupBkwvcDr 200 || GET /gta-6/?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/map/?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/vehicles/?_rsc=0Evr_eUBxLFbYS8N 200 || GET /gta-6/weapons/?_rsc=YMmHyU4V1NsG-V3n 200 || GET /gta-6/missions/?_rsc=O_r3p2STffhgSvPw 200 || GET /gta-6/characters/?_rsc=Z5QTdF9DH7-9ywQf 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=Mc9fLW_QyzS50IXd 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/animals/?_rsc=WMM6vIMvEvM7LrLV 200 || GET /gta-6/properties/?_rsc=VD7EC1DEnYgDPAfp 200 || GET /gta-6/side-missions/?_rsc=Y4JzZrcmMXcXXII1 200 || GET /gta-6/radio-stations/?_rsc=a-oZ4p0ITL4sc1K7 200 || GET /gta-6/guides/?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/strangers-missions/?_rsc=ncympjlPhRDJPEyl 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=VVenukuWgv14JG6q 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=Q6ugcS6X9pCUa4rM 200 || GET /gta-6/radio-stations/lagoon-lights-fm?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/vehicles/tideback?_rsc=_IY7Z3Cce_l_tL1M 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=_IY7Z3Cce_l_tL1M 200"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-19",
+      "mode": "ps5",
+      "steps": [
+        "click:toc-link-combat"
+      ],
+      "reads": [
+        "attr:toc-link-combat@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats",
+        "heading": "GTA 6 Cheats for PS5: Every Button Code on Leonida Atlas",
+        "attr:toc-link-combat@href": "/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-21",
+      "mode": "xbox",
+      "steps": [],
+      "reads": [
+        "count:cheat-row",
+        "count:cheat-category",
+        "count:first-cheat-keys",
+        "attr:first-cheat-key-1@alt",
+        "attr:first-cheat-key-1@src",
+        "count:cheat-key-other",
+        "attr:howto-icon-2@alt",
+        "attr:howto-icon-3@alt",
+        "count:platform-link",
+        "text:platform-current",
+        "count:toc-link",
+        "count:body-link-pc",
+        "count:cheat-copy-or-filter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
+        "heading": "GTA 6 Cheats for Xbox Series X|S: Every Button Code on Leonida Atlas",
+        "count:cheat-row": "36",
+        "count:cheat-category": "5",
+        "count:first-cheat-keys": "8",
+        "attr:first-cheat-key-1@alt": "UP",
+        "attr:first-cheat-key-1@src": "/icons/dpad-up.svg",
+        "count:cheat-key-other": "0",
+        "attr:howto-icon-2@alt": "LB",
+        "attr:howto-icon-3@alt": "RB",
+        "count:platform-link": "2",
+        "text:platform-current": "GTA 6 Cheats for Xbox Series X|S YOU ARE HERE",
+        "count:toc-link": "8",
+        "count:body-link-pc": "0",
+        "count:cheat-copy-or-filter": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-24",
+      "mode": "maploc",
+      "steps": [],
+      "reads": [
+        "count:toc",
+        "count:toc-link",
+        "count:indexed-heading",
+        "count:inline-gallery",
+        "attr:map-banner-link@href",
+        "text:map-banner-link",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map-locations/",
+        "heading": "GTA 6 Map & Locations",
+        "count:toc": "1",
+        "count:toc-link": "7",
+        "count:indexed-heading": "7",
+        "count:inline-gallery": "6",
+        "attr:map-banner-link@href": "/gta-6/map/",
+        "text:map-banner-link": "Interactive GTA 6 Map & Collectibles Tracker",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-26",
+      "mode": "animals",
+      "steps": [
+        "macro:wake",
+        "scroll:grid-3-cards",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:back-to-top@class"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals",
+        "attr:back-to-top@class": "atlas-backtop"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-39",
+      "mode": "membership-hover-first",
+      "steps": [
+        "try:click:acc-2",
+        "wait:1000"
+      ],
+      "reads": [
+        "attr:acc-container@data-rlta-state",
+        "count:acc-button",
+        "attr:acc-1@aria-expanded",
+        "attr:acc-2@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+        "heading": "Leonida Atlas Membership",
+        "attr:acc-container@data-rlta-state": "<missing>",
+        "count:acc-button": "8",
+        "attr:acc-1@aria-expanded": "false",
+        "attr:acc-2@aria-expanded": "true",
+        "count:acc-open": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-36",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/characters/"
+      ],
+      "reads": [
+        "count:card-grid",
+        "count:grid-4-cards",
+        "visible:grid-1-first-link"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/",
+        "heading": "GTA 6 Characters",
+        "count:card-grid": "4",
+        "count:grid-4-cards": "24",
+        "visible:grid-1-first-link": "true"
+      },
+      "error": null
+    }
+  ]
+}

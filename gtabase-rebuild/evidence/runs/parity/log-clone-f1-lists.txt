@@ -1,3 +1,11 @@
 F1-01        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc; count=280; cards=100; text:list-count=280 Vehicles; text:list-count-bottom-number=280; session:jamg-hash:/gta-6/vehicles/=#sort=attr.ct6.frontend_value&sort
 F1-05        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&name=AN&page=1; count=43; cards=43; value:name-search=AN
 F1-10        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&attr.ct72.value=Hurac%C3%A1n&page=1; count=1; cards=1; value:real-life-search=Huracán
+F1-17        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&attr.ct734.value=hide-standouts&page=1; count=170; cards=100; text:standout-shown=Hide Standout Vehicles; count:card-standout-badge=0; value:standout-select=
+F1-24        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=asc; count=280; cards=100; attr:sort-direction@data-value=<missing>; text:card-1-speed=3/10; text:card-2-speed=3.1/10
+F1-30        ok | url=/gta-6/vehicles/#attr.ct1.value=super%2Csports&attr.ct734.value=hide-standouts&sort=attr.ct6.frontend_value&sortdir=desc&page=1; count=27; cards=27; checked:class-super-box=true; checked:class-sports-box=true; value:
+F1-35        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc; count=280; cards=100; visible:filters-toggle=false; attr:filters-toggle@aria-label=Open Filters; attr:filter-panel@class=rounded-card border border-sand-dar
+F1-42        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&name=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&page=1; count=0; cards=
+F1-W06       ok | url=/gta-6/weapons/#sort=attr.ct58.frontend_value&sortdir=asc; count=180; cards=100; value:sort-select=attr.ct58.frontend_value; attr:sort-direction@data-value=<missing>; text:card-1-damage=2.5/10; text:card-2-damage=2.6
+F1-W11       ok | url=/gta-6/weapons/#sort=name&sortdir=asc; count=180; cards=180; attr:autopage-sentinel@page-data=<missing>
+10 cases -> /home/user/Ai-saas/gtabase-rebuild/evidence/runs/parity/run-parity-clone-f1-lists.json

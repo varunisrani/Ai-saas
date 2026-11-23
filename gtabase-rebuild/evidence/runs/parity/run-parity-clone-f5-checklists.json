@@ -1,0 +1,288 @@
+{
+  "app": "Leonida Atlas (rebuild) — vectors for suite f5-checklists",
+  "baseUrl": "http://localhost:3000",
+  "captured": "2026-11-23T15:16:37.788Z",
+  "locale": "en-US",
+  "readOnly": false,
+  "cases": [
+    {
+      "id": "F5-01",
+      "mode": "checklist100",
+      "steps": [],
+      "reads": [
+        "count:cl-box",
+        "count:toc-box",
+        "count:sec-box",
+        "count:cl-box-checked",
+        "count:cl-box-disabled",
+        "text:pct-text",
+        "attr:pct-bar@style",
+        "text:guest-note",
+        "attr:guest-note-login@href",
+        "count:profile-switcher",
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+        "heading": "GTA 6 100% Completion Checklist: Track Every Requirement",
+        "count:cl-box": "76",
+        "count:toc-box": "38",
+        "count:sec-box": "38",
+        "count:cl-box-checked": "0",
+        "count:cl-box-disabled": "0",
+        "text:pct-text": "0.00",
+        "attr:pct-bar@style": "<missing>",
+        "text:guest-note": "Your ticks are saved in this browser. Login to see when accounts arrive.",
+        "attr:guest-note-login@href": "/login/",
+        "count:profile-switcher": "0",
+        "local:guest_checklists": "<missing>",
+        "calls": "GET /?_rsc=kB36xBf6fqCB47ws 200 || GET /membership/free/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/map/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/vehicles/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/weapons/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/missions/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/characters/?_rsc=kB36xBf6fqCB47ws 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=kB36xBf6fqCB47ws 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/animals/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/properties/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/side-missions/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/radio-stations/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/guides/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/strangers-missions/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/vehicles/tideback?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=kB36xBf6fqCB47ws 200 || GET /?_rsc=KAPFK-xP3V8lcVvk 200 || GET /?_rsc=MlPFEqHxNwp7cB4Q 200 || GET /membership/free/?_rsc=Ixx2smOYgM6dPU1S 200 || GET /gta-6/?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/map/?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/vehicles/?_rsc=lIKoCROAVI88TOAK 200 || GET /gta-6/weapons/?_rsc=nsuv7uo5XN4bE9bG 200 || GET /gta-6/missions/?_rsc=cGJirpjvPbXrUDoD 200 || GET /gta-6/characters/?_rsc=lJ8yCvOzT7nUwGpH 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=5bf7uH76njp_Ef6n 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/animals/?_rsc=BQilys11AZCueVDo 200 || GET /gta-6/properties/?_rsc=FAZWl5zH60PjzuLG 200 || GET /gta-6/side-missions/?_rsc=LBgiUzo6BZHyQyyr 200 || GET /gta-6/radio-stations/?_rsc=kKTj-wD0wz18NVze 200 || GET /gta-6/guides/?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/strangers-missions/?_rsc=NB2hL8VY8qarg419 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=JAm2rqnbkGMtJEmC 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=TkG_h78WAS_cETpu 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/vehicles/tideback?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=Gzh84hExfR57PXQB 200",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F5-04",
+      "mode": "checklist100",
+      "steps": [
+        "click:sec-story",
+        "click:sec-story"
+      ],
+      "reads": [
+        "checked:sec-story",
+        "checked:toc-story",
+        "text:pct-text",
+        "attr:pct-bar@style",
+        "local:guest_checklists"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+        "heading": "GTA 6 100% Completion Checklist: Track Every Requirement",
+        "checked:sec-story": "false",
+        "checked:toc-story": "false",
+        "text:pct-text": "0.00",
+        "attr:pct-bar@style": "<missing>",
+        "local:guest_checklists": "{}"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-08",
+      "mode": "checklist100",
+      "steps": [
+        "click:sec-exploration"
+      ],
+      "reads": [
+        "checked:sec-exploration",
+        "checked:toc-exploration",
+        "count:sec-exploration-children",
+        "count:sec-exploration-children-checked",
+        "count:cl-box-checked",
+        "text:pct-text",
+        "local:guest_checklists"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+        "heading": "GTA 6 100% Completion Checklist: Track Every Requirement",
+        "checked:sec-exploration": "true",
+        "checked:toc-exploration": "true",
+        "count:sec-exploration-children": "20",
+        "count:sec-exploration-children-checked": "20",
+        "count:cl-box-checked": "42",
+        "text:pct-text": "20.00",
+        "local:guest_checklists": "{\"gta6-100\":[\"exploration\",\"kenton\",\"cards\",\"waink\",\"underwater\",\"magazines\",\"meditation\",\"flamingos\",\"playlists\",\"styles\",\"races\",\"race-challenges\",\"shooting\",\"video-games\",\"pool\",\"mini-golf\",\"basketball\",\"drones\",\"stunts\",\"challenges\",\"target-decks\"]}"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-11",
+      "mode": "checklist100",
+      "steps": [
+        "click:sec-story-tasks"
+      ],
+      "reads": [
+        "checked:sec-story-tasks",
+        "count:sec-story-tasks-children-checked",
+        "text:pct-text",
+        "local:guest_checklists"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+        "heading": "GTA 6 100% Completion Checklist: Track Every Requirement",
+        "checked:sec-story-tasks": "true",
+        "count:sec-story-tasks-children-checked": "11",
+        "text:pct-text": "27.00",
+        "local:guest_checklists": "{\"gta6-100\":[\"story-tasks\",\"optional\",\"gang-ops\",\"bank-jobs\",\"payday\",\"smash-grab\",\"stick-ups\",\"narcotics\",\"jewelry\",\"marked-bills\",\"vaults\",\"vehicles-fenced\"]}"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-15",
+      "mode": "checklist100",
+      "steps": [
+        "click:sec-story",
+        "click:sec-kenton",
+        "reload",
+        "wait:2000"
+      ],
+      "reads": [
+        "checked:sec-story",
+        "checked:toc-story",
+        "checked:sec-kenton",
+        "checked:sec-exploration",
+        "count:cl-box-checked",
+        "count:cl-box-disabled",
+        "text:pct-text",
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+        "heading": "GTA 6 100% Completion Checklist: Track Every Requirement",
+        "checked:sec-story": "true",
+        "checked:toc-story": "true",
+        "checked:sec-kenton": "true",
+        "checked:sec-exploration": "false",
+        "count:cl-box-checked": "4",
+        "count:cl-box-disabled": "0",
+        "text:pct-text": "51.00",
+        "local:guest_checklists": "{\"gta6-100\":[\"story\",\"kenton\"]}",
+        "calls": "GET /?_rsc=kB36xBf6fqCB47ws 200 || GET /membership/free/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/map/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/vehicles/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/weapons/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/missions/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/characters/?_rsc=kB36xBf6fqCB47ws 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=kB36xBf6fqCB47ws 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/animals/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/properties/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/side-missions/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/radio-stations/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/guides/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/strangers-missions/?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/vehicles/tideback?_rsc=kB36xBf6fqCB47ws 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=kB36xBf6fqCB47ws 200 || GET /?_rsc=KAPFK-xP3V8lcVvk 200 || GET /?_rsc=MlPFEqHxNwp7cB4Q 200 || GET /membership/free/?_rsc=Ixx2smOYgM6dPU1S 200 || GET /gta-6/?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/map/?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/vehicles/?_rsc=lIKoCROAVI88TOAK 200 || GET /gta-6/weapons/?_rsc=nsuv7uo5XN4bE9bG 200 || GET /gta-6/missions/?_rsc=cGJirpjvPbXrUDoD 200 || GET /gta-6/characters/?_rsc=lJ8yCvOzT7nUwGpH 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=5bf7uH76njp_Ef6n 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/animals/?_rsc=BQilys11AZCueVDo 200 || GET /gta-6/properties/?_rsc=FAZWl5zH60PjzuLG 200 || GET /gta-6/side-missions/?_rsc=LBgiUzo6BZHyQyyr 200 || GET /gta-6/radio-stations/?_rsc=kKTj-wD0wz18NVze 200 || GET /gta-6/guides/?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/strangers-missions/?_rsc=NB2hL8VY8qarg419 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=JAm2rqnbkGMtJEmC 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=TkG_h78WAS_cETpu 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/vehicles/tideback?_rsc=Gzh84hExfR57PXQB 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=Gzh84hExfR57PXQB 200 || GET /?_rsc=kB36xBf6fqCB47ws 200 || GET /membership/free/?_rsc=kB36xBf6fqCB47ws 200 || GET /?_rsc=KAPFK-xP3V8lcVvk 200 || GET /?_rsc=MlPFEqHxNwp7cB4Q 200 || GET /membership/free/?_rsc=Ixx2smOYgM6dPU1S 200",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F5-20",
+      "mode": "checklist100",
+      "steps": [],
+      "reads": [
+        "attr:sec-story@aria-label",
+        "attr:toc-story@aria-label",
+        "attr:sec-kenton@aria-label",
+        "attr:sec-story-tasks@aria-label",
+        "count:cl-box-labelled",
+        "count:reset-control"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+        "heading": "GTA 6 100% Completion Checklist: Track Every Requirement",
+        "attr:sec-story@aria-label": "Mark as completed: Story Completion (50%)",
+        "attr:toc-story@aria-label": "Mark as completed: Story Completion (50%)",
+        "attr:sec-kenton@aria-label": "Mark as completed: 5 of 7 Kenton Sets Completed (1%)",
+        "attr:sec-story-tasks@aria-label": "Mark as completed: Tasks (27%)",
+        "count:cl-box-labelled": "76",
+        "count:reset-control": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-23",
+      "mode": "missions",
+      "steps": [
+        "click:mission-gone-fishing"
+      ],
+      "reads": [
+        "checked:mission-gone-fishing",
+        "count:cl-box-checked",
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/missions/",
+        "heading": "GTA 6 Story Missions",
+        "checked:mission-gone-fishing": "true",
+        "count:cl-box-checked": "1",
+        "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}",
+        "calls": "GET /?_rsc=toq4SIgExWUKtFIX 200 || GET /membership/free/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/map/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/vehicles/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/weapons/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/missions/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/characters/?_rsc=toq4SIgExWUKtFIX 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=toq4SIgExWUKtFIX 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/animals/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/properties/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/side-missions/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/radio-stations/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/guides/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/strangers-missions/?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/vehicles/tideback?_rsc=toq4SIgExWUKtFIX 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=toq4SIgExWUKtFIX 200 || GET /?_rsc=EuTsWBLb2IqbGS4G 200 || GET /?_rsc=wDde_EbADJLKemQ4 200 || GET /membership/free/?_rsc=eIeTmMHGsZptM8Fa 200 || GET /gta-6/?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/map/?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/vehicles/?_rsc=uaK8ObJ5U6azNLFF 200 || GET /gta-6/weapons/?_rsc=YYZY1aHtKWGgmlmb 200 || GET /gta-6/missions/?_rsc=s-87nd3CiOcRP15I 200 || GET /gta-6/characters/?_rsc=nxZvCcc346fDLVUp 200 || GET /articles/gta-6/gta-6-100-completion-guide-interactive-checklist?_rsc=jt9dARgrqcQl7P45 200 || GET /articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/animals/?_rsc=gnsA3dAYCuemO6Y0 200 || GET /gta-6/properties/?_rsc=TZGD5K_dY8GW039y 200 || GET /gta-6/side-missions/?_rsc=FQ9-texwAve4wSJx 200 || GET /gta-6/radio-stations/?_rsc=Yzi524UpA4DQsnaC 200 || GET /gta-6/guides/?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/strangers-missions/?_rsc=GjIdggXYPWzdxRqk 200 || GET /gta-6/gta-6-cheats-ps5-cheat-codes?_rsc=lPwmODgdcBxANYBZ 200 || GET /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes?_rsc=P9xKTXthPiPUx7Gs 200 || GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/articles/how-to-use-turn-signals-and-headlights-in-gta-6?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/articles/how-to-find-and-use-atms-in-gta-6?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/articles/gta-6-military-base-location?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/articles/can-you-play-gta-6-in-co-op-or-split-screen?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/articles/how-to-fly-planes-helicopters-in-gta-6?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/vehicles/tideback?_rsc=V_PBsShvZmKa2kzi 200 || GET /gta-6/weapons/lucky-pool-cue?_rsc=V_PBsShvZmKa2kzi 200",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F5-27",
+      "mode": "strangers",
+      "steps": [],
+      "reads": [
+        "count:cl-box",
+        "count:mission-row",
+        "count:mission-row-strangers-link",
+        "count:mission-row-main-link",
+        "list:chapter-heading",
+        "text:p:has-text(\"Tick the checkbox\")",
+        "count:pct-text",
+        "attr:mission-skunk-ape@aria-label"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/strangers-missions/",
+        "heading": "GTA 6 Strangers & Freaks",
+        "count:cl-box": "28",
+        "count:mission-row": "28",
+        "count:mission-row-strangers-link": "16",
+        "count:mission-row-main-link": "0",
+        "list:chapter-heading": "CHAPTER 1 || CHAPTER 2 || CHAPTER 3 || CHAPTER 4 || OTHER OPTIONAL MISSIONS",
+        "text:p:has-text(\"Tick the checkbox\")": "Tick the checkbox next to a mission to track your progress.",
+        "count:pct-text": "0",
+        "attr:mission-skunk-ape@aria-label": "Mark as completed: Search for the Skunk Ape"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-30",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/missions/",
+        "wait:1500",
+        "click:mission-gone-fishing",
+        "shot:mobile"
+      ],
+      "reads": [
+        "checked:mission-gone-fishing",
+        "visible:mission-gone-fishing",
+        "local:guest_checklists"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/missions/",
+        "heading": "GTA 6 Story Missions",
+        "checked:mission-gone-fishing": "true",
+        "visible:mission-gone-fishing": "true",
+        "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-34",
+      "mode": null,
+      "steps": [
+        "goto:/missions/gta-6/prologue",
+        "wait:500"
+      ],
+      "reads": [
+        "title",
+        "count:cl-box"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/missions/gta-6/prologue",
+        "heading": "Prologue",
+        "title": "Prologue | GTA 6 Mission Guide & Walkthrough",
+        "count:cl-box": "1"
+      },
+      "error": null
+    }
+  ]
+}

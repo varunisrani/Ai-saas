@@ -1,0 +1,10 @@
+F10-01 | attr:fav-button@type=button; count:fav-button=1; count:fav-button-role=0; text:compare-button=Compare To; text:fav-button=Add To Favorites; url=/gta-6/vehicles/sunset-sanchez; visible:login-modal=false
+F10-04 | text:fav-button=Add To Favorites; text:login-benefits=Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.; text:login-title=Save your GTA 6 favorites; url=/gta-6/animals/gray-fox; visible:login-modal=true
+F10-07 | text:fav-button=Add To Favorites; text:login-benefits=Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.; text:login-title=Save your GTA 6 favorites; url=/gta-6/characters/jason; visible:login-modal=true
+F10-10 | text:fav-button=Add To Favorites; url=/gta-6/vehicles/sunset-sanchez; visible:login-modal=false
+F10-13 | count:login-benefits=0; text:login-title=Sign in to MyBase; url=/gta-6/vehicles/sunset-sanchez; visible:login-modal=true
+F10-17 | count:login-benefits=0; text:fav-button=Add To Favorites; text:login-title=Sign in to MyBase; url=/gta-6/vehicles/sunset-sanchez; visible:login-modal=false
+F10-20 | count:fav-button=0; count:list-fav-control=0; url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc
+F10-23 | attr:map-panel@aria-label=Favourites; attr:map-panel@role=dialog; count:map-popup=0; text:map-panel-login=LOG IN; text:map-panel-text=Want to keep your favourite places? Members of GTABase can star any marker and find it again under Personal, on every device. Log in to start.; text:map-panel-title=FAVOURITES; url=/gta-6/map/#garage-003; visible:map-panel=true
+F10-26 | attr:map-panel@aria-label=Personal marker; text:map-panel-text=Want to keep your own places on the map? Members of GTABase can add personal markers that only they see. Log in to start.; text:map-panel-title=PERSONAL MARKER; url=/gta-6/map/; visible:map-panel=true
+F10-29 | url=/membership/
