@@ -1,0 +1,1 @@
+F1-01        ok | url=/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc; count=590; cards=100; text:list-count=590vehicles; text:list-count-bottom-number=590; session:jamg-hash:/gta-6/vehicles/=#sort=attr.ct6.frontend_value&sortd
