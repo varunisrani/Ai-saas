@@ -397,7 +397,7 @@ function buildMap(): { categories: MapCategory[]; markers: Marker[] } {
           if (d.id === "parachuting") detailsPath = "/side-missions/gta-6/parachuting";
           else if (d.id === "random-event") detailsPath = "/gta-6/random-events/";
           else if (d.id === "hunting") detailsPath = rng.pick(animals.filter((a) => a.grid === "land")).canonicalPath;
-          else if (rng.chance(0.06)) detailsPath = DETAIL_SECTION[d.group];
+          else if (rng.chance(0.08)) detailsPath = DETAIL_SECTION[d.group];
         }
       }
       const m: Marker = { id, name, category: d.id, x, y };

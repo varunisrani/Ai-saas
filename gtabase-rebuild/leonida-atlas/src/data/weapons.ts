@@ -127,7 +127,10 @@ function weaponDescription(rng: Rng, name: string, makeLabel: string, classLabel
 
 export function buildWeapons(): Weapon[] {
   const rng = new Rng("weapons");
-  const makeIds = manufacturers.filter((m) => m.domain === "weapon" && m.id !== "kozlov").map((m) => m.id);
+  // round-robin over the own makes so every weapon make appears in the data (R-507 options)
+  const makeQueue = rng.shuffle(manufacturers.filter((m) => m.domain === "weapon" && m.id !== "kozlov").map((m) => m.id));
+  let makeCursor = 0;
+  const nextMake = () => makeQueue[makeCursor++ % makeQueue.length];
   const labelOf = new Map(manufacturers.map((m) => [m.id, m.label]));
   const classLabel = new Map(weaponClasses.map((c) => [c.id, c.label]));
   const dateRng = new Rng("weapons:added");
@@ -142,7 +145,7 @@ export function buildWeapons(): Weapon[] {
     for (const def of defs) {
       const d: BaseDef = typeof def === "string" ? { name: def } : def;
       const slug = d.slug ?? slugify(d.name);
-      const make = d.make ?? rng.pick(makeIds);
+      const make = d.make ?? nextMake();
       const gun = GUN_CLASSES.has(cls);
       const w: Weapon = {
         slug,
