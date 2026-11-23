@@ -1,0 +1,187 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F7 news, guides, videos + article page",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:18:26.190Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F7-01",
+      "mode": "news",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item",
+        "count:item-title-link",
+        "count:item-thumb",
+        "count:item-thumb-link",
+        "count:item-author",
+        "count:item-date",
+        "count:item-category",
+        "count:item-tags",
+        "visible:item-details-label",
+        "text:item-details-label",
+        "list:item-date",
+        "attr:item-date@datetime",
+        "text:item-category",
+        "attr:item-category@href",
+        "attr:item-thumb@width",
+        "attr:item-thumb@height",
+        "text:page-counter",
+        "count:page-links",
+        "count:share-block",
+        "count:list-banner",
+        "visible:game-filter-toggle"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/news/",
+        "calls": "GET /gta-6/news/ 500",
+        "count:list-item": "0",
+        "count:item-title-link": "0",
+        "count:item-thumb": "0",
+        "count:item-thumb-link": "0",
+        "count:item-author": "0",
+        "count:item-date": "0",
+        "count:item-category": "0",
+        "count:item-tags": "0",
+        "visible:item-details-label": "false",
+        "text:item-details-label": "<missing>",
+        "list:item-date": "",
+        "attr:item-date@datetime": "<missing>",
+        "text:item-category": "<missing>",
+        "attr:item-category@href": "<missing>",
+        "attr:item-thumb@width": "<missing>",
+        "attr:item-thumb@height": "<missing>",
+        "text:page-counter": "<missing>",
+        "count:page-links": "0",
+        "count:share-block": "0",
+        "count:list-banner": "0",
+        "visible:game-filter-toggle": "false"
+      },
+      "error": "mode:news: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F7-02",
+      "mode": "news",
+      "steps": [
+        "macro:show-pagination"
+      ],
+      "reads": [
+        "count:page-links",
+        "list:page-links",
+        "text:page-current",
+        "attr:page-current@href",
+        "count:page-disabled",
+        "count:page-first",
+        "count:page-prev",
+        "attr:page-2-link@href",
+        "attr:page-next@href",
+        "attr:page-last@href",
+        "attr:pagination@aria-label"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "<missing>",
+        "count:page-links": "0",
+        "list:page-links": "",
+        "text:page-current": "<missing>",
+        "attr:page-current@href": "<missing>",
+        "count:page-disabled": "0",
+        "count:page-first": "0",
+        "count:page-prev": "0",
+        "attr:page-2-link@href": "<missing>",
+        "attr:page-next@href": "<missing>",
+        "attr:page-last@href": "<missing>",
+        "attr:pagination@aria-label": "<missing>"
+      },
+      "error": "mode:news: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F7-03",
+      "mode": "news",
+      "steps": [
+        "macro:show-pagination",
+        "click:page-next",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-number",
+        "text:page-counter",
+        "count:list-item",
+        "list:item-date",
+        "count:list-intro",
+        "visible:game-filter-toggle"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/news/",
+        "calls": "GET /gta-6/news/ 500",
+        "text:page-number": "<missing>",
+        "text:page-counter": "<missing>",
+        "count:list-item": "0",
+        "list:item-date": "",
+        "count:list-intro": "0",
+        "visible:game-filter-toggle": "false"
+      },
+      "error": "mode:news: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F7-04",
+      "mode": null,
+      "steps": [
+        "macro:show-pagination"
+      ],
+      "reads": [
+        "list:page-links",
+        "text:page-current",
+        "attr:page-first@href",
+        "attr:page-prev@href",
+        "attr:page-next@href",
+        "attr:page-last@href",
+        "count:page-disabled"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "<missing>",
+        "list:page-links": "",
+        "text:page-current": "<missing>",
+        "attr:page-first@href": "<missing>",
+        "attr:page-prev@href": "<missing>",
+        "attr:page-next@href": "<missing>",
+        "attr:page-last@href": "<missing>",
+        "count:page-disabled": "0"
+      },
+      "error": "macro:show-pagination: scroll:page-counter: locator.scrollIntoViewIfNeeded: Timeout 6000ms exceeded."
+    },
+    {
+      "id": "F7-05",
+      "mode": null,
+      "steps": [
+        "back",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "text:page-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "title": "",
+        "text:page-counter": "<missing>"
+      },
+      "error": null
+    }
+  ]
+}
