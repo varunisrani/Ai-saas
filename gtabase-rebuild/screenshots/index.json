@@ -1,0 +1,236 @@
+[
+ {
+  "file": "01-home.jpg",
+  "path": "/",
+  "label": "Home",
+  "status": 200
+ },
+ {
+  "file": "02-gta6-hub.jpg",
+  "path": "/gta-6/",
+  "label": "GTA 6 hub",
+  "status": 200
+ },
+ {
+  "file": "03-vehicles.jpg",
+  "path": "/gta-6/vehicles/",
+  "label": "Vehicles database",
+  "status": 200
+ },
+ {
+  "file": "04-vehicle-detail.jpg",
+  "path": "/gta-6/vehicles/sunset-sanchez",
+  "label": "Vehicle detail",
+  "status": 200
+ },
+ {
+  "file": "05-vehicle-compare.jpg",
+  "path": "/gta-6/vehicles/comparison/?vehicle1=banshee&vehicle2=sunset-sanchez",
+  "label": "Vehicle comparison",
+  "status": 200
+ },
+ {
+  "file": "06-best-sports-cars.jpg",
+  "path": "/gta-6/vehicles/best-sports-cars/",
+  "label": "Rankings: best sports cars",
+  "status": 200
+ },
+ {
+  "file": "07-weapons.jpg",
+  "path": "/gta-6/weapons/",
+  "label": "Weapons database",
+  "status": 200
+ },
+ {
+  "file": "08-weapon-detail.jpg",
+  "path": "/gta-6/weapons/assault-rifle",
+  "label": "Weapon detail",
+  "status": 200
+ },
+ {
+  "file": "09-weapon-compare.jpg",
+  "path": "/gta-6/weapons/comparison/",
+  "label": "Weapon comparison",
+  "status": 200
+ },
+ {
+  "file": "10-map.jpg",
+  "path": "/gta-6/map/",
+  "label": "Interactive map",
+  "status": 200
+ },
+ {
+  "file": "11-map-locations.jpg",
+  "path": "/gta-6/map-locations/",
+  "label": "Map locations guide",
+  "status": 200
+ },
+ {
+  "file": "12-checklist-100.jpg",
+  "path": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+  "label": "100% checklist",
+  "status": 200
+ },
+ {
+  "file": "13-missions.jpg",
+  "path": "/gta-6/missions/",
+  "label": "Story missions",
+  "status": 200
+ },
+ {
+  "file": "14-mission-detail.jpg",
+  "path": "/gta-6/missions/breakfast-run",
+  "label": "Mission walkthrough",
+  "status": 200
+ },
+ {
+  "file": "15-strangers.jpg",
+  "path": "/gta-6/strangers-missions/",
+  "label": "Strangers & freaks",
+  "status": 200
+ },
+ {
+  "file": "16-side-missions.jpg",
+  "path": "/gta-6/side-missions/",
+  "label": "Activities & side missions",
+  "status": 200
+ },
+ {
+  "file": "17-random-events.jpg",
+  "path": "/gta-6/random-events/",
+  "label": "Random events",
+  "status": 200
+ },
+ {
+  "file": "18-animals.jpg",
+  "path": "/gta-6/animals/",
+  "label": "Animals guide",
+  "status": 200
+ },
+ {
+  "file": "19-animal-detail.jpg",
+  "path": "/gta-6/animals/gray-fox",
+  "label": "Animal detail",
+  "status": 200
+ },
+ {
+  "file": "20-characters.jpg",
+  "path": "/gta-6/characters/",
+  "label": "Characters guide",
+  "status": 200
+ },
+ {
+  "file": "21-character-detail.jpg",
+  "path": "/gta-6/characters/jason",
+  "label": "Character detail",
+  "status": 200
+ },
+ {
+  "file": "22-gangs.jpg",
+  "path": "/gta-6/gangs/",
+  "label": "Gangs & factions",
+  "status": 200
+ },
+ {
+  "file": "23-properties.jpg",
+  "path": "/gta-6/properties/",
+  "label": "Properties guide",
+  "status": 200
+ },
+ {
+  "file": "24-property-detail.jpg",
+  "path": "/gta-6/properties/7th-avenue-garage",
+  "label": "Property detail",
+  "status": 200
+ },
+ {
+  "file": "25-radio.jpg",
+  "path": "/gta-6/radio-stations/",
+  "label": "Radio stations player",
+  "status": 200
+ },
+ {
+  "file": "26-radio-detail.jpg",
+  "path": "/gta-6/radio-stations/flash-fm",
+  "label": "Radio station detail",
+  "status": 200
+ },
+ {
+  "file": "27-cheats-ps5.jpg",
+  "path": "/gta-6/gta-6-cheats-ps5-cheat-codes",
+  "label": "Cheats PS5",
+  "status": 200
+ },
+ {
+  "file": "28-cheats-xbox.jpg",
+  "path": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
+  "label": "Cheats Xbox",
+  "status": 200
+ },
+ {
+  "file": "29-cheats-pc.jpg",
+  "path": "/gta-6/gta-6-cheats-pc-full-list-of-cheat-codes",
+  "label": "Cheats PC",
+  "status": 200
+ },
+ {
+  "file": "30-news.jpg",
+  "path": "/gta-6/news/",
+  "label": "News",
+  "status": 200
+ },
+ {
+  "file": "31-guides.jpg",
+  "path": "/gta-6/guides/",
+  "label": "Guides",
+  "status": 200
+ },
+ {
+  "file": "32-videos.jpg",
+  "path": "/gta-6/videos/",
+  "label": "Videos",
+  "status": 200
+ },
+ {
+  "file": "33-article.jpg",
+  "path": "/gta-6/articles/gta-6-driving-tips",
+  "label": "Article page",
+  "status": 200
+ },
+ {
+  "file": "34-screenshots.jpg",
+  "path": "/gta-6/screenshots/",
+  "label": "Screenshots gallery",
+  "status": 200
+ },
+ {
+  "file": "35-artworks.jpg",
+  "path": "/gta-6/artworks/",
+  "label": "Artworks gallery",
+  "status": 200
+ },
+ {
+  "file": "36-covers.jpg",
+  "path": "/gta-6/covers/",
+  "label": "Cover art",
+  "status": 200
+ },
+ {
+  "file": "37-search.jpg",
+  "path": "/search?q=sanchez",
+  "label": "Search results",
+  "status": 200
+ },
+ {
+  "file": "38-membership.jpg",
+  "path": "/membership/",
+  "label": "Membership",
+  "status": 200
+ },
+ {
+  "file": "39-not-found.jpg",
+  "path": "/gta-6/no-such-page",
+  "label": "404 page",
+  "status": 404
+ }
+]
