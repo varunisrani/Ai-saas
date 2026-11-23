@@ -1,0 +1,24 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "readOnly": true,
+  "guard": { "allow": [] },
+  "browser": { "channel": "chromium", "viewport": { "width": 1366, "height": 900 }, "locale": "en-US", "timezone": "UTC" },
+  "timeouts": { "action": 6000, "navigation": 60000, "settle": 5000, "idle": 15000 },
+  "network": {
+    "include": ["/media/com_jamegafilter/", "option=com_ajax", "option=com_jlexcomment", "/search"],
+    "block": ["mediavine", "googletagmanager", "google-analytics", "doubleclick", "googlesyndication", "amazon-adsystem", "addtoany", "facebook\\.net", "clarity\\.ms", "cloudflareinsights", "nel\\.cloudflare", "quantserve", "scorecardresearch", "adnxs", "pubmatic", "rubiconproject", "criteo", "taboola", "outbrain", "giphy", "/cdn-cgi/challenge-platform/"]
+  },
+  "tokens": {
+    "heading": "h1"
+  },
+  "modes": {
+    "hub": "/gta-6/"
+  },
+  "resets": { "clear": ["try:clear:local", "try:clear:session"] },
+  "macros": {},
+  "readouts": [
+    { "key": "url", "read": "url" },
+    { "key": "heading", "read": "text:heading" }
+  ]
+}
