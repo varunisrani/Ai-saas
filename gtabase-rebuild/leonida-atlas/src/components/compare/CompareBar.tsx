@@ -42,7 +42,7 @@ export function CompareBar({ picks, href, onClear }: CompareBarProps) {
           href={href}
           prefetch={false}
           data-testid="compare-go"
-          className="rounded-pill bg-coral px-3 py-1 font-display text-sm font-bold uppercase tracking-wide text-ink no-underline hover:bg-white hover:text-ink"
+          className="rounded-pill bg-coral px-3 py-1 font-display text-sm font-bold uppercase tracking-wide text-ink! no-underline hover:bg-white hover:text-ink!"
         >
           {compareBarLabel(count)}
         </Link>
@@ -52,7 +52,7 @@ export function CompareBar({ picks, href, onClear }: CompareBarProps) {
           aria-disabled="true"
           data-testid="compare-go"
           tabIndex={hidden ? -1 : undefined}
-          className="pointer-events-none rounded-pill bg-white/15 px-3 py-1 font-display text-sm font-bold uppercase tracking-wide text-white/60 no-underline"
+          className="pointer-events-none rounded-pill bg-white/15 px-3 py-1 font-display text-sm font-bold uppercase tracking-wide text-white/60! no-underline"
           onClick={(e) => e.preventDefault()}
         >
           {compareBarLabel(count)}

@@ -172,7 +172,7 @@ export function ComparisonView({ type, keys }: { type: CompareType; keys: string
           <table className="w-full min-w-[720px] border-collapse text-sm">
             <thead>
               <tr>
-                <th scope="col" className="w-[20%] p-2 align-top font-normal">
+                <th scope="col" className="w-[20%] p-2 text-left align-top font-normal">
                   <ComparePicker title={title} caps={false} slotUrl={slot.url} param={slot.param} />
                 </th>
                 {cols.map((item, i) =>
@@ -187,7 +187,7 @@ export function ComparisonView({ type, keys }: { type: CompareType; keys: string
                             aria-label={removeFromComparisonLabel(item.name)}
                             title={removeFromComparisonLabel(item.name)}
                             data-testid="cmp-remove"
-                            className="absolute right-1.5 top-1.5 flex h-7 w-7 items-center justify-center rounded-full bg-ink/80 text-lg leading-none text-white no-underline hover:bg-coral hover:text-ink"
+                            className="absolute right-1.5 top-1.5 flex h-7 w-7 items-center justify-center rounded-full bg-ink/80 text-lg leading-none text-white! no-underline hover:bg-coral hover:text-ink!"
                           >
                             ×
                           </a>
@@ -201,7 +201,7 @@ export function ComparisonView({ type, keys }: { type: CompareType; keys: string
                       </div>
                     </th>
                   ) : (
-                    <th key={`empty-${i}`} scope="col" className="w-[20%] p-2 align-top font-normal">
+                    <th key={`empty-${i}`} scope="col" className="w-[20%] p-2 text-left align-top font-normal">
                       <ComparePicker title={title} caps slotUrl={slot.url} param={slot.param} />
                     </th>
                   ),
@@ -232,7 +232,7 @@ export function ComparisonView({ type, keys }: { type: CompareType; keys: string
                         const isBest = best[i];
                         return (
                           <td key={item.compareKey} className="p-2" data-state={isBest ? "best" : undefined}>
-                            <span className={`font-display font-semibold tabular-nums ${isBest ? "text-coral" : ""}`}>
+                            <span className={`font-display font-semibold tabular-nums ${isBest ? "rounded-md bg-coral px-1.5 text-ink" : ""}`}>
                               {r.kind === "stat" ? detailStatText(num) : wholeOrDash(num)}
                               {isBest ? <span className="sr-only"> (best)</span> : null}
                             </span>

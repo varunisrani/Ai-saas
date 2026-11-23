@@ -179,7 +179,7 @@ export function ListCard(props: ListCardProps) {
           prefetch={false}
           aria-label={entry.name}
           data-testid={`card-${n}-link`}
-          className="grid min-w-0 flex-1 grid-cols-[1fr_1.4fr_1fr_1.2fr_repeat(3,0.8fr)] items-center gap-2 text-sm text-ink no-underline"
+          className="grid min-w-0 flex-1 grid-cols-[1fr_1.4fr_1fr_1.2fr_repeat(3,0.8fr)] items-center gap-2 text-sm text-ink! no-underline"
         >
           <span data-testid={tid(...pos("make"))} className="truncate">
             {cells[0]}
@@ -223,7 +223,7 @@ export function ListCard(props: ListCardProps) {
         prefetch={false}
         aria-label={entry.name}
         data-testid={`card-${n}-link`}
-        className="flex flex-1 flex-col text-ink no-underline hover:text-ink"
+        className="flex flex-1 flex-col text-ink! no-underline hover:text-ink!"
       >
         <div className="relative aspect-[16/10] overflow-hidden bg-sand">
           {/* eslint-disable-next-line @next/next/no-img-element */}

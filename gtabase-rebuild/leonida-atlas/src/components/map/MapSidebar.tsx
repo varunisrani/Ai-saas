@@ -97,6 +97,8 @@ export interface MapSidebarProps {
   categoryMessage: string | null;
   railCurrent: string | null;
   focusSearchToken: number;
+  /** Before hydration a narrow map hides the sidebar by a container query (R-841, no flash). */
+  hydrated: boolean;
   api: SidebarApi;
 }
 
@@ -136,7 +138,7 @@ export const MapSidebar = memo(function MapSidebar(p: MapSidebarProps) {
       data-testid="sidebar"
       aria-label="Map sidebar"
       aria-hidden={p.closed ? "true" : "false"}
-      className={`${p.closed ? "hidden" : "flex"} absolute inset-y-0 left-0 z-30 flex-col border-r border-sand-dark bg-sand/95 shadow-[4px_0_24px_rgb(20_22_27/0.12)] backdrop-blur ${
+      className={`${p.closed ? "hidden" : "flex"} ${p.hydrated ? "" : "@max-[700px]:hidden"} absolute inset-y-0 left-0 z-30 flex-col border-r border-sand-dark bg-sand/95 shadow-[4px_0_24px_rgb(20_22_27/0.12)] backdrop-blur ${
         p.narrow ? "w-full" : "w-[340px]"
       }`}
       data-map-scroll=""
@@ -186,7 +188,7 @@ export const MapSidebar = memo(function MapSidebar(p: MapSidebarProps) {
               autoComplete="off"
               spellCheck={false}
               placeholder="Search markers or categories…"
-              className="h-10 min-w-0 flex-1 bg-transparent px-2 text-sm text-ink outline-none placeholder:text-muted/80"
+              className="h-10 min-w-0 flex-1 bg-transparent px-2 text-sm text-ink outline-none! placeholder:text-muted/80"
               value={p.query}
               onChange={(e) => api.query(e.target.value)}
               onKeyDown={api.searchKey}

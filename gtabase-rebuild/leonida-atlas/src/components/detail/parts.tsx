@@ -17,7 +17,7 @@ export function SectionHeading({ title, id }: { title: SectionTitle; id?: string
     <h2
       id={id}
       data-testid="section-titles"
-      className={`mb-3 font-display text-xl font-bold text-ink ${title.caps ? "uppercase tracking-wide" : ""}`}
+      className={`mb-3! font-display text-xl font-bold text-ink ${title.caps ? "uppercase tracking-wide" : ""}`}
     >
       {title.text}
     </h2>
@@ -192,7 +192,8 @@ export interface MiniCardData {
   title: string;
   subtitle?: string;
   href?: string;
-  art: ArtRef;
+  /** Placeholder image; text-only card when absent. */
+  art?: ArtRef;
 }
 
 /** A small linked card (base model, variants, character vehicles, similar vehicles, appearances). */
@@ -203,7 +204,15 @@ export function MiniCards({ cards, titleToken }: { cards: MiniCardData[]; titleT
       {cards.map((c) => {
         const body = (
           <>
-            <ArtImage art={c.art} alt="" className="aspect-[16/10] w-full rounded-lg object-cover" />
+            {c.art ? (
+              <ArtImage art={c.art} alt="" className="aspect-[16/10] w-full rounded-lg object-cover" />
+            ) : (
+              <span aria-hidden="true" className="flex aspect-[16/10] w-full items-center justify-center rounded-lg bg-gradient-to-br from-teal to-lagoon text-white">
+                <svg viewBox="0 0 24 24" width="36" height="36" focusable="false">
+                  <path d="M6 9h12l2 8H4zM9 9V7a3 3 0 0 1 6 0v2M8 13h2M14 13h2" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+            )}
             <span data-testid={titleToken} className="mt-1.5 block font-display text-sm font-bold leading-tight text-ink">
               {c.title}
             </span>

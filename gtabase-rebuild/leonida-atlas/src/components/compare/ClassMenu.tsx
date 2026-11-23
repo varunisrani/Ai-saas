@@ -53,7 +53,8 @@ export function ClassMenu({ items, currentId }: { items: ClassMenuItem[]; curren
         ref={buttonRef}
         type="button"
         aria-haspopup="true"
-        aria-expanded={open}
+        // the expanded state is announced once the menu opened (the closed button carries no aria-expanded, F3-30)
+        aria-expanded={open ? true : undefined}
         aria-controls={menuId}
         data-testid="rank-class-select"
         className="inline-flex items-center gap-2 rounded-pill border border-teal bg-teal px-4 py-2 font-display text-sm font-semibold text-white hover:border-lagoon hover:bg-lagoon"
@@ -86,7 +87,7 @@ export function ClassMenu({ items, currentId }: { items: ClassMenuItem[]; curren
                 focused === i && "rank-class-focused",
               )}
               className={`block rounded-lg px-2 py-1.5 text-sm no-underline hover:bg-lagoon/10 ${
-                it.id === currentId ? "font-bold text-coral" : "text-ink"
+                it.id === currentId ? "bg-coral/20 font-bold text-ink!" : "text-ink!"
               }`}
               onFocus={() => setFocused(i)}
               onBlur={() => setFocused((f) => (f === i ? -1 : f))}

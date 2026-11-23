@@ -80,7 +80,7 @@ export function CompareToMenu({ entries }: { entries: CompareToEntryLink[] }) {
                     i === last && "compare-to-item-last",
                     `compare-to-item-${e.slug}`,
                   )}
-                  className="block rounded-lg px-2 py-1.5 text-sm text-ink no-underline hover:bg-lagoon/10"
+                  className="block rounded-lg px-2 py-1.5 text-sm text-ink! no-underline hover:bg-lagoon/10"
                   onClick={() => setOpen(false)}
                 >
                   {e.name}

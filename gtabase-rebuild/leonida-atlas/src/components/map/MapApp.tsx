@@ -155,8 +155,6 @@ export function MapApp(props: MapAppProps) {
   const filterRef = useRef(filter);
   const [allWord, setAllWord] = useState<AllButtonWord>(oneCategory ? "Show all" : "Hide all");
   const allWordRef = useRef(allWord);
-  const [onlyChosen, setOnlyChosen] = useState<string | null>(featureCategoryId);
-  const onlyRef = useRef(onlyChosen);
   const [found, setFound] = useState<ReadonlySet<string>>(() => new Set());
   const [favRaw, setFavRaw] = useState<string | null>(null);
   const [popup, setPopup] = useState<PopupState>(null);
@@ -179,6 +177,7 @@ export function MapApp(props: MapAppProps) {
   const [copied, setCopied] = useState(false);
   const [lightbox, setLightbox] = useState<string | null>(null);
   const [focusSearch, setFocusSearch] = useState(0);
+  const [hydrated, setHydrated] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<MapStageHandle>(null);
   const dialogOpener = useRef<HTMLElement | null>(null);
@@ -234,8 +233,6 @@ export function MapApp(props: MapAppProps) {
       allWordRef.current = word;
       setAllWord(word);
       const only = opts.only !== undefined ? opts.only : null;
-      onlyRef.current = only;
-      setOnlyChosen(only);
       setFilter({ ...filterRef.current, off });
       syncAddress(off, only);
     },
@@ -288,17 +285,18 @@ export function MapApp(props: MapAppProps) {
   );
 
   const closePopup = useCallback(() => {
+    const active = document.activeElement as HTMLElement | null;
+    const focusInPopup = !!active?.closest?.('[data-testid~="popup"]');
     popupRef.current = null;
     setPopup(null);
     setCopied(false);
     const back = popupReturn.current;
     popupReturn.current = null;
-    if (back && document.contains(back)) {
-      try {
-        back.focus({ preventScroll: true });
-      } catch {
-        /* ignore */
-      }
+    try {
+      if (back && document.contains(back)) back.focus({ preventScroll: true });
+      else if (focusInPopup) stageRef.current?.focusMap();
+    } catch {
+      /* ignore */
     }
   }, []);
 
@@ -369,6 +367,7 @@ export function MapApp(props: MapAppProps) {
       }
     }
     setSidebarOpen(!isNarrow && pref !== "closed");
+    setHydrated(true);
     try {
       setNotice(noticeVisible(Date.now(), settings.notice.start, settings.notice.end, safeRead(MAP_NOTICE_KEY)));
     } catch {
@@ -575,6 +574,8 @@ export function MapApp(props: MapAppProps) {
   }, []);
 
   // ---------------------------------------------------------------- Escape priority (R-842)
+  const lightboxOpen = useRef(false);
+  lightboxOpen.current = lightbox !== null;
   const escState = useRef({ about: false, reset: false, panel: false, popup: false, narrowSidebar: false, fullscreen: false });
   escState.current = {
     about: aboutOpen,
@@ -592,6 +593,7 @@ export function MapApp(props: MapAppProps) {
       const dlg = t?.closest?.("dialog");
       if (dlg && !rootRef.current?.contains(dlg)) return;
       if (document.querySelector('[data-testid~="login-modal"]')) return;
+      if (lightboxOpen.current) return; // the lightbox closes itself first
       switch (escapeTarget(escState.current)) {
         case "about":
           closeAbout();
@@ -869,7 +871,7 @@ export function MapApp(props: MapAppProps) {
       className={
         fullscreen
           ? "fixed inset-0 z-[90] h-[100dvh] w-screen overflow-hidden bg-[#d4ebe8]"
-          : "relative h-[calc(100svh-150px)] max-h-[860px] min-h-[480px] w-full overflow-hidden rounded-2xl border border-sand-dark bg-[#d4ebe8]"
+          : "@container relative h-[calc(100svh-150px)] max-h-[860px] min-h-[480px] w-full overflow-hidden rounded-2xl border border-sand-dark bg-[#d4ebe8]"
       }
     >
       <MapSidebar
@@ -888,6 +890,7 @@ export function MapApp(props: MapAppProps) {
           categoryMessage={messages.category}
           railCurrent={railCurrent}
           focusSearchToken={focusSearch}
+          hydrated={hydrated}
           api={api}
         />
       <MapStage
@@ -922,7 +925,7 @@ export function MapApp(props: MapAppProps) {
           title="Search and filter"
           aria-expanded={sidebarOpen}
           aria-controls="la-map-sidebar"
-          className={`${sidebarOpen ? "hidden" : "inline-flex"} absolute left-3 top-3 z-10 h-10 items-center gap-2 rounded-full bg-teal px-4 font-display text-sm font-bold uppercase tracking-wide text-white shadow-md hover:bg-[#0b3e40]`}
+          className={`${sidebarOpen ? "hidden" : "inline-flex"} ${hydrated ? "" : "@max-[700px]:inline-flex"} absolute left-3 top-3 z-10 h-10 items-center gap-2 rounded-full bg-teal px-4 font-display text-sm font-bold uppercase tracking-wide text-white shadow-md hover:bg-[#0b3e40]`}
           onClick={openSidebar}
         >
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">

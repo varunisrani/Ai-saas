@@ -41,6 +41,8 @@ export interface MapStageHandle {
   getView(): View | null;
   getSize(): Size;
   setView(view: View): void;
+  /** Moves keyboard focus to the map surface. */
+  focusMap(): void;
 }
 
 export interface MapStageProps {
@@ -109,6 +111,7 @@ export const MapStage = forwardRef<MapStageHandle, MapStageProps>(function MapSt
   const rootRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const popupRef = useRef<HTMLDivElement>(null);
+  const surfaceRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState<Size>({ w: 0, h: 0 });
   const [view, setViewState] = useState<View | null>(null);
   const viewRef = useRef<View | null>(null);
@@ -205,6 +208,7 @@ export const MapStage = forwardRef<MapStageHandle, MapStageProps>(function MapSt
       getView: () => viewRef.current,
       getSize: () => sizeRef.current,
       setView: (v) => applyView(v),
+      focusMap: () => surfaceRef.current?.focus({ preventScroll: true }),
     }),
     [animateTo, applyView, settings.maxZoom, settings.minZoom, settings.startZoom],
   );
@@ -560,6 +564,7 @@ export const MapStage = forwardRef<MapStageHandle, MapStageProps>(function MapSt
     >
       <MapArt art={art} viewBox={viewBox} />
       <div
+        ref={surfaceRef}
         className="absolute inset-0 touch-none outline-none focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-lagoon"
         style={{ cursor: "grab" }}
         tabIndex={0}

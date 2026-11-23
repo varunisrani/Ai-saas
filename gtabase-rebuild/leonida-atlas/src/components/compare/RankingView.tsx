@@ -73,7 +73,7 @@ export function RankingView({ cls }: { cls: VehicleClass }) {
             art={top.image}
             alt={`${plural} in GTA 6`}
             loading="eager"
-            className="aspect-[21/9] w-full rounded-card border border-sand-dark object-cover"
+            className="aspect-[3/1] w-full rounded-card border border-sand-dark object-cover"
           />
         ) : null}
       </header>
@@ -100,7 +100,7 @@ export function RankingView({ cls }: { cls: VehicleClass }) {
           .
         </p>
 
-        <h2 data-testid="rank-list-title rank-h2" className="mt-3 text-xl">
+        <h2 data-testid="rank-list-title rank-h2" className="mt-3! text-xl">
           {rankingListTitle(plural)}
         </h2>
         <ol className="m-0 flex list-none flex-col gap-3 p-0">
