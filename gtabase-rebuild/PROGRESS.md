@@ -31,8 +31,8 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 5 Build: data + rules (2 builders + verify) | 3 | 3 | 0 | 100 |
 | 6 UI (build + screenshot review) | 2 | 2 | 0 | 100 |
 | 7 Validate | 4 | 4 | 0 | 100 |
-| 8 Close / resume | 1 | 0 | 1 | 0 |
-| **Total** | **59** | **58** | **1** | **98** |
+| 8 Close / resume | 1 | 1 | 0 | 100 |
+| **Total** | **59** | **59** | **0** | **100** |
 
 ## Tasks
 | # | Phase | Task | Status | Result / evidence |
@@ -65,9 +65,10 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 56 | 7 | fresh original parity run | ☑ | 101 cases, one runner, 99 clean |
 | 57 | 7 | rebuild parity run + diff | ☑ | 99 comparable: 85 identical, 14 explained differences |
 | 58 | 7 | REA comparison + PARITY_REPORT.md | ☑ | compare_artifacts ev_6f989da0… (changed: 5 unchanged / 6 changed, matches diff); PARITY_REPORT.md; README |
-| 59 | 8 | reap-16 close | ☐ | |
+| 59 | 8 | reap-16 close | ☑ | INVESTIGATION_LOG session close + resume steps |
 
 ## Re-plan log (every change to the total, with the reason)
 | When | Change | Reason | New total |
 |---|---|---|---|
 | 2026-11-23 | v1 = all GTA 6 (10 groups) instead of a 4-feature core | user choice: "all GTA 6, no other game" | 59 |
+| 2026-11-23 | none (59 planned, 59 done) | v1 completed in one session (≈5.5 h) | 59 |

@@ -190,3 +190,25 @@ Not yet started: CLONE_SPEC, vectors, builders, UI, validation.
 | 45 | Validate | reap-04 | Validate a clone against the original | Leonida Atlas (production build) vs live GTA 6 section | ☑ | PARITY_REPORT.md; replay 399/454 comparable pass, 0 unexplained; parity 85/99 identical, 14 explained; REA compare ev_6f989da0… |
 - verify_reconstruction: no CLI twin in rea-agents 6.10.1 (MCP-only) → not run; compare-artifacts used. compare_web_captures not run (per-case parity covers it).
 - Original-side parity run used ONE runner, sequential suites with 5 s gaps; no origin errors this time.
+
+### reap-16 close — end of session 1 (2026-11-23)
+| # | Phase | Skill | Template | Target | Status | Outputs / evidence |
+|---|---|---|---|---|---|---|
+| 46 | Session close | anthropic-skills:reap-16-long-running-investigations | Continue where you left off | whole investigation | ☑ | this entry; PROGRESS 59/59; PENDING_FEATURES updated; UNKNOWNS.md ranked list unchanged (still valid) |
+
+**State.** v1 complete and validated: Leonida Atlas (gtabase-rebuild/leonida-atlas) builds, 339/339 unit tests, 399/454
+comparable vectors pass with every failure attributed (divergence or sample-data size), parity 85/99 identical with 14
+explained differences, REA artifact comparison consistent. Everything committed on branch claude/gtabase-webapp-rebuild-dhtctd.
+
+**Discarded hypotheses this session (and what killed them).** See the phase-3 checkpoint list, plus:
+- "The rebuild's data can be fully invented" → the vectors read ~40 specific identifiers; fixtures keep them (orchestrator amendment).
+- "One merged rebuild profile works" → feature profiles reuse mode/macro names with different steps; per-suite profiles instead.
+- "Exact data-testid match" → one element carries several tokens; word match `~=` (spec TA1).
+- "The trace data-only lists can be parsed greedily" → it swallowed the Behavior-keys lists; protected core keys.
+
+**Resume here (next session).**
+1. Load reap-16, read this log, PROGRESS.md, PENDING_FEATURES.md, UNKNOWNS.md and PARITY_REPORT.md.
+2. If the owner wants accounts: choose a backend (Supabase per the skill), write the schema from CLONE_SPEC §1 + D-001/D-002,
+   brief a data builder; member behavior needs a test account for recorded cases (PENDING #6).
+3. If the owner can capture the filled comparison page (PENDING #5), add cases, re-run reap-02 T3 for F3, update R-713/R-714.
+4. Optional: import the owner's real dataset through src/data (PENDING #7) and re-run the vectors without the data ignores.
