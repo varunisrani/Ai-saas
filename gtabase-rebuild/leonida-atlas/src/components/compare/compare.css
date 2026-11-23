@@ -1,0 +1,13 @@
+/*
+ * R-705: with 0 picks the compare bar carries the `hidden` attribute but stays laid out, faded out and not
+ * clickable. Tailwind's preflight hides [hidden] with an !important rule in the `base` layer; important
+ * declarations of earlier layers win, so the override lives in the same layer with a higher specificity.
+ */
+@layer base {
+  [data-compare-bar][hidden] {
+    display: flex !important;
+    opacity: 0;
+    pointer-events: none;
+    visibility: visible;
+  }
+}

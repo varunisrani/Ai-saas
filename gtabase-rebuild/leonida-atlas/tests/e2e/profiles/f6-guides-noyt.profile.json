@@ -163,5 +163,10 @@
    "key": "heading",
    "read": "text:heading"
   }
- ]
+ ],
+ "network": {
+  "block": [
+   "/audio/"
+  ]
+ }
 }
