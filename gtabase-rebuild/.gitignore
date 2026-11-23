@@ -1,0 +1,12 @@
+# third-party content captured during analysis stays local (never republished)
+evidence/html/
+evidence/bundle/
+evidence/screens/
+evidence/rea/
+evidence/runs/*.raw.json
+tools/node_modules/
+tools/auth/
+node_modules/
+evidence/walk/screens/
+evidence/walk/bodies/
+evidence/runs/screens/
