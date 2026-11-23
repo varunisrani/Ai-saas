@@ -166,3 +166,9 @@ Not yet started: CLONE_SPEC, vectors, builders, UI, validation.
   rebuild tokens inside the rebuild profiles (vectors themselves are never hand-edited).
 - normalize.json: 333 ignored readout keys (wording/network 7, implementation attributes, raw selectors, divergences, data-only),
   replaces for "Page N of M" and the map-view timestamp; notComparable: F1-44, F3-15, F3-26..29, F9-16.
+
+### Phase 5 (reap-04 "Clone one feature into my own app", one row per builder module)
+| # | Phase | Skill | Template | Target | Status | Outputs / evidence |
+|---|---|---|---|---|---|---|
+| 42 | Build: data | reap-04 | Clone one feature into my own app | src/data (spec §1, §16, §19.1) | ☑ | 18 files, 36 checks; observable differences: synthetic values everywhere except §16.2 fixture identifiers; 16 HYPOTHESIS choices (evidence/parity/builder-choices.md) |
+| 43 | Build: rules | reap-04 | Clone one feature into my own app | src/lib (spec §19.2) | ☑ | 25 modules, 303 tests; observable differences: R-410 one-decimal rating vs observed "4 of 5"; 5 spec gaps + 17 HYPOTHESIS choices (builder-choices.md) |

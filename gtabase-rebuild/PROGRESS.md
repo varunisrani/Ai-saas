@@ -28,11 +28,11 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 2 Bundle, API and auth map (reap-11 + browser walk) | 6 | 6 | 0 | 100 |
 | 3 Feature tracing (4 per v1 feature × 10) | 40 | 40 | 0 | 100 |
 | 4 Spec + vectors | 2 | 2 | 0 | 100 |
-| 5 Build: data + rules (2 builders + verify) | 3 | 0 | 3 | 0 |
+| 5 Build: data + rules (2 builders + verify) | 3 | 3 | 0 | 100 |
 | 6 UI (build + screenshot review) | 2 | 0 | 2 | 0 |
 | 7 Validate | 4 | 0 | 4 | 0 |
 | 8 Close / resume | 1 | 0 | 1 | 0 |
-| **Total** | **59** | **49** | **10** | **83** |
+| **Total** | **59** | **52** | **7** | **88** |
 
 ## Tasks
 | # | Phase | Task | Status | Result / evidence |
@@ -56,9 +56,9 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 44–47 | 3 | F10 Favorites & progress: T1 · T2 · 20+ cases · T3 | ☑ | 32/32 clean cases, 3 rules, evidence/traces/f10-favorites.md |
 | 48 | 4 | CLONE_SPEC.md | ☑ | 2,416 lines, 316 rules, 639+ tokens, 26 divergences; leak scan clean |
 | 49 | 4 | TEST_VECTORS.md + vector files | ☑ | 459 vectors / 11 suites (4 harness errors excluded); tools/normalize.json; per-suite rebuild profiles leonida-atlas/tests/e2e/profiles/ |
-| 50 | 5 | data builder (synthetic sample data + loaders) | ☐ | |
-| 51 | 5 | rules builder (filter/sort/compare/progress logic) | ☐ | |
-| 52 | 5 | verify builder reports (build, typecheck, unit, vectors) | ☐ | |
+| 50 | 5 | data builder (synthetic sample data + loaders) | ☑ | src/data, 36 checks |
+| 51 | 5 | rules builder (filter/sort/compare/progress logic) | ☑ | src/lib, 25 modules, 303 tests |
+| 52 | 5 | verify builder reports (build, typecheck, unit, vectors) | ☑ | orchestrator re-run: vitest 339/339, tsc clean except scaffold LayoutProps (generated at build) |
 | 53 | 6 | UI build | ☐ | |
 | 54 | 6 | screenshot review (desktop + phone) | ☐ | |
 | 55 | 7 | vector replay on rebuild | ☐ | |
