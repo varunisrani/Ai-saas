@@ -1,0 +1,170 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F7 news, guides, videos + article page",
+  "baseUrl": "https://www.gtabase.com",
+  "readOnly": true,
+  "guard": {
+    "allow": []
+  },
+  "browser": {
+    "channel": "chromium",
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
+    "locale": "en-US",
+    "timezone": "UTC"
+  },
+  "timeouts": {
+    "action": 6000,
+    "navigation": 60000,
+    "settle": 5000,
+    "idle": 15000
+  },
+  "network": {
+    "include": [
+      "^https://www\\.gtabase\\.com/(gta-6/|news/|articles/|grand-theft-auto|red-dead|gta-)",
+      "option=com_ajax",
+      "option=com_jlexcomment"
+    ],
+    "block": [
+      "mediavine",
+      "googletagmanager",
+      "google-analytics",
+      "doubleclick",
+      "googlesyndication",
+      "amazon-adsystem",
+      "addtoany",
+      "facebook\\.net",
+      "clarity\\.ms",
+      "cloudflareinsights",
+      "nel\\.cloudflare",
+      "quantserve",
+      "scorecardresearch",
+      "adnxs",
+      "pubmatic",
+      "rubiconproject",
+      "criteo",
+      "taboola",
+      "outbrain",
+      "giphy",
+      "/cdn-cgi/challenge-platform/",
+      "youtube\\.com",
+      "ytimg\\.com",
+      "^https://www\\.google\\.com/"
+    ]
+  },
+  "_selectorNotes": "CSS selectors below come from the original markup (allowed on the analysis side); role= selectors use accessible names. Author name elements are only ever counted, never read as text.",
+  "tokens": {
+    "heading": "#ja-current-content h1",
+    "page-number": "#ja-current-content h1 .page-number",
+    "list-intro": ".category-desc",
+    "list-banner": ".category-desc img",
+    "list-item": ".com-content-category-blog__item",
+    "item-title-link": ".com-content-category-blog__item h2 a",
+    "item-thumb": ".com-content-category-blog__item figure img",
+    "item-thumb-link": ".com-content-category-blog__item figure a",
+    "item-details-label": ".com-content-category-blog__item dt.article-info-term",
+    "item-author": ".com-content-category-blog__item dd.createdby",
+    "item-date": ".com-content-category-blog__item dd.published time",
+    "item-category": ".com-content-category-blog__item dd.category-name a",
+    "item-tags": ".com-content-category-blog__item ul.tags a",
+    "parent-category": ".parent-category-name a",
+    "share-block": ".addtoany_list",
+    "share-buttons": ".addtoany_list a",
+    "game-filter-toggle": "role=button[name=\"Filter by Game\"]",
+    "game-filter-menu": ".category-desc .dropdown-menu",
+    "game-filter-links": ".category-desc .dropdown-menu a",
+    "game-filter-gta6": ".category-desc .dropdown-menu a[href=\"/gta-6/news/\"]",
+    "page-counter": ".com-content-category-blog__counter",
+    "pagination": "nav[aria-label=\"Pagination\"]",
+    "page-links": "nav[aria-label=\"Pagination\"] a.page-link",
+    "page-current": "nav[aria-label=\"Pagination\"] a[aria-current=\"true\"]",
+    "page-disabled": "nav[aria-label=\"Pagination\"] li.disabled",
+    "page-first": "role=link[name=\"Go to first page\"]",
+    "page-prev": "role=link[name=\"Go to previous page\"]",
+    "page-next": "role=link[name=\"Go to next page\"]",
+    "page-last": "role=link[name=\"Go to last page\"]",
+    "page-2-link": "role=link[name=\"Go to page 2\"]",
+    "article-meta": ".item-page .article-info-block dl.article-info",
+    "article-author": ".item-page dl.article-info dd.createdby",
+    "article-published": ".item-page dl.article-info dd.published time",
+    "article-modified": ".item-page dl.article-info dd.modified time",
+    "article-category": ".item-page dl.article-info dd.category-name a",
+    "article-hero": ".item-page .article-content figure.item-image img",
+    "toc": ".rl_quickindex",
+    "toc-heading": ".rl_quickindex .index-header",
+    "toc-links": ".rl_quickindex a.index-link",
+    "toc-link-3": ".rl_quickindex li:nth-child(3) a.index-link",
+    "section-anchors": ".article-content span.anchor[id]",
+    "section-headings": ".article-content .indexed .heading_text",
+    "video-embed": ".article-content .iframe-wrapper iframe",
+    "author-block": ".item-page .author-block",
+    "pager": "nav.pagenav",
+    "pager-prev": "nav.pagenav .previous a",
+    "pager-next": "nav.pagenav .next a",
+    "related-block": ".gta-appearances",
+    "related-heading": ".gta-appearances h2",
+    "related-cards": ".gta-appearances a",
+    "breadcrumbs": "nav[aria-label=\"Breadcrumbs\"]",
+    "breadcrumb-items": "nav[aria-label=\"Breadcrumbs\"] .mod-breadcrumbs__item",
+    "comments": "#jlexcomment",
+    "comments-count": "#jcm-header .jcm-top > li:first-child span",
+    "comment-sort-options": ".jcm-sortby a",
+    "comment-sort-current": "#jcm-header .jcm-dropdown-val",
+    "comment-editor": ".jcm-textarea",
+    "comment-limit": ".jcm-symbol-limit .symbol-count",
+    "sidebar": "#ja-sidebar",
+    "footer": "footer",
+    "article-end": ".item-page .article-content > :last-child"
+  },
+  "modes": {
+    "news": "/gta-6/news/",
+    "guides": "/gta-6/guides/",
+    "videos": "/gta-6/videos/",
+    "allnews": "/news/",
+    "article": "/gta-6/articles/gta-6-driving-tips",
+    "controls": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+    "video-article": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
+    "news-phone": [
+      "viewport:390x844",
+      "goto:/gta-6/news/"
+    ],
+    "article-phone": [
+      "viewport:390x844",
+      "goto:/gta-6/articles/gta-6-driving-tips"
+    ]
+  },
+  "resets": {
+    "clear": [
+      "viewport:1366x900",
+      "try:clear:local",
+      "try:clear:session"
+    ]
+  },
+  "macros": {
+    "to-bottom": [
+      "press:End",
+      "wait:1500",
+      "press:End",
+      "wait:1000"
+    ],
+    "show-pagination": [
+      "scroll:page-counter",
+      "wait:1500"
+    ],
+    "show-pager": [
+      "scroll:article-end",
+      "wait:1500"
+    ]
+  },
+  "readouts": [
+    {
+      "key": "url",
+      "read": "url"
+    },
+    {
+      "key": "heading",
+      "read": "text:heading"
+    }
+  ]
+}

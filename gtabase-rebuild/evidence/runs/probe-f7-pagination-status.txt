@@ -1,0 +1,24 @@
+# curl GET 2026-11-23 (no redirect follow): status | <title> | counter | item count  (titles of items omitted)
+/gta-6/news/                 200 | All GTA 6 News: Latest Grand Theft Auto VI Updates | Page 1 of 6 | 30
+/gta-6/news/page-1           404 | 404 Page Not Found | - | 0
+/gta-6/news/page-2           200 | Grand Theft Auto VI | Rockstar Games News & Guides - Page 2 | Page 2 of 6 | 30   (h1 "Grand Theft Auto VI - Page 2")
+/gta-6/news/page-3           200 | Grand Theft Auto VI | Rockstar Games News & Guides - Page 3 | Page 3 of 6 | 30
+/gta-6/news/page-4           200 | Grand Theft Auto VI | Rockstar Games News & Guides - Page 4 | Page 4 of 6 | 30
+/gta-6/news/page-5           200 | Grand Theft Auto VI | Rockstar Games News & Guides - Page 5 | Page 5 of 6 | 30
+/gta-6/news/page-6           404 | 404 Page Not Found | - | 0
+/gta-6/news/page-7           404 | 404 Page Not Found | - | 0
+/gta-6/news/page-99          404 | 404 Page Not Found | - | 0
+/gta-6/articles/page-6       200 | Grand Theft Auto VI | Rockstar Games News & Guides - Page 6 | Page 6 of 6 | 22
+/gta-6/articles/             301 -> https://www.gtabase.com/gta-6/articles
+/gta-6/articles              200 | Grand Theft Auto VI | Rockstar Games News & Guides | Page 1 of 6 | 30  (h1 = news page-1 heading)
+/gta-6/news/?start=30        200 | All GTA 6 News: Latest Grand Theft Auto VI Updates | Page 2 of 6 | 30 (same items as page-2; h1 "Grand Theft Auto VI - Page 2")
+/gta-6/news/?start=150       200 | All GTA 6 News: Latest Grand Theft Auto VI Updates | Page 6 of 6 | 22 (same items as /gta-6/articles/page-6)
+/gta-6/news/?start=999       200 | All GTA 6 News: Latest Grand Theft Auto VI Updates | Page 6 of 6 | 0 (h1 "Grand Theft Auto VI - Page 6")
+/gta-6/guides/page-2         200 | Grand Theft Auto VI | Rockstar Games News & Guides - Page 2 | Page 2 of 3 | 30 (h1 "GTA 6 Guides: Tips, Walkthroughs & How-To Guides - Page 2")
+/gta-6/guides/page-3         200 | Grand Theft Auto VI | Rockstar Games News & Guides - Page 3 | Page 3 of 3 | 1
+/gta-6/guides/page-4         404 | 404 Page Not Found
+/gta-6/videos/page-2         404 | 404 Page Not Found
+/gta-6/articles/this-article-does-not-exist-xyz  404 | 404 Page Not Found
+/articles/gta-6/this-article-does-not-exist-xyz  404 | 404 Page Not Found
+# later the same day (~11:00 UTC) uncached pages (/gta-6/news/, /gta-6/guides/, /gta-6/nonexistent-page-xyz) answered
+# 500 "Request Timeout" after ~61 s (LiteSpeed origin timeout) while several tracing agents were browsing.

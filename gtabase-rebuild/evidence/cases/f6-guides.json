@@ -1,0 +1,534 @@
+[
+ {
+  "id": "F6-01",
+  "mode": "animals",
+  "steps": [],
+  "reads": [
+   "count:card-grid",
+   "count:grid-1-cards",
+   "count:grid-2-cards",
+   "count:grid-3-cards",
+   "count:guide-card",
+   "attr:grid-1-first-link@href",
+   "attr:grid-1-first-link@aria-label",
+   "count:section-heading",
+   "count:toc",
+   "count:faq-question",
+   "count:rlta-any",
+   "count:tabs-script"
+  ]
+ },
+ {
+  "id": "F6-02",
+  "mode": "animals",
+  "steps": [
+   "click:grid-1-first-title-link"
+  ],
+  "reads": [
+   "title"
+  ]
+ },
+ {
+  "id": "F6-03",
+  "reset": "none",
+  "steps": [
+   "back"
+  ],
+  "reads": [
+   "count:guide-card"
+  ]
+ },
+ {
+  "id": "F6-04",
+  "mode": "characters",
+  "steps": [],
+  "reads": [
+   "count:card-grid",
+   "count:grid-1-cards",
+   "count:grid-2-cards",
+   "count:grid-3-cards",
+   "count:grid-4-cards",
+   "count:plain-person-row",
+   "count:faq-question",
+   "attr:grid-1-first-link@href",
+   "count:bullet-list-1",
+   "count:rlta-any"
+  ]
+ },
+ {
+  "id": "F6-05",
+  "mode": "gangs",
+  "steps": [],
+  "reads": [
+   "count:card-grid",
+   "count:grid-1-cards",
+   "count:grid-2-cards",
+   "attr:grid-1-first-card@href",
+   "count:bullet-list-1",
+   "count:section-heading",
+   "count:rlta-any"
+  ]
+ },
+ {
+  "id": "F6-06",
+  "mode": "gangs",
+  "steps": [
+   "click:grid-1-first-card"
+  ],
+  "reads": [
+   "title"
+  ]
+ },
+ {
+  "id": "F6-07",
+  "mode": "properties",
+  "steps": [],
+  "reads": [
+   "count:card-grid",
+   "count:grid-1-cards",
+   "count:grid-2-cards",
+   "count:grid-3-cards",
+   "count:grid-4-cards",
+   "count:guide-card",
+   "count:card-with-price",
+   "count:card-with-location",
+   "count:rlta-any"
+  ]
+ },
+ {
+  "id": "F6-08",
+  "mode": "properties",
+  "steps": [
+   "click:grid-3-first-link"
+  ],
+  "reads": [
+   "title"
+  ]
+ },
+ {
+  "id": "F6-09",
+  "mode": "radio",
+  "steps": [
+   "macro:wake"
+  ],
+  "reads": [
+   "count:station-row",
+   "count:station-without-tracks",
+   "count:track-play",
+   "count:track-play-visible",
+   "count:track-play-hidden",
+   "list:tracklist-header",
+   "count:table-controls",
+   "text:player-title",
+   "text:s1-track1-title",
+   "text:player-artist",
+   "text:s1-track1-artist",
+   "text:player-time",
+   "text:player-duration",
+   "attr:player-toggle-icon@class",
+   "visible:floating-player",
+   "count:track-play-pause-state",
+   "count:rlta-any",
+   "calls"
+  ]
+ },
+ {
+  "id": "F6-10",
+  "mode": "radio-ready",
+  "steps": [
+   "click:s1-track2-play"
+  ],
+  "reads": [
+   "text:s1-track2-play",
+   "text:player-title",
+   "text:s1-track2-title",
+   "count:track-play-pause-state",
+   "attr:player-toggle-icon@class",
+   "text:player-time",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F6-11",
+  "reset": "none",
+  "steps": [
+   "click:player-next"
+  ],
+  "reads": [
+   "text:player-title",
+   "text:s1-track3-title",
+   "text:s1-track2-play",
+   "text:s1-track3-play",
+   "count:track-play-pause-state"
+  ]
+ },
+ {
+  "id": "F6-12",
+  "reset": "none",
+  "steps": [
+   "click:player-prev",
+   "click:player-prev"
+  ],
+  "reads": [
+   "text:player-title",
+   "text:s1-track1-title",
+   "text:s1-track1-play",
+   "count:track-play-pause-state"
+  ]
+ },
+ {
+  "id": "F6-13",
+  "reset": "none",
+  "steps": [
+   "click:player-prev"
+  ],
+  "reads": [
+   "text:player-title",
+   "text:s1-last-title",
+   "text:s1-last-play",
+   "text:s1-track1-play"
+  ]
+ },
+ {
+  "id": "F6-14",
+  "reset": "none",
+  "steps": [
+   "click:player-next"
+  ],
+  "reads": [
+   "text:player-title",
+   "text:s1-track1-title",
+   "text:s1-track1-play",
+   "text:s1-last-play"
+  ]
+ },
+ {
+  "id": "F6-15",
+  "reset": "none",
+  "steps": [
+   "click:s3-first-play"
+  ],
+  "reads": [
+   "text:player-title",
+   "text:s3-first-title",
+   "text:s3-first-play",
+   "text:s1-track1-play",
+   "count:track-play-pause-state"
+  ]
+ },
+ {
+  "id": "F6-16",
+  "reset": "none",
+  "steps": [
+   "click:player-next"
+  ],
+  "reads": [
+   "text:player-title",
+   "text:s3-second-title",
+   "text:s3-second-play",
+   "text:s1-track2-title"
+  ]
+ },
+ {
+  "id": "F6-17",
+  "reset": "none",
+  "steps": [
+   "wait:3500",
+   "click:player-toggle"
+  ],
+  "reads": [
+   "attr:player-toggle-icon@class",
+   "text:s3-second-play",
+   "text:player-title"
+  ]
+ },
+ {
+  "id": "F6-18",
+  "mode": "ps5",
+  "steps": [],
+  "reads": [
+   "count:cheat-row",
+   "count:cheat-category",
+   "list:cheat-category",
+   "count:cheat-category-1-rows",
+   "count:cheat-category-3-rows",
+   "count:first-cheat-keys",
+   "attr:first-cheat-key-1@alt",
+   "attr:first-cheat-key-2@alt",
+   "attr:first-cheat-key-1@src",
+   "count:cheat-key-other",
+   "count:cheat-copy-or-filter",
+   "count:platform-link",
+   "text:platform-current",
+   "count:toc-link",
+   "attr:toc-first-link@href",
+   "count:howto-step-icons",
+   "attr:howto-icon-2@alt",
+   "attr:howto-icon-3@alt",
+   "text:first-cheat-unlock",
+   "count:body-link-pc",
+   "count:rlta-any"
+  ]
+ },
+ {
+  "id": "F6-19",
+  "mode": "ps5",
+  "steps": [
+   "click:toc-link-combat"
+  ],
+  "reads": [
+   "attr:toc-link-combat@href"
+  ]
+ },
+ {
+  "id": "F6-20",
+  "mode": "ps5",
+  "steps": [
+   "click:platform-xbox"
+  ],
+  "reads": [
+   "text:platform-current",
+   "count:platform-link"
+  ]
+ },
+ {
+  "id": "F6-21",
+  "mode": "xbox",
+  "steps": [],
+  "reads": [
+   "count:cheat-row",
+   "count:cheat-category",
+   "count:first-cheat-keys",
+   "attr:first-cheat-key-1@alt",
+   "attr:first-cheat-key-1@src",
+   "count:cheat-key-other",
+   "attr:howto-icon-2@alt",
+   "attr:howto-icon-3@alt",
+   "count:platform-link",
+   "text:platform-current",
+   "count:toc-link",
+   "count:body-link-pc",
+   "count:cheat-copy-or-filter"
+  ]
+ },
+ {
+  "id": "F6-22",
+  "mode": "pc",
+  "steps": [],
+  "reads": [
+   "count:cheat-row",
+   "count:platform-link",
+   "count:pc-platform-table-link",
+   "list:pc-platform-table-link",
+   "count:toc-link",
+   "attr:toc-first-link@href",
+   "count:body-link-ps5",
+   "count:body-link-xbox"
+  ]
+ },
+ {
+  "id": "F6-23",
+  "steps": [
+   "goto:/gta-6/gta-6-cheats-ps5-cheat-codes#screen-filter-cheats"
+  ],
+  "reads": [
+   "count:cheat-row"
+  ]
+ },
+ {
+  "id": "F6-24",
+  "mode": "maploc",
+  "steps": [],
+  "reads": [
+   "count:toc",
+   "count:toc-link",
+   "count:indexed-heading",
+   "count:inline-gallery",
+   "attr:map-banner-link@href",
+   "text:map-banner-link",
+   "count:rlta-any"
+  ]
+ },
+ {
+  "id": "F6-25",
+  "steps": [
+   "goto:/gta-6/animals/nonexistent-xyz"
+  ],
+  "reads": [
+   "title"
+  ]
+ },
+ {
+  "id": "F6-26",
+  "mode": "animals",
+  "steps": [
+   "macro:wake",
+   "scroll:grid-3-cards",
+   "wait:800"
+  ],
+  "reads": [
+   "attr:back-to-top@class"
+  ]
+ },
+ {
+  "id": "F6-27",
+  "mode": "membership",
+  "steps": [],
+  "reads": [
+   "count:acc-container",
+   "attr:acc-container@data-rlta-type",
+   "count:acc-button",
+   "count:acc-open",
+   "attr:acc-1@aria-expanded",
+   "attr:acc-2@aria-expanded",
+   "attr:acc-1@role",
+   "attr:acc-1@tabindex",
+   "attr:acc-1@aria-controls"
+  ]
+ },
+ {
+  "id": "F6-28",
+  "reset": "none",
+  "steps": [
+   "click:acc-2",
+   "wait:800"
+  ],
+  "reads": [
+   "attr:acc-1@aria-expanded",
+   "attr:acc-2@aria-expanded",
+   "count:acc-open",
+   "count:acc-panel-open"
+  ]
+ },
+ {
+  "id": "F6-29",
+  "reset": "none",
+  "steps": [
+   "click:acc-2",
+   "wait:800"
+  ],
+  "reads": [
+   "attr:acc-2@aria-expanded",
+   "count:acc-open"
+  ]
+ },
+ {
+  "id": "F6-30",
+  "reset": "none",
+  "steps": [
+   "focus:acc-2",
+   "press:ArrowDown",
+   "wait:800"
+  ],
+  "reads": [
+   "attr:acc-2@aria-expanded",
+   "attr:acc-3@aria-expanded",
+   "count:acc-open"
+  ]
+ },
+ {
+  "id": "F6-31",
+  "reset": "none",
+  "steps": [
+   "press:Home",
+   "wait:800"
+  ],
+  "reads": [
+   "attr:acc-1@aria-expanded",
+   "attr:acc-3@aria-expanded",
+   "count:acc-open"
+  ]
+ },
+ {
+  "id": "F6-32",
+  "reset": "none",
+  "steps": [
+   "press:End",
+   "wait:800"
+  ],
+  "reads": [
+   "attr:acc-1@aria-expanded",
+   "attr:acc-last@aria-expanded",
+   "count:acc-open"
+  ]
+ },
+ {
+  "id": "F6-33",
+  "reset": "none",
+  "steps": [
+   "press:Enter",
+   "wait:800"
+  ],
+  "reads": [
+   "attr:acc-last@aria-expanded",
+   "count:acc-open"
+  ]
+ },
+ {
+  "id": "F6-34",
+  "steps": [
+   "goto:/membership/#will-my-subscription-extend-automatically",
+   "hover:heading",
+   "wait:3000",
+   "wait:idle"
+  ],
+  "reads": [
+   "attr:acc-1@aria-expanded",
+   "attr:acc-3@aria-expanded",
+   "count:acc-open"
+  ]
+ },
+ {
+  "id": "F6-35",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/animals/"
+  ],
+  "reads": [
+   "count:guide-card",
+   "visible:grid-1-first-title-link",
+   "count:card-grid"
+  ]
+ },
+ {
+  "id": "F6-36",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/characters/"
+  ],
+  "reads": [
+   "count:card-grid",
+   "count:grid-4-cards",
+   "visible:grid-1-first-link"
+  ]
+ },
+ {
+  "id": "F6-37",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/gta-6-cheats-ps5-cheat-codes"
+  ],
+  "reads": [
+   "count:cheat-row",
+   "visible:first-cheat-key-1",
+   "visible:toc",
+   "visible:platform-xbox"
+  ]
+ },
+ {
+  "id": "F6-38",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/radio-stations/",
+   "macro:wake"
+  ],
+  "reads": [
+   "visible:floating-player",
+   "visible:player-next",
+   "visible:player-prev",
+   "visible:player-toggle",
+   "text:player-title",
+   "count:track-play-visible"
+  ]
+ }
+]

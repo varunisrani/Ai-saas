@@ -1,0 +1,520 @@
+[
+ {
+  "id": "F2-01",
+  "mode": "vehicle-standout",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share",
+   "list:stat-values",
+   "attr:stat-bar-1@style",
+   "attr:stat-bar-2@style",
+   "attr:stat-bar-3@style",
+   "attr:stat-bar-4@style",
+   "attr:stat-bar-5@style",
+   "list:variants",
+   "text:favorites-button",
+   "text:compare-to"
+  ]
+ },
+ {
+  "id": "F2-02",
+  "mode": "vehicle-base",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share",
+   "list:stat-values",
+   "attr:stat-bar-1@style",
+   "attr:stat-bar-5@style",
+   "count:variants",
+   "count:similar-title",
+   "list:appearances",
+   "count:gallery-thumbs"
+  ]
+ },
+ {
+  "id": "F2-03",
+  "mode": "weapon",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share",
+   "list:stat-values",
+   "attr:stat-bar-1@style",
+   "attr:stat-bar-2@style",
+   "attr:stat-bar-3@style",
+   "attr:stat-bar-4@style",
+   "count:variants",
+   "list:appearances"
+  ]
+ },
+ {
+  "id": "F2-04",
+  "mode": "animal",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share"
+  ]
+ },
+ {
+  "id": "F2-05",
+  "mode": "character",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share",
+   "count:gallery-thumbs"
+  ]
+ },
+ {
+  "id": "F2-06",
+  "mode": "property",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share"
+  ]
+ },
+ {
+  "id": "F2-07",
+  "mode": "radio",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share"
+  ]
+ },
+ {
+  "id": "F2-08",
+  "mode": "mission",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share"
+  ]
+ },
+ {
+  "id": "F2-09",
+  "steps": [
+   "goto:/gta-6/vehicles/no-such-vehicle-xyz"
+  ],
+  "reads": [
+   "list:not-found-sub",
+   "count:rating-block",
+   "count:stat-bars",
+   "count:breadcrumb"
+  ]
+ },
+ {
+  "id": "F2-10",
+  "steps": [
+   "goto:/gta-6/weapons/no-such-weapon-xyz"
+  ],
+  "reads": [
+   "list:not-found-sub",
+   "count:rating-block"
+  ]
+ },
+ {
+  "id": "F2-11",
+  "mode": "vehicle-standout",
+  "steps": [
+   "hover:rating-stars",
+   "wait:2000"
+  ],
+  "reads": [
+   "calls",
+   "blocked",
+   "count:rating-stars",
+   "text:rating-total"
+  ]
+ },
+ {
+  "id": "F2-12",
+  "reset": "none",
+  "steps": [
+   "hover:heading",
+   "hover:rating-stars",
+   "wait:1500"
+  ],
+  "reads": [
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F2-13",
+  "mode": "vehicle-standout",
+  "steps": [
+   "click:compare-to"
+  ],
+  "reads": [
+   "visible:compare-to-menu",
+   "attr:compare-to@aria-expanded",
+   "count:compare-to-items",
+   "attr:compare-to-item-1@href",
+   "list:compare-to-items",
+   "attr:compare-to-item-last@href",
+   "text:compare-to-item-last",
+   "attr:compare-to-item-nightblade@href",
+   "attr:compare-to-item-sanchez@href"
+  ]
+ },
+ {
+  "id": "F2-14",
+  "mode": "vehicle-standout",
+  "steps": [
+   "focus:compare-to",
+   "press:Enter"
+  ],
+  "reads": [
+   "visible:compare-to-menu",
+   "attr:compare-to@aria-expanded"
+  ]
+ },
+ {
+  "id": "F2-15",
+  "reset": "none",
+  "steps": [
+   "press:Escape"
+  ],
+  "reads": [
+   "visible:compare-to-menu",
+   "attr:compare-to@aria-expanded"
+  ]
+ },
+ {
+  "id": "F2-16",
+  "mode": "character",
+  "steps": [
+   "macro:wake",
+   "scroll:gallery-thumb-1",
+   "click:gallery-thumb-1",
+   "waitfor:lightbox"
+  ],
+  "reads": [
+   "visible:lightbox",
+   "text:lightbox-counter",
+   "count:lightbox-close",
+   "count:lightbox-next",
+   "count:lightbox-prev",
+   "count:lightbox-buttons"
+  ]
+ },
+ {
+  "id": "F2-17",
+  "reset": "none",
+  "steps": [
+   "click:lightbox-next",
+   "wait:800"
+  ],
+  "reads": [
+   "text:lightbox-counter"
+  ]
+ },
+ {
+  "id": "F2-18",
+  "reset": "none",
+  "steps": [
+   "press:ArrowRight",
+   "wait:800"
+  ],
+  "reads": [
+   "text:lightbox-counter"
+  ]
+ },
+ {
+  "id": "F2-19",
+  "reset": "none",
+  "steps": [
+   "press:ArrowLeft",
+   "wait:800",
+   "press:ArrowLeft",
+   "wait:800"
+  ],
+  "reads": [
+   "text:lightbox-counter"
+  ]
+ },
+ {
+  "id": "F2-20",
+  "reset": "none",
+  "steps": [
+   "press:Escape",
+   "wait:800"
+  ],
+  "reads": [
+   "visible:lightbox"
+  ]
+ },
+ {
+  "id": "F2-21",
+  "steps": [
+   "goto:/gta-6/characters/jason?i=jason-duval-01",
+   "macro:wake",
+   "waitfor:lightbox"
+  ],
+  "reads": [
+   "visible:lightbox",
+   "text:lightbox-counter"
+  ]
+ },
+ {
+  "id": "F2-22",
+  "reset": "none",
+  "steps": [
+   "click:lightbox-close",
+   "wait:1000"
+  ],
+  "reads": [
+   "visible:lightbox"
+  ]
+ },
+ {
+  "id": "F2-23",
+  "mode": "vehicle-standout",
+  "steps": [],
+  "reads": [
+   "count:pager-prev",
+   "count:pager-next"
+  ]
+ },
+ {
+  "id": "F2-24",
+  "mode": "vehicle-standout",
+  "steps": [
+   "macro:to-pager"
+  ],
+  "reads": [
+   "count:pager-prev",
+   "count:pager-next",
+   "attr:pager-prev@href",
+   "attr:pager-next@href",
+   "text:pager-prev",
+   "text:pager-next"
+  ]
+ },
+ {
+  "id": "F2-25",
+  "reset": "none",
+  "steps": [
+   "click:pager-next"
+  ],
+  "reads": [
+   "count:stat-bars"
+  ]
+ },
+ {
+  "id": "F2-26",
+  "mode": "vehicle-standout",
+  "steps": [
+   "scroll:comments",
+   "wait:2000"
+  ],
+  "reads": [
+   "list:comments-tabs",
+   "list:comments-sort",
+   "attr:comments-editor@role",
+   "attr:comments-editor@aria-label",
+   "text:comments-placeholder",
+   "attr:comments-limit@data-max",
+   "count:comments-guest",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F2-27",
+  "mode": "vehicle-standout",
+  "steps": [
+   "viewport:390x844",
+   "reload"
+  ],
+  "reads": [
+   "visible:compare-to",
+   "visible:favorites-button",
+   "visible:rating-block",
+   "visible:stat-bar-1",
+   "count:section-titles",
+   "visible:breadcrumb"
+  ]
+ },
+ {
+  "id": "F2-28",
+  "steps": [
+   "viewport:1366x900",
+   "goto:/gta-6/vehicles/sunset-sanchez/"
+  ],
+  "reads": [
+   "count:stat-bars"
+  ]
+ },
+ {
+  "id": "F2-29",
+  "steps": [
+   "goto:/gta-6/vehicles/Sunset-Sanchez"
+  ],
+  "reads": [
+   "count:stat-bars"
+  ]
+ },
+ {
+  "id": "F2-30",
+  "steps": [
+   "goto:/vehicles/gta-6/manchez"
+  ],
+  "reads": [
+   "count:stat-bars"
+  ]
+ },
+ {
+  "id": "F2-31",
+  "steps": [
+   "goto:/gta-6/vehicles/banshee"
+  ],
+  "reads": [
+   "text:breadcrumb",
+   "list:stat-labels"
+  ]
+ },
+ {
+  "id": "F2-32",
+  "steps": [
+   "goto:/gta-6/vehicles/maverick"
+  ],
+  "reads": [
+   "text:breadcrumb",
+   "list:stat-labels",
+   "list:info-labels"
+  ]
+ },
+ {
+  "id": "F2-33",
+  "steps": [
+   "goto:/gta-6/weapons/drug-mule-kz-59"
+  ],
+  "reads": [
+   "text:breadcrumb",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels"
+  ]
+ },
+ {
+  "id": "F2-34",
+  "mode": "weapon",
+  "steps": [
+   "click:compare-to"
+  ],
+  "reads": [
+   "visible:compare-to-menu",
+   "count:compare-to-items",
+   "attr:compare-to-item-1@href"
+  ]
+ }
+]

@@ -1,0 +1,56 @@
+{
+ "captured": "2026-11-23",
+ "url": "https://www.gtabase.com/gta-6/",
+ "viewport": "1366x900",
+ "method": "window.scrollTo(0,y), wait 400 ms, read class of a.cd-top (in this order); then scroll to 2000 and click the control, wait 2 s",
+ "observations": [
+  [
+   0,
+   "cd-top"
+  ],
+  [
+   250,
+   "cd-top"
+  ],
+  [
+   299,
+   "cd-top"
+  ],
+  [
+   301,
+   "cd-top cd-is-visible"
+  ],
+  [
+   350,
+   "cd-top cd-is-visible"
+  ],
+  [
+   1199,
+   "cd-top cd-is-visible"
+  ],
+  [
+   1201,
+   "cd-top cd-is-visible cd-fade-out"
+  ],
+  [
+   1500,
+   "cd-top cd-is-visible cd-fade-out"
+  ],
+  [
+   900,
+   "cd-top cd-is-visible cd-fade-out"
+  ],
+  [
+   200,
+   "cd-top"
+  ],
+  [
+   "after click",
+   [
+    0,
+    "cd-top",
+    ""
+   ]
+  ]
+ ]
+}

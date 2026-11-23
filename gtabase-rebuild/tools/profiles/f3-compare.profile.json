@@ -1,0 +1,141 @@
+{
+  "app": "gtabase.com GTA 6 section - F3 comparison + rankings (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "readOnly": true,
+  "guard": {
+    "allow": []
+  },
+  "browser": {
+    "channel": "chromium",
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "args": [
+      "--disable-blink-features=AutomationControlled"
+    ]
+  },
+  "timeouts": {
+    "action": 6000,
+    "navigation": 60000,
+    "settle": 5000,
+    "idle": 15000
+  },
+  "network": {
+    "include": [
+      "/media/com_jamegafilter/",
+      "option=com_ajax",
+      "option=com_jlexcomment",
+      "/search"
+    ],
+    "block": [
+      "mediavine",
+      "googletagmanager",
+      "google-analytics",
+      "doubleclick",
+      "googlesyndication",
+      "amazon-adsystem",
+      "addtoany",
+      "facebook\\.net",
+      "clarity\\.ms",
+      "cloudflareinsights",
+      "nel\\.cloudflare",
+      "quantserve",
+      "scorecardresearch",
+      "adnxs",
+      "pubmatic",
+      "rubiconproject",
+      "criteo",
+      "taboola",
+      "outbrain",
+      "giphy",
+      "/cdn-cgi/challenge-platform/"
+    ]
+  },
+  "tokens": {
+    "heading": "h1",
+    "card": ".product-items .product-item",
+    "card-1-link": ".product-items .product-item >> nth=0 >> a.product-item-link",
+    "name-search": ".sidebar-content input[name=\"name\"]",
+    "compare-toggle": "role=checkbox[name=/^Compare /]",
+    "compare-toggle-1": "role=checkbox[name=/^Compare /] >> nth=0",
+    "compare-toggle-2": "role=checkbox[name=/^Compare /] >> nth=1",
+    "compare-toggle-3": "role=checkbox[name=/^Compare /] >> nth=2",
+    "compare-toggle-4": "role=checkbox[name=/^Compare /] >> nth=3",
+    "compare-toggle-5": "role=checkbox[name=/^Compare /] >> nth=4",
+    "compare-toggle-checked": "role=checkbox[name=/^Compare /][checked=true]",
+    "compare-toggle-disabled": ".gtab-cmp[aria-disabled=true]",
+    "compare-bar": ".gtab-cmp-bar",
+    "compare-count": ".gtab-cmp-bar .gtab-cmp-count",
+    "compare-names": ".gtab-cmp-bar .gtab-cmp-names",
+    "compare-go": ".gtab-cmp-bar a.gtab-cmp-go",
+    "compare-clear": "role=button[name=\"Clear the comparison\"]",
+    "cmp-crumb": ".vc .vc-crumb a",
+    "cmp-intro": ".vc .vc-intro",
+    "cmp-add": ".vc .vc-add",
+    "cmp-add-title": ".vc .vc-add .vc-add-title",
+    "cmp-picker-all": ".vc .vc-add input[role=combobox]",
+    "cmp-picker": ".vc .vc-add input[role=combobox] >> visible=true",
+    "cmp-source": "#vc-options option",
+    "cmp-list": ".vc-combo-list",
+    "cmp-options": ".vc-combo-list:not([hidden]) li[role=option]",
+    "cmp-option-1": ".vc-combo-list:not([hidden]) li[role=option] >> nth=0",
+    "cmp-option-active": ".vc-combo-list:not([hidden]) li.vc-active",
+    "cmp-more": ".vc-combo-list:not([hidden]) li.vc-combo-none",
+    "cmp-note": ".vc-note",
+    "cmp-links": ".vc-links a.vc-link b",
+    "cmp-board": ".vc .vc-board",
+    "challenge": "#challenge-form, #challenge-stage, .cf-turnstile, #cf-chl-widget",
+    "rank-class-select": "role=button[name=\"Select Class\"]",
+    "rank-class-menu": ".article-content .dropdown-menu",
+    "rank-class-items": ".article-content .dropdown-menu a",
+    "rank-class-first": ".article-content .dropdown-menu a >> nth=0",
+    "rank-class-motorcycles": ".article-content .dropdown-menu >> role=link[name=\"Motorcycles\"]",
+    "rank-crumb": ".article-content > .article-info .category-name a",
+    "rank-list-title": ".article-content h2",
+    "rank-rows": ".category-items .items-row",
+    "rank-row-1": ".category-items .items-row >> nth=0",
+    "rank-row-1-link": ".category-items .items-row >> nth=0 >> h3 a",
+    "rank-row-1-badge": ".category-items .items-row >> nth=0 >> h3 .badge",
+    "rank-row-1-labels": ".category-items .items-row >> nth=0 >> .item-info strong",
+    "rank-ratings": ".category-items .items-row .item-info > .article-info:last-child",
+    "rank-row-links": ".category-items .items-row h3 a",
+    "rank-images": ".category-items .items-row .item-image img"
+  },
+  "modes": {
+    "vehicles": "/gta-6/vehicles/",
+    "weapons": "/gta-6/weapons/",
+    "vcompare": "/gta-6/vehicles/comparison/",
+    "wcompare": "/gta-6/weapons/comparison/",
+    "best": "/gta-6/vehicles/best-vehicles/"
+  },
+  "resets": {
+    "clear": [
+      "try:clear:local",
+      "try:clear:session",
+      "try:viewport:1366x900"
+    ]
+  },
+  "macros": {
+    "wake": [
+      "hover:heading",
+      "waitfor:compare-toggle-1"
+    ],
+    "pick2": [
+      "click:compare-toggle-1",
+      "click:compare-toggle-2"
+    ]
+  },
+  "readouts": [
+    {
+      "key": "url",
+      "read": "url"
+    },
+    {
+      "key": "heading",
+      "read": "text:heading"
+    }
+  ]
+}

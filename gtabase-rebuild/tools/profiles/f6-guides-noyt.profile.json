@@ -1,0 +1,209 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 radio player with YouTube unreachable (no JS-ready player)",
+  "baseUrl": "https://www.gtabase.com",
+  "readOnly": true,
+  "guard": {
+    "allow": []
+  },
+  "browser": {
+    "channel": "chromium",
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "args": [
+      "--disable-blink-features=AutomationControlled"
+    ],
+    "_note_args": "navigator.webdriver=false so JCH Optimize loads its interaction-deferred scripts (YouTube iframe API, gallery JS) as for a real visitor; without it nothing deferred ever loads"
+  },
+  "timeouts": {
+    "action": 8000,
+    "navigation": 60000,
+    "settle": 5000,
+    "idle": 15000
+  },
+  "network": {
+    "include": [
+      "option=com_ajax",
+      "option=com_igallery",
+      "youtube\\.com/(embed|youtubei|iframe_api)",
+      "www-widgetapi"
+    ],
+    "block": [
+      "mediavine",
+      "googletagmanager",
+      "google-analytics",
+      "doubleclick",
+      "googlesyndication",
+      "amazon-adsystem",
+      "addtoany",
+      "facebook\\.net",
+      "clarity\\.ms",
+      "cloudflareinsights",
+      "nel\\.cloudflare",
+      "quantserve",
+      "scorecardresearch",
+      "adnxs",
+      "pubmatic",
+      "rubiconproject",
+      "criteo",
+      "taboola",
+      "outbrain",
+      "giphy",
+      "/cdn-cgi/challenge-platform/",
+      "googlevideo\\.com",
+      "ytimg\\.com",
+      "jnn-pa\\.googleapis",
+      "youtube\\.com",
+      "youtube-nocookie\\.com"
+    ]
+  },
+  "tokens": {
+    "_note": "CSS taken from the original markup (analysis side only); role=/text= where the original exposes a name",
+    "heading": "h1",
+    "section-heading": "#ja-current-content h2, .com-content-article__body h2",
+    "card-grid": ".category-desc .category-items",
+    "guide-card": ".category-desc .category-items > .items-row",
+    "guide-card-link": ".category-desc .category-items .items-row a[href]",
+    "grid-1-cards": ":nth-match(.category-desc .category-items, 1) > .items-row",
+    "grid-2-cards": ":nth-match(.category-desc .category-items, 2) > .items-row",
+    "grid-3-cards": ":nth-match(.category-desc .category-items, 3) > .items-row",
+    "grid-4-cards": ":nth-match(.category-desc .category-items, 4) > .items-row",
+    "grid-1-first-link": ":nth-match(.category-desc .category-items, 1) .items-row a[href] >> nth=0",
+    "grid-3-first-link": ":nth-match(.category-desc .category-items, 3) > a.items-row >> nth=1",
+    "plain-person-row": ".category-desc > .items-row",
+    "faq-question": ".faq-question",
+    "card-with-price": ".category-desc .category-items > a.items-row:has-text(\"Price:\")",
+    "card-with-location": ".category-desc .category-items > a.items-row:has-text(\"Location:\")",
+    "bullet-list-1": ":nth-match(.category-desc > ul, 1) > li",
+    "rlta-any": "[data-rlta-element]",
+    "tabs-script": "script[src*=\"tabsaccordions\"]",
+    "toc": ".rl_quickindex",
+    "toc-link": ".rl_quickindex a",
+    "toc-link-combat": ".rl_quickindex a[href$=\"#combat-cheats\"]",
+    "toc-first-link": ".rl_quickindex a >> nth=0",
+    "indexed-heading": ".com-content-article__body .indexed",
+    "map-banner-link": ".map-cross-link-banner a",
+    "inline-gallery": ".ig-gallery-wrapper",
+    "station-row": ".category-items.radio-stations > .items-row",
+    "station-without-tracks": ".category-items.radio-stations > .items-row:not(:has(.radio-play-button))",
+    "tracklist-header": ":nth-match(.radio-stations table, 1) thead th",
+    "track-play": ".radio-play-button",
+    "track-play-visible": ".radio-play-button:visible",
+    "track-play-hidden": ".radio-play-button[style*=\"display: none\"]",
+    "track-play-pause-state": ".radio-play-button:has-text(\"Pause\")",
+    "s1-track1-play": ":nth-match(.category-items.radio-stations > .items-row, 1) .radio-play-button >> nth=0",
+    "s1-track2-play": ":nth-match(.category-items.radio-stations > .items-row, 1) .radio-play-button >> nth=1",
+    "s1-track3-play": ":nth-match(.category-items.radio-stations > .items-row, 1) .radio-play-button >> nth=2",
+    "s1-last-play": ":nth-match(.category-items.radio-stations > .items-row, 1) .radio-play-button >> nth=-1",
+    "s1-track1-title": ":nth-match(.category-items.radio-stations > .items-row, 1) tbody tr >> nth=0 >> strong",
+    "s1-track2-title": ":nth-match(.category-items.radio-stations > .items-row, 1) tbody tr >> nth=1 >> strong",
+    "s1-track3-title": ":nth-match(.category-items.radio-stations > .items-row, 1) tbody tr >> nth=2 >> strong",
+    "s1-last-title": ":nth-match(.category-items.radio-stations > .items-row, 1) tbody tr >> nth=-1 >> strong",
+    "s1-track1-artist": ":nth-match(.category-items.radio-stations > .items-row, 1) tbody tr >> nth=0 >> .article-info",
+    "s3-first-play": ":nth-match(.category-items.radio-stations > .items-row, 3) .radio-play-button:not([style*=\"display: none\"]) >> nth=0",
+    "s3-first-title": ":nth-match(.category-items.radio-stations > .items-row, 3) tr:has(.radio-play-button:not([style*=\"display: none\"])) >> nth=0 >> strong",
+    "s3-second-title": ":nth-match(.category-items.radio-stations > .items-row, 3) tr:has(.radio-play-button:not([style*=\"display: none\"])) >> nth=1 >> strong",
+    "floating-player": "#radio-floating-player",
+    "player-title": "#radio-player-title",
+    "player-artist": "#radio-player-artist",
+    "player-toggle": "role=button[name=\"Play/Pause\"]",
+    "player-toggle-icon": "#radio-play-pause i",
+    "player-next": "role=button[name=\"Next track\"]",
+    "player-prev": "role=button[name=\"Previous track\"]",
+    "player-time": "#radio-current-time",
+    "player-duration": "#radio-duration",
+    "youtube-iframe": "iframe#youtube-player",
+    "cheat-row": ".gtch-row",
+    "cheat-category": "h2.gtch-title",
+    "cheat-category-1-rows": ":nth-match(.gtch-list, 1) > .gtch-row",
+    "cheat-category-3-rows": ":nth-match(.gtch-list, 3) > .gtch-row",
+    "first-cheat-name": ":nth-match(.gtch-row, 1) .gtch-name",
+    "first-cheat-desc": ":nth-match(.gtch-row, 1) .gtch-desc",
+    "first-cheat-unlock": ":nth-match(.gtch-row, 1) .gtch-unlock",
+    "first-cheat-keys": ":nth-match(.gtch-row, 1) .gtch-keys img",
+    "first-cheat-key-1": ":nth-match(.gtch-row, 1) .gtch-keys img >> nth=0",
+    "first-cheat-key-2": ":nth-match(.gtch-row, 1) .gtch-keys img >> nth=1",
+    "cheat-key-icons": ".gtch-keys img",
+    "cheat-key-up": ".gtch-keys img[alt=\"UP\"]",
+    "cheat-key-other": ".gtch-keys img:not([alt=\"UP\"]):not([alt=\"DOWN\"]):not([alt=\"LEFT\"]):not([alt=\"RIGHT\"])",
+    "howto-step-icons": ".com-content-article__body ol img",
+    "howto-icon-2": ".com-content-article__body ol img >> nth=1",
+    "howto-icon-3": ".com-content-article__body ol img >> nth=2",
+    "cheat-copy-or-filter": ".com-content-article__body button, .com-content-article__body input, .com-content-article__body select",
+    "platform-link": ".gtch-plats a",
+    "platform-current": ".gtch-plats a.gtch-plat--current",
+    "platform-xbox": ".gtch-plats a[href$=\"xbox-series-xs-cheat-codes\"]",
+    "platform-ps5": ".gtch-plats a[href$=\"ps5-cheat-codes\"]",
+    "pc-platform-table-link": ".com-content-article__body table a",
+    "body-link-pc": ".com-content-article__body a[href=\"/gta-6/gta-6-cheats-pc-full-list-of-cheat-codes\"]",
+    "body-link-ps5": ".com-content-article__body a[href=\"/gta-6/gta-6-cheats-ps5-cheat-codes\"]",
+    "body-link-xbox": ".com-content-article__body a[href=\"/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes\"]",
+    "menu-button": "#menu-button",
+    "back-to-top": ".cd-top",
+    "footer": "footer, #ja-footer",
+    "acc-button": "[data-rlta-element=\"button\"]",
+    "acc-1": "[data-rlta-element=\"button\"] >> nth=0",
+    "acc-2": "[data-rlta-element=\"button\"] >> nth=1",
+    "acc-3": "[data-rlta-element=\"button\"] >> nth=2",
+    "acc-last": "[data-rlta-element=\"button\"] >> nth=-1",
+    "acc-open": "[data-rlta-element=\"button\"][aria-expanded=\"true\"]",
+    "acc-panel-open": "[data-rlta-element=\"panel\"][data-rlta-state=\"open\"]",
+    "acc-container": "[data-rlta-element=\"container\"]",
+    "s3-second-play": ":nth-match(.category-items.radio-stations > .items-row, 3) .radio-play-button:not([style*=\"display: none\"]) >> nth=1",
+    "grid-1-first-card": ":nth-match(.category-desc .category-items, 1) > .items-row >> nth=0",
+    "table-controls": ".radio-stations input, .radio-stations select, .radio-stations th button, .radio-stations th a",
+    "grid-1-first-title-link": ":nth-match(.category-desc .category-items, 1) .items-row h3 a >> nth=0"
+  },
+  "modes": {
+    "animals": "/gta-6/animals/",
+    "characters": "/gta-6/characters/",
+    "gangs": "/gta-6/gangs/",
+    "properties": "/gta-6/properties/",
+    "radio": "/gta-6/radio-stations/",
+    "radio-ready": [
+      "goto:/gta-6/radio-stations/",
+      "hover:heading",
+      "wait:3000",
+      "wait:idle",
+      "waitfor:youtube-iframe",
+      "wait:2500"
+    ],
+    "maploc": "/gta-6/map-locations/",
+    "ps5": "/gta-6/gta-6-cheats-ps5-cheat-codes",
+    "xbox": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
+    "pc": "/gta-6/gta-6-cheats-pc-full-list-of-cheat-codes",
+    "membership": [
+      "goto:/membership/",
+      "hover:heading",
+      "wait:3000",
+      "wait:idle"
+    ]
+  },
+  "resets": {
+    "clear": [
+      "try:clear:local",
+      "try:clear:session"
+    ]
+  },
+  "macros": {
+    "wake": [
+      "hover:heading",
+      "wait:3000",
+      "wait:idle"
+    ]
+  },
+  "readouts": [
+    {
+      "key": "url",
+      "read": "url"
+    },
+    {
+      "key": "heading",
+      "read": "text:heading"
+    }
+  ],
+  "_variant": "same as f6-guides.profile.json plus youtube.com blocked: the YouTube player never becomes ready"
+}

@@ -1,0 +1,58 @@
+[
+ {
+  "id": "F6NY-01",
+  "mode": "radio",
+  "steps": [
+   "macro:wake",
+   "click:s1-track2-play",
+   "wait:1500"
+  ],
+  "reads": [
+   "text:s1-track2-play",
+   "text:player-title",
+   "text:s1-track1-title",
+   "count:track-play-pause-state",
+   "attr:player-toggle-icon@class",
+   "count:youtube-iframe",
+   "calls"
+  ]
+ },
+ {
+  "id": "F6NY-02",
+  "reset": "none",
+  "steps": [
+   "click:player-next",
+   "wait:800"
+  ],
+  "reads": [
+   "text:player-title",
+   "count:track-play-pause-state"
+  ]
+ },
+ {
+  "id": "F6NY-03",
+  "reset": "none",
+  "steps": [
+   "click:player-toggle",
+   "wait:800"
+  ],
+  "reads": [
+   "attr:player-toggle-icon@class",
+   "text:player-title",
+   "count:track-play-pause-state"
+  ]
+ },
+ {
+  "id": "F6NY-04",
+  "reset": "none",
+  "steps": [
+   "click:player-prev",
+   "wait:800"
+  ],
+  "reads": [
+   "text:player-title",
+   "count:track-play-visible",
+   "count:track-play-hidden"
+  ]
+ }
+]

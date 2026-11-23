@@ -1,0 +1,206 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F1 database lists",
+  "baseUrl": "https://www.gtabase.com",
+  "readOnly": true,
+  "guard": {
+    "allow": []
+  },
+  "browser": {
+    "channel": "chromium",
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
+    "locale": "en-US",
+    "timezone": "UTC"
+  },
+  "timeouts": {
+    "action": 8000,
+    "navigation": 60000,
+    "settle": 5000,
+    "idle": 15000
+  },
+  "network": {
+    "include": [
+      "/media/com_jamegafilter/",
+      "option=com_ajax",
+      "option=com_jlexcomment",
+      "/search"
+    ],
+    "block": [
+      "mediavine",
+      "googletagmanager",
+      "google-analytics",
+      "doubleclick",
+      "googlesyndication",
+      "amazon-adsystem",
+      "addtoany",
+      "facebook\\.net",
+      "clarity\\.ms",
+      "cloudflareinsights",
+      "nel\\.cloudflare",
+      "quantserve",
+      "scorecardresearch",
+      "adnxs",
+      "pubmatic",
+      "rubiconproject",
+      "criteo",
+      "taboola",
+      "outbrain",
+      "giphy",
+      "/cdn-cgi/challenge-platform/",
+      "youtube\\.com",
+      "ytimg"
+    ]
+  },
+  "tokens": {
+    "heading": "h1",
+    "list-count": ".toolbar-top .toolbar-amount",
+    "list-count-number": ".toolbar-top .toolbar-number",
+    "list-count-bottom-number": ".toolbar-bottom .toolbar-number",
+    "card": ".product-items .product-item",
+    "card-1": ".product-items .product-item >> nth=0",
+    "card-1-link": ".product-items .product-item >> nth=0 >> a.product-item-link",
+    "card-1-name": ".product-items .product-item >> nth=0 >> h3.product-item-name",
+    "card-2-name": ".product-items .product-item >> nth=1 >> h3.product-item-name",
+    "card-1-class": ".product-items .product-item >> nth=0 >> .vehicle-class .field-value",
+    "card-2-class": ".product-items .product-item >> nth=1 >> .vehicle-class .field-value",
+    "card-1-make": ".product-items .product-item >> nth=0 >> .manufacturer .field-value",
+    "card-2-make": ".product-items .product-item >> nth=1 >> .manufacturer .field-value",
+    "card-1-speed": ".product-items .product-item >> nth=0 >> .stat-bar.speed .field-value",
+    "card-2-speed": ".product-items .product-item >> nth=1 >> .stat-bar.speed .field-value",
+    "card-last-speed": ".product-items .product-item >> nth=-1 >> .stat-bar.speed .field-value",
+    "card-last-speed-bar": ".product-items .product-item >> nth=-1 >> .stat-bar.speed",
+    "card-1-seats": ".product-items .product-item >> nth=0 >> .seats-capacity",
+    "card-1-damage": ".product-items .product-item >> nth=0 >> .stat-bar.damage .field-value",
+    "card-2-damage": ".product-items .product-item >> nth=1 >> .stat-bar.damage .field-value",
+    "card-last-damage": ".product-items .product-item >> nth=-1 >> .stat-bar.damage .field-value",
+    "card-last-damage-bar": ".product-items .product-item >> nth=-1 >> .stat-bar.damage",
+    "card-labels": ".product-items .product-item >> nth=0 >> .field-label",
+    "card-stat-bar": ".product-items .product-item >> nth=0 >> .stat-bar",
+    "card-stat-fill": ".product-items .product-item >> nth=0 >> .stat-bar.speed .stat-bar-track i",
+    "card-image": ".product-items .product-item >> nth=0 >> img.product-image-photo",
+    "card-standout-badge": ".product-items .product-item .standout-vehicle",
+    "card-unique-badge": ".product-items .product-item .unique-variant",
+    "card-unknown-stat": ".product-items .product-item .stat-bar.unknown",
+    "card-price-pill": ".product-items .product-item .price-pill",
+    "autopage-sentinel": "#autopage",
+    "filter-groups": ".sidebar-content .filter-field",
+    "filter-titles": ".sidebar-content .filter-field .filter-options-title",
+    "name-search": ".sidebar-content input[name=\"name\"]",
+    "real-life-search": ".sidebar-content input[name=\"attr.ct72.value\"]",
+    "class-options": ".sidebar-content .filter-multiple li.filter-item",
+    "class-checked": ".sidebar-content .filter-multiple input[type=\"checkbox\"]:checked",
+    "class-empty": ".sidebar-content .filter-multiple li.filter-item.empty",
+    "class-1": ".sidebar-content .filter-multiple li.filter-item >> nth=0",
+    "class-super": ".sidebar-content .filter-multiple li:has(input[value=\"super\"]) label",
+    "class-super-box": ".sidebar-content .filter-multiple input[value=\"super\"]",
+    "class-sports": ".sidebar-content .filter-multiple li:has(input[value=\"sports\"]) label",
+    "class-sports-box": ".sidebar-content .filter-multiple input[value=\"sports\"]",
+    "class-boats": ".sidebar-content .filter-multiple li:has(input[value=\"boats\"]) label",
+    "class-handguns": ".sidebar-content .filter-multiple li:has(input[value=\"handguns\"]) label",
+    "class-handguns-box": ".sidebar-content .filter-multiple input[value=\"handguns\"]",
+    "class-shotguns": ".sidebar-content .filter-multiple li:has(input[value=\"shotguns\"]) label",
+    "class-shotguns-box": ".sidebar-content .filter-multiple input[value=\"shotguns\"]",
+    "class-melee": ".sidebar-content .filter-multiple li:has(input[value=\"melee\"]) label",
+    "manufacturer-select": "select[id=\"attr.ct2.value\"]",
+    "manufacturer-dropdown": "[id=\"attr_ct2_value_chosen\"] a.chosen-single",
+    "manufacturer-shown": "[id=\"attr_ct2_value_chosen\"] a.chosen-single span",
+    "manufacturer-search": "[id=\"attr_ct2_value_chosen\"] input.chosen-search-input",
+    "manufacturer-results": "[id=\"attr_ct2_value_chosen\"] .chosen-results li",
+    "manufacturer-options": "select[id=\"attr.ct2.value\"] option",
+    "standout-select": "select[id=\"attr.ct734.value\"]",
+    "standout-dropdown": "[id=\"attr_ct734_value_chosen\"] a.chosen-single",
+    "standout-shown": "[id=\"attr_ct734_value_chosen\"] a.chosen-single span",
+    "standout-results": "[id=\"attr_ct734_value_chosen\"] .chosen-results li",
+    "standout-option-hide": "[id=\"attr_ct734_value_chosen\"] .chosen-results li:has-text(\"Hide Standout Vehicles\")",
+    "standout-option-2": "[id=\"attr_ct734_value_chosen\"] .chosen-results li[data-option-array-index=\"2\"]",
+    "standout-option-2-text": "select[id=\"attr.ct734.value\"] option >> nth=2",
+    "standout-option-1-text": "select[id=\"attr.ct734.value\"] option >> nth=1",
+    "weapon-type-select": "select[id=\"attr.ct246.value\"]",
+    "weapon-type-dropdown": "[id=\"attr_ct246_value_chosen\"] a.chosen-single",
+    "weapon-type-shown": "[id=\"attr_ct246_value_chosen\"] a.chosen-single span",
+    "weapon-type-options": "select[id=\"attr.ct246.value\"] option",
+    "weapon-type-option-unique": "[id=\"attr_ct246_value_chosen\"] .chosen-results li:has-text(\"Unique\")",
+    "sort-select": ".toolbar-top select.sorter-options",
+    "sort-options": ".toolbar-top select.sorter-options option",
+    "sort-dropdown": ".toolbar-top .toolbar-sorter a.chosen-single",
+    "sort-shown": ".toolbar-top .toolbar-sorter a.chosen-single span",
+    "sort-option-name": ".toolbar-top .toolbar-sorter .chosen-results li[data-option-array-index=\"0\"]",
+    "sort-option-manufacturer": ".toolbar-top .toolbar-sorter .chosen-results li:has-text(\"Manufacturer\")",
+    "sort-option-class": ".toolbar-top .toolbar-sorter .chosen-results li:has-text(\"Class\")",
+    "sort-option-speed": ".toolbar-top .toolbar-sorter .chosen-results li:has-text(\"Speed\")",
+    "sort-option-seats": ".toolbar-top .toolbar-sorter .chosen-results li:has-text(\"Seats\")",
+    "sort-option-damage": ".toolbar-top .toolbar-sorter .chosen-results li:has-text(\"Damage\")",
+    "sort-direction": ".toolbar-top [data-role=\"direction-switcher\"]",
+    "clear-filters": ".filter-values .clear-all-filter",
+    "selected-filters": ".filter-values",
+    "filters-toggle": ".sidebar-toggle",
+    "filter-panel": ".ja-mg-sidebar",
+    "filter-panel-content": ".sidebar-content",
+    "filter-backdrop": ".sidebar-toggle-backdrop",
+    "layout-list": ".toolbar-top .jamg-layout-chooser span[data-layout=\"list\"]",
+    "layout-grid": ".toolbar-top .jamg-layout-chooser span[data-layout=\"grid\"]",
+    "products-wrapper": ".ja-products-wrapper",
+    "list-head": ".mf-list-head",
+    "megafilter-wrap": ".ja-megafilter-wrap"
+  },
+  "modes": {
+    "hub": "/gta-6/",
+    "vehicles": [
+      "goto:/gta-6/vehicles/",
+      "waitfor:card",
+      "wait:600"
+    ],
+    "weapons": [
+      "goto:/gta-6/weapons/",
+      "waitfor:card",
+      "wait:600"
+    ]
+  },
+  "resets": {
+    "clear": [
+      "try:keyup:Control",
+      "try:clear:local",
+      "try:clear:session",
+      "try:viewport:1366x900"
+    ]
+  },
+  "macros": {
+    "fresh": [
+      "goto:about:blank"
+    ],
+    "hide-standouts": [
+      "click:standout-dropdown",
+      "click:standout-option-hide",
+      "wait:700"
+    ],
+    "sort-by-name": [
+      "click:sort-dropdown",
+      "click:sort-option-name",
+      "wait:700"
+    ],
+    "flip-direction": [
+      "click:sort-direction",
+      "wait:700"
+    ],
+    "load-next-page": [
+      "scroll:autopage-sentinel",
+      "wait:900"
+    ]
+  },
+  "readouts": [
+    {
+      "key": "url",
+      "read": "url"
+    },
+    {
+      "key": "count",
+      "read": "text:list-count-number"
+    },
+    {
+      "key": "cards",
+      "read": "count:card"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# curl GET (no redirect follow) 2026-11-23, response "location" header of https://www.gtabase.com/search?<query>
+q=cheetah -> 302 https://www.google.com/search?q=site:gtabase.com+cheetah
+(no query) -> 302 https://www.google.com/search?q=site:gtabase.com
+q= -> 302 https://www.google.com/search?q=site:gtabase.com
+q=grotti+cheetah -> 302 https://www.google.com/search?q=site:gtabase.com+grotti+cheetah
+q=caf%C3%A9 -> 302 https://www.google.com/search?q=site:gtabase.com+caf%C3%A9
+q=a%26b -> 302 https://www.google.com/search?q=site:gtabase.com+a%26b
+q=%3Cb%3Ex%3C%2Fb%3E -> 302 https://www.google.com/search?q=site:gtabase.com+%3Cb%3Ex%3C%2Fb%3E
+q=%20%20vice%20%20 -> 302 https://www.google.com/search?q=site:gtabase.com+%20%20vice%20%20
+q=vice&lang=de -> 302 https://www.google.com/search?q=site:gtabase.com+vice

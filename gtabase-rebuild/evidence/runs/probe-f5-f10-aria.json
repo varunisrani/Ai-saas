@@ -1,0 +1,10 @@
+{
+ "probe": "node evidence/runs/probe-f5-f10-aria.mjs (run from tools/; read-only: non-GET aborted, ads blocked)",
+ "captured": "2026-11-23",
+ "favSnapshot": "- button \" Add To Favorites\"  (icon-font glyph U+F005 precedes the words)",
+ "favByRole_substring_count": 1,
+ "headerLogin": "- link \"Log In\" -> #loginbox",
+ "dialogSnapshot_after_favorites_click": "- text: Modal dialog | paragraph: img \"MyBase Logo\" | text: Save your GTA 6 favorites | paragraph: Create a free account to save your favorites, track your garages, vehicles and weapons, and much more. | button \"Login with Discord\" | button \"Sign in with Google\" | paragraph: or login with your GTABase account | textbox \"Username\" | textbox \"Password\" | button \"Show Password\" | checkbox \"Remember Me\" | button \"Log in\" | link \"Forgot your password?\" -> /lost-password/ | link \"Forgot your username?\" -> /lost-user-name/ | link \"Create an account\" -> /membership/free/sign-up | button \"close\"",
+ "checklistBoxSnapshot": "- checkbox \"Mark as completed: Story Completion (50%)\"",
+ "progressModuleSnapshot": "- heading \"0.00% Completed!\" [level=3] | text: Progress is saved in your browser. | link \"Login\" -> /login/ | text: to keep progress across all your devices!"
+}

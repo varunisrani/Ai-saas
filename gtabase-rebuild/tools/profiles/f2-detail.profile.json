@@ -1,0 +1,151 @@
+{
+  "app": "gtabase.com GTA 6 section - F2 item detail pages (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "readOnly": true,
+  "guard": {
+    "allow": []
+  },
+  "browser": {
+    "channel": "chromium",
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "args": [
+      "--disable-blink-features=AutomationControlled"
+    ]
+  },
+  "timeouts": {
+    "action": 6000,
+    "navigation": 60000,
+    "settle": 5000,
+    "idle": 15000
+  },
+  "network": {
+    "include": [
+      "/media/com_jamegafilter/",
+      "option=com_ajax",
+      "option=com_jlexcomment",
+      "/search"
+    ],
+    "block": [
+      "mediavine",
+      "googletagmanager",
+      "google-analytics",
+      "doubleclick",
+      "googlesyndication",
+      "amazon-adsystem",
+      "addtoany",
+      "facebook\\.net",
+      "clarity\\.ms",
+      "cloudflareinsights",
+      "nel\\.cloudflare",
+      "quantserve",
+      "scorecardresearch",
+      "adnxs",
+      "pubmatic",
+      "rubiconproject",
+      "criteo",
+      "taboola",
+      "outbrain",
+      "giphy",
+      "/cdn-cgi/challenge-platform/"
+    ]
+  },
+  "tokens": {
+    "heading": "h1",
+    "breadcrumb": "#ja-content .article-info-block .category-name a",
+    "hero-image": "#ja-content .full-image-wrapper img",
+    "section-titles": "#ja-content h2",
+    "info-labels": "#ja-content .article-content ul.fields-container:not(.gta-stats ul) .field-label",
+    "stat-labels": "#ja-content .gta-stats ul.fields-container .field-label",
+    "stat-values": "#ja-content .gta-stats ul.fields-container .field-value",
+    "stat-bars": "#ja-content .gta-stats .stats-bar-value",
+    "stat-bar-1": "#ja-content .gta-stats .stats-bar-value >> nth=0",
+    "stat-bar-2": "#ja-content .gta-stats .stats-bar-value >> nth=1",
+    "stat-bar-3": "#ja-content .gta-stats .stats-bar-value >> nth=2",
+    "stat-bar-4": "#ja-content .gta-stats .stats-bar-value >> nth=3",
+    "stat-bar-5": "#ja-content .gta-stats .stats-bar-value >> nth=4",
+    "rating-block": ".yrvote_box",
+    "rating-stars": ".yrvoteimg .yrvote-star",
+    "rating-total": ".yrvotetotal",
+    "favorites-button": "role=button[name=/Add To Favorites/]",
+    "compare-to": "role=button[name=/Compare To/] >> nth=0",
+    "compare-to-menu": ".item-actions .compare-button .dropdown-menu",
+    "compare-to-items": ".item-actions .compare-button .dropdown-menu a",
+    "compare-to-item-1": ".item-actions .compare-button .dropdown-menu a >> nth=0",
+    "variants": "#ja-content .field-entry.variant-conversion h3, #ja-content .field-entry.converted-from h3",
+    "similar-title": "#ja-content h3:text-is('Similar Vehicles')",
+    "appearances": ".games-appearances h3",
+    "gallery": "#ja-content .ig-main-scope-wrapper",
+    "gallery-empty": "#ja-content .ig-main-scope-wrapper.ig-empty",
+    "gallery-thumbs": ".ig-gallery-wrapper .ig-thumb-scroller-main .ig-scroller-img-wrapper",
+    "gallery-thumb-1": ".ig-gallery-wrapper .ig-thumb-scroller-main .ig-img-link >> nth=0",
+    "lightbox": ".igui-lightbox.igui-open",
+    "lightbox-counter": ".igui-lightbox.igui-open .ig-img-numbering",
+    "lightbox-next": ".igui-lightbox.igui-open a[aria-label=next]",
+    "lightbox-prev": ".igui-lightbox.igui-open a[aria-label=previous]",
+    "lightbox-close": ".igui-lightbox.igui-open button[aria-label=close]",
+    "lightbox-buttons": ".igui-lightbox.igui-open .ig-lightbox-buttons > *",
+    "tabs": "[role=tab], [role=tablist], .rl_tabs, .rl-tabs, .rl_accordions, .rl-accordions",
+    "pager-prev": "nav.pagenavigation a[rel=prev]",
+    "pager-next": "nav.pagenavigation a[rel=next]",
+    "comments": "#comments-section",
+    "comments-tabs": "#jlexcomment #jcm-header .jcm-top > li",
+    "comments-sort": "#jlexcomment .jcm-sortby a",
+    "comments-editor": "#jlexcomment .jcm-textarea",
+    "comments-placeholder": "#jlexcomment .jcm-text-placeholder",
+    "comments-limit": "#jlexcomment .symbol-count",
+    "comments-items": "#jcm-comments li.jcm-block",
+    "comments-guest": "#jlexcomment ._postAsGuest",
+    "not-found-sub": "#ja-content h3, main h3",
+    "share": "#ja-content .a2a_kit a",
+    "footer": "#t3-footer, footer",
+    "compare-to-item-last": ".item-actions .compare-button .dropdown-menu a >> nth=-1",
+    "compare-to-item-nightblade": ".item-actions .compare-button .dropdown-menu a:text-is('Nightblade')",
+    "compare-to-item-sanchez": ".item-actions .compare-button .dropdown-menu a:text-is('Sanchez')"
+  },
+  "modes": {
+    "hub": "/gta-6/",
+    "vehicle-standout": "/gta-6/vehicles/sunset-sanchez",
+    "vehicle-base": "/gta-6/vehicles/sanchez",
+    "weapon": "/gta-6/weapons/assault-rifle",
+    "animal": "/gta-6/animals/gray-fox",
+    "character": "/gta-6/characters/jason",
+    "property": "/gta-6/properties/7th-avenue-garage",
+    "radio": "/gta-6/radio-stations/flash-fm",
+    "mission": "/gta-6/missions/breakfast-run"
+  },
+  "resets": {
+    "clear": [
+      "try:clear:local",
+      "try:clear:session"
+    ]
+  },
+  "macros": {
+    "wake": [
+      "hover:heading",
+      "wait:2500"
+    ],
+    "to-pager": [
+      "scroll:comments",
+      "wait:1500"
+    ]
+  },
+  "readouts": [
+    {
+      "key": "url",
+      "read": "url"
+    },
+    {
+      "key": "heading",
+      "read": "text:heading"
+    },
+    {
+      "key": "title",
+      "read": "title"
+    }
+  ]
+}

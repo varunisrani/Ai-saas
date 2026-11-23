@@ -1,0 +1,210 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F4 interactive map",
+  "baseUrl": "https://www.gtabase.com",
+  "readOnly": true,
+  "guard": {
+    "allow": []
+  },
+  "browser": {
+    "channel": "chromium",
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
+    "locale": "en-US",
+    "timezone": "UTC"
+  },
+  "timeouts": {
+    "action": 8000,
+    "navigation": 60000,
+    "settle": 5000,
+    "idle": 15000
+  },
+  "network": {
+    "include": [
+      "/media/com_jamegafilter/",
+      "option=com_ajax",
+      "option=com_jlexcomment",
+      "/search"
+    ],
+    "block": [
+      "mediavine",
+      "googletagmanager",
+      "google-analytics",
+      "doubleclick",
+      "googlesyndication",
+      "amazon-adsystem",
+      "addtoany",
+      "facebook\\.net",
+      "clarity\\.ms",
+      "cloudflareinsights",
+      "nel\\.cloudflare",
+      "quantserve",
+      "scorecardresearch",
+      "adnxs",
+      "pubmatic",
+      "rubiconproject",
+      "criteo",
+      "taboola",
+      "outbrain",
+      "giphy",
+      "/cdn-cgi/challenge-platform/",
+      "youtube\\.com",
+      "ytimg"
+    ]
+  },
+  "_tokens_note": "CSS selectors below are taken from the original markup (analysis side only); role= selectors use the accessible names recorded in evidence/traces/f4-map.md.",
+  "tokens": {
+    "heading": "h1",
+    "map-root": "#gtab-map",
+    "sidebar": "#gtab-map .gtab-sidebar",
+    "sidebar-close": "role=button[name=\"Hide the sidebar\"]",
+    "sidebar-open": "#gtab-map .gtab-sidebar-toggle-button",
+    "guest-line": "#gtab-map .gtab-guest-line",
+    "login-link": "#gtab-map .gtab-guest-line a",
+    "search-input": "role=combobox[name=\"Search locations or categories\"]",
+    "search-clear": "role=button[name=\"Clear the search\"]",
+    "search-hits": "#gtab-search-results [role=option]",
+    "search-hit-first": "#gtab-search-hit-0",
+    "search-empty": "#gtab-map .gtab-search-empty",
+    "category-none": "#gtab-map .gtab-filter-none",
+    "group-rail": "nav[aria-label=\"Groups\"] button",
+    "rail-robberies": "nav[aria-label=\"Groups\"] button[aria-label=\"Robberies\"]",
+    "rail-food": "nav[aria-label=\"Groups\"] button[aria-label=\"Food & Drink\"]",
+    "show-hide-all": "#gtab-map .gtab-filter-all:not(.gtab-filter-found)",
+    "hide-found": "#gtab-map .gtab-filter-found",
+    "groups": "#gtab-map .gtab-filter-group",
+    "category-rows": "#gtab-map .gtab-filter-row",
+    "category-rows-visible": "#gtab-map .gtab-filter-row:visible",
+    "category-rows-tracked": "#gtab-map .gtab-filter-row.gtab-filter-row-tracked",
+    "category-checked": "#gtab-map .gtab-filter-row input:checked",
+    "category-names": "#gtab-map .gtab-filter-row .gtab-filter-row-name",
+    "group-robberies-box": "#gtab-map label.gtab-filter-group-label:has-text(\"Robberies\") input",
+    "group-robberies-fold": "#gtab-map .gtab-filter-group-head:has-text(\"Robberies\") .gtab-filter-group-fold",
+    "group-robberies-body": "#gtab-map .gtab-filter-group:has(.gtab-filter-group-name:text-is(\"Robberies\")) .gtab-filter-group-body",
+    "group-vehicles-box": "#gtab-map label.gtab-filter-group-label:has-text(\"Vehicles\") input",
+    "cat-banks-box": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Banks\")) input",
+    "cat-banks-counter": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Banks\")) .gtab-filter-counter",
+    "cat-banks-name": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Banks\")) .gtab-filter-row-name",
+    "cat-safehouses-box": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Safehouses\")) input",
+    "cat-safehouses-counter": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Safehouses\")) .gtab-filter-counter",
+    "cat-safehouses-sr": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Safehouses\")) .gtab-filter-row-text > .gtab-sr",
+    "cat-garages-box": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Garages\")) input",
+    "cat-garages-only": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Garages\")) .gtab-filter-only",
+    "cat-garages-next": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Garages\")) .gtab-filter-next",
+    "cat-hidden-pkg-box": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Hidden Package\")) input",
+    "cat-atms-box": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"ATMs\")) input",
+    "cat-atms-counter": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"ATMs\")) .gtab-filter-counter",
+    "cat-atms-row": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"ATMs\"))",
+    "cat-gas-box": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Gas Stations\")) input",
+    "reset-progress": "role=button[name=\"Reset progress\"]",
+    "reset-dialog": "role=dialog[name=\"Reset progress\"]",
+    "reset-say": "#gtab-map .gtab-reset-say",
+    "reset-select": "#gtab-map .gtab-reset-choice select",
+    "reset-options": "#gtab-map .gtab-reset-choice select option",
+    "reset-go": "#gtab-map .gtab-reset-go",
+    "reset-cancel": "#gtab-map .gtab-reset-cancel",
+    "clusters": "#gtab-map .marker-cluster",
+    "popup": "#gtab-map .leaflet-popup",
+    "popup-title": "#gtab-map .leaflet-popup .gtab-popup-title",
+    "popup-category-link": "#gtab-map .leaflet-popup a.gtab-popup-cat",
+    "popup-found-box": "#gtab-map .leaflet-popup label.gtab-popup-found input",
+    "popup-found-label": "#gtab-map .leaflet-popup label.gtab-popup-found",
+    "popup-navnum": "#gtab-map .leaflet-popup .gtab-popup-navnum",
+    "popup-next": "#gtab-map .leaflet-popup .gtab-popup-next",
+    "popup-prev": "#gtab-map .leaflet-popup .gtab-popup-prev",
+    "popup-zoom": "#gtab-map .leaflet-popup .gtab-popup-zoom",
+    "popup-copy": "#gtab-map .leaflet-popup .gtab-popup-copy",
+    "popup-fav": "#gtab-map .leaflet-popup .gtab-popup-fav",
+    "popup-buttons": "#gtab-map .leaflet-popup button",
+    "popup-report": "#gtab-map .leaflet-popup .gtab-popup-report",
+    "popup-details-link": "#gtab-map .leaflet-popup a.gtab-popup-link",
+    "suggest-open": "role=button[name=\"+ Suggest location\"]",
+    "contest-open": "#gtab-map .gtab-board-open",
+    "feedback-open": "#gtab-map .gtab-feedback-open",
+    "panel": "#gtab-map .gtab-submit-panel",
+    "panel-title": "#gtab-map .gtab-submit-panel h3",
+    "panel-close": "#gtab-map .gtab-submit-panel .gtab-submit-close",
+    "panel-links": "#gtab-map .gtab-submit-panel .gtab-submit-buttons a",
+    "about-open": "#gtab-map .gtab-info-button",
+    "about-dialog": "role=dialog[name=\"About this map\"]",
+    "fullscreen": "#gtab-map .gtab-fullscreen-button",
+    "map-zoom-in": "#gtab-map .leaflet-control-zoom-in",
+    "map-zoom-out": "#gtab-map .leaflet-control-zoom-out",
+    "tile-first": "#gtab-map .leaflet-tile-loaded",
+    "contest-box": "#gtab-map .gtab-contest",
+    "contest-close": "#gtab-map .gtab-contest .gtab-contest-close",
+    "static-list-groups": "#gtab-map-list h2.gtab-list-group",
+    "cat-banks-toggle": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Banks\")) .gtab-filter-swatch",
+    "cat-safehouses-toggle": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Safehouses\")) .gtab-filter-swatch",
+    "cat-garages-toggle": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Garages\")) .gtab-filter-swatch",
+    "cat-hidden-pkg-toggle": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Hidden Package\")) .gtab-filter-swatch",
+    "cat-atms-toggle": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"ATMs\")) .gtab-filter-swatch",
+    "cat-gas-toggle": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Gas Stations\")) .gtab-filter-swatch",
+    "group-robberies-toggle": "#gtab-map label.gtab-filter-group-label:has(.gtab-filter-group-name:text-is(\"Robberies\")) .gtab-filter-group-name",
+    "popup-found-toggle": "#gtab-map .leaflet-popup label.gtab-popup-found .gtab-kv-label",
+    "canvas": "#gtab-map canvas",
+    "popup-desc": "#gtab-map .leaflet-popup .gtab-popup-desc",
+    "cat-garages-name": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Garages\")) .gtab-filter-row-name",
+    "cat-wrath-counter": "#gtab-map label.gtab-filter-row:has(.gtab-filter-row-name:text-is(\"Liberty City Wrath\")) .gtab-filter-counter",
+    "own-open": "#gtab-map .gtab-own-open",
+    "popup-actions": "#gtab-map .leaflet-popup .gtab-popup-actions > *",
+    "popup-close": "#gtab-map .leaflet-popup a.leaflet-popup-close-button",
+    "county-labels": "#gtab-map .leaflet-marker-icon.gtab-county-label"
+  },
+  "modes": {
+    "map": [
+      "goto:about:blank",
+      "goto:/gta-6/map/",
+      "waitfor:map-zoom-in",
+      "wait:1500"
+    ],
+    "map-mobile": [
+      "viewport:390x844",
+      "goto:about:blank",
+      "goto:/gta-6/map/",
+      "waitfor:map-zoom-in",
+      "wait:1500"
+    ],
+    "start-marker": [
+      "goto:about:blank",
+      "goto:/gta-6/map/#safehouse-001",
+      "waitfor:popup-title",
+      "wait:1000"
+    ]
+  },
+  "resets": {
+    "clear": [
+      "try:clear:local",
+      "try:clear:session",
+      "viewport:1366x900"
+    ],
+    "desktop": [
+      "viewport:1366x900"
+    ]
+  },
+  "macros": {
+    "ready": [
+      "waitfor:map-zoom-in",
+      "wait:1200"
+    ],
+    "tick-start": [
+      "goto:about:blank",
+      "goto:/gta-6/map/#safehouse-001",
+      "waitfor:popup-found-toggle",
+      "wait:800",
+      "click:popup-found-toggle",
+      "wait:700"
+    ]
+  },
+  "readouts": [
+    {
+      "key": "url",
+      "read": "url"
+    },
+    {
+      "key": "blocked",
+      "read": "blocked"
+    }
+  ]
+}

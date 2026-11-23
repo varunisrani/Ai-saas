@@ -1,0 +1,969 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 guide pages",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T10:45:55.275Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F6-01",
+      "mode": "animals",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:guide-card",
+        "attr:grid-1-first-link@href",
+        "attr:grid-1-first-link@aria-label",
+        "count:section-heading",
+        "count:toc",
+        "count:faq-question",
+        "count:rlta-any",
+        "count:tabs-script"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "count:card-grid": "3",
+        "count:grid-1-cards": "184",
+        "count:grid-2-cards": "69",
+        "count:grid-3-cards": "2",
+        "count:guide-card": "255",
+        "attr:grid-1-first-link@href": "/gta-6/animals/albino-american-alligator",
+        "attr:grid-1-first-link@aria-label": "Read more: Albino American Alligator",
+        "count:section-heading": "3",
+        "count:toc": "0",
+        "count:faq-question": "0",
+        "count:rlta-any": "0",
+        "count:tabs-script": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-02",
+      "mode": "animals",
+      "steps": [
+        "click:grid-1-first-link"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "title": "GTA 6 Animals List & Guide: All Wildlife, Birds & Fish"
+      },
+      "error": "click:grid-1-first-link: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F6-03",
+      "mode": null,
+      "steps": [
+        "back"
+      ],
+      "reads": [
+        "count:guide-card"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "count:guide-card": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-04",
+      "mode": "characters",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:grid-4-cards",
+        "count:plain-person-row",
+        "count:faq-question",
+        "attr:grid-1-first-link@href",
+        "count:bullet-list-1",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/",
+        "heading": "GTA 6 Characters Guide: Main Protagonists & Full List",
+        "count:card-grid": "4",
+        "count:grid-1-cards": "2",
+        "count:grid-2-cards": "6",
+        "count:grid-3-cards": "10",
+        "count:grid-4-cards": "49",
+        "count:plain-person-row": "10",
+        "count:faq-question": "5",
+        "attr:grid-1-first-link@href": "/gta-6/characters/jason",
+        "count:bullet-list-1": "17",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-05",
+      "mode": "gangs",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "attr:grid-1-first-card@href",
+        "count:bullet-list-1",
+        "count:section-heading",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/",
+        "heading": "<missing>",
+        "count:card-grid": "0",
+        "count:grid-1-cards": "0",
+        "count:grid-2-cards": "0",
+        "attr:grid-1-first-card@href": "<missing>",
+        "count:bullet-list-1": "0",
+        "count:section-heading": "0",
+        "count:rlta-any": "0"
+      },
+      "error": "mode:gangs: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F6-06",
+      "mode": "gangs",
+      "steps": [
+        "click:grid-1-first-card"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gangs/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/gangs/"
+      },
+      "error": "mode:gangs: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F6-07",
+      "mode": "properties",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:grid-4-cards",
+        "count:guide-card",
+        "count:card-with-price",
+        "count:card-with-location",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gangs/",
+        "heading": "<missing>",
+        "count:card-grid": "0",
+        "count:grid-1-cards": "0",
+        "count:grid-2-cards": "0",
+        "count:grid-3-cards": "0",
+        "count:grid-4-cards": "0",
+        "count:guide-card": "0",
+        "count:card-with-price": "0",
+        "count:card-with-location": "0",
+        "count:rlta-any": "0"
+      },
+      "error": "mode:properties: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F6-08",
+      "mode": "properties",
+      "steps": [
+        "click:grid-3-first-link"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "title": "<missing>"
+      },
+      "error": "mode:properties: page.goto: net::ERR_ABORTED at https://www.gtabase.com/gta-6/properties/"
+    },
+    {
+      "id": "F6-09",
+      "mode": "radio",
+      "steps": [
+        "macro:wake"
+      ],
+      "reads": [
+        "count:station-row",
+        "count:station-without-tracks",
+        "count:track-play",
+        "count:track-play-visible",
+        "count:track-play-hidden",
+        "list:tracklist-header",
+        "count:table-controls",
+        "text:player-title",
+        "text:s1-track1-title",
+        "text:player-artist",
+        "text:s1-track1-artist",
+        "text:player-time",
+        "text:player-duration",
+        "attr:player-toggle-icon@class",
+        "visible:floating-player",
+        "count:track-play-pause-state",
+        "count:rlta-any",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "count:station-row": "<missing>",
+        "count:station-without-tracks": "<missing>",
+        "count:track-play": "<missing>",
+        "count:track-play-visible": "<missing>",
+        "count:track-play-hidden": "<missing>",
+        "list:tracklist-header": "<missing>",
+        "count:table-controls": "<missing>",
+        "text:player-title": "<missing>",
+        "text:s1-track1-title": "<missing>",
+        "text:player-artist": "<missing>",
+        "text:s1-track1-artist": "<missing>",
+        "text:player-time": "<missing>",
+        "text:player-duration": "<missing>",
+        "attr:player-toggle-icon@class": "<missing>",
+        "visible:floating-player": "<missing>",
+        "count:track-play-pause-state": "<missing>",
+        "count:rlta-any": "<missing>",
+        "calls": ""
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-10",
+      "mode": "radio-ready",
+      "steps": [
+        "click:s1-track2-play"
+      ],
+      "reads": [
+        "text:s1-track2-play",
+        "text:player-title",
+        "text:s1-track2-title",
+        "count:track-play-pause-state",
+        "attr:player-toggle-icon@class",
+        "text:player-time",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "text:s1-track2-play": "<missing>",
+        "text:player-title": "<missing>",
+        "text:s1-track2-title": "<missing>",
+        "count:track-play-pause-state": "<missing>",
+        "attr:player-toggle-icon@class": "<missing>",
+        "text:player-time": "<missing>",
+        "blocked": ""
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-11",
+      "mode": null,
+      "steps": [
+        "click:player-next"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s1-track3-title",
+        "text:s1-track2-play",
+        "text:s1-track3-play",
+        "count:track-play-pause-state"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "text:player-title": "<missing>",
+        "text:s1-track3-title": "<missing>",
+        "text:s1-track2-play": "<missing>",
+        "text:s1-track3-play": "<missing>",
+        "count:track-play-pause-state": "<missing>"
+      },
+      "error": "click:player-next: locator.click: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-12",
+      "mode": null,
+      "steps": [
+        "click:player-prev",
+        "click:player-prev"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s1-track1-title",
+        "text:s1-track1-play",
+        "count:track-play-pause-state"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "text:player-title": "<missing>",
+        "text:s1-track1-title": "<missing>",
+        "text:s1-track1-play": "<missing>",
+        "count:track-play-pause-state": "<missing>"
+      },
+      "error": "click:player-prev: locator.click: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-13",
+      "mode": null,
+      "steps": [
+        "click:player-prev"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s1-last-title",
+        "text:s1-last-play",
+        "text:s1-track1-play"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "text:player-title": "<missing>",
+        "text:s1-last-title": "<missing>",
+        "text:s1-last-play": "<missing>",
+        "text:s1-track1-play": "<missing>"
+      },
+      "error": "click:player-prev: locator.click: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-14",
+      "mode": null,
+      "steps": [
+        "click:player-next"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s1-track1-title",
+        "text:s1-track1-play",
+        "text:s1-last-play"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "text:player-title": "<missing>",
+        "text:s1-track1-title": "<missing>",
+        "text:s1-track1-play": "<missing>",
+        "text:s1-last-play": "<missing>"
+      },
+      "error": "click:player-next: locator.click: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-15",
+      "mode": null,
+      "steps": [
+        "click:s3-first-play"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s3-first-title",
+        "text:s3-first-play",
+        "text:s1-track1-play",
+        "count:track-play-pause-state"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "text:player-title": "<missing>",
+        "text:s3-first-title": "<missing>",
+        "text:s3-first-play": "<missing>",
+        "text:s1-track1-play": "<missing>",
+        "count:track-play-pause-state": "<missing>"
+      },
+      "error": "click:s3-first-play: locator.click: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-16",
+      "mode": null,
+      "steps": [
+        "click:player-next"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s3-second-title",
+        "text:s3-second-play",
+        "text:s1-track2-title"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "text:player-title": "<missing>",
+        "text:s3-second-title": "<missing>",
+        "text:s3-second-play": "<missing>",
+        "text:s1-track2-title": "<missing>"
+      },
+      "error": "click:player-next: locator.click: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-17",
+      "mode": null,
+      "steps": [
+        "wait:3500",
+        "click:player-toggle"
+      ],
+      "reads": [
+        "attr:player-toggle-icon@class",
+        "text:s3-second-play",
+        "text:player-title"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:player-toggle-icon@class": "<missing>",
+        "text:s3-second-play": "<missing>",
+        "text:player-title": "<missing>"
+      },
+      "error": "wait:3500: page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-18",
+      "mode": "ps5",
+      "steps": [],
+      "reads": [
+        "count:cheat-row",
+        "count:cheat-category",
+        "list:cheat-category",
+        "count:cheat-category-1-rows",
+        "count:cheat-category-3-rows",
+        "count:first-cheat-keys",
+        "attr:first-cheat-key-1@alt",
+        "attr:first-cheat-key-2@alt",
+        "attr:first-cheat-key-1@src",
+        "count:cheat-key-other",
+        "count:cheat-copy-or-filter",
+        "count:platform-link",
+        "text:platform-current",
+        "count:toc-link",
+        "attr:toc-first-link@href",
+        "count:howto-step-icons",
+        "attr:howto-icon-2@alt",
+        "attr:howto-icon-3@alt",
+        "text:first-cheat-unlock",
+        "count:body-link-pc",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "count:cheat-row": "<missing>",
+        "count:cheat-category": "<missing>",
+        "list:cheat-category": "<missing>",
+        "count:cheat-category-1-rows": "<missing>",
+        "count:cheat-category-3-rows": "<missing>",
+        "count:first-cheat-keys": "<missing>",
+        "attr:first-cheat-key-1@alt": "<missing>",
+        "attr:first-cheat-key-2@alt": "<missing>",
+        "attr:first-cheat-key-1@src": "<missing>",
+        "count:cheat-key-other": "<missing>",
+        "count:cheat-copy-or-filter": "<missing>",
+        "count:platform-link": "<missing>",
+        "text:platform-current": "<missing>",
+        "count:toc-link": "<missing>",
+        "attr:toc-first-link@href": "<missing>",
+        "count:howto-step-icons": "<missing>",
+        "attr:howto-icon-2@alt": "<missing>",
+        "attr:howto-icon-3@alt": "<missing>",
+        "text:first-cheat-unlock": "<missing>",
+        "count:body-link-pc": "<missing>",
+        "count:rlta-any": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-19",
+      "mode": "ps5",
+      "steps": [
+        "click:toc-link-combat"
+      ],
+      "reads": [
+        "attr:toc-link-combat@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:toc-link-combat@href": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-20",
+      "mode": "ps5",
+      "steps": [
+        "click:platform-xbox"
+      ],
+      "reads": [
+        "text:platform-current",
+        "count:platform-link"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "text:platform-current": "<missing>",
+        "count:platform-link": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-21",
+      "mode": "xbox",
+      "steps": [],
+      "reads": [
+        "count:cheat-row",
+        "count:cheat-category",
+        "count:first-cheat-keys",
+        "attr:first-cheat-key-1@alt",
+        "attr:first-cheat-key-1@src",
+        "count:cheat-key-other",
+        "attr:howto-icon-2@alt",
+        "attr:howto-icon-3@alt",
+        "count:platform-link",
+        "text:platform-current",
+        "count:toc-link",
+        "count:body-link-pc",
+        "count:cheat-copy-or-filter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "count:cheat-row": "<missing>",
+        "count:cheat-category": "<missing>",
+        "count:first-cheat-keys": "<missing>",
+        "attr:first-cheat-key-1@alt": "<missing>",
+        "attr:first-cheat-key-1@src": "<missing>",
+        "count:cheat-key-other": "<missing>",
+        "attr:howto-icon-2@alt": "<missing>",
+        "attr:howto-icon-3@alt": "<missing>",
+        "count:platform-link": "<missing>",
+        "text:platform-current": "<missing>",
+        "count:toc-link": "<missing>",
+        "count:body-link-pc": "<missing>",
+        "count:cheat-copy-or-filter": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-22",
+      "mode": "pc",
+      "steps": [],
+      "reads": [
+        "count:cheat-row",
+        "count:platform-link",
+        "count:pc-platform-table-link",
+        "list:pc-platform-table-link",
+        "count:toc-link",
+        "attr:toc-first-link@href",
+        "count:body-link-ps5",
+        "count:body-link-xbox"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "count:cheat-row": "<missing>",
+        "count:platform-link": "<missing>",
+        "count:pc-platform-table-link": "<missing>",
+        "list:pc-platform-table-link": "<missing>",
+        "count:toc-link": "<missing>",
+        "attr:toc-first-link@href": "<missing>",
+        "count:body-link-ps5": "<missing>",
+        "count:body-link-xbox": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-23",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/gta-6-cheats-ps5-cheat-codes#screen-filter-cheats"
+      ],
+      "reads": [
+        "count:cheat-row"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "count:cheat-row": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-24",
+      "mode": "maploc",
+      "steps": [],
+      "reads": [
+        "count:toc",
+        "count:toc-link",
+        "count:indexed-heading",
+        "count:inline-gallery",
+        "attr:map-banner-link@href",
+        "text:map-banner-link",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "count:toc": "<missing>",
+        "count:toc-link": "<missing>",
+        "count:indexed-heading": "<missing>",
+        "count:inline-gallery": "<missing>",
+        "attr:map-banner-link@href": "<missing>",
+        "text:map-banner-link": "<missing>",
+        "count:rlta-any": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-25",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/animals/nonexistent-xyz"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "title": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-26",
+      "mode": "animals",
+      "steps": [
+        "macro:wake",
+        "scroll:grid-3-cards",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:back-to-top@class"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:back-to-top@class": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-27",
+      "mode": "membership",
+      "steps": [],
+      "reads": [
+        "count:acc-container",
+        "attr:acc-container@data-rlta-type",
+        "count:acc-button",
+        "count:acc-open",
+        "attr:acc-1@aria-expanded",
+        "attr:acc-2@aria-expanded",
+        "attr:acc-1@role",
+        "attr:acc-1@tabindex",
+        "attr:acc-1@aria-controls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "count:acc-container": "<missing>",
+        "attr:acc-container@data-rlta-type": "<missing>",
+        "count:acc-button": "<missing>",
+        "count:acc-open": "<missing>",
+        "attr:acc-1@aria-expanded": "<missing>",
+        "attr:acc-2@aria-expanded": "<missing>",
+        "attr:acc-1@role": "<missing>",
+        "attr:acc-1@tabindex": "<missing>",
+        "attr:acc-1@aria-controls": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-28",
+      "mode": null,
+      "steps": [
+        "click:acc-2",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-2@aria-expanded",
+        "count:acc-open",
+        "count:acc-panel-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:acc-1@aria-expanded": "<missing>",
+        "attr:acc-2@aria-expanded": "<missing>",
+        "count:acc-open": "<missing>",
+        "count:acc-panel-open": "<missing>"
+      },
+      "error": "click:acc-2: locator.click: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-29",
+      "mode": null,
+      "steps": [
+        "click:acc-2",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-2@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:acc-2@aria-expanded": "<missing>",
+        "count:acc-open": "<missing>"
+      },
+      "error": "click:acc-2: locator.click: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-30",
+      "mode": null,
+      "steps": [
+        "focus:acc-2",
+        "press:ArrowDown",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-2@aria-expanded",
+        "attr:acc-3@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:acc-2@aria-expanded": "<missing>",
+        "attr:acc-3@aria-expanded": "<missing>",
+        "count:acc-open": "<missing>"
+      },
+      "error": "focus:acc-2: locator.focus: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-31",
+      "mode": null,
+      "steps": [
+        "press:Home",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-3@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:acc-1@aria-expanded": "<missing>",
+        "attr:acc-3@aria-expanded": "<missing>",
+        "count:acc-open": "<missing>"
+      },
+      "error": "press:Home: keyboard.press: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-32",
+      "mode": null,
+      "steps": [
+        "press:End",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-last@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:acc-1@aria-expanded": "<missing>",
+        "attr:acc-last@aria-expanded": "<missing>",
+        "count:acc-open": "<missing>"
+      },
+      "error": "press:End: keyboard.press: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-33",
+      "mode": null,
+      "steps": [
+        "press:Enter",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-last@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:acc-last@aria-expanded": "<missing>",
+        "count:acc-open": "<missing>"
+      },
+      "error": "press:Enter: keyboard.press: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-34",
+      "mode": null,
+      "steps": [
+        "goto:/membership/#will-my-subscription-extend-automatically",
+        "hover:heading",
+        "wait:3000",
+        "wait:idle"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-3@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:acc-1@aria-expanded": "<missing>",
+        "attr:acc-3@aria-expanded": "<missing>",
+        "count:acc-open": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-35",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/animals/"
+      ],
+      "reads": [
+        "count:guide-card",
+        "visible:menu-button",
+        "visible:grid-1-first-link"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "count:guide-card": "<missing>",
+        "visible:menu-button": "<missing>",
+        "visible:grid-1-first-link": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-36",
+      "mode": null,
+      "steps": [
+        "macro:wake",
+        "click:menu-button",
+        "wait:600"
+      ],
+      "reads": [
+        "attr:menu-button@class"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "attr:menu-button@class": "<missing>"
+      },
+      "error": "macro:wake: hover:heading: locator.hover: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-37",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/gta-6-cheats-ps5-cheat-codes"
+      ],
+      "reads": [
+        "count:cheat-row",
+        "visible:first-cheat-key-1",
+        "visible:toc",
+        "visible:platform-xbox"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "count:cheat-row": "<missing>",
+        "visible:first-cheat-key-1": "<missing>",
+        "visible:toc": "<missing>",
+        "visible:platform-xbox": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    },
+    {
+      "id": "F6-38",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/radio-stations/",
+        "macro:wake"
+      ],
+      "reads": [
+        "visible:floating-player",
+        "visible:player-next",
+        "visible:player-prev",
+        "visible:player-toggle",
+        "text:player-title",
+        "count:track-play-visible"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "<missing>",
+        "visible:floating-player": "<missing>",
+        "visible:player-next": "<missing>",
+        "visible:player-prev": "<missing>",
+        "visible:player-toggle": "<missing>",
+        "text:player-title": "<missing>",
+        "count:track-play-visible": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    }
+  ]
+}

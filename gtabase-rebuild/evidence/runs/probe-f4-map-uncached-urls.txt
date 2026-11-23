@@ -1,0 +1,10 @@
+# F4 map: uncached URL variants (2026-11-23). Case ids below are run-f4-map.json ids.
+# First pass (10:40-10:52 UTC, same case definitions, earlier numbering F4-16/F4-17), values as logged by run-cases.mjs:
+F4-17 (pass 1)        ok | url=/gta-6/map/?feature=hidden-package; blocked=; title=GTA 6 Map: Interactive Collectibles & Locations Tracker; text:heading=GTA 6 INTERACTIVE MAP; attr:map-root@data-gtab-category=<missing>; count:category-checked=98
+F4-19 (pass 1)        ok | url=/gta-6/map/?feature=no-such-category; blocked=; title=GTA 6 Map: Interactive Collectibles & Locations Tracker; text:heading=GTA 6 INTERACTIVE MAP; attr:map-root@data-gtab-category=<missing>; count:category-checked=98
+# Second pass (11:1x UTC) and one retry after 60 s: both goto calls timed out at 60 s (excluded in run-f4-map.json).
+# curl GET status/time at ~11:25 UTC (no cookies, read-only):
+500 61.49s https://www.gtabase.com/gta-6/map/does-not-exist/
+500 61.99s https://www.gtabase.com/gta-6/map/?feature=no-such-category
+200 0.51s https://www.gtabase.com/gta-6/map/ (x-litespeed-cache: hit)
+200 https://www.gtabase.com/gta-6/map/?feature=bank (x-litespeed-cache: hit)

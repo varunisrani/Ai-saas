@@ -1,0 +1,97 @@
+{
+ "captured": "2026-11-23T11:05:25.205Z",
+ "url": "https://www.gtabase.com/gta-6/",
+ "timezone": "UTC",
+ "observations": [
+  {
+   "start": "2026-11-17T10:20:30Z",
+   "at": "2026-11-17T10:20:32.787Z",
+   "days": "01",
+   "hours": "13",
+   "minutes": "39",
+   "seconds": "27",
+   "text": "01 DAYS : 13 HOURS : 39 MINUTES : 27 SECONDS"
+  },
+  {
+   "start": "2026-11-17T10:20:30Z",
+   "at": "2026-11-17T10:20:33.789Z",
+   "days": "01",
+   "hours": "13",
+   "minutes": "39",
+   "seconds": "26",
+   "text": "01 DAYS : 13 HOURS : 39 MINUTES : 26 SECONDS"
+  },
+  {
+   "start": "2026-11-17T10:20:30Z",
+   "at": "2026-11-17T10:20:34.790Z",
+   "days": "01",
+   "hours": "13",
+   "minutes": "39",
+   "seconds": "25",
+   "text": "01 DAYS : 13 HOURS : 39 MINUTES : 25 SECONDS"
+  },
+  {
+   "start": "2026-11-17T10:20:30Z",
+   "at": "2026-11-17T10:20:37.791Z",
+   "days": "01",
+   "hours": "13",
+   "minutes": "39",
+   "seconds": "22",
+   "text": "01 DAYS : 13 HOURS : 39 MINUTES : 22 SECONDS"
+  },
+  {
+   "start": "2026-11-17T10:20:30Z",
+   "at": "2026-11-17T10:20:47.793Z",
+   "days": "01",
+   "hours": "13",
+   "minutes": "39",
+   "seconds": "12",
+   "text": "01 DAYS : 13 HOURS : 39 MINUTES : 12 SECONDS"
+  },
+  {
+   "start": "2026-11-18T23:59:55Z",
+   "at": "2026-11-18T23:59:57.951Z",
+   "days": "00",
+   "hours": "00",
+   "minutes": "00",
+   "seconds": "02",
+   "text": "00 DAYS : 00 HOURS : 00 MINUTES : 02 SECONDS"
+  },
+  {
+   "start": "2026-11-18T23:59:55Z",
+   "at": "2026-11-18T23:59:58.952Z",
+   "days": "00",
+   "hours": "00",
+   "minutes": "00",
+   "seconds": "01",
+   "text": "00 DAYS : 00 HOURS : 00 MINUTES : 01 SECONDS"
+  },
+  {
+   "start": "2026-11-18T23:59:55Z",
+   "at": "2026-11-18T23:59:59.956Z",
+   "days": "00",
+   "hours": "00",
+   "minutes": "00",
+   "seconds": "00",
+   "text": "00 DAYS : 00 HOURS : 00 MINUTES : 00 SECONDS"
+  },
+  {
+   "start": "2026-11-18T23:59:55Z",
+   "at": "2026-11-19T00:00:02.962Z",
+   "days": null,
+   "hours": null,
+   "minutes": null,
+   "seconds": null,
+   "text": "GTA 6 IS OUT NOW!"
+  },
+  {
+   "start": "2026-11-18T23:59:55Z",
+   "at": "2026-11-19T00:00:12.968Z",
+   "days": null,
+   "hours": null,
+   "minutes": null,
+   "seconds": null,
+   "text": "GTA 6 IS OUT NOW!"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+{
+ "probe": "tools/probe.mjs <100% page> evidence/runs/probe-f5-checklists-layout.js 390x844 | 1366x900",
+ "captured": "2026-11-23",
+ "390x844": { "progressModule": { "position": "fixed", "top": 0, "width": 390, "height": 136 }, "sidebarColumn": { "top": 19884, "note": "sidebar column moves below the content" }, "contentsBox": { "top": 2440, "width": 368 }, "firstSection": { "top": 4603 }, "docHeight": 20248 },
+ "1366x900": { "progressModule": { "position": "sticky", "top": 158, "width": 358, "height": 242 }, "sidebarColumn": { "top": 158, "width": 359 }, "mainColumn": { "width": 883 }, "contentsBox": { "top": 1919, "width": 838 }, "docHeight": 15650 }
+}

@@ -1,0 +1,712 @@
+[
+ {
+  "id": "F3-01",
+  "mode": "vehicles",
+  "steps": [
+   "macro:wake"
+  ],
+  "reads": [
+   "count:card",
+   "count:compare-toggle",
+   "attr:compare-toggle-1@role",
+   "attr:compare-toggle-1@aria-label",
+   "attr:compare-toggle-1@aria-checked",
+   "attr:compare-toggle-1@aria-disabled",
+   "attr:compare-toggle-1@tabindex",
+   "attr:compare-toggle-1@title",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-02",
+  "reset": "none",
+  "steps": [
+   "click:compare-toggle-1"
+  ],
+  "reads": [
+   "attr:compare-toggle-1@aria-checked",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "visible:compare-bar",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-03",
+  "reset": "none",
+  "steps": [
+   "click:compare-toggle-2"
+  ],
+  "reads": [
+   "attr:compare-toggle-2@aria-checked",
+   "text:compare-names",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-04",
+  "reset": "none",
+  "steps": [
+   "click:compare-toggle-1"
+  ],
+  "reads": [
+   "attr:compare-toggle-1@aria-checked",
+   "attr:compare-toggle-2@aria-checked",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-05",
+  "mode": "vehicles",
+  "steps": [
+   "macro:wake",
+   "click:compare-toggle-1",
+   "click:compare-toggle-2",
+   "click:compare-toggle-3",
+   "click:compare-toggle-4"
+  ],
+  "reads": [
+   "attr:compare-toggle-5@aria-disabled",
+   "attr:compare-toggle-5@aria-checked",
+   "attr:compare-toggle-4@aria-disabled",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-06",
+  "reset": "none",
+  "steps": [
+   "click:compare-toggle-5"
+  ],
+  "reads": [
+   "attr:compare-toggle-5@aria-checked",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-07",
+  "reset": "none",
+  "steps": [
+   "click:compare-toggle-4"
+  ],
+  "reads": [
+   "attr:compare-toggle-5@aria-disabled",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-08",
+  "reset": "none",
+  "steps": [
+   "click:compare-clear"
+  ],
+  "reads": [
+   "session:gtabCompare:/gta-6/vehicles/",
+   "visible:compare-bar",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-09",
+  "mode": "vehicles",
+  "steps": [
+   "macro:wake",
+   "focus:compare-toggle-1",
+   "press:Space"
+  ],
+  "reads": [
+   "attr:compare-toggle-1@aria-checked",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-10",
+  "reset": "none",
+  "steps": [
+   "focus:compare-toggle-2",
+   "press:Enter"
+  ],
+  "reads": [
+   "attr:compare-toggle-2@aria-checked",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-11",
+  "reset": "none",
+  "steps": [
+   "reload",
+   "macro:wake"
+  ],
+  "reads": [
+   "attr:compare-toggle-1@aria-checked",
+   "attr:compare-toggle-2@aria-checked",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-12",
+  "reset": "none",
+  "steps": [
+   "click:name-search",
+   "type:zzqx",
+   "wait:1500"
+  ],
+  "reads": [
+   "count:card",
+   "count:compare-toggle",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-13",
+  "reset": "none",
+  "steps": [
+   "goto:/gta-6/weapons/",
+   "hover:heading",
+   "waitfor:compare-toggle-1"
+  ],
+  "reads": [
+   "session:gtabCompare:/gta-6/vehicles/",
+   "session:gtabCompare:/gta-6/weapons/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-14",
+  "reset": "none",
+  "steps": [
+   "click:compare-toggle-1",
+   "click:compare-toggle-2"
+  ],
+  "reads": [
+   "attr:compare-toggle-1@aria-label",
+   "session:gtabCompare:/gta-6/weapons/",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-15",
+  "reset": "none",
+  "steps": [
+   "click:compare-go",
+   "wait:3000"
+  ],
+  "reads": [
+   "title",
+   "count:challenge",
+   "count:cmp-board"
+  ]
+ },
+ {
+  "id": "F3-16",
+  "mode": "vehicles",
+  "steps": [
+   "viewport:390x844",
+   "reload",
+   "macro:wake",
+   "click:compare-toggle-1",
+   "click:compare-toggle-2"
+  ],
+  "reads": [
+   "visible:compare-bar",
+   "visible:compare-names",
+   "visible:compare-go",
+   "visible:compare-clear",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-17",
+  "mode": "vehicles",
+  "steps": [
+   "macro:wake",
+   "click:compare-toggle-1",
+   "click:card-1-link",
+   "wait:1500",
+   "back",
+   "hover:heading",
+   "waitfor:compare-toggle-1"
+  ],
+  "reads": [
+   "attr:compare-toggle-1@aria-checked",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-18",
+  "mode": "vcompare",
+  "steps": [],
+  "reads": [
+   "title",
+   "text:cmp-crumb",
+   "attr:cmp-crumb@href",
+   "count:cmp-add",
+   "list:cmp-add-title",
+   "attr:cmp-add@data-url",
+   "attr:cmp-add@data-param",
+   "attr:cmp-add@data-picked",
+   "count:cmp-picker-all",
+   "attr:cmp-picker@placeholder",
+   "attr:cmp-picker@aria-expanded",
+   "attr:cmp-picker@aria-autocomplete",
+   "count:cmp-source",
+   "text:cmp-note",
+   "list:cmp-links"
+  ]
+ },
+ {
+  "id": "F3-19",
+  "mode": "wcompare",
+  "steps": [],
+  "reads": [
+   "title",
+   "text:cmp-crumb",
+   "count:cmp-add",
+   "list:cmp-add-title",
+   "attr:cmp-add@data-url",
+   "attr:cmp-add@data-param",
+   "count:cmp-picker-all",
+   "count:cmp-source",
+   "text:cmp-note",
+   "list:cmp-links"
+  ]
+ },
+ {
+  "id": "F3-20",
+  "mode": "vcompare",
+  "steps": [
+   "click:cmp-picker",
+   "wait:500"
+  ],
+  "reads": [
+   "attr:cmp-picker@aria-expanded",
+   "count:cmp-options",
+   "text:cmp-more",
+   "attr:cmp-option-1@class",
+   "text:cmp-option-1"
+  ]
+ },
+ {
+  "id": "F3-21",
+  "reset": "none",
+  "steps": [
+   "type:SANCHEZ",
+   "wait:400"
+  ],
+  "reads": [
+   "count:cmp-options",
+   "list:cmp-options",
+   "count:cmp-more"
+  ]
+ },
+ {
+  "id": "F3-22",
+  "reset": "none",
+  "steps": [
+   "press:Control+A",
+   "type:zzqx",
+   "wait:400"
+  ],
+  "reads": [
+   "count:cmp-options",
+   "text:cmp-more"
+  ]
+ },
+ {
+  "id": "F3-23",
+  "reset": "none",
+  "steps": [
+   "press:Control+A",
+   "type:ffa ffa",
+   "wait:300",
+   "press:Control+A",
+   "type:police bison",
+   "wait:400"
+  ],
+  "reads": [
+   "count:cmp-options",
+   "list:cmp-options"
+  ]
+ },
+ {
+  "id": "F3-24",
+  "reset": "none",
+  "steps": [
+   "press:ArrowDown",
+   "wait:200"
+  ],
+  "reads": [
+   "text:cmp-option-active"
+  ]
+ },
+ {
+  "id": "F3-25",
+  "reset": "none",
+  "steps": [
+   "press:Escape",
+   "wait:300"
+  ],
+  "reads": [
+   "attr:cmp-picker@aria-expanded",
+   "value:cmp-picker"
+  ]
+ },
+ {
+  "id": "F3-26",
+  "mode": "wcompare",
+  "steps": [
+   "click:cmp-picker",
+   "type:38",
+   "wait:400",
+   "press:Enter",
+   "wait:3000"
+  ],
+  "reads": [
+   "title",
+   "count:challenge"
+  ]
+ },
+ {
+  "id": "F3-27",
+  "steps": [
+   "goto:/gta-6/vehicles/comparison/?vehicle1=maibatsu-sanchez&vehicle2=sunset-sanchez",
+   "wait:3000"
+  ],
+  "reads": [
+   "title",
+   "count:challenge",
+   "count:cmp-board"
+  ]
+ },
+ {
+  "id": "F3-28",
+  "steps": [
+   "goto:/gta-6/vehicles/comparison/?vehicle1=sunset-sanchez&vehicle2=maibatsu-sanchez",
+   "wait:3000"
+  ],
+  "reads": [
+   "title",
+   "count:challenge",
+   "count:cmp-board"
+  ]
+ },
+ {
+  "id": "F3-29",
+  "steps": [
+   "goto:/gta-6/vehicles/comparison/?utm_source=test",
+   "wait:3000"
+  ],
+  "reads": [
+   "title",
+   "count:challenge",
+   "count:cmp-board",
+   "count:cmp-add"
+  ]
+ },
+ {
+  "id": "F3-30",
+  "mode": "best",
+  "steps": [],
+  "reads": [
+   "title",
+   "text:rank-class-select",
+   "attr:rank-class-select@aria-expanded",
+   "visible:rank-class-menu",
+   "count:rank-class-items",
+   "list:rank-class-items",
+   "attr:rank-class-first@href",
+   "text:rank-crumb",
+   "attr:rank-crumb@href",
+   "list:rank-list-title",
+   "count:rank-rows",
+   "list:rank-row-1-labels",
+   "count:rank-row-1-badge",
+   "attr:rank-row-1-link@href",
+   "list:rank-ratings",
+   "count:rank-images"
+  ]
+ },
+ {
+  "id": "F3-31",
+  "reset": "none",
+  "steps": [
+   "click:rank-class-select"
+  ],
+  "reads": [
+   "visible:rank-class-menu",
+   "attr:rank-class-select@aria-expanded"
+  ]
+ },
+ {
+  "id": "F3-32",
+  "reset": "none",
+  "steps": [
+   "click:rank-class-motorcycles"
+  ],
+  "reads": [
+   "title",
+   "list:rank-list-title",
+   "count:rank-rows",
+   "list:rank-row-1-labels",
+   "count:rank-row-1-badge",
+   "attr:rank-row-1-link@href",
+   "list:rank-ratings",
+   "count:rank-images"
+  ]
+ },
+ {
+  "id": "F3-33",
+  "mode": "best",
+  "steps": [
+   "focus:rank-class-select",
+   "press:Enter",
+   "wait:300",
+   "press:ArrowDown",
+   "wait:200",
+   "press:Enter"
+  ],
+  "reads": [
+   "title"
+  ]
+ },
+ {
+  "id": "F3-34",
+  "steps": [
+   "goto:/gta-6/vehicles/best-sports-cars/"
+  ],
+  "reads": [
+   "title",
+   "list:rank-list-title",
+   "count:rank-rows",
+   "list:rank-row-1-labels",
+   "count:rank-row-1-badge",
+   "attr:rank-row-1-link@href",
+   "list:rank-ratings",
+   "count:rank-images"
+  ]
+ },
+ {
+  "id": "F3-35",
+  "steps": [
+   "goto:/gta-6/vehicles/best-boats/"
+  ],
+  "reads": [
+   "title",
+   "list:rank-list-title",
+   "count:rank-rows",
+   "list:rank-row-1-labels",
+   "count:rank-row-1-badge",
+   "attr:rank-row-1-link@href",
+   "list:rank-ratings",
+   "count:rank-images"
+  ]
+ },
+ {
+  "id": "F3-36",
+  "steps": [
+   "goto:/gta-6/vehicles/best-helicopters/"
+  ],
+  "reads": [
+   "title",
+   "list:rank-list-title",
+   "count:rank-rows",
+   "list:rank-row-1-labels",
+   "count:rank-row-1-badge",
+   "attr:rank-row-1-link@href",
+   "list:rank-ratings",
+   "count:rank-images"
+  ]
+ },
+ {
+  "id": "F3-37",
+  "steps": [
+   "goto:/gta-6/vehicles/best-planes/"
+  ],
+  "reads": [
+   "title",
+   "list:rank-list-title",
+   "count:rank-rows",
+   "list:rank-row-1-labels",
+   "count:rank-row-1-badge",
+   "attr:rank-row-1-link@href",
+   "list:rank-ratings",
+   "count:rank-images"
+  ]
+ },
+ {
+  "id": "F3-38",
+  "steps": [
+   "goto:/gta-6/vehicles/best-super-cars/"
+  ],
+  "reads": [
+   "title",
+   "list:rank-list-title",
+   "count:rank-rows",
+   "list:rank-row-1-labels",
+   "count:rank-row-1-badge",
+   "attr:rank-row-1-link@href",
+   "list:rank-ratings",
+   "count:rank-images"
+  ]
+ },
+ {
+  "id": "F3-39",
+  "steps": [
+   "goto:/gta-6/vehicles/best-vehicles/?class=motorcycles"
+  ],
+  "reads": [
+   "title",
+   "count:rank-rows"
+  ]
+ },
+ {
+  "id": "F3-40",
+  "steps": [
+   "goto:/gta-6/vehicles/best-vehicles/?class=no-such-class"
+  ],
+  "reads": [
+   "title",
+   "count:rank-rows"
+  ]
+ },
+ {
+  "id": "F3-41",
+  "steps": [
+   "goto:/gta-6/vehicles/best-unicorns/"
+  ],
+  "reads": [
+   "title",
+   "count:rank-rows"
+  ]
+ },
+ {
+  "id": "F3-42",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/vehicles/best-motorcycles/"
+  ],
+  "reads": [
+   "visible:rank-class-select",
+   "visible:rank-row-1",
+   "count:rank-rows",
+   "visible:rank-images"
+  ]
+ },
+ {
+  "id": "F3-43",
+  "steps": [
+   "goto:/gta-6/vehicles/best-motorcycles/",
+   "click:rank-row-1-link"
+  ],
+  "reads": [
+   "title"
+  ]
+ }
+]

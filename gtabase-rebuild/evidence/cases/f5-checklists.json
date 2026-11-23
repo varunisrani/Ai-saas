@@ -1,0 +1,544 @@
+[
+ {
+  "id": "F5-01",
+  "mode": "checklist100",
+  "steps": [],
+  "reads": [
+   "count:cl-box",
+   "count:toc-box",
+   "count:sec-box",
+   "count:cl-box-checked",
+   "count:cl-box-disabled",
+   "text:pct-text",
+   "attr:pct-bar@style",
+   "text:guest-note",
+   "attr:guest-note-login@href",
+   "count:profile-switcher",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-02",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-story"
+  ],
+  "reads": [
+   "checked:sec-story",
+   "checked:toc-story",
+   "text:pct-text",
+   "attr:pct-bar@style",
+   "attr:pct-bar@aria-valuenow",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-03",
+  "mode": "checklist100",
+  "steps": [
+   "click:toc-story"
+  ],
+  "reads": [
+   "checked:toc-story",
+   "checked:sec-story",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-04",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-story",
+   "click:sec-story"
+  ],
+  "reads": [
+   "checked:sec-story",
+   "checked:toc-story",
+   "text:pct-text",
+   "attr:pct-bar@style",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-05",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-kenton"
+  ],
+  "reads": [
+   "checked:sec-kenton",
+   "checked:toc-kenton",
+   "checked:sec-exploration",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-06",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-kenton",
+   "click:sec-cards"
+  ],
+  "reads": [
+   "checked:sec-exploration",
+   "count:sec-exploration-children-checked",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-07",
+  "mode": "checklist100",
+  "steps": [
+   "macro:tick-all-exploration"
+  ],
+  "reads": [
+   "count:sec-exploration-children-checked",
+   "checked:sec-exploration",
+   "checked:toc-exploration",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-08",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-exploration"
+  ],
+  "reads": [
+   "checked:sec-exploration",
+   "checked:toc-exploration",
+   "count:sec-exploration-children",
+   "count:sec-exploration-children-checked",
+   "count:cl-box-checked",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-09",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-exploration",
+   "click:sec-drones"
+  ],
+  "reads": [
+   "checked:sec-exploration",
+   "checked:sec-drones",
+   "count:sec-exploration-children-checked",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-10",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-exploration",
+   "click:sec-exploration"
+  ],
+  "reads": [
+   "checked:sec-exploration",
+   "count:sec-exploration-children-checked",
+   "count:cl-box-checked",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-11",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-story-tasks"
+  ],
+  "reads": [
+   "checked:sec-story-tasks",
+   "count:sec-story-tasks-children-checked",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-12",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-optional",
+   "click:sec-gang-ops",
+   "click:sec-bank-jobs"
+  ],
+  "reads": [
+   "checked:sec-story-tasks",
+   "text:pct-text",
+   "attr:pct-bar@style",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-13",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-vehicles",
+   "click:sec-weapons"
+  ],
+  "reads": [
+   "checked:sec-discovery",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-14",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-story",
+   "click:sec-story-tasks",
+   "click:sec-exploration",
+   "click:sec-discovery"
+  ],
+  "reads": [
+   "count:cl-box-checked",
+   "text:pct-text",
+   "attr:pct-bar@style",
+   "attr:pct-bar@aria-valuenow",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-15",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-story",
+   "click:sec-kenton",
+   "reload",
+   "wait:2000"
+  ],
+  "reads": [
+   "checked:sec-story",
+   "checked:toc-story",
+   "checked:sec-kenton",
+   "checked:sec-exploration",
+   "count:cl-box-checked",
+   "count:cl-box-disabled",
+   "text:pct-text",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-16",
+  "reset": "none",
+  "steps": [
+   "goto:/gta-6/",
+   "wait:1000",
+   "goto:/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+   "wait:2000"
+  ],
+  "reads": [
+   "checked:sec-story",
+   "checked:sec-kenton",
+   "text:pct-text",
+   "attr:pct-bar@style",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-17",
+  "mode": "checklist100",
+  "steps": [
+   "focus:sec-story",
+   "press:Space"
+  ],
+  "reads": [
+   "checked:sec-story",
+   "checked:toc-story",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-18",
+  "mode": "checklist100",
+  "steps": [
+   "focus:sec-story",
+   "press:Space",
+   "press:Space"
+  ],
+  "reads": [
+   "checked:sec-story",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-19",
+  "steps": [
+   "goto:/articles/gta-6/gta-6-100-completion-guide-interactive-checklist#profile=3",
+   "wait:2000"
+  ],
+  "reads": [
+   "count:profile-switcher",
+   "count:cl-box-disabled",
+   "text:pct-text",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-20",
+  "mode": "checklist100",
+  "steps": [],
+  "reads": [
+   "attr:sec-story@aria-label",
+   "attr:toc-story@aria-label",
+   "attr:sec-kenton@aria-label",
+   "attr:sec-story-tasks@aria-label",
+   "count:cl-box-labelled",
+   "count:reset-control"
+  ]
+ },
+ {
+  "id": "F5-21",
+  "steps": [
+   "viewport:390x844",
+   "goto:/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+   "wait:2000",
+   "click:sec-story",
+   "shot:mobile"
+  ],
+  "reads": [
+   "visible:pct-module",
+   "visible:pct-text",
+   "text:pct-text",
+   "checked:sec-story",
+   "checked:toc-story",
+   "visible:toc-story",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-22",
+  "steps": [
+   "viewport:1366x900",
+   "goto:/gta-6/missions/",
+   "wait:1500"
+  ],
+  "reads": [
+   "count:cl-box",
+   "count:mission-row",
+   "count:mission-row-optional",
+   "count:mission-row-main-link",
+   "list:chapter-heading",
+   "count:cl-box-checked",
+   "count:cl-box-disabled",
+   "count:pct-text",
+   "attr:mission-first-row@href",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-23",
+  "mode": "missions",
+  "steps": [
+   "click:mission-gone-fishing"
+  ],
+  "reads": [
+   "checked:mission-gone-fishing",
+   "count:cl-box-checked",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-24",
+  "mode": "missions",
+  "steps": [],
+  "reads": [
+   "attr:mission-box-first@aria-label",
+   "attr:mission-gone-fishing@aria-label",
+   "attr:mission-shirleys-rum@aria-label",
+   "count:cl-box-labelled"
+  ]
+ },
+ {
+  "id": "F5-25",
+  "mode": "strangers",
+  "steps": [
+   "click:mission-shirleys-rum",
+   "goto:/gta-6/missions/",
+   "wait:1500"
+  ],
+  "reads": [
+   "checked:mission-shirleys-rum",
+   "count:cl-box-checked",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-26",
+  "mode": "missions",
+  "steps": [
+   "click:mission-gone-fishing",
+   "goto:/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+   "wait:1500",
+   "click:sec-story"
+  ],
+  "reads": [
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-27",
+  "mode": "strangers",
+  "steps": [],
+  "reads": [
+   "count:cl-box",
+   "count:mission-row",
+   "count:mission-row-strangers-link",
+   "count:mission-row-main-link",
+   "list:chapter-heading",
+   "text:p:has-text(\"Tick the checkbox\")",
+   "count:pct-text",
+   "attr:mission-skunk-ape@aria-label"
+  ]
+ },
+ {
+  "id": "F5-28",
+  "mode": "side-missions",
+  "steps": [],
+  "reads": [
+   "count:cl-box",
+   "count:activity-card",
+   "attr:.category-items .items-row h3 a@href",
+   "count:pct-text"
+  ]
+ },
+ {
+  "id": "F5-29",
+  "mode": "random-events",
+  "steps": [],
+  "reads": [
+   "count:cl-box",
+   "list:events-table-header",
+   "list:events-table-cell",
+   "count:pct-text"
+  ]
+ },
+ {
+  "id": "F5-30",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/missions/",
+   "wait:1500",
+   "click:mission-gone-fishing",
+   "shot:mobile"
+  ],
+  "reads": [
+   "checked:mission-gone-fishing",
+   "visible:mission-gone-fishing",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-31",
+  "steps": [
+   "viewport:1366x900",
+   "goto:/gta-6/missions/",
+   "wait:1500",
+   "focus:mission-gone-fishing",
+   "press:Space"
+  ],
+  "reads": [
+   "checked:mission-gone-fishing",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-32",
+  "steps": [
+   "goto:/gta-6/missions/",
+   "wait:1500",
+   "focus:mission-gone-fishing",
+   "press:Enter",
+   "wait:1500"
+  ],
+  "reads": [
+   "checked:mission-gone-fishing",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-33",
+  "steps": [
+   "goto:/articles/gta-6/gta-6-100-checklist-does-not-exist",
+   "wait:500"
+  ],
+  "reads": [
+   "title",
+   "count:cl-box",
+   "count:pct-text"
+  ]
+ },
+ {
+  "id": "F5-34",
+  "steps": [
+   "goto:/missions/gta-6/prologue",
+   "wait:500"
+  ],
+  "reads": [
+   "title",
+   "count:cl-box"
+  ]
+ },
+ {
+  "id": "F5-35",
+  "mode": "missions",
+  "steps": [
+   "click:mission-gone-fishing",
+   "click:a.items-row[href=\"/gta-6/missions/gone-fishing\"] .mission-description",
+   "wait:1000"
+  ],
+  "reads": [
+   "count:cl-box",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-36",
+  "reset": "none",
+  "steps": [
+   "back",
+   "wait:2000"
+  ],
+  "reads": [
+   "checked:mission-gone-fishing",
+   "count:cl-box-checked",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-37",
+  "mode": "missions",
+  "steps": [
+   "click:mission-gone-fishing",
+   "goto:/gta-6/map/",
+   "wait:5000"
+  ],
+  "reads": [
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ }
+]

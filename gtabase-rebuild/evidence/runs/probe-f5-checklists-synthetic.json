@@ -1,0 +1,116 @@
+{
+ "probe": "tools/probe.mjs https://www.gtabase.com/articles/gta-6/gta-6-100-completion-guide-interactive-checklist evidence/runs/probe-f5-checklists-synthetic.js",
+ "captured": "2026-11-23",
+ "note": "data-* attributes changed in this browser only; the site's own checklist script computed every value; nothing sent to the server (non-GET blocked by probe.mjs)",
+ "steps": [
+  {
+   "step": "start",
+   "text": "0.00",
+   "width": "0%",
+   "valuenow": "0.00",
+   "store": null
+  },
+  {
+   "step": "A1 kenton x3 ticked",
+   "text": "2.73",
+   "width": "2.72727%",
+   "valuenow": "2.73",
+   "store": "{\"gta6-100\":[\"kenton\"]}"
+  },
+  {
+   "step": "A2 + cards",
+   "text": "3.64",
+   "width": "3.63636%",
+   "valuenow": "3.64",
+   "store": "{\"gta6-100\":[\"kenton\",\"cards\"]}"
+  },
+  {
+   "step": "A3 reset",
+   "text": "0.00",
+   "width": "0%",
+   "valuenow": "0.00",
+   "store": "{}"
+  },
+  {
+   "step": "B1 optional 6 under limit 5",
+   "text": "5.00",
+   "width": "5%",
+   "valuenow": "5.00",
+   "store": "{\"gta6-100\":[\"optional\"]}"
+  },
+  {
+   "step": "B2 reset",
+   "text": "0.00",
+   "width": "0%",
+   "valuenow": "0.00",
+   "store": "{}"
+  },
+  {
+   "step": "C1 vehicles (grp)",
+   "text": "1.50",
+   "width": "1.5%",
+   "valuenow": "1.50",
+   "store": "{\"gta6-100\":[\"vehicles\"]}",
+   "parent": false
+  },
+  {
+   "step": "C2 + weapons (same grp)",
+   "text": "1.50",
+   "width": "1.5%",
+   "valuenow": "1.50",
+   "store": "{\"gta6-100\":[\"vehicles\",\"weapons\"]}",
+   "parent": false
+  },
+  {
+   "step": "C3 - weapons",
+   "text": "1.50",
+   "width": "1.5%",
+   "valuenow": "1.50",
+   "store": "{\"gta6-100\":[\"vehicles\"]}",
+   "parent": false
+  },
+  {
+   "step": "C4 + animals",
+   "text": "3.00",
+   "width": "3%",
+   "valuenow": "3.00",
+   "store": "{\"gta6-100\":[\"vehicles\",\"animals\",\"discovery\"]}",
+   "parent": true
+  },
+  {
+   "step": "C5 reset",
+   "text": "0.00",
+   "width": "0%",
+   "valuenow": "0.00",
+   "store": "{}"
+  },
+  {
+   "step": "D1 story=150",
+   "text": "100.00",
+   "width": "100%",
+   "valuenow": "100.00",
+   "store": "{\"gta6-100\":[\"story\"]}"
+  },
+  {
+   "step": "D2 reset",
+   "text": "0.00",
+   "width": "0%",
+   "valuenow": "0.00",
+   "store": "{}"
+  },
+  {
+   "step": "E1 story=12.345 (rounding)",
+   "text": "12.35",
+   "width": "12.345%",
+   "valuenow": "12.35",
+   "store": "{\"gta6-100\":[\"story\"]}"
+  },
+  {
+   "step": "E2 reset",
+   "text": "0.00",
+   "width": "0%",
+   "valuenow": "0.00",
+   "store": "{}"
+  }
+ ]
+}

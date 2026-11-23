@@ -1,0 +1,986 @@
+{
+  "app": "gtabase.com GTA 6 section - F2 item detail pages (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T10:46:22.025Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F2-01",
+      "mode": "vehicle-standout",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share",
+        "list:stat-values",
+        "attr:stat-bar-1@style",
+        "attr:stat-bar-2@style",
+        "attr:stat-bar-3@style",
+        "attr:stat-bar-4@style",
+        "attr:stat-bar-5@style",
+        "list:variants",
+        "text:favorites-button",
+        "text:compare-to"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "text:breadcrumb": "GTA 6 Vehicle Stats, Price, How To Get",
+        "attr:breadcrumb@href": "/gta-6/vehicles/",
+        "count:hero-image": "2",
+        "list:section-titles": "SUNSET SANCHEZ: GTA 6 INFO || MAIBATSU SUNSET SANCHEZ GTA 6 STATISTICS || SUNSET SANCHEZ DESCRIPTION:",
+        "list:info-labels": "Standout Set || Vehicle Class || Manufacturer || Style || Era || Seats || Base Model || Drive Train",
+        "list:stat-labels": "SPEED || ACCELERATION || ASPHALT HANDLING || OFF-ROAD HANDLING || STRENGTH || RATING",
+        "count:stat-bars": "5",
+        "count:rating-stars": "5",
+        "text:rating-total": "0.0 of 5 (0 Votes)",
+        "count:favorites-button": "1",
+        "count:compare-to": "1",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "3",
+        "list:stat-values": "3.9 || 5.9 || 5.2 || 8.1 || 4.0 || 728 || 523",
+        "attr:stat-bar-1@style": "width: 39%;",
+        "attr:stat-bar-2@style": "width: 59%;",
+        "attr:stat-bar-3@style": "width: 52%;",
+        "attr:stat-bar-4@style": "width: 81%;",
+        "attr:stat-bar-5@style": "width: 40%;",
+        "list:variants": "Sanchez",
+        "text:favorites-button": "Add To Favorites",
+        "text:compare-to": "Compare To"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-02",
+      "mode": "vehicle-base",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share",
+        "list:stat-values",
+        "attr:stat-bar-1@style",
+        "attr:stat-bar-5@style",
+        "count:variants",
+        "count:similar-title",
+        "list:appearances",
+        "count:gallery-thumbs"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/vehicles/sanchez",
+        "text:breadcrumb": "<missing>",
+        "attr:breadcrumb@href": "<missing>",
+        "count:hero-image": "0",
+        "list:section-titles": "",
+        "list:info-labels": "",
+        "list:stat-labels": "",
+        "count:stat-bars": "0",
+        "count:rating-stars": "0",
+        "text:rating-total": "<missing>",
+        "count:favorites-button": "0",
+        "count:compare-to": "0",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "0",
+        "list:stat-values": "",
+        "attr:stat-bar-1@style": "<missing>",
+        "attr:stat-bar-5@style": "<missing>",
+        "count:variants": "0",
+        "count:similar-title": "0",
+        "list:appearances": "",
+        "count:gallery-thumbs": "0"
+      },
+      "error": "mode:vehicle-base: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-03",
+      "mode": "weapon",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share",
+        "list:stat-values",
+        "attr:stat-bar-1@style",
+        "attr:stat-bar-2@style",
+        "attr:stat-bar-3@style",
+        "attr:stat-bar-4@style",
+        "count:variants",
+        "list:appearances"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sanchez",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/weapons/assault-rifle",
+        "text:breadcrumb": "<missing>",
+        "attr:breadcrumb@href": "<missing>",
+        "count:hero-image": "0",
+        "list:section-titles": "",
+        "list:info-labels": "",
+        "list:stat-labels": "",
+        "count:stat-bars": "0",
+        "count:rating-stars": "0",
+        "text:rating-total": "<missing>",
+        "count:favorites-button": "0",
+        "count:compare-to": "0",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "0",
+        "list:stat-values": "",
+        "attr:stat-bar-1@style": "<missing>",
+        "attr:stat-bar-2@style": "<missing>",
+        "attr:stat-bar-3@style": "<missing>",
+        "attr:stat-bar-4@style": "<missing>",
+        "count:variants": "0",
+        "list:appearances": ""
+      },
+      "error": "mode:weapon: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-04",
+      "mode": "animal",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/weapons/assault-rifle",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/animals/gray-fox",
+        "text:breadcrumb": "<missing>",
+        "attr:breadcrumb@href": "<missing>",
+        "count:hero-image": "0",
+        "list:section-titles": "",
+        "list:info-labels": "",
+        "list:stat-labels": "",
+        "count:stat-bars": "0",
+        "count:rating-stars": "0",
+        "text:rating-total": "<missing>",
+        "count:favorites-button": "0",
+        "count:compare-to": "0",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "0"
+      },
+      "error": "mode:animal: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-05",
+      "mode": "character",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share",
+        "count:gallery-thumbs"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/gray-fox",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/characters/jason",
+        "text:breadcrumb": "<missing>",
+        "attr:breadcrumb@href": "<missing>",
+        "count:hero-image": "0",
+        "list:section-titles": "",
+        "list:info-labels": "",
+        "list:stat-labels": "",
+        "count:stat-bars": "0",
+        "count:rating-stars": "0",
+        "text:rating-total": "<missing>",
+        "count:favorites-button": "0",
+        "count:compare-to": "0",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "0",
+        "count:gallery-thumbs": "0"
+      },
+      "error": "mode:character: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-06",
+      "mode": "property",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/properties/7th-avenue-garage",
+        "text:breadcrumb": "<missing>",
+        "attr:breadcrumb@href": "<missing>",
+        "count:hero-image": "0",
+        "list:section-titles": "",
+        "list:info-labels": "",
+        "list:stat-labels": "",
+        "count:stat-bars": "0",
+        "count:rating-stars": "0",
+        "text:rating-total": "<missing>",
+        "count:favorites-button": "0",
+        "count:compare-to": "0",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "0"
+      },
+      "error": "mode:property: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-07",
+      "mode": "radio",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/7th-avenue-garage",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/radio-stations/flash-fm",
+        "text:breadcrumb": "<missing>",
+        "attr:breadcrumb@href": "<missing>",
+        "count:hero-image": "0",
+        "list:section-titles": "",
+        "list:info-labels": "",
+        "list:stat-labels": "",
+        "count:stat-bars": "0",
+        "count:rating-stars": "0",
+        "text:rating-total": "<missing>",
+        "count:favorites-button": "0",
+        "count:compare-to": "0",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "0"
+      },
+      "error": "mode:radio: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-08",
+      "mode": "mission",
+      "steps": [],
+      "reads": [
+        "text:breadcrumb",
+        "attr:breadcrumb@href",
+        "count:hero-image",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels",
+        "count:stat-bars",
+        "count:rating-stars",
+        "text:rating-total",
+        "count:favorites-button",
+        "count:compare-to",
+        "count:tabs",
+        "count:gallery",
+        "count:gallery-empty",
+        "count:share"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/flash-fm",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/missions/breakfast-run",
+        "text:breadcrumb": "<missing>",
+        "attr:breadcrumb@href": "<missing>",
+        "count:hero-image": "0",
+        "list:section-titles": "",
+        "list:info-labels": "",
+        "list:stat-labels": "",
+        "count:stat-bars": "0",
+        "count:rating-stars": "0",
+        "text:rating-total": "<missing>",
+        "count:favorites-button": "0",
+        "count:compare-to": "0",
+        "count:tabs": "0",
+        "count:gallery": "0",
+        "count:gallery-empty": "0",
+        "count:share": "0"
+      },
+      "error": "mode:mission: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-09",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/no-such-vehicle-xyz"
+      ],
+      "reads": [
+        "list:not-found-sub",
+        "count:rating-block",
+        "count:stat-bars",
+        "count:breadcrumb"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/missions/breakfast-run",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/vehicles/no-such-vehicle-xyz",
+        "list:not-found-sub": "",
+        "count:rating-block": "0",
+        "count:stat-bars": "0",
+        "count:breadcrumb": "0"
+      },
+      "error": "goto:/gta-6/vehicles/no-such-vehicle-xyz: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-10",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/weapons/no-such-weapon-xyz"
+      ],
+      "reads": [
+        "list:not-found-sub",
+        "count:rating-block"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/no-such-vehicle-xyz",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/weapons/no-such-weapon-xyz",
+        "list:not-found-sub": "",
+        "count:rating-block": "0"
+      },
+      "error": "goto:/gta-6/weapons/no-such-weapon-xyz: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-11",
+      "mode": "vehicle-standout",
+      "steps": [
+        "hover:rating-stars",
+        "wait:2000"
+      ],
+      "reads": [
+        "calls",
+        "blocked",
+        "count:rating-stars",
+        "text:rating-total"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "calls": "GET /index.php?option=com_ajax&group=system&plugin=getuserdata&format=raw&type=user-token PENDING",
+        "blocked": "",
+        "count:rating-stars": "5",
+        "text:rating-total": "0.0 of 5 (0 Votes)"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-12",
+      "mode": null,
+      "steps": [
+        "hover:heading",
+        "hover:rating-stars",
+        "wait:1500"
+      ],
+      "reads": [
+        "calls",
+        "blocked"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F2-13",
+      "mode": "vehicle-standout",
+      "steps": [
+        "click:compare-to"
+      ],
+      "reads": [
+        "visible:compare-to-menu",
+        "attr:compare-to@aria-expanded",
+        "count:compare-to-items",
+        "attr:compare-to-item-1@href",
+        "list:compare-to-items"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "visible:compare-to-menu": "true",
+        "attr:compare-to@aria-expanded": "true",
+        "count:compare-to-items": "75",
+        "attr:compare-to-item-1@href": "/gta-6/vehicles/comparison/?vehicle1=alvino-v1&vehicle2=sunset-sanchez",
+        "list:compare-to-items": "Alvino V1 || Aphid || AudaCity Sanchez || Avarus || Azalea Street Blazer || Berserker Sanchez || Blood Fever Sovereign || Boomazoom || Booty FCR 1000 || Burnished Alvino || Carbon RS || Chrome Street Blazer || Cliffhanger '72 || Crushed Velvet Double-T || Crusher || Cultist Nightblade || Dirt Rocket Zombie Bobber || Dogfight FCR || Donk Boomazoom || Donk Verus || Double-T || DriveShaft Sovereign || Emerald Zombie Bobber || Emilio's Lectro || Enduro '72 || Erode || Esskey || Fan-E || FCR 1000 || Final Chapter Avarus || Flipside Enduro || Glacier Erode || Hellraiser Avarus || Highwayman Sanchez || Hung Carbon RS || Independence Boomazoom || Jackals Sanchez || KD's SFB 1000 || Lectro || Lombike || Lowrider Boomazoom || Magma Cliffhanger || Malibu Zombie Bobber || Manchez || Memorial Sanchez || Midnight Sun Avarus || Midsummer Erode || Monarch Avarus || MyWays Manchez || Nightblade || Nimbe || Nugget Boomazoom || Obsidian Sovereign || Oxygen Zombie Bobber || Pacific Manchez || Peacock Sovereign || Pharaoh Sanchez || Ragno || Royal Sanchez || Sanchez || Sandblasted Cliffhanger || Searing Zombie Bobber || Seashell Boomazoom || SFB 1000 || Smokescreen Carbon RS || Sovereign 107 || Sovereign 107 Police || Spec Ops Boomazoom || Speedy Boomazoom || Street Blazer || Thicc Esskey || Tormentor Street Blazer || Verus || Yesteryear Boomazoom || Zombie Bobber"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-14",
+      "mode": "vehicle-standout",
+      "steps": [
+        "focus:compare-to",
+        "press:Enter"
+      ],
+      "reads": [
+        "visible:compare-to-menu",
+        "attr:compare-to@aria-expanded"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "visible:compare-to-menu": "true",
+        "attr:compare-to@aria-expanded": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-15",
+      "mode": null,
+      "steps": [
+        "press:Escape"
+      ],
+      "reads": [
+        "visible:compare-to-menu",
+        "attr:compare-to@aria-expanded"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "visible:compare-to-menu": "false",
+        "attr:compare-to@aria-expanded": "false"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-16",
+      "mode": "character",
+      "steps": [
+        "macro:wake",
+        "scroll:gallery-thumb-1",
+        "click:gallery-thumb-1",
+        "waitfor:lightbox"
+      ],
+      "reads": [
+        "visible:lightbox",
+        "text:lightbox-counter",
+        "count:lightbox-close",
+        "count:lightbox-next",
+        "count:lightbox-prev",
+        "count:lightbox-buttons"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/characters/jason",
+        "visible:lightbox": "false",
+        "text:lightbox-counter": "<missing>",
+        "count:lightbox-close": "0",
+        "count:lightbox-next": "0",
+        "count:lightbox-prev": "0",
+        "count:lightbox-buttons": "0"
+      },
+      "error": "mode:character: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-17",
+      "mode": null,
+      "steps": [
+        "click:lightbox-next",
+        "wait:800"
+      ],
+      "reads": [
+        "text:lightbox-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "<missing>",
+        "title": "500 Internal Server Error",
+        "text:lightbox-counter": "<missing>"
+      },
+      "error": "click:lightbox-next: locator.click: Timeout 6000ms exceeded."
+    },
+    {
+      "id": "F2-18",
+      "mode": null,
+      "steps": [
+        "press:ArrowRight",
+        "wait:800"
+      ],
+      "reads": [
+        "text:lightbox-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "<missing>",
+        "title": "500 Internal Server Error",
+        "text:lightbox-counter": "<missing>"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-19",
+      "mode": null,
+      "steps": [
+        "press:ArrowLeft",
+        "wait:800",
+        "press:ArrowLeft",
+        "wait:800"
+      ],
+      "reads": [
+        "text:lightbox-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "<missing>",
+        "title": "500 Internal Server Error",
+        "text:lightbox-counter": "<missing>"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-20",
+      "mode": null,
+      "steps": [
+        "press:Escape",
+        "wait:800"
+      ],
+      "reads": [
+        "visible:lightbox"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "<missing>",
+        "title": "500 Internal Server Error",
+        "visible:lightbox": "false"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-21",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/characters/jason?i=jason-duval-01",
+        "macro:wake",
+        "waitfor:lightbox"
+      ],
+      "reads": [
+        "visible:lightbox",
+        "text:lightbox-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/characters/jason",
+        "visible:lightbox": "false",
+        "text:lightbox-counter": "<missing>"
+      },
+      "error": "goto:/gta-6/characters/jason?i=jason-duval-01: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-22",
+      "mode": null,
+      "steps": [
+        "click:lightbox-close",
+        "wait:1000"
+      ],
+      "reads": [
+        "visible:lightbox"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "<missing>",
+        "title": "500 Internal Server Error",
+        "visible:lightbox": "false"
+      },
+      "error": "click:lightbox-close: locator.click: Timeout 6000ms exceeded."
+    },
+    {
+      "id": "F2-23",
+      "mode": "vehicle-standout",
+      "steps": [],
+      "reads": [
+        "count:pager-prev",
+        "count:pager-next"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "count:pager-prev": "0",
+        "count:pager-next": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-24",
+      "mode": "vehicle-standout",
+      "steps": [
+        "macro:to-pager"
+      ],
+      "reads": [
+        "count:pager-prev",
+        "count:pager-next",
+        "attr:pager-prev@href",
+        "attr:pager-next@href",
+        "text:pager-prev",
+        "text:pager-next"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "count:pager-prev": "1",
+        "count:pager-next": "1",
+        "attr:pager-prev@href": "/gta-6/vehicles/mud-crasher-rancher",
+        "attr:pager-next@href": "/gta-6/vehicles/tormentor-street-blazer",
+        "text:pager-prev": "Mud Crasher Rancher",
+        "text:pager-next": "Tormentor Street Blazer"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-25",
+      "mode": null,
+      "steps": [
+        "click:pager-next"
+      ],
+      "reads": [
+        "count:stat-bars"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/vehicles/tormentor-street-blazer",
+        "count:stat-bars": "0"
+      },
+      "error": "click:pager-next: locator.click: Timeout 6000ms exceeded."
+    },
+    {
+      "id": "F2-26",
+      "mode": "vehicle-standout",
+      "steps": [
+        "scroll:comments",
+        "wait:2000"
+      ],
+      "reads": [
+        "list:comments-tabs",
+        "list:comments-sort",
+        "attr:comments-editor@role",
+        "attr:comments-editor@aria-label",
+        "text:comments-placeholder",
+        "attr:comments-limit@data-max",
+        "count:comments-guest",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "list:comments-tabs": "Comment || Login",
+        "list:comments-sort": "Best || Popular || Newest || Oldest",
+        "attr:comments-editor@role": "textbox",
+        "attr:comments-editor@aria-label": "editor",
+        "text:comments-placeholder": "Say something here...",
+        "attr:comments-limit@data-max": "5000",
+        "count:comments-guest": "1",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F2-27",
+      "mode": "vehicle-standout",
+      "steps": [
+        "viewport:390x844",
+        "reload"
+      ],
+      "reads": [
+        "visible:compare-to",
+        "visible:favorites-button",
+        "visible:rating-block",
+        "visible:stat-bar-1",
+        "count:section-titles",
+        "visible:breadcrumb"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "title": "Maibatsu Sunset Sanchez | GTA 6 Bike Stats, Price, How To Get",
+        "visible:compare-to": "true",
+        "visible:favorites-button": "true",
+        "visible:rating-block": "true",
+        "visible:stat-bar-1": "true",
+        "count:section-titles": "3",
+        "visible:breadcrumb": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-28",
+      "mode": null,
+      "steps": [
+        "viewport:1366x900",
+        "goto:/gta-6/vehicles/sunset-sanchez/"
+      ],
+      "reads": [
+        "count:stat-bars"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/vehicles/sunset-sanchez/",
+        "count:stat-bars": "0"
+      },
+      "error": "goto:/gta-6/vehicles/sunset-sanchez/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-29",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/Sunset-Sanchez"
+      ],
+      "reads": [
+        "count:stat-bars"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/vehicles/Sunset-Sanchez",
+        "count:stat-bars": "0"
+      },
+      "error": "goto:/gta-6/vehicles/Sunset-Sanchez: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-30",
+      "mode": null,
+      "steps": [
+        "goto:/vehicles/gta-6/manchez"
+      ],
+      "reads": [
+        "count:stat-bars"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/vehicles/gta-6/manchez",
+        "heading": "Maibatsu Manchez",
+        "title": "Maibatsu Manchez | GTA 6 Bike Stats, Price, How To Get",
+        "count:stat-bars": "5"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-31",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/banshee"
+      ],
+      "reads": [
+        "text:breadcrumb",
+        "list:stat-labels"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/banshee",
+        "heading": "Bravado Banshee",
+        "title": "Bravado Banshee | GTA 6 Sports Car Stats, Price, How To Get",
+        "text:breadcrumb": "GTA 6 Vehicle Stats, Price, How To Get",
+        "list:stat-labels": "SPEED || ACCELERATION || ASPHALT HANDLING || OFF-ROAD HANDLING || STRENGTH || RATING"
+      },
+      "error": null
+    },
+    {
+      "id": "F2-32",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/maverick"
+      ],
+      "reads": [
+        "text:breadcrumb",
+        "list:stat-labels",
+        "list:info-labels"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/banshee",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/vehicles/maverick",
+        "text:breadcrumb": "<missing>",
+        "list:stat-labels": "",
+        "list:info-labels": ""
+      },
+      "error": "goto:/gta-6/vehicles/maverick: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F2-33",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/weapons/drug-mule-kz-59"
+      ],
+      "reads": [
+        "text:breadcrumb",
+        "list:section-titles",
+        "list:info-labels",
+        "list:stat-labels"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/maverick",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "text:breadcrumb": "<missing>",
+        "list:section-titles": "<missing>",
+        "list:info-labels": "<missing>",
+        "list:stat-labels": "<missing>"
+      },
+      "error": "goto:/gta-6/weapons/drug-mule-kz-59: page.goto: net::ERR_ABORTED at https://www.gtabase.com/gta-6/weapons/drug-mule-kz-59"
+    },
+    {
+      "id": "F2-34",
+      "mode": "weapon",
+      "steps": [
+        "click:compare-to"
+      ],
+      "reads": [
+        "visible:compare-to-menu",
+        "count:compare-to-items",
+        "attr:compare-to-item-1@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/maverick",
+        "heading": "<missing>",
+        "title": "<missing>",
+        "visible:compare-to-menu": "<missing>",
+        "count:compare-to-items": "<missing>",
+        "attr:compare-to-item-1@href": "<missing>"
+      },
+      "error": "page.waitForTimeout: Target page, context or browser has been closed"
+    }
+  ]
+}

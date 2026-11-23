@@ -20,6 +20,8 @@
 //     click:<t>  dblclick:<t>  hover:<t>  check:<t>  uncheck:<t>  focus:<t>  scroll:<t>
 //     fill:<token>=<text>   select:<token>=<value or label>   (fill/select need a profile token name)
 //     press:<key> (Enter, Control+A, ...)   type:<text> (keyboard typing into the focused element)
+//     keydown:<key>  keyup:<key>  (hold/release a key, e.g. keydown:Control ; click:<t> ; keyup:Control = Ctrl+click)
+//     clickat:<x>,<y>  (mouse click at viewport coordinates, for controls drawn only by CSS pseudo-elements)
 //     wait:<ms>  wait:idle  waitfor:<t> (visible)  waitgone:<t> (hidden or absent)
 //     reload  back  forward  viewport:<w>x<h>  clear:local|session|cookies  macro:<name>  shot:<name>
 //     <t> = a key of profile.tokens or a raw Playwright selector (role=button[name="Save"], text=..., css)
@@ -64,6 +66,9 @@ const { chromium } = await loadPlaywright();
 const launchOpts = { headless: args.headless ? true : !(args.headed || args.login) };
 if (B.channel !== 'chromium') launchOpts.channel = B.channel ?? (process.platform === 'win32' ? 'msedge' : 'chrome');
 if (B.executablePath) launchOpts.executablePath = B.executablePath;
+// local patch (f6/f8 tracing; same need found by f2/f3): optional extra browser flags, e.g. --disable-blink-features=AutomationControlled
+// so navigator.webdriver is false and JCH Optimize's interaction-deferred scripts load as for a real visitor.
+if (Array.isArray(B.args)) launchOpts.args = B.args;
 const proxyServer = B.proxy ?? (/\/\/(localhost|127\.0\.0\.1)/.test(baseUrl) ? null : (process.env.HTTPS_PROXY || null));
 if (proxyServer) launchOpts.proxy = { server: proxyServer, bypass: 'localhost,127.0.0.1' };
 const blockRe = (profile.network?.block ?? []).map((p) => new RegExp(p));
@@ -282,6 +287,9 @@ async function doStep(s, depth) {
     case 'fill': { const [t, text] = tokenAndText(arg, verb); await loc(t).fill(text); break; }
     case 'select': { const [t, value] = tokenAndText(arg, verb); await loc(t).selectOption(value); break; }
     case 'press': await page.keyboard.press(arg); break;
+    case 'keydown': await page.keyboard.down(arg); break; // local patch (f1 tracing): modifier-held clicks
+    case 'keyup': await page.keyboard.up(arg); break;
+    case 'clickat': { const [x, y] = arg.split(',').map(Number); await page.mouse.click(x, y); break; } // local patch (f7/f9 tracing): tap at viewport x,y (zero-width icon controls such as a CSS-drawn hamburger)
     case 'type': await page.keyboard.type(arg); break;
     case 'wait':
       if (arg === 'idle') await settle(T.idle ?? 15000);

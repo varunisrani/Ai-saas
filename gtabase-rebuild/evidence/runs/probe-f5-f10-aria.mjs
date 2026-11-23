@@ -1,0 +1,24 @@
+// read-only: prints the accessibility snapshot of a few elements (non-GET aborted, ads blocked)
+import { createRequire } from 'node:module';
+const require = createRequire('/home/user/Ai-saas/gtabase-rebuild/tools/noop.js');
+const { chromium } = require('playwright');
+const BLOCK = /mediavine|googletagmanager|google-analytics|doubleclick|googlesyndication|amazon-adsystem|addtoany|facebook\.net|clarity\.ms|cloudflareinsights|nel\.cloudflare|youtube\.com|ytimg|gstatic|giphy|challenge-platform/;
+const b = await chromium.launch({ proxy: { server: process.env.HTTPS_PROXY } });
+const ctx = await b.newContext({ viewport: { width: 1366, height: 900 } });
+await ctx.route('**/*', (r) => { const q = r.request(); if (BLOCK.test(q.url()) || !['GET','HEAD','OPTIONS'].includes(q.method())) return r.abort(); return r.continue(); });
+const p = await ctx.newPage();
+const out = {};
+await p.goto('https://www.gtabase.com/gta-6/vehicles/sunset-sanchez', { waitUntil: 'domcontentloaded', timeout: 90000 });
+await p.waitForTimeout(3000);
+out.favSnapshot = await p.locator('#wishlistButton').ariaSnapshot().catch((e) => 'ERR ' + e.message);
+out.favByRole = await p.getByRole('button', { name: 'Add To Favorites' }).count();
+out.headerLogin = await p.locator('.mybase-buttons.no_mobile a[href="#loginbox"]').ariaSnapshot().catch((e) => 'ERR ' + e.message);
+await p.locator('#wishlistButton').click();
+await p.waitForTimeout(1500);
+out.dialogSnapshot = await p.locator('[data-modals-element="modal"]').first().ariaSnapshot().catch((e) => 'ERR ' + e.message);
+await p.goto('https://www.gtabase.com/articles/gta-6/gta-6-100-completion-guide-interactive-checklist', { waitUntil: 'domcontentloaded', timeout: 90000 });
+await p.waitForTimeout(3000);
+out.boxSnapshot = await p.locator('.checklist-item input[id="story"]').ariaSnapshot().catch((e) => 'ERR ' + e.message);
+out.moduleSnapshot = await p.locator('.completion-percentage-wrapper').ariaSnapshot().catch((e) => 'ERR ' + e.message);
+console.log(JSON.stringify(out, null, 1));
+await b.close();

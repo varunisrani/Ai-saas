@@ -1,0 +1,166 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F9 hub + site shell",
+  "baseUrl": "https://www.gtabase.com",
+  "readOnly": true,
+  "guard": {
+    "allow": []
+  },
+  "browser": {
+    "channel": "chromium",
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
+    "locale": "en-US",
+    "timezone": "UTC"
+  },
+  "timeouts": {
+    "action": 6000,
+    "navigation": 60000,
+    "settle": 5000,
+    "idle": 15000
+  },
+  "network": {
+    "include": [
+      "^https://www\\.gtabase\\.com/(gta-6/|news/|articles/|search|$|\\?)",
+      "^https://www\\.google\\.com/search",
+      "option=com_ajax",
+      "option=com_jlexcomment"
+    ],
+    "block": [
+      "mediavine",
+      "googletagmanager",
+      "google-analytics",
+      "doubleclick",
+      "googlesyndication",
+      "amazon-adsystem",
+      "addtoany",
+      "facebook\\.net",
+      "clarity\\.ms",
+      "cloudflareinsights",
+      "nel\\.cloudflare",
+      "quantserve",
+      "scorecardresearch",
+      "adnxs",
+      "pubmatic",
+      "rubiconproject",
+      "criteo",
+      "taboola",
+      "outbrain",
+      "giphy",
+      "/cdn-cgi/challenge-platform/",
+      "^https://www\\.google\\.com/",
+      "youtube\\.com",
+      "ytimg\\.com"
+    ]
+  },
+  "_selectorNotes": "CSS selectors below come from the original markup (allowed on the analysis side); role= selectors are accessible names.",
+  "tokens": {
+    "heading": "h1",
+    "skip-links": "ul.accessibility a",
+    "site-logo": "#ja-logo a.site-logo",
+    "main-menu": "#cssmenu > ul",
+    "menu-top-links": "#cssmenu > ul > li > a",
+    "menu-gta6": "#cssmenu li.gta6-menu > a",
+    "menu-gta6-sub": "#cssmenu li.gta6-menu > ul",
+    "menu-gta6-sub-links": "#cssmenu li.gta6-menu > ul > li > a",
+    "menu-more": "#cssmenu > ul > li.item-568 > a",
+    "menu-more-sub": "#cssmenu > ul > li.item-568 > ul",
+    "menu-toggle": "#menu-button",
+    "submenu-toggle-gta6": "#cssmenu li.gta6-menu > .submenu-button",
+    "submenu-toggles": "#cssmenu .submenu-button",
+    "game-subnav-links": "#ja-subnav1 li > a",
+    "subnav-current": "#ja-subnav1 a[aria-current=\"page\"]",
+    "search-toggle": ".search-toggle > .dropdown-toggle",
+    "search-panel": ".search-toggle > .dropdown-menu",
+    "search-input": ".search-toggle input[name=\"q\"]",
+    "search-submit": ".search-toggle button[type=\"submit\"]",
+    "mobile-search-input": "#cssmenu .menu-search-wrapper input[name=\"q\"]",
+    "login-link": ".mybase-buttons.no_mobile a[href=\"#loginbox\"]",
+    "join-link": ".mybase-buttons.no_mobile a[href=\"/membership/free/\"]",
+    "login-modal": "[data-modals-element=\"modal\"]",
+    "login-modal-close": "[data-modals-element=\"close\"]",
+    "login-heading": ".login-header",
+    "login-username": "#loginbox input[name=\"username\"]",
+    "user-dropdown-toggle": "nav.user-dropdown > button",
+    "user-dropdown-items": "nav.user-dropdown .dropdown-menu a",
+    "lang-switcher": ".gptranslate_wrapper .gpt-current-lang",
+    "lang-links": ".gptranslate_wrapper nav.gpt-ssr-links a",
+    "back-to-top": "a.cd-top",
+    "footer": "footer",
+    "footer-links": "#ja-footer .bottom-links a",
+    "footer-copyright": "#ja-footer .footer1",
+    "footer-game-menu": "#ja-botmenu a",
+    "footer-social": "#ja-social a",
+    "breadcrumbs": "nav[aria-label=\"Breadcrumbs\"]",
+    "breadcrumb-items": "nav[aria-label=\"Breadcrumbs\"] .mod-breadcrumbs__item",
+    "countdown": "#countdown",
+    "countdown-title": "#countdown h2",
+    "countdown-timer": "#timer",
+    "countdown-digits": "#timer .countdown-digit",
+    "info-title": "h2.field-group-title",
+    "info-labels": ".fields-container .field-label",
+    "info-values": ".fields-container .field-value",
+    "info-links": ".fields-container .field-value a",
+    "hub-section-headings": ".article-content h2.module",
+    "hub-cards": ".hub-tiles .items-row > a",
+    "hub-card-titles": ".hub-tiles .items-row h3",
+    "hub-news-items": ".article-content .items-row[data-id=\"blogPost\"]",
+    "hub-news-dates": ".article-content .items-row[data-id=\"blogPost\"] .published",
+    "hub-all-news-link": "role=link[name=\"ALL GTA 6 NEWS & UPDATES\"]",
+    "sidebar-latest": "#ja-sidebar",
+    "content-links": "#ja-current-content a",
+    "content-list-items": "#ja-current-content li",
+    "menu-gta6-characters": "#cssmenu li.gta6-menu > ul a[href=\"/gta-6/characters/\"]"
+  },
+  "modes": {
+    "hub": "/gta-6/",
+    "news": "/gta-6/news/",
+    "article": "/gta-6/articles/gta-6-driving-tips",
+    "notfound": "/gta-6/nonexistent-page-xyz",
+    "hub-phone": [
+      "viewport:390x844",
+      "goto:/gta-6/"
+    ],
+    "news-phone": [
+      "viewport:390x844",
+      "goto:/gta-6/news/"
+    ]
+  },
+  "resets": {
+    "clear": [
+      "viewport:1366x900",
+      "try:clear:local",
+      "try:clear:session"
+    ],
+    "desktop": [
+      "viewport:1366x900"
+    ]
+  },
+  "macros": {
+    "open-phone-menu": [
+      "clickat:20,30",
+      "wait:600"
+    ],
+    "open-search": [
+      "click:search-toggle",
+      "wait:400"
+    ],
+    "to-footer": [
+      "press:End",
+      "wait:1500",
+      "press:End",
+      "wait:1000"
+    ]
+  },
+  "readouts": [
+    {
+      "key": "url",
+      "read": "url"
+    },
+    {
+      "key": "heading",
+      "read": "text:heading"
+    }
+  ]
+}

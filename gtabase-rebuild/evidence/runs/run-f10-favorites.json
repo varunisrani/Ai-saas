@@ -1,0 +1,892 @@
+{
+  "app": "gtabase.com GTA 6 section - F10 favorites & personal progress, guest view (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T10:44:56.413Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F10-01",
+      "mode": "vehicle",
+      "steps": [],
+      "reads": [
+        "count:fav-button",
+        "text:fav-button",
+        "attr:fav-button@type",
+        "count:fav-button-role",
+        "attr:body@class",
+        "visible:login-modal",
+        "text:compare-button",
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "count:fav-button": "1",
+        "text:fav-button": "Add To Favorites",
+        "attr:fav-button@type": "button",
+        "count:fav-button-role": "0",
+        "attr:body@class": "",
+        "visible:login-modal": "false",
+        "text:compare-button": "Compare To",
+        "local:guest_checklists": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-02",
+      "mode": "vehicle",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "count:login-benefits",
+        "attr:login-modal@class",
+        "text:fav-button",
+        "local:guest_checklists",
+        "calls",
+        "blocked",
+        "dialog"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "true",
+        "text:login-title": "Save your GTA 6 favorites",
+        "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+        "count:login-benefits": "1",
+        "attr:login-modal@class": "login-context-favorites",
+        "text:fav-button": "Add To Favorites",
+        "local:guest_checklists": "<missing>",
+        "calls": "",
+        "blocked": "",
+        "dialog": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-03",
+      "mode": "weapon",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:weapon: goto:/gta-6/weapons/assault-rifle: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-04",
+      "mode": "animal",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/weapons/assault-rifle",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:animal: goto:/gta-6/animals/gray-fox: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-05",
+      "mode": "radio",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/gray-fox",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:radio: goto:/gta-6/radio-stations/flash-fm: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-06",
+      "mode": "property",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/flash-fm",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:property: goto:/gta-6/properties/7th-avenue-garage: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-07",
+      "mode": "character",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/7th-avenue-garage",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:character: goto:/gta-6/characters/jason: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-08",
+      "mode": "mission",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/jason",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:mission: goto:/gta-6/missions/breakfast-run: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-09",
+      "mode": "vehicle",
+      "steps": [
+        "macro:open-fav-prompt",
+        "click:modal-close",
+        "wait:800"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:fav-button",
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "false",
+        "text:fav-button": "Add To Favorites",
+        "local:guest_checklists": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-10",
+      "mode": "vehicle",
+      "steps": [
+        "macro:open-fav-prompt",
+        "press:Escape",
+        "wait:800"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:fav-button",
+        "url"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "false",
+        "text:fav-button": "Add To Favorites"
+      },
+      "error": null
+    },
+    {
+      "id": "F10-11",
+      "mode": "vehicle",
+      "steps": [
+        "macro:open-fav-prompt",
+        "press:Escape",
+        "wait:800",
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "count:login-benefits",
+        "text:login-title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "true",
+        "count:login-benefits": "1",
+        "text:login-title": "Save your GTA 6 favorites"
+      },
+      "error": null
+    },
+    {
+      "id": "F10-12",
+      "mode": "vehicle",
+      "steps": [
+        "macro:open-fav-prompt",
+        "press:Escape",
+        "wait:800",
+        "click:header-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "count:login-benefits",
+        "attr:login-modal@class"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "false",
+        "text:login-title": "Save your GTA 6 favorites",
+        "count:login-benefits": "1",
+        "attr:login-modal@class": "login-context-favorites"
+      },
+      "error": "click:header-login: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F10-13",
+      "mode": "vehicle",
+      "steps": [
+        "click:header-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "count:login-benefits",
+        "attr:login-modal@class",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "true",
+        "text:login-title": "Sign in to MyBase",
+        "count:login-benefits": "0",
+        "attr:login-modal@class": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-14",
+      "mode": "vehicle",
+      "steps": [
+        "click:header-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-discord",
+        "visible:login-google",
+        "attr:login-username@placeholder",
+        "attr:login-password@type",
+        "attr:login-password@placeholder",
+        "visible:login-remember",
+        "checked:login-remember",
+        "text:login-submit",
+        "enabled:login-submit",
+        "list:login-links",
+        "attr:login-register@href",
+        "attr:modal-close@aria-label"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-discord": "true",
+        "visible:login-google": "true",
+        "attr:login-username@placeholder": "Username",
+        "attr:login-password@type": "password",
+        "attr:login-password@placeholder": "Password",
+        "visible:login-remember": "true",
+        "checked:login-remember": "false",
+        "text:login-submit": "Log in",
+        "enabled:login-submit": "true",
+        "list:login-links": "Forgot your password? || Forgot your username? || Create an account",
+        "attr:login-register@href": "/membership/free/sign-up",
+        "attr:modal-close@aria-label": "close"
+      },
+      "error": null
+    },
+    {
+      "id": "F10-15",
+      "mode": "vehicle",
+      "steps": [
+        "focus:fav-button",
+        "press:Enter",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "true",
+        "text:login-title": "Save your GTA 6 favorites",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-16",
+      "mode": "vehicle",
+      "steps": [
+        "focus:fav-button",
+        "press:Space",
+        "waitfor:login-modal",
+        "wait:500",
+        "press:Escape",
+        "wait:800"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:fav-button"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "false",
+        "text:fav-button": "Add To Favorites"
+      },
+      "error": null
+    },
+    {
+      "id": "F10-17",
+      "mode": "vehicle",
+      "steps": [
+        "macro:open-fav-prompt",
+        "reload",
+        "wait:1500"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "count:login-benefits",
+        "local:guest_checklists"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "text:fav-button": "Add To Favorites",
+        "visible:login-modal": "false",
+        "text:login-title": "Sign in to MyBase",
+        "count:login-benefits": "0",
+        "local:guest_checklists": "<missing>"
+      },
+      "error": null
+    },
+    {
+      "id": "F10-18",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/vehicles/sunset-sanchez",
+        "wait:1000",
+        "macro:open-fav-prompt",
+        "shot:mobile-prompt"
+      ],
+      "reads": [
+        "visible:header-login",
+        "visible:mobile-join-toggle",
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:header-login": "false",
+        "visible:mobile-join-toggle": "true",
+        "text:fav-button": "Add To Favorites",
+        "visible:login-modal": "true",
+        "text:login-title": "Save your GTA 6 favorites",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-19",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/vehicles/sunset-sanchez",
+        "wait:1000",
+        "click:mobile-join-toggle",
+        "wait:500",
+        "click:mobile-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:mobile-login",
+        "visible:login-modal",
+        "text:login-title",
+        "count:login-benefits"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:mobile-login": "false",
+        "visible:login-modal": "true",
+        "text:login-title": "Sign in to MyBase",
+        "count:login-benefits": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F10-20",
+      "mode": null,
+      "steps": [
+        "viewport:1366x900",
+        "goto:/gta-6/vehicles/",
+        "wait:idle",
+        "wait:2000"
+      ],
+      "reads": [
+        "count:list-fav-control",
+        "count:fav-button",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Cars & Vehicles Database: Full List & Stats",
+        "count:list-fav-control": "0",
+        "count:fav-button": "0",
+        "calls": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-21",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/weapons/",
+        "wait:idle",
+        "wait:2000"
+      ],
+      "reads": [
+        "count:list-fav-control",
+        "count:fav-button"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/",
+        "heading": "<missing>",
+        "count:list-fav-control": "0",
+        "count:fav-button": "0"
+      },
+      "error": "goto:/gta-6/weapons/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-22",
+      "mode": "map-garage",
+      "steps": [],
+      "reads": [
+        "visible:map-popup",
+        "text:map-popup-title",
+        "list:map-popup-buttons",
+        "attr:map-fav-star@aria-label",
+        "attr:map-fav-star@aria-pressed",
+        "attr:map-fav-star@title",
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#garage-003",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "visible:map-popup": "true",
+        "text:map-popup-title": "7TH AVENUE GARAGE",
+        "list:map-popup-buttons": " ||  ||  ||  || ",
+        "attr:map-fav-star@aria-label": "Add to favourites",
+        "attr:map-fav-star@aria-pressed": "false",
+        "attr:map-fav-star@title": "Add to favourites",
+        "local:guest_checklists": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-23",
+      "mode": "map-garage",
+      "steps": [
+        "click:map-fav-star",
+        "wait:800"
+      ],
+      "reads": [
+        "visible:map-panel",
+        "attr:map-panel@role",
+        "attr:map-panel@aria-label",
+        "text:map-panel-title",
+        "text:map-panel-text",
+        "text:map-panel-login",
+        "attr:map-panel-login@href",
+        "text:map-panel-join",
+        "attr:map-panel-join@href",
+        "attr:map-panel-join@target",
+        "count:map-popup",
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#garage-003",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "visible:map-panel": "true",
+        "attr:map-panel@role": "dialog",
+        "attr:map-panel@aria-label": "Favourites",
+        "text:map-panel-title": "FAVOURITES",
+        "text:map-panel-text": "Want to keep your favourite places? Members of GTABase can star any marker and find it again under Personal, on every device. Log in to start.",
+        "text:map-panel-login": "LOG IN",
+        "attr:map-panel-login@href": "#loginbox",
+        "text:map-panel-join": "JOIN MYBASE",
+        "attr:map-panel-join@href": "/membership/free/",
+        "attr:map-panel-join@target": "_blank",
+        "count:map-popup": "0",
+        "local:guest_checklists": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-24",
+      "mode": "map-garage",
+      "steps": [
+        "click:map-fav-star",
+        "wait:800",
+        "click:map-panel-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "count:map-panel",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#garage-003",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "visible:login-modal": "false",
+        "text:login-title": "Sign in to MyBase",
+        "count:map-panel": "1",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "click:map-fav-star: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F10-25",
+      "mode": "map-garage",
+      "steps": [
+        "click:map-fav-star",
+        "wait:800",
+        "click:map-panel-close",
+        "wait:500"
+      ],
+      "reads": [
+        "count:map-panel",
+        "count:map-popup"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#garage-003",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "count:map-panel": "1",
+        "count:map-popup": "0"
+      },
+      "error": "click:map-fav-star: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F10-26",
+      "mode": "map-garage",
+      "steps": [
+        "click:map-personal-marker",
+        "wait:2500"
+      ],
+      "reads": [
+        "visible:map-panel",
+        "attr:map-panel@aria-label",
+        "text:map-panel-title",
+        "text:map-panel-text",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#garage-003",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "visible:map-panel": "false",
+        "attr:map-panel@aria-label": "<missing>",
+        "text:map-panel-title": "<missing>",
+        "text:map-panel-text": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-27",
+      "mode": "membership",
+      "steps": [],
+      "reads": [
+        "count:plan",
+        "list:plan-title",
+        "list:plan-price",
+        "text:plan-recommended",
+        "count:plan-free-features",
+        "count:plan-vip-year-features",
+        "count:plan-vip-month-features",
+        "list:plan-free-features"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#garage-003",
+        "heading": "<missing>",
+        "count:plan": "0",
+        "list:plan-title": "",
+        "list:plan-price": "",
+        "text:plan-recommended": "<missing>",
+        "count:plan-free-features": "0",
+        "count:plan-vip-year-features": "0",
+        "count:plan-vip-month-features": "0",
+        "list:plan-free-features": ""
+      },
+      "error": "mode:membership: goto:/membership/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-28",
+      "mode": "membership",
+      "steps": [],
+      "reads": [
+        "list:plan-vip-year-features",
+        "text:plan-free-favorites",
+        "text:plan-free-checklists",
+        "text:plan-free-collection",
+        "text:plan-vip-map",
+        "text:plan-vip-profiles"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/",
+        "heading": "<missing>",
+        "list:plan-vip-year-features": "",
+        "text:plan-free-favorites": "<missing>",
+        "text:plan-free-checklists": "<missing>",
+        "text:plan-free-collection": "<missing>",
+        "text:plan-vip-map": "<missing>",
+        "text:plan-vip-profiles": "<missing>"
+      },
+      "error": "mode:membership: goto:/membership/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-29",
+      "mode": "membership",
+      "steps": [],
+      "reads": [
+        "attr:.osm-plan-3 .btn-signup@href",
+        "attr:.osm-plan-2 .btn-signup@href",
+        "attr:.osm-plan-1 .btn-signup@href",
+        "attr:.osm-plan-3 .btn-details@href",
+        "attr:header-join@href",
+        "text:header-join"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/",
+        "heading": "<missing>",
+        "attr:.osm-plan-3 .btn-signup@href": "<missing>",
+        "attr:.osm-plan-2 .btn-signup@href": "<missing>",
+        "attr:.osm-plan-1 .btn-signup@href": "<missing>",
+        "attr:.osm-plan-3 .btn-details@href": "<missing>",
+        "attr:header-join@href": "<missing>",
+        "text:header-join": "<missing>"
+      },
+      "error": "mode:membership: goto:/membership/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-30",
+      "mode": null,
+      "steps": [
+        "goto:/mybase/gta-6/",
+        "wait:500"
+      ],
+      "reads": [
+        "title",
+        "count:fav-button"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/mybase/gta-6/",
+        "count:fav-button": "0"
+      },
+      "error": "goto:/mybase/gta-6/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-31",
+      "mode": null,
+      "steps": [
+        "goto:/mybase/gta-online/",
+        "wait:500"
+      ],
+      "reads": [
+        "title",
+        "list:table-header",
+        "count:fav-button"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/mybase/gta-6/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/mybase/gta-online/",
+        "list:table-header": "",
+        "count:fav-button": "0"
+      },
+      "error": "goto:/mybase/gta-online/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-32",
+      "mode": null,
+      "steps": [
+        "goto:/login/",
+        "wait:500"
+      ],
+      "reads": [
+        "title",
+        "count:page-form-input",
+        "list:#ja-content form button"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/mybase/gta-online/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/login/",
+        "count:page-form-input": "0",
+        "list:#ja-content form button": ""
+      },
+      "error": "goto:/login/: page.goto: Timeout 60000ms exceeded."
+    }
+  ]
+}

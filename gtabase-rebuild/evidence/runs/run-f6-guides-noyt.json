@@ -1,0 +1,104 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 radio player with YouTube unreachable (no JS-ready player)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:14:56.971Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F6NY-01",
+      "mode": "radio",
+      "steps": [
+        "macro:wake",
+        "click:s1-track2-play",
+        "wait:1500"
+      ],
+      "reads": [
+        "text:s1-track2-play",
+        "text:player-title",
+        "text:s1-track1-title",
+        "count:track-play-pause-state",
+        "attr:player-toggle-icon@class",
+        "count:youtube-iframe",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:s1-track2-play": "PLAY",
+        "text:player-title": "Starting From Zero",
+        "text:s1-track1-title": "Starting From Zero",
+        "count:track-play-pause-state": "0",
+        "attr:player-toggle-icon@class": "fa-solid fa-play",
+        "count:youtube-iframe": "0",
+        "calls": "GET www.youtube.com/s/player/f9c6b6bd/www-widgetapi.vflset/www-widgetapi.js BLOCKED"
+      },
+      "error": null
+    },
+    {
+      "id": "F6NY-02",
+      "mode": null,
+      "steps": [
+        "click:player-next",
+        "wait:800"
+      ],
+      "reads": [
+        "text:player-title",
+        "count:track-play-pause-state"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:player-title": "Starting From Zero",
+        "count:track-play-pause-state": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6NY-03",
+      "mode": null,
+      "steps": [
+        "click:player-toggle",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:player-toggle-icon@class",
+        "text:player-title",
+        "count:track-play-pause-state"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "attr:player-toggle-icon@class": "fa-solid fa-play",
+        "text:player-title": "Starting From Zero",
+        "count:track-play-pause-state": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6NY-04",
+      "mode": null,
+      "steps": [
+        "click:player-prev",
+        "wait:800"
+      ],
+      "reads": [
+        "text:player-title",
+        "count:track-play-visible",
+        "count:track-play-hidden"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:player-title": "Starting From Zero",
+        "count:track-play-visible": "301",
+        "count:track-play-hidden": "518"
+      },
+      "error": null
+    }
+  ]
+}
