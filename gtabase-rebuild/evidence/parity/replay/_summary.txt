@@ -7,3 +7,6 @@ f6-guides exit=1
 f6-guides-noyt exit=0
 f7-news exit=1
 f8-galleries exit=1
+f9-shell exit=1
+f10-favorites exit=1
+done

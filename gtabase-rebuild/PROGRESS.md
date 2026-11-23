@@ -30,9 +30,9 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 4 Spec + vectors | 2 | 2 | 0 | 100 |
 | 5 Build: data + rules (2 builders + verify) | 3 | 3 | 0 | 100 |
 | 6 UI (build + screenshot review) | 2 | 2 | 0 | 100 |
-| 7 Validate | 4 | 0 | 4 | 0 |
+| 7 Validate | 4 | 4 | 0 | 100 |
 | 8 Close / resume | 1 | 0 | 1 | 0 |
-| **Total** | **59** | **54** | **5** | **92** |
+| **Total** | **59** | **58** | **1** | **98** |
 
 ## Tasks
 | # | Phase | Task | Status | Result / evidence |
@@ -61,10 +61,10 @@ groups F1–F10 below. After-v1 features: see PENDING_FEATURES.md.
 | 52 | 5 | verify builder reports (build, typecheck, unit, vectors) | ☑ | orchestrator re-run: vitest 339/339, tsc clean except scaffold LayoutProps (generated at build) |
 | 53 | 6 | UI build | ☑ | 3 clean-room UI builders (shell/content, database, map/progress); production build passes (orchestrator) |
 | 54 | 6 | screenshot review (desktop + phone) | ☑ | evidence/parity/screens/ (17 routes × 2 widths): own name/logo/palette/fonts/art; no imitation of the original look |
-| 55 | 7 | vector replay on rebuild | ☐ | |
-| 56 | 7 | fresh original parity run | ☐ | |
-| 57 | 7 | rebuild parity run + diff | ☐ | |
-| 58 | 7 | REA comparison + PARITY_REPORT.md | ☐ | |
+| 55 | 7 | vector replay on rebuild | ☑ | 459 run: 399 pass, 55 fail (all attributed), 5 not comparable |
+| 56 | 7 | fresh original parity run | ☑ | 101 cases, one runner, 99 clean |
+| 57 | 7 | rebuild parity run + diff | ☑ | 99 comparable: 85 identical, 14 explained differences |
+| 58 | 7 | REA comparison + PARITY_REPORT.md | ☑ | compare_artifacts ev_6f989da0… (changed: 5 unchanged / 6 changed, matches diff); PARITY_REPORT.md; README |
 | 59 | 8 | reap-16 close | ☐ | |
 
 ## Re-plan log (every change to the total, with the reason)

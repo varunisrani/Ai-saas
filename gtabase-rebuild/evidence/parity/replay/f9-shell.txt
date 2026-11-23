@@ -1,0 +1,51 @@
+FAIL F9-01
+  attr:hub-all-news-link@href: expected null, got "/gta-6/news/"
+PASS F9-02
+PASS F9-03
+PASS F9-04
+PASS F9-05
+PASS F9-06
+PASS F9-07
+PASS F9-08
+PASS F9-09
+PASS F9-10
+PASS F9-11
+PASS F9-12
+PASS F9-13
+PASS F9-14
+PASS F9-15
+PASS F9-16
+PASS F9-17
+PASS F9-18
+PASS F9-19
+PASS F9-20
+FAIL F9-21
+  url: expected "chrome-error://chromewebdata/", got "/search?q=grotti+cheetah"
+FAIL F9-22
+  url: expected "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite:gtabase.com&q=EhD9o-ciCsMAEAIRdFD-_sZ-GKC2kNgGIjDNSZibgUpeWH-4Gk_QaeJHy_TElhk1Ayq-AkaDwwG-a-0WKRS0usnH5tc_za3mbP0yAVJaAUNgh8eh9-ufibQU", got "/search?q="
+FAIL F9-23
+  url: expected "chrome-error://chromewebdata/", got "/search?q=%3Cb%3Ex%3C%2Fb%3E+caf%C3%A9+%26+co"
+FAIL F9-24
+  url: expected "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite:gtabase.com%2B%2B%2Bvice&q=EhD9o-ciCsMAEAIRdFD-_sa0GLW2kNgGIjD9Q-l4zlbVFINUooOZKb1VeyAU9SzqAmPIsPQ02C7D_OHbTHK8EPR5va--1X8PZUgyAVJaAUNguuz6uvLf2POmAQ", got "/search?q=++vice"
+FAIL F9-25
+  url: expected "chrome-error://chromewebdata/", got "/search?q=vice+city"
+PASS F9-26
+FAIL F9-27
+  text:login-heading: expected "Sign in to MyBase", got "Sign in to Leonida Atlas"
+PASS F9-28
+PASS F9-29
+PASS F9-30
+PASS F9-31
+PASS F9-32
+PASS F9-33
+PASS F9-34
+FAIL F9-35
+  list:content-list-items: expected "the link you clicked to arrive here has a typo in it || or somehow we removed that page, or gave it another name || or maybe you tried to access a restricted area?", got "the address has a small typing slip somewhere in it || the page moved to a new address or was retired || the link you followed points to a place we never mapped"
+PASS F9-36
+FAIL F9-37
+  attr:site-logo@title: expected "GTA Base", got "Leonida Atlas"
+PASS F9-38
+PASS F9-39
+PASS F9-40
+PASS F9-41
+vectors: 41 run, 32 pass, 9 fail

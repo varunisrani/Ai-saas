@@ -183,3 +183,10 @@ Not yet started: CLONE_SPEC, vectors, builders, UI, validation.
 - Noted: the §16.2 fixture identifiers keep ~40 real in-game item names that the vectors read (e.g. the four fastest standouts);
   all their stats, descriptions and images are invented.
 - Harness: the rebuild's copy of run-cases.mjs was synced with the analysis-side patches (keydown/keyup, clickat, browser.args).
+
+### Phase 7 (reap-04 "Validate a clone against the original")
+| # | Phase | Skill | Template | Target | Status | Outputs / evidence |
+|---|---|---|---|---|---|---|
+| 45 | Validate | reap-04 | Validate a clone against the original | Leonida Atlas (production build) vs live GTA 6 section | ☑ | PARITY_REPORT.md; replay 399/454 comparable pass, 0 unexplained; parity 85/99 identical, 14 explained; REA compare ev_6f989da0… |
+- verify_reconstruction: no CLI twin in rea-agents 6.10.1 (MCP-only) → not run; compare-artifacts used. compare_web_captures not run (per-case parity covers it).
+- Original-side parity run used ONE runner, sequential suites with 5 s gaps; no origin errors this time.

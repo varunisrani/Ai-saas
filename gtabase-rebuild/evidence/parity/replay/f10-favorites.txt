@@ -1,0 +1,93 @@
+FAIL F10-01
+  count:fav-button-role: expected "0", got "1"
+FAIL F10-02 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  count:login-benefits: expected "1", got "0"
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+  text:login-benefits: expected "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.", got null
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-03 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+  text:login-benefits: expected "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.", got null
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-04 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+  text:login-benefits: expected "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.", got null
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-05 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+  text:login-benefits: expected "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.", got null
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-06 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+  text:login-benefits: expected "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.", got null
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-07 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+  text:login-benefits: expected "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.", got null
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-08 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+  text:login-benefits: expected "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.", got null
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-09 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+FAIL F10-10 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+FAIL F10-11 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  count:login-benefits: expected "1", got "0"
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-12 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  count:login-benefits: expected "1", got "0"
+  text:login-title: expected "Sign in to MyBase", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-13
+  text:login-title: expected "Sign in to MyBase", got "Sign in to Leonida Atlas"
+PASS F10-14
+FAIL F10-15 - ERROR waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-16 - ERROR waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+FAIL F10-17 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+  text:login-title: expected "Sign in to MyBase", got null
+FAIL F10-18 - ERROR macro:open-fav-prompt: waitfor:login-modal: locator.waitFor: Timeout 6000ms exceeded.
+  text:fav-button: expected "Add To Favorites", got "Favorited"
+  text:login-title: expected "Save your GTA 6 favorites", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-19
+  text:login-title: expected "Sign in to MyBase", got "Sign in to Leonida Atlas"
+PASS F10-20
+PASS F10-21
+PASS F10-22
+FAIL F10-23
+  attr:map-panel@aria-label: expected "Favourites", got null
+  attr:map-panel@role: expected "dialog", got null
+  count:map-popup: expected "0", got "1"
+  text:map-panel-login: expected "LOG IN", got null
+  text:map-panel-text: expected "Want to keep your favourite places? Members of GTABase can star any marker and find it again under Personal, on every device. Log in to start.", got null
+  text:map-panel-title: expected "FAVOURITES", got null
+  visible:map-panel: expected "true", got "false"
+FAIL F10-24 - ERROR click:map-panel-login: locator.click: Timeout 6000ms exceeded.
+  text:login-title: expected "Sign in to MyBase", got null
+  visible:login-modal: expected "true", got "false"
+FAIL F10-25 - ERROR click:map-panel-close: locator.click: Timeout 6000ms exceeded.
+  count:map-popup: expected "0", got "1"
+FAIL F10-26
+  text:map-panel-text: expected "The server did not answer. Please try again in a moment.", got "Personal markers are saved to an account so they follow you to every device. Accounts are coming later; your ticks already stay in this browser."
+PASS F10-27
+PASS F10-28
+PASS F10-29
+PASS F10-30
+PASS F10-31
+FAIL F10-32
+  count:page-form-input: expected "3", got "0"
+vectors: 32 run, 9 pass, 23 fail
