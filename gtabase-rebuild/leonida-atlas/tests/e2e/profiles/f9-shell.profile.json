@@ -1,0 +1,128 @@
+{
+ "app": "Leonida Atlas (rebuild) \u2014 vectors for suite f9-shell",
+ "baseUrl": "http://localhost:3000",
+ "readOnly": false,
+ "browser": {
+  "channel": "chromium",
+  "viewport": {
+   "width": 1366,
+   "height": 900
+  },
+  "locale": "en-US",
+  "timezone": "UTC"
+ },
+ "timeouts": {
+  "action": 6000,
+  "navigation": 30000,
+  "settle": 3000,
+  "idle": 8000
+ },
+ "tokens": {
+  "heading": "h1",
+  "skip-links": "[data-testid=\"skip-links\"]",
+  "site-logo": "[data-testid=\"site-logo\"]",
+  "main-menu": "[data-testid=\"main-menu\"]",
+  "menu-top-links": "[data-testid=\"menu-top-links\"]",
+  "menu-gta6": "[data-testid=\"menu-gta6\"]",
+  "menu-gta6-sub": "[data-testid=\"menu-gta6-sub\"]",
+  "menu-gta6-sub-links": "[data-testid=\"menu-gta6-sub-links\"]",
+  "menu-more": "[data-testid=\"menu-more\"]",
+  "menu-more-sub": "[data-testid=\"menu-more-sub\"]",
+  "menu-toggle": "[data-testid=\"menu-toggle\"]",
+  "submenu-toggle-gta6": "[data-testid=\"submenu-toggle-gta6\"]",
+  "submenu-toggles": "[data-testid=\"submenu-toggles\"]",
+  "game-subnav-links": "[data-testid=\"game-subnav-links\"]",
+  "subnav-current": "[data-testid=\"subnav-current\"]",
+  "search-toggle": "[data-testid=\"search-toggle\"]",
+  "search-panel": "[data-testid=\"search-panel\"]",
+  "search-input": "[data-testid=\"search-input\"]",
+  "search-submit": "[data-testid=\"search-submit\"]",
+  "mobile-search-input": "[data-testid=\"mobile-search-input\"]",
+  "login-link": "[data-testid=\"login-link\"]",
+  "join-link": "[data-testid=\"join-link\"]",
+  "login-modal": "[data-testid=\"login-modal\"]",
+  "login-modal-close": "[data-testid=\"login-modal-close\"]",
+  "login-heading": "[data-testid=\"login-heading\"]",
+  "login-username": "[data-testid=\"login-username\"]",
+  "user-dropdown-toggle": "[data-testid=\"user-dropdown-toggle\"]",
+  "user-dropdown-items": "[data-testid=\"user-dropdown-items\"]",
+  "lang-switcher": "[data-testid=\"lang-switcher\"]",
+  "lang-links": "[data-testid=\"lang-links\"]",
+  "back-to-top": "[data-testid=\"back-to-top\"]",
+  "footer": "[data-testid=\"footer\"]",
+  "footer-links": "[data-testid=\"footer-links\"]",
+  "footer-copyright": "[data-testid=\"footer-copyright\"]",
+  "footer-game-menu": "[data-testid=\"footer-game-menu\"]",
+  "footer-social": "[data-testid=\"footer-social\"]",
+  "breadcrumbs": "[data-testid=\"breadcrumbs\"]",
+  "breadcrumb-items": "[data-testid=\"breadcrumb-items\"]",
+  "countdown": "[data-testid=\"countdown\"]",
+  "countdown-title": "[data-testid=\"countdown-title\"]",
+  "countdown-timer": "[data-testid=\"countdown-timer\"]",
+  "countdown-digits": "[data-testid=\"countdown-digits\"]",
+  "info-title": "[data-testid=\"info-title\"]",
+  "info-labels": "[data-testid=\"info-labels\"]",
+  "info-values": "[data-testid=\"info-values\"]",
+  "info-links": "[data-testid=\"info-links\"]",
+  "hub-section-headings": "[data-testid=\"hub-section-headings\"]",
+  "hub-cards": "[data-testid=\"hub-cards\"]",
+  "hub-card-titles": "[data-testid=\"hub-card-titles\"]",
+  "hub-news-items": "[data-testid=\"hub-news-items\"]",
+  "hub-news-dates": "[data-testid=\"hub-news-dates\"]",
+  "hub-all-news-link": "[data-testid=\"hub-all-news-link\"]",
+  "sidebar-latest": "[data-testid=\"sidebar-latest\"]",
+  "content-links": "[data-testid=\"content-links\"]",
+  "content-list-items": "[data-testid=\"content-list-items\"]",
+  "menu-gta6-characters": "[data-testid=\"menu-gta6-characters\"]"
+ },
+ "modes": {
+  "hub": "/gta-6/",
+  "news": "/gta-6/news/",
+  "article": "/gta-6/articles/gta-6-driving-tips",
+  "notfound": "/gta-6/nonexistent-page-xyz",
+  "hub-phone": [
+   "viewport:390x844",
+   "goto:/gta-6/"
+  ],
+  "news-phone": [
+   "viewport:390x844",
+   "goto:/gta-6/news/"
+  ]
+ },
+ "resets": {
+  "clear": [
+   "viewport:1366x900",
+   "try:clear:local",
+   "try:clear:session"
+  ],
+  "desktop": [
+   "viewport:1366x900"
+  ]
+ },
+ "macros": {
+  "open-phone-menu": [
+   "clickat:20,30",
+   "wait:600"
+  ],
+  "open-search": [
+   "click:search-toggle",
+   "wait:400"
+  ],
+  "to-footer": [
+   "press:End",
+   "wait:1500",
+   "press:End",
+   "wait:1000"
+  ]
+ },
+ "readouts": [
+  {
+   "key": "url",
+   "read": "url"
+  },
+  {
+   "key": "heading",
+   "read": "text:heading"
+  }
+ ]
+}

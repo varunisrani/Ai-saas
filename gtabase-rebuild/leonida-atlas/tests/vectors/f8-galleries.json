@@ -1,0 +1,771 @@
+[
+  {
+    "id": "F8-01",
+    "mode": "shots",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:gallery",
+      "count:thumb",
+      "list:media-tab",
+      "text:media-tab-active",
+      "count:pagination",
+      "count:pagination-item",
+      "text:pagination-active",
+      "count:pagination-disabled",
+      "attr:pagination-page-2@href",
+      "attr:pagination-last@href",
+      "count:lightbox",
+      "attr:thumb-1-img@alt",
+      "count:thumb-img-lazy",
+      "visible:main-slideshow",
+      "count:modal-trigger",
+      "count:modal-trigger-login",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "list:media-tab": "Screenshots || Trailer Screens || Artworks || Videos",
+      "text:media-tab-active": "Screenshots",
+      "count:pagination": "2",
+      "count:pagination-item": "7",
+      "text:pagination-active": "1",
+      "count:pagination-disabled": "2",
+      "attr:pagination-page-2@href": "/gta-6/screenshots/?thumb_limitstart=100&limit=100",
+      "attr:pagination-last@href": "/gta-6/screenshots/?thumb_limitstart=200&limit=100",
+      "count:lightbox": "0",
+      "count:thumb-img-lazy": "0",
+      "visible:main-slideshow": "false",
+      "count:modal-trigger": "2",
+      "count:modal-trigger-login": "2"
+    }
+  },
+  {
+    "id": "F8-02",
+    "mode": "shots",
+    "keys": [
+      "macro:open-first"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:lightbox",
+      "text:lb-counter",
+      "text:lb-total",
+      "attr:lb-image@alt",
+      "text:lb-caption",
+      "count:lb-toolbar-action",
+      "visible:lb-next",
+      "visible:lb-prev",
+      "visible:lb-close",
+      "count:page-scroll-lock",
+      "count:lb-slot",
+      "count:lb-loaded-image",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "visible:lightbox": "true",
+      "text:lb-counter": "1/100",
+      "count:lb-toolbar-action": "3",
+      "visible:lb-next": "true",
+      "visible:lb-prev": "true",
+      "visible:lb-close": "true",
+      "count:page-scroll-lock": "1",
+      "count:lb-slot": "100",
+      "count:lb-loaded-image": "5"
+    }
+  },
+  {
+    "id": "F8-03",
+    "mode": null,
+    "keys": [
+      "press:ArrowRight",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter",
+      "count:lightbox"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "2/100",
+      "count:lightbox": "1"
+    }
+  },
+  {
+    "id": "F8-04",
+    "mode": null,
+    "keys": [
+      "press:ArrowLeft",
+      "wait:700",
+      "press:ArrowLeft",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "100/100"
+    }
+  },
+  {
+    "id": "F8-05",
+    "mode": null,
+    "keys": [
+      "press:ArrowRight",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "1/100"
+    }
+  },
+  {
+    "id": "F8-06",
+    "mode": null,
+    "keys": [
+      "click:lb-next",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "2/100"
+    }
+  },
+  {
+    "id": "F8-07",
+    "mode": null,
+    "keys": [
+      "click:lb-prev",
+      "wait:700",
+      "click:lb-prev",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "100/100"
+    }
+  },
+  {
+    "id": "F8-08",
+    "mode": null,
+    "keys": [
+      "press:Escape",
+      "wait:900"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:lightbox",
+      "count:page-scroll-lock"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "count:lightbox": "0",
+      "count:page-scroll-lock": "0"
+    }
+  },
+  {
+    "id": "F8-09",
+    "mode": "shots",
+    "keys": [
+      "click:thumb-5",
+      "waitfor:lb-counter",
+      "wait:700"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:lb-counter",
+      "attr:lb-image@alt"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "5/100"
+    }
+  },
+  {
+    "id": "F8-10",
+    "mode": null,
+    "keys": [
+      "click:lb-close",
+      "wait:900"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:lightbox",
+      "count:page-scroll-lock"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "count:lightbox": "0",
+      "count:page-scroll-lock": "0"
+    }
+  },
+  {
+    "id": "F8-11",
+    "mode": "shots",
+    "keys": [
+      "macro:open-first",
+      "click:lb-bottom",
+      "wait:900"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:lightbox"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "count:lightbox": "1"
+    }
+  },
+  {
+    "id": "F8-12",
+    "mode": "shots",
+    "keys": [
+      "focus:thumb-3",
+      "press:Enter",
+      "wait:1200"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:lightbox",
+      "text:lb-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "count:lightbox": "1",
+      "text:lb-counter": "3/100"
+    }
+  },
+  {
+    "id": "F8-13",
+    "mode": "shots",
+    "keys": [
+      "macro:open-first",
+      "press:ArrowRight",
+      "wait:700",
+      "reload",
+      "macro:wake"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:lightbox"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "count:lightbox": "0"
+    }
+  },
+  {
+    "id": "F8-14",
+    "mode": "shots",
+    "keys": [
+      "click:pagination-page-2",
+      "macro:wake",
+      "macro:open-first"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:thumb",
+      "text:pagination-active",
+      "text:lb-counter",
+      "count:pagination-disabled"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/?thumb_limitstart=100&limit=100",
+      "text:pagination-active": "2",
+      "text:lb-counter": "1/100",
+      "count:pagination-disabled": "0"
+    }
+  },
+  {
+    "id": "F8-15",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/screenshots/?thumb_limitstart=200&limit=100",
+      "macro:wake",
+      "macro:open-first",
+      "press:ArrowLeft",
+      "wait:700"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:thumb",
+      "text:pagination-active",
+      "count:pagination-disabled",
+      "text:lb-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/?thumb_limitstart=200&limit=100",
+      "text:pagination-active": "3",
+      "count:pagination-disabled": "2",
+      "text:lb-counter": "95/95"
+    }
+  },
+  {
+    "id": "F8-16",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/screenshots/?i=gta-6-screen-104",
+      "macro:wake"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:lightbox"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "count:lightbox": "0"
+    }
+  },
+  {
+    "id": "F8-17",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/screenshots/?utm_source=test",
+      "macro:wake"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:thumb"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/?utm_source=test"
+    }
+  },
+  {
+    "id": "F8-18",
+    "mode": "shots",
+    "keys": [
+      "click:media-tab-trailers",
+      "macro:wake"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:media-tab-active",
+      "count:thumb",
+      "count:pagination",
+      "text:pagination-active"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/trailers/",
+      "text:media-tab-active": "Trailer Screens",
+      "count:pagination": "2",
+      "text:pagination-active": "1"
+    }
+  },
+  {
+    "id": "F8-19",
+    "mode": "artworks",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:gallery",
+      "list:gallery-heading",
+      "count:g1-thumb",
+      "count:g2-thumb",
+      "count:g3-thumb",
+      "count:thumb",
+      "text:media-tab-active",
+      "count:pagination"
+    ],
+    "expect": {
+      "url": "/gta-6/artworks/",
+      "text:media-tab-active": "Artworks",
+      "count:pagination": "0"
+    }
+  },
+  {
+    "id": "F8-20",
+    "mode": null,
+    "keys": [
+      "click:g2-thumb-1",
+      "waitfor:lb-counter",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter",
+      "text:lb-caption",
+      "attr:lb-image@alt"
+    ],
+    "expect": {
+      "url": "/gta-6/artworks/",
+      "text:lb-counter": "1/14"
+    }
+  },
+  {
+    "id": "F8-21",
+    "mode": null,
+    "keys": [
+      "press:ArrowLeft",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter",
+      "text:lb-caption"
+    ],
+    "expect": {
+      "url": "/gta-6/artworks/",
+      "text:lb-counter": "14/14"
+    }
+  },
+  {
+    "id": "F8-22",
+    "mode": null,
+    "keys": [
+      "press:Escape",
+      "wait:900",
+      "click:thumb-1",
+      "waitfor:lb-counter",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter",
+      "text:lb-caption"
+    ],
+    "expect": {
+      "url": "/gta-6/artworks/",
+      "text:lb-counter": "1/9"
+    }
+  },
+  {
+    "id": "F8-23",
+    "mode": "covers",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:gallery",
+      "count:thumb",
+      "visible:main-image",
+      "text:image-description",
+      "count:pagination",
+      "count:media-tab"
+    ],
+    "expect": {
+      "url": "/gta-6/covers/",
+      "visible:main-image": "true",
+      "count:pagination": "0",
+      "count:media-tab": "0"
+    }
+  },
+  {
+    "id": "F8-24",
+    "mode": null,
+    "keys": [
+      "click:main-image",
+      "waitfor:lb-counter",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter",
+      "text:lb-caption",
+      "visible:lb-next"
+    ],
+    "expect": {
+      "url": "/gta-6/covers/",
+      "text:lb-counter": "1/1",
+      "visible:lb-next": "false"
+    }
+  },
+  {
+    "id": "F8-25",
+    "mode": null,
+    "keys": [
+      "press:ArrowRight",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter",
+      "count:lightbox"
+    ],
+    "expect": {
+      "url": "/gta-6/covers/",
+      "text:lb-counter": "1/1",
+      "count:lightbox": "1"
+    }
+  },
+  {
+    "id": "F8-26",
+    "mode": "maploc",
+    "keys": [
+      "click:g1-thumb-2",
+      "wait:900"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:gallery",
+      "count:g1-thumb",
+      "count:g1-active-thumb",
+      "attr:g1-active-thumb-img@alt",
+      "attr:g1-main-active-img@alt",
+      "count:lightbox"
+    ],
+    "expect": {
+      "url": "/gta-6/map-locations/",
+      "count:g1-active-thumb": "1",
+      "count:lightbox": "0"
+    }
+  },
+  {
+    "id": "F8-27",
+    "mode": null,
+    "keys": [
+      "click:g1-main-active",
+      "waitfor:lb-counter",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter",
+      "text:lb-caption",
+      "attr:lb-image@alt"
+    ],
+    "expect": {
+      "url": "/gta-6/map-locations/",
+      "text:lb-counter": "2/13"
+    }
+  },
+  {
+    "id": "F8-28",
+    "mode": null,
+    "keys": [
+      "press:ArrowRight",
+      "wait:700",
+      "press:ArrowRight",
+      "wait:700",
+      "press:Escape",
+      "wait:1200"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:lightbox",
+      "attr:g1-main-active-img@alt",
+      "attr:g1-active-thumb-img@alt"
+    ],
+    "expect": {
+      "url": "/gta-6/map-locations/",
+      "count:lightbox": "0"
+    }
+  },
+  {
+    "id": "F8-29",
+    "mode": "shots",
+    "keys": [
+      "click:media-tab-videos"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:media-tab",
+      "count:gallery",
+      "title"
+    ],
+    "expect": {
+      "url": "/gta-6/videos/",
+      "count:media-tab": "0"
+    }
+  },
+  {
+    "id": "F8-30",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/screenshots/nonexistent-xyz/"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "count:gallery"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/nonexistent-xyz/"
+    }
+  },
+  {
+    "id": "F8-33",
+    "mode": "covers",
+    "keys": [
+      "click:main-image",
+      "waitfor:lb-counter",
+      "wait:700",
+      "press:Escape",
+      "wait:900"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:lightbox",
+      "count:page-scroll-lock",
+      "visible:main-image"
+    ],
+    "expect": {
+      "url": "/gta-6/covers/",
+      "count:lightbox": "0",
+      "count:page-scroll-lock": "0",
+      "visible:main-image": "true"
+    }
+  },
+  {
+    "id": "F8-34",
+    "mode": "shots",
+    "keys": [
+      "click:thumb-100",
+      "waitfor:lb-counter",
+      "wait:700"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:lb-counter",
+      "count:lb-loaded-image"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "100/100",
+      "count:lb-loaded-image": "5"
+    }
+  },
+  {
+    "id": "F8-35",
+    "mode": null,
+    "keys": [
+      "press:ArrowRight",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "1/100"
+    }
+  },
+  {
+    "id": "F8-36",
+    "mode": null,
+    "keys": [
+      "press:ArrowRight",
+      "wait:400",
+      "press:ArrowRight",
+      "wait:400",
+      "press:ArrowRight",
+      "wait:400",
+      "press:ArrowRight",
+      "wait:400",
+      "press:ArrowRight",
+      "wait:900"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter",
+      "count:lb-loaded-image"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "6/100",
+      "count:lb-loaded-image": "11"
+    }
+  },
+  {
+    "id": "F8-37",
+    "mode": null,
+    "keys": [
+      "click:lb-image",
+      "wait:900"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:lightbox",
+      "text:lb-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "count:lightbox": "1",
+      "text:lb-counter": "6/100"
+    }
+  },
+  {
+    "id": "F8-31",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/screenshots/",
+      "macro:wake",
+      "macro:open-first"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:thumb",
+      "visible:lb-next",
+      "visible:lb-prev",
+      "visible:lb-close",
+      "text:lb-counter",
+      "visible:lb-image"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "visible:lb-next": "true",
+      "visible:lb-prev": "true",
+      "visible:lb-close": "true",
+      "text:lb-counter": "1/100",
+      "visible:lb-image": "true"
+    }
+  },
+  {
+    "id": "F8-32",
+    "mode": null,
+    "keys": [
+      "click:lb-next",
+      "wait:700"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lb-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/screenshots/",
+      "text:lb-counter": "2/100"
+    }
+  },
+  {
+    "id": "F8-38",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/covers/",
+      "macro:wake",
+      "click:main-image",
+      "waitfor:lb-counter",
+      "wait:700"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:lb-counter",
+      "visible:lb-close",
+      "visible:lb-next",
+      "text:lb-caption"
+    ],
+    "expect": {
+      "url": "/gta-6/covers/",
+      "text:lb-counter": "1/1",
+      "visible:lb-close": "true",
+      "visible:lb-next": "false"
+    }
+  }
+]

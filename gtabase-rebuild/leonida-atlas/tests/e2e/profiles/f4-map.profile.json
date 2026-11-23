@@ -1,0 +1,173 @@
+{
+ "app": "Leonida Atlas (rebuild) \u2014 vectors for suite f4-map",
+ "baseUrl": "http://localhost:3000",
+ "readOnly": false,
+ "browser": {
+  "channel": "chromium",
+  "viewport": {
+   "width": 1366,
+   "height": 900
+  },
+  "locale": "en-US",
+  "timezone": "UTC"
+ },
+ "timeouts": {
+  "action": 6000,
+  "navigation": 30000,
+  "settle": 3000,
+  "idle": 8000
+ },
+ "tokens": {
+  "heading": "h1",
+  "map-root": "[data-testid=\"map-root\"]",
+  "sidebar": "[data-testid=\"sidebar\"]",
+  "sidebar-close": "[data-testid=\"sidebar-close\"]",
+  "sidebar-open": "[data-testid=\"sidebar-open\"]",
+  "guest-line": "[data-testid=\"guest-line\"]",
+  "login-link": "[data-testid=\"login-link\"]",
+  "search-input": "[data-testid=\"search-input\"]",
+  "search-clear": "[data-testid=\"search-clear\"]",
+  "search-hits": "[data-testid=\"search-hits\"]",
+  "search-hit-first": "[data-testid=\"search-hit-first\"]",
+  "search-empty": "[data-testid=\"search-empty\"]",
+  "category-none": "[data-testid=\"category-none\"]",
+  "group-rail": "[data-testid=\"group-rail\"]",
+  "rail-robberies": "[data-testid=\"rail-robberies\"]",
+  "rail-food": "[data-testid=\"rail-food\"]",
+  "show-hide-all": "[data-testid=\"show-hide-all\"]",
+  "hide-found": "[data-testid=\"hide-found\"]",
+  "groups": "[data-testid=\"groups\"]",
+  "category-rows": "[data-testid=\"category-rows\"]",
+  "category-rows-visible": "[data-testid=\"category-rows-visible\"]",
+  "category-rows-tracked": "[data-testid=\"category-rows-tracked\"]",
+  "category-checked": "[data-testid=\"category-checked\"]",
+  "category-names": "[data-testid=\"category-names\"]",
+  "group-robberies-box": "[data-testid=\"group-robberies-box\"]",
+  "group-robberies-fold": "[data-testid=\"group-robberies-fold\"]",
+  "group-robberies-body": "[data-testid=\"group-robberies-body\"]",
+  "group-vehicles-box": "[data-testid=\"group-vehicles-box\"]",
+  "cat-banks-box": "[data-testid=\"cat-banks-box\"]",
+  "cat-banks-counter": "[data-testid=\"cat-banks-counter\"]",
+  "cat-banks-name": "[data-testid=\"cat-banks-name\"]",
+  "cat-safehouses-box": "[data-testid=\"cat-safehouses-box\"]",
+  "cat-safehouses-counter": "[data-testid=\"cat-safehouses-counter\"]",
+  "cat-safehouses-sr": "[data-testid=\"cat-safehouses-sr\"]",
+  "cat-garages-box": "[data-testid=\"cat-garages-box\"]",
+  "cat-garages-only": "[data-testid=\"cat-garages-only\"]",
+  "cat-garages-next": "[data-testid=\"cat-garages-next\"]",
+  "cat-hidden-pkg-box": "[data-testid=\"cat-hidden-pkg-box\"]",
+  "cat-atms-box": "[data-testid=\"cat-atms-box\"]",
+  "cat-atms-counter": "[data-testid=\"cat-atms-counter\"]",
+  "cat-atms-row": "[data-testid=\"cat-atms-row\"]",
+  "cat-gas-box": "[data-testid=\"cat-gas-box\"]",
+  "reset-progress": "[data-testid=\"reset-progress\"]",
+  "reset-dialog": "[data-testid=\"reset-dialog\"]",
+  "reset-say": "[data-testid=\"reset-say\"]",
+  "reset-select": "[data-testid=\"reset-select\"]",
+  "reset-options": "[data-testid=\"reset-options\"]",
+  "reset-go": "[data-testid=\"reset-go\"]",
+  "reset-cancel": "[data-testid=\"reset-cancel\"]",
+  "clusters": "[data-testid=\"clusters\"]",
+  "popup": "[data-testid=\"popup\"]",
+  "popup-title": "[data-testid=\"popup-title\"]",
+  "popup-category-link": "[data-testid=\"popup-category-link\"]",
+  "popup-found-box": "[data-testid=\"popup-found-box\"]",
+  "popup-found-label": "[data-testid=\"popup-found-label\"]",
+  "popup-navnum": "[data-testid=\"popup-navnum\"]",
+  "popup-next": "[data-testid=\"popup-next\"]",
+  "popup-prev": "[data-testid=\"popup-prev\"]",
+  "popup-zoom": "[data-testid=\"popup-zoom\"]",
+  "popup-copy": "[data-testid=\"popup-copy\"]",
+  "popup-fav": "[data-testid=\"popup-fav\"]",
+  "popup-buttons": "[data-testid=\"popup-buttons\"]",
+  "popup-report": "[data-testid=\"popup-report\"]",
+  "popup-details-link": "[data-testid=\"popup-details-link\"]",
+  "suggest-open": "[data-testid=\"suggest-open\"]",
+  "contest-open": "[data-testid=\"contest-open\"]",
+  "feedback-open": "[data-testid=\"feedback-open\"]",
+  "panel": "[data-testid=\"panel\"]",
+  "panel-title": "[data-testid=\"panel-title\"]",
+  "panel-close": "[data-testid=\"panel-close\"]",
+  "panel-links": "[data-testid=\"panel-links\"]",
+  "about-open": "[data-testid=\"about-open\"]",
+  "about-dialog": "[data-testid=\"about-dialog\"]",
+  "fullscreen": "[data-testid=\"fullscreen\"]",
+  "map-zoom-in": "[data-testid=\"map-zoom-in\"]",
+  "map-zoom-out": "[data-testid=\"map-zoom-out\"]",
+  "tile-first": "[data-testid=\"tile-first\"]",
+  "contest-box": "[data-testid=\"contest-box\"]",
+  "contest-close": "[data-testid=\"contest-close\"]",
+  "static-list-groups": "[data-testid=\"static-list-groups\"]",
+  "cat-banks-toggle": "[data-testid=\"cat-banks-toggle\"]",
+  "cat-safehouses-toggle": "[data-testid=\"cat-safehouses-toggle\"]",
+  "cat-garages-toggle": "[data-testid=\"cat-garages-toggle\"]",
+  "cat-hidden-pkg-toggle": "[data-testid=\"cat-hidden-pkg-toggle\"]",
+  "cat-atms-toggle": "[data-testid=\"cat-atms-toggle\"]",
+  "cat-gas-toggle": "[data-testid=\"cat-gas-toggle\"]",
+  "group-robberies-toggle": "[data-testid=\"group-robberies-toggle\"]",
+  "popup-found-toggle": "[data-testid=\"popup-found-toggle\"]",
+  "canvas": "[data-testid=\"canvas\"]",
+  "popup-desc": "[data-testid=\"popup-desc\"]",
+  "cat-garages-name": "[data-testid=\"cat-garages-name\"]",
+  "cat-wrath-counter": "[data-testid=\"cat-wrath-counter\"]",
+  "own-open": "[data-testid=\"own-open\"]",
+  "popup-actions": "[data-testid=\"popup-actions\"]",
+  "popup-close": "[data-testid=\"popup-close\"]",
+  "county-labels": "[data-testid=\"county-labels\"]"
+ },
+ "modes": {
+  "map": [
+   "goto:about:blank",
+   "goto:/gta-6/map/",
+   "waitfor:map-zoom-in",
+   "wait:1500"
+  ],
+  "map-mobile": [
+   "viewport:390x844",
+   "goto:about:blank",
+   "goto:/gta-6/map/",
+   "waitfor:map-zoom-in",
+   "wait:1500"
+  ],
+  "start-marker": [
+   "goto:about:blank",
+   "goto:/gta-6/map/#safehouse-001",
+   "waitfor:popup-title",
+   "wait:1000"
+  ]
+ },
+ "resets": {
+  "clear": [
+   "try:clear:local",
+   "try:clear:session",
+   "viewport:1366x900"
+  ],
+  "desktop": [
+   "viewport:1366x900"
+  ]
+ },
+ "macros": {
+  "ready": [
+   "waitfor:map-zoom-in",
+   "wait:1200"
+  ],
+  "tick-start": [
+   "goto:about:blank",
+   "goto:/gta-6/map/#safehouse-001",
+   "waitfor:popup-found-toggle",
+   "wait:800",
+   "click:popup-found-toggle",
+   "wait:700"
+  ]
+ },
+ "readouts": [
+  {
+   "key": "url",
+   "read": "url"
+  },
+  {
+   "key": "blocked",
+   "read": "blocked"
+  }
+ ]
+}

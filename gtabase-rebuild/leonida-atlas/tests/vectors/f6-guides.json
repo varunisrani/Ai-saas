@@ -1,0 +1,836 @@
+[
+  {
+    "id": "F6-01",
+    "mode": "animals",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:card-grid",
+      "count:grid-1-cards",
+      "count:grid-2-cards",
+      "count:grid-3-cards",
+      "count:guide-card",
+      "attr:grid-1-first-link@href",
+      "attr:grid-1-first-link@aria-label",
+      "count:section-heading",
+      "count:toc",
+      "count:faq-question",
+      "count:rlta-any",
+      "count:tabs-script"
+    ],
+    "expect": {
+      "url": "/gta-6/animals/",
+      "count:card-grid": "3",
+      "count:grid-2-cards": "69",
+      "count:grid-3-cards": "2",
+      "attr:grid-1-first-link@href": "/gta-6/animals/albino-american-alligator",
+      "attr:grid-1-first-link@aria-label": "Read more: Albino American Alligator",
+      "count:section-heading": "3",
+      "count:toc": "0",
+      "count:faq-question": "0"
+    }
+  },
+  {
+    "id": "F6-02",
+    "mode": "animals",
+    "keys": [
+      "click:grid-1-first-title-link"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title"
+    ],
+    "expect": {
+      "url": "/gta-6/animals/albino-american-alligator"
+    }
+  },
+  {
+    "id": "F6-03",
+    "mode": null,
+    "keys": [
+      "back"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:guide-card"
+    ],
+    "expect": {
+      "url": "/gta-6/animals/"
+    }
+  },
+  {
+    "id": "F6-04",
+    "mode": "characters",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:card-grid",
+      "count:grid-1-cards",
+      "count:grid-2-cards",
+      "count:grid-3-cards",
+      "count:grid-4-cards",
+      "count:plain-person-row",
+      "count:faq-question",
+      "attr:grid-1-first-link@href",
+      "count:bullet-list-1",
+      "count:rlta-any"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/",
+      "count:card-grid": "4",
+      "count:grid-2-cards": "6",
+      "count:grid-3-cards": "10",
+      "count:faq-question": "5",
+      "attr:grid-1-first-link@href": "/gta-6/characters/jason"
+    }
+  },
+  {
+    "id": "F6-05",
+    "mode": "gangs",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:card-grid",
+      "count:grid-1-cards",
+      "count:grid-2-cards",
+      "attr:grid-1-first-card@href",
+      "count:bullet-list-1",
+      "count:section-heading",
+      "count:rlta-any"
+    ],
+    "expect": {
+      "url": "/gta-6/gangs/",
+      "count:card-grid": "2",
+      "count:grid-2-cards": "0",
+      "attr:grid-1-first-card@href": "/gangs/gta-6/final-chapter-mc",
+      "count:section-heading": "4"
+    }
+  },
+  {
+    "id": "F6-06",
+    "mode": "gangs",
+    "keys": [
+      "click:grid-1-first-card"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title"
+    ],
+    "expect": {
+      "url": "/gangs/gta-6/final-chapter-mc"
+    }
+  },
+  {
+    "id": "F6-07",
+    "mode": "properties",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:card-grid",
+      "count:grid-1-cards",
+      "count:grid-2-cards",
+      "count:grid-3-cards",
+      "count:grid-4-cards",
+      "count:guide-card",
+      "count:card-with-price",
+      "count:card-with-location",
+      "count:rlta-any"
+    ],
+    "expect": {
+      "url": "/gta-6/properties/",
+      "count:card-grid": "4",
+      "count:grid-2-cards": "4",
+      "count:grid-3-cards": "3"
+    }
+  },
+  {
+    "id": "F6-08",
+    "mode": "properties",
+    "keys": [
+      "click:grid-3-first-link"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title"
+    ],
+    "expect": {
+      "url": "/properties/gta-6/paradise-garage"
+    }
+  },
+  {
+    "id": "F6-09",
+    "mode": "radio",
+    "keys": [
+      "macro:wake"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:station-row",
+      "count:station-without-tracks",
+      "count:track-play",
+      "count:track-play-visible",
+      "count:track-play-hidden",
+      "list:tracklist-header",
+      "count:table-controls",
+      "text:player-title",
+      "text:s1-track1-title",
+      "text:player-artist",
+      "text:s1-track1-artist",
+      "text:player-time",
+      "text:player-duration",
+      "attr:player-toggle-icon@class",
+      "visible:floating-player",
+      "count:track-play-pause-state",
+      "count:rlta-any",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "count:station-without-tracks": "1",
+      "list:tracklist-header": "# || Track || Play",
+      "count:table-controls": "0",
+      "text:player-time": "0:00",
+      "text:player-duration": "0:00",
+      "visible:floating-player": "true",
+      "count:track-play-pause-state": "0"
+    }
+  },
+  {
+    "id": "F6-10",
+    "mode": "radio-ready",
+    "keys": [
+      "click:s1-track2-play"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:s1-track2-play",
+      "text:player-title",
+      "text:s1-track2-title",
+      "count:track-play-pause-state",
+      "attr:player-toggle-icon@class",
+      "text:player-time",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "text:s1-track2-play": "PAUSE",
+      "count:track-play-pause-state": "1",
+      "text:player-time": "0:00"
+    }
+  },
+  {
+    "id": "F6-11",
+    "mode": null,
+    "keys": [
+      "click:player-next"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:player-title",
+      "text:s1-track3-title",
+      "text:s1-track2-play",
+      "text:s1-track3-play",
+      "count:track-play-pause-state"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "text:s1-track2-play": "PLAY",
+      "text:s1-track3-play": "PAUSE",
+      "count:track-play-pause-state": "1"
+    }
+  },
+  {
+    "id": "F6-12",
+    "mode": null,
+    "keys": [
+      "click:player-prev",
+      "click:player-prev"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:player-title",
+      "text:s1-track1-title",
+      "text:s1-track1-play",
+      "count:track-play-pause-state"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "text:s1-track1-play": "PAUSE",
+      "count:track-play-pause-state": "1"
+    }
+  },
+  {
+    "id": "F6-13",
+    "mode": null,
+    "keys": [
+      "click:player-prev"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:player-title",
+      "text:s1-last-title",
+      "text:s1-last-play",
+      "text:s1-track1-play"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "text:s1-last-play": "PAUSE",
+      "text:s1-track1-play": "PLAY"
+    }
+  },
+  {
+    "id": "F6-14",
+    "mode": null,
+    "keys": [
+      "click:player-next"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:player-title",
+      "text:s1-track1-title",
+      "text:s1-track1-play",
+      "text:s1-last-play"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "text:s1-track1-play": "PAUSE",
+      "text:s1-last-play": "PLAY"
+    }
+  },
+  {
+    "id": "F6-15",
+    "mode": null,
+    "keys": [
+      "click:s3-first-play"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:player-title",
+      "text:s3-first-title",
+      "text:s3-first-play",
+      "text:s1-track1-play",
+      "count:track-play-pause-state"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "text:s3-first-play": "PAUSE",
+      "text:s1-track1-play": "PLAY",
+      "count:track-play-pause-state": "1"
+    }
+  },
+  {
+    "id": "F6-16",
+    "mode": null,
+    "keys": [
+      "click:player-next"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:player-title",
+      "text:s3-second-title",
+      "text:s3-second-play",
+      "text:s1-track2-title"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "text:s3-second-play": "PAUSE"
+    }
+  },
+  {
+    "id": "F6-17",
+    "mode": null,
+    "keys": [
+      "wait:3500",
+      "click:player-toggle"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:player-toggle-icon@class",
+      "text:s3-second-play",
+      "text:player-title"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "text:s3-second-play": "PLAY"
+    }
+  },
+  {
+    "id": "F6-18",
+    "mode": "ps5",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:cheat-row",
+      "count:cheat-category",
+      "list:cheat-category",
+      "count:cheat-category-1-rows",
+      "count:cheat-category-3-rows",
+      "count:first-cheat-keys",
+      "attr:first-cheat-key-1@alt",
+      "attr:first-cheat-key-2@alt",
+      "attr:first-cheat-key-1@src",
+      "count:cheat-key-other",
+      "count:cheat-copy-or-filter",
+      "count:platform-link",
+      "text:platform-current",
+      "count:toc-link",
+      "attr:toc-first-link@href",
+      "count:howto-step-icons",
+      "attr:howto-icon-2@alt",
+      "attr:howto-icon-3@alt",
+      "text:first-cheat-unlock",
+      "count:body-link-pc",
+      "count:rlta-any"
+    ],
+    "expect": {
+      "url": "/gta-6/gta-6-cheats-ps5-cheat-codes",
+      "count:cheat-category": "5",
+      "list:cheat-category": "PLAYER CHEATS || COMBAT CHEATS || VEHICLE SPAWN CHEATS || ENVIRONMENT CHEATS || SCREEN FILTER CHEATS",
+      "count:first-cheat-keys": "8",
+      "count:cheat-key-other": "0",
+      "count:cheat-copy-or-filter": "0",
+      "count:platform-link": "2",
+      "text:platform-current": "GTA 6 Cheats for PS5 YOU ARE HERE",
+      "attr:toc-first-link@href": "/gta-6/gta-6-cheats-ps5-cheat-codes#how-to-enter-gta-6-cheats-on-ps5",
+      "count:howto-step-icons": "3",
+      "attr:howto-icon-2@alt": "L1",
+      "attr:howto-icon-3@alt": "R1",
+      "count:body-link-pc": "0"
+    }
+  },
+  {
+    "id": "F6-19",
+    "mode": "ps5",
+    "keys": [
+      "click:toc-link-combat"
+    ],
+    "reset": "clear",
+    "reads": [
+      "attr:toc-link-combat@href"
+    ],
+    "expect": {
+      "url": "/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats",
+      "attr:toc-link-combat@href": "/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats"
+    }
+  },
+  {
+    "id": "F6-20",
+    "mode": "ps5",
+    "keys": [
+      "click:platform-xbox"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:platform-current",
+      "count:platform-link"
+    ],
+    "expect": {
+      "url": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
+      "text:platform-current": "GTA 6 Cheats for Xbox Series X|S YOU ARE HERE",
+      "count:platform-link": "2"
+    }
+  },
+  {
+    "id": "F6-21",
+    "mode": "xbox",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:cheat-row",
+      "count:cheat-category",
+      "count:first-cheat-keys",
+      "attr:first-cheat-key-1@alt",
+      "attr:first-cheat-key-1@src",
+      "count:cheat-key-other",
+      "attr:howto-icon-2@alt",
+      "attr:howto-icon-3@alt",
+      "count:platform-link",
+      "text:platform-current",
+      "count:toc-link",
+      "count:body-link-pc",
+      "count:cheat-copy-or-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
+      "count:cheat-category": "5",
+      "count:first-cheat-keys": "8",
+      "count:cheat-key-other": "0",
+      "attr:howto-icon-2@alt": "LB",
+      "attr:howto-icon-3@alt": "RB",
+      "count:platform-link": "2",
+      "text:platform-current": "GTA 6 Cheats for Xbox Series X|S YOU ARE HERE",
+      "count:body-link-pc": "0",
+      "count:cheat-copy-or-filter": "0"
+    }
+  },
+  {
+    "id": "F6-22",
+    "mode": "pc",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:cheat-row",
+      "count:platform-link",
+      "count:pc-platform-table-link",
+      "list:pc-platform-table-link",
+      "count:toc-link",
+      "attr:toc-first-link@href",
+      "count:body-link-ps5",
+      "count:body-link-xbox"
+    ],
+    "expect": {
+      "url": "/gta-6/gta-6-cheats-pc-full-list-of-cheat-codes",
+      "count:platform-link": "0",
+      "count:pc-platform-table-link": "3",
+      "list:pc-platform-table-link": "GTA 6 Cheats for PS5 || GTA 6 Cheats for Xbox Series X|S || GTA 6 Cheats for PC",
+      "attr:toc-first-link@href": "/gta-6/gta-6-cheats-pc-full-list-of-cheat-codes#how-many-cheats-are-there-in-gta-6",
+      "count:body-link-ps5": "2",
+      "count:body-link-xbox": "2"
+    }
+  },
+  {
+    "id": "F6-23",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/gta-6-cheats-ps5-cheat-codes#screen-filter-cheats"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:cheat-row"
+    ],
+    "expect": {
+      "url": "/gta-6/gta-6-cheats-ps5-cheat-codes#screen-filter-cheats"
+    }
+  },
+  {
+    "id": "F6-24",
+    "mode": "maploc",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:toc",
+      "count:toc-link",
+      "count:indexed-heading",
+      "count:inline-gallery",
+      "attr:map-banner-link@href",
+      "text:map-banner-link",
+      "count:rlta-any"
+    ],
+    "expect": {
+      "url": "/gta-6/map-locations/",
+      "count:toc": "1",
+      "attr:map-banner-link@href": "/gta-6/map/"
+    }
+  },
+  {
+    "id": "F6-25",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/animals/nonexistent-xyz"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title"
+    ],
+    "expect": {
+      "url": "/gta-6/animals/nonexistent-xyz"
+    }
+  },
+  {
+    "id": "F6-26",
+    "mode": "animals",
+    "keys": [
+      "macro:wake",
+      "scroll:grid-3-cards",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "attr:back-to-top@class"
+    ],
+    "expect": {
+      "url": "/gta-6/animals/"
+    }
+  },
+  {
+    "id": "F6-27",
+    "mode": "membership",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "attr:acc-container@data-rlta-state",
+      "count:acc-container",
+      "attr:acc-container@data-rlta-type",
+      "count:acc-button",
+      "count:acc-open",
+      "attr:acc-1@aria-expanded",
+      "attr:acc-2@aria-expanded",
+      "attr:acc-1@role",
+      "attr:acc-1@tabindex",
+      "attr:acc-1@aria-controls"
+    ],
+    "expect": {
+      "url": "/membership/",
+      "count:acc-container": "1",
+      "count:acc-open": "1",
+      "attr:acc-1@aria-expanded": "true",
+      "attr:acc-2@aria-expanded": "false",
+      "attr:acc-1@role": "button",
+      "attr:acc-1@tabindex": "0",
+      "attr:acc-1@aria-controls": "rlta-panel-does-mybase-sync-with-my-game-or-my-rockstar-account"
+    }
+  },
+  {
+    "id": "F6-28",
+    "mode": null,
+    "keys": [
+      "click:acc-2",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:acc-1@aria-expanded",
+      "attr:acc-2@aria-expanded",
+      "count:acc-open",
+      "count:acc-panel-open"
+    ],
+    "expect": {
+      "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+      "attr:acc-1@aria-expanded": "false",
+      "attr:acc-2@aria-expanded": "true",
+      "count:acc-open": "1",
+      "count:acc-panel-open": "1"
+    }
+  },
+  {
+    "id": "F6-29",
+    "mode": null,
+    "keys": [
+      "click:acc-2",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:acc-2@aria-expanded",
+      "count:acc-open"
+    ],
+    "expect": {
+      "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+      "attr:acc-2@aria-expanded": "false",
+      "count:acc-open": "0"
+    }
+  },
+  {
+    "id": "F6-30",
+    "mode": null,
+    "keys": [
+      "focus:acc-2",
+      "press:ArrowDown",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:acc-2@aria-expanded",
+      "attr:acc-3@aria-expanded",
+      "count:acc-open",
+      "errors"
+    ],
+    "expect": {
+      "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+      "attr:acc-2@aria-expanded": "false",
+      "attr:acc-3@aria-expanded": "false",
+      "count:acc-open": "0"
+    }
+  },
+  {
+    "id": "F6-31",
+    "mode": null,
+    "keys": [
+      "press:Home",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:acc-1@aria-expanded",
+      "attr:acc-3@aria-expanded",
+      "count:acc-open",
+      "errors"
+    ],
+    "expect": {
+      "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+      "attr:acc-1@aria-expanded": "false",
+      "attr:acc-3@aria-expanded": "false",
+      "count:acc-open": "0"
+    }
+  },
+  {
+    "id": "F6-32",
+    "mode": null,
+    "keys": [
+      "press:End",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:acc-1@aria-expanded",
+      "attr:acc-last@aria-expanded",
+      "count:acc-open",
+      "errors"
+    ],
+    "expect": {
+      "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+      "attr:acc-1@aria-expanded": "false",
+      "attr:acc-last@aria-expanded": "false",
+      "count:acc-open": "0"
+    }
+  },
+  {
+    "id": "F6-33",
+    "mode": null,
+    "keys": [
+      "press:Enter",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:acc-last@aria-expanded",
+      "count:acc-open"
+    ],
+    "expect": {
+      "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+      "attr:acc-last@aria-expanded": "false",
+      "count:acc-open": "1"
+    }
+  },
+  {
+    "id": "F6-34",
+    "mode": null,
+    "keys": [
+      "goto:/membership/#will-my-subscription-extend-automatically",
+      "reload",
+      "scroll:faq-section",
+      "wait:3000",
+      "wait:idle",
+      "wait:9000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "attr:acc-container@data-rlta-state",
+      "attr:acc-1@aria-expanded",
+      "attr:acc-3@aria-expanded",
+      "count:acc-open"
+    ],
+    "expect": {
+      "url": "/membership/#will-my-subscription-extend-automatically",
+      "attr:acc-1@aria-expanded": "false",
+      "attr:acc-3@aria-expanded": "true",
+      "count:acc-open": "1"
+    }
+  },
+  {
+    "id": "F6-39",
+    "mode": "membership-hover-first",
+    "keys": [
+      "try:click:acc-2",
+      "wait:1000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "attr:acc-container@data-rlta-state",
+      "count:acc-button",
+      "attr:acc-1@aria-expanded",
+      "attr:acc-2@aria-expanded",
+      "count:acc-open"
+    ],
+    "expect": {
+      "url": "/membership/",
+      "attr:acc-1@aria-expanded": "true",
+      "attr:acc-2@aria-expanded": "false",
+      "count:acc-open": "1"
+    }
+  },
+  {
+    "id": "F6-35",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/animals/"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:guide-card",
+      "visible:grid-1-first-title-link",
+      "count:card-grid"
+    ],
+    "expect": {
+      "url": "/gta-6/animals/",
+      "visible:grid-1-first-title-link": "true",
+      "count:card-grid": "3"
+    }
+  },
+  {
+    "id": "F6-36",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/characters/"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:card-grid",
+      "count:grid-4-cards",
+      "visible:grid-1-first-link"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/",
+      "count:card-grid": "4",
+      "visible:grid-1-first-link": "true"
+    }
+  },
+  {
+    "id": "F6-37",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/gta-6-cheats-ps5-cheat-codes"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:cheat-row",
+      "visible:first-cheat-key-1",
+      "visible:toc",
+      "visible:platform-xbox"
+    ],
+    "expect": {
+      "url": "/gta-6/gta-6-cheats-ps5-cheat-codes",
+      "visible:first-cheat-key-1": "true",
+      "visible:toc": "true",
+      "visible:platform-xbox": "true"
+    }
+  },
+  {
+    "id": "F6-38",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/radio-stations/",
+      "macro:wake"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:floating-player",
+      "visible:player-next",
+      "visible:player-prev",
+      "visible:player-toggle",
+      "text:player-title",
+      "count:track-play-visible"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "visible:floating-player": "true",
+      "visible:player-next": "true",
+      "visible:player-prev": "true",
+      "visible:player-toggle": "true"
+    }
+  }
+]

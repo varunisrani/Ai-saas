@@ -1,0 +1,78 @@
+[
+  {
+    "id": "F6NY-01",
+    "mode": "radio",
+    "keys": [
+      "macro:wake",
+      "click:s1-track2-play",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:s1-track2-play",
+      "text:player-title",
+      "text:s1-track1-title",
+      "count:track-play-pause-state",
+      "attr:player-toggle-icon@class",
+      "count:youtube-iframe",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "text:s1-track2-play": "PLAY",
+      "count:track-play-pause-state": "0"
+    }
+  },
+  {
+    "id": "F6NY-02",
+    "mode": null,
+    "keys": [
+      "click:player-next",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:player-title",
+      "count:track-play-pause-state"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "count:track-play-pause-state": "0"
+    }
+  },
+  {
+    "id": "F6NY-03",
+    "mode": null,
+    "keys": [
+      "click:player-toggle",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:player-toggle-icon@class",
+      "text:player-title",
+      "count:track-play-pause-state"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/",
+      "count:track-play-pause-state": "0"
+    }
+  },
+  {
+    "id": "F6NY-04",
+    "mode": null,
+    "keys": [
+      "click:player-prev",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:player-title",
+      "count:track-play-visible",
+      "count:track-play-hidden"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/"
+    }
+  }
+]

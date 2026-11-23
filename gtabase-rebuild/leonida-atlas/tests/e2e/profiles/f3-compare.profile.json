@@ -1,0 +1,129 @@
+{
+ "app": "Leonida Atlas (rebuild) \u2014 vectors for suite f3-compare",
+ "baseUrl": "http://localhost:3000",
+ "readOnly": false,
+ "browser": {
+  "channel": "chromium",
+  "viewport": {
+   "width": 1366,
+   "height": 900
+  },
+  "locale": "en-US",
+  "timezone": "UTC"
+ },
+ "timeouts": {
+  "action": 6000,
+  "navigation": 30000,
+  "settle": 3000,
+  "idle": 8000
+ },
+ "tokens": {
+  "heading": "h1",
+  "card": "[data-testid=\"card\"]",
+  "card-1-link": "[data-testid=\"card-1-link\"]",
+  "name-search": "[data-testid=\"name-search\"]",
+  "compare-toggle": "[data-testid=\"compare-toggle\"]",
+  "compare-toggle-1": "[data-testid=\"compare-toggle-1\"]",
+  "compare-toggle-2": "[data-testid=\"compare-toggle-2\"]",
+  "compare-toggle-3": "[data-testid=\"compare-toggle-3\"]",
+  "compare-toggle-4": "[data-testid=\"compare-toggle-4\"]",
+  "compare-toggle-5": "[data-testid=\"compare-toggle-5\"]",
+  "compare-toggle-checked": "[data-testid=\"compare-toggle-checked\"]",
+  "compare-toggle-disabled": "[data-testid=\"compare-toggle-disabled\"]",
+  "compare-bar": "[data-testid=\"compare-bar\"]",
+  "compare-count": "[data-testid=\"compare-count\"]",
+  "compare-names": "[data-testid=\"compare-names\"]",
+  "compare-go": "[data-testid=\"compare-go\"]",
+  "compare-clear": "[data-testid=\"compare-clear\"]",
+  "cmp-crumb": "[data-testid=\"cmp-crumb\"]",
+  "cmp-intro": "[data-testid=\"cmp-intro\"]",
+  "cmp-add": "[data-testid=\"cmp-add\"]",
+  "cmp-add-title": "[data-testid=\"cmp-add-title\"]",
+  "cmp-picker-all": "[data-testid=\"cmp-picker-all\"]",
+  "cmp-picker": "[data-testid=\"cmp-picker\"]",
+  "cmp-source": "[data-testid=\"cmp-source\"]",
+  "cmp-list": "[data-testid=\"cmp-list\"]",
+  "cmp-options": "[data-testid=\"cmp-options\"]",
+  "cmp-option-1": "[data-testid=\"cmp-option-1\"]",
+  "cmp-option-active": "[data-testid=\"cmp-option-active\"]",
+  "cmp-more": "[data-testid=\"cmp-more\"]",
+  "cmp-note": "[data-testid=\"cmp-note\"]",
+  "cmp-links": "[data-testid=\"cmp-links\"]",
+  "cmp-board": "[data-testid=\"cmp-board\"]",
+  "challenge": "[data-testid=\"challenge\"]",
+  "rank-class-select": "[data-testid=\"rank-class-select\"]",
+  "rank-class-menu": "[data-testid=\"rank-class-menu\"]",
+  "rank-class-items": "[data-testid=\"rank-class-items\"]",
+  "rank-class-first": "[data-testid=\"rank-class-first\"]",
+  "rank-class-motorcycles": "[data-testid=\"rank-class-motorcycles\"]",
+  "rank-crumb": "[data-testid=\"rank-crumb\"]",
+  "rank-list-title": "[data-testid=\"rank-list-title\"]",
+  "rank-rows": "[data-testid=\"rank-rows\"]",
+  "rank-row-1": "[data-testid=\"rank-row-1\"]",
+  "rank-row-1-link": "[data-testid=\"rank-row-1-link\"]",
+  "rank-row-1-badge": "[data-testid=\"rank-row-1-badge\"]",
+  "rank-row-1-labels": "[data-testid=\"rank-row-1-labels\"]",
+  "rank-ratings": "[data-testid=\"rank-ratings\"]",
+  "rank-row-links": "[data-testid=\"rank-row-links\"]",
+  "rank-images": "[data-testid=\"rank-images\"]",
+  "rank-class-item-1": "[data-testid=\"rank-class-item-1\"]",
+  "rank-class-item-2": "[data-testid=\"rank-class-item-2\"]",
+  "rank-class-item-3": "[data-testid=\"rank-class-item-3\"]",
+  "rank-class-item-4": "[data-testid=\"rank-class-item-4\"]",
+  "rank-class-item-5": "[data-testid=\"rank-class-item-5\"]",
+  "rank-class-item-6": "[data-testid=\"rank-class-item-6\"]",
+  "rank-class-item-7": "[data-testid=\"rank-class-item-7\"]",
+  "rank-class-item-8": "[data-testid=\"rank-class-item-8\"]",
+  "rank-class-item-9": "[data-testid=\"rank-class-item-9\"]",
+  "rank-class-item-10": "[data-testid=\"rank-class-item-10\"]",
+  "rank-class-item-11": "[data-testid=\"rank-class-item-11\"]",
+  "rank-class-item-12": "[data-testid=\"rank-class-item-12\"]",
+  "rank-class-item-13": "[data-testid=\"rank-class-item-13\"]",
+  "rank-class-item-14": "[data-testid=\"rank-class-item-14\"]",
+  "rank-class-item-15": "[data-testid=\"rank-class-item-15\"]",
+  "rank-class-item-16": "[data-testid=\"rank-class-item-16\"]",
+  "rank-class-item-17": "[data-testid=\"rank-class-item-17\"]",
+  "rank-class-item-18": "[data-testid=\"rank-class-item-18\"]",
+  "rank-class-item-19": "[data-testid=\"rank-class-item-19\"]",
+  "rank-class-item-20": "[data-testid=\"rank-class-item-20\"]",
+  "rank-class-item-21": "[data-testid=\"rank-class-item-21\"]",
+  "rank-class-focused": "[data-testid=\"rank-class-focused\"]",
+  "rank-h2": "[data-testid=\"rank-h2\"]",
+  "rank-content-links": "[data-testid=\"rank-content-links\"]",
+  "rank-paragraphs": "[data-testid=\"rank-paragraphs\"]"
+ },
+ "modes": {
+  "vehicles": "/gta-6/vehicles/",
+  "weapons": "/gta-6/weapons/",
+  "vcompare": "/gta-6/vehicles/comparison/",
+  "wcompare": "/gta-6/weapons/comparison/",
+  "best": "/gta-6/vehicles/best-vehicles/"
+ },
+ "resets": {
+  "clear": [
+   "try:clear:local",
+   "try:clear:session",
+   "try:viewport:1366x900"
+  ]
+ },
+ "macros": {
+  "wake": [
+   "hover:heading",
+   "waitfor:compare-toggle-1"
+  ],
+  "pick2": [
+   "click:compare-toggle-1",
+   "click:compare-toggle-2"
+  ]
+ },
+ "readouts": [
+  {
+   "key": "url",
+   "read": "url"
+  },
+  {
+   "key": "heading",
+   "read": "text:heading"
+  }
+ ]
+}

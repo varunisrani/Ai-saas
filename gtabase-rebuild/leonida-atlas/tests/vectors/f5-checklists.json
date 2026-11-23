@@ -1,0 +1,857 @@
+[
+  {
+    "id": "F5-01",
+    "mode": "checklist100",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:cl-box",
+      "count:toc-box",
+      "count:sec-box",
+      "count:cl-box-checked",
+      "count:cl-box-disabled",
+      "text:pct-text",
+      "attr:pct-bar@style",
+      "text:guest-note",
+      "attr:guest-note-login@href",
+      "count:profile-switcher",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "count:cl-box-checked": "0",
+      "count:cl-box-disabled": "0",
+      "text:pct-text": "0.00",
+      "text:guest-note": "Progress is saved in your browser. Login to keep progress across all your devices!",
+      "attr:guest-note-login@href": "/login/"
+    }
+  },
+  {
+    "id": "F5-02",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-story"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-story",
+      "checked:toc-story",
+      "text:pct-text",
+      "attr:pct-bar@style",
+      "attr:pct-bar@aria-valuenow",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-story": "true",
+      "checked:toc-story": "true",
+      "text:pct-text": "50.00",
+      "attr:pct-bar@aria-valuenow": "50.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"story\"]}"
+    }
+  },
+  {
+    "id": "F5-03",
+    "mode": "checklist100",
+    "keys": [
+      "click:toc-story"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:toc-story",
+      "checked:sec-story",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:toc-story": "true",
+      "checked:sec-story": "true",
+      "text:pct-text": "50.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"story\"]}"
+    }
+  },
+  {
+    "id": "F5-04",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-story",
+      "click:sec-story"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-story",
+      "checked:toc-story",
+      "text:pct-text",
+      "attr:pct-bar@style",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-story": "false",
+      "checked:toc-story": "false",
+      "text:pct-text": "0.00",
+      "local:guest_checklists": "{}"
+    }
+  },
+  {
+    "id": "F5-05",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-kenton"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-kenton",
+      "checked:toc-kenton",
+      "checked:sec-exploration",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-kenton": "true",
+      "checked:toc-kenton": "true",
+      "checked:sec-exploration": "false",
+      "text:pct-text": "1.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"kenton\"]}"
+    }
+  },
+  {
+    "id": "F5-06",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-kenton",
+      "click:sec-cards"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-exploration",
+      "count:sec-exploration-children-checked",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-exploration": "false",
+      "count:sec-exploration-children-checked": "2",
+      "text:pct-text": "2.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"kenton\",\"cards\"]}"
+    }
+  },
+  {
+    "id": "F5-07",
+    "mode": "checklist100",
+    "keys": [
+      "macro:tick-all-exploration"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:sec-exploration-children-checked",
+      "checked:sec-exploration",
+      "checked:toc-exploration",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "count:sec-exploration-children-checked": "20",
+      "checked:sec-exploration": "true",
+      "checked:toc-exploration": "true",
+      "text:pct-text": "20.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"kenton\",\"cards\",\"waink\",\"underwater\",\"magazines\",\"meditation\",\"flamingos\",\"playlists\",\"styles\",\"races\",\"race-challenges\",\"shooting\",\"video-games\",\"pool\",\"mini-golf\",\"basketball\",\"drones\",\"stunts\",\"challenges\",\"target-decks\",\"exploration\"]}"
+    }
+  },
+  {
+    "id": "F5-08",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-exploration"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-exploration",
+      "checked:toc-exploration",
+      "count:sec-exploration-children",
+      "count:sec-exploration-children-checked",
+      "count:cl-box-checked",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-exploration": "true",
+      "checked:toc-exploration": "true",
+      "count:sec-exploration-children": "20",
+      "count:sec-exploration-children-checked": "20",
+      "count:cl-box-checked": "42",
+      "text:pct-text": "20.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"exploration\",\"kenton\",\"cards\",\"waink\",\"underwater\",\"magazines\",\"meditation\",\"flamingos\",\"playlists\",\"styles\",\"races\",\"race-challenges\",\"shooting\",\"video-games\",\"pool\",\"mini-golf\",\"basketball\",\"drones\",\"stunts\",\"challenges\",\"target-decks\"]}"
+    }
+  },
+  {
+    "id": "F5-09",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-exploration",
+      "click:sec-drones"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-exploration",
+      "checked:sec-drones",
+      "count:sec-exploration-children-checked",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-exploration": "false",
+      "checked:sec-drones": "false",
+      "count:sec-exploration-children-checked": "19",
+      "text:pct-text": "19.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"kenton\",\"cards\",\"waink\",\"underwater\",\"magazines\",\"meditation\",\"flamingos\",\"playlists\",\"styles\",\"races\",\"race-challenges\",\"shooting\",\"video-games\",\"pool\",\"mini-golf\",\"basketball\",\"stunts\",\"challenges\",\"target-decks\"]}"
+    }
+  },
+  {
+    "id": "F5-10",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-exploration",
+      "click:sec-exploration"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-exploration",
+      "count:sec-exploration-children-checked",
+      "count:cl-box-checked",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-exploration": "false",
+      "count:sec-exploration-children-checked": "0",
+      "count:cl-box-checked": "0",
+      "text:pct-text": "0.00",
+      "local:guest_checklists": "{}"
+    }
+  },
+  {
+    "id": "F5-11",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-story-tasks"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-story-tasks",
+      "count:sec-story-tasks-children-checked",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-story-tasks": "true",
+      "count:sec-story-tasks-children-checked": "11",
+      "text:pct-text": "27.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"story-tasks\",\"optional\",\"gang-ops\",\"bank-jobs\",\"payday\",\"smash-grab\",\"stick-ups\",\"narcotics\",\"jewelry\",\"marked-bills\",\"vaults\",\"vehicles-fenced\"]}"
+    }
+  },
+  {
+    "id": "F5-12",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-optional",
+      "click:sec-gang-ops",
+      "click:sec-bank-jobs"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-story-tasks",
+      "text:pct-text",
+      "attr:pct-bar@style",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-story-tasks": "false",
+      "text:pct-text": "11.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"optional\",\"gang-ops\",\"bank-jobs\"]}"
+    }
+  },
+  {
+    "id": "F5-13",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-vehicles",
+      "click:sec-weapons"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-discovery",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-discovery": "false",
+      "text:pct-text": "2.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"vehicles\",\"weapons\"]}"
+    }
+  },
+  {
+    "id": "F5-14",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-story",
+      "click:sec-story-tasks",
+      "click:sec-exploration",
+      "click:sec-discovery"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:cl-box-checked",
+      "text:pct-text",
+      "attr:pct-bar@style",
+      "attr:pct-bar@aria-valuenow",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "count:cl-box-checked": "76",
+      "text:pct-text": "100.00",
+      "attr:pct-bar@aria-valuenow": "100.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"story\",\"story-tasks\",\"optional\",\"gang-ops\",\"bank-jobs\",\"payday\",\"smash-grab\",\"stick-ups\",\"narcotics\",\"jewelry\",\"marked-bills\",\"vaults\",\"vehicles-fenced\",\"exploration\",\"kenton\",\"cards\",\"waink\",\"underwater\",\"magazines\",\"meditation\",\"flamingos\",\"playlists\",\"styles\",\"races\",\"race-challenges\",\"shooting\",\"video-games\",\"pool\",\"mini-golf\",\"basketball\",\"drones\",\"stunts\",\"challenges\",\"target-decks\",\"discovery\",\"vehicles\",\"weapons\",\"animals\"]}"
+    }
+  },
+  {
+    "id": "F5-15",
+    "mode": "checklist100",
+    "keys": [
+      "click:sec-story",
+      "click:sec-kenton",
+      "reload",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-story",
+      "checked:toc-story",
+      "checked:sec-kenton",
+      "checked:sec-exploration",
+      "count:cl-box-checked",
+      "count:cl-box-disabled",
+      "text:pct-text",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-story": "true",
+      "checked:toc-story": "true",
+      "checked:sec-kenton": "true",
+      "checked:sec-exploration": "false",
+      "count:cl-box-checked": "4",
+      "count:cl-box-disabled": "0",
+      "text:pct-text": "51.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"story\",\"kenton\"]}"
+    }
+  },
+  {
+    "id": "F5-16",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/",
+      "wait:1000",
+      "goto:/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "wait:2000"
+    ],
+    "reset": "none",
+    "reads": [
+      "checked:sec-story",
+      "checked:sec-kenton",
+      "text:pct-text",
+      "attr:pct-bar@style",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-story": "true",
+      "checked:sec-kenton": "true",
+      "text:pct-text": "51.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"story\",\"kenton\"]}"
+    }
+  },
+  {
+    "id": "F5-17",
+    "mode": "checklist100",
+    "keys": [
+      "focus:sec-story",
+      "press:Space"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-story",
+      "checked:toc-story",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-story": "true",
+      "checked:toc-story": "true",
+      "text:pct-text": "50.00",
+      "local:guest_checklists": "{\"gta6-100\":[\"story\"]}"
+    }
+  },
+  {
+    "id": "F5-18",
+    "mode": "checklist100",
+    "keys": [
+      "focus:sec-story",
+      "press:Space",
+      "press:Space"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:sec-story",
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "checked:sec-story": "false",
+      "text:pct-text": "0.00",
+      "local:guest_checklists": "{}"
+    }
+  },
+  {
+    "id": "F5-19",
+    "mode": null,
+    "keys": [
+      "goto:/articles/gta-6/gta-6-100-completion-guide-interactive-checklist#profile=3",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:profile-switcher",
+      "count:cl-box-disabled",
+      "text:pct-text",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "count:cl-box-disabled": "0",
+      "text:pct-text": "0.00"
+    }
+  },
+  {
+    "id": "F5-20",
+    "mode": "checklist100",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "attr:sec-story@aria-label",
+      "attr:toc-story@aria-label",
+      "attr:sec-kenton@aria-label",
+      "attr:sec-story-tasks@aria-label",
+      "count:cl-box-labelled",
+      "count:reset-control"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "attr:sec-story@aria-label": "Mark as completed: Story Completion (50%)",
+      "attr:toc-story@aria-label": "Mark as completed: Story Completion (50%)",
+      "attr:sec-kenton@aria-label": "Mark as completed: 5 of 7 Kenton Sets Completed (1%)",
+      "attr:sec-story-tasks@aria-label": "Mark as completed: Tasks (27%)",
+      "count:cl-box-labelled": "76",
+      "count:reset-control": "0"
+    }
+  },
+  {
+    "id": "F5-21",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "wait:2000",
+      "click:sec-story",
+      "shot:mobile"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:pct-module",
+      "visible:pct-text",
+      "text:pct-text",
+      "checked:sec-story",
+      "checked:toc-story",
+      "visible:toc-story",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "visible:pct-module": "true",
+      "visible:pct-text": "true",
+      "text:pct-text": "50.00",
+      "checked:sec-story": "true",
+      "checked:toc-story": "true",
+      "visible:toc-story": "true",
+      "local:guest_checklists": "{\"gta6-100\":[\"story\"]}"
+    }
+  },
+  {
+    "id": "F5-22",
+    "mode": null,
+    "keys": [
+      "viewport:1366x900",
+      "goto:/gta-6/missions/",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:cl-box",
+      "count:mission-row",
+      "count:mission-row-optional",
+      "count:mission-row-main-link",
+      "list:chapter-heading",
+      "count:cl-box-checked",
+      "count:cl-box-disabled",
+      "count:pct-text",
+      "attr:mission-first-row@href",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/",
+      "count:cl-box-checked": "0",
+      "count:cl-box-disabled": "0",
+      "count:pct-text": "0",
+      "attr:mission-first-row@href": "/missions/gta-6/prologue"
+    }
+  },
+  {
+    "id": "F5-23",
+    "mode": "missions",
+    "keys": [
+      "click:mission-gone-fishing"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:mission-gone-fishing",
+      "count:cl-box-checked",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/",
+      "checked:mission-gone-fishing": "true",
+      "count:cl-box-checked": "1",
+      "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}"
+    }
+  },
+  {
+    "id": "F5-24",
+    "mode": "missions",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "attr:mission-box-first@aria-label",
+      "attr:mission-gone-fishing@aria-label",
+      "attr:mission-shirleys-rum@aria-label",
+      "count:cl-box-labelled"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/",
+      "attr:mission-box-first@aria-label": "Mark as completed: Prologue",
+      "attr:mission-gone-fishing@aria-label": "Mark as completed: Gone Fishing CHAPTER 1 POINT OF NO RETURN",
+      "attr:mission-shirleys-rum@aria-label": "Mark as completed: Get Shirley's Rum OPTIONALMISSABLE",
+      "count:cl-box-labelled": "134"
+    }
+  },
+  {
+    "id": "F5-25",
+    "mode": "strangers",
+    "keys": [
+      "click:mission-shirleys-rum",
+      "goto:/gta-6/missions/",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:mission-shirleys-rum",
+      "count:cl-box-checked",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/",
+      "checked:mission-shirleys-rum": "true",
+      "count:cl-box-checked": "1",
+      "local:guest_checklists": "{\"gta6-missions\":[\"7291\"]}"
+    }
+  },
+  {
+    "id": "F5-26",
+    "mode": "missions",
+    "keys": [
+      "click:mission-gone-fishing",
+      "goto:/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "wait:1500",
+      "click:sec-story"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:pct-text",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+      "text:pct-text": "50.00",
+      "local:guest_checklists": "{\"gta6-missions\":[\"7285\"],\"gta6-100\":[\"story\"]}"
+    }
+  },
+  {
+    "id": "F5-27",
+    "mode": "strangers",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:cl-box",
+      "count:mission-row",
+      "count:mission-row-strangers-link",
+      "count:mission-row-main-link",
+      "list:chapter-heading",
+      "text:p:has-text(\"Tick the checkbox\")",
+      "count:pct-text",
+      "attr:mission-skunk-ape@aria-label"
+    ],
+    "expect": {
+      "url": "/gta-6/strangers-missions/",
+      "count:pct-text": "0",
+      "attr:mission-skunk-ape@aria-label": "Mark as completed: Search for the Skunk Ape"
+    }
+  },
+  {
+    "id": "F5-28",
+    "mode": "side-missions",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:cl-box",
+      "count:activity-card",
+      "attr:.category-items .items-row h3 a@href",
+      "count:pct-text"
+    ],
+    "expect": {
+      "url": "/gta-6/side-missions/",
+      "count:pct-text": "0"
+    }
+  },
+  {
+    "id": "F5-29",
+    "mode": "random-events",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:cl-box",
+      "list:events-table-header",
+      "list:events-table-cell",
+      "count:pct-text"
+    ],
+    "expect": {
+      "url": "/gta-6/random-events/",
+      "list:events-table-header": "RANDOM EVENT || LOCATION || REWARD || STATUS",
+      "count:pct-text": "0"
+    }
+  },
+  {
+    "id": "F5-30",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/missions/",
+      "wait:1500",
+      "click:mission-gone-fishing",
+      "shot:mobile"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:mission-gone-fishing",
+      "visible:mission-gone-fishing",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/",
+      "checked:mission-gone-fishing": "true",
+      "visible:mission-gone-fishing": "true",
+      "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}"
+    }
+  },
+  {
+    "id": "F5-31",
+    "mode": null,
+    "keys": [
+      "viewport:1366x900",
+      "goto:/gta-6/missions/",
+      "wait:1500",
+      "focus:mission-gone-fishing",
+      "press:Space"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:mission-gone-fishing",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/",
+      "checked:mission-gone-fishing": "true",
+      "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}"
+    }
+  },
+  {
+    "id": "F5-32",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/missions/",
+      "wait:1500",
+      "focus:mission-gone-fishing",
+      "press:Enter",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:mission-gone-fishing",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/",
+      "checked:mission-gone-fishing": "false"
+    }
+  },
+  {
+    "id": "F5-33",
+    "mode": null,
+    "keys": [
+      "goto:/articles/gta-6/gta-6-100-checklist-does-not-exist",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "count:cl-box",
+      "count:pct-text"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-100-checklist-does-not-exist",
+      "count:pct-text": "0"
+    }
+  },
+  {
+    "id": "F5-34",
+    "mode": null,
+    "keys": [
+      "goto:/missions/gta-6/prologue",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "count:cl-box"
+    ],
+    "expect": {
+      "url": "/missions/gta-6/prologue"
+    }
+  },
+  {
+    "id": "F5-35",
+    "mode": "missions",
+    "keys": [
+      "click:mission-box-first",
+      "click:a.items-row[href=\"/missions/gta-6/prologue\"] .mission-description",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:cl-box",
+      "attr:h2.checklist-item input[data-checklist-id]@aria-label",
+      "checked:h2.checklist-item input[data-checklist-id]",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/missions/gta-6/prologue",
+      "local:guest_checklists": "{\"gta6-missions\":[\"6644\"]}"
+    }
+  },
+  {
+    "id": "F5-36",
+    "mode": null,
+    "keys": [
+      "back",
+      "wait:2000"
+    ],
+    "reset": "none",
+    "reads": [
+      "checked:mission-box-first",
+      "count:cl-box-checked",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/",
+      "checked:mission-box-first": "true",
+      "count:cl-box-checked": "1",
+      "local:guest_checklists": "{\"gta6-missions\":[\"6644\"]}"
+    }
+  },
+  {
+    "id": "F5-37",
+    "mode": "missions",
+    "keys": [
+      "click:mission-gone-fishing",
+      "goto:/gta-6/map/",
+      "wait:5000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}"
+    }
+  },
+  {
+    "id": "F5-38",
+    "mode": null,
+    "keys": [
+      "goto:/missions/gta-6/prologue",
+      "wait:1500",
+      "click:h2.checklist-item input[data-checklist-id=\"gta6-missions\"]",
+      "goto:/gta-6/missions/",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:mission-box-first",
+      "count:cl-box-checked",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/",
+      "checked:mission-box-first": "true",
+      "count:cl-box-checked": "1",
+      "local:guest_checklists": "{\"gta6-missions\":[\"6644\"]}"
+    }
+  }
+]

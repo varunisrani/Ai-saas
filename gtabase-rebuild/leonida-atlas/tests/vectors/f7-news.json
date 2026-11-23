@@ -1,0 +1,1078 @@
+[
+  {
+    "id": "F7-01",
+    "mode": "news",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "count:list-item",
+      "count:item-title-link",
+      "count:item-thumb",
+      "count:item-thumb-link",
+      "count:item-author",
+      "count:item-date",
+      "count:item-category",
+      "count:item-tags",
+      "visible:item-details-label",
+      "text:item-details-label",
+      "list:item-date",
+      "attr:item-date@datetime",
+      "text:item-category",
+      "attr:item-category@href",
+      "attr:item-thumb@width",
+      "attr:item-thumb@height",
+      "text:page-counter",
+      "count:page-links",
+      "count:share-block",
+      "count:list-banner",
+      "visible:game-filter-toggle"
+    ],
+    "expect": {
+      "url": "/gta-6/news/",
+      "count:list-item": "30",
+      "count:item-title-link": "30",
+      "count:item-thumb": "30",
+      "count:item-thumb-link": "30",
+      "count:item-date": "30",
+      "count:item-category": "30",
+      "visible:item-details-label": "false",
+      "text:item-details-label": "Details",
+      "text:item-category": "Grand Theft Auto VI",
+      "attr:item-category@href": "/gta-6/news/",
+      "text:page-counter": "Page 1 of 6",
+      "count:page-links": "0",
+      "count:list-banner": "1",
+      "visible:game-filter-toggle": "true"
+    }
+  },
+  {
+    "id": "F7-02",
+    "mode": "news",
+    "keys": [
+      "macro:show-pagination"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:page-links",
+      "list:page-links",
+      "text:page-current",
+      "attr:page-current@href",
+      "count:page-disabled",
+      "count:page-first",
+      "count:page-prev",
+      "attr:page-2-link@href",
+      "attr:page-next@href",
+      "attr:page-last@href",
+      "attr:pagination@aria-label"
+    ],
+    "expect": {
+      "url": "/gta-6/news/",
+      "count:page-links": "8",
+      "list:page-links": "1 || 2 || 3 || 4 || 5 || 6 ||  || ",
+      "text:page-current": "1",
+      "attr:page-current@href": "#",
+      "count:page-disabled": "2",
+      "count:page-first": "0",
+      "count:page-prev": "0",
+      "attr:page-2-link@href": "/gta-6/news/page-2",
+      "attr:page-next@href": "/gta-6/news/page-2",
+      "attr:page-last@href": "/gta-6/articles/page-6",
+      "attr:pagination@aria-label": "Pagination"
+    }
+  },
+  {
+    "id": "F7-03",
+    "mode": "news",
+    "keys": [
+      "macro:show-pagination",
+      "click:page-next",
+      "wait:idle"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "text:page-number",
+      "text:page-counter",
+      "count:list-item",
+      "list:item-date",
+      "count:list-intro",
+      "visible:game-filter-toggle"
+    ],
+    "expect": {
+      "url": "/gta-6/news/page-2",
+      "text:page-number": "- Page 2",
+      "text:page-counter": "Page 2 of 6",
+      "count:list-item": "30",
+      "count:list-intro": "0",
+      "visible:game-filter-toggle": "false"
+    }
+  },
+  {
+    "id": "F7-04",
+    "mode": null,
+    "keys": [
+      "macro:show-pagination"
+    ],
+    "reset": "none",
+    "reads": [
+      "list:page-links",
+      "text:page-current",
+      "attr:page-first@href",
+      "attr:page-prev@href",
+      "attr:page-next@href",
+      "attr:page-last@href",
+      "count:page-disabled"
+    ],
+    "expect": {
+      "url": "/gta-6/news/page-2",
+      "list:page-links": " ||  || 1 || 2 || 3 || 4 || 5 || 6 ||  || ",
+      "text:page-current": "2",
+      "attr:page-first@href": "/gta-6/news/",
+      "attr:page-prev@href": "/gta-6/news/",
+      "attr:page-next@href": "/gta-6/news/page-3",
+      "attr:page-last@href": "/gta-6/articles/page-6",
+      "count:page-disabled": "0"
+    }
+  },
+  {
+    "id": "F7-05",
+    "mode": null,
+    "keys": [
+      "back",
+      "wait:idle"
+    ],
+    "reset": "none",
+    "reads": [
+      "title",
+      "text:page-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/news/",
+      "text:page-counter": "Page 1 of 6"
+    }
+  },
+  {
+    "id": "F7-06",
+    "mode": "news",
+    "keys": [
+      "macro:show-pagination",
+      "click:page-last",
+      "wait:idle"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "text:page-counter",
+      "count:list-item",
+      "text:page-number",
+      "list:item-date"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/page-6",
+      "text:page-counter": "Page 6 of 6",
+      "count:list-item": "22",
+      "text:page-number": "- Page 6"
+    }
+  },
+  {
+    "id": "F7-07",
+    "mode": null,
+    "keys": [
+      "macro:show-pagination"
+    ],
+    "reset": "none",
+    "reads": [
+      "list:page-links",
+      "text:page-current",
+      "count:page-next",
+      "count:page-last",
+      "attr:page-prev@href",
+      "attr:page-first@href",
+      "count:page-disabled"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/page-6",
+      "list:page-links": " ||  || 1 || 2 || 3 || 4 || 5 || 6",
+      "text:page-current": "6",
+      "count:page-next": "0",
+      "count:page-last": "0",
+      "attr:page-prev@href": "/gta-6/news/page-5",
+      "attr:page-first@href": "/gta-6/news/",
+      "count:page-disabled": "2"
+    }
+  },
+  {
+    "id": "F7-08",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/news/page-6"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "count:list-item"
+    ],
+    "expect": {
+      "url": "/gta-6/news/page-6",
+      "count:list-item": "0"
+    }
+  },
+  {
+    "id": "F7-09",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/news/page-99"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "count:list-item"
+    ],
+    "expect": {
+      "url": "/gta-6/news/page-99",
+      "count:list-item": "0"
+    }
+  },
+  {
+    "id": "F7-10",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/news/page-1"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/news/page-1"
+    }
+  },
+  {
+    "id": "F7-11",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/news/?start=30"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "text:page-counter",
+      "text:page-number",
+      "count:list-item"
+    ],
+    "expect": {
+      "url": "/gta-6/news/?start=30",
+      "text:page-counter": "Page 2 of 6",
+      "text:page-number": "- Page 2",
+      "count:list-item": "30"
+    }
+  },
+  {
+    "id": "F7-12",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/news/?start=999"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "text:page-counter",
+      "count:list-item",
+      "text:page-number"
+    ],
+    "expect": {
+      "url": "/gta-6/news/?start=999",
+      "text:page-counter": "Page 6 of 6",
+      "count:list-item": "0",
+      "text:page-number": "- Page 6"
+    }
+  },
+  {
+    "id": "F7-13",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/news/page-2",
+      "reload",
+      "wait:idle"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "text:page-counter",
+      "count:list-item"
+    ],
+    "expect": {
+      "url": "/gta-6/news/page-2",
+      "text:page-counter": "Page 2 of 6",
+      "count:list-item": "30"
+    }
+  },
+  {
+    "id": "F7-14",
+    "mode": "guides",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "count:list-item",
+      "count:item-thumb",
+      "count:item-author",
+      "count:item-date",
+      "count:item-category",
+      "text:item-category",
+      "text:parent-category",
+      "attr:parent-category@href",
+      "count:share-buttons",
+      "list:share-buttons",
+      "text:page-counter",
+      "count:game-filter-toggle",
+      "count:list-banner"
+    ],
+    "expect": {
+      "url": "/gta-6/guides/",
+      "count:list-item": "30",
+      "count:item-thumb": "30",
+      "count:item-date": "0",
+      "count:item-category": "30",
+      "text:item-category": "Grand Theft Auto VI",
+      "text:parent-category": "Rockstar Games News & Guides",
+      "attr:parent-category@href": "/news/",
+      "text:page-counter": "Page 1 of 3",
+      "count:game-filter-toggle": "0",
+      "count:list-banner": "0"
+    }
+  },
+  {
+    "id": "F7-15",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/guides/page-3"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "count:list-item",
+      "text:page-counter",
+      "text:page-number"
+    ],
+    "expect": {
+      "url": "/gta-6/guides/page-3",
+      "count:list-item": "1",
+      "text:page-counter": "Page 3 of 3",
+      "text:page-number": "- Page 3"
+    }
+  },
+  {
+    "id": "F7-16",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/guides/page-4"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/guides/page-4"
+    }
+  },
+  {
+    "id": "F7-17",
+    "mode": "videos",
+    "keys": [
+      "macro:to-bottom"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "count:list-item",
+      "count:item-thumb",
+      "count:item-author",
+      "count:item-date",
+      "count:item-category",
+      "list:item-date",
+      "text:parent-category",
+      "count:share-buttons",
+      "count:page-counter",
+      "count:pagination",
+      "count:list-banner"
+    ],
+    "expect": {
+      "url": "/gta-6/videos/",
+      "count:list-item": "7",
+      "count:item-thumb": "7",
+      "count:item-date": "7",
+      "count:item-category": "0",
+      "text:parent-category": "Rockstar Games News & Guides",
+      "count:page-counter": "0",
+      "count:pagination": "0",
+      "count:list-banner": "1"
+    }
+  },
+  {
+    "id": "F7-18",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/videos/page-2"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/videos/page-2"
+    }
+  },
+  {
+    "id": "F7-19",
+    "mode": "videos",
+    "keys": [
+      "click:item-title-link",
+      "wait:idle"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "count:video-embed",
+      "attr:video-embed@title",
+      "count:article-author",
+      "count:author-block",
+      "text:article-published",
+      "text:article-category"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
+      "count:author-block": "1",
+      "text:article-category": "Grand Theft Auto VI"
+    }
+  },
+  {
+    "id": "F7-20",
+    "mode": "allnews",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "text:page-counter",
+      "count:list-item",
+      "count:item-tags",
+      "count:item-category",
+      "count:item-author",
+      "count:item-date",
+      "count:game-filter-toggle",
+      "visible:game-filter-menu"
+    ],
+    "expect": {
+      "url": "/news/",
+      "text:page-counter": "Page 1 of 50",
+      "count:list-item": "30",
+      "count:item-category": "0",
+      "count:item-date": "30",
+      "count:game-filter-toggle": "1",
+      "visible:game-filter-menu": "false"
+    }
+  },
+  {
+    "id": "F7-21",
+    "mode": "allnews",
+    "keys": [
+      "click:game-filter-toggle",
+      "wait:400"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:game-filter-menu",
+      "count:game-filter-links",
+      "list:game-filter-links",
+      "attr:game-filter-gta6@href",
+      "attr:game-filter-toggle@aria-expanded"
+    ],
+    "expect": {
+      "url": "/news/",
+      "visible:game-filter-menu": "true",
+      "count:game-filter-links": "8",
+      "list:game-filter-links": "All News || GTA 6 || RDR2 & Online || GTA 5 & GTA Online || GTA 4 || GTA San Andreas || GTA Vice City || GTA 3",
+      "attr:game-filter-gta6@href": "/gta-6/news/",
+      "attr:game-filter-toggle@aria-expanded": "true"
+    }
+  },
+  {
+    "id": "F7-22",
+    "mode": "allnews",
+    "keys": [
+      "click:game-filter-toggle",
+      "wait:400",
+      "click:game-filter-gta6",
+      "wait:idle"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "text:page-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/news/",
+      "text:page-counter": "Page 1 of 6"
+    }
+  },
+  {
+    "id": "F7-23",
+    "mode": "news",
+    "keys": [
+      "focus:game-filter-toggle",
+      "press:Enter",
+      "wait:400"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:game-filter-menu",
+      "attr:game-filter-toggle@aria-expanded"
+    ],
+    "expect": {
+      "url": "/gta-6/news/",
+      "visible:game-filter-menu": "true",
+      "attr:game-filter-toggle@aria-expanded": "true"
+    }
+  },
+  {
+    "id": "F7-24",
+    "mode": null,
+    "keys": [
+      "press:Escape",
+      "wait:400"
+    ],
+    "reset": "none",
+    "reads": [
+      "visible:game-filter-menu",
+      "attr:game-filter-toggle@aria-expanded"
+    ],
+    "expect": {
+      "url": "/gta-6/news/",
+      "visible:game-filter-menu": "false",
+      "attr:game-filter-toggle@aria-expanded": "false"
+    }
+  },
+  {
+    "id": "F7-25",
+    "mode": "news",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:item-title-link",
+      "attr:item-title-link@href"
+    ],
+    "expect": {
+      "url": "/gta-6/news/",
+      "attr:item-title-link@href": "/gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6"
+    }
+  },
+  {
+    "id": "F7-26",
+    "mode": null,
+    "keys": [
+      "click:item-title-link",
+      "wait:idle"
+    ],
+    "reset": "none",
+    "reads": [
+      "title",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6"
+    }
+  },
+  {
+    "id": "F7-27",
+    "mode": "article",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "count:article-meta",
+      "count:article-author",
+      "text:article-published",
+      "attr:article-published@datetime",
+      "count:article-modified",
+      "text:article-category",
+      "attr:article-category@href",
+      "count:share-buttons",
+      "list:share-buttons",
+      "count:article-hero",
+      "text:toc-heading",
+      "count:toc-links",
+      "list:toc-links",
+      "count:section-anchors",
+      "list:section-headings",
+      "count:comments",
+      "count:comment-sort-options",
+      "list:comment-sort-options",
+      "text:comment-sort-current",
+      "attr:comment-limit@data-max",
+      "attr:comment-editor@aria-label",
+      "count:sidebar"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips",
+      "count:article-meta": "1",
+      "count:article-modified": "0",
+      "text:article-category": "Grand Theft Auto VI",
+      "attr:article-category@href": "/gta-6/news/",
+      "count:article-hero": "1",
+      "count:toc-links": "11",
+      "count:section-anchors": "11",
+      "count:sidebar": "1"
+    }
+  },
+  {
+    "id": "F7-28",
+    "mode": "article",
+    "keys": [
+      "click:toc-link-3",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "attr:toc-link-3@href",
+      "attr:toc-link-3@data-heading",
+      "visible:#duck-to-hide-from-the-cops"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops",
+      "attr:toc-link-3@href": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops"
+    }
+  },
+  {
+    "id": "F7-29",
+    "mode": "article",
+    "keys": [
+      "macro:show-pager"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:pager",
+      "count:pager-prev",
+      "count:pager-next",
+      "attr:pager-prev@rel",
+      "attr:pager-next@rel",
+      "attr:pager-prev@href",
+      "attr:pager-next@href"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips",
+      "count:pager": "1",
+      "count:pager-prev": "1",
+      "count:pager-next": "1",
+      "attr:pager-prev@href": "/gta-6/articles/gta-6-phone-guide-every-app-explained",
+      "attr:pager-next@href": "/gta-6/articles/gta-6-review-bombed-on-metacritic"
+    }
+  },
+  {
+    "id": "F7-30",
+    "mode": "article",
+    "keys": [
+      "macro:to-bottom"
+    ],
+    "reset": "clear",
+    "reads": [
+      "list:breadcrumb-items",
+      "count:breadcrumb-items",
+      "count:related-block"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips",
+      "count:breadcrumb-items": "4",
+      "count:related-block": "1"
+    }
+  },
+  {
+    "id": "F7-31",
+    "mode": "controls",
+    "keys": [
+      "macro:to-bottom"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "count:article-published",
+      "text:article-modified",
+      "attr:article-modified@datetime",
+      "text:article-category",
+      "count:toc-links",
+      "count:section-anchors",
+      "count:related-block",
+      "text:related-heading",
+      "count:related-cards",
+      "list:breadcrumb-items"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+      "count:article-published": "0",
+      "text:article-category": "Grand Theft Auto VI",
+      "count:toc-links": "10",
+      "count:section-anchors": "10",
+      "count:related-block": "1",
+      "text:related-heading": "CONTROLS ACROSS ALL GAMES",
+      "count:related-cards": "2"
+    }
+  },
+  {
+    "id": "F7-32",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/articles/this-article-does-not-exist-xyz"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/this-article-does-not-exist-xyz"
+    }
+  },
+  {
+    "id": "F7-33",
+    "mode": null,
+    "keys": [
+      "goto:/articles/gta-6/this-article-does-not-exist-xyz"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/this-article-does-not-exist-xyz"
+    }
+  },
+  {
+    "id": "F7-34",
+    "mode": "news-phone",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:list-item",
+      "visible:item-thumb",
+      "visible:game-filter-toggle",
+      "visible:sidebar",
+      "text:page-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/news/",
+      "count:list-item": "30",
+      "visible:item-thumb": "true",
+      "visible:game-filter-toggle": "true",
+      "visible:sidebar": "true",
+      "text:page-counter": "Page 1 of 6"
+    }
+  },
+  {
+    "id": "F7-35",
+    "mode": "article-phone",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "visible:toc",
+      "count:toc-links",
+      "visible:share-block",
+      "visible:article-hero",
+      "visible:sidebar",
+      "text:article-published"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips",
+      "visible:toc": "true",
+      "count:toc-links": "11",
+      "visible:article-hero": "true",
+      "visible:sidebar": "true"
+    }
+  },
+  {
+    "id": "F7-36",
+    "mode": "article",
+    "keys": [
+      "click:article-category",
+      "wait:idle"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "text:page-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/news/",
+      "text:page-counter": "Page 1 of 6"
+    }
+  },
+  {
+    "id": "F7-37",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/articles"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "calls",
+      "text:page-counter",
+      "count:list-item"
+    ],
+    "expect": {
+      "url": "/gta-6/articles",
+      "text:page-counter": "Page 1 of 6",
+      "count:list-item": "30"
+    }
+  },
+  {
+    "id": "F7-38",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/articles/gta-6-driving-tips#vehicle-melee"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "url",
+      "visible:#vehicle-melee"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips#vehicle-melee"
+    }
+  },
+  {
+    "id": "F7-39",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/guides/"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:list-item",
+      "visible:item-thumb",
+      "visible:item-title-link",
+      "visible:sidebar",
+      "visible:share-block",
+      "text:page-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/guides/",
+      "count:list-item": "30",
+      "visible:item-thumb": "true",
+      "visible:item-title-link": "true",
+      "visible:sidebar": "true",
+      "text:page-counter": "Page 1 of 3"
+    }
+  },
+  {
+    "id": "F7-40",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/videos/"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:list-item",
+      "visible:item-thumb",
+      "visible:item-date",
+      "count:page-counter",
+      "count:pagination"
+    ],
+    "expect": {
+      "url": "/gta-6/videos/",
+      "count:list-item": "7",
+      "visible:item-thumb": "true",
+      "visible:item-date": "true",
+      "count:page-counter": "0",
+      "count:pagination": "0"
+    }
+  },
+  {
+    "id": "F7-41",
+    "mode": "videos",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "attr:item-thumb-link@href",
+      "attr:item-title-link@href",
+      "attr:item-thumb@alt",
+      "text:item-title-link",
+      "attr:item-date@datetime",
+      "text:item-date",
+      "visible:item-details-label",
+      "text:item-details-label"
+    ],
+    "expect": {
+      "url": "/gta-6/videos/",
+      "attr:item-thumb-link@href": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
+      "attr:item-title-link@href": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
+      "text:item-date": "on October 15, 2026",
+      "visible:item-details-label": "false",
+      "text:item-details-label": "Details"
+    }
+  },
+  {
+    "id": "F7-42",
+    "mode": "guides",
+    "keys": [
+      "macro:show-pagination"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:page-links",
+      "list:page-links",
+      "text:page-current",
+      "attr:page-next@href",
+      "attr:page-last@href",
+      "count:page-prev",
+      "count:page-first",
+      "count:page-disabled",
+      "attr:item-category@href",
+      "attr:parent-category@href"
+    ],
+    "expect": {
+      "url": "/gta-6/guides/",
+      "count:page-links": "5",
+      "list:page-links": "1 || 2 || 3 ||  || ",
+      "text:page-current": "1",
+      "attr:page-next@href": "/gta-6/guides/page-2",
+      "attr:page-last@href": "/gta-6/guides/page-3",
+      "count:page-prev": "0",
+      "count:page-first": "0",
+      "count:page-disabled": "2",
+      "attr:item-category@href": "/gta-6/news/",
+      "attr:parent-category@href": "/news/"
+    }
+  },
+  {
+    "id": "F7-43",
+    "mode": "article",
+    "keys": [
+      "focus:toc-link-3",
+      "press:Enter",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops"
+    }
+  },
+  {
+    "id": "F7-44",
+    "mode": null,
+    "keys": [
+      "reload",
+      "wait:idle"
+    ],
+    "reset": "none",
+    "reads": [
+      "url",
+      "title"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops"
+    }
+  },
+  {
+    "id": "F7-45",
+    "mode": "article",
+    "keys": [
+      "click:toc-link-3",
+      "wait:600",
+      "back",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips"
+    }
+  },
+  {
+    "id": "F7-46",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:toc",
+      "count:toc-links",
+      "text:toc-heading",
+      "visible:article-modified",
+      "text:article-modified",
+      "visible:sidebar"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+      "visible:toc": "true",
+      "count:toc-links": "10",
+      "visible:article-modified": "true",
+      "visible:sidebar": "true"
+    }
+  },
+  {
+    "id": "F7-47",
+    "mode": "controls",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "list:share-buttons",
+      "count:article-author",
+      "count:author-block",
+      "attr:article-hero@alt",
+      "list:toc-links",
+      "count:comments",
+      "list:comment-sort-options"
+    ],
+    "expect": {
+      "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+      "count:author-block": "0"
+    }
+  },
+  {
+    "id": "F7-48",
+    "mode": "article",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "attr:article-hero@alt",
+      "attr:article-hero@width",
+      "visible:item-details-label",
+      "text:.item-page dt.article-info-term",
+      "visible:.item-page dt.article-info-term",
+      "attr:comment-editor@contenteditable",
+      "text:comments-count"
+    ],
+    "expect": {
+      "url": "/gta-6/articles/gta-6-driving-tips",
+      "visible:item-details-label": "false"
+    }
+  }
+]

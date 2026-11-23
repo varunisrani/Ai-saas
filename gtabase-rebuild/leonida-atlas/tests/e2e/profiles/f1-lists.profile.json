@@ -1,0 +1,170 @@
+{
+ "app": "Leonida Atlas (rebuild) \u2014 vectors for suite f1-lists",
+ "baseUrl": "http://localhost:3000",
+ "readOnly": false,
+ "browser": {
+  "channel": "chromium",
+  "viewport": {
+   "width": 1366,
+   "height": 900
+  },
+  "locale": "en-US",
+  "timezone": "UTC"
+ },
+ "timeouts": {
+  "action": 6000,
+  "navigation": 30000,
+  "settle": 3000,
+  "idle": 8000
+ },
+ "tokens": {
+  "heading": "h1",
+  "list-count": "[data-testid=\"list-count\"]",
+  "list-count-number": "[data-testid=\"list-count-number\"]",
+  "list-count-bottom-number": "[data-testid=\"list-count-bottom-number\"]",
+  "card": "[data-testid=\"card\"]",
+  "card-1": "[data-testid=\"card-1\"]",
+  "card-1-link": "[data-testid=\"card-1-link\"]",
+  "card-1-name": "[data-testid=\"card-1-name\"]",
+  "card-2-name": "[data-testid=\"card-2-name\"]",
+  "card-1-class": "[data-testid=\"card-1-class\"]",
+  "card-2-class": "[data-testid=\"card-2-class\"]",
+  "card-1-make": "[data-testid=\"card-1-make\"]",
+  "card-2-make": "[data-testid=\"card-2-make\"]",
+  "card-1-speed": "[data-testid=\"card-1-speed\"]",
+  "card-2-speed": "[data-testid=\"card-2-speed\"]",
+  "card-last-speed": "[data-testid=\"card-last-speed\"]",
+  "card-last-speed-bar": "[data-testid=\"card-last-speed-bar\"]",
+  "card-1-seats": "[data-testid=\"card-1-seats\"]",
+  "card-1-damage": "[data-testid=\"card-1-damage\"]",
+  "card-2-damage": "[data-testid=\"card-2-damage\"]",
+  "card-last-damage": "[data-testid=\"card-last-damage\"]",
+  "card-last-damage-bar": "[data-testid=\"card-last-damage-bar\"]",
+  "card-labels": "[data-testid=\"card-labels\"]",
+  "card-stat-bar": "[data-testid=\"card-stat-bar\"]",
+  "card-stat-fill": "[data-testid=\"card-stat-fill\"]",
+  "card-image": "[data-testid=\"card-image\"]",
+  "card-standout-badge": "[data-testid=\"card-standout-badge\"]",
+  "card-unique-badge": "[data-testid=\"card-unique-badge\"]",
+  "card-unknown-stat": "[data-testid=\"card-unknown-stat\"]",
+  "card-price-pill": "[data-testid=\"card-price-pill\"]",
+  "autopage-sentinel": "[data-testid=\"autopage-sentinel\"]",
+  "filter-groups": "[data-testid=\"filter-groups\"]",
+  "filter-titles": "[data-testid=\"filter-titles\"]",
+  "name-search": "[data-testid=\"name-search\"]",
+  "real-life-search": "[data-testid=\"real-life-search\"]",
+  "class-options": "[data-testid=\"class-options\"]",
+  "class-checked": "[data-testid=\"class-checked\"]",
+  "class-empty": "[data-testid=\"class-empty\"]",
+  "class-1": "[data-testid=\"class-1\"]",
+  "class-super": "[data-testid=\"class-super\"]",
+  "class-super-box": "[data-testid=\"class-super-box\"]",
+  "class-sports": "[data-testid=\"class-sports\"]",
+  "class-sports-box": "[data-testid=\"class-sports-box\"]",
+  "class-boats": "[data-testid=\"class-boats\"]",
+  "class-handguns": "[data-testid=\"class-handguns\"]",
+  "class-handguns-box": "[data-testid=\"class-handguns-box\"]",
+  "class-shotguns": "[data-testid=\"class-shotguns\"]",
+  "class-shotguns-box": "[data-testid=\"class-shotguns-box\"]",
+  "class-melee": "[data-testid=\"class-melee\"]",
+  "manufacturer-select": "[data-testid=\"manufacturer-select\"]",
+  "manufacturer-dropdown": "[data-testid=\"manufacturer-dropdown\"]",
+  "manufacturer-shown": "[data-testid=\"manufacturer-shown\"]",
+  "manufacturer-search": "[data-testid=\"manufacturer-search\"]",
+  "manufacturer-results": "[data-testid=\"manufacturer-results\"]",
+  "manufacturer-options": "[data-testid=\"manufacturer-options\"]",
+  "standout-select": "[data-testid=\"standout-select\"]",
+  "standout-dropdown": "[data-testid=\"standout-dropdown\"]",
+  "standout-shown": "[data-testid=\"standout-shown\"]",
+  "standout-results": "[data-testid=\"standout-results\"]",
+  "standout-option-hide": "[data-testid=\"standout-option-hide\"]",
+  "standout-option-2": "[data-testid=\"standout-option-2\"]",
+  "standout-option-2-text": "[data-testid=\"standout-option-2-text\"]",
+  "standout-option-1-text": "[data-testid=\"standout-option-1-text\"]",
+  "weapon-type-select": "[data-testid=\"weapon-type-select\"]",
+  "weapon-type-dropdown": "[data-testid=\"weapon-type-dropdown\"]",
+  "weapon-type-shown": "[data-testid=\"weapon-type-shown\"]",
+  "weapon-type-options": "[data-testid=\"weapon-type-options\"]",
+  "weapon-type-option-unique": "[data-testid=\"weapon-type-option-unique\"]",
+  "sort-select": "[data-testid=\"sort-select\"]",
+  "sort-options": "[data-testid=\"sort-options\"]",
+  "sort-dropdown": "[data-testid=\"sort-dropdown\"]",
+  "sort-shown": "[data-testid=\"sort-shown\"]",
+  "sort-option-name": "[data-testid=\"sort-option-name\"]",
+  "sort-option-manufacturer": "[data-testid=\"sort-option-manufacturer\"]",
+  "sort-option-class": "[data-testid=\"sort-option-class\"]",
+  "sort-option-speed": "[data-testid=\"sort-option-speed\"]",
+  "sort-option-seats": "[data-testid=\"sort-option-seats\"]",
+  "sort-option-damage": "[data-testid=\"sort-option-damage\"]",
+  "sort-direction": "[data-testid=\"sort-direction\"]",
+  "clear-filters": "[data-testid=\"clear-filters\"]",
+  "selected-filters": "[data-testid=\"selected-filters\"]",
+  "filters-toggle": "[data-testid=\"filters-toggle\"]",
+  "filter-panel": "[data-testid=\"filter-panel\"]",
+  "filter-panel-content": "[data-testid=\"filter-panel-content\"]",
+  "filter-backdrop": "[data-testid=\"filter-backdrop\"]",
+  "layout-list": "[data-testid=\"layout-list\"]",
+  "layout-grid": "[data-testid=\"layout-grid\"]",
+  "products-wrapper": "[data-testid=\"products-wrapper\"]",
+  "list-head": "[data-testid=\"list-head\"]",
+  "megafilter-wrap": "[data-testid=\"megafilter-wrap\"]"
+ },
+ "modes": {
+  "hub": "/gta-6/",
+  "vehicles": [
+   "goto:/gta-6/vehicles/",
+   "waitfor:card",
+   "wait:600"
+  ],
+  "weapons": [
+   "goto:/gta-6/weapons/",
+   "waitfor:card",
+   "wait:600"
+  ]
+ },
+ "resets": {
+  "clear": [
+   "try:keyup:Control",
+   "try:clear:local",
+   "try:clear:session",
+   "try:viewport:1366x900"
+  ]
+ },
+ "macros": {
+  "fresh": [
+   "goto:about:blank"
+  ],
+  "hide-standouts": [
+   "click:standout-dropdown",
+   "click:standout-option-hide",
+   "wait:700"
+  ],
+  "sort-by-name": [
+   "click:sort-dropdown",
+   "click:sort-option-name",
+   "wait:700"
+  ],
+  "flip-direction": [
+   "click:sort-direction",
+   "wait:700"
+  ],
+  "load-next-page": [
+   "scroll:autopage-sentinel",
+   "wait:900"
+  ]
+ },
+ "readouts": [
+  {
+   "key": "url",
+   "read": "url"
+  },
+  {
+   "key": "count",
+   "read": "text:list-count-number"
+  },
+  {
+   "key": "cards",
+   "read": "count:card"
+  }
+ ]
+}

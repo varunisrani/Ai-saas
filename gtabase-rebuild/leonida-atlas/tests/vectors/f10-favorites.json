@@ -1,0 +1,747 @@
+[
+  {
+    "id": "F10-01",
+    "mode": "vehicle",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:fav-button",
+      "text:fav-button",
+      "attr:fav-button@type",
+      "count:fav-button-role",
+      "attr:body@class",
+      "visible:login-modal",
+      "text:compare-button",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "count:fav-button": "1",
+      "text:fav-button": "Add To Favorites",
+      "attr:fav-button@type": "button",
+      "count:fav-button-role": "0",
+      "visible:login-modal": "false",
+      "text:compare-button": "Compare To"
+    }
+  },
+  {
+    "id": "F10-02",
+    "mode": "vehicle",
+    "keys": [
+      "macro:open-fav-prompt"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-modal",
+      "text:login-title",
+      "text:login-benefits",
+      "count:login-benefits",
+      "attr:login-modal@class",
+      "text:fav-button",
+      "local:guest_checklists",
+      "calls",
+      "blocked",
+      "dialog"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:login-modal": "true",
+      "text:login-title": "Save your GTA 6 favorites",
+      "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+      "count:login-benefits": "1",
+      "text:fav-button": "Add To Favorites"
+    }
+  },
+  {
+    "id": "F10-03",
+    "mode": "weapon",
+    "keys": [
+      "macro:open-fav-prompt"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:fav-button",
+      "visible:login-modal",
+      "text:login-title",
+      "text:login-benefits",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/weapons/assault-rifle",
+      "text:fav-button": "Add To Favorites",
+      "visible:login-modal": "true",
+      "text:login-title": "Save your GTA 6 favorites",
+      "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more."
+    }
+  },
+  {
+    "id": "F10-04",
+    "mode": "animal",
+    "keys": [
+      "macro:open-fav-prompt"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:fav-button",
+      "visible:login-modal",
+      "text:login-title",
+      "text:login-benefits",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/animals/gray-fox",
+      "text:fav-button": "Add To Favorites",
+      "visible:login-modal": "true",
+      "text:login-title": "Save your GTA 6 favorites",
+      "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more."
+    }
+  },
+  {
+    "id": "F10-05",
+    "mode": "radio",
+    "keys": [
+      "macro:open-fav-prompt"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:fav-button",
+      "visible:login-modal",
+      "text:login-title",
+      "text:login-benefits",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/flash-fm",
+      "text:fav-button": "Add To Favorites",
+      "visible:login-modal": "true",
+      "text:login-title": "Save your GTA 6 favorites",
+      "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more."
+    }
+  },
+  {
+    "id": "F10-06",
+    "mode": "property",
+    "keys": [
+      "macro:open-fav-prompt"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:fav-button",
+      "visible:login-modal",
+      "text:login-title",
+      "text:login-benefits",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/properties/7th-avenue-garage",
+      "text:fav-button": "Add To Favorites",
+      "visible:login-modal": "true",
+      "text:login-title": "Save your GTA 6 favorites",
+      "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more."
+    }
+  },
+  {
+    "id": "F10-07",
+    "mode": "character",
+    "keys": [
+      "macro:open-fav-prompt"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:fav-button",
+      "visible:login-modal",
+      "text:login-title",
+      "text:login-benefits",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/jason",
+      "text:fav-button": "Add To Favorites",
+      "visible:login-modal": "true",
+      "text:login-title": "Save your GTA 6 favorites",
+      "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more."
+    }
+  },
+  {
+    "id": "F10-08",
+    "mode": "mission",
+    "keys": [
+      "macro:open-fav-prompt"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:fav-button",
+      "visible:login-modal",
+      "text:login-title",
+      "text:login-benefits",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/breakfast-run",
+      "text:fav-button": "Add To Favorites",
+      "visible:login-modal": "true",
+      "text:login-title": "Save your GTA 6 favorites",
+      "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more."
+    }
+  },
+  {
+    "id": "F10-09",
+    "mode": "vehicle",
+    "keys": [
+      "macro:open-fav-prompt",
+      "click:modal-close",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-modal",
+      "text:fav-button",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:login-modal": "false",
+      "text:fav-button": "Add To Favorites"
+    }
+  },
+  {
+    "id": "F10-10",
+    "mode": "vehicle",
+    "keys": [
+      "macro:open-fav-prompt",
+      "press:Escape",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-modal",
+      "text:fav-button",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:login-modal": "false",
+      "text:fav-button": "Add To Favorites"
+    }
+  },
+  {
+    "id": "F10-11",
+    "mode": "vehicle",
+    "keys": [
+      "macro:open-fav-prompt",
+      "press:Escape",
+      "wait:800",
+      "macro:open-fav-prompt"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-modal",
+      "count:login-benefits",
+      "text:login-title"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:login-modal": "true",
+      "count:login-benefits": "1",
+      "text:login-title": "Save your GTA 6 favorites"
+    }
+  },
+  {
+    "id": "F10-12",
+    "mode": "vehicle",
+    "keys": [
+      "macro:open-fav-prompt",
+      "press:Escape",
+      "wait:800",
+      "click:header-login",
+      "waitfor:login-modal",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-modal",
+      "text:login-title",
+      "count:login-benefits",
+      "attr:login-modal@class",
+      "attr:header-login@href"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:login-modal": "true",
+      "text:login-title": "Sign in to MyBase",
+      "count:login-benefits": "1",
+      "attr:header-login@href": "https://www.gtabase.com/gta-6/vehicles/sunset-sanchez#loginbox"
+    }
+  },
+  {
+    "id": "F10-13",
+    "mode": "vehicle",
+    "keys": [
+      "click:header-login",
+      "waitfor:login-modal",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-modal",
+      "text:login-title",
+      "count:login-benefits",
+      "attr:login-modal@class",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:login-modal": "true",
+      "text:login-title": "Sign in to MyBase",
+      "count:login-benefits": "0"
+    }
+  },
+  {
+    "id": "F10-14",
+    "mode": "vehicle",
+    "keys": [
+      "click:header-login",
+      "waitfor:login-modal",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-discord",
+      "visible:login-google",
+      "attr:login-username@placeholder",
+      "attr:login-password@type",
+      "attr:login-password@placeholder",
+      "visible:login-remember",
+      "checked:login-remember",
+      "text:login-submit",
+      "enabled:login-submit",
+      "list:login-links",
+      "attr:login-register@href",
+      "attr:modal-close@aria-label"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "attr:modal-close@aria-label": "close"
+    }
+  },
+  {
+    "id": "F10-15",
+    "mode": "vehicle",
+    "keys": [
+      "focus:fav-button",
+      "press:Enter",
+      "waitfor:login-modal",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-modal",
+      "text:login-title",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:login-modal": "true",
+      "text:login-title": "Save your GTA 6 favorites"
+    }
+  },
+  {
+    "id": "F10-16",
+    "mode": "vehicle",
+    "keys": [
+      "focus:fav-button",
+      "press:Space",
+      "waitfor:login-modal",
+      "wait:500",
+      "press:Escape",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-modal",
+      "text:fav-button"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:login-modal": "false",
+      "text:fav-button": "Add To Favorites"
+    }
+  },
+  {
+    "id": "F10-17",
+    "mode": "vehicle",
+    "keys": [
+      "macro:open-fav-prompt",
+      "reload",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:fav-button",
+      "visible:login-modal",
+      "text:login-title",
+      "count:login-benefits",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "text:fav-button": "Add To Favorites",
+      "visible:login-modal": "false",
+      "text:login-title": "Sign in to MyBase",
+      "count:login-benefits": "0"
+    }
+  },
+  {
+    "id": "F10-18",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/vehicles/sunset-sanchez",
+      "wait:1000",
+      "macro:open-fav-prompt",
+      "shot:mobile-prompt"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:header-login",
+      "visible:mobile-join-toggle",
+      "text:fav-button",
+      "visible:login-modal",
+      "text:login-title",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:header-login": "false",
+      "visible:mobile-join-toggle": "true",
+      "text:fav-button": "Add To Favorites",
+      "visible:login-modal": "true",
+      "text:login-title": "Save your GTA 6 favorites"
+    }
+  },
+  {
+    "id": "F10-19",
+    "mode": null,
+    "keys": [
+      "viewport:390x844",
+      "goto:/gta-6/vehicles/sunset-sanchez",
+      "wait:1000",
+      "click:mobile-join-toggle",
+      "wait:500",
+      "click:mobile-login",
+      "waitfor:login-modal",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:mobile-login",
+      "visible:login-modal",
+      "text:login-title",
+      "count:login-benefits"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:mobile-login": "false",
+      "visible:login-modal": "true",
+      "text:login-title": "Sign in to MyBase",
+      "count:login-benefits": "0"
+    }
+  },
+  {
+    "id": "F10-20",
+    "mode": null,
+    "keys": [
+      "viewport:1366x900",
+      "goto:/gta-6/vehicles/",
+      "wait:idle",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:list-fav-control",
+      "count:fav-button",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+      "count:list-fav-control": "0",
+      "count:fav-button": "0"
+    }
+  },
+  {
+    "id": "F10-21",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/weapons/",
+      "wait:idle",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:list-fav-control",
+      "count:fav-button"
+    ],
+    "expect": {
+      "url": "/gta-6/weapons/#sort=name&sortdir=asc",
+      "count:list-fav-control": "0",
+      "count:fav-button": "0"
+    }
+  },
+  {
+    "id": "F10-22",
+    "mode": "map-garage",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "visible:map-popup",
+      "text:map-popup-title",
+      "list:map-popup-buttons",
+      "attr:map-fav-star@aria-label",
+      "attr:map-fav-star@aria-pressed",
+      "attr:map-fav-star@title",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#garage-003",
+      "visible:map-popup": "true",
+      "attr:map-fav-star@aria-label": "Add to favourites",
+      "attr:map-fav-star@aria-pressed": "false",
+      "attr:map-fav-star@title": "Add to favourites"
+    }
+  },
+  {
+    "id": "F10-23",
+    "mode": "map-garage",
+    "keys": [
+      "click:map-fav-star",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:map-panel",
+      "attr:map-panel@role",
+      "attr:map-panel@aria-label",
+      "text:map-panel-title",
+      "text:map-panel-text",
+      "text:map-panel-login",
+      "attr:map-panel-login@href",
+      "text:map-panel-join",
+      "attr:map-panel-join@href",
+      "attr:map-panel-join@target",
+      "count:map-popup",
+      "local:guest_checklists",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#garage-003",
+      "visible:map-panel": "true",
+      "attr:map-panel@role": "dialog",
+      "attr:map-panel@aria-label": "Favourites",
+      "text:map-panel-title": "FAVOURITES",
+      "text:map-panel-text": "Want to keep your favourite places? Members of GTABase can star any marker and find it again under Personal, on every device. Log in to start.",
+      "text:map-panel-login": "LOG IN",
+      "attr:map-panel-login@href": "#loginbox",
+      "count:map-popup": "0"
+    }
+  },
+  {
+    "id": "F10-24",
+    "mode": "map-garage",
+    "keys": [
+      "waitfor:map-fav-star",
+      "wait:3000",
+      "click:map-fav-star",
+      "wait:800",
+      "click:map-panel-login",
+      "waitfor:login-modal",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:login-modal",
+      "text:login-title",
+      "count:map-panel",
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#garage-003",
+      "visible:login-modal": "true",
+      "text:login-title": "Sign in to MyBase",
+      "count:map-panel": "0"
+    }
+  },
+  {
+    "id": "F10-25",
+    "mode": "map-garage",
+    "keys": [
+      "waitfor:map-fav-star",
+      "wait:3000",
+      "click:map-fav-star",
+      "wait:800",
+      "click:map-panel-close",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:map-panel",
+      "count:map-popup"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#garage-003",
+      "count:map-panel": "0",
+      "count:map-popup": "0"
+    }
+  },
+  {
+    "id": "F10-26",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/map/",
+      "wait:6000",
+      "click:map-personal-marker",
+      "wait:4000",
+      "shot:personal-marker"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:map-personal-marker",
+      "visible:map-panel",
+      "attr:map-panel@aria-label",
+      "text:map-panel-title",
+      "text:map-panel-text",
+      "calls",
+      "blocked",
+      "errors"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:map-panel": "true",
+      "attr:map-panel@aria-label": "Personal marker",
+      "text:map-panel-title": "PERSONAL MARKER",
+      "text:map-panel-text": "The server did not answer. Please try again in a moment."
+    }
+  },
+  {
+    "id": "F10-27",
+    "mode": "membership",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:plan",
+      "list:plan-title",
+      "list:plan-price",
+      "text:plan-recommended",
+      "count:plan-free-features",
+      "count:plan-vip-year-features",
+      "count:plan-vip-month-features",
+      "list:plan-free-features"
+    ],
+    "expect": {
+      "url": "/membership/"
+    }
+  },
+  {
+    "id": "F10-28",
+    "mode": "membership",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "list:plan-vip-year-features",
+      "text:plan-free-favorites",
+      "text:plan-free-checklists",
+      "text:plan-free-collection",
+      "text:plan-vip-map",
+      "text:plan-vip-profiles"
+    ],
+    "expect": {
+      "url": "/membership/"
+    }
+  },
+  {
+    "id": "F10-29",
+    "mode": "membership",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "attr:.osm-plan-3 .btn-signup@href",
+      "attr:.osm-plan-2 .btn-signup@href",
+      "attr:.osm-plan-1 .btn-signup@href",
+      "attr:.osm-plan-3 .btn-details@href",
+      "attr:header-join@href",
+      "text:header-join"
+    ],
+    "expect": {
+      "url": "/membership/"
+    }
+  },
+  {
+    "id": "F10-30",
+    "mode": null,
+    "keys": [
+      "goto:/mybase/gta-6/",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "count:fav-button"
+    ],
+    "expect": {
+      "url": "/mybase/gta-6/",
+      "count:fav-button": "0"
+    }
+  },
+  {
+    "id": "F10-31",
+    "mode": null,
+    "keys": [
+      "goto:/mybase/gta-online/",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "list:table-header",
+      "count:fav-button"
+    ],
+    "expect": {
+      "url": "/mybase/gta-online/",
+      "count:fav-button": "0"
+    }
+  },
+  {
+    "id": "F10-32",
+    "mode": null,
+    "keys": [
+      "goto:/login/",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "count:page-form-input",
+      "list:#ja-content form button"
+    ],
+    "expect": {
+      "url": "/login/",
+      "count:page-form-input": "3"
+    }
+  }
+]

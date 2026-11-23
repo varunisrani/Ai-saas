@@ -1,0 +1,1599 @@
+[
+  {
+    "id": "F4-01",
+    "mode": "map",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:heading",
+      "attr:map-root@class",
+      "count:group-rail",
+      "count:groups",
+      "count:category-rows",
+      "count:category-rows-tracked",
+      "count:category-checked",
+      "text:show-hide-all",
+      "text:hide-found",
+      "attr:hide-found@title",
+      "text:guest-line",
+      "attr:login-link@href",
+      "visible:sidebar-open",
+      "text:suggest-open",
+      "text:own-open",
+      "text:contest-open",
+      "text:feedback-open",
+      "count:canvas",
+      "count:county-labels",
+      "local:guest_checklists",
+      "local:gtab-map-filter",
+      "local:gtab-map-view",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:group-rail": "10",
+      "count:groups": "10",
+      "count:category-checked": "98",
+      "text:show-hide-all": "HIDE ALL",
+      "text:hide-found": "HIDE FOUND",
+      "attr:hide-found@title": "Take the markers you found off the map (the counts stay)",
+      "text:guest-line": "Log in to keep progress on all your devices.",
+      "attr:login-link@href": "/login",
+      "visible:sidebar-open": "false",
+      "text:suggest-open": "+ SUGGEST LOCATION",
+      "text:own-open": "+ PERSONAL MARKER"
+    }
+  },
+  {
+    "id": "F4-02",
+    "mode": "map",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "list:#gtab-map .gtab-filter-group-name",
+      "attr:nav[aria-label=\"Groups\"] button >> nth=0@aria-label",
+      "attr:rail-robberies@title",
+      "text:cat-banks-counter",
+      "attr:cat-banks-counter@title",
+      "attr:cat-banks-counter@aria-hidden",
+      "text:cat-safehouses-sr",
+      "attr:cat-banks-name@href",
+      "attr:cat-garages-name@href",
+      "attr:cat-garages-only@aria-label",
+      "text:cat-garages-only",
+      "attr:cat-garages-next@aria-label",
+      "text:cat-atms-counter",
+      "attr:cat-atms-counter@title",
+      "attr:cat-atms-row@class",
+      "checked:cat-atms-box",
+      "checked:cat-gas-box",
+      "checked:cat-banks-box",
+      "attr:group-robberies-fold@aria-label",
+      "attr:group-robberies-fold@aria-expanded"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "attr:rail-robberies@title": "Robberies",
+      "attr:cat-banks-counter@title": "Found so far, out of all markers of this category",
+      "attr:cat-banks-counter@aria-hidden": "true",
+      "attr:cat-banks-name@href": "/gta-6/map/?feature=bank",
+      "attr:cat-garages-name@href": "/gta-6/map/?feature=garages",
+      "attr:cat-garages-only@aria-label": "Show only this category: Garages",
+      "text:cat-garages-only": "Only",
+      "attr:cat-garages-next@aria-label": "Show only this category: Garages",
+      "attr:cat-atms-counter@title": "Markers in this category",
+      "checked:cat-atms-box": "false",
+      "checked:cat-gas-box": "false",
+      "checked:cat-banks-box": "true",
+      "attr:group-robberies-fold@aria-label": "Hide Robberies",
+      "attr:group-robberies-fold@aria-expanded": "true"
+    }
+  },
+  {
+    "id": "F4-03",
+    "mode": "map",
+    "keys": [
+      "click:show-hide-all",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:show-hide-all",
+      "count:category-checked",
+      "checked:group-robberies-box",
+      "attr:rail-robberies@class",
+      "text:cat-banks-counter",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "text:show-hide-all": "SHOW ALL",
+      "count:category-checked": "0",
+      "checked:group-robberies-box": "false",
+      "local:gtab-map-filter": "{\"hidden\":[\"bank\",\"fence\",\"gang-operation\",\"payday-loan\",\"safe\",\"smash-n-grab\",\"towable-atm\",\"mural\",\"ahol-street-art\",\"base-jump\",\"book-swap\",\"comics\",\"hidden-package\",\"easter-egg\",\"knife-flight\",\"luxury-watch\",\"magazine\",\"meditation\",\"message-bottle\",\"meteorite\",\"stunt-jump\",\"treasure\",\"under-the-bridge\",\"playlist\",\"waink-curiosity\",\"waink-landmark\",\"waink-sculpture\",\"yellow-loot-box\",\"scoop-container\",\"card-americas-next-top-hooker\",\"card-backyard-wrestling\",\"card-delights\",\"card-ed-comics\",\"card-jack-of-hearts\",\"card-liberty-city-penetrators\",\"card-liberty-city-swingers\",\"card-liberty-city-wrath\",\"card-los-santos-corkers\",\"card-los-santos-panic\",\"card-los-santos-pounders\",\"card-nine1nine\",\"card-right-wing\",\"card-legends-of-ratface\",\"card-vice-city-club-de-futbol\",\"card-vice-city-flamingos\",\"card-vice-city-manatees\",\"card-vice-city-narcos\",\"collectible-card\",\"arcade\",\"basketball\",\"car-meet\",\"drone-race\",\"fishing\",\"gang-compound\",\"golf\",\"gym\",\"hunting\",\"mini-golf\",\"parachuting\",\"pool\",\"race\",\"random-event\",\"shooting-range\",\"garage\",\"helipad\",\"safehouse\",\"bus-stop\",\"car-wash\",\"ev-charger\",\"gas-station\",\"vehicle-mod-shop\",\"pay-n-spray\",\"public-transport\",\"airport\",\"ferry\",\"standout-vehicle\",\"vehicle-rental\",\"vehicle-request\",\"vehicle-spawn\",\"ammu-nation\",\"weapon-spawn\",\"unique-weapon\",\"clothing\",\"electronics\",\"footwear\",\"haircut\",\"tattoo\",\"bar\",\"cafe-takeout\",\"convenience-store\",\"food-and-drink\",\"liquor-store\",\"street-food\",\"atm\",\"cinema\",\"city-town\",\"fire-station\",\"hospital\",\"landmark\",\"marina\",\"nightclub\",\"police-station\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-04",
+    "mode": "map",
+    "keys": [
+      "click:show-hide-all",
+      "wait:500",
+      "click:show-hide-all",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:show-hide-all",
+      "count:category-checked",
+      "checked:cat-atms-box",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "text:show-hide-all": "HIDE ALL",
+      "count:category-checked": "102",
+      "checked:cat-atms-box": "true",
+      "local:gtab-map-filter": "{\"hidden\":[],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-05",
+    "mode": "map",
+    "keys": [
+      "click:cat-banks-toggle",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:cat-banks-box",
+      "text:cat-banks-counter",
+      "checked:group-robberies-box",
+      "count:category-checked",
+      "text:show-hide-all",
+      "local:gtab-map-filter",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "checked:cat-banks-box": "false",
+      "checked:group-robberies-box": "false",
+      "count:category-checked": "97",
+      "text:show-hide-all": "HIDE ALL",
+      "local:gtab-map-filter": "{\"hidden\":[\"bank\",\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-06",
+    "mode": null,
+    "keys": [
+      "reload",
+      "macro:ready"
+    ],
+    "reset": "none",
+    "reads": [
+      "checked:cat-banks-box",
+      "count:category-checked",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "checked:cat-banks-box": "false",
+      "count:category-checked": "97",
+      "local:gtab-map-filter": "{\"hidden\":[\"bank\",\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-07",
+    "mode": "map",
+    "keys": [
+      "uncheck:group-robberies-box",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:#gtab-map .gtab-filter-group:has(.gtab-filter-group-name:text-is(\"Robberies\")) .gtab-filter-row input:checked",
+      "count:category-checked",
+      "attr:rail-robberies@class",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:category-checked": "91",
+      "local:gtab-map-filter": "{\"hidden\":[\"bank\",\"fence\",\"gang-operation\",\"payday-loan\",\"safe\",\"smash-n-grab\",\"towable-atm\",\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-08",
+    "mode": null,
+    "keys": [
+      "check:group-robberies-box",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:#gtab-map .gtab-filter-group:has(.gtab-filter-group-name:text-is(\"Robberies\")) .gtab-filter-row input:checked",
+      "count:category-checked",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:category-checked": "98"
+    }
+  },
+  {
+    "id": "F4-09",
+    "mode": "map",
+    "keys": [
+      "click:group-robberies-fold",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "attr:group-robberies-fold@aria-expanded",
+      "attr:group-robberies-fold@aria-label",
+      "visible:group-robberies-body",
+      "checked:cat-banks-box",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "attr:group-robberies-fold@aria-expanded": "false",
+      "attr:group-robberies-fold@aria-label": "Show Robberies",
+      "visible:group-robberies-body": "false",
+      "checked:cat-banks-box": "true",
+      "local:gtab-map-filter": "{\"hidden\":[\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"folded\":[\"robberies\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-10",
+    "mode": null,
+    "keys": [
+      "reload",
+      "macro:ready"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:group-robberies-fold@aria-expanded",
+      "visible:group-robberies-body",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "attr:group-robberies-fold@aria-expanded": "false",
+      "visible:group-robberies-body": "false",
+      "local:gtab-map-filter": "{\"hidden\":[\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"folded\":[\"robberies\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-11",
+    "mode": "map",
+    "keys": [
+      "hover:cat-garages-name",
+      "click:cat-garages-only",
+      "wait:1200"
+    ],
+    "reset": "clear",
+    "reads": [
+      "url",
+      "text:cat-garages-only",
+      "attr:cat-garages-only@aria-label",
+      "count:category-checked",
+      "checked:cat-garages-box",
+      "text:show-hide-all",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/?feature=garages",
+      "text:cat-garages-only": "ALL",
+      "attr:cat-garages-only@aria-label": "Show all categories again: Garages",
+      "count:category-checked": "1",
+      "checked:cat-garages-box": "true",
+      "text:show-hide-all": "SHOW ALL",
+      "local:gtab-map-filter": "{\"hidden\":[\"bank\",\"fence\",\"gang-operation\",\"payday-loan\",\"safe\",\"smash-n-grab\",\"towable-atm\",\"mural\",\"ahol-street-art\",\"base-jump\",\"book-swap\",\"comics\",\"hidden-package\",\"easter-egg\",\"knife-flight\",\"luxury-watch\",\"magazine\",\"meditation\",\"message-bottle\",\"meteorite\",\"stunt-jump\",\"treasure\",\"under-the-bridge\",\"playlist\",\"waink-curiosity\",\"waink-landmark\",\"waink-sculpture\",\"yellow-loot-box\",\"scoop-container\",\"card-americas-next-top-hooker\",\"card-backyard-wrestling\",\"card-delights\",\"card-ed-comics\",\"card-jack-of-hearts\",\"card-liberty-city-penetrators\",\"card-liberty-city-swingers\",\"card-liberty-city-wrath\",\"card-los-santos-corkers\",\"card-los-santos-panic\",\"card-los-santos-pounders\",\"card-nine1nine\",\"card-right-wing\",\"card-legends-of-ratface\",\"card-vice-city-club-de-futbol\",\"card-vice-city-flamingos\",\"card-vice-city-manatees\",\"card-vice-city-narcos\",\"collectible-card\",\"arcade\",\"basketball\",\"car-meet\",\"drone-race\",\"fishing\",\"gang-compound\",\"golf\",\"gym\",\"hunting\",\"mini-golf\",\"parachuting\",\"pool\",\"race\",\"random-event\",\"shooting-range\",\"helipad\",\"safehouse\",\"bus-stop\",\"car-wash\",\"ev-charger\",\"gas-station\",\"vehicle-mod-shop\",\"pay-n-spray\",\"public-transport\",\"airport\",\"ferry\",\"standout-vehicle\",\"vehicle-rental\",\"vehicle-request\",\"vehicle-spawn\",\"ammu-nation\",\"weapon-spawn\",\"unique-weapon\",\"clothing\",\"electronics\",\"footwear\",\"haircut\",\"tattoo\",\"bar\",\"cafe-takeout\",\"convenience-store\",\"food-and-drink\",\"liquor-store\",\"street-food\",\"atm\",\"cinema\",\"city-town\",\"fire-station\",\"hospital\",\"landmark\",\"marina\",\"nightclub\",\"police-station\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-12",
+    "mode": null,
+    "keys": [
+      "hover:cat-garages-name",
+      "click:cat-garages-only",
+      "wait:1200"
+    ],
+    "reset": "none",
+    "reads": [
+      "url",
+      "text:cat-garages-only",
+      "count:category-checked",
+      "checked:cat-atms-box",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "text:cat-garages-only": "ONLY",
+      "count:category-checked": "102",
+      "checked:cat-atms-box": "true",
+      "local:gtab-map-filter": "{\"hidden\":[],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-13",
+    "mode": "map",
+    "keys": [
+      "click:cat-garages-next",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "url",
+      "count:category-checked",
+      "checked:cat-garages-box",
+      "local:gtab-map-filter",
+      "local:gtab-map-view"
+    ],
+    "expect": {
+      "url": "/gta-6/map/?feature=garages",
+      "count:category-checked": "1",
+      "checked:cat-garages-box": "true",
+      "local:gtab-map-filter": "{\"hidden\":[\"bank\",\"fence\",\"gang-operation\",\"payday-loan\",\"safe\",\"smash-n-grab\",\"towable-atm\",\"mural\",\"ahol-street-art\",\"base-jump\",\"book-swap\",\"comics\",\"hidden-package\",\"easter-egg\",\"knife-flight\",\"luxury-watch\",\"magazine\",\"meditation\",\"message-bottle\",\"meteorite\",\"stunt-jump\",\"treasure\",\"under-the-bridge\",\"playlist\",\"waink-curiosity\",\"waink-landmark\",\"waink-sculpture\",\"yellow-loot-box\",\"scoop-container\",\"card-americas-next-top-hooker\",\"card-backyard-wrestling\",\"card-delights\",\"card-ed-comics\",\"card-jack-of-hearts\",\"card-liberty-city-penetrators\",\"card-liberty-city-swingers\",\"card-liberty-city-wrath\",\"card-los-santos-corkers\",\"card-los-santos-panic\",\"card-los-santos-pounders\",\"card-nine1nine\",\"card-right-wing\",\"card-legends-of-ratface\",\"card-vice-city-club-de-futbol\",\"card-vice-city-flamingos\",\"card-vice-city-manatees\",\"card-vice-city-narcos\",\"collectible-card\",\"arcade\",\"basketball\",\"car-meet\",\"drone-race\",\"fishing\",\"gang-compound\",\"golf\",\"gym\",\"hunting\",\"mini-golf\",\"parachuting\",\"pool\",\"race\",\"random-event\",\"shooting-range\",\"helipad\",\"safehouse\",\"bus-stop\",\"car-wash\",\"ev-charger\",\"gas-station\",\"vehicle-mod-shop\",\"pay-n-spray\",\"public-transport\",\"airport\",\"ferry\",\"standout-vehicle\",\"vehicle-rental\",\"vehicle-request\",\"vehicle-spawn\",\"ammu-nation\",\"weapon-spawn\",\"unique-weapon\",\"clothing\",\"electronics\",\"footwear\",\"haircut\",\"tattoo\",\"bar\",\"cafe-takeout\",\"convenience-store\",\"food-and-drink\",\"liquor-store\",\"street-food\",\"atm\",\"cinema\",\"city-town\",\"fire-station\",\"hospital\",\"landmark\",\"marina\",\"nightclub\",\"police-station\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-14",
+    "mode": null,
+    "keys": [
+      "click:cat-banks-toggle",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "url",
+      "count:category-checked",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:category-checked": "2",
+      "local:gtab-map-filter": "{\"hidden\":[\"fence\",\"gang-operation\",\"payday-loan\",\"safe\",\"smash-n-grab\",\"towable-atm\",\"mural\",\"ahol-street-art\",\"base-jump\",\"book-swap\",\"comics\",\"hidden-package\",\"easter-egg\",\"knife-flight\",\"luxury-watch\",\"magazine\",\"meditation\",\"message-bottle\",\"meteorite\",\"stunt-jump\",\"treasure\",\"under-the-bridge\",\"playlist\",\"waink-curiosity\",\"waink-landmark\",\"waink-sculpture\",\"yellow-loot-box\",\"scoop-container\",\"card-americas-next-top-hooker\",\"card-backyard-wrestling\",\"card-delights\",\"card-ed-comics\",\"card-jack-of-hearts\",\"card-liberty-city-penetrators\",\"card-liberty-city-swingers\",\"card-liberty-city-wrath\",\"card-los-santos-corkers\",\"card-los-santos-panic\",\"card-los-santos-pounders\",\"card-nine1nine\",\"card-right-wing\",\"card-legends-of-ratface\",\"card-vice-city-club-de-futbol\",\"card-vice-city-flamingos\",\"card-vice-city-manatees\",\"card-vice-city-narcos\",\"collectible-card\",\"arcade\",\"basketball\",\"car-meet\",\"drone-race\",\"fishing\",\"gang-compound\",\"golf\",\"gym\",\"hunting\",\"mini-golf\",\"parachuting\",\"pool\",\"race\",\"random-event\",\"shooting-range\",\"helipad\",\"safehouse\",\"bus-stop\",\"car-wash\",\"ev-charger\",\"gas-station\",\"vehicle-mod-shop\",\"pay-n-spray\",\"public-transport\",\"airport\",\"ferry\",\"standout-vehicle\",\"vehicle-rental\",\"vehicle-request\",\"vehicle-spawn\",\"ammu-nation\",\"weapon-spawn\",\"unique-weapon\",\"clothing\",\"electronics\",\"footwear\",\"haircut\",\"tattoo\",\"bar\",\"cafe-takeout\",\"convenience-store\",\"food-and-drink\",\"liquor-store\",\"street-food\",\"atm\",\"cinema\",\"city-town\",\"fire-station\",\"hospital\",\"landmark\",\"marina\",\"nightclub\",\"police-station\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-15",
+    "mode": "map",
+    "keys": [
+      "click:cat-banks-name",
+      "wait:600"
+    ],
+    "reset": "clear",
+    "reads": [
+      "url",
+      "checked:cat-banks-box",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "checked:cat-banks-box": "false",
+      "local:gtab-map-filter": "{\"hidden\":[\"bank\",\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-16",
+    "mode": null,
+    "keys": [
+      "goto:about:blank",
+      "goto:/gta-6/map/?feature=hidden-packages",
+      "macro:ready"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "text:heading",
+      "attr:map-root@data-gtab-category",
+      "count:category-checked",
+      "checked:cat-hidden-pkg-box",
+      "local:gtab-map-filter",
+      "local:gtab-map-view"
+    ],
+    "expect": {
+      "url": "/gta-6/map/?feature=hidden-packages",
+      "count:category-checked": "1",
+      "checked:cat-hidden-pkg-box": "true"
+    }
+  },
+  {
+    "id": "F4-18",
+    "mode": null,
+    "keys": [
+      "goto:about:blank",
+      "goto:/gta-6/map/?feature=bank",
+      "macro:ready"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "text:heading",
+      "attr:map-root@data-gtab-category",
+      "count:category-checked",
+      "checked:cat-banks-box"
+    ],
+    "expect": {
+      "url": "/gta-6/map/?feature=bank",
+      "count:category-checked": "1",
+      "checked:cat-banks-box": "true"
+    }
+  },
+  {
+    "id": "F4-20",
+    "mode": "start-marker",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "attr:popup-category-link@href",
+      "text:popup-category-link",
+      "checked:popup-found-box",
+      "text:popup-found-label",
+      "text:popup-navnum",
+      "attr:popup-navnum@title",
+      "count:popup-buttons",
+      "attr:popup-zoom@aria-label",
+      "attr:popup-copy@aria-label",
+      "attr:popup-fav@aria-label",
+      "attr:popup-fav@aria-pressed",
+      "count:popup-report",
+      "count:popup-actions",
+      "attr:popup-prev@aria-label",
+      "attr:popup-next@aria-label",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "count:popup": "1",
+      "attr:popup-category-link@href": "/gta-6/map/?feature=safehouses",
+      "checked:popup-found-box": "false",
+      "text:popup-found-label": "FOUND",
+      "count:popup-buttons": "5",
+      "attr:popup-zoom@aria-label": "Zoom in",
+      "attr:popup-copy@aria-label": "Copy link",
+      "attr:popup-fav@aria-label": "Add to favourites",
+      "attr:popup-fav@aria-pressed": "false",
+      "count:popup-report": "0",
+      "count:popup-actions": "1",
+      "attr:popup-prev@aria-label": "Previous in Safehouses: Starlet Motel (#5)",
+      "attr:popup-next@aria-label": "Next in Safehouses: Pegassi Residences (#2)"
+    }
+  },
+  {
+    "id": "F4-21",
+    "mode": "start-marker",
+    "keys": [
+      "check:popup-found-box",
+      "wait:800",
+      "shot:found"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:popup-found-box",
+      "local:guest_checklists",
+      "text:cat-safehouses-counter",
+      "text:cat-safehouses-sr",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "checked:popup-found-box": "true",
+      "local:guest_checklists": "{\"gta6-map\":[\"safehouse-001\"]}"
+    }
+  },
+  {
+    "id": "F4-22",
+    "mode": null,
+    "keys": [
+      "reload",
+      "waitfor:popup-found-box",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "checked:popup-found-box",
+      "local:guest_checklists",
+      "text:cat-safehouses-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "checked:popup-found-box": "true",
+      "local:guest_checklists": "{\"gta6-map\":[\"safehouse-001\"]}"
+    }
+  },
+  {
+    "id": "F4-23",
+    "mode": null,
+    "keys": [
+      "uncheck:popup-found-box",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "checked:popup-found-box",
+      "local:guest_checklists",
+      "text:cat-safehouses-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "checked:popup-found-box": "false"
+    }
+  },
+  {
+    "id": "F4-24",
+    "mode": null,
+    "keys": [
+      "goto:about:blank",
+      "goto:/gta-6/map/#card-liberty-city-wrath-001",
+      "waitfor:popup-found-box",
+      "wait:800",
+      "check:popup-found-box",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "checked:popup-found-box",
+      "attr:popup-navnum@title",
+      "local:guest_checklists",
+      "text:cat-wrath-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#card-liberty-city-wrath-001",
+      "checked:popup-found-box": "true",
+      "local:guest_checklists": "{\"gta6-map\":[\"card-liberty-city-wrath-001\",\"card-liberty-city-wrath-013\"]}"
+    }
+  },
+  {
+    "id": "F4-25",
+    "mode": null,
+    "keys": [
+      "goto:about:blank",
+      "goto:/gta-6/map/#atm-001",
+      "waitfor:popup-title",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "count:popup-found-box",
+      "text:popup-category-link",
+      "count:popup-navnum",
+      "checked:cat-atms-box",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#atm-001",
+      "count:popup": "1",
+      "count:popup-found-box": "0",
+      "count:popup-navnum": "1",
+      "checked:cat-atms-box": "true",
+      "local:gtab-map-filter": "{\"hidden\":[\"bus-stop\",\"ev-charger\",\"gas-station\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-26",
+    "mode": null,
+    "keys": [
+      "macro:tick-start",
+      "press:Escape",
+      "wait:500",
+      "click:hide-found",
+      "wait:1000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "text:hide-found",
+      "attr:hide-found@title",
+      "text:cat-safehouses-counter",
+      "local:gtab-map-filter",
+      "local:guest_checklists"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "count:popup": "0",
+      "text:hide-found": "SHOW FOUND",
+      "attr:hide-found@title": "Put the markers you found back on the map",
+      "local:gtab-map-filter": "{\"hidden\":[\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"hideFound\":true,\"dv\":1}",
+      "local:guest_checklists": "{\"gta6-map\":[\"safehouse-001\"]}"
+    }
+  },
+  {
+    "id": "F4-27",
+    "mode": null,
+    "keys": [
+      "goto:about:blank",
+      "goto:/gta-6/map/",
+      "macro:ready"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:hide-found",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "text:hide-found": "SHOW FOUND",
+      "local:gtab-map-filter": "{\"hidden\":[\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"hideFound\":true,\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-28",
+    "mode": null,
+    "keys": [
+      "click:hide-found",
+      "wait:1000"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:hide-found",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "text:hide-found": "HIDE FOUND"
+    }
+  },
+  {
+    "id": "F4-29",
+    "mode": "map",
+    "keys": [
+      "click:reset-progress",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:reset-dialog",
+      "text:#gtab-map .gtab-reset-panel h3",
+      "text:reset-say",
+      "count:reset-go",
+      "count:reset-select",
+      "text:reset-cancel"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:reset-dialog": "true",
+      "text:reset-say": "Nothing to reset: no marker is ticked as found yet.",
+      "count:reset-go": "0",
+      "count:reset-select": "0",
+      "text:reset-cancel": "CLOSE"
+    }
+  },
+  {
+    "id": "F4-30",
+    "mode": null,
+    "keys": [
+      "press:Escape",
+      "wait:400"
+    ],
+    "reset": "none",
+    "reads": [
+      "visible:reset-dialog"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:reset-dialog": "false"
+    }
+  },
+  {
+    "id": "F4-31",
+    "mode": null,
+    "keys": [
+      "macro:tick-start",
+      "press:Escape",
+      "wait:400",
+      "click:reset-progress",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "list:reset-options",
+      "value:reset-select",
+      "text:reset-say",
+      "text:reset-go",
+      "text:reset-cancel"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "list:reset-options": "All categories (1 found) || Safehouses (1 found)",
+      "value:reset-select": "",
+      "text:reset-say": "This unticks the 1 marker you found, in every category. There is no undo.",
+      "text:reset-go": "RESET",
+      "text:reset-cancel": "CANCEL"
+    }
+  },
+  {
+    "id": "F4-32",
+    "mode": null,
+    "keys": [
+      "select:reset-select=safehouse",
+      "wait:300"
+    ],
+    "reset": "none",
+    "reads": [
+      "value:reset-select",
+      "text:reset-say"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "value:reset-select": "safehouse",
+      "text:reset-say": "This unticks the 1 marker you found in Safehouses. There is no undo."
+    }
+  },
+  {
+    "id": "F4-33",
+    "mode": null,
+    "keys": [
+      "click:reset-go",
+      "wait:2500"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:reset-say",
+      "count:reset-go",
+      "count:reset-select",
+      "text:reset-cancel",
+      "local:guest_checklists",
+      "text:cat-safehouses-counter",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "text:reset-say": "The reset could not be saved, so nothing was changed. Try again in a moment.",
+      "count:reset-go": "0",
+      "count:reset-select": "0",
+      "text:reset-cancel": "CLOSE",
+      "local:guest_checklists": "{\"gta6-map\":[\"safehouse-001\"]}"
+    }
+  },
+  {
+    "id": "F4-34",
+    "mode": null,
+    "keys": [
+      "macro:tick-start",
+      "press:Escape",
+      "wait:400",
+      "click:reset-progress",
+      "wait:400",
+      "click:reset-cancel",
+      "wait:400"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:reset-dialog",
+      "local:guest_checklists",
+      "text:cat-safehouses-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "visible:reset-dialog": "false",
+      "local:guest_checklists": "{\"gta6-map\":[\"safehouse-001\"]}"
+    }
+  },
+  {
+    "id": "F4-35",
+    "mode": "map",
+    "keys": [
+      "fill:search-input=safehouse",
+      "wait:600"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:search-hits",
+      "attr:search-input@aria-expanded",
+      "attr:search-input@aria-controls",
+      "text:#gtab-search-hit-0 .gtab-search-hit-cat",
+      "attr:search-hit-first@aria-selected",
+      "count:category-rows-visible",
+      "visible:search-empty"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "attr:search-input@aria-expanded": "true",
+      "attr:search-input@aria-controls": "gtab-search-results",
+      "attr:search-hit-first@aria-selected": "false",
+      "visible:search-empty": "false"
+    }
+  },
+  {
+    "id": "F4-36",
+    "mode": null,
+    "keys": [
+      "press:Enter",
+      "wait:1500"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:popup",
+      "value:search-input",
+      "text:popup-category-link",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:popup": "1",
+      "value:search-input": ""
+    }
+  },
+  {
+    "id": "F4-37",
+    "mode": "map",
+    "keys": [
+      "fill:search-input=bank",
+      "wait:500",
+      "press:ArrowDown",
+      "press:ArrowDown"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:search-hits",
+      "attr:search-input@aria-activedescendant",
+      "attr:search-hit-first@aria-selected",
+      "attr:#gtab-search-hit-1@aria-selected",
+      "count:category-rows-visible"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "attr:search-input@aria-activedescendant": "gtab-search-hit-1",
+      "attr:search-hit-first@aria-selected": "false"
+    }
+  },
+  {
+    "id": "F4-38",
+    "mode": null,
+    "keys": [
+      "press:Escape",
+      "wait:300"
+    ],
+    "reset": "none",
+    "reads": [
+      "value:search-input",
+      "attr:search-input@aria-expanded",
+      "count:search-hits",
+      "count:category-rows-visible"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "value:search-input": "",
+      "attr:search-input@aria-expanded": "false"
+    }
+  },
+  {
+    "id": "F4-39",
+    "mode": "map",
+    "keys": [
+      "fill:search-input=zzqxv",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:search-hits",
+      "text:search-empty",
+      "text:category-none",
+      "count:category-rows-visible",
+      "attr:search-input@aria-expanded"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "text:category-none": "No category matches \"zzqxv\".",
+      "attr:search-input@aria-expanded": "false"
+    }
+  },
+  {
+    "id": "F4-40",
+    "mode": "map",
+    "keys": [
+      "fill:search-input=safehuose",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:search-hits",
+      "text:#gtab-search-hit-0 .gtab-search-hit-cat",
+      "count:category-rows-visible"
+    ],
+    "expect": {
+      "url": "/gta-6/map/"
+    }
+  },
+  {
+    "id": "F4-41",
+    "mode": "map",
+    "keys": [
+      "fill:search-input=<b>zzqxv</b>",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:search-hits",
+      "text:search-empty",
+      "count:#gtab-map .gtab-search-empty b",
+      "text:category-none"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "text:category-none": "No category matches \"<b>zzqxv</b>\"."
+    }
+  },
+  {
+    "id": "F4-42",
+    "mode": "map",
+    "keys": [
+      "fill:search-input=   ",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:search-hits",
+      "visible:search-empty",
+      "count:category-rows-visible"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:search-empty": "false"
+    }
+  },
+  {
+    "id": "F4-43",
+    "mode": "map",
+    "keys": [
+      "fill:search-input=card",
+      "wait:600"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:search-hits",
+      "text:search-empty",
+      "count:category-rows-visible"
+    ],
+    "expect": {
+      "url": "/gta-6/map/"
+    }
+  },
+  {
+    "id": "F4-44",
+    "mode": "map",
+    "keys": [
+      "fill:search-input=bank",
+      "wait:400",
+      "click:search-clear",
+      "wait:400"
+    ],
+    "reset": "clear",
+    "reads": [
+      "value:search-input",
+      "count:search-hits",
+      "count:category-rows-visible"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "value:search-input": ""
+    }
+  },
+  {
+    "id": "F4-45",
+    "mode": "map",
+    "keys": [
+      "fill:search-input=  SAFEHOUSE  ",
+      "wait:500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:search-hits",
+      "text:#gtab-search-hit-0 .gtab-search-hit-cat"
+    ],
+    "expect": {
+      "url": "/gta-6/map/"
+    }
+  },
+  {
+    "id": "F4-46",
+    "mode": "map",
+    "keys": [
+      "click:suggest-open",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "calls",
+      "count:panel",
+      "attr:panel@role",
+      "attr:panel@aria-label",
+      "text:panel"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:panel": "1",
+      "attr:panel@role": "dialog",
+      "attr:panel@aria-label": "Suggest a location",
+      "text:panel": "× SUGGEST A LOCATION The server did not answer. Please try again in a moment."
+    }
+  },
+  {
+    "id": "F4-47",
+    "mode": "map",
+    "keys": [
+      "click:own-open",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "calls",
+      "count:panel",
+      "attr:panel@aria-label",
+      "text:panel"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:panel": "1",
+      "attr:panel@aria-label": "Personal marker",
+      "text:panel": "× PERSONAL MARKER The server did not answer. Please try again in a moment."
+    }
+  },
+  {
+    "id": "F4-48",
+    "mode": "map",
+    "keys": [
+      "click:contest-open",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "calls",
+      "count:panel",
+      "attr:panel@aria-label",
+      "text:panel"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:panel": "1",
+      "attr:panel@aria-label": "Map Contest",
+      "text:panel": "× MAP CONTEST The server did not answer. Please try again in a moment."
+    }
+  },
+  {
+    "id": "F4-49",
+    "mode": "start-marker",
+    "keys": [
+      "click:popup-fav",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "text:panel-title",
+      "text:panel",
+      "list:panel-links",
+      "attr:#gtab-map .gtab-submit-panel .gtab-submit-buttons a >> nth=0@href",
+      "attr:#gtab-map .gtab-submit-panel .gtab-submit-buttons a >> nth=1@href",
+      "attr:#gtab-map .gtab-submit-panel .gtab-submit-buttons a >> nth=1@target",
+      "calls"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "count:popup": "0",
+      "text:panel-title": "FAVOURITES",
+      "text:panel": "× FAVOURITES Want to keep your favourite places? Members of GTABase can star any marker and find it again under Personal, on every device. Log in to start. LOG IN JOIN MYBASE",
+      "list:panel-links": "LOG IN || JOIN MYBASE"
+    }
+  },
+  {
+    "id": "F4-50",
+    "mode": "start-marker",
+    "keys": [
+      "click:popup-copy",
+      "wait:300"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:popup-copy",
+      "dialog",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "text:popup-copy": "Copied!"
+    }
+  },
+  {
+    "id": "F4-51",
+    "mode": "start-marker",
+    "keys": [
+      "click:popup-next",
+      "wait:1800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "text:popup-navnum",
+      "url",
+      "text:popup-category-link"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "count:popup": "1"
+    }
+  },
+  {
+    "id": "F4-52",
+    "mode": null,
+    "keys": [
+      "click:popup-prev",
+      "wait:1800"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:popup",
+      "text:popup-navnum",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "count:popup": "1"
+    }
+  },
+  {
+    "id": "F4-53",
+    "mode": "start-marker",
+    "keys": [
+      "click:popup-prev",
+      "wait:1800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "text:popup-navnum",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "count:popup": "1"
+    }
+  },
+  {
+    "id": "F4-54",
+    "mode": "map",
+    "keys": [
+      "goto:/gta-6/map/#safehouse-002",
+      "wait:2500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "text:popup-category-link",
+      "text:popup-navnum",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-002",
+      "count:popup": "1"
+    }
+  },
+  {
+    "id": "F4-55",
+    "mode": null,
+    "keys": [
+      "goto:about:blank",
+      "goto:/gta-6/map/#no-such-marker-999",
+      "macro:ready"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#no-such-marker-999",
+      "count:popup": "0"
+    }
+  },
+  {
+    "id": "F4-56",
+    "mode": null,
+    "keys": [
+      "goto:about:blank",
+      "goto:/gta-6/map/#spot=-2354,-5532",
+      "macro:ready",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "text:popup-title",
+      "text:popup-desc",
+      "list:#gtab-map .leaflet-popup button.gtab-popup-pill",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#spot=-2354,-5532",
+      "count:popup": "1",
+      "text:popup-title": "SHARED SPOT",
+      "text:popup-desc": "Somebody shared this place on the map with you."
+    }
+  },
+  {
+    "id": "F4-57",
+    "mode": "map",
+    "keys": [
+      "click:show-hide-all",
+      "wait:600",
+      "goto:/gta-6/map/#safehouse-001",
+      "wait:2500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "checked:cat-safehouses-box",
+      "count:category-checked",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/#safehouse-001",
+      "count:popup": "1",
+      "checked:cat-safehouses-box": "true",
+      "count:category-checked": "1",
+      "local:gtab-map-filter": "{\"hidden\":[\"bank\",\"fence\",\"gang-operation\",\"payday-loan\",\"safe\",\"smash-n-grab\",\"towable-atm\",\"mural\",\"ahol-street-art\",\"base-jump\",\"book-swap\",\"comics\",\"hidden-package\",\"easter-egg\",\"knife-flight\",\"luxury-watch\",\"magazine\",\"meditation\",\"message-bottle\",\"meteorite\",\"stunt-jump\",\"treasure\",\"under-the-bridge\",\"playlist\",\"waink-curiosity\",\"waink-landmark\",\"waink-sculpture\",\"yellow-loot-box\",\"scoop-container\",\"card-americas-next-top-hooker\",\"card-backyard-wrestling\",\"card-delights\",\"card-ed-comics\",\"card-jack-of-hearts\",\"card-liberty-city-penetrators\",\"card-liberty-city-swingers\",\"card-liberty-city-wrath\",\"card-los-santos-corkers\",\"card-los-santos-panic\",\"card-los-santos-pounders\",\"card-nine1nine\",\"card-right-wing\",\"card-legends-of-ratface\",\"card-vice-city-club-de-futbol\",\"card-vice-city-flamingos\",\"card-vice-city-manatees\",\"card-vice-city-narcos\",\"collectible-card\",\"arcade\",\"basketball\",\"car-meet\",\"drone-race\",\"fishing\",\"gang-compound\",\"golf\",\"gym\",\"hunting\",\"mini-golf\",\"parachuting\",\"pool\",\"race\",\"random-event\",\"shooting-range\",\"garage\",\"helipad\",\"bus-stop\",\"car-wash\",\"ev-charger\",\"gas-station\",\"vehicle-mod-shop\",\"pay-n-spray\",\"public-transport\",\"airport\",\"ferry\",\"standout-vehicle\",\"vehicle-rental\",\"vehicle-request\",\"vehicle-spawn\",\"ammu-nation\",\"weapon-spawn\",\"unique-weapon\",\"clothing\",\"electronics\",\"footwear\",\"haircut\",\"tattoo\",\"bar\",\"cafe-takeout\",\"convenience-store\",\"food-and-drink\",\"liquor-store\",\"street-food\",\"atm\",\"cinema\",\"city-town\",\"fire-station\",\"hospital\",\"landmark\",\"marina\",\"nightclub\",\"police-station\"],\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-58",
+    "mode": "map",
+    "keys": [
+      "click:map-zoom-in",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "url",
+      "local:gtab-map-view",
+      "attr:tile-first@src"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "local:gtab-map-view": "{\"lat\":-5532,\"lng\":-2352,\"z\":3,\"t\":1795432114714}"
+    }
+  },
+  {
+    "id": "F4-59",
+    "mode": null,
+    "keys": [
+      "reload",
+      "macro:ready"
+    ],
+    "reset": "none",
+    "reads": [
+      "url",
+      "local:gtab-map-view",
+      "attr:tile-first@src"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "local:gtab-map-view": "{\"lat\":-5532,\"lng\":-2352,\"z\":3,\"t\":1795432114714}"
+    }
+  },
+  {
+    "id": "F4-60",
+    "mode": "map",
+    "keys": [
+      "click:canvas",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "text:popup-category-link",
+      "url"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:popup": "1"
+    }
+  },
+  {
+    "id": "F4-61",
+    "mode": "map",
+    "keys": [
+      "focus:search-input",
+      "type:safehouse",
+      "wait:400",
+      "press:ArrowDown",
+      "press:Enter",
+      "wait:1500"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:popup",
+      "text:popup-category-link",
+      "value:search-input"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:popup": "1",
+      "value:search-input": ""
+    }
+  },
+  {
+    "id": "F4-62",
+    "mode": null,
+    "keys": [
+      "press:Escape",
+      "wait:600"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:popup"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:popup": "0"
+    }
+  },
+  {
+    "id": "F4-63",
+    "mode": "map-mobile",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "attr:map-root@class",
+      "visible:sidebar-open",
+      "text:sidebar-open",
+      "attr:sidebar-open@title",
+      "attr:sidebar-open@aria-expanded",
+      "visible:search-input",
+      "attr:sidebar@aria-hidden",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:sidebar-open": "true",
+      "text:sidebar-open": "FILTERS",
+      "attr:sidebar-open@title": "Search and filter",
+      "attr:sidebar-open@aria-expanded": "false",
+      "visible:search-input": "false",
+      "attr:sidebar@aria-hidden": "true"
+    }
+  },
+  {
+    "id": "F4-64",
+    "mode": null,
+    "keys": [
+      "click:sidebar-open",
+      "wait:600"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:map-root@class",
+      "visible:search-input",
+      "visible:sidebar-open",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:search-input": "true",
+      "visible:sidebar-open": "false"
+    }
+  },
+  {
+    "id": "F4-65",
+    "mode": null,
+    "keys": [
+      "press:Escape",
+      "wait:500"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:map-root@class",
+      "visible:sidebar-open",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:sidebar-open": "true"
+    }
+  },
+  {
+    "id": "F4-66",
+    "mode": null,
+    "keys": [
+      "click:sidebar-open",
+      "wait:500",
+      "fill:search-input=safehouse",
+      "wait:500",
+      "press:Enter",
+      "wait:1500"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:map-root@class",
+      "count:popup",
+      "text:popup-category-link"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "count:popup": "1"
+    }
+  },
+  {
+    "id": "F4-67",
+    "mode": "map",
+    "keys": [
+      "click:sidebar-close",
+      "wait:600"
+    ],
+    "reset": "clear",
+    "reads": [
+      "attr:map-root@class",
+      "visible:sidebar-open",
+      "text:sidebar-open",
+      "attr:sidebar@aria-hidden",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:sidebar-open": "true",
+      "text:sidebar-open": "FILTERS",
+      "attr:sidebar@aria-hidden": "true",
+      "local:gtab-map-filter": "{\"hidden\":[\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"sidebar\":\"closed\",\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-68",
+    "mode": null,
+    "keys": [
+      "reload",
+      "macro:ready"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:map-root@class",
+      "visible:sidebar-open",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:sidebar-open": "true",
+      "local:gtab-map-filter": "{\"hidden\":[\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"sidebar\":\"closed\",\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-69",
+    "mode": null,
+    "keys": [
+      "click:sidebar-open",
+      "wait:600"
+    ],
+    "reset": "none",
+    "reads": [
+      "attr:map-root@class",
+      "local:gtab-map-filter"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "local:gtab-map-filter": "{\"hidden\":[\"bus-stop\",\"ev-charger\",\"gas-station\",\"atm\"],\"sidebar\":\"open\",\"dv\":1}"
+    }
+  },
+  {
+    "id": "F4-70",
+    "mode": "map",
+    "keys": [
+      "click:about-open",
+      "wait:600"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:about-dialog",
+      "count:#gtab-map .gtab-info-panel a",
+      "attr:about-open@aria-label",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:about-dialog": "true",
+      "attr:about-open@aria-label": "About this map"
+    }
+  },
+  {
+    "id": "F4-71",
+    "mode": null,
+    "keys": [
+      "press:Escape",
+      "wait:400"
+    ],
+    "reset": "none",
+    "reads": [
+      "visible:about-dialog"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "visible:about-dialog": "false"
+    }
+  },
+  {
+    "id": "F4-72",
+    "mode": "map",
+    "keys": [
+      "click:rail-food",
+      "wait:1000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "attr:rail-food@class",
+      "attr:rail-robberies@class"
+    ],
+    "expect": {
+      "url": "/gta-6/map/"
+    }
+  },
+  {
+    "id": "F4-73",
+    "mode": "map",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "visible:contest-box",
+      "text:#gtab-map .gtab-contest .gtab-contest-head",
+      "count:#gtab-map .gtab-contest a.gtab-contest-login",
+      "local:gtab-contest-closed"
+    ],
+    "expect": {
+      "url": "/gta-6/map/"
+    }
+  },
+  {
+    "id": "F4-74",
+    "mode": null,
+    "keys": [
+      "click:contest-close",
+      "wait:400"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:contest-box",
+      "local:gtab-contest-closed"
+    ],
+    "expect": {
+      "url": "/gta-6/map/"
+    }
+  },
+  {
+    "id": "F4-75",
+    "mode": "map",
+    "keys": [
+      "click:fullscreen",
+      "wait:800"
+    ],
+    "reset": "clear",
+    "reads": [
+      "attr:fullscreen@title",
+      "attr:fullscreen@aria-label"
+    ],
+    "expect": {
+      "url": "/gta-6/map/",
+      "attr:fullscreen@title": "Exit full screen",
+      "attr:fullscreen@aria-label": "Exit full screen"
+    }
+  },
+  {
+    "id": "F4-76",
+    "mode": null,
+    "keys": [
+      "try:goto:/gta-6/map/does-not-exist/",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "title",
+      "text:heading",
+      "count:map-root"
+    ],
+    "expect": {
+      "url": "/gta-6/map/does-not-exist/",
+      "count:map-root": "0"
+    }
+  }
+]

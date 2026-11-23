@@ -1,0 +1,114 @@
+{
+ "app": "Leonida Atlas (rebuild) \u2014 vectors for suite f2-detail",
+ "baseUrl": "http://localhost:3000",
+ "readOnly": false,
+ "browser": {
+  "channel": "chromium",
+  "viewport": {
+   "width": 1366,
+   "height": 900
+  },
+  "locale": "en-US",
+  "timezone": "UTC"
+ },
+ "timeouts": {
+  "action": 6000,
+  "navigation": 30000,
+  "settle": 3000,
+  "idle": 8000
+ },
+ "tokens": {
+  "heading": "h1",
+  "breadcrumb": "[data-testid=\"breadcrumb\"]",
+  "hero-image": "[data-testid=\"hero-image\"]",
+  "section-titles": "[data-testid=\"section-titles\"]",
+  "info-labels": "[data-testid=\"info-labels\"]",
+  "stat-labels": "[data-testid=\"stat-labels\"]",
+  "stat-values": "[data-testid=\"stat-values\"]",
+  "stat-bars": "[data-testid=\"stat-bars\"]",
+  "stat-bar-1": "[data-testid=\"stat-bar-1\"]",
+  "stat-bar-2": "[data-testid=\"stat-bar-2\"]",
+  "stat-bar-3": "[data-testid=\"stat-bar-3\"]",
+  "stat-bar-4": "[data-testid=\"stat-bar-4\"]",
+  "stat-bar-5": "[data-testid=\"stat-bar-5\"]",
+  "rating-block": "[data-testid=\"rating-block\"]",
+  "rating-stars": "[data-testid=\"rating-stars\"]",
+  "rating-total": "[data-testid=\"rating-total\"]",
+  "favorites-button": "[data-testid=\"favorites-button\"]",
+  "compare-to": "[data-testid=\"compare-to\"]",
+  "compare-to-menu": "[data-testid=\"compare-to-menu\"]",
+  "compare-to-items": "[data-testid=\"compare-to-items\"]",
+  "compare-to-item-1": "[data-testid=\"compare-to-item-1\"]",
+  "variants": "[data-testid=\"variants\"]",
+  "similar-title": "[data-testid=\"similar-title\"]",
+  "appearances": "[data-testid=\"appearances\"]",
+  "gallery": "[data-testid=\"gallery\"]",
+  "gallery-empty": "[data-testid=\"gallery-empty\"]",
+  "gallery-thumbs": "[data-testid=\"gallery-thumbs\"]",
+  "gallery-thumb-1": "[data-testid=\"gallery-thumb-1\"]",
+  "lightbox": "[data-testid=\"lightbox\"]",
+  "lightbox-counter": "[data-testid=\"lightbox-counter\"]",
+  "lightbox-next": "[data-testid=\"lightbox-next\"]",
+  "lightbox-prev": "[data-testid=\"lightbox-prev\"]",
+  "lightbox-close": "[data-testid=\"lightbox-close\"]",
+  "lightbox-buttons": "[data-testid=\"lightbox-buttons\"]",
+  "tabs": "[data-testid=\"tabs\"]",
+  "pager-prev": "[data-testid=\"pager-prev\"]",
+  "pager-next": "[data-testid=\"pager-next\"]",
+  "comments": "[data-testid=\"comments\"]",
+  "comments-tabs": "[data-testid=\"comments-tabs\"]",
+  "comments-sort": "[data-testid=\"comments-sort\"]",
+  "comments-editor": "[data-testid=\"comments-editor\"]",
+  "comments-placeholder": "[data-testid=\"comments-placeholder\"]",
+  "comments-limit": "[data-testid=\"comments-limit\"]",
+  "comments-items": "[data-testid=\"comments-items\"]",
+  "comments-guest": "[data-testid=\"comments-guest\"]",
+  "not-found-sub": "[data-testid=\"not-found-sub\"]",
+  "share": "[data-testid=\"share\"]",
+  "footer": "[data-testid=\"footer\"]",
+  "compare-to-item-last": "[data-testid=\"compare-to-item-last\"]",
+  "compare-to-item-nightblade": "[data-testid=\"compare-to-item-nightblade\"]",
+  "compare-to-item-sanchez": "[data-testid=\"compare-to-item-sanchez\"]"
+ },
+ "modes": {
+  "hub": "/gta-6/",
+  "vehicle-standout": "/gta-6/vehicles/sunset-sanchez",
+  "vehicle-base": "/gta-6/vehicles/sanchez",
+  "weapon": "/gta-6/weapons/assault-rifle",
+  "animal": "/gta-6/animals/gray-fox",
+  "character": "/gta-6/characters/jason",
+  "property": "/gta-6/properties/7th-avenue-garage",
+  "radio": "/gta-6/radio-stations/flash-fm",
+  "mission": "/gta-6/missions/breakfast-run"
+ },
+ "resets": {
+  "clear": [
+   "try:clear:local",
+   "try:clear:session"
+  ]
+ },
+ "macros": {
+  "wake": [
+   "hover:heading",
+   "wait:2500"
+  ],
+  "to-pager": [
+   "scroll:comments",
+   "wait:1500"
+  ]
+ },
+ "readouts": [
+  {
+   "key": "url",
+   "read": "url"
+  },
+  {
+   "key": "heading",
+   "read": "text:heading"
+  },
+  {
+   "key": "title",
+   "read": "title"
+  }
+ ]
+}

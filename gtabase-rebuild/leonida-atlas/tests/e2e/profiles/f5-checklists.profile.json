@@ -1,0 +1,131 @@
+{
+ "app": "Leonida Atlas (rebuild) \u2014 vectors for suite f5-checklists",
+ "baseUrl": "http://localhost:3000",
+ "readOnly": false,
+ "browser": {
+  "channel": "chromium",
+  "viewport": {
+   "width": 1366,
+   "height": 900
+  },
+  "locale": "en-US",
+  "timezone": "UTC"
+ },
+ "timeouts": {
+  "action": 6000,
+  "navigation": 30000,
+  "settle": 3000,
+  "idle": 8000
+ },
+ "tokens": {
+  "heading": "h1",
+  "cl-box": "[data-testid=\"cl-box\"]",
+  "cl-box-checked": "[data-testid=\"cl-box-checked\"]",
+  "cl-box-disabled": "[data-testid=\"cl-box-disabled\"]",
+  "cl-box-labelled": "[data-testid=\"cl-box-labelled\"]",
+  "pct-module": "[data-testid=\"pct-module\"]",
+  "pct-text": "[data-testid=\"pct-text\"]",
+  "pct-bar": "[data-testid=\"pct-bar\"]",
+  "guest-note": "[data-testid=\"guest-note\"]",
+  "guest-note-login": "[data-testid=\"guest-note-login\"]",
+  "profile-switcher": "[data-testid=\"profile-switcher\"]",
+  "reset-control": "[data-testid=\"reset-control\"]",
+  "toc-box": "[data-testid=\"toc-box\"]",
+  "sec-box": "[data-testid=\"sec-box\"]",
+  "toc-story": "[data-testid=\"toc-story\"]",
+  "sec-story": "[data-testid=\"sec-story\"]",
+  "toc-kenton": "[data-testid=\"toc-kenton\"]",
+  "sec-kenton": "[data-testid=\"sec-kenton\"]",
+  "sec-cards": "[data-testid=\"sec-cards\"]",
+  "sec-exploration": "[data-testid=\"sec-exploration\"]",
+  "toc-exploration": "[data-testid=\"toc-exploration\"]",
+  "sec-exploration-children": "[data-testid=\"sec-exploration-children\"]",
+  "sec-exploration-children-checked": "[data-testid=\"sec-exploration-children-checked\"]",
+  "sec-story-tasks": "[data-testid=\"sec-story-tasks\"]",
+  "sec-story-tasks-children-checked": "[data-testid=\"sec-story-tasks-children-checked\"]",
+  "sec-optional": "[data-testid=\"sec-optional\"]",
+  "sec-gang-ops": "[data-testid=\"sec-gang-ops\"]",
+  "sec-bank-jobs": "[data-testid=\"sec-bank-jobs\"]",
+  "sec-discovery": "[data-testid=\"sec-discovery\"]",
+  "sec-vehicles": "[data-testid=\"sec-vehicles\"]",
+  "sec-weapons": "[data-testid=\"sec-weapons\"]",
+  "sec-animals": "[data-testid=\"sec-animals\"]",
+  "sec-drones": "[data-testid=\"sec-drones\"]",
+  "chapter-heading": "[data-testid=\"chapter-heading\"]",
+  "mission-row": "[data-testid=\"mission-row\"]",
+  "mission-row-optional": "[data-testid=\"mission-row-optional\"]",
+  "mission-row-main-link": "[data-testid=\"mission-row-main-link\"]",
+  "mission-row-strangers-link": "[data-testid=\"mission-row-strangers-link\"]",
+  "mission-box-first": "[data-testid=\"mission-box-first\"]",
+  "mission-first-row": "[data-testid=\"mission-first-row\"]",
+  "mission-gone-fishing": "[data-testid=\"mission-gone-fishing\"]",
+  "mission-shirleys-rum": "[data-testid=\"mission-shirleys-rum\"]",
+  "mission-skunk-ape": "[data-testid=\"mission-skunk-ape\"]",
+  "activity-card": "[data-testid=\"activity-card\"]",
+  "events-table-header": "[data-testid=\"events-table-header\"]",
+  "events-table-cell": "[data-testid=\"events-table-cell\"]"
+ },
+ "modes": {
+  "hub": "/gta-6/",
+  "checklist100": [
+   "goto:/articles/gta-6/gta-6-100-completion-guide-interactive-checklist",
+   "wait:1500"
+  ],
+  "missions": [
+   "goto:/gta-6/missions/",
+   "wait:1500"
+  ],
+  "strangers": [
+   "goto:/gta-6/strangers-missions/",
+   "wait:1500"
+  ],
+  "side-missions": [
+   "goto:/gta-6/side-missions/",
+   "wait:1500"
+  ],
+  "random-events": [
+   "goto:/gta-6/random-events/",
+   "wait:2500"
+  ]
+ },
+ "resets": {
+  "clear": [
+   "try:clear:local",
+   "try:clear:session"
+  ]
+ },
+ "macros": {
+  "tick-all-exploration": [
+   "click:sec-kenton",
+   "click:sec-cards",
+   "click:.checklist-item input[id=\"waink\"]",
+   "click:.checklist-item input[id=\"underwater\"]",
+   "click:.checklist-item input[id=\"magazines\"]",
+   "click:.checklist-item input[id=\"meditation\"]",
+   "click:.checklist-item input[id=\"flamingos\"]",
+   "click:.checklist-item input[id=\"playlists\"]",
+   "click:.checklist-item input[id=\"styles\"]",
+   "click:.checklist-item input[id=\"races\"]",
+   "click:.checklist-item input[id=\"race-challenges\"]",
+   "click:.checklist-item input[id=\"shooting\"]",
+   "click:.checklist-item input[id=\"video-games\"]",
+   "click:.checklist-item input[id=\"pool\"]",
+   "click:.checklist-item input[id=\"mini-golf\"]",
+   "click:.checklist-item input[id=\"basketball\"]",
+   "click:.checklist-item input[id=\"drones\"]",
+   "click:.checklist-item input[id=\"stunts\"]",
+   "click:.checklist-item input[id=\"challenges\"]",
+   "click:.checklist-item input[id=\"target-decks\"]"
+  ]
+ },
+ "readouts": [
+  {
+   "key": "url",
+   "read": "url"
+  },
+  {
+   "key": "heading",
+   "read": "text:heading"
+  }
+ ]
+}

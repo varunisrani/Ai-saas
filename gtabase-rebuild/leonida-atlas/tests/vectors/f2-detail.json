@@ -1,0 +1,812 @@
+[
+  {
+    "id": "F2-01",
+    "mode": "vehicle-standout",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "attr:breadcrumb@href",
+      "count:hero-image",
+      "list:section-titles",
+      "list:info-labels",
+      "list:stat-labels",
+      "count:stat-bars",
+      "count:rating-stars",
+      "text:rating-total",
+      "count:favorites-button",
+      "count:compare-to",
+      "count:tabs",
+      "count:gallery",
+      "count:gallery-empty",
+      "count:share",
+      "list:stat-values",
+      "attr:stat-bar-1@style",
+      "attr:stat-bar-2@style",
+      "attr:stat-bar-3@style",
+      "attr:stat-bar-4@style",
+      "attr:stat-bar-5@style",
+      "list:variants",
+      "text:favorites-button",
+      "text:compare-to"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "text:breadcrumb": "GTA 6 Vehicle Stats, Price, How To Get",
+      "attr:breadcrumb@href": "/gta-6/vehicles/",
+      "count:hero-image": "2",
+      "list:section-titles": "SUNSET SANCHEZ: GTA 6 INFO || MAIBATSU SUNSET SANCHEZ GTA 6 STATISTICS || SUNSET SANCHEZ DESCRIPTION:",
+      "list:info-labels": "Standout Set || Vehicle Class || Manufacturer || Style || Era || Seats || Base Model || Drive Train",
+      "list:stat-labels": "SPEED || ACCELERATION || ASPHALT HANDLING || OFF-ROAD HANDLING || STRENGTH || RATING",
+      "count:stat-bars": "5",
+      "count:rating-stars": "5",
+      "count:favorites-button": "1",
+      "count:compare-to": "1",
+      "count:tabs": "0",
+      "count:gallery-empty": "0",
+      "text:favorites-button": "Add To Favorites",
+      "text:compare-to": "Compare To"
+    }
+  },
+  {
+    "id": "F2-02",
+    "mode": "vehicle-base",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "attr:breadcrumb@href",
+      "count:hero-image",
+      "list:section-titles",
+      "list:info-labels",
+      "list:stat-labels",
+      "count:stat-bars",
+      "count:rating-stars",
+      "text:rating-total",
+      "count:favorites-button",
+      "count:compare-to",
+      "count:tabs",
+      "count:gallery",
+      "count:gallery-empty",
+      "count:share",
+      "list:stat-values",
+      "attr:stat-bar-1@style",
+      "attr:stat-bar-5@style",
+      "count:variants",
+      "count:similar-title",
+      "list:appearances",
+      "count:gallery-thumbs"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sanchez",
+      "text:breadcrumb": "GTA 6 Vehicle Stats, Price, How To Get",
+      "attr:breadcrumb@href": "/gta-6/vehicles/",
+      "count:hero-image": "2",
+      "list:section-titles": "SANCHEZ: GTA 6 INFO || SANCHEZ: HOW TO GET || MAIBATSU SANCHEZ GTA 6 STATISTICS || SANCHEZ DESCRIPTION: || SANCHEZ: GTA 6 SCREENSHOTS || SANCHEZ GAME APPEARANCES",
+      "list:info-labels": "Vehicle Class || Manufacturer || Style || Era || Specialist || Seats || Based on (Real Life) || Mass / Weight || Drive Train || Gears || Variant / Conversion || Notable Owners",
+      "list:stat-labels": "SPEED || ACCELERATION || ASPHALT HANDLING || OFF-ROAD HANDLING || STRENGTH || RATING",
+      "count:stat-bars": "5",
+      "count:rating-stars": "5",
+      "count:favorites-button": "1",
+      "count:compare-to": "1",
+      "count:tabs": "0",
+      "count:gallery-empty": "0",
+      "count:similar-title": "1"
+    }
+  },
+  {
+    "id": "F2-03",
+    "mode": "weapon",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "attr:breadcrumb@href",
+      "count:hero-image",
+      "list:section-titles",
+      "list:info-labels",
+      "list:stat-labels",
+      "count:stat-bars",
+      "count:rating-stars",
+      "text:rating-total",
+      "count:favorites-button",
+      "count:compare-to",
+      "count:tabs",
+      "count:gallery",
+      "count:gallery-empty",
+      "count:share",
+      "list:stat-values",
+      "attr:stat-bar-1@style",
+      "attr:stat-bar-2@style",
+      "attr:stat-bar-3@style",
+      "attr:stat-bar-4@style",
+      "count:variants",
+      "list:appearances"
+    ],
+    "expect": {
+      "url": "/gta-6/weapons/assault-rifle",
+      "text:breadcrumb": "GTA 6 Weapon Stats & How To Get",
+      "attr:breadcrumb@href": "/gta-6/weapons/",
+      "count:hero-image": "0",
+      "list:section-titles": "KZ-59 DESCRIPTION: || KZ-59: GTA 6 INFO || KZ-59: HOW TO GET || KOZLOV KZ-59 GTA 6 STATISTICS || KZ-59: GTA 6 Screenshots || KZ-59 GAME APPEARANCES",
+      "list:info-labels": "Manufacturer || Weapon Class || Based on (Real Life) || Ammo Capacity || Extended Ammo || Acquisition Method || Story Mode Price || Modifications || Variant / Conversion",
+      "list:stat-labels": "DAMAGE || ACCURACY || HANDLING || RANGE || OVERALL",
+      "count:stat-bars": "4",
+      "count:rating-stars": "5",
+      "count:favorites-button": "1",
+      "count:compare-to": "1",
+      "count:tabs": "0",
+      "count:gallery-empty": "1"
+    }
+  },
+  {
+    "id": "F2-04",
+    "mode": "animal",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "attr:breadcrumb@href",
+      "count:hero-image",
+      "list:section-titles",
+      "list:info-labels",
+      "list:stat-labels",
+      "count:stat-bars",
+      "count:rating-stars",
+      "text:rating-total",
+      "count:favorites-button",
+      "count:compare-to",
+      "count:tabs",
+      "count:gallery",
+      "count:gallery-empty",
+      "count:share"
+    ],
+    "expect": {
+      "url": "/gta-6/animals/gray-fox",
+      "text:breadcrumb": "GTA 6 Animals Guide & Locations",
+      "attr:breadcrumb@href": "/gta-6/animals/",
+      "count:hero-image": "0",
+      "list:section-titles": "GRAY FOX: GTA 6 INFO || Gray Fox: Screenshots",
+      "list:info-labels": "Animal Category || Habitat || Recommended Weapon || Animal Species || Animal Class",
+      "count:stat-bars": "0",
+      "count:rating-stars": "5",
+      "count:favorites-button": "1",
+      "count:compare-to": "0",
+      "count:tabs": "0",
+      "count:gallery-empty": "1"
+    }
+  },
+  {
+    "id": "F2-05",
+    "mode": "character",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "attr:breadcrumb@href",
+      "count:hero-image",
+      "list:section-titles",
+      "list:info-labels",
+      "list:stat-labels",
+      "count:stat-bars",
+      "count:rating-stars",
+      "text:rating-total",
+      "count:favorites-button",
+      "count:compare-to",
+      "count:tabs",
+      "count:gallery",
+      "count:gallery-empty",
+      "count:share",
+      "count:gallery-thumbs"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/jason",
+      "text:breadcrumb": "GTA 6 Characters Guide, Bio & Voice Actor",
+      "attr:breadcrumb@href": "/gta-6/characters/",
+      "count:hero-image": "0",
+      "list:section-titles": "JASON DUVAL: GTA 6 INFO || JASON DUVAL: SCREENSHOTS || JASON DUVAL: ARTWORKS || JASON DUVAL: VIDEO",
+      "list:info-labels": "Role || Gender || Born In Year || Nationality || Location || Occupation || Also Known As || Performer / Actor || Family || Affiliation || Property / Safehouse || Vehicles",
+      "count:stat-bars": "0",
+      "count:rating-stars": "5",
+      "count:favorites-button": "1",
+      "count:compare-to": "0",
+      "count:tabs": "0",
+      "count:gallery-empty": "0"
+    }
+  },
+  {
+    "id": "F2-06",
+    "mode": "property",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "attr:breadcrumb@href",
+      "count:hero-image",
+      "list:section-titles",
+      "list:info-labels",
+      "list:stat-labels",
+      "count:stat-bars",
+      "count:rating-stars",
+      "text:rating-total",
+      "count:favorites-button",
+      "count:compare-to",
+      "count:tabs",
+      "count:gallery",
+      "count:gallery-empty",
+      "count:share"
+    ],
+    "expect": {
+      "url": "/gta-6/properties/7th-avenue-garage",
+      "text:breadcrumb": "GTA 6 Properties & Garages",
+      "attr:breadcrumb@href": "/gta-6/properties/",
+      "count:hero-image": "0",
+      "list:section-titles": "HOW TO GET THE 7TH AVENUE GARAGE: || 7TH AVENUE GARAGE: MAP LOCATION || 7TH AVENUE GARAGE: GTA 6 INFO || 7TH AVENUE GARAGE: HOW TO GET",
+      "list:info-labels": "Property Type || Property Style || Location || State / Region || Vehicles Capacity || How To Unlock || Story Mode Price",
+      "count:stat-bars": "0",
+      "count:rating-stars": "5",
+      "count:favorites-button": "1",
+      "count:compare-to": "0",
+      "count:tabs": "0",
+      "count:gallery-empty": "0"
+    }
+  },
+  {
+    "id": "F2-07",
+    "mode": "radio",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "attr:breadcrumb@href",
+      "count:hero-image",
+      "list:section-titles",
+      "list:info-labels",
+      "list:stat-labels",
+      "count:stat-bars",
+      "count:rating-stars",
+      "text:rating-total",
+      "count:favorites-button",
+      "count:compare-to",
+      "count:tabs",
+      "count:gallery",
+      "count:gallery-empty",
+      "count:share"
+    ],
+    "expect": {
+      "url": "/gta-6/radio-stations/flash-fm",
+      "text:breadcrumb": "GTA 6 Radio Station Songs & Tracklist",
+      "attr:breadcrumb@href": "/gta-6/radio-stations/",
+      "count:hero-image": "0",
+      "list:section-titles": "FLASH FM: GTA 6 INFO || Flash FM Tracklist:",
+      "list:info-labels": "Music Genre || Radio Host",
+      "count:stat-bars": "0",
+      "count:rating-stars": "5",
+      "count:favorites-button": "1",
+      "count:compare-to": "0",
+      "count:tabs": "0",
+      "count:gallery-empty": "0"
+    }
+  },
+  {
+    "id": "F2-08",
+    "mode": "mission",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "attr:breadcrumb@href",
+      "count:hero-image",
+      "list:section-titles",
+      "list:info-labels",
+      "list:stat-labels",
+      "count:stat-bars",
+      "count:rating-stars",
+      "text:rating-total",
+      "count:favorites-button",
+      "count:compare-to",
+      "count:tabs",
+      "count:gallery",
+      "count:gallery-empty",
+      "count:share"
+    ],
+    "expect": {
+      "url": "/gta-6/missions/breakfast-run",
+      "text:breadcrumb": "GTA 6 Mission Guide & Walkthrough",
+      "attr:breadcrumb@href": "/gta-6/missions/",
+      "count:hero-image": "0",
+      "list:section-titles": "BREAKFAST RUN: GTA 6 INFO || MISSION WALKTHROUGH - BREAKFAST RUN || MISSION OBJECTIVES || Mission Completed",
+      "list:info-labels": "Mission Number || Mission Type || Chapter || Mission Giver || Protagonist (Playable) || Required for 100% || Featuring || Rewards",
+      "count:stat-bars": "0",
+      "count:rating-stars": "5",
+      "count:favorites-button": "1",
+      "count:compare-to": "0",
+      "count:tabs": "0",
+      "count:gallery-empty": "0"
+    }
+  },
+  {
+    "id": "F2-09",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/vehicles/no-such-vehicle-xyz"
+    ],
+    "reset": "clear",
+    "reads": [
+      "list:not-found-sub",
+      "count:rating-block",
+      "count:stat-bars",
+      "count:breadcrumb"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/no-such-vehicle-xyz",
+      "list:not-found-sub": "Get back inside the map!",
+      "count:rating-block": "0",
+      "count:stat-bars": "0",
+      "count:breadcrumb": "0"
+    }
+  },
+  {
+    "id": "F2-10",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/weapons/no-such-weapon-xyz"
+    ],
+    "reset": "clear",
+    "reads": [
+      "list:not-found-sub",
+      "count:rating-block"
+    ],
+    "expect": {
+      "url": "/gta-6/weapons/no-such-weapon-xyz",
+      "list:not-found-sub": "Get back inside the map!",
+      "count:rating-block": "0"
+    }
+  },
+  {
+    "id": "F2-11",
+    "mode": "vehicle-standout",
+    "keys": [
+      "hover:rating-stars",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "calls",
+      "blocked",
+      "count:rating-stars",
+      "text:rating-total"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "count:rating-stars": "5"
+    }
+  },
+  {
+    "id": "F2-12",
+    "mode": null,
+    "keys": [
+      "hover:heading",
+      "hover:rating-stars",
+      "wait:1500"
+    ],
+    "reset": "none",
+    "reads": [
+      "calls",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez"
+    }
+  },
+  {
+    "id": "F2-13",
+    "mode": "vehicle-standout",
+    "keys": [
+      "click:compare-to"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:compare-to-menu",
+      "attr:compare-to@aria-expanded",
+      "count:compare-to-items",
+      "attr:compare-to-item-1@href",
+      "list:compare-to-items",
+      "attr:compare-to-item-last@href",
+      "text:compare-to-item-last",
+      "attr:compare-to-item-nightblade@href",
+      "attr:compare-to-item-sanchez@href"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:compare-to-menu": "true",
+      "attr:compare-to@aria-expanded": "true",
+      "attr:compare-to-item-1@href": "/gta-6/vehicles/comparison/?vehicle1=alvino-v1&vehicle2=sunset-sanchez",
+      "attr:compare-to-item-last@href": "/gta-6/vehicles/comparison/?vehicle1=sunset-sanchez&vehicle2=zombie-bobber",
+      "text:compare-to-item-last": "Zombie Bobber",
+      "attr:compare-to-item-nightblade@href": "/gta-6/vehicles/comparison/?vehicle1=sunset-sanchez&vehicle2=western-nightblade",
+      "attr:compare-to-item-sanchez@href": "/gta-6/vehicles/comparison/?vehicle1=maibatsu-sanchez&vehicle2=sunset-sanchez"
+    }
+  },
+  {
+    "id": "F2-14",
+    "mode": "vehicle-standout",
+    "keys": [
+      "focus:compare-to",
+      "press:Enter"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:compare-to-menu",
+      "attr:compare-to@aria-expanded"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:compare-to-menu": "true",
+      "attr:compare-to@aria-expanded": "true"
+    }
+  },
+  {
+    "id": "F2-15",
+    "mode": null,
+    "keys": [
+      "press:Escape"
+    ],
+    "reset": "none",
+    "reads": [
+      "visible:compare-to-menu",
+      "attr:compare-to@aria-expanded"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:compare-to-menu": "false",
+      "attr:compare-to@aria-expanded": "false"
+    }
+  },
+  {
+    "id": "F2-16",
+    "mode": "character",
+    "keys": [
+      "macro:wake",
+      "scroll:gallery-thumb-1",
+      "click:gallery-thumb-1",
+      "waitfor:lightbox"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:lightbox",
+      "text:lightbox-counter",
+      "count:lightbox-close",
+      "count:lightbox-next",
+      "count:lightbox-prev",
+      "count:lightbox-buttons"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/jason",
+      "visible:lightbox": "true",
+      "count:lightbox-close": "1",
+      "count:lightbox-next": "1",
+      "count:lightbox-prev": "1",
+      "count:lightbox-buttons": "5"
+    }
+  },
+  {
+    "id": "F2-17",
+    "mode": null,
+    "keys": [
+      "click:lightbox-next",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lightbox-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/jason"
+    }
+  },
+  {
+    "id": "F2-18",
+    "mode": null,
+    "keys": [
+      "press:ArrowRight",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lightbox-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/jason"
+    }
+  },
+  {
+    "id": "F2-19",
+    "mode": null,
+    "keys": [
+      "press:ArrowLeft",
+      "wait:800",
+      "press:ArrowLeft",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "text:lightbox-counter"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/jason"
+    }
+  },
+  {
+    "id": "F2-20",
+    "mode": null,
+    "keys": [
+      "press:Escape",
+      "wait:800"
+    ],
+    "reset": "none",
+    "reads": [
+      "visible:lightbox"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/jason",
+      "visible:lightbox": "false"
+    }
+  },
+  {
+    "id": "F2-21",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/characters/jason?i=jason-duval-01",
+      "macro:wake",
+      "wait:3000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:lightbox",
+      "count:gallery-thumbs"
+    ],
+    "expect": {
+      "url": "/gta-6/characters/jason",
+      "visible:lightbox": "false"
+    }
+  },
+  {
+    "id": "F2-22",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/vehicles/sunset-sanchez?utm_source=test"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:stat-bars"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez?utm_source=test",
+      "count:stat-bars": "5"
+    }
+  },
+  {
+    "id": "F2-23",
+    "mode": "vehicle-standout",
+    "keys": [],
+    "reset": "clear",
+    "reads": [
+      "count:pager-prev",
+      "count:pager-next"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "count:pager-prev": "0",
+      "count:pager-next": "0"
+    }
+  },
+  {
+    "id": "F2-24",
+    "mode": "vehicle-standout",
+    "keys": [
+      "macro:to-pager"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:pager-prev",
+      "count:pager-next",
+      "attr:pager-prev@href",
+      "attr:pager-next@href",
+      "text:pager-prev",
+      "text:pager-next"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "count:pager-prev": "1",
+      "count:pager-next": "1",
+      "attr:pager-prev@href": "/gta-6/vehicles/mud-crasher-rancher",
+      "attr:pager-next@href": "/gta-6/vehicles/tormentor-street-blazer"
+    }
+  },
+  {
+    "id": "F2-25",
+    "mode": null,
+    "keys": [
+      "click:pager-next",
+      "wait:5000"
+    ],
+    "reset": "none",
+    "reads": [
+      "count:stat-bars"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/tormentor-street-blazer",
+      "count:stat-bars": "5"
+    }
+  },
+  {
+    "id": "F2-26",
+    "mode": "vehicle-standout",
+    "keys": [
+      "scroll:comments",
+      "wait:2000"
+    ],
+    "reset": "clear",
+    "reads": [
+      "list:comments-tabs",
+      "list:comments-sort",
+      "attr:comments-editor@role",
+      "attr:comments-editor@aria-label",
+      "text:comments-placeholder",
+      "attr:comments-limit@data-max",
+      "count:comments-guest",
+      "blocked"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez"
+    }
+  },
+  {
+    "id": "F2-27",
+    "mode": "vehicle-standout",
+    "keys": [
+      "viewport:390x844",
+      "reload"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:compare-to",
+      "visible:favorites-button",
+      "visible:rating-block",
+      "visible:stat-bar-1",
+      "count:section-titles",
+      "visible:breadcrumb"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "visible:compare-to": "true",
+      "visible:favorites-button": "true",
+      "visible:rating-block": "true",
+      "visible:stat-bar-1": "true",
+      "count:section-titles": "3",
+      "visible:breadcrumb": "true"
+    }
+  },
+  {
+    "id": "F2-28",
+    "mode": null,
+    "keys": [
+      "viewport:1366x900",
+      "goto:/gta-6/vehicles/sunset-sanchez/"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:stat-bars"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "count:stat-bars": "5"
+    }
+  },
+  {
+    "id": "F2-29",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/vehicles/Sunset-Sanchez"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:stat-bars"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/sunset-sanchez",
+      "count:stat-bars": "5"
+    }
+  },
+  {
+    "id": "F2-30",
+    "mode": null,
+    "keys": [
+      "goto:/vehicles/gta-6/manchez"
+    ],
+    "reset": "clear",
+    "reads": [
+      "count:stat-bars"
+    ],
+    "expect": {
+      "url": "/vehicles/gta-6/manchez",
+      "count:stat-bars": "5"
+    }
+  },
+  {
+    "id": "F2-31",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/vehicles/banshee"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "list:stat-labels"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/banshee",
+      "text:breadcrumb": "GTA 6 Vehicle Stats, Price, How To Get",
+      "list:stat-labels": "SPEED || ACCELERATION || ASPHALT HANDLING || OFF-ROAD HANDLING || STRENGTH || RATING"
+    }
+  },
+  {
+    "id": "F2-32",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/vehicles/maverick"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "list:stat-labels",
+      "list:info-labels"
+    ],
+    "expect": {
+      "url": "/gta-6/vehicles/maverick",
+      "text:breadcrumb": "GTA 6 Vehicle Stats, Price, How To Get",
+      "list:stat-labels": "SPEED || ACCELERATION || ASPHALT HANDLING || OFF-ROAD HANDLING || STRENGTH || RATING",
+      "list:info-labels": "Vehicle Class || Manufacturer || Style || Era || Seats || Based on (Real Life) || Mass / Weight || Variant / Conversion"
+    }
+  },
+  {
+    "id": "F2-33",
+    "mode": null,
+    "keys": [
+      "goto:/gta-6/weapons/drug-mule-kz-59"
+    ],
+    "reset": "clear",
+    "reads": [
+      "text:breadcrumb",
+      "list:section-titles",
+      "list:info-labels",
+      "list:stat-labels"
+    ],
+    "expect": {
+      "url": "/gta-6/weapons/drug-mule-kz-59",
+      "text:breadcrumb": "GTA 6 Weapon Stats & How To Get",
+      "list:section-titles": "DRUG MULE KZ-59: GTA 6 INFO || DRUG MULE KZ-59: HOW TO GET || KOZLOV DRUG MULE KZ-59 GTA 6 STATISTICS || Drug Mule KZ-59: GTA 6 Screenshots",
+      "list:info-labels": "Manufacturer || Weapon Class || Base Model || Ammo Capacity || How To Unlock || Modifications",
+      "list:stat-labels": "DAMAGE || ACCURACY || HANDLING || RANGE || OVERALL"
+    }
+  },
+  {
+    "id": "F2-34",
+    "mode": "weapon",
+    "keys": [
+      "click:compare-to"
+    ],
+    "reset": "clear",
+    "reads": [
+      "visible:compare-to-menu",
+      "count:compare-to-items",
+      "attr:compare-to-item-1@href"
+    ],
+    "expect": {
+      "url": "/gta-6/weapons/assault-rifle",
+      "visible:compare-to-menu": "true",
+      "attr:compare-to-item-1@href": "/gta-6/weapons/comparison/?weapon1=assault-rifle&weapon2=service-carbine"
+    }
+  }
+]
