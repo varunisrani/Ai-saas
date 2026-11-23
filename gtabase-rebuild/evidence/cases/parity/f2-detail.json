@@ -1,0 +1,175 @@
+[
+ {
+  "id": "F2-01",
+  "mode": "vehicle-standout",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share",
+   "list:stat-values",
+   "attr:stat-bar-1@style",
+   "attr:stat-bar-2@style",
+   "attr:stat-bar-3@style",
+   "attr:stat-bar-4@style",
+   "attr:stat-bar-5@style",
+   "list:variants",
+   "text:favorites-button",
+   "text:compare-to"
+  ]
+ },
+ {
+  "id": "F2-03",
+  "mode": "weapon",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share",
+   "list:stat-values",
+   "attr:stat-bar-1@style",
+   "attr:stat-bar-2@style",
+   "attr:stat-bar-3@style",
+   "attr:stat-bar-4@style",
+   "count:variants",
+   "list:appearances"
+  ]
+ },
+ {
+  "id": "F2-06",
+  "mode": "property",
+  "steps": [],
+  "reads": [
+   "text:breadcrumb",
+   "attr:breadcrumb@href",
+   "count:hero-image",
+   "list:section-titles",
+   "list:info-labels",
+   "list:stat-labels",
+   "count:stat-bars",
+   "count:rating-stars",
+   "text:rating-total",
+   "count:favorites-button",
+   "count:compare-to",
+   "count:tabs",
+   "count:gallery",
+   "count:gallery-empty",
+   "count:share"
+  ]
+ },
+ {
+  "id": "F2-09",
+  "steps": [
+   "goto:/gta-6/vehicles/no-such-vehicle-xyz"
+  ],
+  "reads": [
+   "list:not-found-sub",
+   "count:rating-block",
+   "count:stat-bars",
+   "count:breadcrumb"
+  ]
+ },
+ {
+  "id": "F2-11",
+  "mode": "vehicle-standout",
+  "steps": [
+   "hover:rating-stars",
+   "wait:2000"
+  ],
+  "reads": [
+   "calls",
+   "blocked",
+   "count:rating-stars",
+   "text:rating-total"
+  ]
+ },
+ {
+  "id": "F2-16",
+  "mode": "character",
+  "steps": [
+   "macro:wake",
+   "scroll:gallery-thumb-1",
+   "click:gallery-thumb-1",
+   "waitfor:lightbox"
+  ],
+  "reads": [
+   "visible:lightbox",
+   "text:lightbox-counter",
+   "count:lightbox-close",
+   "count:lightbox-next",
+   "count:lightbox-prev",
+   "count:lightbox-buttons"
+  ]
+ },
+ {
+  "id": "F2-23",
+  "mode": "vehicle-standout",
+  "steps": [],
+  "reads": [
+   "count:pager-prev",
+   "count:pager-next"
+  ]
+ },
+ {
+  "id": "F2-26",
+  "mode": "vehicle-standout",
+  "steps": [
+   "scroll:comments",
+   "wait:2000"
+  ],
+  "reads": [
+   "list:comments-tabs",
+   "list:comments-sort",
+   "attr:comments-editor@role",
+   "attr:comments-editor@aria-label",
+   "text:comments-placeholder",
+   "attr:comments-limit@data-max",
+   "count:comments-guest",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F2-29",
+  "steps": [
+   "goto:/gta-6/vehicles/Sunset-Sanchez"
+  ],
+  "reads": [
+   "count:stat-bars"
+  ]
+ },
+ {
+  "id": "F2-32",
+  "steps": [
+   "goto:/gta-6/vehicles/maverick"
+  ],
+  "reads": [
+   "text:breadcrumb",
+   "list:stat-labels",
+   "list:info-labels"
+  ]
+ }
+]

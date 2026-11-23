@@ -1,0 +1,164 @@
+[
+ {
+  "id": "F6-01",
+  "mode": "animals",
+  "steps": [],
+  "reads": [
+   "count:card-grid",
+   "count:grid-1-cards",
+   "count:grid-2-cards",
+   "count:grid-3-cards",
+   "count:guide-card",
+   "attr:grid-1-first-link@href",
+   "attr:grid-1-first-link@aria-label",
+   "count:section-heading",
+   "count:toc",
+   "count:faq-question",
+   "count:rlta-any",
+   "count:tabs-script"
+  ]
+ },
+ {
+  "id": "F6-04",
+  "mode": "characters",
+  "steps": [],
+  "reads": [
+   "count:card-grid",
+   "count:grid-1-cards",
+   "count:grid-2-cards",
+   "count:grid-3-cards",
+   "count:grid-4-cards",
+   "count:plain-person-row",
+   "count:faq-question",
+   "attr:grid-1-first-link@href",
+   "count:bullet-list-1",
+   "count:rlta-any"
+  ]
+ },
+ {
+  "id": "F6-07",
+  "mode": "properties",
+  "steps": [],
+  "reads": [
+   "count:card-grid",
+   "count:grid-1-cards",
+   "count:grid-2-cards",
+   "count:grid-3-cards",
+   "count:grid-4-cards",
+   "count:guide-card",
+   "count:card-with-price",
+   "count:card-with-location",
+   "count:rlta-any"
+  ]
+ },
+ {
+  "id": "F6-09",
+  "mode": "radio",
+  "steps": [
+   "macro:wake"
+  ],
+  "reads": [
+   "count:station-row",
+   "count:station-without-tracks",
+   "count:track-play",
+   "count:track-play-visible",
+   "count:track-play-hidden",
+   "list:tracklist-header",
+   "count:table-controls",
+   "text:player-title",
+   "text:s1-track1-title",
+   "text:player-artist",
+   "text:s1-track1-artist",
+   "text:player-time",
+   "text:player-duration",
+   "attr:player-toggle-icon@class",
+   "visible:floating-player",
+   "count:track-play-pause-state",
+   "count:rlta-any",
+   "calls"
+  ]
+ },
+ {
+  "id": "F6-19",
+  "mode": "ps5",
+  "steps": [
+   "click:toc-link-combat"
+  ],
+  "reads": [
+   "attr:toc-link-combat@href"
+  ]
+ },
+ {
+  "id": "F6-21",
+  "mode": "xbox",
+  "steps": [],
+  "reads": [
+   "count:cheat-row",
+   "count:cheat-category",
+   "count:first-cheat-keys",
+   "attr:first-cheat-key-1@alt",
+   "attr:first-cheat-key-1@src",
+   "count:cheat-key-other",
+   "attr:howto-icon-2@alt",
+   "attr:howto-icon-3@alt",
+   "count:platform-link",
+   "text:platform-current",
+   "count:toc-link",
+   "count:body-link-pc",
+   "count:cheat-copy-or-filter"
+  ]
+ },
+ {
+  "id": "F6-24",
+  "mode": "maploc",
+  "steps": [],
+  "reads": [
+   "count:toc",
+   "count:toc-link",
+   "count:indexed-heading",
+   "count:inline-gallery",
+   "attr:map-banner-link@href",
+   "text:map-banner-link",
+   "count:rlta-any"
+  ]
+ },
+ {
+  "id": "F6-26",
+  "mode": "animals",
+  "steps": [
+   "macro:wake",
+   "scroll:grid-3-cards",
+   "wait:800"
+  ],
+  "reads": [
+   "attr:back-to-top@class"
+  ]
+ },
+ {
+  "id": "F6-39",
+  "mode": "membership-hover-first",
+  "steps": [
+   "try:click:acc-2",
+   "wait:1000"
+  ],
+  "reads": [
+   "attr:acc-container@data-rlta-state",
+   "count:acc-button",
+   "attr:acc-1@aria-expanded",
+   "attr:acc-2@aria-expanded",
+   "count:acc-open"
+  ]
+ },
+ {
+  "id": "F6-36",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/characters/"
+  ],
+  "reads": [
+   "count:card-grid",
+   "count:grid-4-cards",
+   "visible:grid-1-first-link"
+  ]
+ }
+]

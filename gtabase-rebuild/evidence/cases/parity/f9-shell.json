@@ -1,0 +1,142 @@
+[
+ {
+  "id": "F9-01",
+  "mode": "hub",
+  "steps": [],
+  "reads": [
+   "title",
+   "calls",
+   "count:info-labels",
+   "list:info-labels",
+   "text:info-title",
+   "count:info-links",
+   "text:countdown-title",
+   "text:countdown-timer",
+   "count:countdown-digits",
+   "count:#days",
+   "list:hub-section-headings",
+   "count:hub-cards",
+   "count:hub-news-items",
+   "list:hub-news-dates",
+   "attr:hub-all-news-link@href"
+  ]
+ },
+ {
+  "id": "F9-05",
+  "mode": "hub",
+  "steps": [
+   "hover:menu-gta6",
+   "wait:400"
+  ],
+  "reads": [
+   "visible:menu-gta6-sub",
+   "count:menu-gta6-sub-links",
+   "list:menu-gta6-sub-links",
+   "attr:menu-gta6-characters@aria-label"
+  ]
+ },
+ {
+  "id": "F9-09",
+  "mode": "hub",
+  "steps": [
+   "focus:menu-gta6",
+   "press:Enter",
+   "wait:idle"
+  ],
+  "reads": [
+   "title",
+   "calls"
+  ]
+ },
+ {
+  "id": "F9-13",
+  "mode": "hub-phone",
+  "steps": [
+   "macro:open-phone-menu"
+  ],
+  "reads": [
+   "attr:menu-toggle@class",
+   "attr:main-menu@class",
+   "visible:main-menu",
+   "list:menu-top-links",
+   "visible:mobile-search-input",
+   "visible:menu-gta6-sub"
+  ]
+ },
+ {
+  "id": "F9-18",
+  "mode": "hub-phone",
+  "steps": [
+   "click:user-dropdown-toggle",
+   "wait:400"
+  ],
+  "reads": [
+   "list:user-dropdown-items",
+   "attr:user-dropdown-toggle@aria-expanded",
+   "text:user-dropdown-toggle"
+  ]
+ },
+ {
+  "id": "F9-28",
+  "mode": "hub",
+  "steps": [
+   "click:login-link",
+   "wait:1200",
+   "press:Escape",
+   "wait:1000"
+  ],
+  "reads": [
+   "visible:login-heading",
+   "attr:login-modal@aria-hidden"
+  ]
+ },
+ {
+  "id": "F9-26",
+  "mode": "hub",
+  "steps": [],
+  "reads": [
+   "text:login-link",
+   "attr:login-link@href",
+   "attr:login-link@data-modals-width",
+   "visible:login-heading",
+   "text:join-link",
+   "attr:join-link@href"
+  ]
+ },
+ {
+  "id": "F9-30",
+  "mode": "hub",
+  "steps": [],
+  "reads": [
+   "attr:back-to-top@class",
+   "attr:back-to-top@aria-label",
+   "attr:back-to-top@href",
+   "count:footer-links",
+   "count:breadcrumb-items"
+  ]
+ },
+ {
+  "id": "F9-34",
+  "mode": "article",
+  "steps": [
+   "macro:to-footer"
+  ],
+  "reads": [
+   "title",
+   "list:breadcrumb-items",
+   "count:subnav-current"
+  ]
+ },
+ {
+  "id": "F9-38",
+  "mode": "hub",
+  "steps": [
+   "click:site-logo",
+   "wait:idle"
+  ],
+  "reads": [
+   "title",
+   "calls"
+  ]
+ }
+]

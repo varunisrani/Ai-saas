@@ -1,0 +1,174 @@
+[
+ {
+  "id": "F7-01",
+  "mode": "news",
+  "steps": [],
+  "reads": [
+   "title",
+   "calls",
+   "count:list-item",
+   "count:item-title-link",
+   "count:item-thumb",
+   "count:item-thumb-link",
+   "count:item-author",
+   "count:item-date",
+   "count:item-category",
+   "count:item-tags",
+   "visible:item-details-label",
+   "text:item-details-label",
+   "list:item-date",
+   "attr:item-date@datetime",
+   "text:item-category",
+   "attr:item-category@href",
+   "attr:item-thumb@width",
+   "attr:item-thumb@height",
+   "text:page-counter",
+   "count:page-links",
+   "count:share-block",
+   "count:list-banner",
+   "visible:game-filter-toggle"
+  ]
+ },
+ {
+  "id": "F7-08",
+  "steps": [
+   "goto:/gta-6/news/page-6"
+  ],
+  "reads": [
+   "title",
+   "calls",
+   "count:list-item"
+  ]
+ },
+ {
+  "id": "F7-12",
+  "steps": [
+   "goto:/gta-6/news/?start=999"
+  ],
+  "reads": [
+   "title",
+   "calls",
+   "text:page-counter",
+   "count:list-item",
+   "text:page-number"
+  ]
+ },
+ {
+  "id": "F7-16",
+  "steps": [
+   "goto:/gta-6/guides/page-4"
+  ],
+  "reads": [
+   "title",
+   "calls"
+  ]
+ },
+ {
+  "id": "F7-20",
+  "mode": "allnews",
+  "steps": [],
+  "reads": [
+   "title",
+   "calls",
+   "text:page-counter",
+   "count:list-item",
+   "count:item-tags",
+   "count:item-category",
+   "count:item-author",
+   "count:item-date",
+   "count:game-filter-toggle",
+   "visible:game-filter-menu"
+  ]
+ },
+ {
+  "id": "F7-27",
+  "mode": "article",
+  "steps": [],
+  "reads": [
+   "title",
+   "calls",
+   "count:article-meta",
+   "count:article-author",
+   "text:article-published",
+   "attr:article-published@datetime",
+   "count:article-modified",
+   "text:article-category",
+   "attr:article-category@href",
+   "count:share-buttons",
+   "list:share-buttons",
+   "count:article-hero",
+   "text:toc-heading",
+   "count:toc-links",
+   "list:toc-links",
+   "count:section-anchors",
+   "list:section-headings",
+   "count:comments",
+   "count:comment-sort-options",
+   "list:comment-sort-options",
+   "text:comment-sort-current",
+   "attr:comment-limit@data-max",
+   "attr:comment-editor@aria-label",
+   "count:sidebar"
+  ]
+ },
+ {
+  "id": "F7-31",
+  "mode": "controls",
+  "steps": [
+   "macro:to-bottom"
+  ],
+  "reads": [
+   "title",
+   "count:article-published",
+   "text:article-modified",
+   "attr:article-modified@datetime",
+   "text:article-category",
+   "count:toc-links",
+   "count:section-anchors",
+   "count:related-block",
+   "text:related-heading",
+   "count:related-cards",
+   "list:breadcrumb-items"
+  ]
+ },
+ {
+  "id": "F7-35",
+  "mode": "article-phone",
+  "steps": [],
+  "reads": [
+   "visible:toc",
+   "count:toc-links",
+   "visible:share-block",
+   "visible:article-hero",
+   "visible:sidebar",
+   "text:article-published"
+  ]
+ },
+ {
+  "id": "F7-39",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/guides/"
+  ],
+  "reads": [
+   "count:list-item",
+   "visible:item-thumb",
+   "visible:item-title-link",
+   "visible:sidebar",
+   "visible:share-block",
+   "text:page-counter"
+  ]
+ },
+ {
+  "id": "F7-43",
+  "mode": "article",
+  "steps": [
+   "focus:toc-link-3",
+   "press:Enter",
+   "wait:800"
+  ],
+  "reads": [
+   "url"
+  ]
+ }
+]

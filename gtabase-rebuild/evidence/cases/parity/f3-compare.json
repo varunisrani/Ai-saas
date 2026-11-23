@@ -1,0 +1,178 @@
+[
+ {
+  "id": "F3-01",
+  "mode": "vehicles",
+  "steps": [
+   "macro:wake"
+  ],
+  "reads": [
+   "count:card",
+   "count:compare-toggle",
+   "attr:compare-toggle-1@role",
+   "attr:compare-toggle-1@aria-label",
+   "attr:compare-toggle-1@aria-checked",
+   "attr:compare-toggle-1@aria-disabled",
+   "attr:compare-toggle-1@tabindex",
+   "attr:compare-toggle-1@title",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-09",
+  "mode": "vehicles",
+  "steps": [
+   "macro:wake",
+   "focus:compare-toggle-1",
+   "press:Space"
+  ],
+  "reads": [
+   "attr:compare-toggle-1@aria-checked",
+   "session:gtabCompare:/gta-6/vehicles/",
+   "text:compare-count",
+   "text:compare-go",
+   "attr:compare-go@href",
+   "attr:compare-go@class",
+   "attr:compare-bar@hidden",
+   "count:compare-toggle-checked",
+   "count:compare-toggle-disabled"
+  ]
+ },
+ {
+  "id": "F3-18",
+  "mode": "vcompare",
+  "steps": [],
+  "reads": [
+   "title",
+   "text:cmp-crumb",
+   "attr:cmp-crumb@href",
+   "count:cmp-add",
+   "list:cmp-add-title",
+   "attr:cmp-add@data-url",
+   "attr:cmp-add@data-param",
+   "attr:cmp-add@data-picked",
+   "count:cmp-picker-all",
+   "attr:cmp-picker@placeholder",
+   "attr:cmp-picker@aria-expanded",
+   "attr:cmp-picker@aria-autocomplete",
+   "count:cmp-source",
+   "text:cmp-note",
+   "list:cmp-links"
+  ]
+ },
+ {
+  "id": "F3-25b",
+  "mode": "wcompare",
+  "steps": [
+   "click:cmp-picker",
+   "type:kn\u00edfe",
+   "wait:400"
+  ],
+  "reads": [
+   "count:cmp-options"
+  ]
+ },
+ {
+  "id": "F3-33",
+  "mode": "best",
+  "steps": [
+   "focus:rank-class-select",
+   "press:Enter",
+   "wait:300",
+   "press:ArrowDown",
+   "wait:200",
+   "press:Enter"
+  ],
+  "reads": [
+   "title"
+  ]
+ },
+ {
+  "id": "F3-36",
+  "steps": [
+   "goto:/gta-6/vehicles/best-helicopters/"
+  ],
+  "reads": [
+   "title",
+   "list:rank-list-title",
+   "count:rank-rows",
+   "list:rank-row-1-labels",
+   "count:rank-row-1-badge",
+   "attr:rank-row-1-link@href",
+   "list:rank-ratings",
+   "count:rank-images"
+  ]
+ },
+ {
+  "id": "F3-39",
+  "steps": [
+   "goto:/gta-6/vehicles/best-vehicles/?class=motorcycles"
+  ],
+  "reads": [
+   "title",
+   "count:rank-rows"
+  ]
+ },
+ {
+  "id": "F3-41",
+  "steps": [
+   "goto:/gta-6/vehicles/best-unicorns/"
+  ],
+  "reads": [
+   "title",
+   "count:rank-rows"
+  ]
+ },
+ {
+  "id": "F3-44",
+  "steps": [
+   "viewport:1366x900",
+   "goto:/gta-6/vehicles/best-vehicles/"
+  ],
+  "reads": [
+   "attr:rank-class-item-1@href",
+   "attr:rank-class-item-2@href",
+   "attr:rank-class-item-3@href",
+   "attr:rank-class-item-4@href",
+   "attr:rank-class-item-5@href",
+   "attr:rank-class-item-6@href",
+   "attr:rank-class-item-7@href",
+   "attr:rank-class-item-8@href",
+   "attr:rank-class-item-9@href",
+   "attr:rank-class-item-10@href",
+   "attr:rank-class-item-11@href",
+   "attr:rank-class-item-12@href",
+   "attr:rank-class-item-13@href",
+   "attr:rank-class-item-14@href",
+   "attr:rank-class-item-15@href",
+   "attr:rank-class-item-16@href",
+   "attr:rank-class-item-17@href",
+   "attr:rank-class-item-18@href",
+   "attr:rank-class-item-19@href",
+   "attr:rank-class-item-20@href",
+   "attr:rank-class-item-21@href",
+   "attr:rank-class-item-1@title",
+   "list:rank-class-items"
+  ]
+ },
+ {
+  "id": "F3-47",
+  "steps": [
+   "goto:/gta-6/vehicles/best-vehicles/",
+   "focus:rank-class-select",
+   "press:Enter",
+   "wait:400"
+  ],
+  "reads": [
+   "visible:rank-class-menu",
+   "attr:rank-class-select@aria-expanded",
+   "text:rank-class-focused"
+  ]
+ }
+]

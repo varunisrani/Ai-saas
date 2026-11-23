@@ -1,0 +1,156 @@
+[
+ {
+  "id": "F5-01",
+  "mode": "checklist100",
+  "steps": [],
+  "reads": [
+   "count:cl-box",
+   "count:toc-box",
+   "count:sec-box",
+   "count:cl-box-checked",
+   "count:cl-box-disabled",
+   "text:pct-text",
+   "attr:pct-bar@style",
+   "text:guest-note",
+   "attr:guest-note-login@href",
+   "count:profile-switcher",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-04",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-story",
+   "click:sec-story"
+  ],
+  "reads": [
+   "checked:sec-story",
+   "checked:toc-story",
+   "text:pct-text",
+   "attr:pct-bar@style",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-08",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-exploration"
+  ],
+  "reads": [
+   "checked:sec-exploration",
+   "checked:toc-exploration",
+   "count:sec-exploration-children",
+   "count:sec-exploration-children-checked",
+   "count:cl-box-checked",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-11",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-story-tasks"
+  ],
+  "reads": [
+   "checked:sec-story-tasks",
+   "count:sec-story-tasks-children-checked",
+   "text:pct-text",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-15",
+  "mode": "checklist100",
+  "steps": [
+   "click:sec-story",
+   "click:sec-kenton",
+   "reload",
+   "wait:2000"
+  ],
+  "reads": [
+   "checked:sec-story",
+   "checked:toc-story",
+   "checked:sec-kenton",
+   "checked:sec-exploration",
+   "count:cl-box-checked",
+   "count:cl-box-disabled",
+   "text:pct-text",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-20",
+  "mode": "checklist100",
+  "steps": [],
+  "reads": [
+   "attr:sec-story@aria-label",
+   "attr:toc-story@aria-label",
+   "attr:sec-kenton@aria-label",
+   "attr:sec-story-tasks@aria-label",
+   "count:cl-box-labelled",
+   "count:reset-control"
+  ]
+ },
+ {
+  "id": "F5-23",
+  "mode": "missions",
+  "steps": [
+   "click:mission-gone-fishing"
+  ],
+  "reads": [
+   "checked:mission-gone-fishing",
+   "count:cl-box-checked",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-27",
+  "mode": "strangers",
+  "steps": [],
+  "reads": [
+   "count:cl-box",
+   "count:mission-row",
+   "count:mission-row-strangers-link",
+   "count:mission-row-main-link",
+   "list:chapter-heading",
+   "text:p:has-text(\"Tick the checkbox\")",
+   "count:pct-text",
+   "attr:mission-skunk-ape@aria-label"
+  ]
+ },
+ {
+  "id": "F5-30",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/missions/",
+   "wait:1500",
+   "click:mission-gone-fishing",
+   "shot:mobile"
+  ],
+  "reads": [
+   "checked:mission-gone-fishing",
+   "visible:mission-gone-fishing",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F5-34",
+  "steps": [
+   "goto:/missions/gta-6/prologue",
+   "wait:500"
+  ],
+  "reads": [
+   "title",
+   "count:cl-box"
+  ]
+ }
+]

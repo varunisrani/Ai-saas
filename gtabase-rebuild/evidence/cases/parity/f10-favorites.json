@@ -1,0 +1,167 @@
+[
+ {
+  "id": "F10-01",
+  "mode": "vehicle",
+  "steps": [],
+  "reads": [
+   "count:fav-button",
+   "text:fav-button",
+   "attr:fav-button@type",
+   "count:fav-button-role",
+   "attr:body@class",
+   "visible:login-modal",
+   "text:compare-button",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F10-04",
+  "mode": "animal",
+  "steps": [
+   "macro:open-fav-prompt"
+  ],
+  "reads": [
+   "text:fav-button",
+   "visible:login-modal",
+   "text:login-title",
+   "text:login-benefits",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F10-07",
+  "mode": "character",
+  "steps": [
+   "macro:open-fav-prompt"
+  ],
+  "reads": [
+   "text:fav-button",
+   "visible:login-modal",
+   "text:login-title",
+   "text:login-benefits",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F10-10",
+  "mode": "vehicle",
+  "steps": [
+   "macro:open-fav-prompt",
+   "press:Escape",
+   "wait:800"
+  ],
+  "reads": [
+   "visible:login-modal",
+   "text:fav-button",
+   "url"
+  ]
+ },
+ {
+  "id": "F10-13",
+  "mode": "vehicle",
+  "steps": [
+   "click:header-login",
+   "waitfor:login-modal",
+   "wait:500"
+  ],
+  "reads": [
+   "visible:login-modal",
+   "text:login-title",
+   "count:login-benefits",
+   "attr:login-modal@class",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F10-17",
+  "mode": "vehicle",
+  "steps": [
+   "macro:open-fav-prompt",
+   "reload",
+   "wait:1500"
+  ],
+  "reads": [
+   "text:fav-button",
+   "visible:login-modal",
+   "text:login-title",
+   "count:login-benefits",
+   "local:guest_checklists"
+  ]
+ },
+ {
+  "id": "F10-20",
+  "steps": [
+   "viewport:1366x900",
+   "goto:/gta-6/vehicles/",
+   "wait:idle",
+   "wait:2000"
+  ],
+  "reads": [
+   "count:list-fav-control",
+   "count:fav-button",
+   "calls"
+  ]
+ },
+ {
+  "id": "F10-23",
+  "mode": "map-garage",
+  "steps": [
+   "click:map-fav-star",
+   "wait:800"
+  ],
+  "reads": [
+   "visible:map-panel",
+   "attr:map-panel@role",
+   "attr:map-panel@aria-label",
+   "text:map-panel-title",
+   "text:map-panel-text",
+   "text:map-panel-login",
+   "attr:map-panel-login@href",
+   "text:map-panel-join",
+   "attr:map-panel-join@href",
+   "attr:map-panel-join@target",
+   "count:map-popup",
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F10-26",
+  "steps": [
+   "goto:/gta-6/map/",
+   "wait:6000",
+   "click:map-personal-marker",
+   "wait:4000",
+   "shot:personal-marker"
+  ],
+  "reads": [
+   "count:map-personal-marker",
+   "visible:map-panel",
+   "attr:map-panel@aria-label",
+   "text:map-panel-title",
+   "text:map-panel-text",
+   "calls",
+   "blocked",
+   "errors"
+  ]
+ },
+ {
+  "id": "F10-29",
+  "mode": "membership",
+  "steps": [],
+  "reads": [
+   "attr:.osm-plan-3 .btn-signup@href",
+   "attr:.osm-plan-2 .btn-signup@href",
+   "attr:.osm-plan-1 .btn-signup@href",
+   "attr:.osm-plan-3 .btn-details@href",
+   "attr:header-join@href",
+   "text:header-join"
+  ]
+ }
+]

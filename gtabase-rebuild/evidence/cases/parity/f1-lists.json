@@ -1,0 +1,159 @@
+[
+ {
+  "id": "F1-01",
+  "mode": "vehicles",
+  "steps": [],
+  "reads": [
+   "text:list-count",
+   "text:list-count-bottom-number",
+   "session:jamg-hash:/gta-6/vehicles/",
+   "value:sort-select",
+   "text:sort-shown",
+   "attr:sort-direction@data-value",
+   "attr:sort-direction@class",
+   "attr:sort-direction@title",
+   "list:sort-options",
+   "calls",
+   "list:filter-titles",
+   "count:class-options",
+   "text:class-1",
+   "attr:name-search@placeholder",
+   "attr:name-search@maxlength",
+   "attr:real-life-search@placeholder",
+   "text:manufacturer-shown",
+   "text:standout-shown",
+   "text:standout-option-1-text",
+   "visible:clear-filters",
+   "visible:filters-toggle",
+   "attr:autopage-sentinel@page-data",
+   "count:list-head",
+   "attr:products-wrapper@class"
+  ]
+ },
+ {
+  "id": "F1-05",
+  "mode": "vehicles",
+  "steps": [
+   "fill:name-search=AN",
+   "press:Enter",
+   "wait:900"
+  ],
+  "reads": [
+   "value:name-search"
+  ]
+ },
+ {
+  "id": "F1-10",
+  "mode": "vehicles",
+  "steps": [
+   "fill:real-life-search=Hurac\u00e1n",
+   "press:Enter",
+   "wait:900"
+  ],
+  "reads": [
+   "value:real-life-search"
+  ]
+ },
+ {
+  "id": "F1-17",
+  "mode": "vehicles",
+  "steps": [
+   "macro:hide-standouts"
+  ],
+  "reads": [
+   "text:standout-shown",
+   "count:card-standout-badge",
+   "value:standout-select",
+   "text:class-super",
+   "text:class-sports",
+   "visible:clear-filters"
+  ]
+ },
+ {
+  "id": "F1-24",
+  "mode": "vehicles",
+  "steps": [
+   "macro:flip-direction"
+  ],
+  "reads": [
+   "attr:sort-direction@data-value",
+   "text:card-1-speed",
+   "text:card-2-speed"
+  ]
+ },
+ {
+  "id": "F1-30",
+  "steps": [
+   "macro:fresh",
+   "goto:/gta-6/vehicles/#attr.ct1.value=super,sports&attr.ct734.value=hide-standouts",
+   "waitfor:card",
+   "wait:1200"
+  ],
+  "reads": [
+   "checked:class-super-box",
+   "checked:class-sports-box",
+   "value:standout-select",
+   "value:sort-select",
+   "count:card-standout-badge"
+  ]
+ },
+ {
+  "id": "F1-35",
+  "mode": "vehicles",
+  "steps": [
+   "viewport:390x844",
+   "wait:800"
+  ],
+  "reads": [
+   "visible:filters-toggle",
+   "attr:filters-toggle@aria-label",
+   "attr:filter-panel@class",
+   "visible:name-search",
+   "visible:class-super",
+   "visible:manufacturer-dropdown",
+   "visible:sort-dropdown",
+   "text:list-count"
+  ]
+ },
+ {
+  "id": "F1-42",
+  "mode": "vehicles",
+  "steps": [
+   "focus:name-search",
+   "type:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "press:Enter",
+   "wait:900"
+  ],
+  "reads": [
+   "value:name-search",
+   "attr:name-search@maxlength"
+  ]
+ },
+ {
+  "id": "F1-W06",
+  "mode": "weapons",
+  "steps": [
+   "click:sort-dropdown",
+   "click:sort-option-damage",
+   "wait:900"
+  ],
+  "reads": [
+   "value:sort-select",
+   "attr:sort-direction@data-value",
+   "text:card-1-damage",
+   "text:card-2-damage"
+  ]
+ },
+ {
+  "id": "F1-W11",
+  "mode": "weapons",
+  "steps": [
+   "macro:load-next-page",
+   "macro:load-next-page",
+   "macro:load-next-page"
+  ],
+  "reads": [
+   "attr:autopage-sentinel@page-data"
+  ]
+ }
+]

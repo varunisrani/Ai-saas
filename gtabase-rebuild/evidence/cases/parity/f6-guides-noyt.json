@@ -1,0 +1,20 @@
+[
+ {
+  "id": "F6NY-01",
+  "mode": "radio",
+  "steps": [
+   "macro:wake",
+   "click:s1-track2-play",
+   "wait:1500"
+  ],
+  "reads": [
+   "text:s1-track2-play",
+   "text:player-title",
+   "text:s1-track1-title",
+   "count:track-play-pause-state",
+   "attr:player-toggle-icon@class",
+   "count:youtube-iframe",
+   "calls"
+  ]
+ }
+]

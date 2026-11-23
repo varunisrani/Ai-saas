@@ -1,0 +1,149 @@
+[
+ {
+  "id": "F8-01",
+  "mode": "shots",
+  "steps": [],
+  "reads": [
+   "count:gallery",
+   "count:thumb",
+   "list:media-tab",
+   "text:media-tab-active",
+   "count:pagination",
+   "count:pagination-item",
+   "text:pagination-active",
+   "count:pagination-disabled",
+   "attr:pagination-page-2@href",
+   "attr:pagination-last@href",
+   "count:lightbox",
+   "attr:thumb-1-img@alt",
+   "count:thumb-img-lazy",
+   "visible:main-slideshow",
+   "count:modal-trigger",
+   "count:modal-trigger-login",
+   "calls"
+  ]
+ },
+ {
+  "id": "F8-09",
+  "mode": "shots",
+  "steps": [
+   "click:thumb-5",
+   "waitfor:lb-counter",
+   "wait:700"
+  ],
+  "reads": [
+   "text:lb-counter",
+   "attr:lb-image@alt"
+  ]
+ },
+ {
+  "id": "F8-12",
+  "mode": "shots",
+  "steps": [
+   "focus:thumb-3",
+   "press:Enter",
+   "wait:1200"
+  ],
+  "reads": [
+   "count:lightbox",
+   "text:lb-counter"
+  ]
+ },
+ {
+  "id": "F8-14",
+  "mode": "shots",
+  "steps": [
+   "click:pagination-page-2",
+   "macro:wake",
+   "macro:open-first"
+  ],
+  "reads": [
+   "count:thumb",
+   "text:pagination-active",
+   "text:lb-counter",
+   "count:pagination-disabled"
+  ]
+ },
+ {
+  "id": "F8-16",
+  "steps": [
+   "goto:/gta-6/screenshots/?i=gta-6-screen-104",
+   "macro:wake"
+  ],
+  "reads": [
+   "count:lightbox"
+  ]
+ },
+ {
+  "id": "F8-18",
+  "mode": "shots",
+  "steps": [
+   "click:media-tab-trailers",
+   "macro:wake"
+  ],
+  "reads": [
+   "text:media-tab-active",
+   "count:thumb",
+   "count:pagination",
+   "text:pagination-active"
+  ]
+ },
+ {
+  "id": "F8-23",
+  "mode": "covers",
+  "steps": [],
+  "reads": [
+   "count:gallery",
+   "count:thumb",
+   "visible:main-image",
+   "text:image-description",
+   "count:pagination",
+   "count:media-tab"
+  ]
+ },
+ {
+  "id": "F8-29",
+  "mode": "shots",
+  "steps": [
+   "click:media-tab-videos"
+  ],
+  "reads": [
+   "count:media-tab",
+   "count:gallery",
+   "title"
+  ]
+ },
+ {
+  "id": "F8-33",
+  "mode": "covers",
+  "steps": [
+   "click:main-image",
+   "waitfor:lb-counter",
+   "wait:700",
+   "press:Escape",
+   "wait:900"
+  ],
+  "reads": [
+   "count:lightbox",
+   "count:page-scroll-lock",
+   "visible:main-image"
+  ]
+ },
+ {
+  "id": "F8-31",
+  "steps": [
+   "viewport:390x844",
+   "goto:/gta-6/screenshots/",
+   "macro:wake",
+   "macro:open-first"
+  ],
+  "reads": [
+   "count:thumb",
+   "visible:lb-next",
+   "visible:lb-prev",
+   "visible:lb-close",
+   "text:lb-counter",
+   "visible:lb-image"
+  ]
+ }
+]
