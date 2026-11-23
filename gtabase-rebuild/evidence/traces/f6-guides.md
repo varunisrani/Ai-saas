@@ -141,6 +141,8 @@ server serves directly with 200 (no redirect).
 - Supplementary: `evidence/cases/f6-guides-noyt.json` (4 cases F6NY-01..04, profile
   `tools/profiles/f6-guides-noyt.profile.json` = same plus youtube.com blocked) → `evidence/runs/run-f6-guides-noyt.json`,
   4/4 clean: the "no JS-ready player" state.
+- Repeat check: a second run of F6-01..F6-09 at 12:0x UTC reproduced every readout
+  (`evidence/runs/repeat/run-f6-guides-01-09.json`; the rest of that repeat was stopped to spare the origin).
 - Clean: 39/39. Excluded: none in the final run. Harness fixes on the way (all re-run): (1) the runner could not
   load JCH-deferred scripts while `navigator.webdriver` was true → optional `browser.args` patch in
   tools/web/run-cases.mjs + `--disable-blink-features=AutomationControlled`; (2) the animals image link is 0×0 →

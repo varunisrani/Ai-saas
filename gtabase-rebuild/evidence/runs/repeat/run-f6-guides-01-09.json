@@ -1,0 +1,257 @@
+{
+ "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 guide pages",
+ "baseUrl": "https://www.gtabase.com",
+ "captured": "2026-11-23T12:00:15.720Z",
+ "locale": "en-US",
+ "readOnly": true,
+ "cases": [
+  {
+   "id": "F6-01",
+   "mode": "animals",
+   "steps": [],
+   "reads": [
+    "count:card-grid",
+    "count:grid-1-cards",
+    "count:grid-2-cards",
+    "count:grid-3-cards",
+    "count:guide-card",
+    "attr:grid-1-first-link@href",
+    "attr:grid-1-first-link@aria-label",
+    "count:section-heading",
+    "count:toc",
+    "count:faq-question",
+    "count:rlta-any",
+    "count:tabs-script"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/animals/",
+    "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+    "count:card-grid": "3",
+    "count:grid-1-cards": "184",
+    "count:grid-2-cards": "69",
+    "count:grid-3-cards": "2",
+    "count:guide-card": "255",
+    "attr:grid-1-first-link@href": "/gta-6/animals/albino-american-alligator",
+    "attr:grid-1-first-link@aria-label": "Read more: Albino American Alligator",
+    "count:section-heading": "3",
+    "count:toc": "0",
+    "count:faq-question": "0",
+    "count:rlta-any": "0",
+    "count:tabs-script": "0"
+   },
+   "error": null
+  },
+  {
+   "id": "F6-02",
+   "mode": "animals",
+   "steps": [
+    "click:grid-1-first-title-link"
+   ],
+   "reads": [
+    "title"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/animals/albino-american-alligator",
+    "heading": "Albino American Alligator",
+    "title": "Albino American Alligator | GTA 6 Animals Guide & Locations"
+   },
+   "error": null
+  },
+  {
+   "id": "F6-03",
+   "mode": null,
+   "steps": [
+    "back"
+   ],
+   "reads": [
+    "count:guide-card"
+   ],
+   "reset": "none",
+   "values": {
+    "url": "/gta-6/animals/",
+    "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+    "count:guide-card": "255"
+   },
+   "error": null
+  },
+  {
+   "id": "F6-04",
+   "mode": "characters",
+   "steps": [],
+   "reads": [
+    "count:card-grid",
+    "count:grid-1-cards",
+    "count:grid-2-cards",
+    "count:grid-3-cards",
+    "count:grid-4-cards",
+    "count:plain-person-row",
+    "count:faq-question",
+    "attr:grid-1-first-link@href",
+    "count:bullet-list-1",
+    "count:rlta-any"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/characters/",
+    "heading": "GTA 6 Characters Guide: Main Protagonists & Full List",
+    "count:card-grid": "4",
+    "count:grid-1-cards": "2",
+    "count:grid-2-cards": "6",
+    "count:grid-3-cards": "10",
+    "count:grid-4-cards": "49",
+    "count:plain-person-row": "10",
+    "count:faq-question": "5",
+    "attr:grid-1-first-link@href": "/gta-6/characters/jason",
+    "count:bullet-list-1": "17",
+    "count:rlta-any": "0"
+   },
+   "error": null
+  },
+  {
+   "id": "F6-05",
+   "mode": "gangs",
+   "steps": [],
+   "reads": [
+    "count:card-grid",
+    "count:grid-1-cards",
+    "count:grid-2-cards",
+    "attr:grid-1-first-card@href",
+    "count:bullet-list-1",
+    "count:section-heading",
+    "count:rlta-any"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/gangs/",
+    "heading": "GTA 6 Gangs & Factions Guide",
+    "count:card-grid": "2",
+    "count:grid-1-cards": "3",
+    "count:grid-2-cards": "0",
+    "attr:grid-1-first-card@href": "/gangs/gta-6/final-chapter-mc",
+    "count:bullet-list-1": "12",
+    "count:section-heading": "4",
+    "count:rlta-any": "0"
+   },
+   "error": null
+  },
+  {
+   "id": "F6-06",
+   "mode": "gangs",
+   "steps": [
+    "click:grid-1-first-card"
+   ],
+   "reads": [
+    "title"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gangs/gta-6/final-chapter-mc",
+    "heading": "Final Chapter MC",
+    "title": "Final Chapter MC | GTA 6 Gangs & Factions Guide"
+   },
+   "error": null
+  },
+  {
+   "id": "F6-07",
+   "mode": "properties",
+   "steps": [],
+   "reads": [
+    "count:card-grid",
+    "count:grid-1-cards",
+    "count:grid-2-cards",
+    "count:grid-3-cards",
+    "count:grid-4-cards",
+    "count:guide-card",
+    "count:card-with-price",
+    "count:card-with-location",
+    "count:rlta-any"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/properties/",
+    "heading": "GTA 6 Properties & Garages: Full List & Guide",
+    "count:card-grid": "4",
+    "count:grid-1-cards": "8",
+    "count:grid-2-cards": "4",
+    "count:grid-3-cards": "3",
+    "count:grid-4-cards": "5",
+    "count:guide-card": "20",
+    "count:card-with-price": "8",
+    "count:card-with-location": "20",
+    "count:rlta-any": "0"
+   },
+   "error": null
+  },
+  {
+   "id": "F6-08",
+   "mode": "properties",
+   "steps": [
+    "click:grid-3-first-link"
+   ],
+   "reads": [
+    "title"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/properties/gta-6/paradise-garage",
+    "heading": "Paradise Garage",
+    "title": "Paradise Garage | GTA 6 Properties & Garages"
+   },
+   "error": null
+  },
+  {
+   "id": "F6-09",
+   "mode": "radio",
+   "steps": [
+    "macro:wake"
+   ],
+   "reads": [
+    "count:station-row",
+    "count:station-without-tracks",
+    "count:track-play",
+    "count:track-play-visible",
+    "count:track-play-hidden",
+    "list:tracklist-header",
+    "count:table-controls",
+    "text:player-title",
+    "text:s1-track1-title",
+    "text:player-artist",
+    "text:s1-track1-artist",
+    "text:player-time",
+    "text:player-duration",
+    "attr:player-toggle-icon@class",
+    "visible:floating-player",
+    "count:track-play-pause-state",
+    "count:rlta-any",
+    "calls"
+   ],
+   "reset": "clear",
+   "values": {
+    "url": "/gta-6/radio-stations/",
+    "heading": "GTA 6 Radio Station Songs & Tracklist",
+    "count:station-row": "24",
+    "count:station-without-tracks": "1",
+    "count:track-play": "819",
+    "count:track-play-visible": "301",
+    "count:track-play-hidden": "518",
+    "list:tracklist-header": "# || Track || Play",
+    "count:table-controls": "0",
+    "text:player-title": "Starting From Zero",
+    "text:s1-track1-title": "Starting From Zero",
+    "text:player-artist": "Justice (feat. Michael McDonald) (2026)",
+    "text:s1-track1-artist": "Justice (feat. Michael McDonald) (2026)",
+    "text:player-time": "0:00",
+    "text:player-duration": "0:00",
+    "attr:player-toggle-icon@class": "fa-solid fa-play",
+    "visible:floating-player": "true",
+    "count:track-play-pause-state": "0",
+    "count:rlta-any": "0",
+    "calls": "GET www.youtube.com/s/player/f9c6b6bd/www-widgetapi.vflset/www-widgetapi.js 200 || GET www.youtube.com/embed/?controls=0&playsinline=1&disablekb=1&enablejsapi=1&origin=https%3A%2F%2Fwww.gtabase.com&widgetid=1&forigin=https%3A%2F%2Fwww.gtabase.com%2Fgta-6%2Fradio-stations%2F&aoriginsup=1&vf=1 200 || POST www.youtube.com/youtubei/v1/log_event?alt=json BLOCKED"
+   },
+   "error": null
+  }
+ ],
+ "note": "repeat run of F6-01..F6-09 (stopped afterwards to spare the origin); every readout equals run-f6-guides.json"
+}
