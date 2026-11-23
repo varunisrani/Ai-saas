@@ -34,12 +34,67 @@ const OBS = [
    "width: 81%;",
    "width: 40%;"
   ]
+ },
+ {
+  "id": "F2-02",
+  "url": "/gta-6/vehicles/sanchez",
+  "labels": [
+   "SPEED",
+   "ACCELERATION",
+   "ASPHALT HANDLING",
+   "OFF-ROAD HANDLING",
+   "STRENGTH",
+   "RATING"
+  ],
+  "values": [
+   "3.9",
+   "5.9",
+   "5.2",
+   "7.7",
+   "4.0",
+   "715",
+   "524"
+  ],
+  "barCount": 5,
+  "barStyles": [
+   "width: 39%;",
+   null,
+   null,
+   null,
+   "width: 40%;"
+  ]
+ },
+ {
+  "id": "F2-03",
+  "url": "/gta-6/weapons/assault-rifle",
+  "labels": [
+   "DAMAGE",
+   "ACCURACY",
+   "HANDLING",
+   "RANGE",
+   "OVERALL"
+  ],
+  "values": [
+   "5.4",
+   "5.2",
+   "5.2",
+   "6.5",
+   "5.6"
+  ],
+  "barCount": 4,
+  "barStyles": [
+   "width: 54%;",
+   "width: 52%;",
+   "width: 52%;",
+   "width: 65%;",
+   null
+  ]
  }
 ];
 let pass = 0, n = 0;
 for (const o of OBS) {
-  const bars = o.barStyles.filter((s) => s && s !== '<missing>');
-  bars.forEach((style, i) => {
+  o.barStyles.forEach((style, i) => {
+    if (!style || style === '<missing>') return; // bar i+1 not read in that case
     n++;
     const want = `width: ${Math.round(parseFloat(o.values[i]) * 10)}%;`;
     const ok = style === want && /^\d+\.\d$/.test(o.values[i]);

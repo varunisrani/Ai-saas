@@ -1,0 +1,491 @@
+{
+  "app": "gtabase.com GTA 6 section - F3 comparison + rankings (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:47:37.881Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F3-18",
+      "mode": "vcompare",
+      "steps": [],
+      "reads": [
+        "title",
+        "text:cmp-crumb",
+        "attr:cmp-crumb@href",
+        "count:cmp-add",
+        "list:cmp-add-title",
+        "attr:cmp-add@data-url",
+        "attr:cmp-add@data-param",
+        "attr:cmp-add@data-picked",
+        "count:cmp-picker-all",
+        "attr:cmp-picker@placeholder",
+        "attr:cmp-picker@aria-expanded",
+        "attr:cmp-picker@aria-autocomplete",
+        "count:cmp-source",
+        "text:cmp-note",
+        "list:cmp-links"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/comparison/",
+        "heading": "GTA 6 Vehicle Comparison",
+        "title": "GTA 6 Vehicle Comparison",
+        "text:cmp-crumb": "GTA 6 Vehicles Database & Statistics",
+        "attr:cmp-crumb@href": "/gta-6/vehicles/",
+        "count:cmp-add": "5",
+        "list:cmp-add-title": "Add a vehicle || ADD A VEHICLE || ADD A VEHICLE || ADD A VEHICLE || ADD A VEHICLE",
+        "attr:cmp-add@data-url": "/gta-6/vehicles/comparison/",
+        "attr:cmp-add@data-param": "vehicle1",
+        "attr:cmp-add@data-picked": "",
+        "count:cmp-picker-all": "5",
+        "attr:cmp-picker@placeholder": "Search...",
+        "attr:cmp-picker@aria-expanded": "false",
+        "attr:cmp-picker@aria-autocomplete": "list",
+        "count:cmp-source": "590",
+        "text:cmp-note": "Add at least two GTA 6 vehicles to see the comparison.",
+        "list:cmp-links": "All GTA 6 vehicles || Weapon comparison || All GTA 6 weapons || Best vehicles in GTA 6 || Fastest cars in GTA 6 || Fastest bikes in GTA 6"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-27",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/comparison/?vehicle1=maibatsu-sanchez&vehicle2=sunset-sanchez",
+        "wait:3000"
+      ],
+      "reads": [
+        "title",
+        "count:challenge",
+        "count:cmp-board"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/comparison/?vehicle1=maibatsu-sanchez&vehicle2=sunset-sanchez&__cf_chl_rt_tk=98_XXSrWYMPUAz2uMjdhXI7qq0AgT5LHUiSU51nIj2E-1795434463-1.0.1.1-Nu0ZseQ3Axsq9EQVio_CDQdmpgNyq4QSWuiVnFi84Do",
+        "heading": "<missing>",
+        "title": "Just a moment...",
+        "count:challenge": "0",
+        "count:cmp-board": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-28",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/comparison/?vehicle1=sunset-sanchez&vehicle2=maibatsu-sanchez",
+        "wait:3000"
+      ],
+      "reads": [
+        "title",
+        "count:challenge",
+        "count:cmp-board"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/comparison/?vehicle1=sunset-sanchez&vehicle2=maibatsu-sanchez&__cf_chl_rt_tk=MaVisgCJ.0K5Tv2PAOfxHXXbGCp5vAPtE6Y72VDK8AU-1795434469-1.0.1.1-5SgA.Hpr6KP9CAm4.GsbhyoWwZ93Mw3tnwoB_NjP5so",
+        "heading": "<missing>",
+        "title": "Just a moment...",
+        "count:challenge": "0",
+        "count:cmp-board": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-29",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/comparison/?utm_source=test",
+        "wait:3000"
+      ],
+      "reads": [
+        "title",
+        "count:challenge",
+        "count:cmp-board",
+        "count:cmp-add"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/comparison/?utm_source=test&__cf_chl_rt_tk=DH52_AkJElOo0OeccUzY5ke0HwgAt6oU6eCKx0r00zQ-1795434475-1.0.1.1-K4Nnvf3et2vC6Md81FYDfmLH2im4R3NvP9K5EzXJDQ4",
+        "heading": "<missing>",
+        "title": "Just a moment...",
+        "count:challenge": "0",
+        "count:cmp-board": "0",
+        "count:cmp-add": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-30",
+      "mode": "best",
+      "steps": [],
+      "reads": [
+        "title",
+        "text:rank-class-select",
+        "attr:rank-class-select@aria-expanded",
+        "visible:rank-class-menu",
+        "count:rank-class-items",
+        "list:rank-class-items",
+        "attr:rank-class-first@href",
+        "text:rank-crumb",
+        "attr:rank-crumb@href",
+        "list:rank-list-title",
+        "count:rank-rows",
+        "list:rank-row-1-labels",
+        "count:rank-row-1-badge",
+        "attr:rank-row-1-link@href",
+        "list:rank-ratings",
+        "count:rank-images"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "title": "GTA 6 Best Super Cars List: Stats Ranking",
+        "text:rank-class-select": "Select Class",
+        "attr:rank-class-select@aria-expanded": "<missing>",
+        "visible:rank-class-menu": "false",
+        "count:rank-class-items": "21",
+        "list:rank-class-items": "Boats || Commercial || Compacts || Coupes || Cycles || Emergency || Helicopters || Industrial || Military || Motorcycles || Muscle || Off-Road || Planes || Sedans || Service || Sports || Sports Classic || Super || SUVs || Utility || Vans",
+        "attr:rank-class-first@href": "/gta-6/vehicles/best-boats/",
+        "text:rank-crumb": "GTA 6 Cars & Vehicles Database",
+        "attr:rank-crumb@href": "/gta-6/vehicles/",
+        "list:rank-list-title": "Full List of Best Super Cars in GTA 6:",
+        "count:rank-rows": "23",
+        "list:rank-row-1-labels": "Based on: || Road Rating: || Off-Road Rating:",
+        "count:rank-row-1-badge": "1",
+        "attr:rank-row-1-link@href": "/gta-6/vehicles/comet-s2-cabrio",
+        "list:rank-ratings": "Road Rating: 780 · Off-Road Rating: 240 || Road Rating: 776 · Off-Road Rating: 238 || Road Rating: 757 · Off-Road Rating: 296 || Road Rating: 753 · Off-Road Rating: 245 || Road Rating: 719 · Off-Road Rating: 279 || Road Rating: 712 · Off-Road Rating: 238 || Road Rating: 707 · Off-Road Rating: 238 || Road Rating: 683 · Off-Road Rating: 199 || Road Rating: 683 · Off-Road Rating: 357 || Road Rating: 657 · Off-Road Rating: 236 || Road Rating: 657 · Off-Road Rating: 743 || Road Rating: 640 · Off-Road Rating: 279 || Road Rating: 635 · Off-Road Rating: 280 || Road Rating: 625 · Off-Road Rating: 379 || Road Rating: 621 · Off-Road Rating: 272 || Road Rating: 616 · Off-Road Rating: 274 || Road Rating: 616 · Off-Road Rating: 274 || Road Rating: 611 · Off-Road Rating: 279 || Road Rating: 571 · Off-Road Rating: 376 || Road Rating: 533 · Off-Road Rating: 352 || Road Rating: 528 · Off-Road Rating: 352 || Road Rating: 460 · Off-Road Rating: 256 || Road Rating: - · Off-Road Rating: -",
+        "count:rank-images": "23"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-31",
+      "mode": null,
+      "steps": [
+        "click:rank-class-select"
+      ],
+      "reads": [
+        "visible:rank-class-menu",
+        "attr:rank-class-select@aria-expanded"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "visible:rank-class-menu": "true",
+        "attr:rank-class-select@aria-expanded": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-32",
+      "mode": null,
+      "steps": [
+        "click:rank-class-motorcycles"
+      ],
+      "reads": [
+        "title",
+        "list:rank-list-title",
+        "count:rank-rows",
+        "list:rank-row-1-labels",
+        "count:rank-row-1-badge",
+        "attr:rank-row-1-link@href",
+        "list:rank-ratings",
+        "count:rank-images"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/best-motorcycles/",
+        "heading": "GTA 6 Best Motorcycles List: Stats Ranking",
+        "title": "GTA 6 Best Motorcycles List: Stats Ranking",
+        "list:rank-list-title": "Full List of Best Motorcycles in GTA 6:",
+        "count:rank-rows": "76",
+        "list:rank-row-1-labels": "Road Rating: || Off-Road Rating:",
+        "count:rank-row-1-badge": "1",
+        "attr:rank-row-1-link@href": "/gta-6/vehicles/burnished-alvino",
+        "list:rank-ratings": "Road Rating: 804 · Off-Road Rating: 118 || Road Rating: 796 · Off-Road Rating: 121 || Road Rating: 796 · Off-Road Rating: 121 || Road Rating: 774 · Off-Road Rating: 118 || Road Rating: 771 · Off-Road Rating: 120 || Road Rating: 768 · Off-Road Rating: 120 || Road Rating: 750 · Off-Road Rating: 120 || Road Rating: 750 · Off-Road Rating: 120 || Road Rating: 744 · Off-Road Rating: 120 || Road Rating: 744 · Off-Road Rating: 120 || Road Rating: 726 · Off-Road Rating: 117 || Road Rating: 701 · Off-Road Rating: 119 || Road Rating: 681 · Off-Road Rating: 119 || Road Rating: 673 · Off-Road Rating: 210 || Road Rating: 649 · Off-Road Rating: 188 || Road Rating: 616 · Off-Road Rating: 134 || Road Rating: 615 · Off-Road Rating: 202 || Road Rating: 614 · Off-Road Rating: 745 || Road Rating: 611 · Off-Road Rating: 199 || Road Rating: 603 · Off-Road Rating: 129 || Road Rating: 603 · Off-Road Rating: 129 || Road Rating: 599 · Off-Road Rating: 211 || Road Rating: 598 · Off-Road Rating: 214 || Road Rating: 590 · Off-Road Rating: 213 || Road Rating: 585 · Off-Road Rating: 207 || Road Rating: 581 · Off-Road Rating: 774 || Road Rating: 579 · Off-Road Rating: 108 || Road Rating: 574 · Off-Road Rating: 744 || Road Rating: 573 · Off-Road Rating: 186 || Road Rating: 571 · Off-Road Rating: 186 || Road Rating: 568 · Off-Road Rating: 183 || Road Rating: 560 · Off-Road Rating: 176 || Road Rating: 556 · Off-Road Rating: 728 || Road Rating: 554 · Off-Road Rating: 726 || Road Rating: 553 · Off-Road Rating: 747 || Road Rating: 548 · Off-Road Rating: 739 || Road Rating: 534 · Off-Road Rating: 702 || Road Rating: 526 · Off-Road Rating: 164 || Road Rating: 524 · Off-Road Rating: 715 || Road Rating: 524 · Off-Road Rating: 715 || Road Rating: 524 · Off-Road Rating: 715 || Road Rating: 523 · Off-Road Rating: 728 || Road Rating: 521 · Off-Road Rating: 712 || Road Rating: 521 · Off-Road Rating: 712 || Road Rating: 519 · Off-Road Rating: 706 || Road Rating: 519 · Off-Road Rating: 706 || Road Rating: 511 · Off-Road Rating: 169 || Road Rating: 509 · Off-Road Rating: 175 || Road Rating: 457 · Off-Road Rating: 146 || Road Rating: 457 · Off-Road Rating: 146 || Road Rating: 457 · Off-Road Rating: 146 || Road Rating: 428 · Off-Road Rating: 286 || Road Rating: 417 · Off-Road Rating: 665 || Road Rating: 417 · Off-Road Rating: 660 || Road Rating: 414 · Off-Road Rating: 663 || Road Rating: 414 · Off-Road Rating: 663 || Road Rating: 379 · Off-Road Rating: 620 || Road Rating: 344 · Off-Road Rating: 84 || Road Rating: 338 · Off-Road Rating: 81 || Road Rating: 308 · Off-Road Rating: 530 || Road Rating: 69 · Off-Road Rating: 57 || Road Rating: 42 · Off-Road Rating: 90 || Road Rating: 19 · Off-Road Rating: 20 || Road Rating: 19 · Off-Road Rating: 20 || Road Rating: 19 · Off-Road Rating: 20 || Road Rating: 19 · Off-Road Rating: 20 || Road Rating: 19 · Off-Road Rating: 20 || Road Rating: 17 · Off-Road Rating: 31 || Road Rating: 17 · Off-Road Rating: 31 || Road Rating: 17 · Off-Road Rating: 31 || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: -",
+        "count:rank-images": "76"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-33",
+      "mode": "best",
+      "steps": [
+        "focus:rank-class-select",
+        "press:Enter",
+        "wait:300",
+        "press:ArrowDown",
+        "wait:200",
+        "press:Enter"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "title": "GTA 6 Best Super Cars List: Stats Ranking"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-34",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-sports-cars/"
+      ],
+      "reads": [
+        "title",
+        "list:rank-list-title",
+        "count:rank-rows",
+        "list:rank-row-1-labels",
+        "count:rank-row-1-badge",
+        "attr:rank-row-1-link@href",
+        "list:rank-ratings",
+        "count:rank-images"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-sports-cars/",
+        "heading": "GTA 6 Best Sports Cars List: Stats Ranking",
+        "title": "GTA 6 Best Sports Cars List: Stats Ranking",
+        "list:rank-list-title": "Full List of Best Sports Cars in GTA 6:",
+        "count:rank-rows": "23",
+        "list:rank-row-1-labels": "Based on: || Road Rating: || Off-Road Rating:",
+        "count:rank-row-1-badge": "1",
+        "attr:rank-row-1-link@href": "/gta-6/vehicles/comet-s2-cabrio",
+        "list:rank-ratings": "Road Rating: 780 · Off-Road Rating: 240 || Road Rating: 776 · Off-Road Rating: 238 || Road Rating: 757 · Off-Road Rating: 296 || Road Rating: 753 · Off-Road Rating: 245 || Road Rating: 719 · Off-Road Rating: 279 || Road Rating: 712 · Off-Road Rating: 238 || Road Rating: 707 · Off-Road Rating: 238 || Road Rating: 683 · Off-Road Rating: 199 || Road Rating: 683 · Off-Road Rating: 357 || Road Rating: 657 · Off-Road Rating: 236 || Road Rating: 657 · Off-Road Rating: 743 || Road Rating: 640 · Off-Road Rating: 279 || Road Rating: 635 · Off-Road Rating: 280 || Road Rating: 625 · Off-Road Rating: 379 || Road Rating: 621 · Off-Road Rating: 272 || Road Rating: 616 · Off-Road Rating: 274 || Road Rating: 616 · Off-Road Rating: 274 || Road Rating: 611 · Off-Road Rating: 279 || Road Rating: 571 · Off-Road Rating: 376 || Road Rating: 533 · Off-Road Rating: 352 || Road Rating: 528 · Off-Road Rating: 352 || Road Rating: 460 · Off-Road Rating: 256 || Road Rating: - · Off-Road Rating: -",
+        "count:rank-images": "23"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-35",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-boats/"
+      ],
+      "reads": [
+        "title",
+        "list:rank-list-title",
+        "count:rank-rows",
+        "list:rank-row-1-labels",
+        "count:rank-row-1-badge",
+        "attr:rank-row-1-link@href",
+        "list:rank-ratings",
+        "count:rank-images"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-boats/",
+        "heading": "GTA 6 Best Boats List: Stats Ranking",
+        "title": "GTA 6 Best Boats List: Stats Ranking",
+        "list:rank-list-title": "Full List of Best Boats in GTA 6:",
+        "count:rank-rows": "52",
+        "list:rank-row-1-labels": "Based on: || Road Rating: || Off-Road Rating:",
+        "count:rank-row-1-badge": "1",
+        "attr:rank-row-1-link@href": "/gta-6/vehicles/seashark",
+        "list:rank-ratings": "Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: -",
+        "count:rank-images": "52"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-36",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-helicopters/"
+      ],
+      "reads": [
+        "title",
+        "list:rank-list-title",
+        "count:rank-rows",
+        "list:rank-row-1-labels",
+        "count:rank-row-1-badge",
+        "attr:rank-row-1-link@href",
+        "list:rank-ratings",
+        "count:rank-images"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-helicopters/",
+        "heading": "GTA 6 Best Helicopters List: Stats Ranking",
+        "title": "GTA 6 Best Helicopters List: Stats Ranking",
+        "list:rank-list-title": "Full List of Best Helicopters in GTA 6:",
+        "count:rank-rows": "19",
+        "list:rank-row-1-labels": "Based on: || Road Rating: || Off-Road Rating:",
+        "count:rank-row-1-badge": "1",
+        "attr:rank-row-1-link@href": "/gta-6/vehicles/maverick",
+        "list:rank-ratings": "Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: -",
+        "count:rank-images": "19"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-37",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-planes/"
+      ],
+      "reads": [
+        "title",
+        "list:rank-list-title",
+        "count:rank-rows",
+        "list:rank-row-1-labels",
+        "count:rank-row-1-badge",
+        "attr:rank-row-1-link@href",
+        "list:rank-ratings",
+        "count:rank-images"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-planes/",
+        "heading": "GTA 6 Best Planes List: Stats Ranking",
+        "title": "GTA 6 Best Planes List: Stats Ranking",
+        "list:rank-list-title": "Full List of Best Planes in GTA 6:",
+        "count:rank-rows": "23",
+        "list:rank-row-1-labels": "Based on: || Road Rating: || Off-Road Rating:",
+        "count:rank-row-1-badge": "1",
+        "attr:rank-row-1-link@href": "/gta-6/vehicles/dodo",
+        "list:rank-ratings": "Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: - || Road Rating: - · Off-Road Rating: -",
+        "count:rank-images": "23"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-38",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-super-cars/"
+      ],
+      "reads": [
+        "title",
+        "list:rank-list-title",
+        "count:rank-rows",
+        "list:rank-row-1-labels",
+        "count:rank-row-1-badge",
+        "attr:rank-row-1-link@href",
+        "list:rank-ratings",
+        "count:rank-images"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-super-cars/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "title": "GTA 6 Best Super Cars List: Stats Ranking",
+        "list:rank-list-title": "Full List of Best Super Cars in GTA 6:",
+        "count:rank-rows": "29",
+        "list:rank-row-1-labels": "Road Rating: || Off-Road Rating:",
+        "count:rank-row-1-badge": "1",
+        "attr:rank-row-1-link@href": "/gta-6/vehicles/dantes-vitello",
+        "list:rank-ratings": "Road Rating: 873 · Off-Road Rating: 297 || Road Rating: 863 · Off-Road Rating: 212 || Road Rating: 863 · Off-Road Rating: 213 || Road Rating: 862 · Off-Road Rating: 213 || Road Rating: 862 · Off-Road Rating: 157 || Road Rating: 852 · Off-Road Rating: 213 || Road Rating: 847 · Off-Road Rating: 292 || Road Rating: 844 · Off-Road Rating: 296 || Road Rating: 837 · Off-Road Rating: 210 || Road Rating: 832 · Off-Road Rating: 297 || Road Rating: 832 · Off-Road Rating: 297 || Road Rating: 824 · Off-Road Rating: 286 || Road Rating: 811 · Off-Road Rating: 270 || Road Rating: 810 · Off-Road Rating: 239 || Road Rating: 810 · Off-Road Rating: 302 || Road Rating: 808 · Off-Road Rating: 270 || Road Rating: 807 · Off-Road Rating: 284 || Road Rating: 781 · Off-Road Rating: 239 || Road Rating: 781 · Off-Road Rating: 239 || Road Rating: 762 · Off-Road Rating: 270 || Road Rating: 761 · Off-Road Rating: 631 || Road Rating: 757 · Off-Road Rating: 240 || Road Rating: 749 · Off-Road Rating: 301 || Road Rating: 748 · Off-Road Rating: 284 || Road Rating: 748 · Off-Road Rating: 284 || Road Rating: 748 · Off-Road Rating: 284 || Road Rating: 708 · Off-Road Rating: 283 || Road Rating: 698 · Off-Road Rating: 328 || Road Rating: 633 · Off-Road Rating: 350",
+        "count:rank-images": "29"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-39",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-vehicles/?class=motorcycles"
+      ],
+      "reads": [
+        "title",
+        "count:rank-rows"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-motorcycles/",
+        "heading": "GTA 6 Best Motorcycles List: Stats Ranking",
+        "title": "GTA 6 Best Motorcycles List: Stats Ranking",
+        "count:rank-rows": "76"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-40",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-vehicles/?class=no-such-class"
+      ],
+      "reads": [
+        "title",
+        "count:rank-rows"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/?class=no-such-class",
+        "heading": "<missing>",
+        "title": "GTA 6 Best Vehicles List: Ranked By Class",
+        "count:rank-rows": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-41",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-unicorns/"
+      ],
+      "reads": [
+        "title",
+        "count:rank-rows"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-unicorns/",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "count:rank-rows": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-42",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/vehicles/best-motorcycles/"
+      ],
+      "reads": [
+        "visible:rank-class-select",
+        "visible:rank-row-1",
+        "count:rank-rows",
+        "visible:rank-images"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-motorcycles/",
+        "heading": "GTA 6 Best Motorcycles List: Stats Ranking",
+        "visible:rank-class-select": "true",
+        "visible:rank-row-1": "true",
+        "count:rank-rows": "76",
+        "visible:rank-images": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-43",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-motorcycles/",
+        "click:rank-row-1-link"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/burnished-alvino",
+        "heading": "Principe Burnished Alvino",
+        "title": "Principe Burnished Alvino | GTA 6 Bike Stats, Price, How To Get"
+      },
+      "error": null
+    }
+  ]
+}

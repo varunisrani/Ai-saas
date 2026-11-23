@@ -6,9 +6,396 @@
   "readOnly": true,
   "passes": [
     "2026-11-23T11:22:01.811Z",
-    "2026-11-23T11:36:55.893Z"
+    "2026-11-23T11:36:55.893Z",
+    "2026-11-23T11:42:11.375Z",
+    "2026-11-23T11:50:43.519Z"
   ],
   "cases": [
+    {
+      "id": "F7-01",
+      "mode": "news",
+      "steps": [],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item",
+        "count:item-title-link",
+        "count:item-thumb",
+        "count:item-thumb-link",
+        "count:item-author",
+        "count:item-date",
+        "count:item-category",
+        "count:item-tags",
+        "visible:item-details-label",
+        "text:item-details-label",
+        "list:item-date",
+        "attr:item-date@datetime",
+        "text:item-category",
+        "attr:item-category@href",
+        "attr:item-thumb@width",
+        "attr:item-thumb@height",
+        "text:page-counter",
+        "count:page-links",
+        "count:share-block",
+        "count:list-banner",
+        "visible:game-filter-toggle"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "title": "All GTA 6 News: Latest Grand Theft Auto VI Updates",
+        "calls": "GET /gta-6/news/ 200",
+        "count:list-item": "30",
+        "count:item-title-link": "30",
+        "count:item-thumb": "30",
+        "count:item-thumb-link": "30",
+        "count:item-author": "30",
+        "count:item-date": "30",
+        "count:item-category": "30",
+        "count:item-tags": "0",
+        "visible:item-details-label": "false",
+        "text:item-details-label": "Details",
+        "list:item-date": "on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 22, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 21, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 20, 2026 || on November 19, 2026 || on November 19, 2026",
+        "attr:item-date@datetime": "2026-11-22T21:46:04+00:00",
+        "text:item-category": "Grand Theft Auto VI",
+        "attr:item-category@href": "/gta-6/news/",
+        "attr:item-thumb@width": "320",
+        "attr:item-thumb@height": "180",
+        "text:page-counter": "Page 1 of 6",
+        "count:page-links": "0",
+        "count:share-block": "0",
+        "count:list-banner": "1",
+        "visible:game-filter-toggle": "true"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-02",
+      "mode": "news",
+      "steps": [
+        "macro:show-pagination"
+      ],
+      "reads": [
+        "count:page-links",
+        "list:page-links",
+        "text:page-current",
+        "attr:page-current@href",
+        "count:page-disabled",
+        "count:page-first",
+        "count:page-prev",
+        "attr:page-2-link@href",
+        "attr:page-next@href",
+        "attr:page-last@href",
+        "attr:pagination@aria-label"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "count:page-links": "8",
+        "list:page-links": "1 || 2 || 3 || 4 || 5 || 6 ||  || ",
+        "text:page-current": "1",
+        "attr:page-current@href": "#",
+        "count:page-disabled": "2",
+        "count:page-first": "0",
+        "count:page-prev": "0",
+        "attr:page-2-link@href": "/gta-6/news/page-2",
+        "attr:page-next@href": "/gta-6/news/page-2",
+        "attr:page-last@href": "/gta-6/articles/page-6",
+        "attr:pagination@aria-label": "Pagination"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-03",
+      "mode": "news",
+      "steps": [
+        "macro:show-pagination",
+        "click:page-next",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-number",
+        "text:page-counter",
+        "count:list-item",
+        "list:item-date",
+        "count:list-intro",
+        "visible:game-filter-toggle"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/page-2",
+        "heading": "Grand Theft Auto VI - Page 2",
+        "title": "Grand Theft Auto VI | Rockstar Games News & Guides - Page 2",
+        "calls": "GET /gta-6/news/ 200 || GET /gta-6/news/page-2 200",
+        "text:page-number": "- Page 2",
+        "text:page-counter": "Page 2 of 6",
+        "count:list-item": "30",
+        "list:item-date": "on November 19, 2026 || on November 19, 2026 || on November 19, 2026 || on November 19, 2026 || on November 19, 2026 || on November 19, 2026 || on November 19, 2026 || on November 19, 2026 || on November 19, 2026 || on November 19, 2026 || on November 19, 2026 || on November 18, 2026 || on November 18, 2026 || on November 18, 2026 || on November 18, 2026 || on November 18, 2026 || on November 18, 2026 || on November 17, 2026 || on November 16, 2026 || on November 12, 2026 || on November 10, 2026 || on November 5, 2026 || on November 4, 2026 || on November 3, 2026 || on October 28, 2026 || on October 28, 2026 || on October 28, 2026 || on October 16, 2026 || on October 15, 2026 || on October 8, 2026",
+        "count:list-intro": "0",
+        "visible:game-filter-toggle": "false"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-04",
+      "mode": null,
+      "steps": [
+        "macro:show-pagination"
+      ],
+      "reads": [
+        "list:page-links",
+        "text:page-current",
+        "attr:page-first@href",
+        "attr:page-prev@href",
+        "attr:page-next@href",
+        "attr:page-last@href",
+        "count:page-disabled"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/news/page-2",
+        "heading": "Grand Theft Auto VI - Page 2",
+        "list:page-links": " ||  || 1 || 2 || 3 || 4 || 5 || 6 ||  || ",
+        "text:page-current": "2",
+        "attr:page-first@href": "/gta-6/news/",
+        "attr:page-prev@href": "/gta-6/news/",
+        "attr:page-next@href": "/gta-6/news/page-3",
+        "attr:page-last@href": "/gta-6/articles/page-6",
+        "count:page-disabled": "0"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-05",
+      "mode": null,
+      "steps": [
+        "back",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "text:page-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "title": "All GTA 6 News: Latest Grand Theft Auto VI Updates",
+        "text:page-counter": "Page 1 of 6"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-06",
+      "mode": "news",
+      "steps": [
+        "macro:show-pagination",
+        "click:page-last",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item",
+        "text:page-number",
+        "list:item-date"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/page-6",
+        "heading": "Grand Theft Auto VI - Page 6",
+        "title": "Grand Theft Auto VI | Rockstar Games News & Guides - Page 6",
+        "calls": "GET /gta-6/news/ 200 || GET /gta-6/articles/page-6 200",
+        "text:page-counter": "Page 6 of 6",
+        "count:list-item": "22",
+        "text:page-number": "- Page 6",
+        "list:item-date": "on September 18, 2022 || on August 8, 2022 || on July 27, 2022 || on May 7, 2022 || on March 3, 2022 || on February 13, 2022 || on February 10, 2022 || on February 4, 2022 || on July 12, 2021 || on May 12, 2021 || on April 11, 2021 || on March 1, 2021 || on January 15, 2021 || on November 22, 2020 || on June 11, 2020 || on June 7, 2020 || on March 22, 2020 || on September 12, 2019 || on May 10, 2019 || on April 20, 2019 || on March 24, 2019 || on March 6, 2018"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:50:43.519Z",
+      "attempts": 2
+    },
+    {
+      "id": "F7-07",
+      "mode": null,
+      "steps": [
+        "macro:show-pagination"
+      ],
+      "reads": [
+        "list:page-links",
+        "text:page-current",
+        "count:page-next",
+        "count:page-last",
+        "attr:page-prev@href",
+        "attr:page-first@href",
+        "count:page-disabled"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/articles/page-6",
+        "heading": "Grand Theft Auto VI - Page 6",
+        "list:page-links": " ||  || 1 || 2 || 3 || 4 || 5 || 6",
+        "text:page-current": "6",
+        "count:page-next": "0",
+        "count:page-last": "0",
+        "attr:page-prev@href": "/gta-6/news/page-5",
+        "attr:page-first@href": "/gta-6/news/",
+        "count:page-disabled": "2"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:50:43.519Z",
+      "attempts": 2
+    },
+    {
+      "id": "F7-08",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-6"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/page-6",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /gta-6/news/page-6 404",
+        "count:list-item": "0"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-09",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-99"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/page-99",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /gta-6/news/page-99 404",
+        "count:list-item": "0"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-10",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-1"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/page-1",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /gta-6/news/page-1 404"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-11",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/?start=30"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "text:page-number",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/?start=30",
+        "heading": "Grand Theft Auto VI - Page 2",
+        "title": "All GTA 6 News: Latest Grand Theft Auto VI Updates",
+        "calls": "GET /gta-6/news/?start=30 200",
+        "text:page-counter": "Page 2 of 6",
+        "text:page-number": "- Page 2",
+        "count:list-item": "30"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-12",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/?start=999"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item",
+        "text:page-number"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/?start=999",
+        "heading": "Grand Theft Auto VI - Page 6",
+        "title": "All GTA 6 News: Latest Grand Theft Auto VI Updates",
+        "calls": "GET /gta-6/news/?start=999 200",
+        "text:page-counter": "Page 6 of 6",
+        "count:list-item": "0",
+        "text:page-number": "- Page 6"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-13",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/news/page-2",
+        "reload",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "text:page-counter",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/page-2",
+        "heading": "Grand Theft Auto VI - Page 2",
+        "title": "Grand Theft Auto VI | Rockstar Games News & Guides - Page 2",
+        "text:page-counter": "Page 2 of 6",
+        "count:list-item": "30"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
     {
       "id": "F7-14",
       "mode": "guides",
@@ -68,16 +455,17 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/guides/",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/guides/page-3",
-        "calls": "GET /gta-6/guides/page-3 500",
-        "count:list-item": "0",
-        "text:page-counter": "<missing>",
-        "text:page-number": "<missing>"
+        "url": "/gta-6/guides/page-3",
+        "heading": "GTA 6 Guides: Tips, Walkthroughs & How-To Guides - Page 3",
+        "title": "Grand Theft Auto VI | Rockstar Games News & Guides - Page 3",
+        "calls": "GET /gta-6/guides/page-3 200",
+        "count:list-item": "1",
+        "text:page-counter": "Page 3 of 3",
+        "text:page-number": "- Page 3"
       },
-      "error": "goto:/gta-6/guides/page-3: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T11:22:01.811Z"
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z",
+      "attempts": 2
     },
     {
       "id": "F7-16",
@@ -91,13 +479,14 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/guides/page-3",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/guides/page-4",
-        "calls": "GET /gta-6/guides/page-4 500"
+        "url": "/gta-6/guides/page-4",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /gta-6/guides/page-4 404"
       },
-      "error": "goto:/gta-6/guides/page-4: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T11:22:01.811Z"
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z",
+      "attempts": 2
     },
     {
       "id": "F7-17",
@@ -153,13 +542,14 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/videos/",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/videos/page-2",
-        "calls": "GET /gta-6/videos/page-2 500"
+        "url": "/gta-6/videos/page-2",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /gta-6/videos/page-2 404"
       },
-      "error": "goto:/gta-6/videos/page-2: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T11:22:01.811Z"
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z",
+      "attempts": 2
     },
     {
       "id": "F7-19",
@@ -180,19 +570,20 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/videos/",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/articles/gta-6/grand-theft-auto-vi-launch-trailer",
-        "calls": "GET /gta-6/videos/ 200 || GET /articles/gta-6/grand-theft-auto-vi-launch-trailer 500",
-        "count:video-embed": "0",
-        "attr:video-embed@title": "<missing>",
-        "count:article-author": "0",
-        "count:author-block": "0",
-        "text:article-published": "<missing>",
-        "text:article-category": "<missing>"
+        "url": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
+        "heading": "Grand Theft Auto VI Launch Trailer",
+        "title": "Grand Theft Auto VI Launch Trailer",
+        "calls": "GET /gta-6/videos/ 200 || GET /articles/gta-6/grand-theft-auto-vi-launch-trailer 200",
+        "count:video-embed": "1",
+        "attr:video-embed@title": "YouTube video player",
+        "count:article-author": "1",
+        "count:author-block": "1",
+        "text:article-published": "on October 15, 2026",
+        "text:article-category": "Grand Theft Auto VI"
       },
-      "error": "click:item-title-link: locator.click: Timeout 6000ms exceeded.",
-      "captured": "2026-11-23T11:22:01.811Z"
+      "error": null,
+      "captured": "2026-11-23T11:50:43.519Z",
+      "attempts": 3
     },
     {
       "id": "F7-20",
@@ -212,21 +603,22 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/news/",
-        "calls": "GET /news/ 500",
-        "text:page-counter": "<missing>",
-        "count:list-item": "0",
-        "count:item-tags": "0",
+        "url": "/news/",
+        "heading": "Rockstar Games News & Guides",
+        "title": "Rockstar Games News & Guides",
+        "calls": "GET /news/ 200",
+        "text:page-counter": "Page 1 of 50",
+        "count:list-item": "30",
+        "count:item-tags": "57",
         "count:item-category": "0",
-        "count:item-author": "0",
-        "count:item-date": "0",
-        "count:game-filter-toggle": "0",
+        "count:item-author": "30",
+        "count:item-date": "30",
+        "count:game-filter-toggle": "1",
         "visible:game-filter-menu": "false"
       },
-      "error": "mode:allnews: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T11:22:01.811Z"
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z",
+      "attempts": 2
     },
     {
       "id": "F7-21",
@@ -245,15 +637,16 @@
       "reset": "clear",
       "values": {
         "url": "/news/",
-        "heading": "<missing>",
-        "visible:game-filter-menu": "false",
-        "count:game-filter-links": "0",
-        "list:game-filter-links": "",
-        "attr:game-filter-gta6@href": "<missing>",
-        "attr:game-filter-toggle@aria-expanded": "<missing>"
+        "heading": "Rockstar Games News & Guides",
+        "visible:game-filter-menu": "true",
+        "count:game-filter-links": "8",
+        "list:game-filter-links": "All News || GTA 6 || RDR2 & Online || GTA 5 & GTA Online || GTA 4 || GTA San Andreas || GTA Vice City || GTA 3",
+        "attr:game-filter-gta6@href": "/gta-6/news/",
+        "attr:game-filter-toggle@aria-expanded": "true"
       },
-      "error": "mode:allnews: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T11:22:01.811Z"
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z",
+      "attempts": 2
     },
     {
       "id": "F7-22",
@@ -271,14 +664,97 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/news/",
-        "heading": "<missing>",
-        "title": "",
-        "calls": "GET /news/ FAILED",
-        "text:page-counter": "<missing>"
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "title": "All GTA 6 News: Latest Grand Theft Auto VI Updates",
+        "calls": "GET /news/ 200 || GET /gta-6/news/ 200",
+        "text:page-counter": "Page 1 of 6"
       },
-      "error": "mode:allnews: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T11:22:01.811Z"
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z",
+      "attempts": 2
+    },
+    {
+      "id": "F7-23",
+      "mode": "news",
+      "steps": [
+        "focus:game-filter-toggle",
+        "press:Enter",
+        "wait:400"
+      ],
+      "reads": [
+        "visible:game-filter-menu",
+        "attr:game-filter-toggle@aria-expanded"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "visible:game-filter-menu": "true",
+        "attr:game-filter-toggle@aria-expanded": "true"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-24",
+      "mode": null,
+      "steps": [
+        "press:Escape",
+        "wait:400"
+      ],
+      "reads": [
+        "visible:game-filter-menu",
+        "attr:game-filter-toggle@aria-expanded"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "visible:game-filter-menu": "false",
+        "attr:game-filter-toggle@aria-expanded": "false"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-25",
+      "mode": "news",
+      "steps": [],
+      "reads": [
+        "text:item-title-link",
+        "attr:item-title-link@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "text:item-title-link": "How to Claim All Ultimate Edition Bonuses in GTA 6",
+        "attr:item-title-link@href": "/gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-26",
+      "mode": null,
+      "steps": [
+        "click:item-title-link",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "calls"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6",
+        "heading": "How to Claim All Ultimate Edition Bonuses in GTA 6",
+        "title": "How to Claim All Ultimate Edition Bonuses in GTA 6",
+        "calls": "GET /gta-6/articles/how-to-claim-ultimate-edition-benefits-in-gta-6 200"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
     },
     {
       "id": "F7-27",
@@ -467,13 +943,14 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/articles/this-article-does-not-exist-xyz",
-        "calls": "GET /gta-6/articles/this-article-does-not-exist-xyz 500"
+        "url": "/gta-6/articles/this-article-does-not-exist-xyz",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /gta-6/articles/this-article-does-not-exist-xyz 404"
       },
-      "error": "goto:/gta-6/articles/this-article-does-not-exist-xyz: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T11:22:01.811Z"
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z",
+      "attempts": 2
     },
     {
       "id": "F7-33",
@@ -487,13 +964,38 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/articles/this-article-does-not-exist-xyz",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/articles/gta-6/this-article-does-not-exist-xyz",
-        "calls": "GET /articles/gta-6/this-article-does-not-exist-xyz 500"
+        "url": "/articles/gta-6/this-article-does-not-exist-xyz",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /articles/gta-6/this-article-does-not-exist-xyz 404"
       },
-      "error": "goto:/articles/gta-6/this-article-does-not-exist-xyz: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T11:22:01.811Z"
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z",
+      "attempts": 2
+    },
+    {
+      "id": "F7-34",
+      "mode": "news-phone",
+      "steps": [],
+      "reads": [
+        "count:list-item",
+        "visible:item-thumb",
+        "visible:game-filter-toggle",
+        "visible:sidebar",
+        "text:page-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "count:list-item": "30",
+        "visible:item-thumb": "true",
+        "visible:game-filter-toggle": "true",
+        "visible:sidebar": "true",
+        "text:page-counter": "Page 1 of 6"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
     },
     {
       "id": "F7-35",
@@ -520,6 +1022,51 @@
       },
       "error": null,
       "captured": "2026-11-23T11:22:01.811Z"
+    },
+    {
+      "id": "F7-36",
+      "mode": "article",
+      "steps": [
+        "click:article-category",
+        "wait:idle"
+      ],
+      "reads": [
+        "title",
+        "text:page-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "title": "All GTA 6 News: Latest Grand Theft Auto VI Updates",
+        "text:page-counter": "Page 1 of 6"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
+    },
+    {
+      "id": "F7-37",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/articles"
+      ],
+      "reads": [
+        "title",
+        "calls",
+        "text:page-counter",
+        "count:list-item"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "title": "Grand Theft Auto VI | Rockstar Games News & Guides",
+        "calls": "GET /gta-6/articles 200",
+        "text:page-counter": "Page 1 of 6",
+        "count:list-item": "30"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:42:11.375Z"
     },
     {
       "id": "F7-38",

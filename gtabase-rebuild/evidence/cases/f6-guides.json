@@ -424,7 +424,8 @@
   "reads": [
    "attr:acc-2@aria-expanded",
    "attr:acc-3@aria-expanded",
-   "count:acc-open"
+   "count:acc-open",
+   "errors"
   ]
  },
  {
@@ -437,7 +438,8 @@
   "reads": [
    "attr:acc-1@aria-expanded",
    "attr:acc-3@aria-expanded",
-   "count:acc-open"
+   "count:acc-open",
+   "errors"
   ]
  },
  {
@@ -450,7 +452,8 @@
   "reads": [
    "attr:acc-1@aria-expanded",
    "attr:acc-last@aria-expanded",
-   "count:acc-open"
+   "count:acc-open",
+   "errors"
   ]
  },
  {
@@ -469,7 +472,8 @@
   "id": "F6-34",
   "steps": [
    "goto:/membership/#will-my-subscription-extend-automatically",
-   "hover:heading",
+   "reload",
+   "scroll:faq-section",
    "wait:3000",
    "wait:idle",
    "wait:9000"
@@ -478,6 +482,21 @@
    "attr:acc-container@data-rlta-state",
    "attr:acc-1@aria-expanded",
    "attr:acc-3@aria-expanded",
+   "count:acc-open"
+  ]
+ },
+ {
+  "id": "F6-39",
+  "mode": "membership-hover-first",
+  "steps": [
+   "try:click:acc-2",
+   "wait:1000"
+  ],
+  "reads": [
+   "attr:acc-container@data-rlta-state",
+   "count:acc-button",
+   "attr:acc-1@aria-expanded",
+   "attr:acc-2@aria-expanded",
    "count:acc-open"
   ]
  },

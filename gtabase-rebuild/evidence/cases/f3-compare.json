@@ -723,5 +723,100 @@
   "reads": [
    "title"
   ]
+ },
+ {
+  "id": "F3-44",
+  "steps": [
+   "viewport:1366x900",
+   "goto:/gta-6/vehicles/best-vehicles/"
+  ],
+  "reads": [
+   "attr:rank-class-item-1@href",
+   "attr:rank-class-item-2@href",
+   "attr:rank-class-item-3@href",
+   "attr:rank-class-item-4@href",
+   "attr:rank-class-item-5@href",
+   "attr:rank-class-item-6@href",
+   "attr:rank-class-item-7@href",
+   "attr:rank-class-item-8@href",
+   "attr:rank-class-item-9@href",
+   "attr:rank-class-item-10@href",
+   "attr:rank-class-item-11@href",
+   "attr:rank-class-item-12@href",
+   "attr:rank-class-item-13@href",
+   "attr:rank-class-item-14@href",
+   "attr:rank-class-item-15@href",
+   "attr:rank-class-item-16@href",
+   "attr:rank-class-item-17@href",
+   "attr:rank-class-item-18@href",
+   "attr:rank-class-item-19@href",
+   "attr:rank-class-item-20@href",
+   "attr:rank-class-item-21@href",
+   "attr:rank-class-item-1@title",
+   "list:rank-class-items"
+  ]
+ },
+ {
+  "id": "F3-45",
+  "steps": [
+   "goto:/gta-6/vehicles/best-vehicles/?class=sports"
+  ],
+  "reads": [
+   "title",
+   "count:rank-rows"
+  ]
+ },
+ {
+  "id": "F3-46",
+  "steps": [
+   "goto:/gta-6/vehicles/best-vehicles/?class=no-such-class"
+  ],
+  "reads": [
+   "title",
+   "list:rank-h2",
+   "count:rank-content-links",
+   "count:rank-class-items",
+   "count:rank-paragraphs",
+   "count:rank-rows"
+  ]
+ },
+ {
+  "id": "F3-47",
+  "steps": [
+   "goto:/gta-6/vehicles/best-vehicles/",
+   "focus:rank-class-select",
+   "press:Enter",
+   "wait:400"
+  ],
+  "reads": [
+   "visible:rank-class-menu",
+   "attr:rank-class-select@aria-expanded",
+   "text:rank-class-focused"
+  ]
+ },
+ {
+  "id": "F3-48",
+  "reset": "none",
+  "steps": [
+   "press:ArrowDown",
+   "wait:300"
+  ],
+  "reads": [
+   "visible:rank-class-menu",
+   "text:rank-class-focused"
+  ]
+ },
+ {
+  "id": "F3-49",
+  "reset": "none",
+  "steps": [
+   "press:ArrowDown",
+   "wait:300",
+   "press:Enter",
+   "wait:3000"
+  ],
+  "reads": [
+   "title"
+  ]
  }
 ]

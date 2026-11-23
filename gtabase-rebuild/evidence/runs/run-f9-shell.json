@@ -7,7 +7,8 @@
   "passes": [
     "2026-11-23T10:44:40.963Z",
     "2026-11-23T11:09:31.632Z",
-    "2026-11-23T11:37:55.611Z"
+    "2026-11-23T11:37:55.611Z",
+    "2026-11-23T11:51:06.833Z"
   ],
   "cases": [
     {
@@ -812,15 +813,16 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/news/",
-        "list:breadcrumb-items": "",
+        "url": "/gta-6/news/",
+        "heading": "All GTA 6 News: Latest Updates on Grand Theft Auto VI",
+        "title": "All GTA 6 News: Latest Grand Theft Auto VI Updates",
+        "list:breadcrumb-items": "Home || GTA 6 || News",
         "attr:subnav-current@href": "<missing>",
         "count:subnav-current": "0"
       },
-      "error": "mode:news: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T10:44:40.963Z"
+      "error": null,
+      "captured": "2026-11-23T11:51:06.833Z",
+      "attempts": 2
     },
     {
       "id": "F9-34",
@@ -872,9 +874,9 @@
         "text:#ja-current-content h2, #ja-current-content h3": "Get back inside the map!",
         "visible:menu-toggle": "false"
       },
-      "error": "mode:notfound: page.goto: Timeout 60000ms exceeded.",
-      "captured": "2026-11-23T11:37:55.611Z",
-      "attempts": 2
+      "error": null,
+      "captured": "2026-11-23T11:51:06.833Z",
+      "attempts": 3
     },
     {
       "id": "F9-36",

@@ -1,0 +1,458 @@
+{
+ "captured": "2026-11-23",
+ "note": "probe.mjs + f7-article.js expression on three article pages; author names replaced by <author>",
+ "pages": [
+  {
+   "url": "/gta-6/articles/gta-6-driving-tips",
+   "title": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+   "h1": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+   "meta": [
+    [
+     "DT",
+     "article-info-term",
+     "Details"
+    ],
+    [
+     "DD",
+     "published",
+     "on November 22, 2026"
+    ],
+    [
+     "DD",
+     "category-name",
+     "Grand Theft Auto VI"
+    ]
+   ],
+   "metaDatetime": [
+    "2026-11-22T09:44:12+00:00"
+   ],
+   "share": [
+    "Share on Twitter",
+    "Share on Reddit",
+    "Copy Link"
+   ],
+   "toc": {
+    "heading": "GTA 6 Driving Tips",
+    "n": 11,
+    "hrefsAreSelfPlusHash": true,
+    "anchorsExist": true,
+    "first": [
+     [
+      "Basic Driving Controls",
+      "/gta-6/articles/gta-6-driving-tips#basic-driving-controls"
+     ],
+     [
+      "Drift Around Sharp Corners",
+      "/gta-6/articles/gta-6-driving-tips#drift-around-sharp-corners"
+     ],
+     [
+      "Duck to Hide from the Cops",
+      "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops"
+     ]
+    ]
+   },
+   "sectionAnchors": [
+    "basic-driving-controls",
+    "drift-around-sharp-corners",
+    "duck-to-hide-from-the-cops",
+    "shooting-while-driving",
+    "getting-out-stop-bail-or-leave-the-engine-running",
+    "vehicle-melee",
+    "taunting",
+    "radio-and-vehicle-functions",
+    "pushing-and-flipping-vehicles",
+    "fuel-and-repairs",
+    "gta-6-driving-faq"
+   ],
+   "headingsNoIndex": 0,
+   "videoEmbeds": [],
+   "authorBlock": false,
+   "pager": [
+    [
+     "previous",
+     "prev",
+     "/gta-6/articles/gta-6-phone-guide-every-app-explained"
+    ],
+    [
+     "next",
+     "next",
+     "/gta-6/articles/gta-6-review-bombed-on-metacritic"
+    ]
+   ],
+   "related": {
+    "heading": "",
+    "n": 0
+   },
+   "belowModules": [
+    "",
+    "Remove Ads with VIP Membership! Sign Up"
+   ],
+   "breadcrumbs": [
+    [
+     "Home",
+     "/"
+    ],
+    [
+     "GTA 6",
+     "/gta-6/"
+    ],
+    [
+     "News",
+     "/gta-6/news/"
+    ],
+    [
+     "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+     null
+    ]
+   ],
+   "comments": {
+    "present": true,
+    "countLabelShape": "Comment",
+    "sort": [
+     [
+      "Best",
+      "best",
+      false
+     ],
+     [
+      "Popular",
+      "popular",
+      false
+     ],
+     [
+      "Newest",
+      "desc",
+      true
+     ],
+     [
+      "Oldest",
+      "asc",
+      false
+     ]
+    ],
+    "limit": "5000",
+    "formAction": "/index.php?option=com_jlexcomment&task=item.save",
+    "guestNameField": true,
+    "emptyText": "Be the first to comment."
+   },
+   "ldBreadcrumb": [
+    [
+     1,
+     "Home",
+     "/"
+    ],
+    [
+     2,
+     "GTA 6",
+     "/gta-6/"
+    ],
+    [
+     3,
+     "News",
+     "/gta-6/news/"
+    ],
+    [
+     4,
+     "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys &amp; Hidden Tricks",
+     ""
+    ]
+   ]
+  },
+  {
+   "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+   "title": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+   "h1": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+   "meta": [
+    [
+     "DT",
+     "article-info-term",
+     "Details"
+    ],
+    [
+     "DD",
+     "modified",
+     "Last Updated: November 22, 2026"
+    ],
+    [
+     "DD",
+     "category-name",
+     "Grand Theft Auto VI"
+    ]
+   ],
+   "metaDatetime": [
+    "2026-11-22T09:44:22+00:00"
+   ],
+   "share": [
+    "Share on Twitter",
+    "Share on Reddit",
+    "Copy Link"
+   ],
+   "toc": {
+    "heading": "GTA 6 Controls Guide",
+    "n": 10,
+    "hrefsAreSelfPlusHash": true,
+    "anchorsExist": true,
+    "first": [
+     [
+      "General Controls",
+      "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout#general-controls"
+     ],
+     [
+      "On-Foot Controls",
+      "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout#on-foot-controls"
+     ],
+     [
+      "Aiming Controls",
+      "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout#aiming-controls"
+     ]
+    ]
+   },
+   "sectionAnchors": [
+    "general-controls",
+    "on-foot-controls",
+    "aiming-controls",
+    "melee-combat-controls",
+    "car-motorcycle-boat-controls",
+    "plane-helicopter-controls",
+    "bicycle-controls",
+    "swimming-diving-controls",
+    "parachute-controls",
+    "movement-tips-chain-jumps-sliding-over-hoods-diving"
+   ],
+   "headingsNoIndex": 1,
+   "videoEmbeds": [],
+   "authorBlock": false,
+   "pager": [
+    [
+     "previous",
+     "prev",
+     "/articles/gta-6/gta-6-set-to-break-all-time-pre-order-record-before-november-19-launch"
+    ],
+    [
+     "next",
+     "next",
+     "/articles/gta-6/gta-6-fastest-motorcycles-ranked-list-by-top-speed"
+    ]
+   ],
+   "related": {
+    "heading": "Controls Across All Games",
+    "n": 2
+   },
+   "belowModules": [
+    "Controls Across All Games GTA 6 Controls Guide: Full PS5 & X",
+    "Controls Across All Games",
+    "Remove Ads with VIP Membership! Sign Up"
+   ],
+   "breadcrumbs": [
+    [
+     "Home",
+     "/"
+    ],
+    [
+     "GTA 6",
+     "/gta-6/"
+    ],
+    [
+     "News",
+     "/gta-6/news/"
+    ],
+    [
+     "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+     null
+    ]
+   ],
+   "comments": {
+    "present": true,
+    "countLabelShape": "<n> Comments",
+    "sort": [
+     [
+      "Best",
+      "best",
+      false
+     ],
+     [
+      "Popular",
+      "popular",
+      false
+     ],
+     [
+      "Newest",
+      "desc",
+      true
+     ],
+     [
+      "Oldest",
+      "asc",
+      false
+     ]
+    ],
+    "limit": "5000",
+    "formAction": "/index.php?option=com_jlexcomment&task=item.save",
+    "guestNameField": true,
+    "emptyText": ""
+   },
+   "ldBreadcrumb": [
+    [
+     1,
+     "Home",
+     "/"
+    ],
+    [
+     2,
+     "GTA 6",
+     "/gta-6/"
+    ],
+    [
+     3,
+     "News",
+     "/gta-6/news/"
+    ],
+    [
+     4,
+     "GTA 6 Controls Guide: Full PS5 &amp; Xbox Button Layout",
+     ""
+    ]
+   ]
+  },
+  {
+   "url": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
+   "title": "Grand Theft Auto VI Launch Trailer",
+   "h1": "Grand Theft Auto VI Launch Trailer",
+   "meta": [
+    [
+     "DT",
+     "article-info-term",
+     "Details"
+    ],
+    [
+     "DD",
+     "createdby",
+     "<author>"
+    ],
+    [
+     "DD",
+     "published",
+     "on October 15, 2026"
+    ],
+    [
+     "DD",
+     "category-name",
+     "Grand Theft Auto VI"
+    ]
+   ],
+   "metaDatetime": [
+    "2026-10-15T10:49:56+00:00"
+   ],
+   "share": [
+    "Share on Twitter",
+    "Share on Reddit",
+    "Copy Link"
+   ],
+   "toc": {
+    "heading": "",
+    "n": 0,
+    "hrefsAreSelfPlusHash": true,
+    "anchorsExist": true,
+    "first": []
+   },
+   "sectionAnchors": [],
+   "headingsNoIndex": 0,
+   "videoEmbeds": [
+    [
+     "YouTube video player",
+     "https://www.youtube.com/embed/<id>"
+    ]
+   ],
+   "authorBlock": true,
+   "pager": [
+    [
+     "previous",
+     "prev",
+     "/articles/gta-6/rockstar-plans-to-make-games-faster-following-gta-6"
+    ],
+    [
+     "next",
+     "next",
+     "/articles/gta-6/gta-6-makes-missions-less-restrictive-for-dynamic-gameplay"
+    ]
+   ],
+   "related": {
+    "heading": "",
+    "n": 0
+   },
+   "belowModules": [
+    "Remove Ads with VIP Membership! Sign Up"
+   ],
+   "breadcrumbs": [
+    [
+     "Home",
+     "/"
+    ],
+    [
+     "GTA 6",
+     "/gta-6/"
+    ],
+    [
+     "News",
+     "/gta-6/news/"
+    ],
+    [
+     "Grand Theft Auto VI Launch Trailer",
+     null
+    ]
+   ],
+   "comments": {
+    "present": true,
+    "countLabelShape": "Comment",
+    "sort": [
+     [
+      "Best",
+      "best",
+      false
+     ],
+     [
+      "Popular",
+      "popular",
+      false
+     ],
+     [
+      "Newest",
+      "desc",
+      true
+     ],
+     [
+      "Oldest",
+      "asc",
+      false
+     ]
+    ],
+    "limit": "5000",
+    "formAction": "/index.php?option=com_jlexcomment&task=item.save",
+    "guestNameField": true,
+    "emptyText": "Be the first to comment."
+   },
+   "ldBreadcrumb": [
+    [
+     1,
+     "Home",
+     "/"
+    ],
+    [
+     2,
+     "GTA 6",
+     "/gta-6/"
+    ],
+    [
+     3,
+     "News",
+     "/gta-6/news/"
+    ],
+    [
+     4,
+     "Grand Theft Auto VI Launch Trailer",
+     ""
+    ]
+   ]
+  }
+ ]
+}

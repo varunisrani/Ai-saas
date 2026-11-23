@@ -1,0 +1,90 @@
+{
+  "app": "gtabase.com GTA 6 section - F3 comparison + rankings (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:56:29.755Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F3-44",
+      "mode": null,
+      "steps": [
+        "viewport:1366x900",
+        "goto:/gta-6/vehicles/best-vehicles/"
+      ],
+      "reads": [
+        "attr:rank-class-item-1@href",
+        "attr:rank-class-item-2@href",
+        "attr:rank-class-item-3@href",
+        "attr:rank-class-item-4@href",
+        "attr:rank-class-item-5@href",
+        "attr:rank-class-item-6@href",
+        "attr:rank-class-item-7@href",
+        "attr:rank-class-item-8@href",
+        "attr:rank-class-item-9@href",
+        "attr:rank-class-item-10@href",
+        "attr:rank-class-item-11@href",
+        "attr:rank-class-item-12@href",
+        "attr:rank-class-item-13@href",
+        "attr:rank-class-item-14@href",
+        "attr:rank-class-item-15@href",
+        "attr:rank-class-item-16@href",
+        "attr:rank-class-item-17@href",
+        "attr:rank-class-item-18@href",
+        "attr:rank-class-item-19@href",
+        "attr:rank-class-item-20@href",
+        "attr:rank-class-item-21@href",
+        "attr:rank-class-item-1@title",
+        "list:rank-class-items"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-vehicles/",
+        "heading": "GTA 6 Best Super Cars List: Stats Ranking",
+        "attr:rank-class-item-1@href": "/gta-6/vehicles/best-boats/",
+        "attr:rank-class-item-2@href": "/gta-6/vehicles/best-commercial-vehicles/",
+        "attr:rank-class-item-3@href": "/gta-6/vehicles/best-compacts/",
+        "attr:rank-class-item-4@href": "/gta-6/vehicles/best-coupes/",
+        "attr:rank-class-item-5@href": "/gta-6/vehicles/best-cycles/",
+        "attr:rank-class-item-6@href": "/gta-6/vehicles/best-emergency-vehicles/",
+        "attr:rank-class-item-7@href": "/gta-6/vehicles/best-helicopters/",
+        "attr:rank-class-item-8@href": "/gta-6/vehicles/best-industrial-vehicles/",
+        "attr:rank-class-item-9@href": "/gta-6/vehicles/best-military-vehicles/",
+        "attr:rank-class-item-10@href": "/gta-6/vehicles/best-motorcycles/",
+        "attr:rank-class-item-11@href": "/gta-6/vehicles/best-muscle-cars/",
+        "attr:rank-class-item-12@href": "/gta-6/vehicles/best-off-road-vehicles/",
+        "attr:rank-class-item-13@href": "/gta-6/vehicles/best-planes/",
+        "attr:rank-class-item-14@href": "/gta-6/vehicles/best-sedans/",
+        "attr:rank-class-item-15@href": "/gta-6/vehicles/best-service-vehicles/",
+        "attr:rank-class-item-16@href": "/gta-6/vehicles/best-sports-cars/",
+        "attr:rank-class-item-17@href": "/gta-6/vehicles/best-sports-classic-cars/",
+        "attr:rank-class-item-18@href": "/gta-6/vehicles/best-super-cars/",
+        "attr:rank-class-item-19@href": "/gta-6/vehicles/best-suvs/",
+        "attr:rank-class-item-20@href": "/gta-6/vehicles/best-utility-vehicles/",
+        "attr:rank-class-item-21@href": "/gta-6/vehicles/best-vans/",
+        "attr:rank-class-item-1@title": "The Best & Fastest Boats in GTA 6",
+        "list:rank-class-items": "Boats || Commercial || Compacts || Coupes || Cycles || Emergency || Helicopters || Industrial || Military || Motorcycles || Muscle || Off-Road || Planes || Sedans || Service || Sports || Sports Classic || Super || SUVs || Utility || Vans"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-45",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/vehicles/best-vehicles/?class=sports"
+      ],
+      "reads": [
+        "title",
+        "count:rank-rows"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/best-sports-cars/",
+        "heading": "GTA 6 Best Sports Cars List: Stats Ranking",
+        "title": "GTA 6 Best Sports Cars List: Stats Ranking",
+        "count:rank-rows": "23"
+      },
+      "error": null
+    }
+  ]
+}

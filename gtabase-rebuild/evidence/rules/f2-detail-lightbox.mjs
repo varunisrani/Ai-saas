@@ -2,23 +2,37 @@
 // Plain words: a detail page gallery shows a strip of thumbnails; clicking thumbnail k opens a full-screen
 // lightbox on image k with a counter "k/N" (N = images in that gallery), previous/next arrows, close button,
 // download and share buttons and the caption below. Next / ArrowRight = k+1, previous / ArrowLeft = k-1, both
-// wrapping. Escape or the close button closes it. Opening does not change the URL; a URL with ?i=<image key>
-// opens the lightbox on that image at load, and closing removes the ?i= parameter (URL replaced, no new history
-// entry). Image key = the image file name stem (e.g. "jason-duval-01").
+// wrapping. Escape or the close button closes it. Opening and moving do not change the URL. (The gallery script
+// would open a "?i=<image key>" URL on that image, but the live server 301-redirects that URL to the bare page,
+// so it never happens; see f2-detail-url.mjs.)
 // Observations: evidence/runs/run-f2-detail.json. Standalone: node f2-detail-lightbox.mjs
 const OBS = [
+ {
+  "id": "F2-16",
+  "action": "open-first",
+  "url": "/gta-6/characters/jason",
+  "counter": "1/95",
+  "open": "true"
+ },
+ {
+  "id": "F2-17",
+  "action": "next-click",
+  "url": "/gta-6/characters/jason",
+  "counter": "2/95",
+  "open": null
+ },
  {
   "id": "F2-18",
   "action": "ArrowRight",
   "url": "/gta-6/characters/jason",
-  "counter": "<missing>",
+  "counter": "3/95",
   "open": null
  },
  {
   "id": "F2-19",
   "action": "ArrowLeft x2",
   "url": "/gta-6/characters/jason",
-  "counter": "<missing>",
+  "counter": "1/95",
   "open": null
  },
  {
@@ -29,7 +43,6 @@ const OBS = [
   "open": "false"
  }
 ];
-const IMAGE_INDEX = { 'jason-duval-01': 4 }; // position of that image in the gallery (from the page's image order)
 let pass = 0, k = null, N = null;
 for (const o of OBS) {
   let want, ok;

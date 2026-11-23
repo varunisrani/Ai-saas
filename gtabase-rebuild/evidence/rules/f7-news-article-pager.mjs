@@ -202,7 +202,18 @@ const PAGERS = [
 }
 ]
 ];
-const RUN = [];
+const RUN = [
+[
+"F7-29",
+"/gta-6/articles/gta-6-driving-tips",
+{
+"previous": "/gta-6/articles/gta-6-phone-guide-every-app-explained",
+"next": "/gta-6/articles/gta-6-review-bombed-on-metacritic",
+"relPrev": "prev",
+"relNext": "next"
+}
+]
+];
 const neighbours = (url) => { const i = ORDER.indexOf(url); return { previous: i > 0 ? ORDER[i - 1] : null, next: i >= 0 && i < ORDER.length - 1 ? ORDER[i + 1] : null }; };
 let pass = 0, fail = 0;
 const check = (name, ok, detail = '') => { if (ok) pass++; else fail++; console.log(`${ok ? 'PASS' : 'FAIL'} ${name}${ok ? '' : ' ' + detail}`); };

@@ -358,22 +358,20 @@
   "steps": [
    "goto:/gta-6/characters/jason?i=jason-duval-01",
    "macro:wake",
-   "waitfor:lightbox"
+   "wait:3000"
   ],
   "reads": [
    "visible:lightbox",
-   "text:lightbox-counter"
+   "count:gallery-thumbs"
   ]
  },
  {
   "id": "F2-22",
-  "reset": "none",
   "steps": [
-   "click:lightbox-close",
-   "wait:1000"
+   "goto:/gta-6/vehicles/sunset-sanchez?utm_source=test"
   ],
   "reads": [
-   "visible:lightbox"
+   "count:stat-bars"
   ]
  },
  {
@@ -404,7 +402,8 @@
   "id": "F2-25",
   "reset": "none",
   "steps": [
-   "click:pager-next"
+   "click:pager-next",
+   "wait:5000"
   ],
   "reads": [
    "count:stat-bars"

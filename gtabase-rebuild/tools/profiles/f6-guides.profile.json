@@ -153,7 +153,8 @@
     "s3-second-play": ":nth-match(.category-items.radio-stations > .items-row, 3) .radio-play-button:not([style*=\"display: none\"]) >> nth=1",
     "grid-1-first-card": ":nth-match(.category-desc .category-items, 1) > .items-row >> nth=0",
     "table-controls": ".radio-stations input, .radio-stations select, .radio-stations th button, .radio-stations th a",
-    "grid-1-first-title-link": ":nth-match(.category-desc .category-items, 1) .items-row h3 a >> nth=0"
+    "grid-1-first-title-link": ":nth-match(.category-desc .category-items, 1) .items-row h3 a >> nth=0",
+    "faq-section": "#ja-contentsl2"
   },
   "modes": {
     "animals": "/gta-6/animals/",
@@ -175,11 +176,19 @@
     "pc": "/gta-6/gta-6-cheats-pc-full-list-of-cheat-codes",
     "membership": [
       "goto:/membership/",
+      "scroll:faq-section",
+      "wait:3000",
+      "wait:idle",
+      "wait:9000"
+    ],
+    "membership-hover-first": [
+      "goto:/membership/",
       "hover:heading",
       "wait:3000",
       "wait:idle",
-      "hover:acc-1",
-      "wait:9000"
+      "wait:9000",
+      "scroll:faq-section",
+      "wait:3000"
     ]
   },
   "resets": {

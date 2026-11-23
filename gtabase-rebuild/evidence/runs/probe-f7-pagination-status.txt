@@ -22,3 +22,6 @@
 /articles/gta-6/this-article-does-not-exist-xyz  404 | 404 Page Not Found
 # later the same day (~11:00 UTC) uncached pages (/gta-6/news/, /gta-6/guides/, /gta-6/nonexistent-page-xyz) answered
 # 500 "Request Timeout" after ~61 s (LiteSpeed origin timeout) while several tracing agents were browsing.
+# guides page 1 (evidence/html/gta-6_guides_.html): 30 item links; entries that are not articles: -
+# guides page-2: 30 item links; entries that are not articles: /gta-6/gta-6-cheats-xbox-series-xs-cheat-codes, /gta-6/gta-6-cheats-ps5-cheat-codes, /soundtrack/gta-6/gta-6-the-album, /gta-6/weapons/best-weapons/, /grand-theft-auto-6/, /gta-6/vehicles/best-vehicles/
+# guides page-3: 1 item links; entries that are not articles: /gta-6/gta-6-cheats-pc-full-list-of-cheat-codes

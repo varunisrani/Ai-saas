@@ -87,7 +87,19 @@ const OBS = [
   ],
   "count": "75",
   "hrefs": {
-   "attr:compare-to-item-1@href": "/gta-6/vehicles/comparison/?vehicle1=alvino-v1&vehicle2=sunset-sanchez"
+   "attr:compare-to-item-1@href": "/gta-6/vehicles/comparison/?vehicle1=alvino-v1&vehicle2=sunset-sanchez",
+   "attr:compare-to-item-last@href": "/gta-6/vehicles/comparison/?vehicle1=sunset-sanchez&vehicle2=zombie-bobber",
+   "attr:compare-to-item-nightblade@href": "/gta-6/vehicles/comparison/?vehicle1=sunset-sanchez&vehicle2=western-nightblade",
+   "attr:compare-to-item-sanchez@href": "/gta-6/vehicles/comparison/?vehicle1=maibatsu-sanchez&vehicle2=sunset-sanchez"
+  }
+ },
+ {
+  "id": "F2-34",
+  "page": "/gta-6/weapons/assault-rifle",
+  "names": [],
+  "count": "24",
+  "hrefs": {
+   "attr:compare-to-item-1@href": "/gta-6/weapons/comparison/?weapon1=assault-rifle&weapon2=service-carbine"
   }
  }
 ];
