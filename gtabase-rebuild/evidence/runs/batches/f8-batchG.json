@@ -1,0 +1,85 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F8 media galleries",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:46:18.368Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F8-14",
+      "mode": "shots",
+      "steps": [
+        "click:pagination-page-2",
+        "macro:wake",
+        "macro:open-first"
+      ],
+      "reads": [
+        "count:thumb",
+        "text:pagination-active",
+        "text:lb-counter",
+        "count:pagination-disabled"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/?thumb_limitstart=100&limit=100",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:thumb": "100",
+        "text:pagination-active": "2",
+        "text:lb-counter": "1/100",
+        "count:pagination-disabled": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-15",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/screenshots/?thumb_limitstart=200&limit=100",
+        "macro:wake",
+        "macro:open-first",
+        "press:ArrowLeft",
+        "wait:700"
+      ],
+      "reads": [
+        "count:thumb",
+        "text:pagination-active",
+        "count:pagination-disabled",
+        "text:lb-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/?thumb_limitstart=200&limit=100",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:thumb": "95",
+        "text:pagination-active": "3",
+        "count:pagination-disabled": "2",
+        "text:lb-counter": "95/95"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-18",
+      "mode": "shots",
+      "steps": [
+        "click:media-tab-trailers",
+        "macro:wake"
+      ],
+      "reads": [
+        "text:media-tab-active",
+        "count:thumb",
+        "count:pagination",
+        "text:pagination-active"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/trailers/",
+        "heading": "GTA 6 Screencaps from Trailers",
+        "text:media-tab-active": "Trailer Screens",
+        "count:thumb": "100",
+        "count:pagination": "2",
+        "text:pagination-active": "1"
+      },
+      "error": null
+    }
+  ]
+}

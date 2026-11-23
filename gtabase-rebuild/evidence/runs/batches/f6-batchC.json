@@ -1,0 +1,36 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 guide pages",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:43:35.778Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F6-24",
+      "mode": "maploc",
+      "steps": [],
+      "reads": [
+        "count:toc",
+        "count:toc-link",
+        "count:indexed-heading",
+        "count:inline-gallery",
+        "attr:map-banner-link@href",
+        "text:map-banner-link",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map-locations/",
+        "heading": "Where Is GTA 6 Set? Vice City & All Leonida Locations Guide",
+        "count:toc": "1",
+        "count:toc-link": "18",
+        "count:indexed-heading": "18",
+        "count:inline-gallery": "6",
+        "attr:map-banner-link@href": "/gta-6/map/",
+        "text:map-banner-link": "Interactive GTA 6 Map & Collectibles Tracker",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    }
+  ]
+}

@@ -59,7 +59,7 @@ lightbox template `#ig-lightbox-template-<id>`.
 | IG:579–589 | click on a thumbnail (`.ig-img-link`): main-image galleries → slideshow shows that image; others → lightbox opens at that index |
 | IG:592–606 `imageUrl` | builds `<url>?i=<alias>` for share links / hash mode |
 | IG:199, 511 | hit counter GET `task=imagefront.addHit` — skipped because `collecthits=0` |
-| IG:507–508 (lightbox), 242–243 (main slideshow) | download button → navigation to `task=imagefront.download&type=lbox|main&id=`; share buttons open Facebook/Twitter share windows (not exercised: they leave the page) |
+| IG:507–508 (lightbox), 242–243 (main slideshow) | download button → navigation to `task=imagefront.download&type=lbox or main&id=`; share buttons open Facebook/Twitter share windows (not exercised: they leave the page) |
 | IG:246/254, 380/387 | rating / comment requests — no rating or comment markup on these galleries, never sent |
 | LIB 4:97315 | lightboxPanel defaults: `delayControls` (controls fade after inactivity; IG passes 6000 ms), close selector `.igui-close-large`, items `.igui-lightbox-items` |
 | LIB 4:98951 | `keyup` on document while open: ArrowLeft (37) previous, ArrowRight (39) next |
@@ -107,7 +107,7 @@ stored (com_igallery tables), the per-page limit 100 and the redirect allow-list
 ## Cases
 
 - File: `evidence/cases/f8-galleries.json` — **38 cases** (F8-01..F8-38; mobile cases F8-31, F8-32, F8-38 are last
-  in the file because the viewport carries over); run `evidence/runs/run-f8-galleries.json` (38 cases, merged per case from 7 batch runs started 11:36–11:59 UTC (each case's batch is in its `batch` field) because the origin failed intermittently; the latest error-free record of each case is kept).
+  in the file because the viewport carries over); run `evidence/runs/run-f8-galleries.json` (38 cases, merged per case from 7 batch runs started 11:36–11:59 UTC (batch files in `evidence/runs/batches/`, merged with `merge-batches.py`; each case names its batch in `batch`) because the origin failed intermittently; the latest error-free record of each case is kept).
 - Clean: 38/38. Excluded: none in the final run. Harness fixes on the way (all re-run): (1) JCH defers the
   gallery scripts until interaction and never loads them under `navigator.webdriver` → runner `browser.args`
   patch + `--disable-blink-features=AutomationControlled` and a `wake` macro (hover heading + thumbnail, waits);

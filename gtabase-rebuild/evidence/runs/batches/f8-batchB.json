@@ -1,0 +1,381 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F8 media galleries",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:38:07.649Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F8-01",
+      "mode": "shots",
+      "steps": [],
+      "reads": [
+        "count:gallery",
+        "count:thumb",
+        "list:media-tab",
+        "text:media-tab-active",
+        "count:pagination",
+        "count:pagination-item",
+        "text:pagination-active",
+        "count:pagination-disabled",
+        "attr:pagination-page-2@href",
+        "attr:pagination-last@href",
+        "count:lightbox",
+        "attr:thumb-1-img@alt",
+        "count:thumb-img-lazy",
+        "visible:main-slideshow",
+        "count:modal-trigger",
+        "count:modal-trigger-login",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:gallery": "1",
+        "count:thumb": "100",
+        "list:media-tab": "Screenshots || Trailer Screens || Artworks || Videos",
+        "text:media-tab-active": "Screenshots",
+        "count:pagination": "2",
+        "count:pagination-item": "7",
+        "text:pagination-active": "1",
+        "count:pagination-disabled": "2",
+        "attr:pagination-page-2@href": "/gta-6/screenshots/?thumb_limitstart=100&limit=100",
+        "attr:pagination-last@href": "/gta-6/screenshots/?thumb_limitstart=200&limit=100",
+        "count:lightbox": "0",
+        "attr:thumb-1-img@alt": "gta 6 review",
+        "count:thumb-img-lazy": "0",
+        "visible:main-slideshow": "false",
+        "count:modal-trigger": "2",
+        "count:modal-trigger-login": "2",
+        "calls": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F8-02",
+      "mode": "shots",
+      "steps": [
+        "macro:open-first"
+      ],
+      "reads": [
+        "visible:lightbox",
+        "text:lb-counter",
+        "text:lb-total",
+        "attr:lb-image@alt",
+        "text:lb-caption",
+        "count:lb-toolbar-action",
+        "visible:lb-next",
+        "visible:lb-prev",
+        "visible:lb-close",
+        "count:page-scroll-lock",
+        "count:lb-slot",
+        "count:lb-loaded-image",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "visible:lightbox": "true",
+        "text:lb-counter": "1/100",
+        "text:lb-total": "100",
+        "attr:lb-image@alt": "gta 6 review",
+        "text:lb-caption": "",
+        "count:lb-toolbar-action": "3",
+        "visible:lb-next": "true",
+        "visible:lb-prev": "true",
+        "visible:lb-close": "true",
+        "count:page-scroll-lock": "1",
+        "count:lb-slot": "100",
+        "count:lb-loaded-image": "5",
+        "calls": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F8-03",
+      "mode": null,
+      "steps": [
+        "press:ArrowRight",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "count:lightbox"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "2/100",
+        "count:lightbox": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-04",
+      "mode": null,
+      "steps": [
+        "press:ArrowLeft",
+        "wait:700",
+        "press:ArrowLeft",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "100/100"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-05",
+      "mode": null,
+      "steps": [
+        "press:ArrowRight",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "1/100"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-06",
+      "mode": null,
+      "steps": [
+        "click:lb-next",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "2/100"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-07",
+      "mode": null,
+      "steps": [
+        "click:lb-prev",
+        "wait:700",
+        "click:lb-prev",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "100/100"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-08",
+      "mode": null,
+      "steps": [
+        "press:Escape",
+        "wait:900"
+      ],
+      "reads": [
+        "count:lightbox",
+        "count:page-scroll-lock"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:lightbox": "0",
+        "count:page-scroll-lock": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-09",
+      "mode": "shots",
+      "steps": [
+        "click:thumb-5",
+        "waitfor:lb-counter",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "attr:lb-image@alt"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "5/100",
+        "attr:lb-image@alt": "gta 6 review"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-10",
+      "mode": null,
+      "steps": [
+        "click:lb-close",
+        "wait:900"
+      ],
+      "reads": [
+        "count:lightbox",
+        "count:page-scroll-lock"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:lightbox": "0",
+        "count:page-scroll-lock": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-11",
+      "mode": "shots",
+      "steps": [
+        "macro:open-first",
+        "click:lb-bottom",
+        "wait:900"
+      ],
+      "reads": [
+        "count:lightbox"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:lightbox": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-12",
+      "mode": "shots",
+      "steps": [
+        "focus:thumb-3",
+        "press:Enter",
+        "wait:1200"
+      ],
+      "reads": [
+        "count:lightbox",
+        "text:lb-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:lightbox": "1",
+        "text:lb-counter": "3/100"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-13",
+      "mode": "shots",
+      "steps": [
+        "macro:open-first",
+        "press:ArrowRight",
+        "wait:700",
+        "reload",
+        "macro:wake"
+      ],
+      "reads": [
+        "count:lightbox"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:lightbox": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-16",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/screenshots/?i=gta-6-screen-104",
+        "macro:wake"
+      ],
+      "reads": [
+        "count:lightbox"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:lightbox": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-31",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/screenshots/",
+        "macro:wake",
+        "macro:open-first"
+      ],
+      "reads": [
+        "count:thumb",
+        "visible:lb-next",
+        "visible:lb-prev",
+        "visible:lb-close",
+        "text:lb-counter",
+        "visible:lb-image"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:thumb": "100",
+        "visible:lb-next": "true",
+        "visible:lb-prev": "true",
+        "visible:lb-close": "true",
+        "text:lb-counter": "1/100",
+        "visible:lb-image": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-32",
+      "mode": null,
+      "steps": [
+        "click:lb-next",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "2/100"
+      },
+      "error": null
+    }
+  ]
+}

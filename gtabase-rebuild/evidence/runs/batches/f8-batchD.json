@@ -1,0 +1,104 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F8 media galleries",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:42:46.028Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F8-19",
+      "mode": "artworks",
+      "steps": [],
+      "reads": [
+        "count:gallery",
+        "list:gallery-heading",
+        "count:g1-thumb",
+        "count:g2-thumb",
+        "count:g3-thumb",
+        "count:thumb",
+        "text:media-tab-active",
+        "count:pagination"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/artworks/",
+        "heading": "GTA 6 Official Artworks & Wallpapers",
+        "count:gallery": "6",
+        "list:gallery-heading": "GTA 6 Main Artworks || GTA 6 Character Artworks || GTA 6 Locations Postcards || GTA 6 Misc. Artworks || GTA 6 Cover Shards Artworks || GTA 6 Background Artworks",
+        "count:g1-thumb": "9",
+        "count:g2-thumb": "14",
+        "count:g3-thumb": "6",
+        "count:thumb": "59",
+        "text:media-tab-active": "Artworks",
+        "count:pagination": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-20",
+      "mode": null,
+      "steps": [
+        "click:g2-thumb-1",
+        "waitfor:lb-counter",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "text:lb-caption",
+        "attr:lb-image@alt"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/artworks/",
+        "heading": "GTA 6 Official Artworks & Wallpapers",
+        "text:lb-counter": "1/14",
+        "text:lb-caption": "Jason & Lucia - Rooftop (No Logos)",
+        "attr:lb-image@alt": "gta jason lucia rooftop"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-21",
+      "mode": null,
+      "steps": [
+        "press:ArrowLeft",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "text:lb-caption"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/artworks/",
+        "heading": "GTA 6 Official Artworks & Wallpapers",
+        "text:lb-counter": "14/14",
+        "text:lb-caption": "Jason & Lucia 1 (No Logos)"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-22",
+      "mode": null,
+      "steps": [
+        "press:Escape",
+        "wait:900",
+        "click:thumb-1",
+        "waitfor:lb-counter",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "text:lb-caption"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/artworks/",
+        "heading": "GTA 6 Official Artworks & Wallpapers",
+        "text:lb-counter": "1/9",
+        "text:lb-caption": "GTA 6 Cover Artwork"
+      },
+      "error": null
+    }
+  ]
+}

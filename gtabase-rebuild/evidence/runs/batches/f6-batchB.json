@@ -1,0 +1,496 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 guide pages",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T10:59:15.314Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F6-02",
+      "mode": "animals",
+      "steps": [
+        "click:grid-1-first-title-link"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/animals/albino-american-alligator"
+      },
+      "error": "click:grid-1-first-title-link: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F6-03",
+      "mode": null,
+      "steps": [
+        "back"
+      ],
+      "reads": [
+        "count:guide-card"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "<missing>",
+        "count:guide-card": "0"
+      },
+      "error": "back: page.goBack: Protocol error (Page.getNavigationHistory): Not attached to an active page"
+    },
+    {
+      "id": "F6-05",
+      "mode": "gangs",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "attr:grid-1-first-card@href",
+        "count:bullet-list-1",
+        "count:section-heading",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gangs/",
+        "heading": "GTA 6 Gangs & Factions Guide",
+        "count:card-grid": "2",
+        "count:grid-1-cards": "3",
+        "count:grid-2-cards": "0",
+        "attr:grid-1-first-card@href": "/gangs/gta-6/final-chapter-mc",
+        "count:bullet-list-1": "12",
+        "count:section-heading": "4",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-06",
+      "mode": "gangs",
+      "steps": [
+        "click:grid-1-first-card"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gangs/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gangs/gta-6/final-chapter-mc"
+      },
+      "error": "click:grid-1-first-card: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F6-07",
+      "mode": "properties",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:grid-4-cards",
+        "count:guide-card",
+        "count:card-with-price",
+        "count:card-with-location",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/",
+        "heading": "GTA 6 Properties & Garages: Full List & Guide",
+        "count:card-grid": "4",
+        "count:grid-1-cards": "8",
+        "count:grid-2-cards": "4",
+        "count:grid-3-cards": "3",
+        "count:grid-4-cards": "5",
+        "count:guide-card": "20",
+        "count:card-with-price": "8",
+        "count:card-with-location": "20",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-08",
+      "mode": "properties",
+      "steps": [
+        "click:grid-3-first-link"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/properties/gta-6/paradise-garage",
+        "heading": "Paradise Garage",
+        "title": "Paradise Garage | GTA 6 Properties & Garages"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-20",
+      "mode": "ps5",
+      "steps": [
+        "click:platform-xbox"
+      ],
+      "reads": [
+        "text:platform-current",
+        "count:platform-link"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-ps5-cheat-codes",
+        "heading": "<missing>",
+        "text:platform-current": "<missing>",
+        "count:platform-link": "0"
+      },
+      "error": "click:platform-xbox: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F6-21",
+      "mode": "xbox",
+      "steps": [],
+      "reads": [
+        "count:cheat-row",
+        "count:cheat-category",
+        "count:first-cheat-keys",
+        "attr:first-cheat-key-1@alt",
+        "attr:first-cheat-key-1@src",
+        "count:cheat-key-other",
+        "attr:howto-icon-2@alt",
+        "attr:howto-icon-3@alt",
+        "count:platform-link",
+        "text:platform-current",
+        "count:toc-link",
+        "count:body-link-pc",
+        "count:cheat-copy-or-filter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
+        "heading": "GTA 6 Cheats Xbox: Cheat Codes Guide for Xbox Series X|S",
+        "count:cheat-row": "61",
+        "count:cheat-category": "5",
+        "count:first-cheat-keys": "8",
+        "attr:first-cheat-key-1@alt": "UP",
+        "attr:first-cheat-key-1@src": "/images/resources/controller/up.png",
+        "count:cheat-key-other": "0",
+        "attr:howto-icon-2@alt": "LB",
+        "attr:howto-icon-3@alt": "RB",
+        "count:platform-link": "2",
+        "text:platform-current": "GTA 6 Cheats for Xbox Series X|S YOU ARE HERE",
+        "count:toc-link": "8",
+        "count:body-link-pc": "0",
+        "count:cheat-copy-or-filter": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-22",
+      "mode": "pc",
+      "steps": [],
+      "reads": [
+        "count:cheat-row",
+        "count:platform-link",
+        "count:pc-platform-table-link",
+        "list:pc-platform-table-link",
+        "count:toc-link",
+        "attr:toc-first-link@href",
+        "count:body-link-ps5",
+        "count:body-link-xbox"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-xbox-series-xs-cheat-codes",
+        "heading": "<missing>",
+        "count:cheat-row": "0",
+        "count:platform-link": "0",
+        "count:pc-platform-table-link": "0",
+        "list:pc-platform-table-link": "",
+        "count:toc-link": "0",
+        "attr:toc-first-link@href": "<missing>",
+        "count:body-link-ps5": "0",
+        "count:body-link-xbox": "0"
+      },
+      "error": "mode:pc: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F6-24",
+      "mode": "maploc",
+      "steps": [],
+      "reads": [
+        "count:toc",
+        "count:toc-link",
+        "count:indexed-heading",
+        "count:inline-gallery",
+        "attr:map-banner-link@href",
+        "text:map-banner-link",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-pc-full-list-of-cheat-codes",
+        "heading": "<missing>",
+        "count:toc": "0",
+        "count:toc-link": "0",
+        "count:indexed-heading": "0",
+        "count:inline-gallery": "0",
+        "attr:map-banner-link@href": "<missing>",
+        "text:map-banner-link": "<missing>",
+        "count:rlta-any": "0"
+      },
+      "error": "mode:maploc: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F6-25",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/animals/nonexistent-xyz"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map-locations/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/animals/nonexistent-xyz"
+      },
+      "error": "goto:/gta-6/animals/nonexistent-xyz: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F6-27",
+      "mode": "membership",
+      "steps": [],
+      "reads": [
+        "count:acc-container",
+        "attr:acc-container@data-rlta-type",
+        "count:acc-button",
+        "count:acc-open",
+        "attr:acc-1@aria-expanded",
+        "attr:acc-2@aria-expanded",
+        "attr:acc-1@role",
+        "attr:acc-1@tabindex",
+        "attr:acc-1@aria-controls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/nonexistent-xyz",
+        "heading": "<missing>",
+        "count:acc-container": "0",
+        "attr:acc-container@data-rlta-type": "<missing>",
+        "count:acc-button": "0",
+        "count:acc-open": "0",
+        "attr:acc-1@aria-expanded": "<missing>",
+        "attr:acc-2@aria-expanded": "<missing>",
+        "attr:acc-1@role": "<missing>",
+        "attr:acc-1@tabindex": "<missing>",
+        "attr:acc-1@aria-controls": "<missing>"
+      },
+      "error": "mode:membership: goto:/membership/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F6-28",
+      "mode": null,
+      "steps": [
+        "click:acc-2",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-2@aria-expanded",
+        "count:acc-open",
+        "count:acc-panel-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-1@aria-expanded": "<missing>",
+        "attr:acc-2@aria-expanded": "<missing>",
+        "count:acc-open": "0",
+        "count:acc-panel-open": "0"
+      },
+      "error": "click:acc-2: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F6-29",
+      "mode": null,
+      "steps": [
+        "click:acc-2",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-2@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-2@aria-expanded": "<missing>",
+        "count:acc-open": "0"
+      },
+      "error": "click:acc-2: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F6-30",
+      "mode": null,
+      "steps": [
+        "focus:acc-2",
+        "press:ArrowDown",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-2@aria-expanded",
+        "attr:acc-3@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-2@aria-expanded": "<missing>",
+        "attr:acc-3@aria-expanded": "<missing>",
+        "count:acc-open": "0"
+      },
+      "error": "focus:acc-2: locator.focus: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F6-31",
+      "mode": null,
+      "steps": [
+        "press:Home",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-3@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-1@aria-expanded": "<missing>",
+        "attr:acc-3@aria-expanded": "<missing>",
+        "count:acc-open": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-32",
+      "mode": null,
+      "steps": [
+        "press:End",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-last@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-1@aria-expanded": "true",
+        "attr:acc-last@aria-expanded": "false",
+        "count:acc-open": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-33",
+      "mode": null,
+      "steps": [
+        "press:Enter",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-last@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-last@aria-expanded": "false",
+        "count:acc-open": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-34",
+      "mode": null,
+      "steps": [
+        "goto:/membership/#will-my-subscription-extend-automatically",
+        "hover:heading",
+        "wait:3000",
+        "wait:idle"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-3@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/#will-my-subscription-extend-automatically",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-1@aria-expanded": "true",
+        "attr:acc-3@aria-expanded": "false",
+        "count:acc-open": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-35",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/animals/"
+      ],
+      "reads": [
+        "count:guide-card",
+        "visible:grid-1-first-title-link",
+        "count:card-grid"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "count:guide-card": "255",
+        "visible:grid-1-first-title-link": "true",
+        "count:card-grid": "3"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-36",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/characters/"
+      ],
+      "reads": [
+        "count:card-grid",
+        "count:grid-4-cards",
+        "visible:grid-1-first-link"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/",
+        "heading": "GTA 6 Characters Guide: Main Protagonists & Full List",
+        "count:card-grid": "4",
+        "count:grid-4-cards": "49",
+        "visible:grid-1-first-link": "true"
+      },
+      "error": null
+    }
+  ]
+}

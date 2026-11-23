@@ -1,0 +1,77 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F8 media galleries",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:36:19.667Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F8-23",
+      "mode": "covers",
+      "steps": [],
+      "reads": [
+        "count:gallery",
+        "count:thumb",
+        "visible:main-image",
+        "text:image-description",
+        "count:pagination",
+        "count:media-tab"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/covers/",
+        "heading": "GTA 6 Cover Art: Official Box Art",
+        "count:gallery": "1",
+        "count:thumb": "0",
+        "visible:main-image": "true",
+        "text:image-description": "GTA 6 Official Cover Art",
+        "count:pagination": "0",
+        "count:media-tab": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-24",
+      "mode": null,
+      "steps": [
+        "click:main-image",
+        "waitfor:lb-counter",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "text:lb-caption",
+        "visible:lb-next"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/covers/",
+        "heading": "GTA 6 Cover Art: Official Box Art",
+        "text:lb-counter": "1/1",
+        "text:lb-caption": "GTA 6 Official Cover Art",
+        "visible:lb-next": "false"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-25",
+      "mode": null,
+      "steps": [
+        "press:ArrowRight",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "count:lightbox"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/covers/",
+        "heading": "GTA 6 Cover Art: Official Box Art",
+        "text:lb-counter": "1/1",
+        "count:lightbox": "1"
+      },
+      "error": null
+    }
+  ]
+}

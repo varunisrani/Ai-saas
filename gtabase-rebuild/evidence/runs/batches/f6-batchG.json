@@ -1,0 +1,77 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 guide pages",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:57:32.286Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F6-02",
+      "mode": "animals",
+      "steps": [
+        "click:grid-1-first-title-link"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/albino-american-alligator",
+        "heading": "Albino American Alligator",
+        "title": "Albino American Alligator | GTA 6 Animals Guide & Locations"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-03",
+      "mode": null,
+      "steps": [
+        "back"
+      ],
+      "reads": [
+        "count:guide-card"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "count:guide-card": "255"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-06",
+      "mode": "gangs",
+      "steps": [
+        "click:grid-1-first-card"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gangs/gta-6/final-chapter-mc",
+        "heading": "Final Chapter MC",
+        "title": "Final Chapter MC | GTA 6 Gangs & Factions Guide"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-25",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/animals/nonexistent-xyz"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/nonexistent-xyz",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found"
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F8 media galleries",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:44:00.065Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F8-14",
+      "mode": "shots",
+      "steps": [
+        "click:pagination-page-2",
+        "macro:wake",
+        "macro:open-first"
+      ],
+      "reads": [
+        "count:thumb",
+        "text:pagination-active",
+        "text:lb-counter",
+        "count:pagination-disabled"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/?thumb_limitstart=100&limit=100",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:thumb": "100",
+        "text:pagination-active": "2",
+        "text:lb-counter": "<missing>",
+        "count:pagination-disabled": "0"
+      },
+      "error": "macro:open-first: waitfor:lb-counter: locator.waitFor: Timeout 8000ms exceeded."
+    }
+  ]
+}

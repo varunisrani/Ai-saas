@@ -1,0 +1,86 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F8 media galleries",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:43:13.063Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F8-26",
+      "mode": "maploc",
+      "steps": [
+        "click:g1-thumb-2",
+        "wait:900"
+      ],
+      "reads": [
+        "count:gallery",
+        "count:g1-thumb",
+        "count:g1-active-thumb",
+        "attr:g1-active-thumb-img@alt",
+        "attr:g1-main-active-img@alt",
+        "count:lightbox"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map-locations/",
+        "heading": "Where Is GTA 6 Set? Vice City & All Leonida Locations Guide",
+        "count:gallery": "6",
+        "count:g1-thumb": "13",
+        "count:g1-active-thumb": "1",
+        "attr:g1-active-thumb-img@alt": "gta6 screen extendedlook",
+        "attr:g1-main-active-img@alt": "gta6 screen extendedlook",
+        "count:lightbox": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-27",
+      "mode": null,
+      "steps": [
+        "click:g1-main-active",
+        "waitfor:lb-counter",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "text:lb-caption",
+        "attr:lb-image@alt"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/map-locations/",
+        "heading": "Where Is GTA 6 Set? Vice City & All Leonida Locations Guide",
+        "text:lb-counter": "2/13",
+        "text:lb-caption": "",
+        "attr:lb-image@alt": "gta6 screen extendedlook"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-28",
+      "mode": null,
+      "steps": [
+        "press:ArrowRight",
+        "wait:700",
+        "press:ArrowRight",
+        "wait:700",
+        "press:Escape",
+        "wait:1200"
+      ],
+      "reads": [
+        "count:lightbox",
+        "attr:g1-main-active-img@alt",
+        "attr:g1-active-thumb-img@alt"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/map-locations/",
+        "heading": "Where Is GTA 6 Set? Vice City & All Leonida Locations Guide",
+        "count:lightbox": "0",
+        "attr:g1-main-active-img@alt": "vice city",
+        "attr:g1-active-thumb-img@alt": "vice city"
+      },
+      "error": null
+    }
+  ]
+}

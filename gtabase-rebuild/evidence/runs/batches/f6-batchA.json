@@ -1,0 +1,560 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 guide pages",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T10:55:28.552Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F6-01",
+      "mode": "animals",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:guide-card",
+        "attr:grid-1-first-link@href",
+        "attr:grid-1-first-link@aria-label",
+        "count:section-heading",
+        "count:toc",
+        "count:faq-question",
+        "count:rlta-any",
+        "count:tabs-script"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "count:card-grid": "3",
+        "count:grid-1-cards": "184",
+        "count:grid-2-cards": "69",
+        "count:grid-3-cards": "2",
+        "count:guide-card": "255",
+        "attr:grid-1-first-link@href": "/gta-6/animals/albino-american-alligator",
+        "attr:grid-1-first-link@aria-label": "Read more: Albino American Alligator",
+        "count:section-heading": "3",
+        "count:toc": "0",
+        "count:faq-question": "0",
+        "count:rlta-any": "0",
+        "count:tabs-script": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-02",
+      "mode": "animals",
+      "steps": [
+        "click:grid-1-first-title-link"
+      ],
+      "reads": [
+        "title"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/animals/albino-american-alligator"
+      },
+      "error": "click:grid-1-first-title-link: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F6-03",
+      "mode": null,
+      "steps": [
+        "back"
+      ],
+      "reads": [
+        "count:guide-card"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "<missing>",
+        "count:guide-card": "0"
+      },
+      "error": "back: page.goBack: Protocol error (Page.getNavigationHistory): Not attached to an active page"
+    },
+    {
+      "id": "F6-04",
+      "mode": "characters",
+      "steps": [],
+      "reads": [
+        "count:card-grid",
+        "count:grid-1-cards",
+        "count:grid-2-cards",
+        "count:grid-3-cards",
+        "count:grid-4-cards",
+        "count:plain-person-row",
+        "count:faq-question",
+        "attr:grid-1-first-link@href",
+        "count:bullet-list-1",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/characters/",
+        "heading": "GTA 6 Characters Guide: Main Protagonists & Full List",
+        "count:card-grid": "4",
+        "count:grid-1-cards": "2",
+        "count:grid-2-cards": "6",
+        "count:grid-3-cards": "10",
+        "count:grid-4-cards": "49",
+        "count:plain-person-row": "10",
+        "count:faq-question": "5",
+        "attr:grid-1-first-link@href": "/gta-6/characters/jason",
+        "count:bullet-list-1": "17",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-09",
+      "mode": "radio",
+      "steps": [
+        "macro:wake"
+      ],
+      "reads": [
+        "count:station-row",
+        "count:station-without-tracks",
+        "count:track-play",
+        "count:track-play-visible",
+        "count:track-play-hidden",
+        "list:tracklist-header",
+        "count:table-controls",
+        "text:player-title",
+        "text:s1-track1-title",
+        "text:player-artist",
+        "text:s1-track1-artist",
+        "text:player-time",
+        "text:player-duration",
+        "attr:player-toggle-icon@class",
+        "visible:floating-player",
+        "count:track-play-pause-state",
+        "count:rlta-any",
+        "calls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "count:station-row": "24",
+        "count:station-without-tracks": "1",
+        "count:track-play": "819",
+        "count:track-play-visible": "301",
+        "count:track-play-hidden": "518",
+        "list:tracklist-header": "# || Track || Play",
+        "count:table-controls": "0",
+        "text:player-title": "Starting From Zero",
+        "text:s1-track1-title": "Starting From Zero",
+        "text:player-artist": "Justice (feat. Michael McDonald) (2026)",
+        "text:s1-track1-artist": "Justice (feat. Michael McDonald) (2026)",
+        "text:player-time": "0:00",
+        "text:player-duration": "0:00",
+        "attr:player-toggle-icon@class": "fa-solid fa-play",
+        "visible:floating-player": "true",
+        "count:track-play-pause-state": "0",
+        "count:rlta-any": "0",
+        "calls": "GET www.youtube.com/s/player/f9c6b6bd/www-widgetapi.vflset/www-widgetapi.js 200 || GET www.youtube.com/embed/?controls=0&playsinline=1&disablekb=1&enablejsapi=1&origin=https%3A%2F%2Fwww.gtabase.com&widgetid=1&forigin=https%3A%2F%2Fwww.gtabase.com%2Fgta-6%2Fradio-stations%2F&aoriginsup=1&vf=1 200 || POST www.youtube.com/youtubei/v1/log_event?alt=json BLOCKED"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-10",
+      "mode": "radio-ready",
+      "steps": [
+        "click:s1-track2-play"
+      ],
+      "reads": [
+        "text:s1-track2-play",
+        "text:player-title",
+        "text:s1-track2-title",
+        "count:track-play-pause-state",
+        "attr:player-toggle-icon@class",
+        "text:player-time",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:s1-track2-play": "PAUSE",
+        "text:player-title": "That's It",
+        "text:s1-track2-title": "That's It",
+        "count:track-play-pause-state": "1",
+        "attr:player-toggle-icon@class": "fa-solid fa-pause",
+        "text:player-time": "0:00",
+        "blocked": "POST www.youtube.com/youtubei/v1/log_event?alt=json || POST www.youtube.com/youtubei/v1/log_event?alt=json || POST www.youtube.com/youtubei/v1/player?prettyPrint=false || POST www.youtube.com/youtubei/v1/next?prettyPrint=false"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-11",
+      "mode": null,
+      "steps": [
+        "click:player-next"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s1-track3-title",
+        "text:s1-track2-play",
+        "text:s1-track3-play",
+        "count:track-play-pause-state"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:player-title": "Ahh Yea",
+        "text:s1-track3-title": "Ahh Yea",
+        "text:s1-track2-play": "PLAY",
+        "text:s1-track3-play": "PAUSE",
+        "count:track-play-pause-state": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-12",
+      "mode": null,
+      "steps": [
+        "click:player-prev",
+        "click:player-prev"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s1-track1-title",
+        "text:s1-track1-play",
+        "count:track-play-pause-state"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:player-title": "Starting From Zero",
+        "text:s1-track1-title": "Starting From Zero",
+        "text:s1-track1-play": "PAUSE",
+        "count:track-play-pause-state": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-13",
+      "mode": null,
+      "steps": [
+        "click:player-prev"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s1-last-title",
+        "text:s1-last-play",
+        "text:s1-track1-play"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:player-title": "Overtown Lights",
+        "text:s1-last-title": "Overtown Lights",
+        "text:s1-last-play": "PAUSE",
+        "text:s1-track1-play": "PLAY"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-14",
+      "mode": null,
+      "steps": [
+        "click:player-next"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s1-track1-title",
+        "text:s1-track1-play",
+        "text:s1-last-play"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:player-title": "Starting From Zero",
+        "text:s1-track1-title": "Starting From Zero",
+        "text:s1-track1-play": "PAUSE",
+        "text:s1-last-play": "PLAY"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-15",
+      "mode": null,
+      "steps": [
+        "click:s3-first-play"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s3-first-title",
+        "text:s3-first-play",
+        "text:s1-track1-play",
+        "count:track-play-pause-state"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:player-title": "Good Ones",
+        "text:s3-first-title": "Good Ones",
+        "text:s3-first-play": "PAUSE",
+        "text:s1-track1-play": "PLAY",
+        "count:track-play-pause-state": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-16",
+      "mode": null,
+      "steps": [
+        "click:player-next"
+      ],
+      "reads": [
+        "text:player-title",
+        "text:s3-second-title",
+        "text:s3-second-play",
+        "text:s1-track2-title"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "text:player-title": "Electric Feel",
+        "text:s3-second-title": "Electric Feel",
+        "text:s3-second-play": "PAUSE",
+        "text:s1-track2-title": "That's It"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-17",
+      "mode": null,
+      "steps": [
+        "wait:3500",
+        "click:player-toggle"
+      ],
+      "reads": [
+        "attr:player-toggle-icon@class",
+        "text:s3-second-play",
+        "text:player-title"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "attr:player-toggle-icon@class": "fa-solid fa-play",
+        "text:s3-second-play": "PLAY",
+        "text:player-title": "Electric Feel"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-18",
+      "mode": "ps5",
+      "steps": [],
+      "reads": [
+        "count:cheat-row",
+        "count:cheat-category",
+        "list:cheat-category",
+        "count:cheat-category-1-rows",
+        "count:cheat-category-3-rows",
+        "count:first-cheat-keys",
+        "attr:first-cheat-key-1@alt",
+        "attr:first-cheat-key-2@alt",
+        "attr:first-cheat-key-1@src",
+        "count:cheat-key-other",
+        "count:cheat-copy-or-filter",
+        "count:platform-link",
+        "text:platform-current",
+        "count:toc-link",
+        "attr:toc-first-link@href",
+        "count:howto-step-icons",
+        "attr:howto-icon-2@alt",
+        "attr:howto-icon-3@alt",
+        "text:first-cheat-unlock",
+        "count:body-link-pc",
+        "count:rlta-any"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-ps5-cheat-codes",
+        "heading": "GTA 6 Cheats PS5: Cheat Codes Guide for PlayStation 5",
+        "count:cheat-row": "61",
+        "count:cheat-category": "5",
+        "list:cheat-category": "PLAYER CHEATS || COMBAT CHEATS || VEHICLE SPAWN CHEATS || ENVIRONMENT CHEATS || SCREEN FILTER CHEATS",
+        "count:cheat-category-1-rows": "10",
+        "count:cheat-category-3-rows": "21",
+        "count:first-cheat-keys": "8",
+        "attr:first-cheat-key-1@alt": "UP",
+        "attr:first-cheat-key-2@alt": "RIGHT",
+        "attr:first-cheat-key-1@src": "/images/resources/controller/up.png",
+        "count:cheat-key-other": "0",
+        "count:cheat-copy-or-filter": "0",
+        "count:platform-link": "2",
+        "text:platform-current": "GTA 6 Cheats for PS5 YOU ARE HERE",
+        "count:toc-link": "8",
+        "attr:toc-first-link@href": "/gta-6/gta-6-cheats-ps5-cheat-codes#how-to-enter-gta-6-cheats-on-ps5",
+        "count:howto-step-icons": "3",
+        "attr:howto-icon-2@alt": "L1",
+        "attr:howto-icon-3@alt": "R1",
+        "text:first-cheat-unlock": "How to unlock: Finish the story.",
+        "count:body-link-pc": "0",
+        "count:rlta-any": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-19",
+      "mode": "ps5",
+      "steps": [
+        "click:toc-link-combat"
+      ],
+      "reads": [
+        "attr:toc-link-combat@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats",
+        "heading": "GTA 6 Cheats PS5: Cheat Codes Guide for PlayStation 5",
+        "attr:toc-link-combat@href": "/gta-6/gta-6-cheats-ps5-cheat-codes#combat-cheats"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-23",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/gta-6-cheats-ps5-cheat-codes#screen-filter-cheats"
+      ],
+      "reads": [
+        "count:cheat-row"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-ps5-cheat-codes#screen-filter-cheats",
+        "heading": "GTA 6 Cheats PS5: Cheat Codes Guide for PlayStation 5",
+        "count:cheat-row": "61"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-26",
+      "mode": "animals",
+      "steps": [
+        "macro:wake",
+        "scroll:grid-3-cards",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:back-to-top@class"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "attr:back-to-top@class": "cd-top cd-is-visible cd-fade-out"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-35",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/animals/"
+      ],
+      "reads": [
+        "count:guide-card",
+        "visible:menu-button",
+        "visible:grid-1-first-link"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "count:guide-card": "255",
+        "visible:menu-button": "false",
+        "visible:grid-1-first-link": "false"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-36",
+      "mode": null,
+      "steps": [
+        "macro:wake",
+        "click:menu-button",
+        "wait:600"
+      ],
+      "reads": [
+        "attr:menu-button@class"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/animals/",
+        "heading": "GTA 6 Animals Guide: All Animals, Birds & Fish",
+        "attr:menu-button@class": "<missing>"
+      },
+      "error": "click:menu-button: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F6-37",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/gta-6-cheats-ps5-cheat-codes"
+      ],
+      "reads": [
+        "count:cheat-row",
+        "visible:first-cheat-key-1",
+        "visible:toc",
+        "visible:platform-xbox"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/gta-6-cheats-ps5-cheat-codes",
+        "heading": "GTA 6 Cheats PS5: Cheat Codes Guide for PlayStation 5",
+        "count:cheat-row": "61",
+        "visible:first-cheat-key-1": "true",
+        "visible:toc": "true",
+        "visible:platform-xbox": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-38",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/radio-stations/",
+        "macro:wake"
+      ],
+      "reads": [
+        "visible:floating-player",
+        "visible:player-next",
+        "visible:player-prev",
+        "visible:player-toggle",
+        "text:player-title",
+        "count:track-play-visible"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/",
+        "heading": "GTA 6 Radio Station Songs & Tracklist",
+        "visible:floating-player": "true",
+        "visible:player-next": "true",
+        "visible:player-prev": "true",
+        "visible:player-toggle": "true",
+        "text:player-title": "Starting From Zero",
+        "count:track-play-visible": "301"
+      },
+      "error": null
+    }
+  ]
+}

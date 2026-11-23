@@ -1,0 +1,207 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F6 guide pages",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:55:59.547Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F6-27",
+      "mode": "membership",
+      "steps": [],
+      "reads": [
+        "attr:acc-container@data-rlta-state",
+        "count:acc-container",
+        "attr:acc-container@data-rlta-type",
+        "count:acc-button",
+        "count:acc-open",
+        "attr:acc-1@aria-expanded",
+        "attr:acc-2@aria-expanded",
+        "attr:acc-1@role",
+        "attr:acc-1@tabindex",
+        "attr:acc-1@aria-controls"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-container@data-rlta-state": "ready",
+        "count:acc-container": "1",
+        "attr:acc-container@data-rlta-type": "accordions",
+        "count:acc-button": "10",
+        "count:acc-open": "1",
+        "attr:acc-1@aria-expanded": "true",
+        "attr:acc-2@aria-expanded": "false",
+        "attr:acc-1@role": "button",
+        "attr:acc-1@tabindex": "0",
+        "attr:acc-1@aria-controls": "rlta-panel-does-mybase-sync-with-my-game-or-my-rockstar-account"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-28",
+      "mode": null,
+      "steps": [
+        "click:acc-2",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-2@aria-expanded",
+        "count:acc-open",
+        "count:acc-panel-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-1@aria-expanded": "false",
+        "attr:acc-2@aria-expanded": "true",
+        "count:acc-open": "1",
+        "count:acc-panel-open": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-29",
+      "mode": null,
+      "steps": [
+        "click:acc-2",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-2@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-2@aria-expanded": "false",
+        "count:acc-open": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-30",
+      "mode": null,
+      "steps": [
+        "focus:acc-2",
+        "press:ArrowDown",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-2@aria-expanded",
+        "attr:acc-3@aria-expanded",
+        "count:acc-open",
+        "errors"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-2@aria-expanded": "false",
+        "attr:acc-3@aria-expanded": "false",
+        "count:acc-open": "0",
+        "errors": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F6-31",
+      "mode": null,
+      "steps": [
+        "press:Home",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-3@aria-expanded",
+        "count:acc-open",
+        "errors"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-1@aria-expanded": "false",
+        "attr:acc-3@aria-expanded": "false",
+        "count:acc-open": "0",
+        "errors": "Cannot create property 'scroll' on boolean 'true'"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-32",
+      "mode": null,
+      "steps": [
+        "press:End",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-1@aria-expanded",
+        "attr:acc-last@aria-expanded",
+        "count:acc-open",
+        "errors"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-1@aria-expanded": "false",
+        "attr:acc-last@aria-expanded": "false",
+        "count:acc-open": "0",
+        "errors": "Cannot create property 'scroll' on boolean 'true'"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-33",
+      "mode": null,
+      "steps": [
+        "press:Enter",
+        "wait:800"
+      ],
+      "reads": [
+        "attr:acc-last@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/membership/#why-a-paid-membership-where-does-the-money-go",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-last@aria-expanded": "false",
+        "count:acc-open": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F6-34",
+      "mode": null,
+      "steps": [
+        "goto:/membership/#will-my-subscription-extend-automatically",
+        "reload",
+        "scroll:faq-section",
+        "wait:3000",
+        "wait:idle",
+        "wait:9000"
+      ],
+      "reads": [
+        "attr:acc-container@data-rlta-state",
+        "attr:acc-1@aria-expanded",
+        "attr:acc-3@aria-expanded",
+        "count:acc-open"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/#will-my-subscription-extend-automatically",
+        "heading": "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress",
+        "attr:acc-container@data-rlta-state": "ready",
+        "attr:acc-1@aria-expanded": "false",
+        "attr:acc-3@aria-expanded": "true",
+        "count:acc-open": "1"
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F8 media galleries",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:40:54.803Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F8-33",
+      "mode": "covers",
+      "steps": [
+        "click:main-image",
+        "waitfor:lb-counter",
+        "wait:700",
+        "press:Escape",
+        "wait:900"
+      ],
+      "reads": [
+        "count:lightbox",
+        "count:page-scroll-lock",
+        "visible:main-image"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/covers/",
+        "heading": "GTA 6 Cover Art: Official Box Art",
+        "count:lightbox": "0",
+        "count:page-scroll-lock": "0",
+        "visible:main-image": "true"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-34",
+      "mode": "shots",
+      "steps": [
+        "click:thumb-100",
+        "waitfor:lb-counter",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "count:lb-loaded-image"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "100/100",
+        "count:lb-loaded-image": "5"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-35",
+      "mode": null,
+      "steps": [
+        "press:ArrowRight",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "1/100"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-36",
+      "mode": null,
+      "steps": [
+        "press:ArrowRight",
+        "wait:400",
+        "press:ArrowRight",
+        "wait:400",
+        "press:ArrowRight",
+        "wait:400",
+        "press:ArrowRight",
+        "wait:400",
+        "press:ArrowRight",
+        "wait:900"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "count:lb-loaded-image"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "text:lb-counter": "6/100",
+        "count:lb-loaded-image": "11"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-37",
+      "mode": null,
+      "steps": [
+        "click:lb-image",
+        "wait:900"
+      ],
+      "reads": [
+        "count:lightbox",
+        "text:lb-counter"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/screenshots/",
+        "heading": "GTA 6 Official Screenshots for PS5 and Xbox Series X|S",
+        "count:lightbox": "1",
+        "text:lb-counter": "6/100"
+      },
+      "error": null
+    },
+    {
+      "id": "F8-38",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/covers/",
+        "macro:wake",
+        "click:main-image",
+        "waitfor:lb-counter",
+        "wait:700"
+      ],
+      "reads": [
+        "text:lb-counter",
+        "visible:lb-close",
+        "visible:lb-next",
+        "text:lb-caption"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/covers/",
+        "heading": "GTA 6 Cover Art: Official Box Art",
+        "text:lb-counter": "1/1",
+        "visible:lb-close": "true",
+        "visible:lb-next": "false",
+        "text:lb-caption": "GTA 6 Official Cover Art"
+      },
+      "error": null
+    }
+  ]
+}

@@ -137,7 +137,7 @@ server serves directly with 200 (no redirect).
 ## Cases
 
 - File: `evidence/cases/f6-guides.json` — **39 cases** (F6-01..F6-39); run `evidence/runs/run-f6-guides.json`
-  (39 cases, merged per case from 7 batch runs started 10:55–11:57 UTC (each case's batch is in its `batch` field) because the origin failed intermittently; the latest error-free record of each case is kept).
+  (39 cases, merged per case from 7 batch runs started 10:55–11:57 UTC (batch files in `evidence/runs/batches/`, merged with `merge-batches.py`; each case names its batch in `batch`) because the origin failed intermittently; the latest error-free record of each case is kept).
 - Supplementary: `evidence/cases/f6-guides-noyt.json` (4 cases F6NY-01..04, profile
   `tools/profiles/f6-guides-noyt.profile.json` = same plus youtube.com blocked) → `evidence/runs/run-f6-guides-noyt.json`,
   4/4 clean: the "no JS-ready player" state.
@@ -193,8 +193,8 @@ Selectors live in tools/profiles/f6-guides.profile.json (CSS copied from the ori
 | cheat-category | heading level 2 | "Player Cheats", … (shown upper-case) | category group |
 | cheat-key-icons / first-cheat-key-N | image | "UP" / "DOWN" / "LEFT" / "RIGHT" (alt) | one step of the button sequence |
 | howto-step-icons | images inside the numbered steps | PS5 "UP","L1","R1"; Xbox "…","LB","RB" | activation combo |
-| platform-link / platform-current | link cards | "GTA 6 Cheats for PS5", "GTA 6 Cheats for Xbox Series X|S"; current one adds "You are here" | switch platform page |
-| pc-platform-table-link | links in a 3-cell table | "GTA 6 Cheats for PS5", "… Xbox Series X|S", "… PC" | PC page's platform links |
+| platform-link / platform-current | link cards | "GTA 6 Cheats for PS5", "GTA 6 Cheats for Xbox Series X\|S"; current one adds "You are here" | switch platform page |
+| pc-platform-table-link | links in a 3-cell table | "GTA 6 Cheats for PS5", "… Xbox Series X\|S", "… PC" | PC page's platform links |
 | back-to-top | link | (icon) | appears after scrolling, scrolls to top |
 | acc-button / acc-N | button (role=button, tabindex 0, aria-expanded, aria-controls → panel) | question text | accordion item (membership FAQ, vehicles changelog) |
 | acc-open / acc-panel-open | — | — | open item(s) |
