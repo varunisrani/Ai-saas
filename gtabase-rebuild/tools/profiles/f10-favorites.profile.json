@@ -2,14 +2,57 @@
   "app": "gtabase.com GTA 6 section - F10 favorites & personal progress, guest view (observed 2026-11-23)",
   "baseUrl": "https://www.gtabase.com",
   "readOnly": true,
-  "guard": { "allow": [] },
-  "browser": { "channel": "chromium", "viewport": { "width": 1366, "height": 900 }, "locale": "en-US", "timezone": "UTC" },
-  "timeouts": { "action": 8000, "navigation": 60000, "settle": 5000, "idle": 15000 },
-  "network": {
-    "include": ["option=com_ajax", "option=com_jlexcomment", "option=com_users"],
-    "block": ["mediavine", "googletagmanager", "google-analytics", "doubleclick", "googlesyndication", "amazon-adsystem", "addtoany", "facebook\\.net", "clarity\\.ms", "cloudflareinsights", "nel\\.cloudflare", "quantserve", "scorecardresearch", "adnxs", "pubmatic", "rubiconproject", "criteo", "taboola", "outbrain", "giphy", "/cdn-cgi/challenge-platform/", "youtube\\.com", "ytimg"]
+  "guard": {
+    "allow": []
   },
-  "_tokenNotes": "CSS selectors come from the original markup (allowed on the analysis side). The login modal is a Regular Labs modal wrapping the hidden #loginbox block. Never click login-submit or the social buttons.",
+  "browser": {
+    "channel": "chromium",
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
+    "locale": "en-US",
+    "timezone": "UTC"
+  },
+  "timeouts": {
+    "action": 8000,
+    "navigation": 100000,
+    "settle": 5000,
+    "idle": 15000
+  },
+  "network": {
+    "include": [
+      "option=com_ajax",
+      "option=com_jlexcomment",
+      "option=com_users"
+    ],
+    "block": [
+      "mediavine",
+      "googletagmanager",
+      "google-analytics",
+      "doubleclick",
+      "googlesyndication",
+      "amazon-adsystem",
+      "addtoany",
+      "facebook\\.net",
+      "clarity\\.ms",
+      "cloudflareinsights",
+      "nel\\.cloudflare",
+      "quantserve",
+      "scorecardresearch",
+      "adnxs",
+      "pubmatic",
+      "rubiconproject",
+      "criteo",
+      "taboola",
+      "outbrain",
+      "giphy",
+      "/cdn-cgi/challenge-platform/",
+      "youtube\\.com",
+      "ytimg"
+    ]
+  },
+  "_tokenNotes": "CSS selectors come from the original markup (allowed on the analysis side). The login modal is a Regular Labs modal wrapping the hidden #loginbox block. Never click login-submit or the social buttons. header-login/mobile-login use an ends-with match because the modal library rewrites the link to the absolute page URL + #loginbox after its first use.",
   "tokens": {
     "heading": "h1",
     "body": "body",
@@ -21,10 +64,10 @@
     "login-benefits": "#loginbox .mybase-benefits",
     "modal-close": "button[data-modals-element=\"close\"]",
     "modal-root": "[data-modals-element=\"modal\"]",
-    "header-login": ".mybase-buttons.no_mobile a[href=\"#loginbox\"]",
+    "header-login": ".mybase-buttons.no_mobile a[href$=\"#loginbox\"]",
     "header-join": ".mybase-buttons.no_mobile a[href=\"/membership/free/\"]",
     "mobile-join-toggle": ".mybase-buttons.only_mobile button.dropdown-toggle",
-    "mobile-login": ".mybase-buttons.only_mobile a[href=\"#loginbox\"]",
+    "mobile-login": ".mybase-buttons.only_mobile a[href$=\"#loginbox\"]",
     "login-discord": "#loginbox button[title=\"Login with Discord\"]",
     "login-google": "#loginbox button[title=\"Sign in with Google\"]",
     "login-username": "#loginbox input[name=\"username\"]",
@@ -62,22 +105,64 @@
     "page-form-input": "#ja-content form input:not([type=hidden])"
   },
   "modes": {
-    "vehicle": ["goto:/gta-6/vehicles/sunset-sanchez", "wait:1000"],
-    "weapon": ["goto:/gta-6/weapons/assault-rifle", "wait:1000"],
-    "animal": ["goto:/gta-6/animals/gray-fox", "wait:1000"],
-    "radio": ["goto:/gta-6/radio-stations/flash-fm", "wait:1000"],
-    "property": ["goto:/gta-6/properties/7th-avenue-garage", "wait:1000"],
-    "character": ["goto:/gta-6/characters/jason", "wait:1000"],
-    "mission": ["goto:/gta-6/missions/breakfast-run", "wait:1000"],
-    "map-garage": ["goto:/gta-6/map/#garage-003", "wait:5000"],
-    "membership": ["goto:/membership/", "wait:500"]
+    "vehicle": [
+      "goto:/gta-6/vehicles/sunset-sanchez",
+      "wait:1000"
+    ],
+    "weapon": [
+      "goto:/gta-6/weapons/assault-rifle",
+      "wait:1000"
+    ],
+    "animal": [
+      "goto:/gta-6/animals/gray-fox",
+      "wait:1000"
+    ],
+    "radio": [
+      "goto:/gta-6/radio-stations/flash-fm",
+      "wait:1000"
+    ],
+    "property": [
+      "goto:/gta-6/properties/7th-avenue-garage",
+      "wait:1000"
+    ],
+    "character": [
+      "goto:/gta-6/characters/jason",
+      "wait:1000"
+    ],
+    "mission": [
+      "goto:/gta-6/missions/breakfast-run",
+      "wait:1000"
+    ],
+    "map-garage": [
+      "goto:/gta-6/map/#garage-003",
+      "wait:5000"
+    ],
+    "membership": [
+      "goto:/membership/",
+      "wait:500"
+    ]
   },
-  "resets": { "clear": ["try:clear:local", "try:clear:session"] },
+  "resets": {
+    "clear": [
+      "try:clear:local",
+      "try:clear:session"
+    ]
+  },
   "macros": {
-    "open-fav-prompt": ["click:fav-button", "waitfor:login-modal", "wait:500"]
+    "open-fav-prompt": [
+      "click:fav-button",
+      "waitfor:login-modal",
+      "wait:500"
+    ]
   },
   "readouts": [
-    { "key": "url", "read": "url" },
-    { "key": "heading", "read": "text:heading" }
+    {
+      "key": "url",
+      "read": "url"
+    },
+    {
+      "key": "heading",
+      "read": "text:heading"
+    }
   ]
 }

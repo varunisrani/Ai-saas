@@ -1,0 +1,95 @@
+{
+  "app": "gtabase.com GTA 6 section - F5 checklists & mission lists (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:31:08.952Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F5-34",
+      "mode": null,
+      "steps": [
+        "goto:/missions/gta-6/prologue",
+        "wait:500"
+      ],
+      "reads": [
+        "title",
+        "count:cl-box"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/missions/gta-6/prologue",
+        "heading": "Prologue",
+        "title": "Prologue | GTA 6 Mission Guide & Walkthrough",
+        "count:cl-box": "1"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-35",
+      "mode": "missions",
+      "steps": [
+        "click:mission-gone-fishing",
+        "click:a.items-row[href=\"/gta-6/missions/gone-fishing\"] .mission-description",
+        "wait:1000"
+      ],
+      "reads": [
+        "count:cl-box",
+        "local:guest_checklists"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/missions/",
+        "heading": "<missing>",
+        "count:cl-box": "0",
+        "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}"
+      },
+      "error": "click:a.items-row[href=\"/gta-6/missions/gone-fishing\"] .mission-description: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F5-36",
+      "mode": null,
+      "steps": [
+        "back",
+        "wait:2000"
+      ],
+      "reads": [
+        "checked:mission-gone-fishing",
+        "count:cl-box-checked",
+        "local:guest_checklists"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/missions/",
+        "heading": "GTA 6 Story Missions Guide & Walkthrough",
+        "checked:mission-gone-fishing": "true",
+        "count:cl-box-checked": "1",
+        "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-37",
+      "mode": "missions",
+      "steps": [
+        "click:mission-gone-fishing",
+        "goto:/gta-6/map/",
+        "wait:5000"
+      ],
+      "reads": [
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "app": "gtabase.com GTA 6 section - F10 favorites & personal progress, guest view (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:37:14.171Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F10-12",
+      "mode": "vehicle",
+      "steps": [
+        "macro:open-fav-prompt",
+        "press:Escape",
+        "wait:800",
+        "click:header-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "count:login-benefits",
+        "attr:login-modal@class",
+        "attr:header-login@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "true",
+        "text:login-title": "Sign in to MyBase",
+        "count:login-benefits": "1",
+        "attr:login-modal@class": "",
+        "attr:header-login@href": "https://www.gtabase.com/gta-6/vehicles/sunset-sanchez#loginbox"
+      },
+      "error": null
+    }
+  ]
+}

@@ -505,12 +505,14 @@
   "id": "F5-35",
   "mode": "missions",
   "steps": [
-   "click:mission-gone-fishing",
-   "click:a.items-row[href=\"/gta-6/missions/gone-fishing\"] .mission-description",
-   "wait:1000"
+   "click:mission-box-first",
+   "click:a.items-row[href=\"/missions/gta-6/prologue\"] .mission-description",
+   "wait:2000"
   ],
   "reads": [
    "count:cl-box",
+   "attr:h2.checklist-item input[data-checklist-id]@aria-label",
+   "checked:h2.checklist-item input[data-checklist-id]",
    "local:guest_checklists"
   ]
  },
@@ -522,7 +524,7 @@
    "wait:2000"
   ],
   "reads": [
-   "checked:mission-gone-fishing",
+   "checked:mission-box-first",
    "count:cl-box-checked",
    "local:guest_checklists"
   ]
@@ -536,6 +538,23 @@
    "wait:5000"
   ],
   "reads": [
+   "local:guest_checklists",
+   "calls",
+   "blocked"
+  ]
+ },
+ {
+  "id": "F5-38",
+  "steps": [
+   "goto:/missions/gta-6/prologue",
+   "wait:1500",
+   "click:h2.checklist-item input[data-checklist-id=\"gta6-missions\"]",
+   "goto:/gta-6/missions/",
+   "wait:1500"
+  ],
+  "reads": [
+   "checked:mission-box-first",
+   "count:cl-box-checked",
    "local:guest_checklists",
    "calls",
    "blocked"

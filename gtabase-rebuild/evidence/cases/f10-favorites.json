@@ -177,8 +177,6 @@
    "macro:open-fav-prompt",
    "press:Escape",
    "wait:800",
-   "press:Home",
-   "wait:1500",
    "click:header-login",
    "waitfor:login-modal",
    "wait:500"
@@ -187,7 +185,8 @@
    "visible:login-modal",
    "text:login-title",
    "count:login-benefits",
-   "attr:login-modal@class"
+   "attr:login-modal@class",
+   "attr:header-login@href"
   ]
  },
  {

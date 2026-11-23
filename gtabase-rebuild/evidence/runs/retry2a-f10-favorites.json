@@ -1,0 +1,62 @@
+{
+  "app": "gtabase.com GTA 6 section - F10 favorites & personal progress, guest view (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:36:11.098Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F10-12",
+      "mode": "vehicle",
+      "steps": [
+        "macro:open-fav-prompt",
+        "press:Escape",
+        "wait:800",
+        "focus:header-login",
+        "press:Enter",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "count:login-benefits",
+        "attr:login-modal@class"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "false",
+        "text:login-title": "Save your GTA 6 favorites",
+        "count:login-benefits": "1",
+        "attr:login-modal@class": "login-context-favorites"
+      },
+      "error": "focus:header-login: locator.focus: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F10-25",
+      "mode": "map-garage",
+      "steps": [
+        "waitfor:map-fav-star",
+        "wait:3000",
+        "click:map-fav-star",
+        "wait:800",
+        "click:map-panel-close",
+        "wait:500"
+      ],
+      "reads": [
+        "count:map-panel",
+        "count:map-popup"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#garage-003",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "count:map-panel": "0",
+        "count:map-popup": "0"
+      },
+      "error": null
+    }
+  ]
+}

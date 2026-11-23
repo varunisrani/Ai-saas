@@ -1,380 +1,14 @@
 {
   "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F7 news, guides, videos + article page",
   "baseUrl": "https://www.gtabase.com",
-  "captured": "2026-11-23T11:18:26.190Z",
+  "captured": "2026-11-23T11:22:01.811Z",
   "locale": "en-US",
   "readOnly": true,
+  "passes": [
+    "2026-11-23T11:22:01.811Z",
+    "2026-11-23T11:36:55.893Z"
+  ],
   "cases": [
-    {
-      "id": "F7-01",
-      "mode": "news",
-      "steps": [],
-      "reads": [
-        "title",
-        "calls",
-        "count:list-item",
-        "count:item-title-link",
-        "count:item-thumb",
-        "count:item-thumb-link",
-        "count:item-author",
-        "count:item-date",
-        "count:item-category",
-        "count:item-tags",
-        "visible:item-details-label",
-        "text:item-details-label",
-        "list:item-date",
-        "attr:item-date@datetime",
-        "text:item-category",
-        "attr:item-category@href",
-        "attr:item-thumb@width",
-        "attr:item-thumb@height",
-        "text:page-counter",
-        "count:page-links",
-        "count:share-block",
-        "count:list-banner",
-        "visible:game-filter-toggle"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/news/",
-        "calls": "GET /gta-6/news/ 500",
-        "count:list-item": "0",
-        "count:item-title-link": "0",
-        "count:item-thumb": "0",
-        "count:item-thumb-link": "0",
-        "count:item-author": "0",
-        "count:item-date": "0",
-        "count:item-category": "0",
-        "count:item-tags": "0",
-        "visible:item-details-label": "false",
-        "text:item-details-label": "<missing>",
-        "list:item-date": "",
-        "attr:item-date@datetime": "<missing>",
-        "text:item-category": "<missing>",
-        "attr:item-category@href": "<missing>",
-        "attr:item-thumb@width": "<missing>",
-        "attr:item-thumb@height": "<missing>",
-        "text:page-counter": "<missing>",
-        "count:page-links": "0",
-        "count:share-block": "0",
-        "count:list-banner": "0",
-        "visible:game-filter-toggle": "false"
-      },
-      "error": "mode:news: page.goto: Timeout 60000ms exceeded."
-    },
-    {
-      "id": "F7-02",
-      "mode": "news",
-      "steps": [
-        "macro:show-pagination"
-      ],
-      "reads": [
-        "count:page-links",
-        "list:page-links",
-        "text:page-current",
-        "attr:page-current@href",
-        "count:page-disabled",
-        "count:page-first",
-        "count:page-prev",
-        "attr:page-2-link@href",
-        "attr:page-next@href",
-        "attr:page-last@href",
-        "attr:pagination@aria-label"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "/gta-6/news/",
-        "heading": "<missing>",
-        "count:page-links": "0",
-        "list:page-links": "",
-        "text:page-current": "<missing>",
-        "attr:page-current@href": "<missing>",
-        "count:page-disabled": "0",
-        "count:page-first": "0",
-        "count:page-prev": "0",
-        "attr:page-2-link@href": "<missing>",
-        "attr:page-next@href": "<missing>",
-        "attr:page-last@href": "<missing>",
-        "attr:pagination@aria-label": "<missing>"
-      },
-      "error": "mode:news: page.goto: Timeout 60000ms exceeded."
-    },
-    {
-      "id": "F7-03",
-      "mode": "news",
-      "steps": [
-        "macro:show-pagination",
-        "click:page-next",
-        "wait:idle"
-      ],
-      "reads": [
-        "title",
-        "calls",
-        "text:page-number",
-        "text:page-counter",
-        "count:list-item",
-        "list:item-date",
-        "count:list-intro",
-        "visible:game-filter-toggle"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "/gta-6/news/",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/news/",
-        "calls": "GET /gta-6/news/ 500",
-        "text:page-number": "<missing>",
-        "text:page-counter": "<missing>",
-        "count:list-item": "0",
-        "list:item-date": "",
-        "count:list-intro": "0",
-        "visible:game-filter-toggle": "false"
-      },
-      "error": "mode:news: page.goto: Timeout 60000ms exceeded."
-    },
-    {
-      "id": "F7-04",
-      "mode": null,
-      "steps": [
-        "macro:show-pagination"
-      ],
-      "reads": [
-        "list:page-links",
-        "text:page-current",
-        "attr:page-first@href",
-        "attr:page-prev@href",
-        "attr:page-next@href",
-        "attr:page-last@href",
-        "count:page-disabled"
-      ],
-      "reset": "none",
-      "values": {
-        "url": "/gta-6/news/",
-        "heading": "<missing>",
-        "list:page-links": "",
-        "text:page-current": "<missing>",
-        "attr:page-first@href": "<missing>",
-        "attr:page-prev@href": "<missing>",
-        "attr:page-next@href": "<missing>",
-        "attr:page-last@href": "<missing>",
-        "count:page-disabled": "0"
-      },
-      "error": "macro:show-pagination: scroll:page-counter: locator.scrollIntoViewIfNeeded: Timeout 6000ms exceeded."
-    },
-    {
-      "id": "F7-05",
-      "mode": null,
-      "steps": [
-        "back",
-        "wait:idle"
-      ],
-      "reads": [
-        "title",
-        "text:page-counter"
-      ],
-      "reset": "none",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "",
-        "text:page-counter": "<missing>"
-      },
-      "error": null
-    },
-    {
-      "id": "F7-06",
-      "mode": "news",
-      "steps": [
-        "macro:show-pagination",
-        "click:page-last",
-        "wait:idle"
-      ],
-      "reads": [
-        "title",
-        "calls",
-        "text:page-counter",
-        "count:list-item",
-        "text:page-number",
-        "list:item-date"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "GET /gta-6/news/ FAILED",
-        "text:page-counter": "<missing>",
-        "count:list-item": "<missing>",
-        "text:page-number": "<missing>",
-        "list:item-date": "<missing>"
-      },
-      "error": "mode:news: page.goto: net::ERR_ABORTED at https://www.gtabase.com/gta-6/news/"
-    },
-    {
-      "id": "F7-07",
-      "mode": null,
-      "steps": [
-        "macro:show-pagination"
-      ],
-      "reads": [
-        "list:page-links",
-        "text:page-current",
-        "count:page-next",
-        "count:page-last",
-        "attr:page-prev@href",
-        "attr:page-first@href",
-        "count:page-disabled"
-      ],
-      "reset": "none",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "list:page-links": "<missing>",
-        "text:page-current": "<missing>",
-        "count:page-next": "<missing>",
-        "count:page-last": "<missing>",
-        "attr:page-prev@href": "<missing>",
-        "attr:page-first@href": "<missing>",
-        "count:page-disabled": "<missing>"
-      },
-      "error": "macro:show-pagination: scroll:page-counter: locator.scrollIntoViewIfNeeded: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-08",
-      "mode": null,
-      "steps": [
-        "goto:/gta-6/news/page-6"
-      ],
-      "reads": [
-        "title",
-        "calls",
-        "count:list-item"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "count:list-item": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-09",
-      "mode": null,
-      "steps": [
-        "goto:/gta-6/news/page-99"
-      ],
-      "reads": [
-        "title",
-        "calls",
-        "count:list-item"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "count:list-item": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-10",
-      "mode": null,
-      "steps": [
-        "goto:/gta-6/news/page-1"
-      ],
-      "reads": [
-        "title",
-        "calls"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": ""
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-11",
-      "mode": null,
-      "steps": [
-        "goto:/gta-6/news/?start=30"
-      ],
-      "reads": [
-        "title",
-        "calls",
-        "text:page-counter",
-        "text:page-number",
-        "count:list-item"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "text:page-counter": "<missing>",
-        "text:page-number": "<missing>",
-        "count:list-item": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-12",
-      "mode": null,
-      "steps": [
-        "goto:/gta-6/news/?start=999"
-      ],
-      "reads": [
-        "title",
-        "calls",
-        "text:page-counter",
-        "count:list-item",
-        "text:page-number"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "text:page-counter": "<missing>",
-        "count:list-item": "<missing>",
-        "text:page-number": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-13",
-      "mode": null,
-      "steps": [
-        "goto:/gta-6/news/page-2",
-        "reload",
-        "wait:idle"
-      ],
-      "reads": [
-        "title",
-        "text:page-counter",
-        "count:list-item"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "text:page-counter": "<missing>",
-        "count:list-item": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
     {
       "id": "F7-14",
       "mode": "guides",
@@ -398,25 +32,26 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "count:list-item": "<missing>",
-        "count:item-thumb": "<missing>",
-        "count:item-author": "<missing>",
-        "count:item-date": "<missing>",
-        "count:item-category": "<missing>",
-        "text:item-category": "<missing>",
-        "text:parent-category": "<missing>",
-        "attr:parent-category@href": "<missing>",
-        "count:share-buttons": "<missing>",
-        "list:share-buttons": "<missing>",
-        "text:page-counter": "<missing>",
-        "count:game-filter-toggle": "<missing>",
-        "count:list-banner": "<missing>"
+        "url": "/gta-6/guides/",
+        "heading": "GTA 6 Guides: Tips, Walkthroughs & How-To Guides",
+        "title": "GTA 6 Guides: Tips, Walkthroughs & How-To Guides",
+        "calls": "GET /gta-6/guides/ 200",
+        "count:list-item": "30",
+        "count:item-thumb": "30",
+        "count:item-author": "0",
+        "count:item-date": "0",
+        "count:item-category": "30",
+        "text:item-category": "Grand Theft Auto VI",
+        "text:parent-category": "Rockstar Games News & Guides",
+        "attr:parent-category@href": "/news/",
+        "count:share-buttons": "3",
+        "list:share-buttons": " ||  || ",
+        "text:page-counter": "Page 1 of 3",
+        "count:game-filter-toggle": "0",
+        "count:list-banner": "0"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": null,
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-15",
@@ -433,15 +68,16 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
+        "url": "/gta-6/guides/",
         "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "count:list-item": "<missing>",
+        "title": "Loading https://www.gtabase.com/gta-6/guides/page-3",
+        "calls": "GET /gta-6/guides/page-3 500",
+        "count:list-item": "0",
         "text:page-counter": "<missing>",
         "text:page-number": "<missing>"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": "goto:/gta-6/guides/page-3: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-16",
@@ -455,12 +91,13 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
+        "url": "/gta-6/guides/page-3",
         "heading": "<missing>",
-        "title": "<missing>",
-        "calls": ""
+        "title": "Loading https://www.gtabase.com/gta-6/guides/page-4",
+        "calls": "GET /gta-6/guides/page-4 500"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": "goto:/gta-6/guides/page-4: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-17",
@@ -485,23 +122,24 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "count:list-item": "<missing>",
-        "count:item-thumb": "<missing>",
-        "count:item-author": "<missing>",
-        "count:item-date": "<missing>",
-        "count:item-category": "<missing>",
-        "list:item-date": "<missing>",
-        "text:parent-category": "<missing>",
-        "count:share-buttons": "<missing>",
-        "count:page-counter": "<missing>",
-        "count:pagination": "<missing>",
-        "count:list-banner": "<missing>"
+        "url": "/gta-6/videos/",
+        "heading": "All GTA 6 Videos & Official Trailers",
+        "title": "GTA 6 Videos: All GTA 6 Official Trailers & Gameplay Videos",
+        "calls": "GET /gta-6/videos/ 200",
+        "count:list-item": "7",
+        "count:item-thumb": "7",
+        "count:item-author": "0",
+        "count:item-date": "7",
+        "count:item-category": "0",
+        "list:item-date": "on October 15, 2026 || on August 27, 2026 || on June 18, 2026 || on May 6, 2025 || on December 4, 2023 || on March 22, 2020 || on March 24, 2019",
+        "text:parent-category": "Rockstar Games News & Guides",
+        "count:share-buttons": "3",
+        "count:page-counter": "0",
+        "count:pagination": "0",
+        "count:list-banner": "1"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": null,
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-18",
@@ -515,12 +153,13 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
+        "url": "/gta-6/videos/",
         "heading": "<missing>",
-        "title": "<missing>",
-        "calls": ""
+        "title": "Loading https://www.gtabase.com/gta-6/videos/page-2",
+        "calls": "GET /gta-6/videos/page-2 500"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": "goto:/gta-6/videos/page-2: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-19",
@@ -541,18 +180,19 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
+        "url": "/gta-6/videos/",
         "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "count:video-embed": "<missing>",
+        "title": "Loading https://www.gtabase.com/articles/gta-6/grand-theft-auto-vi-launch-trailer",
+        "calls": "GET /gta-6/videos/ 200 || GET /articles/gta-6/grand-theft-auto-vi-launch-trailer 500",
+        "count:video-embed": "0",
         "attr:video-embed@title": "<missing>",
-        "count:article-author": "<missing>",
-        "count:author-block": "<missing>",
+        "count:article-author": "0",
+        "count:author-block": "0",
         "text:article-published": "<missing>",
         "text:article-category": "<missing>"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": "click:item-title-link: locator.click: Timeout 6000ms exceeded.",
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-20",
@@ -572,20 +212,21 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
+        "url": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
         "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
+        "title": "Loading https://www.gtabase.com/news/",
+        "calls": "GET /news/ 500",
         "text:page-counter": "<missing>",
-        "count:list-item": "<missing>",
-        "count:item-tags": "<missing>",
-        "count:item-category": "<missing>",
-        "count:item-author": "<missing>",
-        "count:item-date": "<missing>",
-        "count:game-filter-toggle": "<missing>",
-        "visible:game-filter-menu": "<missing>"
+        "count:list-item": "0",
+        "count:item-tags": "0",
+        "count:item-category": "0",
+        "count:item-author": "0",
+        "count:item-date": "0",
+        "count:game-filter-toggle": "0",
+        "visible:game-filter-menu": "false"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": "mode:allnews: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-21",
@@ -603,15 +244,16 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
+        "url": "/news/",
         "heading": "<missing>",
-        "visible:game-filter-menu": "<missing>",
-        "count:game-filter-links": "<missing>",
-        "list:game-filter-links": "<missing>",
+        "visible:game-filter-menu": "false",
+        "count:game-filter-links": "0",
+        "list:game-filter-links": "",
         "attr:game-filter-gta6@href": "<missing>",
         "attr:game-filter-toggle@aria-expanded": "<missing>"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": "mode:allnews: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-22",
@@ -629,91 +271,14 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
+        "url": "/news/",
         "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
+        "title": "",
+        "calls": "GET /news/ FAILED",
         "text:page-counter": "<missing>"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-23",
-      "mode": "news",
-      "steps": [
-        "focus:game-filter-toggle",
-        "press:Enter",
-        "wait:400"
-      ],
-      "reads": [
-        "visible:game-filter-menu",
-        "attr:game-filter-toggle@aria-expanded"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "visible:game-filter-menu": "<missing>",
-        "attr:game-filter-toggle@aria-expanded": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-24",
-      "mode": null,
-      "steps": [
-        "press:Escape",
-        "wait:400"
-      ],
-      "reads": [
-        "visible:game-filter-menu",
-        "attr:game-filter-toggle@aria-expanded"
-      ],
-      "reset": "none",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "visible:game-filter-menu": "<missing>",
-        "attr:game-filter-toggle@aria-expanded": "<missing>"
-      },
-      "error": "press:Escape: keyboard.press: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-25",
-      "mode": "news",
-      "steps": [],
-      "reads": [
-        "text:item-title-link",
-        "attr:item-title-link@href"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "text:item-title-link": "<missing>",
-        "attr:item-title-link@href": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-26",
-      "mode": null,
-      "steps": [
-        "click:item-title-link",
-        "wait:idle"
-      ],
-      "reads": [
-        "title",
-        "calls"
-      ],
-      "reset": "none",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": ""
-      },
-      "error": "click:item-title-link: locator.click: Target page, context or browser has been closed"
+      "error": "mode:allnews: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-27",
@@ -747,34 +312,35 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "count:article-meta": "<missing>",
-        "count:article-author": "<missing>",
-        "text:article-published": "<missing>",
-        "attr:article-published@datetime": "<missing>",
-        "count:article-modified": "<missing>",
-        "text:article-category": "<missing>",
-        "attr:article-category@href": "<missing>",
-        "count:share-buttons": "<missing>",
-        "list:share-buttons": "<missing>",
-        "count:article-hero": "<missing>",
-        "text:toc-heading": "<missing>",
-        "count:toc-links": "<missing>",
-        "list:toc-links": "<missing>",
-        "count:section-anchors": "<missing>",
-        "list:section-headings": "<missing>",
-        "count:comments": "<missing>",
-        "count:comment-sort-options": "<missing>",
-        "list:comment-sort-options": "<missing>",
-        "text:comment-sort-current": "<missing>",
-        "attr:comment-limit@data-max": "<missing>",
-        "attr:comment-editor@aria-label": "<missing>",
-        "count:sidebar": "<missing>"
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "title": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "calls": "GET /gta-6/articles/gta-6-driving-tips 200",
+        "count:article-meta": "1",
+        "count:article-author": "0",
+        "text:article-published": "on November 22, 2026",
+        "attr:article-published@datetime": "2026-11-22T09:44:12+00:00",
+        "count:article-modified": "0",
+        "text:article-category": "Grand Theft Auto VI",
+        "attr:article-category@href": "/gta-6/news/",
+        "count:share-buttons": "3",
+        "list:share-buttons": " ||  || ",
+        "count:article-hero": "1",
+        "text:toc-heading": "GTA 6 Driving Tips",
+        "count:toc-links": "11",
+        "list:toc-links": "Basic Driving Controls || Drift Around Sharp Corners || Duck to Hide from the Cops || Shooting While Driving || Getting Out: Stop, Bail or Leave the Engine Running || Vehicle Melee || Taunting || Radio and Vehicle Functions || Pushing and Flipping Vehicles || Fuel and Repairs || GTA 6 Driving FAQ",
+        "count:section-anchors": "11",
+        "list:section-headings": "Basic Driving Controls || Drift Around Sharp Corners || Duck to Hide from the Cops || Shooting While Driving || Getting Out: Stop, Bail or Leave the Engine Running || Vehicle Melee || Taunting || Radio and Vehicle Functions || Pushing and Flipping Vehicles || Fuel and Repairs || GTA 6 Driving FAQ",
+        "count:comments": "1",
+        "count:comment-sort-options": "4",
+        "list:comment-sort-options": "Best || Popular || Newest || Oldest",
+        "text:comment-sort-current": "Newest",
+        "attr:comment-limit@data-max": "5000",
+        "attr:comment-editor@aria-label": "editor",
+        "count:sidebar": "1"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": null,
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-28",
@@ -790,13 +356,14 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "attr:toc-link-3@href": "<missing>",
-        "attr:toc-link-3@data-heading": "<missing>",
-        "visible:#duck-to-hide-from-the-cops": "<missing>"
+        "url": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "attr:toc-link-3@href": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops",
+        "attr:toc-link-3@data-heading": "duck-to-hide-from-the-cops",
+        "visible:#duck-to-hide-from-the-cops": "false"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": null,
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-29",
@@ -815,17 +382,18 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "count:pager": "<missing>",
-        "count:pager-prev": "<missing>",
-        "count:pager-next": "<missing>",
-        "attr:pager-prev@rel": "<missing>",
-        "attr:pager-next@rel": "<missing>",
-        "attr:pager-prev@href": "<missing>",
-        "attr:pager-next@href": "<missing>"
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "count:pager": "1",
+        "count:pager-prev": "1",
+        "count:pager-next": "1",
+        "attr:pager-prev@rel": "prev",
+        "attr:pager-next@rel": "next",
+        "attr:pager-prev@href": "/gta-6/articles/gta-6-phone-guide-every-app-explained",
+        "attr:pager-next@href": "/gta-6/articles/gta-6-review-bombed-on-metacritic"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": null,
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-30",
@@ -840,13 +408,14 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "list:breadcrumb-items": "<missing>",
-        "count:breadcrumb-items": "<missing>",
-        "count:related-block": "<missing>"
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "list:breadcrumb-items": "Home || GTA 6 || News || GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "count:breadcrumb-items": "4",
+        "count:related-block": "1"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": null,
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-31",
@@ -869,21 +438,22 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "count:article-published": "<missing>",
-        "text:article-modified": "<missing>",
-        "attr:article-modified@datetime": "<missing>",
-        "text:article-category": "<missing>",
-        "count:toc-links": "<missing>",
-        "count:section-anchors": "<missing>",
-        "count:related-block": "<missing>",
-        "text:related-heading": "<missing>",
-        "count:related-cards": "<missing>",
-        "list:breadcrumb-items": "<missing>"
+        "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+        "heading": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+        "title": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+        "count:article-published": "0",
+        "text:article-modified": "Last Updated: November 22, 2026",
+        "attr:article-modified@datetime": "2026-11-22T09:44:22+00:00",
+        "text:article-category": "Grand Theft Auto VI",
+        "count:toc-links": "10",
+        "count:section-anchors": "10",
+        "count:related-block": "1",
+        "text:related-heading": "CONTROLS ACROSS ALL GAMES",
+        "count:related-cards": "2",
+        "list:breadcrumb-items": "Home || GTA 6 || News || GTA 6 Controls Guide: Full PS5 & Xbox Button Layout"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": null,
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-32",
@@ -897,12 +467,13 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
+        "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
         "heading": "<missing>",
-        "title": "<missing>",
-        "calls": ""
+        "title": "Loading https://www.gtabase.com/gta-6/articles/this-article-does-not-exist-xyz",
+        "calls": "GET /gta-6/articles/this-article-does-not-exist-xyz 500"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": "goto:/gta-6/articles/this-article-does-not-exist-xyz: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-33",
@@ -916,35 +487,13 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
+        "url": "/gta-6/articles/this-article-does-not-exist-xyz",
         "heading": "<missing>",
-        "title": "<missing>",
-        "calls": ""
+        "title": "Loading https://www.gtabase.com/articles/gta-6/this-article-does-not-exist-xyz",
+        "calls": "GET /articles/gta-6/this-article-does-not-exist-xyz 500"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-34",
-      "mode": "news-phone",
-      "steps": [],
-      "reads": [
-        "count:list-item",
-        "visible:item-thumb",
-        "visible:game-filter-toggle",
-        "visible:sidebar",
-        "text:page-counter"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "count:list-item": "<missing>",
-        "visible:item-thumb": "<missing>",
-        "visible:game-filter-toggle": "<missing>",
-        "visible:sidebar": "<missing>",
-        "text:page-counter": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": "goto:/articles/gta-6/this-article-does-not-exist-xyz: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-35",
@@ -960,59 +509,17 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "visible:toc": "<missing>",
-        "count:toc-links": "<missing>",
-        "visible:share-block": "<missing>",
-        "visible:article-hero": "<missing>",
-        "visible:sidebar": "<missing>",
-        "text:article-published": "<missing>"
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "visible:toc": "true",
+        "count:toc-links": "11",
+        "visible:share-block": "true",
+        "visible:article-hero": "true",
+        "visible:sidebar": "true",
+        "text:article-published": "on November 22, 2026"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-36",
-      "mode": "article",
-      "steps": [
-        "click:article-category",
-        "wait:idle"
-      ],
-      "reads": [
-        "title",
-        "text:page-counter"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "text:page-counter": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
-    },
-    {
-      "id": "F7-37",
-      "mode": null,
-      "steps": [
-        "goto:/gta-6/articles"
-      ],
-      "reads": [
-        "title",
-        "calls",
-        "text:page-counter",
-        "count:list-item"
-      ],
-      "reset": "clear",
-      "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "calls": "",
-        "text:page-counter": "<missing>",
-        "count:list-item": "<missing>"
-      },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": null,
+      "captured": "2026-11-23T11:22:01.811Z"
     },
     {
       "id": "F7-38",
@@ -1027,12 +534,279 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "about:blank",
-        "heading": "<missing>",
-        "title": "<missing>",
-        "visible:#vehicle-melee": "<missing>"
+        "url": "/gta-6/articles/gta-6-driving-tips#vehicle-melee",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "title": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "visible:#vehicle-melee": "false"
       },
-      "error": "viewport:1366x900: page.setViewportSize: Target page, context or browser has been closed"
+      "error": null,
+      "captured": "2026-11-23T11:22:01.811Z"
+    },
+    {
+      "id": "F7-39",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/guides/"
+      ],
+      "reads": [
+        "count:list-item",
+        "visible:item-thumb",
+        "visible:item-title-link",
+        "visible:sidebar",
+        "visible:share-block",
+        "text:page-counter"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/guides/",
+        "heading": "GTA 6 Guides: Tips, Walkthroughs & How-To Guides",
+        "count:list-item": "30",
+        "visible:item-thumb": "true",
+        "visible:item-title-link": "true",
+        "visible:sidebar": "true",
+        "visible:share-block": "true",
+        "text:page-counter": "Page 1 of 3"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
+    },
+    {
+      "id": "F7-40",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/videos/"
+      ],
+      "reads": [
+        "count:list-item",
+        "visible:item-thumb",
+        "visible:item-date",
+        "count:page-counter",
+        "count:pagination"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/videos/",
+        "heading": "All GTA 6 Videos & Official Trailers",
+        "count:list-item": "7",
+        "visible:item-thumb": "true",
+        "visible:item-date": "true",
+        "count:page-counter": "0",
+        "count:pagination": "0"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
+    },
+    {
+      "id": "F7-41",
+      "mode": "videos",
+      "steps": [],
+      "reads": [
+        "attr:item-thumb-link@href",
+        "attr:item-title-link@href",
+        "attr:item-thumb@alt",
+        "text:item-title-link",
+        "attr:item-date@datetime",
+        "text:item-date",
+        "visible:item-details-label",
+        "text:item-details-label"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/videos/",
+        "heading": "All GTA 6 Videos & Official Trailers",
+        "attr:item-thumb-link@href": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
+        "attr:item-title-link@href": "/articles/gta-6/grand-theft-auto-vi-launch-trailer",
+        "attr:item-thumb@alt": "Grand Theft Auto VI Launch Trailer",
+        "text:item-title-link": "Grand Theft Auto VI Launch Trailer",
+        "attr:item-date@datetime": "2026-10-15T10:49:56+00:00",
+        "text:item-date": "on October 15, 2026",
+        "visible:item-details-label": "false",
+        "text:item-details-label": "Details"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
+    },
+    {
+      "id": "F7-42",
+      "mode": "guides",
+      "steps": [
+        "macro:show-pagination"
+      ],
+      "reads": [
+        "count:page-links",
+        "list:page-links",
+        "text:page-current",
+        "attr:page-next@href",
+        "attr:page-last@href",
+        "count:page-prev",
+        "count:page-first",
+        "count:page-disabled",
+        "attr:item-category@href",
+        "attr:parent-category@href"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/guides/",
+        "heading": "GTA 6 Guides: Tips, Walkthroughs & How-To Guides",
+        "count:page-links": "5",
+        "list:page-links": "1 || 2 || 3 ||  || ",
+        "text:page-current": "1",
+        "attr:page-next@href": "/gta-6/guides/page-2",
+        "attr:page-last@href": "/gta-6/guides/page-3",
+        "count:page-prev": "0",
+        "count:page-first": "0",
+        "count:page-disabled": "2",
+        "attr:item-category@href": "/gta-6/news/",
+        "attr:parent-category@href": "/news/"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
+    },
+    {
+      "id": "F7-43",
+      "mode": "article",
+      "steps": [
+        "focus:toc-link-3",
+        "press:Enter",
+        "wait:800"
+      ],
+      "reads": [
+        "url"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
+    },
+    {
+      "id": "F7-44",
+      "mode": null,
+      "steps": [
+        "reload",
+        "wait:idle"
+      ],
+      "reads": [
+        "url",
+        "title"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips#duck-to-hide-from-the-cops",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "title": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
+    },
+    {
+      "id": "F7-45",
+      "mode": "article",
+      "steps": [
+        "click:toc-link-3",
+        "wait:600",
+        "back",
+        "wait:800"
+      ],
+      "reads": [
+        "url"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
+    },
+    {
+      "id": "F7-46",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout"
+      ],
+      "reads": [
+        "visible:toc",
+        "count:toc-links",
+        "text:toc-heading",
+        "visible:article-modified",
+        "text:article-modified",
+        "visible:sidebar"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+        "heading": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+        "visible:toc": "true",
+        "count:toc-links": "10",
+        "text:toc-heading": "GTA 6 Controls Guide",
+        "visible:article-modified": "true",
+        "text:article-modified": "Last Updated: November 22, 2026",
+        "visible:sidebar": "true"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
+    },
+    {
+      "id": "F7-47",
+      "mode": "controls",
+      "steps": [],
+      "reads": [
+        "list:share-buttons",
+        "count:article-author",
+        "count:author-block",
+        "attr:article-hero@alt",
+        "list:toc-links",
+        "count:comments",
+        "list:comment-sort-options"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/articles/gta-6/gta-6-controls-guide-ps5-xbox-button-layout",
+        "heading": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout",
+        "list:share-buttons": " ||  || ",
+        "count:article-author": "0",
+        "count:author-block": "0",
+        "attr:article-hero@alt": "GTA 6 Controls Guide: Full PS5 & Xbox Button Layout - Grand Theft Auto VI",
+        "list:toc-links": "General Controls || On-Foot Controls || Aiming Controls || Melee Combat Controls || Car, Motorcycle & Boat Controls || Plane & Helicopter Controls || Bicycle Controls || Swimming & Diving Controls || Parachute Controls || Movement Tips: Chain Jumps, Sliding Over Hoods & Diving",
+        "count:comments": "1",
+        "list:comment-sort-options": "Best || Popular || Newest || Oldest"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
+    },
+    {
+      "id": "F7-48",
+      "mode": "article",
+      "steps": [],
+      "reads": [
+        "attr:article-hero@alt",
+        "attr:article-hero@width",
+        "visible:item-details-label",
+        "text:.item-page dt.article-info-term",
+        "visible:.item-page dt.article-info-term",
+        "attr:comment-editor@contenteditable",
+        "text:comments-count"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "attr:article-hero@alt": "GTA 6 Jason driving",
+        "attr:article-hero@width": "832",
+        "visible:item-details-label": "false",
+        "text:.item-page dt.article-info-term": "Details",
+        "visible:.item-page dt.article-info-term": "false",
+        "attr:comment-editor@contenteditable": "true",
+        "text:comments-count": "Comment"
+      },
+      "error": null,
+      "captured": "2026-11-23T11:36:55.893Z"
     }
   ]
 }

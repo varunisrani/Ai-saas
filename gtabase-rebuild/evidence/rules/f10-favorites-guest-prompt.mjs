@@ -29,6 +29,66 @@ const OBS = [
     "stored": "<missing>"
    },
    {
+    "id": "F10-03",
+    "page": "weapon",
+    "label": "Add To Favorites",
+    "dialogOpen": true,
+    "title": "Save your GTA 6 favorites",
+    "line": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+    "calls": "",
+    "blocked": ""
+   },
+   {
+    "id": "F10-04",
+    "page": "animal",
+    "label": "Add To Favorites",
+    "dialogOpen": true,
+    "title": "Save your GTA 6 favorites",
+    "line": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+    "calls": "",
+    "blocked": ""
+   },
+   {
+    "id": "F10-05",
+    "page": "radio station",
+    "label": "Add To Favorites",
+    "dialogOpen": true,
+    "title": "Save your GTA 6 favorites",
+    "line": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+    "calls": "",
+    "blocked": ""
+   },
+   {
+    "id": "F10-06",
+    "page": "property",
+    "label": "Add To Favorites",
+    "dialogOpen": true,
+    "title": "Save your GTA 6 favorites",
+    "line": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+    "calls": "",
+    "blocked": ""
+   },
+   {
+    "id": "F10-07",
+    "page": "character",
+    "label": "Add To Favorites",
+    "dialogOpen": true,
+    "title": "Save your GTA 6 favorites",
+    "line": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+    "calls": "",
+    "blocked": ""
+   },
+   {
+    "id": "F10-08",
+    "page": "mission",
+    "label": "Add To Favorites",
+    "dialogOpen": true,
+    "title": "Save your GTA 6 favorites",
+    "line": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+    "calls": "",
+    "blocked": ""
+   },
+   {
     "id": "F10-15",
     "page": "vehicle, Enter key",
     "dialogOpen": true,

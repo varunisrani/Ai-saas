@@ -69,6 +69,20 @@ const OBS = [
     }
    },
    {
+    "id": "F10-12",
+    "actions": [
+     "fav",
+     "escape",
+     "login-link"
+    ],
+    "expect": {
+     "visible": "true",
+     "title": "Sign in to MyBase",
+     "benefits": "1",
+     "cls": ""
+    }
+   },
+   {
     "id": "F10-13",
     "actions": [
      "login-link"
@@ -110,6 +124,16 @@ const OBS = [
      "visible": "true",
      "title": "Sign in to MyBase",
      "benefits": "0"
+    }
+   },
+   {
+    "id": "F10-24",
+    "actions": [
+     "login-link"
+    ],
+    "expect": {
+     "visible": "true",
+     "title": "Sign in to MyBase"
     }
    }
   ];

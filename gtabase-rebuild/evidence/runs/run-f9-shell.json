@@ -4,6 +4,11 @@
   "captured": "2026-11-23T10:44:40.963Z",
   "locale": "en-US",
   "readOnly": true,
+  "passes": [
+    "2026-11-23T10:44:40.963Z",
+    "2026-11-23T11:09:31.632Z",
+    "2026-11-23T11:37:55.611Z"
+  ],
   "cases": [
     {
       "id": "F9-01",
@@ -46,7 +51,8 @@
         "list:hub-news-dates": "Published on November 22, 2026 || Published on November 22, 2026 || Published on November 22, 2026 || Published on November 22, 2026 || Published on November 22, 2026 || Published on November 22, 2026 || Published on November 22, 2026 || Published on November 22, 2026 || Published on November 21, 2026 || Published on November 21, 2026",
         "attr:hub-all-news-link@href": "<missing>"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-02",
@@ -67,7 +73,8 @@
         "count:countdown-digits": "0",
         "errors": ""
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-03",
@@ -84,7 +91,8 @@
         "list:hub-card-titles": "LATEST NEWS || FEATURES RECAP || GUIDES || VEHICLES || WEAPONS || INTERACTIVE MAP || CHARACTERS || GANGS & FACTIONS || ANIMALS || PROPERTIES || VEHICLES COMPARISON || WEAPONS COMPARISON || 100% COMPLETION || STORY MISSIONS || STRANGERS & FREAKS || ACTIVITIES || RANDOM EVENTS || LOCATIONS GUIDE || CONTROLS GUIDE || ACHIEVEMENTS & TROPHIES || ULTIMATE EDITION || BEST VEHICLES BY CLASS || FASTEST CARS || FASTEST MOTORCYCLES || GTA 6 CHEATS FOR PS5 || GTA 6 CHEATS FOR XBOX || GTA 6 CHEATS FOR PC (COMING SOON) || SCREENSHOTS || VIDEOS & TRAILERS || RADIO STATIONS || ARTWORKS & WALLPAPERS || COVER ART || GTA 6 ONLINE",
         "list:info-values": "November 19, 2026 || GTA Series, HD Universe || State of Leonida (Florida); Vice City (Miami) || 2026 || Rockstar Games || Rockstar Studios"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-04",
@@ -113,7 +121,8 @@
         "attr:menu-gta6@href": "/gta-6/",
         "attr:menu-more@href": "#"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-05",
@@ -137,7 +146,8 @@
         "list:menu-gta6-sub-links": "Map || Vehicles || Weapons || Missions || Characters || 100% Checklist || Animals || Radio || Cheats PS5 || Cheats Xbox || All GTA 6 Content",
         "attr:menu-gta6-characters@aria-label": "GTA 6 - Characters"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-06",
@@ -157,7 +167,8 @@
         "heading": "GTA 6 (Grand Theft Auto VI)",
         "visible:menu-gta6-sub": "false"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-07",
@@ -175,7 +186,8 @@
         "heading": "GTA 6 (Grand Theft Auto VI)",
         "visible:menu-gta6-sub": "false"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-08",
@@ -194,7 +206,8 @@
         "heading": "GTA 6 (Grand Theft Auto VI)",
         "visible:menu-gta6-sub": "false"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-09",
@@ -216,7 +229,8 @@
         "calls": "GET /gta-6/ 200 || GET /gta-6/ 200"
       },
       "error": null,
-      "retried": "2026-11-23T11:09:31.632Z"
+      "captured": "2026-11-23T11:09:31.632Z",
+      "attempts": 2
     },
     {
       "id": "F9-10",
@@ -236,7 +250,8 @@
         "title": "GTA 6 Characters Guide: Main Protagonists & Full List"
       },
       "error": null,
-      "retried": "2026-11-23T11:09:31.632Z"
+      "captured": "2026-11-23T11:09:31.632Z",
+      "attempts": 2
     },
     {
       "id": "F9-11",
@@ -256,7 +271,8 @@
         "visible:menu-more-sub": "true",
         "count:#cssmenu > ul > li.item-568 > ul a": "8"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-12",
@@ -285,7 +301,8 @@
         "visible:site-logo": "true",
         "count:game-subnav-links": "18"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-13",
@@ -312,7 +329,8 @@
         "visible:mobile-search-input": "true",
         "visible:menu-gta6-sub": "false"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-14",
@@ -342,7 +360,8 @@
         "calls": "GET /gta-6/ 200"
       },
       "error": null,
-      "retried": "2026-11-23T11:09:31.632Z"
+      "captured": "2026-11-23T11:09:31.632Z",
+      "attempts": 2
     },
     {
       "id": "F9-15",
@@ -368,7 +387,8 @@
         "visible:menu-gta6-sub": "false"
       },
       "error": null,
-      "retried": "2026-11-23T11:09:31.632Z"
+      "captured": "2026-11-23T11:09:31.632Z",
+      "attempts": 2
     },
     {
       "id": "F9-16",
@@ -392,7 +412,8 @@
         "visible:main-menu": "false"
       },
       "error": null,
-      "retried": "2026-11-23T11:09:31.632Z"
+      "captured": "2026-11-23T11:09:31.632Z",
+      "attempts": 2
     },
     {
       "id": "F9-17",
@@ -414,7 +435,8 @@
         "title": "GTA 6 Characters Guide: Main Protagonists & Full List"
       },
       "error": null,
-      "retried": "2026-11-23T11:09:31.632Z"
+      "captured": "2026-11-23T11:09:31.632Z",
+      "attempts": 2
     },
     {
       "id": "F9-18",
@@ -436,7 +458,8 @@
         "attr:user-dropdown-toggle@aria-expanded": "true",
         "text:user-dropdown-toggle": "Join MyBASE"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-19",
@@ -465,7 +488,8 @@
         "count:form[action=\"/search\"]": "2",
         "attr:form[action=\"/search\"]@method": "get"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-20",
@@ -488,7 +512,8 @@
         "attr:search-toggle@aria-expanded": "true",
         "text:search-submit": "Search"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-21",
@@ -509,7 +534,8 @@
         "heading": "<missing>",
         "calls": "GET /gta-6/ 200 || GET /search?q=grotti+cheetah 302 || GET www.google.com/search?q=site:gtabase.com+grotti+cheetah 200 || GET www.google.com/search?q=site:gtabase.com+grotti+cheetah&sei=FxsEa6L7Fuv9ptQP6tjkKA BLOCKED"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-22",
@@ -528,7 +554,8 @@
         "heading": "<missing>",
         "calls": "GET /gta-6/ 200 || GET /search?q= 302 || GET www.google.com/search?q=site:gtabase.com 302"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-23",
@@ -548,7 +575,8 @@
         "heading": "<missing>",
         "calls": "GET /gta-6/ 200 || GET /search?q=%3Cb%3Ex%3C%2Fb%3E+caf%C3%A9+%26+co 302 || GET www.google.com/search?q=site:gtabase.com+%3Cb%3Ex%3C%2Fb%3E+caf%C3%A9+%26+co 200 || GET www.google.com/search?q=site:gtabase.com+%3Cb%3Ex%3C%2Fb%3E+caf%C3%A9+%26+co&sei=KxsEa6KDC-SpptQPvoy54AE BLOCKED"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-24",
@@ -568,7 +596,8 @@
         "heading": "<missing>",
         "calls": "GET /gta-6/ 200 || GET /search?q=++vice 302 || GET www.google.com/search?q=site:gtabase.com+++vice 302"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-25",
@@ -588,7 +617,8 @@
         "heading": "<missing>",
         "calls": "GET /gta-6/ 200 || GET /search?q=vice+city 302 || GET www.google.com/search?q=site:gtabase.com+vice+city 200 || GET www.google.com/search?q=site:gtabase.com+vice+city&sei=PxsEa6KcOOGfw8cPpsbmyQo BLOCKED"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-26",
@@ -613,7 +643,8 @@
         "text:join-link": "Join MyBASE",
         "attr:join-link@href": "/membership/free/"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-27",
@@ -643,7 +674,8 @@
         "calls": "GET /gta-6/ 200",
         "blocked": ""
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-28",
@@ -665,7 +697,8 @@
         "visible:login-heading": "false",
         "attr:login-modal@aria-hidden": "<missing>"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-29",
@@ -687,7 +720,8 @@
         "visible:login-heading": "false",
         "attr:login-modal@aria-hidden": "<missing>"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-30",
@@ -710,7 +744,8 @@
         "count:footer-links": "0",
         "count:breadcrumb-items": "0"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-31",
@@ -739,7 +774,8 @@
         "list:breadcrumb-items": "Home || GTA 6 || Overview",
         "attr:breadcrumbs@aria-label": "Breadcrumbs"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-32",
@@ -759,7 +795,8 @@
         "heading": "GTA 6 (Grand Theft Auto VI)",
         "attr:back-to-top@class": "cd-top"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-33",
@@ -782,7 +819,8 @@
         "attr:subnav-current@href": "<missing>",
         "count:subnav-current": "0"
       },
-      "error": "mode:news: page.goto: Timeout 60000ms exceeded."
+      "error": "mode:news: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-34",
@@ -797,13 +835,15 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/news/",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/articles/gta-6-driving-tips",
-        "list:breadcrumb-items": "",
+        "url": "/gta-6/articles/gta-6-driving-tips",
+        "heading": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "title": "GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
+        "list:breadcrumb-items": "Home || GTA 6 || News || GTA 6 Driving Tips: Drifting, Ducking, Drive-Bys & Hidden Tricks",
         "count:subnav-current": "0"
       },
-      "error": "mode:article: page.goto: Timeout 60000ms exceeded."
+      "error": null,
+      "captured": "2026-11-23T11:37:55.611Z",
+      "attempts": 2
     },
     {
       "id": "F9-35",
@@ -821,18 +861,20 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/articles/gta-6-driving-tips",
-        "heading": "<missing>",
-        "title": "500 Internal Server Error",
-        "calls": "GET /gta-6/nonexistent-page-xyz 500",
+        "url": "/gta-6/nonexistent-page-xyz",
+        "heading": "404 Page Not Found",
+        "title": "404 Page Not Found",
+        "calls": "GET /gta-6/nonexistent-page-xyz 404",
         "count:game-subnav-links": "0",
         "count:lang-links": "0",
-        "list:content-list-items": "",
+        "list:content-list-items": "the link you clicked to arrive here has a typo in it || or somehow we removed that page, or gave it another name || or maybe you tried to access a restricted area?",
         "count:content-links": "0",
-        "text:#ja-current-content h2, #ja-current-content h3": "<missing>",
+        "text:#ja-current-content h2, #ja-current-content h3": "Get back inside the map!",
         "visible:menu-toggle": "false"
       },
-      "error": "mode:notfound: page.goto: Timeout 60000ms exceeded."
+      "error": "mode:notfound: page.goto: Timeout 60000ms exceeded.",
+      "captured": "2026-11-23T11:37:55.611Z",
+      "attempts": 2
     },
     {
       "id": "F9-36",
@@ -847,11 +889,13 @@
       "reset": "clear",
       "values": {
         "url": "/gta-6/nonexistent-page-xyz",
-        "heading": "<missing>",
-        "list:breadcrumb-items": "",
-        "count:footer-links": "0"
+        "heading": "404 Page Not Found",
+        "list:breadcrumb-items": "Home || Page not found",
+        "count:footer-links": "6"
       },
-      "error": "mode:notfound: page.goto: Timeout 60000ms exceeded."
+      "error": null,
+      "captured": "2026-11-23T11:37:55.611Z",
+      "attempts": 2
     },
     {
       "id": "F9-37",
@@ -880,7 +924,8 @@
         "count:lang-links": "0",
         "visible:lang-switcher": "true"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-38",
@@ -901,7 +946,8 @@
         "calls": "GET /gta-6/ 200 || GET / 200"
       },
       "error": null,
-      "retried": "2026-11-23T11:09:31.632Z"
+      "captured": "2026-11-23T11:09:31.632Z",
+      "attempts": 2
     },
     {
       "id": "F9-39",
@@ -922,7 +968,8 @@
         "count:info-labels": "6",
         "count:hub-cards": "33"
       },
-      "error": null
+      "error": null,
+      "captured": "2026-11-23T10:44:40.963Z"
     },
     {
       "id": "F9-40",
@@ -937,13 +984,15 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/",
-        "heading": "<missing>",
-        "title": "Loading https://www.gtabase.com/gta-6/guides/",
-        "attr:subnav-current@href": "<missing>",
-        "count:subnav-current": "0"
+        "url": "/gta-6/guides/",
+        "heading": "GTA 6 Guides: Tips, Walkthroughs & How-To Guides",
+        "title": "GTA 6 Guides: Tips, Walkthroughs & How-To Guides",
+        "attr:subnav-current@href": "/gta-6/guides/",
+        "count:subnav-current": "1"
       },
-      "error": "goto:/gta-6/guides/: page.goto: Timeout 60000ms exceeded."
+      "error": null,
+      "captured": "2026-11-23T11:37:55.611Z",
+      "attempts": 2
     },
     {
       "id": "F9-41",
@@ -957,15 +1006,14 @@
       ],
       "reset": "clear",
       "values": {
-        "url": "/gta-6/guides/",
-        "heading": "<missing>",
-        "calls": "",
-        "title": "Loading https://www.gtabase.com/gta-6"
+        "url": "/gta-6/",
+        "heading": "GTA 6 (Grand Theft Auto VI)",
+        "calls": "GET /gta-6/ 200",
+        "title": "GTA 6 Database: All Game Features, Guides & Media"
       },
-      "error": "goto:/gta-6: page.goto: Timeout 60000ms exceeded."
+      "error": null,
+      "captured": "2026-11-23T11:37:55.611Z",
+      "attempts": 2
     }
-  ],
-  "passes": [
-    "2026-11-23T11:09:31.632Z"
   ]
 }

@@ -1,0 +1,108 @@
+{
+  "app": "gtabase.com GTA 6 section - F5 checklists & mission lists (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:33:06.613Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F5-35",
+      "mode": "missions",
+      "steps": [
+        "click:mission-box-first",
+        "click:a.items-row[href=\"/missions/gta-6/prologue\"] .mission-description",
+        "wait:2000"
+      ],
+      "reads": [
+        "count:cl-box",
+        "attr:h2.checklist-item input[data-checklist-id]@aria-label",
+        "checked:h2.checklist-item input[data-checklist-id]",
+        "local:guest_checklists"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/missions/gta-6/prologue",
+        "heading": "Prologue",
+        "count:cl-box": "1",
+        "attr:h2.checklist-item input[data-checklist-id]@aria-label": "Mark as completed: Mission Completed",
+        "checked:h2.checklist-item input[data-checklist-id]": "true",
+        "local:guest_checklists": "{\"gta6-missions\":[\"6644\"]}"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-36",
+      "mode": null,
+      "steps": [
+        "back",
+        "wait:2000"
+      ],
+      "reads": [
+        "checked:mission-box-first",
+        "count:cl-box-checked",
+        "local:guest_checklists"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/missions/",
+        "heading": "GTA 6 Story Missions Guide & Walkthrough",
+        "checked:mission-box-first": "true",
+        "count:cl-box-checked": "1",
+        "local:guest_checklists": "{\"gta6-missions\":[\"6644\"]}"
+      },
+      "error": null
+    },
+    {
+      "id": "F5-37",
+      "mode": "missions",
+      "steps": [
+        "click:mission-gone-fishing",
+        "goto:/gta-6/map/",
+        "wait:5000"
+      ],
+      "reads": [
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "local:guest_checklists": "{\"gta6-missions\":[\"7285\"]}",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F5-38",
+      "mode": null,
+      "steps": [
+        "goto:/missions/gta-6/prologue",
+        "wait:1500",
+        "click:h2.checklist-item input[data-checklist-id=\"gta6-missions\"]",
+        "goto:/gta-6/missions/",
+        "wait:1500"
+      ],
+      "reads": [
+        "checked:mission-box-first",
+        "count:cl-box-checked",
+        "local:guest_checklists",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/missions/",
+        "heading": "GTA 6 Story Missions Guide & Walkthrough",
+        "checked:mission-box-first": "true",
+        "count:cl-box-checked": "1",
+        "local:guest_checklists": "{\"gta6-missions\":[\"6644\"]}",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    }
+  ]
+}

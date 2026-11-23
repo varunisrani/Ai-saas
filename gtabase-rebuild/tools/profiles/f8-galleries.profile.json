@@ -2,19 +2,57 @@
   "app": "gtabase.com GTA 6 section (observed 2026-11-23) - F8 media galleries",
   "baseUrl": "https://www.gtabase.com",
   "readOnly": true,
-  "guard": { "allow": [] },
+  "guard": {
+    "allow": []
+  },
   "browser": {
     "channel": "chromium",
-    "viewport": { "width": 1366, "height": 900 },
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
     "locale": "en-US",
     "timezone": "UTC",
-    "args": ["--disable-blink-features=AutomationControlled"],
+    "args": [
+      "--disable-blink-features=AutomationControlled"
+    ],
     "_note_args": "navigator.webdriver=false so JCH Optimize loads the interaction-deferred Ignite Gallery scripts (ignitegallery-42.js, lib-42.js) as for a real visitor"
   },
-  "timeouts": { "action": 8000, "navigation": 60000, "settle": 5000, "idle": 15000 },
+  "timeouts": {
+    "action": 8000,
+    "navigation": 60000,
+    "settle": 5000,
+    "idle": 15000
+  },
   "network": {
-    "include": ["option=com_igallery", "option=com_ajax"],
-    "block": ["mediavine", "googletagmanager", "google-analytics", "doubleclick", "googlesyndication", "amazon-adsystem", "addtoany", "facebook\\.net", "clarity\\.ms", "cloudflareinsights", "nel\\.cloudflare", "quantserve", "scorecardresearch", "adnxs", "pubmatic", "rubiconproject", "criteo", "taboola", "outbrain", "giphy", "/cdn-cgi/challenge-platform/", "task=imagefront\\.(addHit|addRating|addComment|download)"]
+    "include": [
+      "option=com_igallery",
+      "option=com_ajax"
+    ],
+    "block": [
+      "mediavine",
+      "googletagmanager",
+      "google-analytics",
+      "doubleclick",
+      "googlesyndication",
+      "amazon-adsystem",
+      "addtoany",
+      "facebook\\.net",
+      "clarity\\.ms",
+      "cloudflareinsights",
+      "nel\\.cloudflare",
+      "quantserve",
+      "scorecardresearch",
+      "adnxs",
+      "pubmatic",
+      "rubiconproject",
+      "criteo",
+      "taboola",
+      "outbrain",
+      "giphy",
+      "/cdn-cgi/challenge-platform/",
+      "task=imagefront\\.(addHit|addRating|addComment|download)"
+    ]
   },
   "tokens": {
     "_note": "CSS taken from the original markup (analysis side only)",
@@ -70,22 +108,59 @@
     "pagination-last": ":nth-match(form.ig-thumb-pagination, 1) a[aria-label=\"Go to last page\"]",
     "modal-trigger": "[data-modals]",
     "modal-trigger-login": "[data-modals][href=\"#loginbox\"]",
-    "video-embed": "iframe, .youtube-play, img[src*=\"youtube-play\"]"
+    "video-embed": "iframe, .youtube-play, img[src*=\"youtube-play\"]",
+    "thumb-100": ":nth-match(.ig-scroller-img-wrapper .ig-img-link, 100)"
   },
   "modes": {
-    "shots": ["goto:/gta-6/screenshots/", "macro:wake"],
-    "trailers": ["goto:/gta-6/screenshots/trailers/", "macro:wake"],
-    "artworks": ["goto:/gta-6/artworks/", "macro:wake"],
-    "covers": ["goto:/gta-6/covers/", "macro:wake"],
-    "maploc": ["goto:/gta-6/map-locations/", "macro:wake"]
+    "shots": [
+      "goto:/gta-6/screenshots/",
+      "macro:wake"
+    ],
+    "trailers": [
+      "goto:/gta-6/screenshots/trailers/",
+      "macro:wake"
+    ],
+    "artworks": [
+      "goto:/gta-6/artworks/",
+      "macro:wake"
+    ],
+    "covers": [
+      "goto:/gta-6/covers/",
+      "macro:wake"
+    ],
+    "maploc": [
+      "goto:/gta-6/map-locations/",
+      "macro:wake"
+    ]
   },
-  "resets": { "clear": ["try:clear:local", "try:clear:session"] },
+  "resets": {
+    "clear": [
+      "try:clear:local",
+      "try:clear:session"
+    ]
+  },
   "macros": {
-    "wake": ["hover:heading", "wait:3000", "wait:idle"],
-    "open-first": ["click:thumb-1", "waitfor:lb-counter", "wait:700"]
+    "wake": [
+      "hover:heading",
+      "wait:3000",
+      "wait:idle",
+      "hover:thumb-img",
+      "wait:3000"
+    ],
+    "open-first": [
+      "click:thumb-1",
+      "waitfor:lb-counter",
+      "wait:700"
+    ]
   },
   "readouts": [
-    { "key": "url", "read": "url" },
-    { "key": "heading", "read": "text:heading" }
+    {
+      "key": "url",
+      "read": "url"
+    },
+    {
+      "key": "heading",
+      "read": "text:heading"
+    }
   ]
 }

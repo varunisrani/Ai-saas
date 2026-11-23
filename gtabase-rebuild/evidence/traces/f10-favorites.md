@@ -52,7 +52,9 @@ view ev_e49df5d9d8a1acc41218438787dcceab5956d8a1eba69c81d1958be3d13f9cc6.
 logo, title "Sign in to MyBase", "Login with Discord", "Sign in with Google", "or login with your GTABase
 account", Username, Password (+ show-password toggle), Remember Me, "Log in" (submit), "Forgot your
 password?", "Forgot your username?", "Create an account" → /membership/free/sign-up. Closing: close button
-(name "close"), Escape, overlay click.
+(name "close") and Escape (F10-09, F10-10); a click on the dimmed backdrop also closes (static: backdrop
+marked close-on-click; not recorded). After its first use the library rewrites the opener link's address to
+the absolute page URL + `#loginbox` (F10-12).
 
 **Dependencies.** Endpoints (never called for guests): `/index.php?option=com_ajax&plugin=getuserdata&format=raw&type=`
 `wishlist-status` | `toggle-wishlist` | `user-token`; map `GTAB_CONFIG.submit.url` with `type=fav|note|whoami|…`.
@@ -79,15 +81,24 @@ GTA 6 garage/vehicle/weapon collection tracking (member-only pages, not reachabl
 
 | Rule id | Plain words | Script | Observations reproduced | Proving input |
 |---|---|---|---|---|
-| F10-R1 guest prompt | Guest activation of "Add To Favorites" (click/Enter/Space, any detail type, any width) opens the login dialog titled "Save your GTA 6 favorites" with the benefits line; label unchanged; no request; nothing stored | evidence/rules/f10-favorites-guest-prompt.mjs | R1_N | click on the vehicle page (F10-02) |
-| F10-R2 login context | Favorites context sets title + one benefits line; a real "Log In" click restores the title but keeps the line; close keeps context; reload resets | evidence/rules/f10-favorites-login-context.mjs | R2_N | prompt → Escape → header Log In ⇒ title "Sign in to MyBase", 1 benefits line (F10-12) |
-| F10-R3 map star | Guest star on a map marker → popup closes, "Favourites" panel with text, Log in (#loginbox) and Join MyBase (/membership/free/, new tab); no request, nothing stored | evidence/rules/f10-favorites-map-guest.mjs | R3_N | star on #garage-003 (F10-23) |
+| F10-R1 guest prompt | Guest activation of "Add To Favorites" (click/Enter/Space, any detail type, any width) opens the login dialog titled "Save your GTA 6 favorites" with the benefits line; label unchanged; no request; nothing stored | evidence/rules/f10-favorites-guest-prompt.mjs | 10/10 | click on the vehicle page (F10-02) |
+| F10-R2 login context | Favorites context sets title + one benefits line; a real "Log In" click restores the title but keeps the line; close keeps context; reload resets | evidence/rules/f10-favorites-login-context.mjs | 10/10 | prompt → Escape → header Log In ⇒ title "Sign in to MyBase", 1 benefits line (F10-12) |
+| F10-R3 map star | Guest star on a map marker → popup closes, "Favourites" panel with text, Log in (#loginbox; opens the login dialog with its normal title) and Join MyBase (/membership/free/, new tab), × closes it; heading and links shown in capitals; no request, nothing stored | evidence/rules/f10-favorites-map-guest.mjs | 4/4 | star on #garage-003 (F10-23) |
 
 ## Cases
 
 - File: evidence/cases/f10-favorites.json → run evidence/runs/run-f10-favorites.json (profile
   tools/profiles/f10-favorites.profile.json).
-- Count: CASES_TOTAL; clean: CASES_CLEAN; excluded: EXCLUDED.
+- Count: 32 cases; clean: 32; excluded: none.
+- Recording history (honest note): the first pass (run-f10-favorites.json, 2026-11-23 ~10:45 UTC) ran while
+  the site's origin answered HTTP 500 after ~60 s for uncached pages (curl confirmed for /membership/,
+  /login/, weapon, animal, radio pages; several other analysis runners were active). Failed cases were
+  re-run after the site recovered and merged into the run file (records carry `retriedAt`; raw retry files
+  retry1/retry2a/retry2b/retry3/retry4-f10-favorites.json). Harness fixes in between: F10-12 needed the
+  `header-login` token to match by ending (`…#loginbox`) because the modal library rewrites that link to the
+  absolute page URL after its first use (F10-12 reads `attr:header-login@href`); F10-24/25 wait for the
+  marker popup before clicking; F10-26 starts from the plain map page; navigation timeout raised to 100 s.
+  F10-13/14/19 were re-run with the final token (same results as the first pass).
 - Data-only readout keys: `heading`, `title`, `text:map-popup-title`, `list:map-popup-buttons` (marker names),
   `list:plan-title`, `list:plan-price`, `list:plan-*-features` and the `plan-*` subtitles (marketing copy),
   `count:plan-*-features`, `list:table-header` (GTA Online ranking columns).
@@ -102,7 +113,7 @@ GTA 6 garage/vehicle/weapon collection tracking (member-only pages, not reachabl
 | `login-title` | text | "Sign in to MyBase" / "Save your GTA 6 favorites" | dialog title |
 | `login-benefits` | paragraph | "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more." | extra line in favorites context |
 | `modal-close` | button | "close" | closes the dialog |
-| `header-login` / `mobile-login` | link | "Log In" | opens the login dialog (desktop header / phone menu) |
+| `header-login` / `mobile-login` | link | "Log In" | opens the login dialog (desktop header / phone menu); hidden at phone width / inside the closed menu |
 | `header-join` | link | "Join MyBASE" | → /membership/free/ |
 | `mobile-join-toggle` | button (menu) | "Join MyBASE" | phone-width menu with Log In / Create Account / Membership |
 | `login-discord` / `login-google` | button | "Login with Discord" / "Sign in with Google" | social sign-in (never clicked) |
@@ -141,7 +152,7 @@ GTA 6 garage/vehicle/weapon collection tracking (member-only pages, not reachabl
    shows a "Favourites" panel: "Want to keep your favourite places? Members of GTABase can star any marker and
    find it again under Personal, on every device. Log in to start.", with "Log in" (opens the login dialog) and
    "Join MyBase" (free sign-up, new tab) and a close "×". No request, nothing stored. (F10-22..F10-25)
-9. Membership page: heading "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress", three plan
+9. Membership page (/membership/): heading "Track Your GTA 6 & GTA Online Garages, Net Worth and Game Progress", three plan
    cards — Basic Plan (Free, Lifetime), VIP (1 Year) ("Save 40%"), VIP (1 Month) — each with "Sign Up!" and
    "See Full Details". Free capabilities: Checklists & Progress Tracker (stored in your account), GTA 6
    Collection (garages, vehicles, weapons), GTA Online Collection, Red Dead Collection, Total Net Worth Value,
@@ -151,13 +162,17 @@ GTA 6 garage/vehicle/weapon collection tracking (member-only pages, not reachabl
    Pictures for GTA 6, Property Customization, GTA Online Weapons, Vehicle & Weapon Upgrades, Custom Outfits,
    Red Dead Extras, VIP Badge, Support the Site. (F10-27..F10-29)
 10. There is no GTA 6 MyBase page reachable as a guest (/mybase/gta-6/ is "404 Page Not Found"); the only
-    MyBase page is the GTA Online ranking. (F10-30, F10-31)
-11. HYPOTHESIS (rebuild without accounts): offer browser-local favorites instead of the login prompt — the same
+    MyBase page is the GTA Online ranking ("MyBase Rankings", columns #, Player, Net Worth, Rank — out of GTA 6
+    scope, no player data recorded). (F10-30, F10-31)
+11. The standalone login page (/login/, used when no dialog is available) shows the same content as the dialog
+    under the heading "Sign in to MyBase": Discord and Google buttons, username, password (with "Show
+    Password"), Remember Me and "Log in". (F10-32)
+12. HYPOTHESIS (rebuild without accounts): offer browser-local favorites instead of the login prompt — the same
     button toggles between "Add To Favorites" (outline star) and "Favorited" (solid star), the state is kept in
     browser storage per game and item (e.g. a map from list key "gta-6" to item ids, like the checklist
     storage), the map star toggles `aria-pressed` and adds the marker to a "Favourites" group, and a short note
     says favorites are saved in this browser only. Not observed on the original; mark as a deliberate
-    difference in the parity report.
+    difference in the parity report. (No case — not observable on the original.)
 
 ## Findings
 
@@ -174,8 +189,14 @@ GTA 6 garage/vehicle/weapon collection tracking (member-only pages, not reachabl
 - F-F10-06 No favorites / owned / garage controls on list pages; collection tracking (garages, vehicles,
   weapons) exists only as a member feature described on /membership/. Evidence: F10-20, F10-21, F10-27, F10-28.
 - F-F10-07 /mybase/gta-6/ returns the 404 page; MyBase Rankings exist only for GTA Online. Evidence: F10-30, F10-31.
-- F-F10-08 Many uncached GTA 6 detail pages answered HTTP 500 after ~60 s during this session (Cloudflare
-  timeout), while cached ones loaded at once. Evidence: curl probes 2026-11-23, run errors listed under Cases.
+- F-F10-08 Many uncached GTA 6 pages answered HTTP 500 after ~60 s during this session, while cached ones
+  loaded at once; they recovered later. Evidence: curl probes 2026-11-23 10:50–11:30 UTC; retry history above.
+- F-F10-09 "+ Personal marker" on the map first asks the server who is signed in (POST
+  `…plugin=gtabmap…&type=whoami`); with the request blocked the panel "Personal marker" says "The server did
+  not answer. Please try again in a moment." (F10-26). A real guest gets the login panel instead (static,
+  MAP:2 col 193140) — the read-only guard changes this outcome.
+- F-F10-10 The Regular Labs modal library rewrites the header "Log In" link from `#loginbox` to the absolute
+  page URL + `#loginbox` after the dialog has been opened once (F10-12 `attr:header-login@href`). No visible effect.
 
 ## Unknowns
 
@@ -184,5 +205,7 @@ GTA 6 garage/vehicle/weapon collection tracking (member-only pages, not reachabl
   behavior item 11).
 - U-F10-2 GTA 6 collection tracking (garages, vehicles, weapons, net worth) — member-only pages; no guest UI.
   Rebuild v1: out of scope (or browser-local "owned" toggles as a later HYPOTHESIS).
-- U-F10-3 Exact accessible name of "Add To Favorites" (the icon glyph may prefix it); see the case note on
-  `fav-button-role`.
+- U-F10-3 (resolved) The button's accessible name is the icon-font glyph U+F005 followed by " Add To
+  Favorites" (probe-f5-f10-aria.json), so an exact name match fails (F10-01 `count:fav-button-role = 0`) while a
+  substring match finds it. Rebuild: hide the icon from assistive tech so the name is exactly "Add To Favorites"
+  (deliberate improvement; parity profiles should match by substring).

@@ -97,7 +97,11 @@ real GTA 6 pages never exercise (all their weights are whole numbers).
 
 - File: evidence/cases/f5-checklists.json → run evidence/runs/run-f5-checklists.json (profile
   tools/profiles/f5-checklists.profile.json).
-- Count: CASES_TOTAL; clean: CASES_CLEAN; excluded: none.
+- Count: 38 cases; clean: 38; excluded: none. F5-01..F5-33 ran in one pass; F5-34 (added1-f5-checklists.json)
+  and F5-35..F5-38 (added2-f5-checklists.json) were recorded afterwards with the same profile and merged into
+  the run file (their records carry `retriedAt`). Supporting probes: probe-f5-checklists-synthetic.{js,json}
+  (rule S-* inputs), probe-f5-checklists-layout.{js,json} (progress box position), probe-f5-f10-aria.{mjs,json}
+  (accessible names).
 - Data-only readout keys (live content, not behavior): `count:cl-box` (76/134/60), `count:toc-box`,
   `count:sec-box`, `count:mission-row`, `count:mission-row-optional`, `count:mission-row-main-link`,
   `count:mission-row-strangers-link`, `count:activity-card`, `list:chapter-heading` (heading texts),
@@ -113,15 +117,16 @@ real GTA 6 pages never exercise (all their weights are whole numbers).
 | `toc-box`, `toc-<item>` | checkbox (inside a contents link) | "Mark as completed: Story Completion (50%)" | copy of a requirement in the contents box of the 100% page |
 | `sec-box`, `sec-<item>` | checkbox (inside a section heading) | same name as its contents copy | copy of a requirement in its section heading |
 | `sec-exploration-children(-checked)` | checkbox | "Mark as completed: 5 of 7 Kenton Sets Completed (1%)" … | children of a parent requirement |
-| `pct-module` | region (sidebar box) | heading "<n>% Completed!" | progress module of the 100% page |
+| `pct-module` | region (sidebar box; sticky on desktop, pinned to the top at phone width) | heading level 3 "<n>% Completed!" | progress module of the 100% page |
 | `pct-text` | text | — | the percentage number (2 decimals) |
-| `pct-bar` | progress bar (styled div, `aria-valuenow`) | — | bar whose width is the percentage |
+| `pct-bar` | none (plain styled element carrying `aria-valuenow` but no progressbar role) | — | bar whose width is the percentage; rebuild: give it a real progressbar role with min 0 / max 100 |
 | `guest-note` / `guest-note-login` | text / link | "Progress is saved in your browser. Login to keep progress across all your devices!" / "Login" → /login/ | guest saving notice |
 | `profile-switcher` | button + menu | "Progress of <profile>" | member-only profile switcher (absent for guests) |
 | `reset-control` | button | /reset/untick/clear/ | probe for a reset control (none exists) |
 | `chapter-heading` | heading level 2 | "Prologue", "Chapter 1" … | groups on mission lists |
 | `mission-row`, `mission-row-optional` | link (whole card) | card text | mission card linking to its walkthrough; optional ones flagged |
 | `mission-box-first`, `mission-gone-fishing`, `mission-shirleys-rum`, `mission-skunk-ape` | checkbox | "Mark as completed: Prologue" … | specific mission tick boxes |
+| (raw) `h2.checklist-item input[data-checklist-id]` on a walkthrough page | checkbox | "Mark as completed: Mission Completed" | the walkthrough page's own tick box |
 | `activity-card` | card | activity name | side-activity card (no tick box) |
 | `events-table-header` / `events-table-cell` | column header / cell | "Random Event", "Location", "Reward", "Status" | random-events placeholder table |
 
@@ -132,7 +137,7 @@ real GTA 6 pages never exercise (all their weights are whole numbers).
 2. Until saved progress has been applied the boxes are inactive; after loading they are all active, also for
    guests. (F5-01, F5-15)
 3. Ticking a box marks the item done; unticking marks it not done. Space toggles a focused box; Enter does
-   nothing. Clicking a box inside a card or contents link never follows the link. (F5-02, F5-03, F5-17, F5-18,
+   nothing. Clicking a box inside a card or contents link never follows the link; clicking elsewhere on a mission card opens its walkthrough page. (F5-02, F5-03, F5-17, F5-18,
    F5-23, F5-31, F5-32, F5-35)
 4. The same item can appear several times on one page (the 100% page shows every requirement in the contents
    box and again in its section); all copies always show the same state. (F5-02, F5-03, F5-05, F5-08)
@@ -152,8 +157,8 @@ real GTA 6 pages never exercise (all their weights are whole numbers).
    empty lists are dropped, an empty map stays as an empty object. Nothing is sent to the server. (F5-02,
    F5-04, F5-07, F5-08, F5-10, F5-26, F5-37)
 9. Saved progress returns on reload, on a later visit, after Back, and on every page that uses the same list
-   (a strangers-page optional mission ticked there is ticked on the missions page). (F5-15, F5-16, F5-25,
-   F5-36)
+   (a strangers-page optional mission ticked there is ticked on the missions page; a mission ticked on the
+   list is ticked on its walkthrough page and vice versa). (F5-15, F5-16, F5-25, F5-35, F5-36, F5-38)
 10. Under the progress box the guest reads "Progress is saved in your browser. Login to keep progress across
     all your devices!" with "Login" linking to the login page. The strangers page tells guests "Tick the
     checkbox next to a mission to track your progress."; the missions page says the list "contains no story
@@ -163,23 +168,26 @@ real GTA 6 pages never exercise (all their weights are whole numbers).
 12. Every tick box has the accessible name "Mark as completed: <row text>" (rule F5-R4). (F5-20, F5-24, F5-27)
 13. A `#profile=<n>` address suffix is removed on load; guests see no profile switcher. (Member-only: a
     "Progress of <profile>" switcher for up to 4 profiles — out of scope for v1.) (F5-19)
-14. Missions page: heading "GTA 6 Story Missions Guide & Walkthrough"; sections Prologue, Chapter 1–5, each a
+14. Each mission walkthrough page ends with a heading-level tick box "Mission Completed" in the same missions
+    list (same item id as its card), so ticking it there or on the list is the same thing. (F5-34, F5-35, F5-38)
+15. Missions page: heading "GTA 6 Story Missions Guide & Walkthrough"; sections Prologue, Chapter 1–5, each a
     list of mission cards (image, protagonist icon, tick box, number + title, optional badges such as
     "CHAPTER 1 POINT OF NO RETURN" / "OPTIONAL" / "MISSABLE", one-line description); main missions are
     numbered, optional missions are not and are styled differently; each card links to the mission's
     walkthrough page; then info sections and a FAQ. No progress box. (F5-22, F5-24, F5-35)
-15. Strangers page: chapters 1–4 of stranger missions (cards with the mission giver) plus "Other Optional
+16. Strangers page: chapters 1–4 of stranger missions (cards with the mission giver) plus "Other Optional
     Missions" grouped by chapter; those optional missions use the same list and ids as the missions page.
     (F5-25, F5-27)
-16. Activities (side-missions) page: a grid of activity cards linking to activity pages, no tick boxes.
+17. Activities (side-missions) page: a grid of activity cards linking to activity pages, no tick boxes.
     Random-events page: a placeholder table (Random Event / Location / Reward / Status) with "TBA … Coming
     Soon", no tick boxes. (F5-28, F5-29)
-17. Layout of the progress box: on desktop (1366 wide) it sits at the top of the right column and stays in
+18. Layout of the progress box: on desktop (1366 wide) it sits at the top of the right column and stays in
     view while scrolling (sticky, ~358 px wide); at phone width (390×844) the page is one column and the
     progress box is pinned to the top of the screen across the full width (~136 px tall) so the number and
     bar stay visible while ticking. Tick boxes work the same at both widths. (F5-21, F5-30;
     probe-f5-checklists-layout.json)
-18. Unknown checklist addresses show the site's 404 page. (F5-33)
+19. Visiting the map does not alter checklist entries in the shared storage. (F5-37)
+20. Unknown checklist addresses show the site's 404 page. (F5-33)
 
 ## Findings
 
@@ -199,7 +207,10 @@ real GTA 6 pages never exercise (all their weights are whole numbers).
   boxes. Evidence: F5-20, F5-22, F5-28, F5-29.
 - F-F5-08 Keyboard: Space toggles; Enter on a focused box does nothing (no navigation). Evidence: F5-17, F5-18, F5-31, F5-32.
 - F-F5-09 The first missions card ("Prologue") links to `/missions/gta-6/prologue`, a different path pattern
-  from the other 106 main cards (`/gta-6/missions/<slug>`). Evidence: F5-22, F5-34.
+  from the other 106 main cards (`/gta-6/missions/<slug>`); it is a working walkthrough page ("Prologue | GTA 6
+  Mission Guide & Walkthrough"). Evidence: F5-22, F5-34.
+- F-F5-11 Mission walkthrough pages carry one "Mission Completed" tick box in list `gta6-missions` (accessible
+  name "Mark as completed: Mission Completed"), synced with the list card. Evidence: F5-34, F5-35, F5-38.
 - F-F5-10 Member sync (static only): POST getuserdata `checklist-load` (sends the guest object, then deletes it
   locally), `checklist` (changes), `checklist-profile`, `user-token` with one retry on 403/token refusal; up to
   4 profiles, non-VIP extra profiles are "View only". Evidence: CL:13, CL:29–32, CL:69–80, CL:95–102.
@@ -208,7 +219,7 @@ real GTA 6 pages never exercise (all their weights are whole numbers).
 
 - U-F5-1 Member behavior (server merge of guest progress on login, profiles, view-only) — not observable as a
   guest. Rebuild v1: no accounts; keep progress in the browser only and show the guest notice.
-- U-F5-2 Whether the `/missions/gta-6/prologue` link is intended (see F5-34 result). Rebuild: link every card
-  to its own walkthrough route.
+- U-F5-2 (resolved) `/missions/gta-6/prologue` is a real page (F5-34); only its path pattern differs. Rebuild:
+  link every card to its own walkthrough route using one pattern.
 - U-F5-3 Behavior with a corrupt storage value was not exercised (the runner cannot seed storage). Static:
   treated as empty with a console error (CL:36, CL:83). Rebuild: same — ignore unreadable data, start empty.

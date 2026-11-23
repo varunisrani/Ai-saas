@@ -1,0 +1,288 @@
+{
+  "app": "gtabase.com GTA 6 section - F3 comparison + rankings (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:26:35.837Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F3-05",
+      "mode": "vehicles",
+      "steps": [
+        "macro:wake",
+        "click:compare-toggle-1",
+        "click:compare-toggle-2",
+        "click:compare-toggle-3",
+        "click:compare-toggle-4"
+      ],
+      "reads": [
+        "attr:compare-toggle-5@aria-disabled",
+        "attr:compare-toggle-5@aria-checked",
+        "attr:compare-toggle-4@aria-disabled",
+        "session:gtabCompare:/gta-6/vehicles/",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href",
+        "attr:compare-go@class",
+        "attr:compare-bar@hidden",
+        "count:compare-toggle-checked",
+        "count:compare-toggle-disabled"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Cars & Vehicles Database: Full List & Stats",
+        "attr:compare-toggle-5@aria-disabled": "true",
+        "attr:compare-toggle-5@aria-checked": "false",
+        "attr:compare-toggle-4@aria-disabled": "false",
+        "session:gtabCompare:/gta-6/vehicles/": "[{\"id\":\"andrew-nodes-thrax\",\"name\":\"Andrew Node's Thrax\"},{\"id\":\"seaspray-emerus\",\"name\":\"Seaspray Emerus\"},{\"id\":\"honeycomb-emerus\",\"name\":\"Honeycomb Emerus\"},{\"id\":\"black-widow-emerus\",\"name\":\"Black Widow Emerus\"}]",
+        "text:compare-count": "4/4",
+        "text:compare-go": "COMPARE (4)",
+        "attr:compare-go@href": "/gta-6/vehicles/comparison/?vehicle1=andrew-nodes-thrax&vehicle2=black-widow-emerus&vehicle3=honeycomb-emerus&vehicle4=seaspray-emerus",
+        "attr:compare-go@class": "gtab-cmp-go",
+        "attr:compare-bar@hidden": "<missing>",
+        "count:compare-toggle-checked": "4",
+        "count:compare-toggle-disabled": "96"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-06",
+      "mode": null,
+      "steps": [
+        "focus:compare-toggle-5",
+        "press:Space"
+      ],
+      "reads": [
+        "attr:compare-toggle-5@aria-checked",
+        "attr:compare-toggle-5@aria-disabled",
+        "session:gtabCompare:/gta-6/vehicles/",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href",
+        "attr:compare-go@class",
+        "attr:compare-bar@hidden",
+        "count:compare-toggle-checked",
+        "count:compare-toggle-disabled"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Cars & Vehicles Database: Full List & Stats",
+        "attr:compare-toggle-5@aria-checked": "false",
+        "attr:compare-toggle-5@aria-disabled": "true",
+        "session:gtabCompare:/gta-6/vehicles/": "[{\"id\":\"andrew-nodes-thrax\",\"name\":\"Andrew Node's Thrax\"},{\"id\":\"seaspray-emerus\",\"name\":\"Seaspray Emerus\"},{\"id\":\"honeycomb-emerus\",\"name\":\"Honeycomb Emerus\"},{\"id\":\"black-widow-emerus\",\"name\":\"Black Widow Emerus\"}]",
+        "text:compare-count": "4/4",
+        "text:compare-go": "COMPARE (4)",
+        "attr:compare-go@href": "/gta-6/vehicles/comparison/?vehicle1=andrew-nodes-thrax&vehicle2=black-widow-emerus&vehicle3=honeycomb-emerus&vehicle4=seaspray-emerus",
+        "attr:compare-go@class": "gtab-cmp-go",
+        "attr:compare-bar@hidden": "<missing>",
+        "count:compare-toggle-checked": "4",
+        "count:compare-toggle-disabled": "96"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-07",
+      "mode": null,
+      "steps": [
+        "click:compare-toggle-4"
+      ],
+      "reads": [
+        "attr:compare-toggle-5@aria-disabled",
+        "session:gtabCompare:/gta-6/vehicles/",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href",
+        "attr:compare-go@class",
+        "attr:compare-bar@hidden",
+        "count:compare-toggle-checked",
+        "count:compare-toggle-disabled"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Cars & Vehicles Database: Full List & Stats",
+        "attr:compare-toggle-5@aria-disabled": "false",
+        "session:gtabCompare:/gta-6/vehicles/": "[{\"id\":\"andrew-nodes-thrax\",\"name\":\"Andrew Node's Thrax\"},{\"id\":\"seaspray-emerus\",\"name\":\"Seaspray Emerus\"},{\"id\":\"honeycomb-emerus\",\"name\":\"Honeycomb Emerus\"}]",
+        "text:compare-count": "3/4",
+        "text:compare-go": "COMPARE (3)",
+        "attr:compare-go@href": "/gta-6/vehicles/comparison/?vehicle1=andrew-nodes-thrax&vehicle2=honeycomb-emerus&vehicle3=seaspray-emerus",
+        "attr:compare-go@class": "gtab-cmp-go",
+        "attr:compare-bar@hidden": "<missing>",
+        "count:compare-toggle-checked": "3",
+        "count:compare-toggle-disabled": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-08",
+      "mode": null,
+      "steps": [
+        "click:compare-clear"
+      ],
+      "reads": [
+        "session:gtabCompare:/gta-6/vehicles/",
+        "visible:compare-bar",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href",
+        "attr:compare-go@class",
+        "attr:compare-bar@hidden",
+        "count:compare-toggle-checked",
+        "count:compare-toggle-disabled"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Cars & Vehicles Database: Full List & Stats",
+        "session:gtabCompare:/gta-6/vehicles/": "[]",
+        "visible:compare-bar": "true",
+        "text:compare-count": "0/4",
+        "text:compare-go": "PICK 1 MORE",
+        "attr:compare-go@href": "#",
+        "attr:compare-go@class": "gtab-cmp-go gtab-cmp-off",
+        "attr:compare-bar@hidden": "",
+        "count:compare-toggle-checked": "0",
+        "count:compare-toggle-disabled": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-09",
+      "mode": "vehicles",
+      "steps": [
+        "macro:wake",
+        "focus:compare-toggle-1",
+        "press:Space"
+      ],
+      "reads": [
+        "attr:compare-toggle-1@aria-checked",
+        "session:gtabCompare:/gta-6/vehicles/",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href",
+        "attr:compare-go@class",
+        "attr:compare-bar@hidden",
+        "count:compare-toggle-checked",
+        "count:compare-toggle-disabled"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Cars & Vehicles Database: Full List & Stats",
+        "attr:compare-toggle-1@aria-checked": "true",
+        "session:gtabCompare:/gta-6/vehicles/": "[{\"id\":\"andrew-nodes-thrax\",\"name\":\"Andrew Node's Thrax\"}]",
+        "text:compare-count": "1/4",
+        "text:compare-go": "PICK 1 MORE",
+        "attr:compare-go@href": "#",
+        "attr:compare-go@class": "gtab-cmp-go gtab-cmp-off",
+        "attr:compare-bar@hidden": "<missing>",
+        "count:compare-toggle-checked": "1",
+        "count:compare-toggle-disabled": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-10",
+      "mode": null,
+      "steps": [
+        "focus:compare-toggle-2",
+        "press:Enter"
+      ],
+      "reads": [
+        "attr:compare-toggle-2@aria-checked",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href",
+        "attr:compare-go@class",
+        "attr:compare-bar@hidden",
+        "count:compare-toggle-checked",
+        "count:compare-toggle-disabled"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Cars & Vehicles Database: Full List & Stats",
+        "attr:compare-toggle-2@aria-checked": "true",
+        "text:compare-count": "2/4",
+        "text:compare-go": "COMPARE (2)",
+        "attr:compare-go@href": "/gta-6/vehicles/comparison/?vehicle1=andrew-nodes-thrax&vehicle2=seaspray-emerus",
+        "attr:compare-go@class": "gtab-cmp-go",
+        "attr:compare-bar@hidden": "<missing>",
+        "count:compare-toggle-checked": "2",
+        "count:compare-toggle-disabled": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-11",
+      "mode": null,
+      "steps": [
+        "reload",
+        "macro:wake"
+      ],
+      "reads": [
+        "attr:compare-toggle-1@aria-checked",
+        "attr:compare-toggle-2@aria-checked",
+        "session:gtabCompare:/gta-6/vehicles/",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href",
+        "attr:compare-go@class",
+        "attr:compare-bar@hidden",
+        "count:compare-toggle-checked",
+        "count:compare-toggle-disabled"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc",
+        "heading": "GTA 6 Cars & Vehicles Database: Full List & Stats",
+        "attr:compare-toggle-1@aria-checked": "true",
+        "attr:compare-toggle-2@aria-checked": "true",
+        "session:gtabCompare:/gta-6/vehicles/": "[{\"id\":\"andrew-nodes-thrax\",\"name\":\"Andrew Node's Thrax\"},{\"id\":\"seaspray-emerus\",\"name\":\"Seaspray Emerus\"}]",
+        "text:compare-count": "2/4",
+        "text:compare-go": "COMPARE (2)",
+        "attr:compare-go@href": "/gta-6/vehicles/comparison/?vehicle1=andrew-nodes-thrax&vehicle2=seaspray-emerus",
+        "attr:compare-go@class": "gtab-cmp-go",
+        "attr:compare-bar@hidden": "<missing>",
+        "count:compare-toggle-checked": "2",
+        "count:compare-toggle-disabled": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F3-12",
+      "mode": null,
+      "steps": [
+        "fill:name-search=emerus",
+        "press:Enter",
+        "wait:2000"
+      ],
+      "reads": [
+        "count:card",
+        "count:compare-toggle",
+        "count:compare-toggle-checked",
+        "value:name-search",
+        "session:gtabCompare:/gta-6/vehicles/",
+        "text:compare-count",
+        "text:compare-go",
+        "attr:compare-go@href"
+      ],
+      "reset": "none",
+      "values": {
+        "url": "/gta-6/vehicles/#sort=attr.ct6.frontend_value&sortdir=desc&name=emerus&page=1",
+        "heading": "GTA 6 Cars & Vehicles Database: Full List & Stats",
+        "count:card": "6",
+        "count:compare-toggle": "6",
+        "count:compare-toggle-checked": "1",
+        "value:name-search": "emerus",
+        "session:gtabCompare:/gta-6/vehicles/": "[{\"id\":\"andrew-nodes-thrax\",\"name\":\"Andrew Node's Thrax\"},{\"id\":\"seaspray-emerus\",\"name\":\"Seaspray Emerus\"}]",
+        "text:compare-count": "2/4",
+        "text:compare-go": "COMPARE (2)",
+        "attr:compare-go@href": "/gta-6/vehicles/comparison/?vehicle1=andrew-nodes-thrax&vehicle2=seaspray-emerus"
+      },
+      "error": null
+    }
+  ]
+}

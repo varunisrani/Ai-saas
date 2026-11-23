@@ -14,8 +14,15 @@ function guestStar() {
     panel: 'true', role: 'dialog', name: 'Favourites', title: 'Favourites'.toUpperCase(),
     text: 'Want to keep your favourite places? Members of GTABase can star any marker and find it again under Personal, on every device. Log in to start.',
     login: 'Log in'.toUpperCase(), loginHref: '#loginbox', join: 'Join MyBase'.toUpperCase(), joinHref: '/membership/free/', joinTarget: '_blank',
-    popupsOpen: '0', stored: '<missing>',
+    popupsOpen: '0', stored: '<missing>', calls: '', blocked: '',
   };
+}
+// follow-up actions on the panel: "login" closes the panel and opens the login dialog with its normal title;
+// "close" removes the panel (the marker popup stays closed)
+function after(action) {
+  if (action === 'login') return { panels: '0', loginDialog: 'true', loginTitle: 'Sign in to MyBase', calls: '', blocked: '' };
+  if (action === 'close') return { panels: '0', popupsOpen: '0' };
+  return guestStar();
 }
 
 const OBS = [
@@ -41,14 +48,35 @@ const OBS = [
      "joinHref": "/membership/free/",
      "joinTarget": "_blank",
      "popupsOpen": "0",
-     "stored": "<missing>"
+     "stored": "<missing>",
+     "calls": "",
+     "blocked": ""
+    }
+   },
+   {
+    "id": "F10-24",
+    "after": "login",
+    "expect": {
+     "panels": "0",
+     "loginDialog": "true",
+     "loginTitle": "Sign in to MyBase",
+     "calls": "",
+     "blocked": ""
+    }
+   },
+   {
+    "id": "F10-25",
+    "after": "close",
+    "expect": {
+     "panels": "0",
+     "popupsOpen": "0"
     }
    }
   ];
 
 let pass = 0;
 for (const o of OBS) {
-  const r = guestStar();
+  const r = o.after ? after(o.after) : guestStar();
   const diffs = Object.keys(o.expect).filter((k) => o.expect[k] !== r[k]).map((k) => `${k}: observed ${o.expect[k]}, rule ${r[k]}`);
   const ok = !diffs.length;
   if (ok) pass++;

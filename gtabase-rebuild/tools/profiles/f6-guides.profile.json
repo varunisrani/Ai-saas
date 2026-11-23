@@ -177,7 +177,9 @@
       "goto:/membership/",
       "hover:heading",
       "wait:3000",
-      "wait:idle"
+      "wait:idle",
+      "hover:acc-1",
+      "wait:9000"
     ]
   },
   "resets": {

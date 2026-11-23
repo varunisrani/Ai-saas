@@ -109,10 +109,12 @@
   "id": "F3-06",
   "reset": "none",
   "steps": [
-   "click:compare-toggle-5"
+   "focus:compare-toggle-5",
+   "press:Space"
   ],
   "reads": [
    "attr:compare-toggle-5@aria-checked",
+   "attr:compare-toggle-5@aria-disabled",
    "session:gtabCompare:/gta-6/vehicles/",
    "text:compare-count",
    "text:compare-go",
@@ -221,21 +223,19 @@
   "id": "F3-12",
   "reset": "none",
   "steps": [
-   "click:name-search",
-   "type:zzqx",
-   "wait:1500"
+   "fill:name-search=emerus",
+   "press:Enter",
+   "wait:2000"
   ],
   "reads": [
    "count:card",
    "count:compare-toggle",
+   "count:compare-toggle-checked",
+   "value:name-search",
    "session:gtabCompare:/gta-6/vehicles/",
    "text:compare-count",
    "text:compare-go",
-   "attr:compare-go@href",
-   "attr:compare-go@class",
-   "attr:compare-bar@hidden",
-   "count:compare-toggle-checked",
-   "count:compare-toggle-disabled"
+   "attr:compare-go@href"
   ]
  },
  {
@@ -380,13 +380,14 @@
  },
  {
   "id": "F3-20",
-  "mode": "vcompare",
+  "mode": "wcompare",
   "steps": [
    "click:cmp-picker",
    "wait:500"
   ],
   "reads": [
    "attr:cmp-picker@aria-expanded",
+   "count:cmp-source",
    "count:cmp-options",
    "text:cmp-more",
    "attr:cmp-option-1@class",
@@ -397,7 +398,7 @@
   "id": "F3-21",
   "reset": "none",
   "steps": [
-   "type:SANCHEZ",
+   "type:KNIFE",
    "wait:400"
   ],
   "reads": [
@@ -424,10 +425,7 @@
   "reset": "none",
   "steps": [
    "press:Control+A",
-   "type:ffa ffa",
-   "wait:300",
-   "press:Control+A",
-   "type:police bison",
+   "type:59 kz",
    "wait:400"
   ],
   "reads": [
@@ -440,10 +438,15 @@
   "reset": "none",
   "steps": [
    "press:ArrowDown",
+   "wait:200",
+   "press:ArrowUp",
+   "wait:200",
+   "press:ArrowUp",
    "wait:200"
   ],
   "reads": [
-   "text:cmp-option-active"
+   "text:cmp-option-active",
+   "list:cmp-options"
   ]
  },
  {
@@ -456,6 +459,18 @@
   "reads": [
    "attr:cmp-picker@aria-expanded",
    "value:cmp-picker"
+  ]
+ },
+ {
+  "id": "F3-25b",
+  "mode": "wcompare",
+  "steps": [
+   "click:cmp-picker",
+   "type:kn\u00edfe",
+   "wait:400"
+  ],
+  "reads": [
+   "count:cmp-options"
   ]
  },
  {

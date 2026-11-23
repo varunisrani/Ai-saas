@@ -1,0 +1,455 @@
+{
+  "app": "gtabase.com GTA 6 section - F10 favorites & personal progress, guest view (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:18:03.777Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F10-03",
+      "mode": "weapon",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "about:blank",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:weapon: goto:/gta-6/weapons/assault-rifle: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-04",
+      "mode": "animal",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/weapons/assault-rifle",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:animal: goto:/gta-6/animals/gray-fox: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-05",
+      "mode": "radio",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/flash-fm",
+        "heading": "Flash FM",
+        "text:fav-button": "Add To Favorites",
+        "visible:login-modal": "true",
+        "text:login-title": "Save your GTA 6 favorites",
+        "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-06",
+      "mode": "property",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/radio-stations/flash-fm",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:property: goto:/gta-6/properties/7th-avenue-garage: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-07",
+      "mode": "character",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/properties/7th-avenue-garage",
+        "heading": "<missing>",
+        "text:fav-button": "<missing>",
+        "visible:login-modal": "false",
+        "text:login-title": "<missing>",
+        "text:login-benefits": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": "mode:character: goto:/gta-6/characters/jason: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-08",
+      "mode": "mission",
+      "steps": [
+        "macro:open-fav-prompt"
+      ],
+      "reads": [
+        "text:fav-button",
+        "visible:login-modal",
+        "text:login-title",
+        "text:login-benefits",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/missions/breakfast-run",
+        "heading": "Breakfast Run",
+        "text:fav-button": "Add To Favorites",
+        "visible:login-modal": "true",
+        "text:login-title": "Save your GTA 6 favorites",
+        "text:login-benefits": "Create a free account to save your favorites, track your garages, vehicles and weapons, and much more.",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-12",
+      "mode": "vehicle",
+      "steps": [
+        "macro:open-fav-prompt",
+        "press:Escape",
+        "wait:800",
+        "press:Home",
+        "wait:1500",
+        "click:header-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "count:login-benefits",
+        "attr:login-modal@class"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "false",
+        "text:login-title": "Save your GTA 6 favorites",
+        "count:login-benefits": "1",
+        "attr:login-modal@class": "login-context-favorites"
+      },
+      "error": "click:header-login: locator.click: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F10-21",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/weapons/",
+        "wait:idle",
+        "wait:2000"
+      ],
+      "reads": [
+        "count:list-fav-control",
+        "count:fav-button"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/weapons/#sort=name&sortdir=asc",
+        "heading": "GTA 6 Weapons Database: List of All Unique Variants & Stats",
+        "count:list-fav-control": "0",
+        "count:fav-button": "0"
+      },
+      "error": null
+    },
+    {
+      "id": "F10-24",
+      "mode": "map-garage",
+      "steps": [
+        "waitfor:map-fav-star",
+        "wait:3000",
+        "click:map-fav-star",
+        "wait:800",
+        "click:map-panel-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "count:map-panel",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#garage-003",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "visible:login-modal": "true",
+        "text:login-title": "Sign in to MyBase",
+        "count:map-panel": "0",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-25",
+      "mode": "map-garage",
+      "steps": [
+        "waitfor:map-fav-star",
+        "wait:3000",
+        "click:map-fav-star",
+        "wait:800",
+        "click:map-panel-close",
+        "wait:500"
+      ],
+      "reads": [
+        "count:map-panel",
+        "count:map-popup"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/#garage-003",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "count:map-panel": "0",
+        "count:map-popup": "0"
+      },
+      "error": "waitfor:map-fav-star: locator.waitFor: Timeout 8000ms exceeded."
+    },
+    {
+      "id": "F10-26",
+      "mode": null,
+      "steps": [
+        "goto:/gta-6/map/",
+        "wait:6000",
+        "click:map-personal-marker",
+        "wait:4000",
+        "shot:personal-marker"
+      ],
+      "reads": [
+        "count:map-personal-marker",
+        "visible:map-panel",
+        "attr:map-panel@aria-label",
+        "text:map-panel-title",
+        "text:map-panel-text",
+        "calls",
+        "blocked",
+        "errors"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "heading": "GTA 6 INTERACTIVE MAP",
+        "count:map-personal-marker": "1",
+        "visible:map-panel": "true",
+        "attr:map-panel@aria-label": "Personal marker",
+        "text:map-panel-title": "PERSONAL MARKER",
+        "text:map-panel-text": "The server did not answer. Please try again in a moment.",
+        "calls": "POST /index.php?option=com_ajax&group=system&plugin=gtabmap&format=raw&type=whoami BLOCKED",
+        "blocked": "POST /index.php?option=com_ajax&group=system&plugin=gtabmap&format=raw&type=whoami",
+        "errors": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-27",
+      "mode": "membership",
+      "steps": [],
+      "reads": [
+        "count:plan",
+        "list:plan-title",
+        "list:plan-price",
+        "text:plan-recommended",
+        "count:plan-free-features",
+        "count:plan-vip-year-features",
+        "count:plan-vip-month-features",
+        "list:plan-free-features"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/map/",
+        "heading": "<missing>",
+        "count:plan": "0",
+        "list:plan-title": "",
+        "list:plan-price": "",
+        "text:plan-recommended": "<missing>",
+        "count:plan-free-features": "0",
+        "count:plan-vip-year-features": "0",
+        "count:plan-vip-month-features": "0",
+        "list:plan-free-features": ""
+      },
+      "error": "mode:membership: goto:/membership/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-28",
+      "mode": "membership",
+      "steps": [],
+      "reads": [
+        "list:plan-vip-year-features",
+        "text:plan-free-favorites",
+        "text:plan-free-checklists",
+        "text:plan-free-collection",
+        "text:plan-vip-map",
+        "text:plan-vip-profiles"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/",
+        "heading": "<missing>",
+        "list:plan-vip-year-features": "",
+        "text:plan-free-favorites": "<missing>",
+        "text:plan-free-checklists": "<missing>",
+        "text:plan-free-collection": "<missing>",
+        "text:plan-vip-map": "<missing>",
+        "text:plan-vip-profiles": "<missing>"
+      },
+      "error": "mode:membership: goto:/membership/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-29",
+      "mode": "membership",
+      "steps": [],
+      "reads": [
+        "attr:.osm-plan-3 .btn-signup@href",
+        "attr:.osm-plan-2 .btn-signup@href",
+        "attr:.osm-plan-1 .btn-signup@href",
+        "attr:.osm-plan-3 .btn-details@href",
+        "attr:header-join@href",
+        "text:header-join"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/",
+        "heading": "<missing>",
+        "attr:.osm-plan-3 .btn-signup@href": "<missing>",
+        "attr:.osm-plan-2 .btn-signup@href": "<missing>",
+        "attr:.osm-plan-1 .btn-signup@href": "<missing>",
+        "attr:.osm-plan-3 .btn-details@href": "<missing>",
+        "attr:header-join@href": "<missing>",
+        "text:header-join": "<missing>"
+      },
+      "error": "mode:membership: goto:/membership/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-30",
+      "mode": null,
+      "steps": [
+        "goto:/mybase/gta-6/",
+        "wait:500"
+      ],
+      "reads": [
+        "title",
+        "count:fav-button"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/membership/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/mybase/gta-6/",
+        "count:fav-button": "0"
+      },
+      "error": "goto:/mybase/gta-6/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-31",
+      "mode": null,
+      "steps": [
+        "goto:/mybase/gta-online/",
+        "wait:500"
+      ],
+      "reads": [
+        "title",
+        "list:table-header",
+        "count:fav-button"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/mybase/gta-6/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/mybase/gta-online/",
+        "list:table-header": "",
+        "count:fav-button": "0"
+      },
+      "error": "goto:/mybase/gta-online/: page.goto: Timeout 60000ms exceeded."
+    },
+    {
+      "id": "F10-32",
+      "mode": null,
+      "steps": [
+        "goto:/login/",
+        "wait:500"
+      ],
+      "reads": [
+        "title",
+        "count:page-form-input",
+        "list:#ja-content form button"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/mybase/gta-online/",
+        "heading": "<missing>",
+        "title": "Loading https://www.gtabase.com/login/",
+        "count:page-form-input": "0",
+        "list:#ja-content form button": ""
+      },
+      "error": "goto:/login/: page.goto: Timeout 60000ms exceeded."
+    }
+  ]
+}

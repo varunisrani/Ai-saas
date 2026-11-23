@@ -375,6 +375,7 @@
   "mode": "membership",
   "steps": [],
   "reads": [
+   "attr:acc-container@data-rlta-state",
    "count:acc-container",
    "attr:acc-container@data-rlta-type",
    "count:acc-button",
@@ -470,9 +471,11 @@
    "goto:/membership/#will-my-subscription-extend-automatically",
    "hover:heading",
    "wait:3000",
-   "wait:idle"
+   "wait:idle",
+   "wait:9000"
   ],
   "reads": [
+   "attr:acc-container@data-rlta-state",
    "attr:acc-1@aria-expanded",
    "attr:acc-3@aria-expanded",
    "count:acc-open"

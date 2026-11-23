@@ -1,0 +1,109 @@
+{
+  "app": "gtabase.com GTA 6 section - F10 favorites & personal progress, guest view (observed 2026-11-23)",
+  "baseUrl": "https://www.gtabase.com",
+  "captured": "2026-11-23T11:37:32.711Z",
+  "locale": "en-US",
+  "readOnly": true,
+  "cases": [
+    {
+      "id": "F10-13",
+      "mode": "vehicle",
+      "steps": [
+        "click:header-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-modal",
+        "text:login-title",
+        "count:login-benefits",
+        "attr:login-modal@class",
+        "calls",
+        "blocked"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-modal": "true",
+        "text:login-title": "Sign in to MyBase",
+        "count:login-benefits": "0",
+        "attr:login-modal@class": "<missing>",
+        "calls": "",
+        "blocked": ""
+      },
+      "error": null
+    },
+    {
+      "id": "F10-14",
+      "mode": "vehicle",
+      "steps": [
+        "click:header-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:login-discord",
+        "visible:login-google",
+        "attr:login-username@placeholder",
+        "attr:login-password@type",
+        "attr:login-password@placeholder",
+        "visible:login-remember",
+        "checked:login-remember",
+        "text:login-submit",
+        "enabled:login-submit",
+        "list:login-links",
+        "attr:login-register@href",
+        "attr:modal-close@aria-label"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:login-discord": "true",
+        "visible:login-google": "true",
+        "attr:login-username@placeholder": "Username",
+        "attr:login-password@type": "password",
+        "attr:login-password@placeholder": "Password",
+        "visible:login-remember": "true",
+        "checked:login-remember": "false",
+        "text:login-submit": "Log in",
+        "enabled:login-submit": "true",
+        "list:login-links": "Forgot your password? || Forgot your username? || Create an account",
+        "attr:login-register@href": "/membership/free/sign-up",
+        "attr:modal-close@aria-label": "close"
+      },
+      "error": null
+    },
+    {
+      "id": "F10-19",
+      "mode": null,
+      "steps": [
+        "viewport:390x844",
+        "goto:/gta-6/vehicles/sunset-sanchez",
+        "wait:1000",
+        "click:mobile-join-toggle",
+        "wait:500",
+        "click:mobile-login",
+        "waitfor:login-modal",
+        "wait:500"
+      ],
+      "reads": [
+        "visible:mobile-login",
+        "visible:login-modal",
+        "text:login-title",
+        "count:login-benefits"
+      ],
+      "reset": "clear",
+      "values": {
+        "url": "/gta-6/vehicles/sunset-sanchez",
+        "heading": "Maibatsu Sunset Sanchez",
+        "visible:mobile-login": "false",
+        "visible:login-modal": "true",
+        "text:login-title": "Sign in to MyBase",
+        "count:login-benefits": "0"
+      },
+      "error": null
+    }
+  ]
+}
